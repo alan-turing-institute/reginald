@@ -1,0 +1,48 @@
+{
+  "builder_name": "csv",
+  "citation": "",
+  "config_name": "default",
+  "dataset_size": 172870,
+  "description": "",
+  "download_checksums": {
+    "/Users/egabasova/Projects/reginald/data/data-wiki.csv": {
+      "num_bytes": 172782,
+      "checksum": null
+    }
+  },
+  "download_size": 172782,
+  "features": {
+    "text": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "title": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "embeddings": {
+      "feature": {
+        "dtype": "float32",
+        "_type": "Value"
+      },
+      "_type": "Sequence"
+    }
+  },
+  "homepage": "",
+  "license": "",
+  "size_in_bytes": 345652,
+  "splits": {
+    "train": {
+      "name": "train",
+      "num_bytes": 172870,
+      "num_examples": 53,
+      "dataset_name": "csv"
+    }
+  },
+  "version": {
+    "version_str": "0.0.0",
+    "major": 0,
+    "minor": 0,
+    "patch": 0
+  }
+}
