@@ -4,10 +4,10 @@ This page is for organising sign-ups and matches to REG's [Buddy-System](https:/
 
 If your preference for being a buddy has changed, please contact the person in charge of onboarding [wiki page](https://github.com/alan-turing-institute/Hut23/wiki/Onboarding).
 
-Please add your name below if you'd like to be considered as a buddy for a new starter. 
+Please add your name below if you'd like to be considered as a buddy for a new starter.
 
 
-| Name | 
+| Name |
 |--|
 | Andy Smith |
 | Helen Duncan |
@@ -20,7 +20,7 @@ Please add your name below if you'd like to be considered as a buddy for a new s
 | Ed Chalstrey |
 | Aoife Hughes |
 | Matt Craddock |
-| Pam Wochner | 
+| Pam Wochner |
 | Ryan Chan |
 | James Robinson |
 | Fede Nanni |
@@ -77,9 +77,7 @@ _Internal_
 
 
 _External_
-| New Starter |  Buddy | 
-| -------- | -------- | 
-|  Ayesha (Training & Skills) |   Callum       | 
-|   |  | 
-
-
+| New Starter |  Buddy |
+| -------- | -------- |
+|  Ayesha (Training & Skills) |   Callum       |
+|   |  |

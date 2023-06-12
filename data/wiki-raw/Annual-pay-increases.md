@@ -10,10 +10,10 @@ For reference the cost of living increases for previous years are listed below, 
 |:---:|:---:|:---:|:---:|:---:|:---:|:---|
 | 2023 | 5.0% | [8.8%](https://www.ons.gov.uk/economy/inflationandpriceindices/bulletins/consumerpriceinflation/january2023) | [9.2%](https://www.ons.gov.uk/economy/inflationandpriceindices/bulletins/consumerpriceinflation/december2022) | 20.74% | 22.56% | This is the first year the annual CoL increase has not matched or exceeded CPIH. [Mathison post from Jon Atkins](https://mathison.turing.ac.uk/page/2833) |
 | 2022 | 5.0% | [4.9%](https://www.ons.gov.uk/economy/inflationandpriceindices/bulletins/consumerpriceinflation/january2022) | [4.8%](https://www.ons.gov.uk/economy/inflationandpriceindices/bulletins/consumerpriceinflation/december2021) | 14.99% | 12.65% | Additional £1,000 one-off cost of living support payment made to all staff in bands 1-3 to help offset the disproportionate effect of inflation on those on lower salaries. |
-| 2021 | 1.5% | [0.9%](https://www.ons.gov.uk/economy/inflationandpriceindices/bulletins/consumerpriceinflation/january2021) | [0.8%](https://www.ons.gov.uk/economy/inflationandpriceindices/bulletins/consumerpriceinflation/december2020) | 9.52% | 7.39% | | 
+| 2021 | 1.5% | [0.9%](https://www.ons.gov.uk/economy/inflationandpriceindices/bulletins/consumerpriceinflation/january2021) | [0.8%](https://www.ons.gov.uk/economy/inflationandpriceindices/bulletins/consumerpriceinflation/december2020) | 9.52% | 7.39% | |
 | 2020 | 3.0% | [1.8%](https://www.ons.gov.uk/economy/inflationandpriceindices/bulletins/consumerpriceinflation/january2020) | [ 1.4%](https://www.ons.gov.uk/economy/inflationandpriceindices/bulletins/consumerpriceinflation/december2019) | 7.89% | 6.43% | |
-| 2019 | 2.0% | [1.8%](https://www.ons.gov.uk/economy/inflationandpriceindices/bulletins/consumerpriceinflation/january2019) | [2.0%](https://www.ons.gov.uk/economy/inflationandpriceindices/bulletins/consumerpriceinflation/december2018) | 4.75% | 4.55% | | 
-| 2018 | 2.7% | [2.7%](https://www.ons.gov.uk/economy/inflationandpriceindices/bulletins/consumerpriceinflation/january2018) |[2.7%](https://www.ons.gov.uk/economy/inflationandpriceindices/bulletins/consumerpriceinflation/december2017) | 2.70% | 2.70% | | 
+| 2019 | 2.0% | [1.8%](https://www.ons.gov.uk/economy/inflationandpriceindices/bulletins/consumerpriceinflation/january2019) | [2.0%](https://www.ons.gov.uk/economy/inflationandpriceindices/bulletins/consumerpriceinflation/december2018) | 4.75% | 4.55% | |
+| 2018 | 2.7% | [2.7%](https://www.ons.gov.uk/economy/inflationandpriceindices/bulletins/consumerpriceinflation/january2018) |[2.7%](https://www.ons.gov.uk/economy/inflationandpriceindices/bulletins/consumerpriceinflation/december2017) | 2.70% | 2.70% | |
 
 ## Progression award
 On 01 July each year, progression awards are made in addition to the cost of living award made each April. These progression awards depend on the outcome of the annual appraisal process, which takes place in May/June of each year.  See [[Annual appraisals]] for more details of this process.
@@ -36,8 +36,6 @@ On 01 July each year, progression awards are made in addition to the cost of liv
 | :---: | :---: | :---: | --- |
 | 2023 | TBC | TBC | |
 | 2022 | 3.0% | 8.44% | |
-| 2021 | 2.0% | 3.53% | | 
+| 2021 | 2.0% | 3.53% | |
 
 _*Cost of Living and Progression Award increases are compounded rather than added._
-
-

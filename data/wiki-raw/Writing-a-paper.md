@@ -30,6 +30,5 @@ Some of them should be already available at the Turing.
 Recommended by Comms
 
 - **11 Golden Rules of Writing Website Content**: https://www.jimdo.com/blog/11-golden-rules-of-writing-website-content/
- 
+
 - **Turing Institute writing for web training**: https://turingcomplete.topdesk.net/tas/public/ssp/content/detail/knowledgeitem?unid=ecae1c6656b14ed58fbcc6e434a948a1&origin=searchResults
- 

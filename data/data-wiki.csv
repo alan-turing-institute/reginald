@@ -10,7 +10,7 @@ REG uses Gather for some of the coffee breaks and social events. It gives a virt
 - The space can be accessed at https://gather.town/app/EJPBD8kYqtVZYCDv/turing
 - The password is: `hut23`
 
-Note: Gather is blocked on the Turing VPN and on IT-managed computers. 
+Note: Gather is blocked on the Turing VPN and on IT-managed computers.
 
 
 ### Zoom
@@ -49,7 +49,7 @@ The most versatile option is a **meeting**.  The way to make one of these in the
 
 ## Wellbeing tips for remote working
 
-Remote working brings different challenges. The work-life boundaries are less clear and some people struggle with lack of connection. Here we collate tips that the group has found to positively impact their wellbeing while working remotely. At the beginning of the COVID-19 lockdowns, having wellbeing tips proved really useful, see below: 
+Remote working brings different challenges. The work-life boundaries are less clear and some people struggle with lack of connection. Here we collate tips that the group has found to positively impact their wellbeing while working remotely. At the beginning of the COVID-19 lockdowns, having wellbeing tips proved really useful, see below:
 For more information on Wellbeing in REG, go to the wellbeing page. (LINK)
 
 - **Delineate the start and end of the working day.** A huge challenge is separating the working day from life outside of work, especially if both happen in the same location. Suggestions that might help bound work to working hours:
@@ -57,8 +57,8 @@ For more information on Wellbeing in REG, go to the wellbeing page. (LINK)
     - Have separate _work_ clothes and _non-work_ clothes.
     - Tidy your laptop/screen away if you are using the same space for relaxation
     - If possible use a different device for leisure activity to your work machine.
-- **Finish on time.** Without the impetus of having colleagues around you clocking off it seems easy to work later than usual and eat into your relaxation time. Take a 1hr lunch break, and finished on time. If you are finding that you are repeatedly doing this then there is an issue with your workload that needs corrected. Reach out! 
-- **Talk**. Many of us have missed the casual connection you get with being around people, and when you are working alone it is easy to forget the you are part of a team. This point is just a reminder that you work in a team that genuinely cares about the wellbeing of every member of the group. 
+- **Finish on time.** Without the impetus of having colleagues around you clocking off it seems easy to work later than usual and eat into your relaxation time. Take a 1hr lunch break, and finished on time. If you are finding that you are repeatedly doing this then there is an issue with your workload that needs corrected. Reach out!
+- **Talk**. Many of us have missed the casual connection you get with being around people, and when you are working alone it is easy to forget the you are part of a team. This point is just a reminder that you work in a team that genuinely cares about the wellbeing of every member of the group.
 
 "
 Buddy-Sign-up-and-Matches.md,"# REG Buddy Sign Up Sheet
@@ -67,10 +67,10 @@ This page is for organising sign-ups and matches to REG's [Buddy-System](https:/
 
 If your preference for being a buddy has changed, please contact the person in charge of onboarding [wiki page](https://github.com/alan-turing-institute/Hut23/wiki/Onboarding).
 
-Please add your name below if you'd like to be considered as a buddy for a new starter. 
+Please add your name below if you'd like to be considered as a buddy for a new starter.
 
 
-| Name | 
+| Name |
 |--|
 | Andy Smith |
 | Helen Duncan |
@@ -83,7 +83,7 @@ Please add your name below if you'd like to be considered as a buddy for a new s
 | Ed Chalstrey |
 | Aoife Hughes |
 | Matt Craddock |
-| Pam Wochner | 
+| Pam Wochner |
 | Ryan Chan |
 | James Robinson |
 | Fede Nanni |
@@ -140,10 +140,10 @@ _Internal_
 
 
 _External_
-| New Starter |  Buddy | 
-| -------- | -------- | 
-|  Ayesha (Training & Skills) |   Callum       | 
-|   |  | 
+| New Starter |  Buddy |
+| -------- | -------- |
+|  Ayesha (Training & Skills) |   Callum       |
+|   |  |
 
 
 "
@@ -179,7 +179,7 @@ Some of them should be already available at the Turing.
 Recommended by Comms
 
 - **11 Golden Rules of Writing Website Content**: https://www.jimdo.com/blog/11-golden-rules-of-writing-website-content/
- 
+
 - **Turing Institute writing for web training**: https://turingcomplete.topdesk.net/tas/public/ssp/content/detail/knowledgeitem?unid=ecae1c6656b14ed58fbcc6e434a948a1&origin=searchResults
  "
 Lightning-Talks.md,"## Next Meeting
@@ -194,7 +194,7 @@ Lightning talk sessions are held roughly every 6 weeks in the Tuesday lunchtime 
 
 **Agenda:**
 
-| Order | Project/Topic   | Presenter(s)  |   
+| Order | Project/Topic   | Presenter(s)  |
 | :----- | :---------------- | :------------------ |
 | 1. | Synthetic Data and Privacy Preservation - ONS  |  Callum |
 | 2. |  MapReader |  Kasra |
@@ -205,13 +205,13 @@ Dates of future meetings can be found in the [tech talk schedule](https://github
 
 ## Signup List
 
-Please add yourself to the signup list below and/or let Jack or Radka know if you would like to present at a future meeting (either individually or as a project team). 
+Please add yourself to the signup list below and/or let Jack or Radka know if you would like to present at a future meeting (either individually or as a project team).
 
 We particularly encourage any project that hasn't done a recent Tech Talk to sign up and like to emphasise that the project can be in any state - not started, in progress, or finished. Also, feel free to present your project at multiple meetings, e.g. when there have been significant new developments compared to your last talk.
 
 When the agenda for the next meeting is set the people presenting will be notified and added to the agenda table above.
 
-| Topic   | Presenter(s)  | Preferred Date |  
+| Topic   | Presenter(s)  | Preferred Date |
 | :---------------- | :------------------ | :----------- |
 | | |  |
 |  |  |  |
@@ -225,7 +225,7 @@ Projects-and-staffing.org,"** How we currently manage our portfolio of projects
    individuating projects within REG.
 
    Each of the issues lives in a particular column of the kanban board
-   representing the present stage of the project. We currently have ten stages for a project, which are described below. 
+   representing the present stage of the project. We currently have ten stages for a project, which are described below.
 
    | Stage | Name                   | Description                                   |
    |-------+------------------------+-----------------------------------------------|
@@ -253,7 +253,7 @@ Projects-and-staffing.org,"** How we currently manage our portfolio of projects
    an individual's time to a project over a given period. Since Forecast records
    what we ought to be spending our time on, we also use it for billing. When we
    come to to decide how much to charge projects we look at the past
-   allocations in Forecast. 
+   allocations in Forecast.
 
    We have also used Forecast to try to schedule projects as well as individual
    assignments. However, this is complicated by the fact that there is no
@@ -266,7 +266,7 @@ Projects-and-staffing.org,"** How we currently manage our portfolio of projects
    more difficult by the decision to move to staffing levels that are not
    necessarily multiples of 50% of an FTE.
 
-3. For historic *time tracking* we use [[https://thealanturinginstitute.harvestapp.com/time/week][Harvest]], a system linked to Forecast. 
+3. For historic *time tracking* we use [[https://thealanturinginstitute.harvestapp.com/time/week][Harvest]], a system linked to Forecast.
 
 We have tried to use Harvest to track our /actual/ time, including various
    duties that are not billed to projects because they are part of ""business as
@@ -282,12 +282,12 @@ person, to some extent reproducing the board in a way that allows us to print it
 out on a very large sheet of paper; (b) collect in one place the individual
 preferences; (c) produce a forward look of supply against demand.
 "
-Wellbeing-and-EDI.md,"###  Wellbeing 
-- Wellbeing Events 
+Wellbeing-and-EDI.md,"###  Wellbeing
+- Wellbeing Events
 
-###  Equality, Diversity and Inclusion 
+###  Equality, Diversity and Inclusion
 
-For the Turing's EDI policy and 2021-2024 strategy, find details [here](https://www.turing.ac.uk/about-us/equality-diversity-and-inclusion). 
+For the Turing's EDI policy and 2021-2024 strategy, find details [here](https://www.turing.ac.uk/about-us/equality-diversity-and-inclusion).
 
 "
 REG-Turing-Page-&-Blog.md,"# Overview
@@ -312,10 +312,10 @@ We have also been given access to upload blog posts (Programme articles) to our 
 
 If you don't see the option to create a new article, ask a colleague from the [REG Communications service area](https://github.com/alan-turing-institute/Hut23/issues/569) for help (see named assignees on the issue) OR request edit access yourself by following [these steps](#request-edit-access).
 
-This will take you to a page where you can write and format your blog post. 
+This will take you to a page where you can write and format your blog post.
 
-<b>Fields to fill out:</b>  
-- Under `Type` choose `Programme`  
+<b>Fields to fill out:</b>
+- Under `Type` choose `Programme`
 - Under `Related programmes` choose `Research Engineering`
 - Also tick the `Research Engineering involvement?` checkbox
 
@@ -327,7 +327,7 @@ You can specify the excerpt by either adding a subtitle to the page, or by addin
 
 Once finished, under `Save as` choose `Ready for review` instead of `Draft`. This will send the post to the communications team for review and to publish.
 
-Note that you can draft and get feedback on blog posts in the [Hut23-blog repository](https://github.com/alan-turing-institute/hut23-blog/). 
+Note that you can draft and get feedback on blog posts in the [Hut23-blog repository](https://github.com/alan-turing-institute/hut23-blog/).
 
 ## Request edit access
 
@@ -338,7 +338,7 @@ Note that you can draft and get feedback on blog posts in the [Hut23-blog reposi
 4. You should now be able to view the options to add content when you next log in to the website and upload [blog posts](#blog-posts)"
 Shared-REG-Calendar.md,"# Shared REG Calendar
 
-We can use the calendar associated with sharepoint group `Research Engineering` for events we want the whole team to know about. You should already belong to this group (see [Systems set up](https://alan-turing-institute.github.io/REG-handbook/docs/onboarding/new_joiners/systems_set_up/#office-365-groups)). 
+We can use the calendar associated with sharepoint group `Research Engineering` for events we want the whole team to know about. You should already belong to this group (see [Systems set up](https://alan-turing-institute.github.io/REG-handbook/docs/onboarding/new_joiners/systems_set_up/#office-365-groups)).
 
 
 ## Viewing the calendar
@@ -365,14 +365,14 @@ Note that invites to the group will only be sent out if you add, to the attendee
 If you want to add read-only calendar entries, you can invite `hut23@turing.ac.uk`, the email associated with the group `Research Engineering`, to your event from your own calendar (i.e. so you, not `Research Engineering`, is the owner). Inviting `hut23@turing.ac.uk` will send an invite out to all members of the sharepoint group.
 
 "
-Regular-events.md,"This is a page for adding information and times about regular events that occur in REG and across the Turing. This page is a work in progress so add/delete events as required. 
+Regular-events.md,"This is a page for adding information and times about regular events that occur in REG and across the Turing. This page is a work in progress so add/delete events as required.
 
-There are also slack channels available for a lot of events and organising too. 
+There are also slack channels available for a lot of events and organising too.
 
 - [Tech Talks](https://alan-turing-institute.github.io/REG-handbook/docs/how_we_work/knowledge_sharing/#tech-talks)
     - [Tech talk schedule and sign-up](https://github.com/alan-turing-institute/DataScienceSkills/wiki/Lunchtime-Tech-Talks)
 
-Weekly talks where someone (usually someone in REG) presents or discusses something, such as about a project or data science/computer science/software engineering topic. 
+Weekly talks where someone (usually someone in REG) presents or discusses something, such as about a project or data science/computer science/software engineering topic.
 
 - [Reading and Discussion Groups](https://alan-turing-institute.github.io/REG-handbook/docs/how_we_work/knowledge_sharing/#reading--discussion-groups)
 
@@ -385,21 +385,21 @@ As part of projects or separately for general interest, members of the team crea
 
 The contact details for these groups are in [[The REGistry|The-REGistry]]
 
-There is also a non-work based Bookclub that runs as well. This can be found on slack as #bookclub. 
+There is also a non-work based Bookclub that runs as well. This can be found on slack as #bookclub.
 
 
 - All REG Meetings
 Roughly once a month we have an all-REG meeting where we welcome new joiners and a few people briefly present news from around REG or the Turing. If you don’t have the calendar invites (new joiners might not initially) ask someone else in the team to forward them to you.
 
-More information on [Turing Events](https://alan-turing-institute.github.io/REG-handbook/docs/how_we_work/knowledge_sharing/#turing-events) can be found here. 
+More information on [Turing Events](https://alan-turing-institute.github.io/REG-handbook/docs/how_we_work/knowledge_sharing/#turing-events) can be found here.
 The main focus of this page is what we do in REG, but there are many things happening around the Turing that REG members are also encouraged to attend, including:
 
 -Turing Catchups & Town Halls
 Regular meetings open to all staff with updates from around the institute. New starters may not have the calendar invites initially - ask others in the team to forward the details if you’re unsure.
 [Turing Events](https://www.turing.ac.uk/events) - often public talks & workshops.
 
--Hack Week 
-In June 2022, REG ran a Hack Week for the week. The team worked across 4-5 projects that were suggested by the team throughout the week, concluding with progress updates at the end of the week. 
+-Hack Week
+In June 2022, REG ran a Hack Week for the week. The team worked across 4-5 projects that were suggested by the team throughout the week, concluding with progress updates at the end of the week.
 
 Full details on the week and how this was run is available here (add link). "
 Data-science:-A-syllabus.md,"A page to capture ideas for a “data science” syllabus, suitable for a course or a reference, that could be given to new joiners in REG. Very much a work in progress.
@@ -428,7 +428,7 @@ Data-science:-A-syllabus.md,"A page to capture ideas for a “data science” sy
 
 # Computer Science
 - BNF
-- Regular languages; context free grammars 
+- Regular languages; context free grammars
 - Parsers (and the Chomsky hierarchy)
 - Lambda calculus
 - Compilers
@@ -455,7 +455,7 @@ Data-science:-A-syllabus.md,"A page to capture ideas for a “data science” sy
 - Model selection/comparison
 - Model averaging
 - Model evaluation (validation, test, accuracy metrics)
-## When to use machine learning? 
+## When to use machine learning?
 - What is even a good question for machine learning?
 
 # Working with clients
@@ -505,7 +505,7 @@ Data-science:-A-syllabus.md,"A page to capture ideas for a “data science” sy
 # A compendium of problems
   - Record linkage
   - Clustering
-  - Interpolation 
+  - Interpolation
   - Anomaly detection
   - Survival analysis
   - Classification
@@ -519,7 +519,7 @@ Data-science:-A-syllabus.md,"A page to capture ideas for a “data science” sy
 - Support Vector Machine
 - Gaussian processes
 - Decision Trees
-- Random Forrest 
+- Random Forrest
 - Generalised linear models
 - Naive Bayes
 - Bayesian hierarchical models
@@ -533,7 +533,7 @@ Data-science:-A-syllabus.md,"A page to capture ideas for a “data science” sy
 ## Dimensionality reduction
 - Factor analysis/Principal component Analysis
 - Auto-encoder
-- Word2Vec 
+- Word2Vec
 
 ## Regularisation
 - LASSO regression (L1)
@@ -623,11 +623,11 @@ Accounts for work based tools and sites, as a reference for adding or tagging pe
   - ORCID: [0000-0002-4910-9205](https://orcid.org/0000-0002-4910-9205)
 * Radka Jersakova
   - Turing: rjersakova@turing.ac.uk
-  - Google: 
+  - Google:
   - GitHub: [@radka-j](https://github.com/radka-j)
-  - GitLab: 
+  - GitLab:
   - Turing Slack: @radka
-  - Keybase: 
+  - Keybase:
   - HackMD: [@radka-j](https://hackmd.io/@radka-j)
   - ORCID: [0000-0001-6846-71589](https://orcid.org/0000-0001-6846-7158)
 * Martin O'Reilly
@@ -642,11 +642,11 @@ Accounts for work based tools and sites, as a reference for adding or tagging pe
   - Twitter: [@martinoreilly](https://twitter.com/martinoreilly)
 * Federico Nanni
   - Turing: fnanni@turing.ac.uk
-  - Google: 
+  - Google:
   - GitHub: [@fedenanni](https://github.com/fedenanni)
-  - GitLab: 
+  - GitLab:
   - Turing Slack: @fedenanni
-  - Keybase: 
+  - Keybase:
   - HackMD: [@fedenanni](https://hackmd.io/@fedenanni)
   - ORCID: [0000-0003-2484-4331](https://orcid.org/0000-0003-2484-4331)
   - Twitter: [@f_nanni](https://twitter.com/f_nanni)
@@ -667,11 +667,11 @@ Accounts for work based tools and sites, as a reference for adding or tagging pe
   - ORCID: [0000-0003-3284-5342](https://orcid.org/0000-0003-3284-5342)"
 Timesheet-Codes.md,"# Our Approach to Timesheets
 
-1. Timesheets should match Forecast. 
+1. Timesheets should match Forecast.
 
    That is, if you are “100%” on projects, and have no service role activity, then your timesheet records 100% time on projects. For example, Town Hall meetings (which by the way is [standing role no. 617, Corporate Duties: Professional Activities not elsewhere specified](https://github.com/alan-turing-institute/Hut23/projects/8)) would in general not be recorded on the timesheet.
 
-2. However, if your other duties are taking up an inordinate amount of your time then you are very much at liberty to so record them in order to enable any conversations you would like to have about the issue. That is, the timesheet is also to help you push back if you would like. 
+2. However, if your other duties are taking up an inordinate amount of your time then you are very much at liberty to so record them in order to enable any conversations you would like to have about the issue. That is, the timesheet is also to help you push back if you would like.
 
 3. However, in addition, we should (again, if you like!) record any activity in support of a Programme Support Role, Turing Service Area, or REG Service Area (like training) even if you are not explicitly assigned to that role so that we can start to figure out how much time these things really take up.
 
@@ -685,16 +685,16 @@ This page describes where to find your project on Harvest. Every project on Harv
 
 ## My project is a project
 
-You should able find the project under the appropriate Client. 
+You should able find the project under the appropriate Client.
 
-The issue number corresponds to the project as listed in [the project tracker](https://github.com/alan-turing-institute/Hut23/projects/2) or possibly in [the 22 days project list](https://github.com/alan-turing-institute/Hut23/projects/4). (There may be other places but all projects have an issue number.) 
+The issue number corresponds to the project as listed in [the project tracker](https://github.com/alan-turing-institute/Hut23/projects/2) or possibly in [the 22 days project list](https://github.com/alan-turing-institute/Hut23/projects/4). (There may be other places but all projects have an issue number.)
 
 ## My project is Programme Support, Service Area, or other activity
 
 All Programme Support roles and Service Area roles are listed on the [Standing Roles kanban board](https://github.com/alan-turing-institute/Hut23/projects/8). The columns in that board each have their own Client on Harvest, where you should look for the particular role. Again, all the Harvest projects should be labelled with the appropriate issue number.
 
 The clients are:
-- Turing Programme Support 
+- Turing Programme Support
 - Turing Service Areas
 - REG Service Areas
 - Corporate Duties
@@ -707,7 +707,7 @@ The clients are:
 Buddy-System.md,"The buddy system page has moved to the REG handbook: https://alan-turing-institute.github.io/REG-handbook/docs/onboarding/buddy_system/
 
 Wherever you found the link to this page, please consider fixing that link to point to the handbook page above."
-Printing.md,"**See [this TopDesk page](https://turingcomplete.topdesk.net/tas/public/ssp/content/detail/service?unid=e0855f770c4d4f49850780d75a33b068) for info on printing at the institute.** 
+Printing.md,"**See [this TopDesk page](https://turingcomplete.topdesk.net/tas/public/ssp/content/detail/service?unid=e0855f770c4d4f49850780d75a33b068) for info on printing at the institute.**
 
 ## Tips
 
@@ -727,7 +727,7 @@ Print all pdfs in `temp`, stapling the lot, and add a small annotation saying ""
 To get additional print settings like these have a look at the instructions here:
 https://github.com/alan-turing-institute/knowledgebase/wiki/How-to-Print-in-A3-on-Mac
 
-The office also has a stationary cupboard with the usual office supplies. 
+The office also has a stationary cupboard with the usual office supplies.
 
 "
 The-New-Recharge-Reporting-Process-(May-2022).md,"This page documents the first run of the ""new"" process whereby REG's allocations to projects eventually end up in the Finance system. There are three steps (and several sub-steps that are not shown):
@@ -740,12 +740,12 @@ The-New-Recharge-Reporting-Process-(May-2022).md,"This page documents the first 
 
 ## 1. Recharge _pro forma_
 
-1. Oliver created [`regolith`](https://github.com/alan-turing-institute/regolith), a Racket script for producing a monthly summary from Forecast. 
+1. Oliver created [`regolith`](https://github.com/alan-turing-institute/regolith), a Racket script for producing a monthly summary from Forecast.
 
 2. James G used `regolith` to manually produce a _pro forma_ for April. That involved:
    - deleting all months other than April
    - deleting rows with no allocation
-   - adding columns for PMU sign-off, proposed edits, and REG sign-off for the edits 
+   - adding columns for PMU sign-off, proposed edits, and REG sign-off for the edits
    - adding an instructions sheet
 
 3. James G asked Catherine L who from PMU should be REG's working contact.
@@ -787,12 +787,12 @@ Our goal is to work within the wider HR policy and guidance (see [2022-23 HR per
     -  2: Meets expected level
     -  3: Exceeds expected level
 - The most important purpose of the appraisal discussion and scoring is as a tool to look back on the year and reflect on what went well, what went not so well and what we would like to change or focus on in the coming year. However, there is often some tension when scoring objectives and qualities due to concerns about the impact of the overall score on the recommendation for a progression pay rise or bonus.
-- We will be asking REG line managers to make an overall judgement on whether each of their reports is performing and developing broadly as expected given their experience level, considering the ""year in review"" appraisal discussion they have with each report and, where useful, discussions with other team members who have insight into their work over the year. 
+- We will be asking REG line managers to make an overall judgement on whether each of their reports is performing and developing broadly as expected given their experience level, considering the ""year in review"" appraisal discussion they have with each report and, where useful, discussions with other team members who have insight into their work over the year.
 - For most people, the answer will be that they have been progressing broadly as expected for their experience level and their line manager will recommend a ""small"" progression pay rise.
 - During last year's appraisal process everyone's pay was reviewed to ensure that that Principle 1 held after applying the progression pay rises. Therefore, we are as confident as we can be that everyone started the appraisal year performing and developing as expected for their position in their pay band.
 - If, during the course of the year, there has been a substantive positive change in the person's ability to perform the role which means that they are no longer aligned with their peers at an equivalent level, then a ""medium"" (or ""large"") pay rise _might_ be warranted.
 - If a person's performance and development does not reflect a substantive and sustained increase that justifies an additional pay rise to adjust their alignment with their peers, but there is a specific one-off contribution that significantly exceeds the expectations for their experience level, a one-off bonus might be warranted.
-    - >**HR guidance:** The purpose of recognition awards is to recognise a piece of work or specific contribution from the past performance year which has added value to the team and wider organisation. 
+    - >**HR guidance:** The purpose of recognition awards is to recognise a piece of work or specific contribution from the past performance year which has added value to the team and wider organisation.
 - If, during the course of the year, a person has not being performing or developing as expected, no progression pay rise will be awarded.
 - Team members who are at the top of their pay band are not eligible for a progression pay rise, but they are eligible for a bonus if consistently performing at a high level.
     - >**HR guidance:** the employee is at the top of the banding for the role but consistently performs at a high level _(one of the example reasons for recommending a recognition award)_
@@ -820,26 +820,26 @@ Criteria-for-project-appraisal.md,"_aligned with Turing 2.0 and the Turing Chart
 ## 1. Impact
 _Make a positive change in the world_
 
-The Institute works with an impact-first philosophy, focusing on research that is likely to make a positive change in the world. Impact in this context is understood broadly, from increased knowledge and understanding of the way we see and operate in the world, to increased efficiency resulting from the uptake of new tools and technologies. Impact also drives the way our project delivery is managed. In assessing project proposals requiring data scientist or research engineer effort, we will prioritise approaches and methodologies we are familiar with and confident that they can produce impactful results. Each project will be assigned a score based on the impact opportunities it presents and the likelihood of realising them. 
+The Institute works with an impact-first philosophy, focusing on research that is likely to make a positive change in the world. Impact in this context is understood broadly, from increased knowledge and understanding of the way we see and operate in the world, to increased efficiency resulting from the uptake of new tools and technologies. Impact also drives the way our project delivery is managed. In assessing project proposals requiring data scientist or research engineer effort, we will prioritise approaches and methodologies we are familiar with and confident that they can produce impactful results. Each project will be assigned a score based on the impact opportunities it presents and the likelihood of realising them.
 
-## 2. Diversity 
+## 2. Diversity
 _Reflect and celebrate the diverse nature of the world_
 
-In order to be able to change the world for the better, our research must be conducted by researchers from diverse academic, social, ethnical, racial backgrounds, and using a variety of theoretical frameworks, methodologies and categories of data. Diversity breeds creativity and enables discovery and innovation to flourish. This approach is matched at project delivery level by prioritizing projects building cross-cultural and cross-disciplinary collaborations or bringing partner institutions together. Project proposals involving purely theoretical research with academics, or consultancy-type work with commercial partners, or not welcoming external contributions from outside the REG, are unlikely to score high in the diversity assessment. Conversely, projects encouraging collaboration with culturally diverse academic and non-academic teams from beyond the Turing are likely to get higher marks.  
+In order to be able to change the world for the better, our research must be conducted by researchers from diverse academic, social, ethnical, racial backgrounds, and using a variety of theoretical frameworks, methodologies and categories of data. Diversity breeds creativity and enables discovery and innovation to flourish. This approach is matched at project delivery level by prioritizing projects building cross-cultural and cross-disciplinary collaborations or bringing partner institutions together. Project proposals involving purely theoretical research with academics, or consultancy-type work with commercial partners, or not welcoming external contributions from outside the REG, are unlikely to score high in the diversity assessment. Conversely, projects encouraging collaboration with culturally diverse academic and non-academic teams from beyond the Turing are likely to get higher marks.
 
-## 3. Pioneering 
+## 3. Pioneering
 _Explore new ways of tackling research, talent and approaches_
 
-Turing research is solidly rooted in academic excellence, scientific evidence and trusted best practice. At the same time the Institute works creatively, encouraging new ideas and unprecedented approaches to pursue scientific excellence in addressing critical global challenges. Cross-pollination of ideas and practices leading to innovative results is encouraged in collaborative projects with academic, commercial and third sector delivery partners. Project briefs will need to specify to what extent the proposed approaches or methodologies are innovative in the context of similar research being undertaken elsewhere, and a pioneering score will be assigned to each of them. 
+Turing research is solidly rooted in academic excellence, scientific evidence and trusted best practice. At the same time the Institute works creatively, encouraging new ideas and unprecedented approaches to pursue scientific excellence in addressing critical global challenges. Cross-pollination of ideas and practices leading to innovative results is encouraged in collaborative projects with academic, commercial and third sector delivery partners. Project briefs will need to specify to what extent the proposed approaches or methodologies are innovative in the context of similar research being undertaken elsewhere, and a pioneering score will be assigned to each of them.
 
-## 4. Openness 
+## 4. Openness
 _Share outputs and methodologies as openly as possible_
 
-To ensure that our collaborative research reaches an audience as wide and diverse as possible, we believe both knowledge and the path to reaching it should be shared. Openness by default facilitates both research and software development collaboration. This extends the impact of our projects beyond the Institute, allowing outputs to be built upon by others and repurposed across domains. Whenever possible, we expect the projects we prioritise to undertake reproducible research, and the software jointly developed with us to be built and released as open source. Project proposals with realistic plans on meeting this priority will get high marks in the openness score. 
+To ensure that our collaborative research reaches an audience as wide and diverse as possible, we believe both knowledge and the path to reaching it should be shared. Openness by default facilitates both research and software development collaboration. This extends the impact of our projects beyond the Institute, allowing outputs to be built upon by others and repurposed across domains. Whenever possible, we expect the projects we prioritise to undertake reproducible research, and the software jointly developed with us to be built and released as open source. Project proposals with realistic plans on meeting this priority will get high marks in the openness score.
 
 
-## 5. Alignment with Turing 2.0 
-_Prioritise activities reflecting Turing 2.0 guiding principles_ 
+## 5. Alignment with Turing 2.0
+_Prioritise activities reflecting Turing 2.0 guiding principles_
 
 [Turing 2.0](https://mathison.turing.ac.uk/Interact/Pages/Content/Document.aspx?id=2093) represents the next phase of the Institute – delivering on an ambition to be a truly national institute for data science and AI. Achieving this will mean operating differently to how we do now and having a clearer focus to guide the work we undertake, across science and innovation, skills and engagement. In consultation with the Board of Trustees and Institute’s Research Leadership and Turing Management team, a set of initial [guiding principles](https://mathison.turing.ac.uk/Utilities/Uploads/Handler/Uploader.ashx?area=composer&filename=Turing+2.0+principles+and+future+activities+March+2022.pdf&fileguid=a8f5af29-20fd-4d25-bdbc-3fa42e561fc9) that will shape Turing 2.0 have been formulated."
 Salary-bands-for-all-REG-Roles.md,"## Current
@@ -878,8 +878,8 @@ Effective: 01 April 2022 - 31 March 2023; Cost of living award from previous yea
 Effective: 01 April 2021 - 31 March 2022; Cost of living award from previous year: 1.5%
 
 **Note:** In 2021-22 REG salaries were only partially aligned with the HERA bands below.
-Junior and Standard were fully aligned but we did not yet have the Band 5 Lead role defined and Principals had not yet been formally mapped into Band 6. 
-Senior salaries spanned all of Band 4 and some of Band 5 due to the effect of cost of living increases from previous years on salaries within the previous REG-specific Senior salary band of £45,0000 - £60,000 (which had not had its minimum and maximum salaries adjusted in line with the cost of living increases applied to individual salaries). 
+Junior and Standard were fully aligned but we did not yet have the Band 5 Lead role defined and Principals had not yet been formally mapped into Band 6.
+Senior salaries spanned all of Band 4 and some of Band 5 due to the effect of cost of living increases from previous years on salaries within the previous REG-specific Senior salary band of £45,0000 - £60,000 (which had not had its minimum and maximum salaries adjusted in line with the cost of living increases applied to individual salaries).
 
 | Role      | Band | Role Salary Min | Role Salary Max | Bottom third baseline | Middle third baseline | Top third baseline |
 |-----------|:----:|:---------------:|:---------------:|:---------------------:|:---------------------:|:------------------:|
@@ -984,7 +984,7 @@ REG-line-management.md,"Line management in REG is a little different than in oth
 
 ## How line management duties are assigned
 
-At (current) senior level, people are expected to line manage 1-2 standards. This will probably change with the new lead role (see the [REG role matrix](https://github.com/alan-turing-institute/Hut23/blob/master/development/REG-Roles-Matrix.md#line-managementmentoring)). Currently, if seniors are willing to line manage more than 2 people, they should inform the recruitment lead (currently Pam). 
+At (current) senior level, people are expected to line manage 1-2 standards. This will probably change with the new lead role (see the [REG role matrix](https://github.com/alan-turing-institute/Hut23/blob/master/development/REG-Roles-Matrix.md#line-managementmentoring)). Currently, if seniors are willing to line manage more than 2 people, they should inform the recruitment lead (currently Pam).
 
 At standard level, opportunities for line management and project mentoring of junior members and interns are offered during the year. To assign such duties, we follow whenever possible time spent at standard level in REG.
 
@@ -1023,13 +1023,13 @@ Later in the first week you might want to go through some of the more technical 
 - Probation formalities"
 Leavers:-Start-here.md,"## What to do when you leave
 
-This page is for information on what you need to do if you leave the Turing. 
+This page is for information on what you need to do if you leave the Turing.
 
 ## Laptop Return
 
 ## Badges and ID
 
-## WFH Equipment 
+## WFH Equipment
 
 "
 Organising-events.md,"_This guide was put together after organising several workshop/teaching events.
@@ -1142,7 +1142,7 @@ If you receive an email to deal with a TopDesk request (e.g. `The following C123
 1. Adding Turing people to the Github organisation: this is the most common request and one for
    whoever is part of the Researcher Tool Management Service Role.
 
-2. Requests clearly not for REG: see whether you can find details on Turing Complete. For example, we received a ticket with the ethics approval for a project, detailed in [this TuringComplete page](https://turingcomplete.topdesk.net/tas/public/ssp/content/detail/service?unid=cb5e35246f474d1f90abae8ea262338c), which lists the Ethics Advisory Group as contact point. If there is an existing appropriate 
+2. Requests clearly not for REG: see whether you can find details on Turing Complete. For example, we received a ticket with the ethics approval for a project, detailed in [this TuringComplete page](https://turingcomplete.topdesk.net/tas/public/ssp/content/detail/service?unid=cb5e35246f474d1f90abae8ea262338c), which lists the Ethics Advisory Group as contact point. If there is an existing appropriate
 group / team within TopDesk then please allocate to the group rather than a specific individual.
 
 ## Steps to follow
@@ -1270,10 +1270,10 @@ For reference the cost of living increases for previous years are listed below, 
 |:---:|:---:|:---:|:---:|:---:|:---:|:---|
 | 2023 | 5.0% | [8.8%](https://www.ons.gov.uk/economy/inflationandpriceindices/bulletins/consumerpriceinflation/january2023) | [9.2%](https://www.ons.gov.uk/economy/inflationandpriceindices/bulletins/consumerpriceinflation/december2022) | 20.74% | 22.56% | This is the first year the annual CoL increase has not matched or exceeded CPIH. [Mathison post from Jon Atkins](https://mathison.turing.ac.uk/page/2833) |
 | 2022 | 5.0% | [4.9%](https://www.ons.gov.uk/economy/inflationandpriceindices/bulletins/consumerpriceinflation/january2022) | [4.8%](https://www.ons.gov.uk/economy/inflationandpriceindices/bulletins/consumerpriceinflation/december2021) | 14.99% | 12.65% | Additional £1,000 one-off cost of living support payment made to all staff in bands 1-3 to help offset the disproportionate effect of inflation on those on lower salaries. |
-| 2021 | 1.5% | [0.9%](https://www.ons.gov.uk/economy/inflationandpriceindices/bulletins/consumerpriceinflation/january2021) | [0.8%](https://www.ons.gov.uk/economy/inflationandpriceindices/bulletins/consumerpriceinflation/december2020) | 9.52% | 7.39% | | 
+| 2021 | 1.5% | [0.9%](https://www.ons.gov.uk/economy/inflationandpriceindices/bulletins/consumerpriceinflation/january2021) | [0.8%](https://www.ons.gov.uk/economy/inflationandpriceindices/bulletins/consumerpriceinflation/december2020) | 9.52% | 7.39% | |
 | 2020 | 3.0% | [1.8%](https://www.ons.gov.uk/economy/inflationandpriceindices/bulletins/consumerpriceinflation/january2020) | [ 1.4%](https://www.ons.gov.uk/economy/inflationandpriceindices/bulletins/consumerpriceinflation/december2019) | 7.89% | 6.43% | |
-| 2019 | 2.0% | [1.8%](https://www.ons.gov.uk/economy/inflationandpriceindices/bulletins/consumerpriceinflation/january2019) | [2.0%](https://www.ons.gov.uk/economy/inflationandpriceindices/bulletins/consumerpriceinflation/december2018) | 4.75% | 4.55% | | 
-| 2018 | 2.7% | [2.7%](https://www.ons.gov.uk/economy/inflationandpriceindices/bulletins/consumerpriceinflation/january2018) |[2.7%](https://www.ons.gov.uk/economy/inflationandpriceindices/bulletins/consumerpriceinflation/december2017) | 2.70% | 2.70% | | 
+| 2019 | 2.0% | [1.8%](https://www.ons.gov.uk/economy/inflationandpriceindices/bulletins/consumerpriceinflation/january2019) | [2.0%](https://www.ons.gov.uk/economy/inflationandpriceindices/bulletins/consumerpriceinflation/december2018) | 4.75% | 4.55% | |
+| 2018 | 2.7% | [2.7%](https://www.ons.gov.uk/economy/inflationandpriceindices/bulletins/consumerpriceinflation/january2018) |[2.7%](https://www.ons.gov.uk/economy/inflationandpriceindices/bulletins/consumerpriceinflation/december2017) | 2.70% | 2.70% | |
 
 ## Progression award
 On 01 July each year, progression awards are made in addition to the cost of living award made each April. These progression awards depend on the outcome of the annual appraisal process, which takes place in May/June of each year.  See [[Annual appraisals]] for more details of this process.
@@ -1296,7 +1296,7 @@ On 01 July each year, progression awards are made in addition to the cost of liv
 | :---: | :---: | :---: | --- |
 | 2023 | TBC | TBC | |
 | 2022 | 3.0% | 8.44% | |
-| 2021 | 2.0% | 3.53% | | 
+| 2021 | 2.0% | 3.53% | |
 
 _*Cost of Living and Progression Award increases are compounded rather than added._
 
@@ -1311,15 +1311,15 @@ https://alan-turing-institute.github.io/REG-handbook/docs/onboarding/new_joiners
 Wherever you found a link to this page, it should probably be replaced with a link to one of the above pages."
 Home.md,"# The Research Engineering Group Wiki
 
-A repository of **knowledge helpful to the Hut 23 team** (aka, the Research Engineering Group or REG) including howtos and instructions for new joiners. 
+A repository of **knowledge helpful to the Hut 23 team** (aka, the Research Engineering Group or REG) including howtos and instructions for new joiners.
 
 **This wiki is visible to all members of the Everyone team** in the alan-turing-institute
 organisation. (But some links point to documents that are private to REG.)
 
 The [original wiki](https://github.com/alan-turing-institute/Hut23/wiki/Home) has REG-private information.
 
-**This is a living document** 
-- If you see anything that's out of date, please fix it. 
+**This is a living document**
+- If you see anything that's out of date, please fix it.
 - If you would like to add something, the [[Knowledge Management Guidelines|Knowledge-management]] should help you decide whether it belongs in the wiki or somewhere else.
 
 ## Working in Hut 23
@@ -1421,8 +1421,8 @@ Hut23-group-emails.md,"- **hut23@turing.ac.uk** - Includes everyone in Research 
 
 - **reg-senior-staff@turing.ac.uk** - All members of REG that are Senior or above
   - Admins: Martin + Principals
-  - *This is a Distribution List*. To add/remove members: go into web version of Outlook, click on Settings (gear icon in top right corner), type ""Distribution groups"" into the search bar and click on the corresponding link. This should take you into an overview of distribution lists you're a member of and owner of. 
-- **reg-principals@turing.ac.uk** - REG and ARC principals or above. 
+  - *This is a Distribution List*. To add/remove members: go into web version of Outlook, click on Settings (gear icon in top right corner), type ""Distribution groups"" into the search bar and click on the corresponding link. This should take you into an overview of distribution lists you're a member of and owner of.
+- **reg-principals@turing.ac.uk** - REG and ARC principals or above.
   - Admin: Martin
 - **HUT23-ALUMNI@jiscmail.ac.uk** - Alumni mailing list
 
@@ -1437,11 +1437,11 @@ Managing-the-project-process.md,"## Guides on managing projects
 
 ### Finding people for projects
 
-1. If you are a Programme Lead: please keep track of which new projects are coming up in the next 6 months, and ensure there is a Senior REG person assigned to these. To do so, badger the “staffing coordinator” (currently James G at 10 November 2021). 
+1. If you are a Programme Lead: please keep track of which new projects are coming up in the next 6 months, and ensure there is a Senior REG person assigned to these. To do so, badger the “staffing coordinator” (currently James G at 10 November 2021).
 
 2. Project Leads (that is, the most senior REG person on the project): please ensure that your project is resourced. This means ensuring that there are people to start. It also means checking the total “budget” for the project and making sure we will meet it. To do so, badger the staffing coordinator.
 
-Note that (2) is not entirely straightforward because projects are no longer staffed in integer multiples of 0.5 people for a fixed number of months. Sometimes we allocated, say, 0.8 people for a while, which means that either the project run-rate will need to increase or the project duration extended. 
+Note that (2) is not entirely straightforward because projects are no longer staffed in integer multiples of 0.5 people for a fixed number of months. Sometimes we allocated, say, 0.8 people for a while, which means that either the project run-rate will need to increase or the project duration extended.
 
 ### Problems and issues
 
@@ -1501,8 +1501,8 @@ TODO: This table is not really adequate, and a proper repository and citations l
 | workshop | 2022-09-22 | Turing Data Stories: try your hand at writing your own data story! | Camila Rangel Smith, Kevin Xu, Sam Van Stroud, William Finnegan, David Beavan, Helen Duncan, Luke Hare | SeptembRSE | https://septembrse.github.io/#/event/S1007 | | |
 | pre-print | 2021-09-28 | Interoperability of statistical models in pandemic preparedness: principles and reality | Nicholson, G et al. | arXiv | https://arxiv.org/abs/2109.13730 | |
 | article | 2021-12-31 | Improving local prevalence estimates of SARS-CoV-2 infections using a causal debiasing framework | Nicholson, G; Lehmann, BCL; Padellini, T; Pouwels, KB; Jersakova, R et al.| Nature Microbiology | https://www.nature.com/articles/s41564-021-01029-0 | |
-| article | 2022-02-13 | Time varying association between deprivation, ethnicity and SARS-CoV-2 infections in England: A population-based ecological study | Padellini, T; Jersakova, R; Diggle, PJ et al. | The Lancet Regional Health Europe | https://www.thelancet.com/journals/lanepe/article/PIIS2666-7762(22)00015-1/fulltext | | https://doi.org/10.1016/j.lanepe.2022.100322| 
-| article | 2022-07-18 | Optimizing for Equity: Sensor Coverage, Networks, and the Responsive City | Robinson, C; Franklin, R. S.; Roberts, J. | Annals of the American Association of Geographers | https://www.tandfonline.com/doi/full/10.1080/24694452.2022.2077169 | | https://doi.org/10.1080/24694452.2022.2077169 | 
+| article | 2022-02-13 | Time varying association between deprivation, ethnicity and SARS-CoV-2 infections in England: A population-based ecological study | Padellini, T; Jersakova, R; Diggle, PJ et al. | The Lancet Regional Health Europe | https://www.thelancet.com/journals/lanepe/article/PIIS2666-7762(22)00015-1/fulltext | | https://doi.org/10.1016/j.lanepe.2022.100322|
+| article | 2022-07-18 | Optimizing for Equity: Sensor Coverage, Networks, and the Responsive City | Robinson, C; Franklin, R. S.; Roberts, J. | Annals of the American Association of Geographers | https://www.tandfonline.com/doi/full/10.1080/24694452.2022.2077169 | | https://doi.org/10.1080/24694452.2022.2077169 |
 | blog post | 2022-08-04 | Turing Researcher Spotlight - David Beavan | Beavan, D. | Turing blog | https://www.turing.ac.uk/people/spotlights/david-beavan | | |
 | podcast | 2022-08-05 | The Turing Podcast: Living with Machines | Beavan, D.; Hosseini, K. | Turing Podcast | https://turing.podbean.com/e/ttp-lwm/ | | |
 | article | 2022-08-19 | An American tries to join his British newsroom’s Fantasy Premier League | [Oliver Roeder](https://www.ft.com/oliver-roeder) (ft. Barlow, N; Roberts, J.) | Financial Times | https://enterprise-sharing.ft.com/redeem/08da69a6-820a-4e15-ba1d-3d0bdeb1129c |  | | |
@@ -1559,7 +1559,7 @@ Below is a list of useful REG/Turing links for new joiners. Please edit/add if a
 
 ## Turing Admin
 
-| Title | Purpose| 
+| Title | Purpose|
 | ----- |:--------|
 | [Mathison](https://mathison.turing.ac.uk/) | <ul><li>Internal Turing Communications</li><li>FAQs (just search, you should find everything you need to know)</li></ul>|
 | [Cezanne](https://w3.cezanneondemand.com/CezanneOnDemand/Account/LogIn?ReturnUrl=~%2F)  | HR resources (Logging annual leave/sickness, team calendar views etc.). |
@@ -1569,20 +1569,20 @@ Below is a list of useful REG/Turing links for new joiners. Please edit/add if a
 
 
 
-## REG documentation  
+## REG documentation
 
 | Title | Purpose|
 | --------------------------- |:---|
 | [REG   wiki (ATI level)](https://github.com/alan-turing-institute/research-engineering-group/wiki)|Wiki with information about/for the team. Accessible by all at the Institute.  |
 | [REG   wiki (private)](https://github.com/alan-turing-institute/Hut23/wiki/) | Private REG wiki (contains confidential/private info). Requires Github access through Hut23 team. |
 | [REG   handbook](https://alan-turing-institute.github.io/REG-handbook/docs/regular_events/) | Contains all the information for new starters (how to set up laptops, events etc.). |
-| [REG meeting notes](https://github.com/alan-turing-institute/Hut23/tree/master/team-meetings) | This is where the minutes for past REG monthly meetings go. | 
+| [REG meeting notes](https://github.com/alan-turing-institute/Hut23/tree/master/team-meetings) | This is where the minutes for past REG monthly meetings go. |
 
 
-## REG projects/work 
+## REG projects/work
 
 | Title | Purpose|
-| --------------------------- |:---| 
+| --------------------------- |:---|
 | [Hut23 Github](https://github.com/alan-turing-institute/hut23) | Repos operated by the team.  |
 | [Project Tracker](https://github.com/alan-turing-institute/Hut23/projects/2)             | Issues for each ongoing project. Here you can see what is planned. The team   operate by a 👍/👎/😀 policy in the 'finding people' column so you can let others know how you would feel   working on a particular project. |
 | [Forecast](https://forecastapp.com/974183/schedule/projects) | Place to view your current and upcoming projects. |
@@ -1592,7 +1592,7 @@ Below is a list of useful REG/Turing links for new joiners. Please edit/add if a
 | [22 days](https://github.com/alan-turing-institute/Hut23/wiki/How-to-use-your-22-days) | As a REG team member you are entitled to spend 22 days per year (i.e. 10% of your time) on personal development/projects. These are meant to be things that you think are cool. Some ideas [here](https://github.com/alan-turing-institute/Hut23/projects/4). |
 
 
-## New starter projects 
+## New starter projects
 
 | Title | Purpose|
 | --------------------------- |:---|
@@ -1600,7 +1600,7 @@ Below is a list of useful REG/Turing links for new joiners. Please edit/add if a
 | [First   issues on GH](https://github.com/search?o=desc&p=1&q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22+org%3Aalan-turing-institute+updated%3A%3E2022-01-01&s=created&type=Issues) |  Nice way to find small projects to work on. |
 | [Turing Data Stories (TDS)](https://www.turing.ac.uk/research/research-projects/turing-data-stories)   | Would recommend for new starters if looking for small projects:  <ul><li>[Github issues](https://github.com/alan-turing-institute/TuringDataStories/projects/3)</li><li>[Published stories](https://alan-turing-institute.github.io/TuringDataStories-fastpages/)</li> |
 
-## REG comms  
+## REG comms
 
 | Title | Purpose|
 | --------------------------- |:---|
@@ -1612,20 +1612,20 @@ Below is a list of useful REG/Turing links for new joiners. Please edit/add if a
 
 | Useful Channels     | Purpose   | Workspaces                               |
 | ------------------- |:-------- | ------------------ |
-| [General](https://alan-turing-institute.slack.com/archives/C17H5FAUV) | The general Turing channel | [ATI](alan-turing-institute.slack.com) | 
+| [General](https://alan-turing-institute.slack.com/archives/C17H5FAUV) | The general Turing channel | [ATI](alan-turing-institute.slack.com) |
 | [Hut23](https://alan-turing-institute.slack.com/archives/G3SFHB0E6)               | General REG communications (private channel)           | [ATI](alan-turing-institute.slack.com)   |
 | [TPS](https://alan-turing-institute.slack.com/archives/CH2TBRUQH)                 | Tools practices and systems             | [ATI](alan-turing-institute.slack.com)   |
 | [interesting-events](https://alan-turing-institute.slack.com/archives/C3N3RSW10)  | Upcoming events which may be of interest | [ATI](alan-turing-institute.slack.com)   |
 | [Turing Data Stories](https://turingdatastories.slack.com/archives/C01CDC3MY9W) | Separate work space for TDS discussions | [TDS](turingdatastories.slack.com)       |
 | [The Turing Way](https://theturingway.slack.com/archives/C014LRAK48J)      |  Separate workspace for [the Turing Way](https://the-turing-way.netlify.app/welcome)   | [The Turing Way](theturingway.slack.com) |
-    
+
 ## Calendar and Regular Events
-    
+
 | Title | Purpose|
-| --------------------------- |:---|    
+| --------------------------- |:---|
 | [REG Tech talks](https://github.com/alan-turing-institute/DataScienceSkills/wiki/Lunchtime-Tech-Talks)  | Every Tuesday lunchtime REG run tech talks. This link shows the upcoming topics. |
 | [Previous tech talks](https://github.com/alan-turing-institute/DataScienceSkills/wiki/Previous-Tech-Talks)        | Info on previous tech talks. |
-| [Shared REG calendar](https://github.com/alan-turing-institute/research-engineering-group/wiki/Shared-REG-Calendar) | How to create and view shared events in the REG calendar. | 
+| [Shared REG calendar](https://github.com/alan-turing-institute/research-engineering-group/wiki/Shared-REG-Calendar) | How to create and view shared events in the REG calendar. |
 "
 Equipment.md,"## Getting a New Computer
 
@@ -1663,12 +1663,12 @@ REG-specific-Finance-codes.md,"This page is to document the ""Finance codes"" th
 - `R-RSE-004`: RCP
 
 "
-Equipment-Queries.md,"### Standard Equipment 
+Equipment-Queries.md,"### Standard Equipment
 
 - You should have received a MacBook Pro either before or on your first day, contact your line manager urgently if this hasn't happened.
     - Once your IT credentials are set up (see point 2) In addition to the standard MacBook Pro you can request peripherals such as a monitor, keyboard and mouse [here](https://turingcomplete.topdesk.net/tas/public/ssp/content/serviceflow?unid=eee3b659bb3e4ab5aaed67f807ebd8c3&openedFromService=true).
 
-### Getting a New Computer 
+### Getting a New Computer
 
 This is a list of the steps I, James G, took when I got a new laptop from IT.
 
@@ -1692,15 +1692,15 @@ This is a list of the steps I, James G, took when I got a new laptop from IT.
 
 - [ ] Install Emacs additions as I learn that I need them ...
 
-  
-### Additional Equipment  
+
+### Additional Equipment
 
  -- what there is and what you would like?
 
- 
+
 - If there are health and safety reasons why you would want equipment that differs from the Apple keyboard/mouse then contact HR directly, there is a separate health and safety budget for such things.
 
-### Office Furniture 
+### Office Furniture
 
 - The Turing also offers furniture for home working such as a desk or a chair. At the time of writing (Dec 2021) the budget per person is £150 for a chair and £150 for a desk. You can pick your own, the usual routes are through Amazon or [Office Furniture Online](https://www.officefurnitureonline.co.uk/). Anything more than £150 and they will have to purchase themselves then claim back up to £150 via certify. The official process is to assess your home-working set up via a [workstation self-assessment](https://turingcomplete.topdesk.net/tas/public/ssp/content/detail/service?unid=6100f533868f4165bcadd1b5f2050a08) form, but you can also just email facilities (facilities@turing.ac.uk) and be nice."
 The-REGistry.md,"# The REGistry
@@ -1887,13 +1887,13 @@ Lightning-Talks:-History-of-Talks.md,"A list of previous Project Lightning talks
 "
 Knowledge-Sharing.md,"# Knowledge Sharing
 
-## List of REG members and topics they are happy to be contacted about 
+## List of REG members and topics they are happy to be contacted about
 
-We all have different overlapping skills but we don't do that well at learning from one another. 
+We all have different overlapping skills but we don't do that well at learning from one another.
 
-It is more fun and fulfilling to learn together rather than plough along in isolation. This page is a catalogue of members who would be happy to be grabbed for a chat on any of the listed topics. 
+It is more fun and fulfilling to learn together rather than plough along in isolation. This page is a catalogue of members who would be happy to be grabbed for a chat on any of the listed topics.
 
-Please, reach out on slack to anyone in the table if you're struggling with something, and perhaps even add yourself! 
+Please, reach out on slack to anyone in the table if you're struggling with something, and perhaps even add yourself!
 
 (if you want a wider net, you can post on #askaway, or #hut23).
 
@@ -1909,8 +1909,8 @@ Please, reach out on slack to anyone in the table if you're struggling with some
 | Katriona Goldmann | Python/R + packaging, Shiny, Omics (genomics/transcriptomics/proteomics), basic ML, and I am in the process of developing edge AI/tinyML so happy to discuss |
 | Markus Hauru | Comfy with: linear algebra, tensor networks, tensor processing units, Python, vim; Know something: Julia, Javascript and other front end dev, ReactiveX, postgresql, Jax, optimization algorithms
 
-## Additional links 
-See: 
+## Additional links
+See:
 https://alan-turing-institute.github.io/REG-handbook/docs/how_we_work/knowledge_sharing/
 
 
@@ -1919,7 +1919,7 @@ Team-reporting-structure.md,"## Upcoming new starters
 
 We should avoid new starters being line managed by either of the REG leads on their first projects. This ensures they have an independent person to discuss any challenges / issues with their projects and, in these remote working times, also increases the number of team members they work together with on a regular basis.
 
-| Start date | Name | Role | Line manager | Project 1 | Project 2 | 
+| Start date | Name | Role | Line manager | Project 1 | Project 2 |
 | --- | --- | --- | --- | --- | --- |
 | 1 Apr 23 | [Carlos Gavidia-Calderon](https://github.com/alan-turing-institute/Hut23/issues/1290) |Standard RSE | Radka | |
 | 3 Apr 23 | [Nathan Simpson](https://github.com/alan-turing-institute/Hut23/issues/1291) | Standard RSE | May | |
@@ -1942,7 +1942,7 @@ Pool of future line managers:
               - Olajumoke Olatunji (intern)
       - Radka Jersakova (Senior RDS)
           - Pamela Wochner (RDS)
-          - Carlos Gavidia-Calderon (RSE) 
+          - Carlos Gavidia-Calderon (RSE)
       - Tim Hobson (Lead RSE)
           - Helen Duncan (RSE)
               - Rosie Wood (RDS)
@@ -2157,7 +2157,7 @@ Below captured from: https://hackmd.io/3dA_RWneT2WbMaSnRO_kDA
 * Join us in the discussion
 * Help us with notes
 
-## :arrow_right: Want to join us for more and write up, scroll to bottom and put your name down plz :arrow_left: 
+## :arrow_right: Want to join us for more and write up, scroll to bottom and put your name down plz :arrow_left:
 
 ## Promo
 
@@ -2200,7 +2200,7 @@ Could meeting schedule support 1 week on, one week off REG working, if desired?
 
 Weekly meeting a la Safe Haven, with round-table discussion and making sure all issues are visitied and updated.
 
-Does it work well having one planning meeting (project board, scrum style) and then other ~~meetings~~ co-working sessions to do the creative work, but with limited membership to those who are stakeholders or responsible for the doings. 
+Does it work well having one planning meeting (project board, scrum style) and then other ~~meetings~~ co-working sessions to do the creative work, but with limited membership to those who are stakeholders or responsible for the doings.
 
 ## Agile working
 
@@ -2281,7 +2281,7 @@ Since this was written the bulk of the hut23 wiki has been moved here, to the re
 
 ### General rules
 
-1. Everything that is intended to be shared should be in one of the places above. 
+1. Everything that is intended to be shared should be in one of the places above.
     - Eg, Not HackMD. (A HackMD document should be preserved at the end of the collaboration session, and transferred to one of the other places)
     - Not Slack. (Slack should be for informal conversations)
 2. Information intended for formal, external consumption (beyond REG) should either be on our public website or on Topdesk. Put in on Topdesk only if it should not be seen by the public.
@@ -2289,7 +2289,7 @@ Since this was written the bulk of the hut23 wiki has been moved here, to the re
    - Talk to Tomas re: Topdesk
 3. Information on a wiki should be findable by following links starting at the Home page of that wiki. The Home page should be rather like an annotated table of contents.
     - Everyone can edit the wiki and the information should be kept up to date.
-4. Information should not go in a repository unless it fits the directory structure. If a new directory structure is required, that needs some thought. The directory structure should be, so far as possible, ""mutually exclusive and completely exhaustive"" (MECE). 
+4. Information should not go in a repository unless it fits the directory structure. If a new directory structure is required, that needs some thought. The directory structure should be, so far as possible, ""mutually exclusive and completely exhaustive"" (MECE).
 
 
 #### How to share information with the team
@@ -2301,11 +2301,11 @@ Does it fit into the Hut23 repo directory structure?
 - No
     1. Put it in the wiki
     2. Make sure is linked from the first page of the wiki/a related page on the wiki
-    
+
 
 ### Hut23 repo vs. Hut23 wiki
 
-The Hut23 wiki is like a ""handbook"" for Hut23 -- it provides guidance, help, and links to reference sources. It is a **living document**. The Hut23 repo is a repository of documents. 
+The Hut23 wiki is like a ""handbook"" for Hut23 -- it provides guidance, help, and links to reference sources. It is a **living document**. The Hut23 repo is a repository of documents.
 
 The wiki is the primary way we find information that is not ""operational"" or ""lots of examples of a particular category"". The repo has a ""standardised structure of the repo"".
 
@@ -2315,15 +2315,15 @@ Examples:
 
 ### Hut23 wiki vs. other wiki
 
-Use a GitHub wiki (under Alan Turing Institute) for things you want to share within the Insitute that admit some collaboration by others within the Insitute. 
+Use a GitHub wiki (under Alan Turing Institute) for things you want to share within the Insitute that admit some collaboration by others within the Insitute.
     -eg, The ""Space Working Group"" wiki
-    
+
 Ideally, have a link off the Institute's pinned (notice-board).
 
 ### Hut23 repo vs REG OneDrive
 
 - Confidential: OneDrive
-- ""Source code"": repo; ""Compiled output"": OneDrive 
+- ""Source code"": repo; ""Compiled output"": OneDrive
     - that is to say, if it's ""published"" output then OneDrive, but if it needs collaborative editing until it's published, then Repo
 - Operational needs of REG (eg, finance reports, job descriptions, reviews, planning output): OneDrive
     - Basically: if you have finished editing it (forever): OneDrive
@@ -2370,7 +2370,7 @@ The budget codes are constructed from the REG department code `RES-2130` plus a 
 |---------------|----------------------------------------------------|-------|
 | RES-2130-6100 | Staff Training                                     | For **attending** training, conferences, workshops |
 | RES-2130-6103 | Individual Membership Subscriptions                | For e.g. individual Society RSE membership |
-| RES-2130-6105 | Educational Books & Journals.                      | 
+| RES-2130-6105 | Educational Books & Journals.                      |
 | RES-2130-6200 | Travel - UK                                        |
 | RES-2130-6201 | Travel - Overseas                                  |
 | RES-2130-6204 | Subsistence                                        |
@@ -2381,7 +2381,7 @@ The budget codes are constructed from the REG department code `RES-2130` plus a 
 | RES-2130-6503 | Catering                                           | For **hosting** an event |
 | RES-2130-6600 | IT Consumables                                     |
 | RES-2130-6601 | Software Licences                                  |
-| RES-2130-6606 | Printing & Postage                                 |	
+| RES-2130-6606 | Printing & Postage                                 |
 | RES-2130-6607 | Office Supplies                                    | Pens, notebooks etc |
 | RES-2130-6608 | Corporate Subscriptions                            | For e.g. organisational Research Data Association membership |
 
@@ -2440,10 +2440,10 @@ Moving-to-a-new-computer.md,"This is a list of the steps I, James G, took when I
 
 - [ ] Install Emacs additions as I learn that I need them ...
 
-  
- 
+
+
 "
-Azure.md,"Azure is Microsoft's cloud service. The Turing has a grant from Microsoft to use this. 
+Azure.md,"Azure is Microsoft's cloud service. The Turing has a grant from Microsoft to use this.
 
 ## Setting up Azure
 

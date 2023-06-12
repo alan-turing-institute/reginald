@@ -55,4 +55,3 @@ This project uses [Poetry](https://python-poetry.org/) for dependency management
     ```
 
 The bot will now listen for @mentions in the channels it's added to and respond with a simple message.
-

@@ -9,7 +9,7 @@ REG uses Gather for some of the coffee breaks and social events. It gives a virt
 - The space can be accessed at https://gather.town/app/EJPBD8kYqtVZYCDv/turing
 - The password is: `hut23`
 
-Note: Gather is blocked on the Turing VPN and on IT-managed computers. 
+Note: Gather is blocked on the Turing VPN and on IT-managed computers.
 
 
 ### Zoom
@@ -48,7 +48,7 @@ The most versatile option is a **meeting**.  The way to make one of these in the
 
 ## Wellbeing tips for remote working
 
-Remote working brings different challenges. The work-life boundaries are less clear and some people struggle with lack of connection. Here we collate tips that the group has found to positively impact their wellbeing while working remotely. At the beginning of the COVID-19 lockdowns, having wellbeing tips proved really useful, see below: 
+Remote working brings different challenges. The work-life boundaries are less clear and some people struggle with lack of connection. Here we collate tips that the group has found to positively impact their wellbeing while working remotely. At the beginning of the COVID-19 lockdowns, having wellbeing tips proved really useful, see below:
 For more information on Wellbeing in REG, go to the wellbeing page. (LINK)
 
 - **Delineate the start and end of the working day.** A huge challenge is separating the working day from life outside of work, especially if both happen in the same location. Suggestions that might help bound work to working hours:
@@ -56,6 +56,5 @@ For more information on Wellbeing in REG, go to the wellbeing page. (LINK)
     - Have separate _work_ clothes and _non-work_ clothes.
     - Tidy your laptop/screen away if you are using the same space for relaxation
     - If possible use a different device for leisure activity to your work machine.
-- **Finish on time.** Without the impetus of having colleagues around you clocking off it seems easy to work later than usual and eat into your relaxation time. Take a 1hr lunch break, and finished on time. If you are finding that you are repeatedly doing this then there is an issue with your workload that needs corrected. Reach out! 
-- **Talk**. Many of us have missed the casual connection you get with being around people, and when you are working alone it is easy to forget the you are part of a team. This point is just a reminder that you work in a team that genuinely cares about the wellbeing of every member of the group. 
-
+- **Finish on time.** Without the impetus of having colleagues around you clocking off it seems easy to work later than usual and eat into your relaxation time. Take a 1hr lunch break, and finished on time. If you are finding that you are repeatedly doing this then there is an issue with your workload that needs corrected. Reach out!
+- **Talk**. Many of us have missed the casual connection you get with being around people, and when you are working alone it is easy to forget the you are part of a team. This point is just a reminder that you work in a team that genuinely cares about the wellbeing of every member of the group.
