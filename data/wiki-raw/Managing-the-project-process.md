@@ -8,11 +8,11 @@
 
 ### Finding people for projects
 
-1. If you are a Programme Lead: please keep track of which new projects are coming up in the next 6 months, and ensure there is a Senior REG person assigned to these. To do so, badger the “staffing coordinator” (currently James G at 10 November 2021). 
+1. If you are a Programme Lead: please keep track of which new projects are coming up in the next 6 months, and ensure there is a Senior REG person assigned to these. To do so, badger the “staffing coordinator” (currently James G at 10 November 2021).
 
 2. Project Leads (that is, the most senior REG person on the project): please ensure that your project is resourced. This means ensuring that there are people to start. It also means checking the total “budget” for the project and making sure we will meet it. To do so, badger the staffing coordinator.
 
-Note that (2) is not entirely straightforward because projects are no longer staffed in integer multiples of 0.5 people for a fixed number of months. Sometimes we allocated, say, 0.8 people for a while, which means that either the project run-rate will need to increase or the project duration extended. 
+Note that (2) is not entirely straightforward because projects are no longer staffed in integer multiples of 0.5 people for a fixed number of months. Sometimes we allocated, say, 0.8 people for a while, which means that either the project run-rate will need to increase or the project duration extended.
 
 ### Problems and issues
 
@@ -23,5 +23,3 @@ If the issue cannot be resolved at that level (which does happen from time to ti
 ### Project shutdown
 
 - [[Project shut down guidance]]
-
-

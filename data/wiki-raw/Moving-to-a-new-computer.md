@@ -19,6 +19,3 @@ This is a list of the steps I, James G, took when I got a new laptop from IT.
 - [ ] Double-check other directories within `~/`
 
 - [ ] Install Emacs additions as I learn that I need them ...
-
-  
- 

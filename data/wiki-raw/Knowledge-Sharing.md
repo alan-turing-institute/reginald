@@ -1,12 +1,12 @@
 # Knowledge Sharing
 
-## List of REG members and topics they are happy to be contacted about 
+## List of REG members and topics they are happy to be contacted about
 
-We all have different overlapping skills but we don't do that well at learning from one another. 
+We all have different overlapping skills but we don't do that well at learning from one another.
 
-It is more fun and fulfilling to learn together rather than plough along in isolation. This page is a catalogue of members who would be happy to be grabbed for a chat on any of the listed topics. 
+It is more fun and fulfilling to learn together rather than plough along in isolation. This page is a catalogue of members who would be happy to be grabbed for a chat on any of the listed topics.
 
-Please, reach out on slack to anyone in the table if you're struggling with something, and perhaps even add yourself! 
+Please, reach out on slack to anyone in the table if you're struggling with something, and perhaps even add yourself!
 
 (if you want a wider net, you can post on #askaway, or #hut23).
 
@@ -22,8 +22,6 @@ Please, reach out on slack to anyone in the table if you're struggling with some
 | Katriona Goldmann | Python/R + packaging, Shiny, Omics (genomics/transcriptomics/proteomics), basic ML, and I am in the process of developing edge AI/tinyML so happy to discuss |
 | Markus Hauru | Comfy with: linear algebra, tensor networks, tensor processing units, Python, vim; Know something: Julia, Javascript and other front end dev, ReactiveX, postgresql, Jax, optimization algorithms
 
-## Additional links 
-See: 
+## Additional links
+See:
 https://alan-turing-institute.github.io/REG-handbook/docs/how_we_work/knowledge_sharing/
-
-

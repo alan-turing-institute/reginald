@@ -22,11 +22,11 @@ Accounts for work based tools and sites, as a reference for adding or tagging pe
   - ORCID: [0000-0002-4910-9205](https://orcid.org/0000-0002-4910-9205)
 * Radka Jersakova
   - Turing: rjersakova@turing.ac.uk
-  - Google: 
+  - Google:
   - GitHub: [@radka-j](https://github.com/radka-j)
-  - GitLab: 
+  - GitLab:
   - Turing Slack: @radka
-  - Keybase: 
+  - Keybase:
   - HackMD: [@radka-j](https://hackmd.io/@radka-j)
   - ORCID: [0000-0001-6846-71589](https://orcid.org/0000-0001-6846-7158)
 * Martin O'Reilly
@@ -41,11 +41,11 @@ Accounts for work based tools and sites, as a reference for adding or tagging pe
   - Twitter: [@martinoreilly](https://twitter.com/martinoreilly)
 * Federico Nanni
   - Turing: fnanni@turing.ac.uk
-  - Google: 
+  - Google:
   - GitHub: [@fedenanni](https://github.com/fedenanni)
-  - GitLab: 
+  - GitLab:
   - Turing Slack: @fedenanni
-  - Keybase: 
+  - Keybase:
   - HackMD: [@fedenanni](https://hackmd.io/@fedenanni)
   - ORCID: [0000-0003-2484-4331](https://orcid.org/0000-0003-2484-4331)
   - Twitter: [@f_nanni](https://twitter.com/f_nanni)

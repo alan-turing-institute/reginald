@@ -1,14 +1,14 @@
 # The Research Engineering Group Wiki
 
-A repository of **knowledge helpful to the Hut 23 team** (aka, the Research Engineering Group or REG) including howtos and instructions for new joiners. 
+A repository of **knowledge helpful to the Hut 23 team** (aka, the Research Engineering Group or REG) including howtos and instructions for new joiners.
 
 **This wiki is visible to all members of the Everyone team** in the alan-turing-institute
 organisation. (But some links point to documents that are private to REG.)
 
 The [original wiki](https://github.com/alan-turing-institute/Hut23/wiki/Home) has REG-private information.
 
-**This is a living document** 
-- If you see anything that's out of date, please fix it. 
+**This is a living document**
+- If you see anything that's out of date, please fix it.
 - If you would like to add something, the [[Knowledge Management Guidelines|Knowledge-management]] should help you decide whether it belongs in the wiki or somewhere else.
 
 ## Working in Hut 23

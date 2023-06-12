@@ -24,7 +24,7 @@ A page to capture ideas for a “data science” syllabus, suitable for a course
 
 # Computer Science
 - BNF
-- Regular languages; context free grammars 
+- Regular languages; context free grammars
 - Parsers (and the Chomsky hierarchy)
 - Lambda calculus
 - Compilers
@@ -51,7 +51,7 @@ A page to capture ideas for a “data science” syllabus, suitable for a course
 - Model selection/comparison
 - Model averaging
 - Model evaluation (validation, test, accuracy metrics)
-## When to use machine learning? 
+## When to use machine learning?
 - What is even a good question for machine learning?
 
 # Working with clients
@@ -101,7 +101,7 @@ A page to capture ideas for a “data science” syllabus, suitable for a course
 # A compendium of problems
   - Record linkage
   - Clustering
-  - Interpolation 
+  - Interpolation
   - Anomaly detection
   - Survival analysis
   - Classification
@@ -115,7 +115,7 @@ A page to capture ideas for a “data science” syllabus, suitable for a course
 - Support Vector Machine
 - Gaussian processes
 - Decision Trees
-- Random Forrest 
+- Random Forrest
 - Generalised linear models
 - Naive Bayes
 - Bayesian hierarchical models
@@ -129,7 +129,7 @@ A page to capture ideas for a “data science” syllabus, suitable for a course
 ## Dimensionality reduction
 - Factor analysis/Principal component Analysis
 - Auto-encoder
-- Word2Vec 
+- Word2Vec
 
 ## Regularisation
 - LASSO regression (L1)

@@ -1,4 +1,4 @@
-Azure is Microsoft's cloud service. The Turing has a grant from Microsoft to use this. 
+Azure is Microsoft's cloud service. The Turing has a grant from Microsoft to use this.
 
 ## Setting up Azure
 
