@@ -40,3 +40,6 @@ pip install html5
 # note: will fail but will generate files in tests/interact_se_connector/output 
 pytest tests/interact_se_connector/test_scrapper.py::test_do_walk
 ```
+
+scraped csvs have header:
+`,url,id,title,is_public,body,summary,author,keywords`
