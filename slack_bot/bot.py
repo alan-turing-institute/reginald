@@ -1,13 +1,13 @@
 # Standard library imports
-import os
 import logging
-from threading import Event
+import os
+import threading
 
 # Third-party imports
-from slack_sdk.web import WebClient
 from slack_sdk.socket_mode import SocketModeClient
-from slack_sdk.socket_mode.response import SocketModeResponse
 from slack_sdk.socket_mode.request import SocketModeRequest
+from slack_sdk.socket_mode.response import SocketModeResponse
+from slack_sdk.web import WebClient
 
 
 def process(client: SocketModeClient, req: SocketModeRequest) -> None:
@@ -19,21 +19,20 @@ def process(client: SocketModeClient, req: SocketModeRequest) -> None:
         response = SocketModeResponse(envelope_id=req.envelope_id)
         client.send_socket_mode_response(response)
 
-        # Add a reaction to the message if it's a new message
+        # Direct message to REGinald
         if (
             req.payload["event"]["type"] == "message"
             and req.payload["event"].get("subtype") is None
         ):
             # DM the bot
-
             client.web_client.reactions_add(
                 name="eyes",
                 channel=req.payload["event"]["channel"],
                 timestamp=req.payload["event"]["ts"],
             )
-        elif req.payload["event"]["type"] == "app_mention":
-            # mention in a channel
 
+        # Mention @REGinald in a channel
+        elif req.payload["event"]["type"] == "app_mention":
             client.web_client.reactions_add(
                 name="+1",
                 channel=req.payload["event"]["channel"],
@@ -71,4 +70,4 @@ if __name__ == "__main__":
 
     # Listen for events
     logging.info("Listening for requests...")
-    Event().wait()
+    threading.Event().wait()
