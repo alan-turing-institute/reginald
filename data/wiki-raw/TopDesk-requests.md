@@ -8,7 +8,7 @@ If you receive an email to deal with a TopDesk request (e.g. `The following C123
 1. Adding Turing people to the Github organisation: this is the most common request and one for
    whoever is part of the Researcher Tool Management Service Role.
 
-2. Requests clearly not for REG: see whether you can find details on Turing Complete. For example, we received a ticket with the ethics approval for a project, detailed in [this TuringComplete page](https://turingcomplete.topdesk.net/tas/public/ssp/content/detail/service?unid=cb5e35246f474d1f90abae8ea262338c), which lists the Ethics Advisory Group as contact point. If there is an existing appropriate 
+2. Requests clearly not for REG: see whether you can find details on Turing Complete. For example, we received a ticket with the ethics approval for a project, detailed in [this TuringComplete page](https://turingcomplete.topdesk.net/tas/public/ssp/content/detail/service?unid=cb5e35246f474d1f90abae8ea262338c), which lists the Ethics Advisory Group as contact point. If there is an existing appropriate
 group / team within TopDesk then please allocate to the group rather than a specific individual.
 
 ## Steps to follow

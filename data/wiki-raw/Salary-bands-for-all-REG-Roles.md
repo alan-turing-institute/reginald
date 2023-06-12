@@ -34,8 +34,8 @@ Effective: 01 April 2022 - 31 March 2023; Cost of living award from previous yea
 Effective: 01 April 2021 - 31 March 2022; Cost of living award from previous year: 1.5%
 
 **Note:** In 2021-22 REG salaries were only partially aligned with the HERA bands below.
-Junior and Standard were fully aligned but we did not yet have the Band 5 Lead role defined and Principals had not yet been formally mapped into Band 6. 
-Senior salaries spanned all of Band 4 and some of Band 5 due to the effect of cost of living increases from previous years on salaries within the previous REG-specific Senior salary band of £45,0000 - £60,000 (which had not had its minimum and maximum salaries adjusted in line with the cost of living increases applied to individual salaries). 
+Junior and Standard were fully aligned but we did not yet have the Band 5 Lead role defined and Principals had not yet been formally mapped into Band 6.
+Senior salaries spanned all of Band 4 and some of Band 5 due to the effect of cost of living increases from previous years on salaries within the previous REG-specific Senior salary band of £45,0000 - £60,000 (which had not had its minimum and maximum salaries adjusted in line with the cost of living increases applied to individual salaries).
 
 | Role      | Band | Role Salary Min | Role Salary Max | Bottom third baseline | Middle third baseline | Top third baseline |
 |-----------|:----:|:---------------:|:---------------:|:---------------------:|:---------------------:|:------------------:|
@@ -46,92 +46,3 @@ Senior salaries spanned all of Band 4 and some of Band 5 due to the effect of co
 | Junior    | 3a*  | £34,000         | £36,000         | £34,000               | £34,667               | £35,333            |
 
 *Note: The Institute wide salary bands don't distinguish between 3a and 3b. This is purely a REG distinction.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

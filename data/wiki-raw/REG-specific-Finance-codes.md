@@ -4,4 +4,3 @@ This page is to document the "Finance codes" that are used in Turing's Finance s
 - `R-RSE-002`: REG core activity, including service areas and REG internal projects.
 - `R-RSE-003`: Dedicated management and operations.
 - `R-RSE-004`: RCP
-

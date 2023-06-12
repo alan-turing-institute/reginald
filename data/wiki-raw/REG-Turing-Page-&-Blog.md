@@ -20,10 +20,10 @@ We have also been given access to upload blog posts (Programme articles) to our 
 
 If you don't see the option to create a new article, ask a colleague from the [REG Communications service area](https://github.com/alan-turing-institute/Hut23/issues/569) for help (see named assignees on the issue) OR request edit access yourself by following [these steps](#request-edit-access).
 
-This will take you to a page where you can write and format your blog post. 
+This will take you to a page where you can write and format your blog post.
 
-<b>Fields to fill out:</b>  
-- Under `Type` choose `Programme`  
+<b>Fields to fill out:</b>
+- Under `Type` choose `Programme`
 - Under `Related programmes` choose `Research Engineering`
 - Also tick the `Research Engineering involvement?` checkbox
 
@@ -35,7 +35,7 @@ You can specify the excerpt by either adding a subtitle to the page, or by addin
 
 Once finished, under `Save as` choose `Ready for review` instead of `Draft`. This will send the post to the communications team for review and to publish.
 
-Note that you can draft and get feedback on blog posts in the [Hut23-blog repository](https://github.com/alan-turing-institute/hut23-blog/). 
+Note that you can draft and get feedback on blog posts in the [Hut23-blog repository](https://github.com/alan-turing-institute/hut23-blog/).
 
 ## Request edit access
 
