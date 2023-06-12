@@ -7,10 +7,10 @@ STACK_NAME=${2:-"production"}
 # Fixed values
 CONTAINER_NAME="pulumi"
 ENCRYPTION_KEY_NAME="pulumi-encryption-key"
-KEYVAULT_NAME="pulumi-reginald-secrets"
+KEYVAULT_NAME=$(echo "kv-reginald-${STACK_NAME}" | head -c 24)
 LOCATION="uksouth"
-RESOURCE_GROUP_NAME="pulumi-reginald-backend"
-STORAGE_ACCOUNT_NAME=$(echo "pulumireginaldbackend$(echo "$SUBSCRIPTION_NAME" | md5sum)" | head -c 24)
+RESOURCE_GROUP_NAME="rg-reginald-${STACK_NAME}-backend"
+STORAGE_ACCOUNT_NAME=$(echo "sareginald${STACK_NAME}backend$(echo "$SUBSCRIPTION_NAME" | md5sum)" | head -c 24)
 
 # Ensure that the user is logged in
 if ! (az account show > /dev/null); then
@@ -32,12 +32,12 @@ az storage container create --name "$CONTAINER_NAME" --account-name "$STORAGE_AC
 echo "✅ Storage container '$CONTAINER_NAME'"
 
 # Create keyvault and encryption key
-if ! (az keyvault show --name "$KEYVAULT_NAME" --resource-group "$RESOURCE_GROUP_NAME" --only-show-errors > /dev/null); then
+if ! (az keyvault show --name "$KEYVAULT_NAME" --resource-group "$RESOURCE_GROUP_NAME" --only-show-errors > /dev/null 2>&1); then
     az keyvault create --location "$LOCATION" --name "$KEYVAULT_NAME" --resource-group "$RESOURCE_GROUP_NAME" --only-show-errors > /dev/null || exit 5
 fi
 echo "✅ Keyvault '$KEYVAULT_NAME'"
-if ! (az keyvault key show --name "$ENCRYPTION_KEY_NAME" --vault-name $KEYVAULT_NAME --only-show-errors > /dev/null 2>&1); then
-    az keyvault key create --name "$ENCRYPTION_KEY_NAME" --vault-name $KEYVAULT_NAME --only-show-errors > /dev/null
+if ! (az keyvault key show --name "$ENCRYPTION_KEY_NAME" --vault-name "$KEYVAULT_NAME" --only-show-errors > /dev/null 2>&1); then
+    az keyvault key create --name "$ENCRYPTION_KEY_NAME" --vault-name "$KEYVAULT_NAME" --only-show-errors > /dev/null || exit 6
 fi
 echo "✅ Encryption key '$ENCRYPTION_KEY_NAME'"
 
@@ -50,7 +50,7 @@ else
     echo "You will need 'Storage Blob Data Contributor' access to this subscription in order to continue"
     return 0
 fi
-az keyvault set-policy --name "$KEYVAULT_NAME" --object-id "$USER_ID" --secret-permissions "all" --key-permissions "all" --certificate-permissions "all" --only-show-errors > /dev/null || exit 6
+az keyvault set-policy --name "$KEYVAULT_NAME" --object-id "$USER_ID" --secret-permissions "all" --key-permissions "all" --certificate-permissions "all" --only-show-errors > /dev/null || exit 7
 echo "✅ User has read permissions on '$KEYVAULT_NAME'"
 
 # Log in with Pulumi
@@ -62,14 +62,14 @@ pulumi login "azblob://$CONTAINER_NAME?storage_account=$STORAGE_ACCOUNT_NAME"
 # Select the correct stack
 if ! (pulumi stack select "$STACK_NAME" > /dev/null); then
     echo "Creating new Pulumi stack..."
-    pulumi stack init "$STACK_NAME"
+    pulumi stack init "$STACK_NAME" --secrets-provider "azurekeyvault://$KEYVAULT_NAME.vault.azure.net/keys/$ENCRYPTION_KEY_NAME"
 fi
 echo "✅ Switched to Pulumi stack '$STACK_NAME'"
 AZURE_KEYVAULT_AUTH_VIA_CLI=true pulumi stack change-secrets-provider "azurekeyvault://$KEYVAULT_NAME.vault.azure.net/keys/$ENCRYPTION_KEY_NAME"
 echo "✅ Using Azure KeyVault '$KEYVAULT_NAME' for encryption"
 
 # Configure the azure-native plugin
-pulumi config set azure-native:tenantId $(az account list --all --query "[?isDefault].tenantId | [0]" --output tsv)
-pulumi config set azure-native:subscriptionId $(az account list --all --query "[?isDefault].id | [0]" --output tsv)
-pulumi config set azure-native:location $LOCATION
+pulumi config set azure-native:tenantId "$(az account list --all --query "[?isDefault].tenantId | [0]" --output tsv)"
+pulumi config set azure-native:subscriptionId "$(az account list --all --query "[?isDefault].id | [0]" --output tsv)"
+pulumi config set azure-native:location "$LOCATION"
 echo "✅ Configured azure-native defaults"
