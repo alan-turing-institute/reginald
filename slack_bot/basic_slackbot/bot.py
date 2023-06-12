@@ -1,12 +1,12 @@
 # Standard library imports
 import logging
 import os
-from threading import Event
+import threading
 
 # Third-party imports
 from slack_sdk.socket_mode import SocketModeClient
-from slack_sdk.socket_mode.response import SocketModeResponse
 from slack_sdk.socket_mode.request import SocketModeRequest
+from slack_sdk.socket_mode.response import SocketModeResponse
 from slack_sdk.web import WebClient
 
 
@@ -70,4 +70,4 @@ if __name__ == "__main__":
 
     # Listen for events
     logging.info("Listening for requests...")
-    Event().wait()
+    threading.Event().wait()
