@@ -25,31 +25,36 @@ This project uses [Poetry](https://python-poetry.org/) for dependency management
 
 1. Set up the bot in Slack: [Socket Mode Client](https://slack.dev/python-slack-sdk/socket-mode/index.html).
 
-2. To connect to Slack, the bot requires an app token and a bot token. Put these into into a `.env` file:
+1. To connect to Slack, the bot requires an app token and a bot token. Put these into into a `.env` file:
 
     ```
     echo "export SLACK_BOT_TOKEN='your-bot-user-oauth-access-token'" >> .env
     echo "export SLACK_APP_TOKEN='your-app-level-token'" >> .env
     ```
 
-2. Install the project dependencies:
+1. Install the project dependencies:
     ```
     poetry install
     ```
-
-### Running the Bot
 
 1. Activate the virtual environment:
     ```
     poetry shell
     ```
 
-2. Set environment variables:
+1. Install the pre-commit hooks
+    ```
+    pre-commit install
+    ```
+
+### Running the Bot
+
+1. Set environment variables:
     ```
     source .env
     ```
 
-3. Run the bot:
+1. Run the bot:
     ```
     python slack_bot/bot.py
     ```
