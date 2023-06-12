@@ -1,0 +1,27 @@
+---
+name: Lint code
+
+# Run workflow on pushes to matching branches
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  lint_python:
+    runs-on: ubuntu-latest
+    name: Lint Python
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.11
+      - name: Install requirements
+        shell: bash
+        run: pip install black
+      - name: black
+        shell: bash
+        run: black --check --diff slack_bot
