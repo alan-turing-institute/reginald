@@ -9,22 +9,12 @@ on:
     branches: [main]
 
 jobs:
-  lint_python:
+  pre-commit:
+    name: Lint with pre-commit
     runs-on: ubuntu-latest
-    name: Lint Python
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
-      - name: Setup Python
-        uses: actions/setup-python@v4
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
         with:
           python-version: 3.11
-      - name: Install requirements
-        run: |
-          pip install poetry
-          poetry config virtualenvs.create false
-          poetry install --only dev
-      - name: black
-        run: black --check --diff .
-      - name: isort
-        run: isort --check-only --diff .
+      - uses: pre-commit/action@v3.0.0
