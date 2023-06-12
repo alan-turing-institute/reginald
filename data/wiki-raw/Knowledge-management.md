@@ -20,7 +20,7 @@ Since this was written the bulk of the hut23 wiki has been moved here, to the re
 
 ### General rules
 
-1. Everything that is intended to be shared should be in one of the places above. 
+1. Everything that is intended to be shared should be in one of the places above.
     - Eg, Not HackMD. (A HackMD document should be preserved at the end of the collaboration session, and transferred to one of the other places)
     - Not Slack. (Slack should be for informal conversations)
 2. Information intended for formal, external consumption (beyond REG) should either be on our public website or on Topdesk. Put in on Topdesk only if it should not be seen by the public.
@@ -28,7 +28,7 @@ Since this was written the bulk of the hut23 wiki has been moved here, to the re
    - Talk to Tomas re: Topdesk
 3. Information on a wiki should be findable by following links starting at the Home page of that wiki. The Home page should be rather like an annotated table of contents.
     - Everyone can edit the wiki and the information should be kept up to date.
-4. Information should not go in a repository unless it fits the directory structure. If a new directory structure is required, that needs some thought. The directory structure should be, so far as possible, "mutually exclusive and completely exhaustive" (MECE). 
+4. Information should not go in a repository unless it fits the directory structure. If a new directory structure is required, that needs some thought. The directory structure should be, so far as possible, "mutually exclusive and completely exhaustive" (MECE).
 
 
 #### How to share information with the team
@@ -40,11 +40,11 @@ Does it fit into the Hut23 repo directory structure?
 - No
     1. Put it in the wiki
     2. Make sure is linked from the first page of the wiki/a related page on the wiki
-    
+
 
 ### Hut23 repo vs. Hut23 wiki
 
-The Hut23 wiki is like a "handbook" for Hut23 -- it provides guidance, help, and links to reference sources. It is a **living document**. The Hut23 repo is a repository of documents. 
+The Hut23 wiki is like a "handbook" for Hut23 -- it provides guidance, help, and links to reference sources. It is a **living document**. The Hut23 repo is a repository of documents.
 
 The wiki is the primary way we find information that is not "operational" or "lots of examples of a particular category". The repo has a "standardised structure of the repo".
 
@@ -54,18 +54,16 @@ Examples:
 
 ### Hut23 wiki vs. other wiki
 
-Use a GitHub wiki (under Alan Turing Institute) for things you want to share within the Insitute that admit some collaboration by others within the Insitute. 
+Use a GitHub wiki (under Alan Turing Institute) for things you want to share within the Insitute that admit some collaboration by others within the Insitute.
     -eg, The "Space Working Group" wiki
-    
+
 Ideally, have a link off the Institute's pinned (notice-board).
 
 ### Hut23 repo vs REG OneDrive
 
 - Confidential: OneDrive
-- "Source code": repo; "Compiled output": OneDrive 
+- "Source code": repo; "Compiled output": OneDrive
     - that is to say, if it's "published" output then OneDrive, but if it needs collaborative editing until it's published, then Repo
 - Operational needs of REG (eg, finance reports, job descriptions, reviews, planning output): OneDrive
     - Basically: if you have finished editing it (forever): OneDrive
 - Reference material from elsewhere: OneDrive
-
-

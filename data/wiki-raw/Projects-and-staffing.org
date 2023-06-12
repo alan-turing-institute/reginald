@@ -7,7 +7,7 @@
    individuating projects within REG.
 
    Each of the issues lives in a particular column of the kanban board
-   representing the present stage of the project. We currently have ten stages for a project, which are described below. 
+   representing the present stage of the project. We currently have ten stages for a project, which are described below.
 
    | Stage | Name                   | Description                                   |
    |-------+------------------------+-----------------------------------------------|
@@ -35,7 +35,7 @@
    an individual's time to a project over a given period. Since Forecast records
    what we ought to be spending our time on, we also use it for billing. When we
    come to to decide how much to charge projects we look at the past
-   allocations in Forecast. 
+   allocations in Forecast.
 
    We have also used Forecast to try to schedule projects as well as individual
    assignments. However, this is complicated by the fact that there is no
@@ -48,7 +48,7 @@
    more difficult by the decision to move to staffing levels that are not
    necessarily multiples of 50% of an FTE.
 
-3. For historic *time tracking* we use [[https://thealanturinginstitute.harvestapp.com/time/week][Harvest]], a system linked to Forecast. 
+3. For historic *time tracking* we use [[https://thealanturinginstitute.harvestapp.com/time/week][Harvest]], a system linked to Forecast.
 
 We have tried to use Harvest to track our /actual/ time, including various
    duties that are not billed to projects because they are part of "business as

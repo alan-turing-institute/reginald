@@ -37,7 +37,7 @@ The budget codes are constructed from the REG department code `RES-2130` plus a 
 |---------------|----------------------------------------------------|-------|
 | RES-2130-6100 | Staff Training                                     | For **attending** training, conferences, workshops |
 | RES-2130-6103 | Individual Membership Subscriptions                | For e.g. individual Society RSE membership |
-| RES-2130-6105 | Educational Books & Journals.                      | 
+| RES-2130-6105 | Educational Books & Journals.                      |
 | RES-2130-6200 | Travel - UK                                        |
 | RES-2130-6201 | Travel - Overseas                                  |
 | RES-2130-6204 | Subsistence                                        |
@@ -48,7 +48,7 @@ The budget codes are constructed from the REG department code `RES-2130` plus a 
 | RES-2130-6503 | Catering                                           | For **hosting** an event |
 | RES-2130-6600 | IT Consumables                                     |
 | RES-2130-6601 | Software Licences                                  |
-| RES-2130-6606 | Printing & Postage                                 |	
+| RES-2130-6606 | Printing & Postage                                 |
 | RES-2130-6607 | Office Supplies                                    | Pens, notebooks etc |
 | RES-2130-6608 | Corporate Subscriptions                            | For e.g. organisational Research Data Association membership |
 

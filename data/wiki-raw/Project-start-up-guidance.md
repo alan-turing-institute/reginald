@@ -18,7 +18,7 @@ Below captured from: https://hackmd.io/3dA_RWneT2WbMaSnRO_kDA
 * Join us in the discussion
 * Help us with notes
 
-## :arrow_right: Want to join us for more and write up, scroll to bottom and put your name down plz :arrow_left: 
+## :arrow_right: Want to join us for more and write up, scroll to bottom and put your name down plz :arrow_left:
 
 ## Promo
 
@@ -61,7 +61,7 @@ Could meeting schedule support 1 week on, one week off REG working, if desired?
 
 Weekly meeting a la Safe Haven, with round-table discussion and making sure all issues are visitied and updated.
 
-Does it work well having one planning meeting (project board, scrum style) and then other ~~meetings~~ co-working sessions to do the creative work, but with limited membership to those who are stakeholders or responsible for the doings. 
+Does it work well having one planning meeting (project board, scrum style) and then other ~~meetings~~ co-working sessions to do the creative work, but with limited membership to those who are stakeholders or responsible for the doings.
 
 ## Agile working
 

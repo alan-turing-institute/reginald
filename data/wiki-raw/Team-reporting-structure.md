@@ -2,7 +2,7 @@
 
 We should avoid new starters being line managed by either of the REG leads on their first projects. This ensures they have an independent person to discuss any challenges / issues with their projects and, in these remote working times, also increases the number of team members they work together with on a regular basis.
 
-| Start date | Name | Role | Line manager | Project 1 | Project 2 | 
+| Start date | Name | Role | Line manager | Project 1 | Project 2 |
 | --- | --- | --- | --- | --- | --- |
 | 1 Apr 23 | [Carlos Gavidia-Calderon](https://github.com/alan-turing-institute/Hut23/issues/1290) |Standard RSE | Radka | |
 | 3 Apr 23 | [Nathan Simpson](https://github.com/alan-turing-institute/Hut23/issues/1291) | Standard RSE | May | |
@@ -25,7 +25,7 @@ Pool of future line managers:
               - Olajumoke Olatunji (intern)
       - Radka Jersakova (Senior RDS)
           - Pamela Wochner (RDS)
-          - Carlos Gavidia-Calderon (RSE) 
+          - Carlos Gavidia-Calderon (RSE)
       - Tim Hobson (Lead RSE)
           - Helen Duncan (RSE)
               - Rosie Wood (RDS)
@@ -98,4 +98,3 @@ Pool of future line managers:
 1. Lead for REG Force-Multiplier Projects and pro bono work: Tim Hobson and Dave Beavan
 2. Lead for REG Service Areas: Nick Barlow
 3. Lead for Turing Service Areas: May Yong
-

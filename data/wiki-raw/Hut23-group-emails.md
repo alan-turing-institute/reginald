@@ -6,9 +6,7 @@
 
 - **reg-senior-staff@turing.ac.uk** - All members of REG that are Senior or above
   - Admins: Martin + Principals
-  - *This is a Distribution List*. To add/remove members: go into web version of Outlook, click on Settings (gear icon in top right corner), type "Distribution groups" into the search bar and click on the corresponding link. This should take you into an overview of distribution lists you're a member of and owner of. 
-- **reg-principals@turing.ac.uk** - REG and ARC principals or above. 
+  - *This is a Distribution List*. To add/remove members: go into web version of Outlook, click on Settings (gear icon in top right corner), type "Distribution groups" into the search bar and click on the corresponding link. This should take you into an overview of distribution lists you're a member of and owner of.
+- **reg-principals@turing.ac.uk** - REG and ARC principals or above.
   - Admin: Martin
 - **HUT23-ALUMNI@jiscmail.ac.uk** - Alumni mailing list
-
- 
