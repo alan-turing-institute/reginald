@@ -11,8 +11,10 @@ from slack_sdk.socket_mode.request import SocketModeRequest
 
 
 def process(client: SocketModeClient, req: SocketModeRequest) -> None:
-    logging.info(f"Received request: {req.type} {req.payload}")
+    logging.info(f"Received request of type '{req.type}'")
     if req.type == "events_api":
+        logging.info(f"Request text: '{req.payload['event']['text']}'")
+
         # Acknowledge the request anyway
         response = SocketModeResponse(envelope_id=req.envelope_id)
         client.send_socket_mode_response(response)
@@ -45,7 +47,11 @@ def process(client: SocketModeClient, req: SocketModeRequest) -> None:
 
 if __name__ == "__main__":
     # Initialise logging
-    logging.basicConfig(level=logging.INFO)
+    logging.basicConfig(
+        datefmt=r"%Y-%m-%d %H:%M:%S",
+        format="%(asctime)s [%(levelname)8s] %(message)s",
+        level=logging.INFO,
+    )
 
     # Initialize SocketModeClient with an app-level token + WebClient
     client = SocketModeClient(
