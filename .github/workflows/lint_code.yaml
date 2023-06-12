@@ -20,8 +20,10 @@ jobs:
         with:
           python-version: 3.11
       - name: Install requirements
-        shell: bash
-        run: pip install black
+        run: |
+          pip install poetry
+          poetry install --directory=slack_bot --only dev
       - name: black
-        shell: bash
         run: black --check --diff slack_bot
+      - name: isort
+        run: isort --check-only --diff basic_slackbot
