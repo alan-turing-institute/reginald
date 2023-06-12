@@ -738,13 +738,13 @@ files = [
 
 [[package]]
 name = "filelock"
-version = "3.12.1"
+version = "3.12.2"
 description = "A platform independent file lock."
 optional = false
 python-versions = ">=3.7"
 files = [
-    {file = "filelock-3.12.1-py3-none-any.whl", hash = "sha256:42f1e4ff2b497311213d61ad7aac5fed9050608e5309573f101eefa94143134a"},
-    {file = "filelock-3.12.1.tar.gz", hash = "sha256:82b1f7da46f0ae42abf1bc78e548667f484ac59d2bcec38c713cee7e2eb51e83"},
+    {file = "filelock-3.12.2-py3-none-any.whl", hash = "sha256:cbb791cdea2a72f23da6ac5b5269ab0a0d161e9ef0100e653b69049a7706d1ec"},
+    {file = "filelock-3.12.2.tar.gz", hash = "sha256:002740518d8aa59a26b0c76e10fb8c6e15eae825d34b6fdf670333fd7b938d81"},
 ]
 
 [package.extras]
@@ -1410,13 +1410,13 @@ text-helpers = ["chardet (>=5.1.0,<6.0.0)"]
 
 [[package]]
 name = "langchainplus-sdk"
-version = "0.0.8"
+version = "0.0.9"
 description = "Client library to connect to the LangChainPlus LLM Tracing and Evaluation Platform."
 optional = true
 python-versions = ">=3.8.1,<4.0"
 files = [
-    {file = "langchainplus_sdk-0.0.8-py3-none-any.whl", hash = "sha256:027388b1185f52e8edfe7c819d8a0abc51ef8921738a49adf9c62af0122996e9"},
-    {file = "langchainplus_sdk-0.0.8.tar.gz", hash = "sha256:c4497fba224edc080451e38b2bdba18d9a7b54d530239cd6f12a8d4a89e8eee5"},
+    {file = "langchainplus_sdk-0.0.9-py3-none-any.whl", hash = "sha256:4fe1a60f28c93ae0e145dcd53e4dc5293374ed0a8518abcc51e201081809bf0b"},
+    {file = "langchainplus_sdk-0.0.9.tar.gz", hash = "sha256:bbfdc54c64df5ca4334068ab2d7b89d3a894f313b1285939b4c4532fea62eeb7"},
 ]
 
 [package.dependencies]
@@ -1446,13 +1446,13 @@ test = ["coverage", "pytest", "pytest-cov"]
 
 [[package]]
 name = "llama-index"
-version = "0.6.23"
+version = "0.6.25.post1"
 description = "Interface between LLMs and your data"
 optional = true
 python-versions = "*"
 files = [
-    {file = "llama_index-0.6.23-py3-none-any.whl", hash = "sha256:649cf86bbed8905ab3ffb77ed666532515480387bfb4335a98cb557da522c597"},
-    {file = "llama_index-0.6.23.tar.gz", hash = "sha256:7aa6f51788e310610068c524cbec782f80e46f33cbad89e29d254aab6dbf2ab6"},
+    {file = "llama_index-0.6.25.post1-py3-none-any.whl", hash = "sha256:0d1fbc40feac090d1eb430b9607b8902e168b2631b49537f2fa2a793ab6f5580"},
+    {file = "llama_index-0.6.25.post1.tar.gz", hash = "sha256:dca2888aa80fa9d430b248b3f99347a8eafff3cd99449ce3538e4a5654119405"},
 ]
 
 [package.dependencies]
@@ -3816,10 +3816,11 @@ idna = ">=2.0"
 multidict = ">=4.0"
 
 [extras]
+azure = ["pulumi", "pulumi-azure-native"]
 bot = ["slack-sdk"]
 model = ["accelerate", "adapter-transformers", "datasets", "einops", "faiss-cpu", "gradio", "langchain", "llama-index", "sentence-transformers", "tokenizers", "torch", "transformers"]
 
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
-content-hash = "72b2e82385aaa636ffc13ddd6bf5f280019454625935cf29396af8c9eac13c01"
+content-hash = "bbfdf29793ddcf595c0d3a668251b100462eac84dd08e7e3757e11911c508d89"
