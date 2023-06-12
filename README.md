@@ -2,6 +2,8 @@
 The Reginald project consists of:
 
 ```
+├── azure
+│   └── Setup REGinald infrastructure on Azure
 ├── data
 │   └── Extracts from the REG handbook and wiki
 ├── data_processing
@@ -21,7 +23,20 @@ The bot uses web sockets for communication.
 
 ### Prerequisites
 
-This project uses [Poetry](https://python-poetry.org/) for dependency management. Make sure you have Poetry installed on your machine.
+This project uses [Poetry](https://python-poetry.org/) for dependency management.
+Make sure you have Poetry installed on your machine.
+
+Install the project dependencies:
+
+```
+poetry install --all-extras
+```
+
+If you only want to run a subset of the available packages then use:
+
+- for the Azure configuration `--extra azure`
+- for the Slack bot `--extra bot`
+- for model building `--extra model`
 
 ### Getting started
 
@@ -34,17 +49,12 @@ This project uses [Poetry](https://python-poetry.org/) for dependency management
     echo "export SLACK_APP_TOKEN='your-app-level-token'" >> .env
     ```
 
-1. Install the project dependencies:
-    ```
-    poetry install
-    ```
-
-1. Activate the virtual environment:
+2. Activate the virtual environment:
     ```
     poetry shell
     ```
 
-1. Install the pre-commit hooks
+3. Install the pre-commit hooks
     ```
     pre-commit install
     ```
