@@ -35,6 +35,11 @@ torch = { version="^2.0.1", optional=true }
 transformers = { version="^4.30.1", optional=true }
 ipykernel = "^6.23.2"
 
+[tool.poetry.dev-dependencies]
+black = "^23.3.0"
+isort = "^5.12.0"
+pre-commit = "^3.3.2"
+
 [tool.poetry.extras]
 azure = [
     "pulumi",
@@ -46,6 +51,7 @@ bot = [
     "openai",
     "pandas",
     "slack-sdk",
+    "torch",
     "transformers"
 ]
 model = [
@@ -62,11 +68,6 @@ model = [
     "torch",
     "transformers"
 ]
-
-[tool.poetry.dev-dependencies]
-black = "^23.3.0"
-isort = "^5.12.0"
-pre-commit = "^3.3.2"
 
 [build-system]
 requires = ["poetry-core"]
