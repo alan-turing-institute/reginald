@@ -3,6 +3,7 @@ from pulumi_azure_native import containerinstance, network, resources
 
 # Get some configuration variables
 stack_name = pulumi.get_stack()
+config = pulumi.Config()
 
 # Create an resource group
 resource_group = resources.ResourceGroup(
@@ -56,10 +57,10 @@ container_group = containerinstance.ContainerGroup(
             name="reginald",  # maximum of 63 characters
             environment_variables=[
                 containerinstance.EnvironmentVariableArgs(
-                    name="SLACK_APP_TOKEN", value=""
+                    name="SLACK_APP_TOKEN", secure_value=config.get_secret("SLACK_APP_TOKEN")
                 ),
                 containerinstance.EnvironmentVariableArgs(
-                    name="SLACK_BOT_TOKEN", value=""
+                    name="SLACK_BOT_TOKEN", secure_value=config.get_secret("SLACK_BOT_TOKEN")
                 ),
             ],
             ports=[
