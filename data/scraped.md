@@ -1,4 +1,4 @@
-# Scraped data 
+# Scraped data
 
 Scraped data using code from Andy P (link TODO).
 
@@ -37,7 +37,7 @@ pip install -e .
 pip install html5
 
 # generate data
-# note: will fail but will generate files in tests/interact_se_connector/output 
+# note: will fail but will generate files in tests/interact_se_connector/output
 pytest tests/interact_se_connector/test_scrapper.py::test_do_walk
 ```
 
