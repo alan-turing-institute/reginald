@@ -28,6 +28,7 @@ adapter-transformers = "^3.2.1"
 llama-index = "^0.6.23"
 accelerate = "^0.20.3"
 einops = "^0.6.1"
+gradio = "^3.34.0"
 
 [tool.poetry.dev-dependencies]
 black = "^23.3.0"
