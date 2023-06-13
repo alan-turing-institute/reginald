@@ -1,24 +1,23 @@
+# Standard library imports
 import logging
 import re
 
-import accelerate
+# Third-party imports
 import pandas as pd
-import torch
 import transformers
 from langchain.embeddings.huggingface import HuggingFaceEmbeddings
 from langchain.llms.base import LLM
 from llama_index import (
     Document,
-    GPTListIndex,
     LangchainEmbedding,
     LLMPredictor,
     PromptHelper,
     ServiceContext,
-    SimpleDirectoryReader,
 )
 from llama_index.indices.vector_store.base import GPTVectorStoreIndex
 from transformers import AutoTokenizer, pipeline
 
+# Local imports
 from .base import MessageResponse, ResponseModel
 
 DATA_FILES = ["../data/handbook-scraped.csv", "../data/wiki-scraped.csv"]
