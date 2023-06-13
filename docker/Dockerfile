@@ -11,4 +11,4 @@ RUN poetry install --extras bot
 
 # Set entrypoint
 ENTRYPOINT [ "poetry" ]
-CMD ["run", "python", "/app/slack_bot/bot.py"]
+CMD ["run", "python", "/app/slack_bot/run.py"]
