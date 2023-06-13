@@ -32,6 +32,7 @@ tokenizers = { version="^0.13.3", optional=true }
 torch = { version="^2.0.1", optional=true }
 transformers = { version="^4.30.1", optional=true }
 bitsandbytes = "^0.39.0"
+xformers = "^0.0.20"
 
 [tool.poetry.extras]
 azure = ["pulumi", "pulumi-azure-native"]
