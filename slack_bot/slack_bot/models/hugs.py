@@ -40,7 +40,7 @@ QUANTIZATION_CONFIG = BitsAndBytesConfig(
 DATA_DIR = os.path.join(os.path.dirname(__file__), "..", "data")
 DATA_FILES = [f"{DATA_DIR}/handbook-scraped.csv", f"{DATA_DIR}/wiki-scraped.csv"]
 MODEL_NAME = "distilgpt2"
-QUANTIZE = False
+QUANTIZE = False  # Doesn't work on M1
 
 
 class CustomLLM(LLM):
