@@ -2,12 +2,33 @@
 name = "reginald-slack"
 version = "0.1.0"
 description = "A Slack bot for REG Hack Week 2023"
-authors = ["evelinag <evelina@evelinag.com>", "James Robinson <jrobinson@turing.ac.uk>"]
+authors = ["evelinag <evelina@evelinag.com>",
+           "James Robinson <jrobinson@turing.ac.uk>",
+           "Ryan Chan <rchan@turing.ac.uk>",
+           "Markus Hauru <mhauru@turing.ac.uk>",
+           "May Yong <myong@turing.ac.uk>",
+           "James Bishop <jbishop@turing.ac.uk>",
+           "Tomas Lazauskas <tlazauskas@turing.ac.uk>",
+           "David Beavan <dbeavan@turing.ac.uk>",
+           "Levan Bokeria <lbokeria@turing.ac.uk>",
+           "Martin O'Reilly <moreilly@turing.ac.uk>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.11"
 slack-sdk = "^3.21.3"
+torch = "^2.0.1"
+transformers = "^4.30.1"
+tokenizers = "^0.13.3"
+datasets = "^2.12.0"
+faiss-cpu = "^1.7.4"
+langchain = "^0.0.198"
+sentence-transformers = "^2.2.2"
+adapter-transformers = "^3.2.1"
+llama-index = "^0.6.23"
+accelerate = "^0.20.3"
+einops = "^0.6.1"
+gradio = "^3.34.0"
 
 [tool.poetry.dev-dependencies]
 black = "^23.3.0"
