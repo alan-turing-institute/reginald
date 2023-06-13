@@ -3,6 +3,8 @@ import logging
 import os
 import threading
 
+from huggingface_backend import call_and_response
+
 # Third-party imports
 from slack_sdk.socket_mode import SocketModeClient
 from slack_sdk.socket_mode.request import SocketModeRequest
@@ -12,36 +14,42 @@ from slack_sdk.web import WebClient
 
 def process(client: SocketModeClient, req: SocketModeRequest) -> None:
     logging.info(f"Received request of type '{req.type}'")
-    if req.type == "events_api":
-        logging.info(f"Request text: '{req.payload['event']['text']}'")
+    if req.type != "events_api":
+        return None
 
-        # Acknowledge the request anyway
-        response = SocketModeResponse(envelope_id=req.envelope_id)
-        client.send_socket_mode_response(response)
+    event = req.payload["event"]
+    text = event["text"]
+    user_id = event["user"]
+    sender_is_bot = "bot_id" in event
+    logging.info(f"Request text: '{text}'")
 
-        # Direct message to REGinald
-        if (
-            req.payload["event"]["type"] == "message"
-            and req.payload["event"].get("subtype") is None
-        ):
-            # DM the bot
-            client.web_client.reactions_add(
-                name="eyes",
-                channel=req.payload["event"]["channel"],
-                timestamp=req.payload["event"]["ts"],
-            )
+    # Acknowledge the request anyway
+    response = SocketModeResponse(envelope_id=req.envelope_id)
+    client.send_socket_mode_response(response)
 
-        # Mention @REGinald in a channel
-        elif req.payload["event"]["type"] == "app_mention":
-            client.web_client.reactions_add(
-                name="+1",
-                channel=req.payload["event"]["channel"],
-                timestamp=req.payload["event"]["ts"],
-            )
-            user_id = req.payload["event"]["user"]
-            client.web_client.chat_postMessage(
-                channel=req.payload["event"]["channel"], text=f"Hello <@{user_id}>!"
-            )
+    response = call_and_response(text, user_id)
+    # Direct message to REGinald
+    if (
+        event["type"] == "message"
+        and event.get("subtype") is None
+        and not sender_is_bot
+    ):
+        # DM the bot
+        client.web_client.reactions_add(
+            name="eyes",
+            channel=event["channel"],
+            timestamp=event["ts"],
+        )
+        client.web_client.chat_postMessage(channel=event["channel"], text=response)
+
+    # Mention @REGinald in a channel
+    elif event["type"] == "app_mention" and not sender_is_bot:
+        client.web_client.reactions_add(
+            name="+1",
+            channel=event["channel"],
+            timestamp=event["ts"],
+        )
+        client.web_client.chat_postMessage(channel=event["channel"], text=response)
 
 
 if __name__ == "__main__":
