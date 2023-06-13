@@ -6,6 +6,8 @@ The Reginald project consists of:
 │   └── Extracts from the REG handbook and wiki
 ├── data_processing
 │   └── Scripts for processing data
+├── docker
+│   └── Scripts for building a Docker image
 ├── models
 │   └── REGinald models
 └── slack_bot
