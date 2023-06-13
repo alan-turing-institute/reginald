@@ -1,3 +1,5 @@
+# Standard library imports
+from abc import ABC
 from typing import Optional
 
 
@@ -7,11 +9,10 @@ class MessageResponse:
         self.emoji = emoji
 
 
-class BaseStrategy:
+class ResponseModel(ABC):
     def direct_message(self, message: str, user_id: str) -> MessageResponse:
         """When the strategy receives a message it should return a MessageResponse where both are optional"""
         raise NotImplementedError
-
 
     def channel_mention(self, message: str, user_id: str) -> MessageResponse:
         """When the strategy receives a message it should return a MessageResponse where both are optional"""
