@@ -1,5 +1,6 @@
 # Standard library imports
 import logging
+import pathlib
 import re
 
 # Third-party imports
@@ -15,12 +16,12 @@ from llama_index import (
     ServiceContext,
 )
 from llama_index.indices.vector_store.base import GPTVectorStoreIndex
-from transformers import AutoTokenizer, pipeline
 
 # Local imports
 from .base import MessageResponse, ResponseModel
 
-DATA_FILES = ["../data/handbook-scraped.csv", "../data/wiki-scraped.csv"]
+DATA_DIRECTORY = pathlib.Path(__file__).parent.parent.parent.parent / "data"
+DATA_FILES = ["handbook-scraped.csv", "wiki-scraped.csv"]
 MODEL_NAME = "distilgpt2"
 
 
@@ -47,7 +48,7 @@ class Hugs(ResponseModel):
         # Prep the contextual documents
         documents = []
         for data_file in DATA_FILES:
-            df = pd.read_csv(data_file)
+            df = pd.read_csv(DATA_DIRECTORY / data_file)
             text_list = df["body"].dropna()
             documents += [Document(t) for t in text_list]
 
@@ -57,12 +58,11 @@ class Hugs(ResponseModel):
         # device = accelerator.device
 
         # Create the model object
-        tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)
-        model_pipeline = pipeline(
+        tokenizer = transformers.AutoTokenizer.from_pretrained(MODEL_NAME)
+        model_pipeline = transformers.pipeline(
             "text-generation",
             model=MODEL_NAME,
             tokenizer=tokenizer,
-            # device=device,
             trust_remote_code=True,
         )
 
