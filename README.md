@@ -13,7 +13,7 @@ The Reginald project consists of:
 ├── models
 │   └── REGinald models
 └── slack_bot
-    └── Preprocessor for wiki markdown
+    └── Python Slack bot
 ```
 
 ## Slack bot
