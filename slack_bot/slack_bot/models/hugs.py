@@ -1,10 +1,14 @@
+from __future__ import annotations
+
 import logging
+import os
 import re
 
 import accelerate
 import pandas as pd
 import torch
 import transformers
+from langchain.chat_models import ChatOpenAI
 from langchain.embeddings.huggingface import HuggingFaceEmbeddings
 from langchain.llms.base import LLM
 from llama_index import (
@@ -14,15 +18,29 @@ from llama_index import (
     LLMPredictor,
     PromptHelper,
     ServiceContext,
-    SimpleDirectoryReader,
 )
 from llama_index.indices.vector_store.base import GPTVectorStoreIndex
-from transformers import AutoTokenizer, pipeline
+from transformers import (
+    AutoModelForCausalLM,
+    AutoTokenizer,
+    BitsAndBytesConfig,
+    pipeline,
+)
 
 from .base import MessageResponse, ResponseModel
 
-DATA_FILES = ["../data/handbook-scraped.csv", "../data/wiki-scraped.csv"]
+QUANTIZATION_CONFIG = BitsAndBytesConfig(
+    load_in_4bit=True,
+    bnb_4bit_compute_dtype=torch.float16,
+    bnb_4bit_quant_type="nf4",
+    bnb_4bit_use_double_quant=True,
+)
+
+
+DATA_DIR = os.path.join(os.path.dirname(__file__), "..", "data")
+DATA_FILES = [f"{DATA_DIR}/handbook-scraped.csv", f"{DATA_DIR}/wiki-scraped.csv"]
 MODEL_NAME = "distilgpt2"
+QUANTIZE = False
 
 
 class CustomLLM(LLM):
@@ -52,39 +70,60 @@ class Hugs(ResponseModel):
             text_list = df["body"].dropna()
             documents += [Document(t) for t in text_list]
 
-        # Decide what device to use
-        # TODO This should probably be used when running on a GPU.
-        # accelerator = accelerate.Accelerator()
-        # device = accelerator.device
-
-        # Create the model object
-        tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)
-        model_pipeline = pipeline(
-            "text-generation",
-            model=MODEL_NAME,
-            tokenizer=tokenizer,
-            # device=device,
-            trust_remote_code=True,
-        )
-
-        llm_predictor = LLMPredictor(
-            llm=CustomLLM(model_name=MODEL_NAME, pipeline=model_pipeline)
-        )
         hfemb = HuggingFaceEmbeddings()
         embed_model = LangchainEmbedding(hfemb)
 
         # set number of output tokens
         num_output = 512
-        # set maximum input size
-        max_input_size = 1024
+
+        if MODEL_NAME == "gpt-3.5-turbo":
+            # Use OpenAI API
+            # set maximum input size
+            max_input_size = 4096
+
+            llm_predictor = LLMPredictor(
+                llm=ChatOpenAI(temperature=0.7, model=MODEL_NAME, max_tokens=num_output)
+            )
+        else:
+            # Use open-source LLM from transformers
+            # set maximum input size
+            max_input_size = 1024
+
+            # Decide what device to use
+            # TODO This should probably be used when running on a GPU.
+            accelerator = accelerate.Accelerator()
+            device = accelerator.device
+
+            # Create the model object
+            tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)
+            model_kwargs = (
+                {"quantization_config": QUANTIZATION_CONFIG, "device_map": "auto"}
+                if QUANTIZE
+                else {}
+            )
+            model = AutoModelForCausalLM.from_pretrained(
+                MODEL_NAME, trust_remote_code=True, **model_kwargs
+            )
+            model_pipeline = pipeline(
+                "text-generation",
+                model=model,
+                tokenizer=tokenizer,
+                device=device if not QUANTIZE else None,
+            )
+
+            llm_predictor = LLMPredictor(
+                llm=CustomLLM(model_name=MODEL_NAME, pipeline=model_pipeline)
+            )
+
         # set maximum chunk overlap
-        max_chunk_overlap = 20
-        chunk_size_limit = 600
+        chunk_size_limit = 300
+        chunk_overlap_ratio = 0.1
+
         prompt_helper = PromptHelper(
             context_window=max_input_size,
             num_output=num_output,
             chunk_size_limit=chunk_size_limit,
-            max_chunk_overlap=max_chunk_overlap,
+            chunk_overlap_ratio=chunk_overlap_ratio,
         )
 
         service_context = ServiceContext.from_defaults(
@@ -93,10 +132,10 @@ class Hugs(ResponseModel):
             prompt_helper=prompt_helper,
         )
 
-        index = GPTVectorStoreIndex.from_documents(
+        self.index = GPTVectorStoreIndex.from_documents(
             documents, service_context=service_context
         )
-        self.query_engine = index.as_query_engine()
+        self.query_engine = self.index.as_query_engine()
         logging.info("Done setting up Huggingface backend.")
 
         self.error_response_template = (
@@ -108,7 +147,15 @@ class Hugs(ResponseModel):
     def _get_response(self, msg_in: str, user_id: str) -> str:
         msg_out = f"<@{user_id}>, you asked me: {msg_in}\n"
         try:
-            response = self.query_engine.query(msg_in).response
+            query_response = self.query_engine.query(msg_in)
+            # concatenate the response with the reources that it used
+            response = (
+                query_response.response
+                + "\n\n\nCitations:\n"
+                + ("-" * 50)
+                + "\n"
+                + query_response.get_formatted_sources()
+            )
         except Exception as e:  # ignore: broad-except
             response = self.error_response_template.format(repr(e))
         pattern = (
