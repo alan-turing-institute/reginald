@@ -69,7 +69,25 @@ AZURE_KEYVAULT_AUTH_VIA_CLI=true pulumi stack change-secrets-provider "azurekeyv
 echo "✅ Using Azure KeyVault '$KEYVAULT_NAME' for encryption"
 
 # Configure the azure-native plugin
-pulumi config set azure-native:tenantId "$(az account list --all --query "[?isDefault].tenantId | [0]" --output tsv)"
-pulumi config set azure-native:subscriptionId "$(az account list --all --query "[?isDefault].id | [0]" --output tsv)"
-pulumi config set azure-native:location "$LOCATION"
+AZURE_KEYVAULT_AUTH_VIA_CLI=true pulumi config set azure-native:tenantId "$(az account list --all --query "[?isDefault].tenantId | [0]" --output tsv)"
+AZURE_KEYVAULT_AUTH_VIA_CLI=true pulumi config set azure-native:subscriptionId "$(az account list --all --query "[?isDefault].id | [0]" --output tsv)"
+AZURE_KEYVAULT_AUTH_VIA_CLI=true pulumi config set azure-native:location "$LOCATION"
 echo "✅ Configured azure-native defaults"
+
+# Set app secrets
+SLACK_APP_TOKEN=""
+SLACK_BOT_TOKEN=""
+if [ -e ../.env ]; then
+    SLACK_APP_TOKEN=$(grep "SLACK_APP_TOKEN" ../.env | cut -d '"' -f 2)
+    SLACK_BOT_TOKEN=$(grep "SLACK_BOT_TOKEN" ../.env | cut -d '"' -f 2)
+fi
+if [ -z "$SLACK_APP_TOKEN" ]; then
+    echo "Please provide a SLACK_APP_TOKEN:"
+    read SLACK_APP_TOKEN
+fi
+if [ -z "$SLACK_BOT_TOKEN" ]; then
+    echo "Please provide a SLACK_BOT_TOKEN:"
+    read SLACK_BOT_TOKEN
+fi
+AZURE_KEYVAULT_AUTH_VIA_CLI=true pulumi config set --secret SLACK_APP_TOKEN "$SLACK_APP_TOKEN"
+AZURE_KEYVAULT_AUTH_VIA_CLI=true pulumi config set --secret SLACK_BOT_TOKEN "$SLACK_BOT_TOKEN"
