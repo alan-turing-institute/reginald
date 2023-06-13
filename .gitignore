@@ -159,3 +159,5 @@ cython_debug/
 # Pulumi
 azure/.secrets
 azure/Pulumi.production.yaml
+
+*.swp
