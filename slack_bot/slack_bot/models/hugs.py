@@ -1,19 +1,18 @@
 from __future__ import annotations
 
+# Standard library imports
 import logging
 import os
 import re
 
-import accelerate
+# Third-party imports
 import pandas as pd
-import torch
 import transformers
 from langchain.chat_models import ChatOpenAI
 from langchain.embeddings.huggingface import HuggingFaceEmbeddings
 from langchain.llms.base import LLM
 from llama_index import (
     Document,
-    GPTListIndex,
     LangchainEmbedding,
     LLMPredictor,
     PromptHelper,
@@ -27,6 +26,7 @@ from transformers import (
     pipeline,
 )
 
+# Local imports
 from .base import MessageResponse, ResponseModel
 
 QUANTIZATION_CONFIG = BitsAndBytesConfig(
