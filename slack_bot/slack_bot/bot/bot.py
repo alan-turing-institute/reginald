@@ -17,9 +17,14 @@ class Bot(SocketModeRequestListener):
 
     def __call__(self, client: SocketModeClient, req: SocketModeRequest) -> None:
         logging.info(f"Received request of type '{req.type}'")
-        if req.type == "events_api":
-            message = req.payload["event"]["text"]
-            user_id = req.payload["event"]["user"]
+        if req.type != "events_api":
+            return None
+
+        try:
+            event = req.payload["event"]
+            message = event["text"]
+            user_id = event["user"]
+            sender_is_bot = "bot_id" in event
             logging.info(f"Received message '{message}' from user '{user_id}'")
 
             # Acknowledge the request anyway
@@ -28,13 +33,14 @@ class Bot(SocketModeRequestListener):
 
             # Direct message to REGinald
             if (
-                req.payload["event"]["type"] == "message"
-                and req.payload["event"].get("subtype") is None
+                event["type"] == "message"
+                and event.get("subtype") is None
+                and not sender_is_bot
             ):
                 response = self.model.direct_message(message, user_id)
 
             # Mention @REGinald in a channel
-            elif req.payload["event"]["type"] == "app_mention":
+            elif event["type"] == "app_mention" and not sender_is_bot:
                 response = self.model.channel_mention(message, user_id)
 
             # Add an emoji and a reply as required
@@ -42,11 +48,17 @@ class Bot(SocketModeRequestListener):
                 logging.info(f"Applying emoji {response.emoji}")
                 client.web_client.reactions_add(
                     name=response.emoji,
-                    channel=req.payload["event"]["channel"],
-                    timestamp=req.payload["event"]["ts"],
+                    channel=event["channel"],
+                    timestamp=event["ts"],
                 )
             if response.message:
                 logging.info(f"Posting message {response.message}")
                 client.web_client.chat_postMessage(
-                    channel=req.payload["event"]["channel"], text=response.message
+                    channel=event["channel"], text=response.message
                 )
+        except Exception:
+            logging.error(
+                "Something went wrong in processing a Slack request."
+                f" Payload: {req.payload}"
+            )
+            raise
