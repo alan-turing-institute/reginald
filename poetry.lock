@@ -1306,7 +1306,7 @@ name = "jinja2"
 version = "3.1.2"
 description = "A very fast and expressive template engine."
 category = "main"
-optional = true
+optional = false
 python-versions = ">=3.7"
 files = [
     {file = "Jinja2-3.1.2-py3-none-any.whl", hash = "sha256:6088930bfe239f0e6710546ab9c19c9ef35e29792895fed6e6e31a023a182a61"},
@@ -1561,7 +1561,7 @@ name = "markupsafe"
 version = "2.1.3"
 description = "Safely add untrusted strings to HTML/XML markup."
 category = "main"
-optional = true
+optional = false
 python-versions = ">=3.7"
 files = [
     {file = "MarkupSafe-2.1.3-cp310-cp310-macosx_10_9_universal2.whl", hash = "sha256:cd0f502fe016460680cd20aaa5a76d241d6f35a1c3350c474bac1273803893fa"},
@@ -1751,7 +1751,7 @@ name = "mpmath"
 version = "1.3.0"
 description = "Python library for arbitrary-precision floating-point arithmetic"
 category = "main"
-optional = true
+optional = false
 python-versions = "*"
 files = [
     {file = "mpmath-1.3.0-py3-none-any.whl", hash = "sha256:a0b2b9fe80bbcd81a6647ff13108738cfb482d481d826cc0e02f5b35e5c88d2c"},
@@ -1892,7 +1892,7 @@ name = "networkx"
 version = "3.1"
 description = "Python package for creating and manipulating graphs and networks"
 category = "main"
-optional = true
+optional = false
 python-versions = ">=3.8"
 files = [
     {file = "networkx-3.1-py3-none-any.whl", hash = "sha256:4f33f68cb2afcf86f28a45f43efc27a9386b535d567d2127f8f61d51dec58d36"},
@@ -1995,7 +1995,7 @@ name = "numpy"
 version = "1.24.3"
 description = "Fundamental package for array computing in Python"
 category = "main"
-optional = true
+optional = false
 python-versions = ">=3.8"
 files = [
     {file = "numpy-1.24.3-cp310-cp310-macosx_10_9_x86_64.whl", hash = "sha256:3c1104d3c036fb81ab923f507536daedc718d0ad5a8707c6061cdfd6d184e570"},
@@ -2567,6 +2567,22 @@ files = [
 
 [package.extras]
 diagrams = ["jinja2", "railroad-diagrams"]
+
+[[package]]
+name = "pyre-extensions"
+version = "0.0.29"
+description = "Type system extensions for use with the pyre type checker"
+category = "main"
+optional = false
+python-versions = "*"
+files = [
+    {file = "pyre-extensions-0.0.29.tar.gz", hash = "sha256:4113600706c47306a156dcc9c405f4d458c505be432699571e357ef20e2d5d77"},
+    {file = "pyre_extensions-0.0.29-py3-none-any.whl", hash = "sha256:f4fef9089872c0656f82de7e8f357af0377dcbb6c2deadc1a7d3037aaf43757e"},
+]
+
+[package.dependencies]
+typing-extensions = "*"
+typing-inspect = "*"
 
 [[package]]
 name = "pyrsistent"
@@ -3244,7 +3260,7 @@ name = "sympy"
 version = "1.12"
 description = "Computer algebra system (CAS) in Python"
 category = "main"
-optional = true
+optional = false
 python-versions = ">=3.8"
 files = [
     {file = "sympy-1.12-py3-none-any.whl", hash = "sha256:c3588cd4295d0c0f603d0f2ae780587e64e2efeedb3521e46b9bb1d08d184fa5"},
@@ -3399,7 +3415,7 @@ name = "torch"
 version = "2.0.1"
 description = "Tensors and Dynamic neural networks in Python with strong GPU acceleration"
 category = "main"
-optional = true
+optional = false
 python-versions = ">=3.8.0"
 files = [
     {file = "torch-2.0.1-cp310-cp310-manylinux1_x86_64.whl", hash = "sha256:8ced00b3ba471856b993822508f77c98f48a458623596a4c43136158781e306a"},
@@ -3569,7 +3585,7 @@ name = "typing-extensions"
 version = "4.5.0"
 description = "Backported and Experimental Type Hints for Python 3.7+"
 category = "main"
-optional = true
+optional = false
 python-versions = ">=3.7"
 files = [
     {file = "typing_extensions-4.5.0-py3-none-any.whl", hash = "sha256:fb33085c39dd998ac16d1431ebc293a8b3eedd00fd4a32de0ff79002c19511b4"},
@@ -3581,7 +3597,7 @@ name = "typing-inspect"
 version = "0.8.0"
 description = "Runtime inspection utilities for typing module."
 category = "main"
-optional = true
+optional = false
 python-versions = "*"
 files = [
     {file = "typing_inspect-0.8.0-py3-none-any.whl", hash = "sha256:5fbf9c1e65d4fa01e701fe12a5bca6c6e08a4ffd5bc60bfac028253a447c5188"},
@@ -3755,6 +3771,30 @@ files = [
     {file = "websockets-11.0.3-py3-none-any.whl", hash = "sha256:6681ba9e7f8f3b19440921e99efbb40fc89f26cd71bf539e45d8c8a25c976dc6"},
     {file = "websockets-11.0.3.tar.gz", hash = "sha256:88fc51d9a26b10fc331be344f1781224a375b78488fc343620184e95a4b27016"},
 ]
+
+[[package]]
+name = "xformers"
+version = "0.0.20"
+description = "XFormers: A collection of composable Transformer building blocks."
+category = "main"
+optional = false
+python-versions = ">=3.7"
+files = [
+    {file = "xformers-0.0.20-cp310-cp310-manylinux2014_x86_64.whl", hash = "sha256:905a9bedf18c8feb68c9143df0dadba708ec1efb947bcc97c4f9e5b30fd79c42"},
+    {file = "xformers-0.0.20-cp310-cp310-win_amd64.whl", hash = "sha256:70bbfe09fe42c9f00080d4f5d325740e2de63ffcaf0dee9504f7e72e25354937"},
+    {file = "xformers-0.0.20-cp311-cp311-manylinux2014_x86_64.whl", hash = "sha256:ed49d7d60d72f1823068c7d7bac743f47b892eec25edeeefc0c7c13fc102dcfc"},
+    {file = "xformers-0.0.20-cp311-cp311-win_amd64.whl", hash = "sha256:3318f95f826ea43e15d9c53bbca0ed31982e85e7b3979cd8a3444e18f680885f"},
+    {file = "xformers-0.0.20-cp38-cp38-manylinux2014_x86_64.whl", hash = "sha256:1a101bbbae78ee6816d05f812a93d4b962513a9edfb154148df7911d73a4a17b"},
+    {file = "xformers-0.0.20-cp38-cp38-win_amd64.whl", hash = "sha256:3d0632a096f166b4dc10bc796583d28ea0a0383113c3e845cc1952ade9999637"},
+    {file = "xformers-0.0.20-cp39-cp39-manylinux2014_x86_64.whl", hash = "sha256:21dd4fd86260dadf778fad77236b2a0fd26dbf444ee9a6d5a8eddab027609fd3"},
+    {file = "xformers-0.0.20-cp39-cp39-win_amd64.whl", hash = "sha256:6f772c7b1bcaa02079fbd5f0705d1819a4c9593f88f3699743af7d81a3adeb12"},
+    {file = "xformers-0.0.20.tar.gz", hash = "sha256:de08cc5844038cc0f13b48cc95d0029863b9aa578c496c2f49b0c882ff9f5901"},
+]
+
+[package.dependencies]
+numpy = "*"
+pyre-extensions = "0.0.29"
+torch = "2.0.1"
 
 [[package]]
 name = "xxhash"
@@ -3960,4 +4000,4 @@ model = ["accelerate", "adapter-transformers", "datasets", "einops", "faiss-cpu"
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
-content-hash = "e6b81b39a74f01a9de2e41e41ccc5fcea5a9e390b72a698d557c293ca8da9e7d"
+content-hash = "eb48ffb9265e980d829a399776c0a44eaf30aa7281ed6725080dbabf2c130216"
