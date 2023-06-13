@@ -39,6 +39,7 @@ if __name__ == "__main__":
         logging.error(f"Model {model_name} was not recognised")
         sys.exit(1)
 
+    logging.info(f"Initialising bot with model {model_name}")
     slack_bot = Bot(model())
 
     # Initialize SocketModeClient with an app-level token + WebClient

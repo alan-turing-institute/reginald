@@ -2,7 +2,7 @@ from __future__ import annotations
 
 # Standard library imports
 import logging
-import os
+import pathlib
 import re
 
 # Third-party imports
@@ -39,8 +39,8 @@ QUANTIZATION_CONFIG = BitsAndBytesConfig(
 )
 
 
-DATA_DIR = os.path.join(os.path.dirname(__file__), "..", "data")
-DATA_FILES = [f"{DATA_DIR}/handbook-scraped.csv", f"{DATA_DIR}/wiki-scraped.csv"]
+DATA_DIR = pathlib.Path(__file__).parent.parent.parent.parent / "data"
+DATA_FILES = [DATA_DIR / "handbook-scraped.csv", DATA_DIR / "wiki-scraped.csv"]
 MODEL_NAME = "distilgpt2"
 QUANTIZE = False  # Doesn't work on M1
 
