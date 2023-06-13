@@ -7,8 +7,7 @@ config = pulumi.Config()
 
 # Create an resource group
 resource_group = resources.ResourceGroup(
-    "resource_group",
-    resource_group_name=f"rg-reginald-{stack_name}-deployment"
+    "resource_group", resource_group_name=f"rg-reginald-{stack_name}-deployment"
 )
 
 # Create a network security group
@@ -57,10 +56,12 @@ container_group = containerinstance.ContainerGroup(
             name="reginald",  # maximum of 63 characters
             environment_variables=[
                 containerinstance.EnvironmentVariableArgs(
-                    name="SLACK_APP_TOKEN", secure_value=config.get_secret("SLACK_APP_TOKEN")
+                    name="SLACK_APP_TOKEN",
+                    secure_value=config.get_secret("SLACK_APP_TOKEN"),
                 ),
                 containerinstance.EnvironmentVariableArgs(
-                    name="SLACK_BOT_TOKEN", secure_value=config.get_secret("SLACK_BOT_TOKEN")
+                    name="SLACK_BOT_TOKEN",
+                    secure_value=config.get_secret("SLACK_BOT_TOKEN"),
                 ),
             ],
             ports=[
