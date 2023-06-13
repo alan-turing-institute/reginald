@@ -3,8 +3,6 @@ import logging
 import os
 import threading
 
-from huggingface_backend import call_and_response
-
 # Third-party imports
 from slack_sdk.socket_mode import SocketModeClient
 from slack_sdk.socket_mode.request import SocketModeRequest
@@ -17,39 +15,43 @@ def process(client: SocketModeClient, req: SocketModeRequest) -> None:
     if req.type != "events_api":
         return None
 
-    event = req.payload["event"]
-    text = event["text"]
-    user_id = event["user"]
-    sender_is_bot = "bot_id" in event
-    logging.info(f"Request text: '{text}'")
+    try:
+        event = req.payload["event"]
+        text = event["text"]
+        user_id = event["user"]
+        sender_is_bot = "bot_id" in event
+        logging.info(f"Request text: '{text}'")
 
-    # Acknowledge the request anyway
-    response = SocketModeResponse(envelope_id=req.envelope_id)
-    client.send_socket_mode_response(response)
+        # Acknowledge the request anyway
+        response = SocketModeResponse(envelope_id=req.envelope_id)
+        client.send_socket_mode_response(response)
 
-    response = call_and_response(text, user_id)
-    # Direct message to REGinald
-    if (
-        event["type"] == "message"
-        and event.get("subtype") is None
-        and not sender_is_bot
-    ):
-        # DM the bot
-        client.web_client.reactions_add(
-            name="eyes",
-            channel=event["channel"],
-            timestamp=event["ts"],
-        )
-        client.web_client.chat_postMessage(channel=event["channel"], text=response)
+        response = call_and_response(text, user_id)
+        # Direct message to REGinald
+        if (
+            event["type"] == "message"
+            and event.get("subtype") is None
+            and not sender_is_bot
+        ):
+            # DM the bot
+            client.web_client.reactions_add(
+                name="eyes",
+                channel=event["channel"],
+                timestamp=event["ts"],
+            )
+            client.web_client.chat_postMessage(channel=event["channel"], text=response)
 
-    # Mention @REGinald in a channel
-    elif event["type"] == "app_mention" and not sender_is_bot:
-        client.web_client.reactions_add(
-            name="+1",
-            channel=event["channel"],
-            timestamp=event["ts"],
-        )
-        client.web_client.chat_postMessage(channel=event["channel"], text=response)
+        # Mention @REGinald in a channel
+        elif event["type"] == "app_mention" and not sender_is_bot:
+            client.web_client.reactions_add(
+                name="+1",
+                channel=event["channel"],
+                timestamp=event["ts"],
+            )
+            client.web_client.chat_postMessage(channel=event["channel"], text=response)
+    except Exception:
+        logging.error(f"Something went wrong in `process`. Payload: {req.payload}")
+        raise
 
 
 if __name__ == "__main__":
@@ -59,6 +61,10 @@ if __name__ == "__main__":
         format="%(asctime)s [%(levelname)8s] %(message)s",
         level=logging.INFO,
     )
+
+    # This import triggers some non-trivial set up, so we call it here, e.g. after
+    # setting up logging.
+    from huggingface_backend import call_and_response
 
     # Initialize SocketModeClient with an app-level token + WebClient
     client = SocketModeClient(
