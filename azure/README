@@ -16,7 +16,7 @@ this will also create a local `.secrets` file
 2. Deploy with Pulumi
 
 ```bash
-> source .env
+> source .secrets
 > AZURE_KEYVAULT_AUTH_VIA_CLI=true pulumi refresh
 > AZURE_KEYVAULT_AUTH_VIA_CLI=true pulumi preview
 > AZURE_KEYVAULT_AUTH_VIA_CLI=true pulumi update
