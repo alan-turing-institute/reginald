@@ -8,5 +8,6 @@ docker build . -t reginald:latest -f docker/Dockerfile
 The following environment variables will be used by this image:
 
 - `REGINALD_MODEL`: name of model to use
+- `OPENAI_API_KEY`: API key for OpenAI if using that model
 - `SLACK_APP_TOKEN`: app token for Slack
 - `SLACK_BOT_TOKEN`: bot token for Slack
