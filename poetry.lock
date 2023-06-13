@@ -4411,10 +4411,10 @@ multidict = ">=4.0"
 
 [extras]
 azure = ["pulumi", "pulumi-azure-native"]
-bot = ["langchain", "llama-index", "pandas", "slack-sdk", "transformers"]
+bot = ["langchain", "llama-index", "openai", "pandas", "slack-sdk", "transformers"]
 model = ["accelerate", "adapter-transformers", "datasets", "einops", "faiss-cpu", "gradio", "langchain", "llama-index", "sentence-transformers", "tokenizers", "torch", "transformers"]
 
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
-content-hash = "dc397098b5673b821c2f0b8655667233e6812596398a77df1f28407bf7ed1d5f"
+content-hash = "7fe1ac29f1823137559212b75d7ec924a4fa319028dc9fa9e7a77b47885cf111"
