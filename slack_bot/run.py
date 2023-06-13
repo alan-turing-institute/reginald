@@ -15,9 +15,7 @@ from slack_bot import MODELS, Bot
 if __name__ == "__main__":
     # Parse command line arguments
     parser = argparse.ArgumentParser()
-    parser.add_argument(
-        "--model", "-m", help="Select which model to use", default="hello"
-    )
+    parser.add_argument("--model", "-m", help="Select which model to use", default=None)
     args = parser.parse_args()
 
     # Initialise logging
@@ -27,11 +25,18 @@ if __name__ == "__main__":
         level=logging.INFO,
     )
 
+    # Set the model name
+    model_name = os.environ.get("REGINALD_MODEL")
+    if args.model:
+        model_name = args.model
+    if not model_name:
+        model_name = "hello"
+
     # Initialise a new Slack bot with the requested model
     try:
-        model = MODELS[args.model.lower()]
+        model = MODELS[model_name.lower()]
     except KeyError:
-        logging.error(f"Model {args.model} was not recognised")
+        logging.error(f"Model {model_name} was not recognised")
         sys.exit(1)
 
     slack_bot = Bot(model())
