@@ -33,6 +33,7 @@ torch = { version="^2.0.1", optional=true }
 transformers = { version="^4.30.1", optional=true }
 
 [tool.poetry.extras]
+azure = ["pulumi", "pulumi-azure-native"]
 bot = ["slack-sdk"]
 model = ["accelerate", "adapter-transformers", "datasets", "einops", "faiss-cpu", "gradio", "langchain", "llama-index", "sentence-transformers", "tokenizers", "torch", "transformers"]
 
