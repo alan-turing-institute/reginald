@@ -79,17 +79,8 @@ The bot will now listen for @mentions in the channels it's added to and respond 
 
 1. Ensure that you have installed `Pulumi` and the `Azure CLI`
 
-1. Setup the Pulumi backend (if it already exists this will just check that you have access)
+1. Setup the Pulumi backend and deploy
 
 ```bash
-./setup.sh
-```
-
-1. Deploy with Pulumi
-
-```bash
-> source .secrets
-> AZURE_KEYVAULT_AUTH_VIA_CLI=true pulumi refresh
-> AZURE_KEYVAULT_AUTH_VIA_CLI=true pulumi preview
-> AZURE_KEYVAULT_AUTH_VIA_CLI=true pulumi update
+./setup.sh && AZURE_KEYVAULT_AUTH_VIA_CLI=true pulumi up -y
 ```
