@@ -15,6 +15,11 @@ class OpenAIAzure(ResponseModel):
         self.api_type = "azure"
         self.api_version = "2023-03-15-preview"
         self.engine = "reginald-gpt35",
+        self.frequency_penalty = 0
+        self.max_tokens = 110
+        self.presence_penalty = 0
+        self.temperature = 1
+        self.top_p = 1
 
     def direct_message(self, message: str, user_id: str) -> MessageResponse:
         openai.api_base = self.api_base
@@ -23,13 +28,13 @@ class OpenAIAzure(ResponseModel):
         openai.api_key = self.api_key
         response = openai.ChatCompletion.create(
             engine=self.engine,
-            frequency_penalty=0,
-            max_tokens=110,
-            presence_penalty=0,
+            frequency_penalty=self.frequency_penalty,
+            max_tokens=self.max_tokens,
+            presence_penalty=self.presence_penalty,
             prompt=message,
             stop=None,
-            temperature=1,
-            top_p=1,
+            temperature=self.temperature,
+            top_p=self.top_p,
         )
         text = response["choices"][0]["message"]["content"]
         return MessageResponse(text, None)
@@ -41,13 +46,13 @@ class OpenAIAzure(ResponseModel):
         openai.api_key = self.api_key
         response = openai.ChatCompletion.create(
             engine=self.engine,
-            frequency_penalty=0,
-            max_tokens=110,
-            presence_penalty=0,
+            frequency_penalty=self.frequency_penalty,
+            max_tokens=self.max_tokens,
+            presence_penalty=self.presence_penalty,
             prompt=message,
             stop=None,
-            temperature=1,
-            top_p=1,
+            temperature=self.temperature,
+            top_p=self.top_p,
         )
         text = response["choices"][0]["message"]["content"]
         return MessageResponse(text, None)
