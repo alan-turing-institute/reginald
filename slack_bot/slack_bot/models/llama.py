@@ -64,6 +64,19 @@ class CustomLLM(LLM):
 
 
 class Llama(ResponseModel):
+    @staticmethod
+    def _format_sources(response):
+        texts = []
+        for source_node in response.source_nodes:
+            source_text = (
+                source_node.node.extra_info["filename"]
+                + f" (similarity: {source_node.score})"
+            )
+            texts.append(source_text)
+        result = "I read the following documents to compose this answer:\n"
+        result += "\n\n".join(texts)
+        return result
+
     def _prep_documents(self):
         # Prep the contextual documents
         documents = []
@@ -134,10 +147,8 @@ class Llama(ResponseModel):
             # concatenate the response with the reources that it used
             response = (
                 query_response.response
-                + "\n\n\nCitations:\n"
-                + ("-" * 50)
-                + "\n"
-                + query_response.get_formatted_sources()
+                + "\n\n\n"
+                + self._format_sources(query_response)
             )
         except Exception as e:  # ignore: broad-except
             response = self.error_response_template.format(repr(e))
