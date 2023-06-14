@@ -40,8 +40,9 @@ QUANTIZATION_CONFIG = BitsAndBytesConfig(
 
 
 DATA_DIR = pathlib.Path(__file__).parent.parent.parent.parent / "data"
-DATA_FILES = [DATA_DIR / "handbook-scraped.csv", DATA_DIR / "wiki-scraped.csv"]
-MODEL_NAME = "distilgpt2"
+# TOD Leaving out the wiki for now while we figure out if we are okay sending it to
+# OpenAI.
+DATA_FILES = [DATA_DIR / "handbook-scraped.csv"]  # , DATA_DIR / "wiki-scraped.csv"]
 QUANTIZE = False  # Doesn't work on M1
 
 
@@ -62,7 +63,7 @@ class CustomLLM(LLM):
         return {"model_name": self.model_name}
 
 
-class Hugs(ResponseModel):
+class Llama(ResponseModel):
     def __init__(self):
         logging.info("Setting up Huggingface backend.")
         # Prep the contextual documents
@@ -78,13 +79,15 @@ class Hugs(ResponseModel):
         # set number of output tokens
         num_output = 512
 
-        if MODEL_NAME == "gpt-3.5-turbo":
+        if self.model_name == "gpt-3.5-turbo":
             # Use OpenAI API
             # set maximum input size
             max_input_size = 4096
 
             llm_predictor = LLMPredictor(
-                llm=ChatOpenAI(temperature=0.7, model=MODEL_NAME, max_tokens=num_output)
+                llm=ChatOpenAI(
+                    temperature=0.7, model=self.model_name, max_tokens=num_output
+                )
             )
         else:
             # Use open-source LLM from transformers
@@ -97,24 +100,25 @@ class Hugs(ResponseModel):
             device = accelerator.device
 
             # Create the model object
-            tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)
+            tokenizer = AutoTokenizer.from_pretrained(self.model_name)
             model_kwargs = (
                 {"quantization_config": QUANTIZATION_CONFIG, "device_map": "auto"}
                 if QUANTIZE
                 else {}
             )
             model = AutoModelForCausalLM.from_pretrained(
-                MODEL_NAME, trust_remote_code=True, **model_kwargs
+                self.model_name, trust_remote_code=True, **model_kwargs
             )
             model_pipeline = pipeline(
                 "text-generation",
                 model=model,
                 tokenizer=tokenizer,
-                device=device if not QUANTIZE else None,
+                # TODO Commenting this in breaks on M1.
+                # device=device if not QUANTIZE else None,
             )
 
             llm_predictor = LLMPredictor(
-                llm=CustomLLM(model_name=MODEL_NAME, pipeline=model_pipeline)
+                llm=CustomLLM(model_name=self.model_name, pipeline=model_pipeline)
             )
 
         # set maximum chunk overlap
@@ -187,3 +191,15 @@ class Hugs(ResponseModel):
     def channel_mention(self, message: str, user_id: str) -> MessageResponse:
         backend_response = self._get_response(message, user_id)
         return MessageResponse(backend_response, None)
+
+
+class LlamaDistilGPT2(Llama):
+    def __init__(self, *args, **kwargs):
+        self.model_name = "distilgpt2"
+        super().__init__(*args, **kwargs)
+
+
+class LlamaGPT35Turbo(Llama):
+    def __init__(self, *args, **kwargs):
+        self.model_name = "gpt-3.5-turbo"
+        super().__init__(*args, **kwargs)
