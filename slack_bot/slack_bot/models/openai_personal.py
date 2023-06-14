@@ -8,7 +8,7 @@ import openai
 from .base import MessageResponse, ResponseModel
 
 
-class OpenAI(ResponseModel):
+class OpenAIPersonal(ResponseModel):
     def __init__(self) -> None:
         self.api_key = os.getenv("OPENAI_API_KEY")
 
