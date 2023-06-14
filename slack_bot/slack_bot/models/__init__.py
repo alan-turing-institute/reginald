@@ -1,11 +1,12 @@
 from .base import ResponseModel
 from .hello import Hello
-from .hugs import Hugs
+from .llama import LlamaDistilGPT2, LlamaGPT35Turbo
 from .openai import OpenAI
 
 MODELS = {
     "hello": Hello,
-    "hugs": Hugs,
+    "llama-distilgpt2": LlamaDistilGPT2,
+    "llama-gpt-3.5-turbo": LlamaGPT35Turbo,
     "openai": OpenAI,
 }
 
