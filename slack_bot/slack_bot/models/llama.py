@@ -6,7 +6,6 @@ import pathlib
 import re
 
 # Third-party imports
-import accelerate
 import pandas as pd
 import transformers
 from langchain.chat_models import ChatOpenAI
@@ -180,8 +179,8 @@ class LlamaDistilGPT2(Llama):
     def _prep_llm_predictor(self):
         # Use open-source LLM from transformers
         # Decide what device to use
-        accelerator = accelerate.Accelerator()
-        device = accelerator.device
+        # accelerator = accelerate.Accelerator()
+        # device = accelerator.device
 
         # Create the model object
         tokenizer = AutoTokenizer.from_pretrained(self.model_name)
