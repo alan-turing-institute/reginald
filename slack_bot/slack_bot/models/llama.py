@@ -21,23 +21,10 @@ from llama_index import (
     ServiceContext,
 )
 from llama_index.indices.vector_store.base import GPTVectorStoreIndex
-from transformers import (
-    AutoModelForCausalLM,
-    AutoTokenizer,
-    BitsAndBytesConfig,
-    pipeline,
-)
+from transformers import AutoModelForCausalLM, AutoTokenizer, pipeline
 
 # Local imports
 from .base import MessageResponse, ResponseModel
-
-QUANTIZATION_CONFIG = BitsAndBytesConfig(
-    load_in_4bit=True,
-    bnb_4bit_compute_dtype=torch.float16,
-    bnb_4bit_quant_type="nf4",
-    bnb_4bit_use_double_quant=True,
-)
-
 
 DATA_DIR = pathlib.Path(__file__).parent.parent.parent.parent / "data"
 # TOD Leaving out the wiki for now while we figure out if we are okay sending it to
@@ -199,20 +186,16 @@ class LlamaDistilGPT2(Llama):
 
         # Create the model object
         tokenizer = AutoTokenizer.from_pretrained(self.model_name)
-        model_kwargs = (
-            {"quantization_config": QUANTIZATION_CONFIG, "device_map": "auto"}
-            if QUANTIZE
-            else {}
-        )
         model = AutoModelForCausalLM.from_pretrained(
-            self.model_name, trust_remote_code=True, **model_kwargs
+            self.model_name,
+            trust_remote_code=True,
         )
         model_pipeline = pipeline(
             "text-generation",
             model=model,
             tokenizer=tokenizer,
             # TODO Commenting this in breaks on M1.
-            # device=device if not QUANTIZE else None,
+            # device=device,
         )
 
         llm_predictor = LLMPredictor(
