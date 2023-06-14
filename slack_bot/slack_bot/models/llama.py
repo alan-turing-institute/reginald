@@ -70,8 +70,11 @@ class Llama(ResponseModel):
         documents = []
         for data_file in DATA_FILES:
             df = pd.read_csv(data_file)
-            text_list = df["body"].dropna()
-            documents += [Document(t) for t in text_list]
+            df = df[~df.loc[:, "body"].isna()]
+            documents += [
+                Document(row[1]["body"], extra_info={"filename": row[1]["url"]})
+                for row in df.iterrows()
+            ]
 
         hfemb = HuggingFaceEmbeddings()
         embed_model = LangchainEmbedding(hfemb)
