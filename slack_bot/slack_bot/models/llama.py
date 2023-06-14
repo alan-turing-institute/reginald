@@ -8,7 +8,6 @@ import re
 # Third-party imports
 import accelerate
 import pandas as pd
-import torch
 import transformers
 from langchain.chat_models import ChatOpenAI
 from langchain.embeddings.huggingface import HuggingFaceEmbeddings
