@@ -75,11 +75,17 @@ AZURE_KEYVAULT_AUTH_VIA_CLI=true pulumi config set azure-native:location "$LOCAT
 echo "✅ Configured azure-native defaults"
 
 # Set app secrets
+OPENAI_API_KEY=""
 SLACK_APP_TOKEN=""
 SLACK_BOT_TOKEN=""
 if [ -e ../.env ]; then
+    OPENAI_API_KEY=$(grep "OPENAI_API_KEY" ../.env | cut -d '"' -f 2)
     SLACK_APP_TOKEN=$(grep "SLACK_APP_TOKEN" ../.env | cut -d '"' -f 2)
     SLACK_BOT_TOKEN=$(grep "SLACK_BOT_TOKEN" ../.env | cut -d '"' -f 2)
+fi
+if [ -z "$OPENAI_API_KEY" ]; then
+    echo "Please provide a OPENAI_API_KEY:"
+    read OPENAI_API_KEY
 fi
 if [ -z "$SLACK_APP_TOKEN" ]; then
     echo "Please provide a SLACK_APP_TOKEN:"
@@ -89,5 +95,6 @@ if [ -z "$SLACK_BOT_TOKEN" ]; then
     echo "Please provide a SLACK_BOT_TOKEN:"
     read SLACK_BOT_TOKEN
 fi
+AZURE_KEYVAULT_AUTH_VIA_CLI=true pulumi config set --secret OPENAI_API_KEY "$OPENAI_API_KEY"
 AZURE_KEYVAULT_AUTH_VIA_CLI=true pulumi config set --secret SLACK_APP_TOKEN "$SLACK_APP_TOKEN"
 AZURE_KEYVAULT_AUTH_VIA_CLI=true pulumi config set --secret SLACK_BOT_TOKEN "$SLACK_BOT_TOKEN"
