@@ -36,6 +36,7 @@ torch = { version="^2.0.1", optional=true }
 transformers = { version="^4.30.1", optional=true }
 ipykernel = { version="^6.23.2", optional=true }
 xformers = { version="^0.0.20", optional=true }
+nbconvert = "^7.5.0"
 
 [tool.poetry.dev-dependencies]
 black = "^23.3.0"
