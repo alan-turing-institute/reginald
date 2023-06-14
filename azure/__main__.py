@@ -84,8 +84,8 @@ container_group = containerinstance.ContainerGroup(
             ],
             resources=containerinstance.ResourceRequirementsArgs(
                 requests=containerinstance.ResourceRequestsArgs(
-                    cpu=0.5,
-                    memory_in_gb=0.5,
+                    cpu=2,
+                    memory_in_gb=8,
                 ),
             ),
         ),
