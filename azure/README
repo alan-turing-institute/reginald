@@ -17,7 +17,5 @@ this will also create a local `.secrets` file
 
 ```bash
 > source .secrets
-> AZURE_KEYVAULT_AUTH_VIA_CLI=true pulumi refresh
-> AZURE_KEYVAULT_AUTH_VIA_CLI=true pulumi preview
 > AZURE_KEYVAULT_AUTH_VIA_CLI=true pulumi update
 ```
