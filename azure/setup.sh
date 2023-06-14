@@ -86,8 +86,7 @@ if [ -e ../.env ]; then
     SLACK_BOT_TOKEN=$(grep "SLACK_BOT_TOKEN" ../.env | grep -v "^#" | cut -d '"' -f 2)
 fi
 if [ -z "$OPENAI_API_BASE" ]; then
-    echo "Please provide a OPENAI_API_BASE:"
-    read -r OPENAI_API_BASE
+    OPENAI_API_BASE="UseDefault"
 fi
 if [ -z "$OPENAI_API_KEY" ]; then
     echo "Please provide a OPENAI_API_KEY:"
