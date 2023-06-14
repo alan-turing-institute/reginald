@@ -1,4 +1,4 @@
-FROM python:3.11.4-slim
+FROM python:3.11.4
 
 WORKDIR /app
 
@@ -10,9 +10,6 @@ COPY slack_bot slack_bot
 COPY pyproject.toml .
 COPY poetry.lock .
 RUN poetry install --extras bot
-
-# Force install CPU version of torch
-RUN poetry run python -m pip install --upgrade torch --index https://download.pytorch.org/whl/cpu
 
 # Set entrypoint
 ENTRYPOINT [ "poetry" ]
