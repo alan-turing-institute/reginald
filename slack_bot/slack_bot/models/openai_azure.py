@@ -14,12 +14,12 @@ class OpenAIAzure(ResponseModel):
         self.api_key = os.getenv("OPENAI_API_KEY")
         self.api_type = "azure"
         self.api_version = "2023-03-15-preview"
-        self.engine = "reginald-gpt35",
+        self.engine = "reginald-gpt35"
         self.frequency_penalty = 0
-        self.max_tokens = 110
+        self.max_tokens = 800
         self.presence_penalty = 0
-        self.temperature = 1
-        self.top_p = 1
+        self.temperature = 0.7
+        self.top_p = 0.95
 
     def direct_message(self, message: str, user_id: str) -> MessageResponse:
         openai.api_base = self.api_base
@@ -30,8 +30,8 @@ class OpenAIAzure(ResponseModel):
             engine=self.engine,
             frequency_penalty=self.frequency_penalty,
             max_tokens=self.max_tokens,
+            messages=[{"role": "user", "content": message}],
             presence_penalty=self.presence_penalty,
-            prompt=message,
             stop=None,
             temperature=self.temperature,
             top_p=self.top_p,
@@ -48,8 +48,8 @@ class OpenAIAzure(ResponseModel):
             engine=self.engine,
             frequency_penalty=self.frequency_penalty,
             max_tokens=self.max_tokens,
+            messages=[{"role": "user", "content": message}],
             presence_penalty=self.presence_penalty,
-            prompt=message,
             stop=None,
             temperature=self.temperature,
             top_p=self.top_p,
