@@ -48,13 +48,8 @@ azure = [
     "pulumi-azure-native"
 ]
 bot = [
-    "langchain",
-    "llama_index",
     "openai",
-    "pandas",
     "slack-sdk",
-    "torch",
-    "transformers"
 ]
 model = [
     "accelerate",
