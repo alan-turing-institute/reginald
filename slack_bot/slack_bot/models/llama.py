@@ -64,8 +64,7 @@ class CustomLLM(LLM):
 
 
 class Llama(ResponseModel):
-    def __init__(self):
-        logging.info("Setting up Huggingface backend.")
+    def _prep_documents(self):
         # Prep the contextual documents
         documents = []
         for data_file in DATA_FILES:
@@ -75,64 +74,39 @@ class Llama(ResponseModel):
                 Document(row[1]["body"], extra_info={"filename": row[1]["url"]})
                 for row in df.iterrows()
             ]
+        return documents
+
+    def _prep_llm_predictor(self):
+        raise NotImplemented(
+            "_prep_llm_predictor needs to be implemented by a subclass of Llama."
+        )
+
+    def __init__(
+        self,
+        model_name,
+        max_input_size,
+        num_output=512,
+        chunk_size_limit=300,
+        chunk_overlap_ratio=0.1,
+    ):
+        logging.info("Setting up Huggingface backend.")
+        self.max_input_size = max_input_size
+        self.model_name = model_name
+        self.num_output = num_output
+        self.chunk_size_limit = chunk_size_limit
+        self.chunk_overlap_ratio = chunk_overlap_ratio
+
+        documents = self._prep_documents()
+        llm_predictor = self._prep_llm_predictor()
 
         hfemb = HuggingFaceEmbeddings()
         embed_model = LangchainEmbedding(hfemb)
 
-        # set number of output tokens
-        num_output = 512
-
-        if self.model_name == "gpt-3.5-turbo":
-            # Use OpenAI API
-            # set maximum input size
-            max_input_size = 4096
-
-            llm_predictor = LLMPredictor(
-                llm=ChatOpenAI(
-                    temperature=0.7, model=self.model_name, max_tokens=num_output
-                )
-            )
-        else:
-            # Use open-source LLM from transformers
-            # set maximum input size
-            max_input_size = 1024
-
-            # Decide what device to use
-            # TODO This should probably be used when running on a GPU.
-            accelerator = accelerate.Accelerator()
-            device = accelerator.device
-
-            # Create the model object
-            tokenizer = AutoTokenizer.from_pretrained(self.model_name)
-            model_kwargs = (
-                {"quantization_config": QUANTIZATION_CONFIG, "device_map": "auto"}
-                if QUANTIZE
-                else {}
-            )
-            model = AutoModelForCausalLM.from_pretrained(
-                self.model_name, trust_remote_code=True, **model_kwargs
-            )
-            model_pipeline = pipeline(
-                "text-generation",
-                model=model,
-                tokenizer=tokenizer,
-                # TODO Commenting this in breaks on M1.
-                # device=device if not QUANTIZE else None,
-            )
-
-            llm_predictor = LLMPredictor(
-                llm=CustomLLM(model_name=self.model_name, pipeline=model_pipeline)
-            )
-
-        # set maximum chunk overlap
-        chunk_size_limit = 300
-        chunk_overlap_ratio = 0.1
-
         prompt_helper = PromptHelper(
-            context_window=max_input_size,
-            num_output=num_output,
-            chunk_size_limit=chunk_size_limit,
-            chunk_overlap_ratio=chunk_overlap_ratio,
+            context_window=self.max_input_size,
+            num_output=self.num_output,
+            chunk_size_limit=self.chunk_size_limit,
+            chunk_overlap_ratio=self.chunk_overlap_ratio,
         )
 
         service_context = ServiceContext.from_defaults(
@@ -197,12 +171,49 @@ class Llama(ResponseModel):
 
 
 class LlamaDistilGPT2(Llama):
+    def _prep_llm_predictor(self):
+        # Use open-source LLM from transformers
+        # Decide what device to use
+        accelerator = accelerate.Accelerator()
+        device = accelerator.device
+
+        # Create the model object
+        tokenizer = AutoTokenizer.from_pretrained(self.model_name)
+        model_kwargs = (
+            {"quantization_config": QUANTIZATION_CONFIG, "device_map": "auto"}
+            if QUANTIZE
+            else {}
+        )
+        model = AutoModelForCausalLM.from_pretrained(
+            self.model_name, trust_remote_code=True, **model_kwargs
+        )
+        model_pipeline = pipeline(
+            "text-generation",
+            model=model,
+            tokenizer=tokenizer,
+            # TODO Commenting this in breaks on M1.
+            # device=device if not QUANTIZE else None,
+        )
+
+        llm_predictor = LLMPredictor(
+            llm=CustomLLM(model_name=self.model_name, pipeline=model_pipeline)
+        )
+        return llm_predictor
+
     def __init__(self, *args, **kwargs):
-        self.model_name = "distilgpt2"
-        super().__init__(*args, **kwargs)
+        super().__init__(*args, model_name="distilgpt2", max_input_size=1024, **kwargs)
 
 
 class LlamaGPT35Turbo(Llama):
+    def _prep_llm_predictor(self):
+        llm_predictor = LLMPredictor(
+            llm=ChatOpenAI(
+                temperature=0.7, model=self.model_name, max_tokens=self.num_output
+            )
+        )
+        return llm_predictor
+
     def __init__(self, *args, **kwargs):
-        self.model_name = "gpt-3.5-turbo"
-        super().__init__(*args, **kwargs)
+        super().__init__(
+            *args, model_name="gpt-3.5-turbo", max_input_size=4096, **kwargs
+        )
