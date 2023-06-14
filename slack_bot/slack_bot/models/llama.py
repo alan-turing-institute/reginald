@@ -42,7 +42,9 @@ QUANTIZATION_CONFIG = BitsAndBytesConfig(
 DATA_DIR = pathlib.Path(__file__).parent.parent.parent.parent / "data"
 # TOD Leaving out the wiki for now while we figure out if we are okay sending it to
 # OpenAI.
-DATA_FILES = [DATA_DIR / "handbook-scraped.csv"]  # , DATA_DIR / "wiki-scraped.csv"]
+DATA_FILES = [DATA_DIR / "handbook-scraped.csv"] + list(
+    (DATA_DIR / "the_turing_way_md").glob("*.md")
+)  #  + [DATA_DIR / "wiki-scraped.csv"]
 QUANTIZE = False  # Doesn't work on M1
 
 
@@ -81,12 +83,19 @@ class Llama(ResponseModel):
         # Prep the contextual documents
         documents = []
         for data_file in DATA_FILES:
-            df = pd.read_csv(data_file)
-            df = df[~df.loc[:, "body"].isna()]
-            documents += [
-                Document(row[1]["body"], extra_info={"filename": row[1]["url"]})
-                for row in df.iterrows()
-            ]
+            if data_file.suffix == ".csv":
+                df = pd.read_csv(data_file)
+                df = df[~df.loc[:, "body"].isna()]
+                documents += [
+                    Document(row[1]["body"], extra_info={"filename": row[1]["url"]})
+                    for row in df.iterrows()
+                ]
+            elif data_file.suffix == ".md":
+                with open(data_file, "r") as f:
+                    content = f.read()
+                documents.append(
+                    Document(content, extra_info={"filename": str(data_file)})
+                )
         return documents
 
     def _prep_llm_predictor(self):
@@ -156,8 +165,8 @@ class Llama(ResponseModel):
             r"(?s)^Context information is"
             r".*"
             r"Given the context information and not prior knowledge, "
-            "answer the question:"
-            rf" {msg_in}"
+            "answer the question: "
+            rf"{msg_in}"
             r"\n(.*)"
         )
         m = re.search(pattern, response)
