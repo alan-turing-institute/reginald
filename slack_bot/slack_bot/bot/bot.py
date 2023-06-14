@@ -27,6 +27,12 @@ class Bot(SocketModeRequestListener):
         try:
             # Extract user and message information
             event = req.payload["event"]
+            if (
+                event.get("type") == "message"
+                and event.get("subtype") == "message_changed"
+            ):
+                # We are not processing changes to messages.
+                return None
             message = event["text"]
             user_id = event["user"]
             sender_is_bot = "bot_id" in event
