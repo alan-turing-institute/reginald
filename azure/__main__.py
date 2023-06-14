@@ -56,6 +56,18 @@ container_group = containerinstance.ContainerGroup(
             name="reginald",  # maximum of 63 characters
             environment_variables=[
                 containerinstance.EnvironmentVariableArgs(
+                    name="OPENAI_API_BASE",
+                    value=config.get_secret("OPENAI_API_BASE"),
+                ),
+                containerinstance.EnvironmentVariableArgs(
+                    name="OPENAI_API_KEY",
+                    secure_value=config.get_secret("OPENAI_API_KEY"),
+                ),
+                containerinstance.EnvironmentVariableArgs(
+                    name="REGINALD_MODEL",
+                    value="openai",
+                ),
+                containerinstance.EnvironmentVariableArgs(
                     name="SLACK_APP_TOKEN",
                     secure_value=config.get_secret("SLACK_APP_TOKEN"),
                 ),
