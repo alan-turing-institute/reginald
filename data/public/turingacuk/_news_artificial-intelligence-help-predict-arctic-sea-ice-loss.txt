@@ -1,0 +1,66 @@
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+A new AI (artificial intelligence) tool is set to enable scientists to more accurately forecast Arctic sea ice conditions months into the future. The improved predictions could underpin new early-warning systems that protect Arctic wildlife and coastal communities from the impacts of sea ice loss. 
+Published this week (Thursday 26 August) in the journal Nature Communications, an international team of researchers led by British Antarctic Survey (BAS) and The Alan Turing Institute describe how the AI system, IceNet, addresses the challenge of producing accurate Arctic sea ice forecasts for the season ahead – something that has eluded scientists for decades. 
+Sea ice, a vast layer of frozen sea water that appears at the North and South poles, is notoriously difficult to forecast because of its complex relationship with the atmosphere above and ocean below. The sensitivity of sea ice to increasing temperatures has caused the summer Arctic sea ice area to halve over the past four decades, equivalent to the loss of an area around 25 times the size of Great Britain. These accelerating changes have dramatic consequences for our climate, for Arctic ecosystems, and Indigenous and local communities whose livelihoods are tied to the seasonal sea ice cycle.  
+IceNet, the AI predictive tool, is almost 95% accurate in predicting whether sea ice will be present two months ahead - better than the leading physics-based model. 
+Lead author Tom Andersson, Data Scientist at the BAS AI Lab and funded by The Alan Turing Institute, explains:
+“The Arctic is a region on the frontline of climate change and has seen substantial warming over the last 40 years. IceNet has the potential to fill an urgent gap in forecasting sea ice for Arctic sustainability efforts and runs thousands of times faster than traditional methods.”
+Dr Scott Hosking, Principal Investigator, Co-leader of the BAS AI Lab and Senior Research Fellow at The Alan Turing Institute, says:
+“I’m excited to see how AI is making us rethink how we undertake environmental research. Our new sea ice forecasting framework fuses data from satellite sensors with the output of climate models in ways traditional systems simply couldn't achieve.” 
+Unlike conventional forecasting systems that attempt to model the laws of physics directly, the authors designed IceNet based on a concept called deep learning. Through this approach, the model ‘learns’ how sea ice changes from thousands of years of climate simulation data, along with decades of observational data to predict the extent of Arctic sea ice months into the future.
+Tom Andersson concludes:
+“Now we’ve demonstrated that AI can accurately forecast sea ice, our next goal is to develop a daily version of the model and have it running publicly in real-time, just like weather forecasts. This could operate as an early warning system for risks associated with rapid sea ice loss.”
+
+Video with lead author Tom Andersson discussing the research - all multimedia should be credited to British Antarctic Survey.
+Seasonal Arctic sea ice forecasting with probabilistic deep learning by Tom Andersson, Scott Hosking, Maria Pérez-Ortiz, Brooks Paige, Andrew Elliott, Chris Russell, Stephen Law, Dan Jones, Jeremy Wilkinson, Tony Phillips, James Byrne, Steffen Tietsche, Beena Sarojini, Eduardo Blanchard-Wrigglesworth, Yevgeny Aksenov, Rod Downie, and Emily Shuckburgh was published in the journal Nature Communications on Thursday 26 August. Read the paper here: https://www.nature.com/articles/s41467-021-25257-4
+About the British Antarctic Survey:
+The Arctic is undergoing fundamental change. Long-term temperature records have revealed that the Arctic has warmed faster than other regions of our planet. This ‘Arctic amplification’ of global warming has led to major and quantifiable changes across the region from changing atmospheric circulation patterns and the melting of glaciers and ice sheets, through to the thawing of permafrost and the changing of the physical environment in, on, and above the Arctic Ocean.
+The BAS AI Lab is a cross-disciplinary group of scientists and engineers leading in the application of AI and Data Science methods to tackle our greatest polar research challenges. The Lab has two overarching objectives: developing AI algorithms for automating our polar research vessels, our fleet of underwater vehicles, and Antarctic research bases; and the development of machine learning methods for understanding and predicting environmental change.
+British Antarctic Survey (BAS), an institute of the Natural Environment Research Council (NERC) and part of UKRI, delivers and enables world-leading interdisciplinary research in the Polar Regions. Its skilled science and support staff based in Cambridge, Antarctica and the Arctic, work together to deliver research that uses the Polar Regions to advance our understanding of Earth as a sustainable planet. Through its extensive logistic capability and know how BAS facilitates access for the British and international science community to the UK polar research operation. Numerous national and international collaborations, combined with an excellent infrastructure help sustain a world leading position for the UK in Antarctic affairs.
+
+© The Alan Turing Institute
+2023. All rights reserved.
+The Alan Turing Institute, a charity incorporated and registered in England and Wales with company number 09512457 and charity number 1162533 whose registered office is at British Library, 96 Euston Road, London, England, NW1 2DB, United Kingdom.
+For website-related enquiries email
+[email protected]
+
+Explore the Institute
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Legal
+Awards

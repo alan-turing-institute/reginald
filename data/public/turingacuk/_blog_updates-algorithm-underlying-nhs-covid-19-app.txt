@@ -1,0 +1,60 @@
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+In my previous blog post, I described the NHS COVID-19 app’s technical roadmap – specifically related to the app’s ability to differentiate between high and medium/low risk encounters with an individual that tests positive for COVID-19, using Bluetooth Low Energy (BLE) signal strength data, and all of the uncertainties that BLE presents.
+Since writing that blog post, the app has been downloaded (an incredible) 19 million times. In line with recent research, the app is very much expected to be working alongside other non-pharmaceutical interventions to reduce infections and deaths. We are working hard to evaluate and validate the app’s impact. Like our earlier research findings (in which we observed significant decreases in incidence and R on the Isle of Wight immediately after the launch of the Test and Trace programme, including the app), we will publish research when we have statistically robust conclusions to share.
+In this blog post, I want to provide an update on the changes to the risk scoring component of the app.
+The NHS COVID-19 app uses Google/Apple Exposure Notification (GAEN) Application Programming Interface (API) to perform decentralised contact tracing – ensuring that the app is privacy preserving, meaning that it can be optimised for health outcomes, whilst ensuring that the app users’ sensitive data remains cryptographically secure, located on device, and not able to be passed to anybody (see this BBC news article too). To perform risk assessment on a user’s device, GAEN API has two Bluetooth data modes available: mode 1 and mode 2. Let’s have a brief look at them, and what the new techniques do to make use of mode 2 data.
+In mode 1, the GAEN API provides signal attenuation information to the app, in the form of a three-bin histogram, to allow each country to define a risk calculation in line with their national definition. (We loosely term these three bins as “near”, “medium”, “far”, and use 2m and 15mins as the baseline definition of high risk, for England and Wales.) The height of each histogram bin corresponds to the number of seconds spent in that bin over a 24-hour period, based on any interaction with a device whose owner has subsequently tested positive. The width of each histogram bin, partitioned within signal attenuation, is defined by the health authority.
+For the NHS COVID-19 app, the selection of the bin width, through the specification of two attenuation values, has been performed through statistical optimisation: for all the different forms of signal attenuation and signal multipath, what’s the configuration that optimises receiver operating characteristic area under curve (ROC AUC), and so only notify those that are high risk. To select these values, we have simulated hundreds of thousands of scenarios, and performed large numbers of real-world experiments, allowing us to search across the 5-dimensional parameter space (containing the partition of the histogram and associated weights), and so mathematically select the optimal values. Using this principled approach, we arrived at the same conclusion as our German app colleagues, and so use the same configuration.
+In order to understand the performance of the app in the real world using these parameters, we performed many experiments (on a bus, in an office, in a pub, in a conference hall, and so on) and determined that the current app (running on 19 million devices) has an AUC of approximately 0.72 – which is “good” (see this (unrelated) reference for such terminology). With the latest release, for users that decide to continue with the mode 1 app (i.e., those that have not upgraded their device’s operating system so can’t use mode 2), we are further reducing the risk threshold, to make the app more sensitive to high-risk encounters.
+Google and Apple have released an update to their API, which moves away from the mode 1 histogram approach (Google documentation). The GAEN API now provides health authorities with time sequenced attenuation values, with the attenuation value being a “raw” measurement at a particular point in time, rather than being aggregated into histogram format. This means that we have several more pieces of information to use (in a fully privacy preserving manner), and can better approximate transmission risk.
+Using a sequential Bayesian process – an Unscented Kalman Smoother – we can compute a posterior distribution over distance given time sequenced attenuation data. Intuitively, this algorithm exploits the fact that two individuals within an encounter are very unlikely to have their distance fluctuate rapidly as a function of time (i.e. two individuals are unlikely to be 2m then 10m then 3m then 8m then… apart over a 15 min window). Exploiting this prior information, coupled with a complete characterisation of the conditional uncertainty in the likelihood function, as detailed in our preprint, allows us to compute the aforementioned posterior distribution, and so compute a more accurate risk score. (Note that we considered sequential Monte Carlo algorithms for inference, which were deemed to be too computationally expensive and difficult to verify in the development time we have available. We also considered simpler algorithms such as the extended Kalman smoother, which was deemed not to be as robust as the unscented variant, due to the well-known limitations of the first-order Taylor series approximation that such an algorithm makes.)
+With these algorithms deployed, we’re able to obtain an AUC of around 0.85 – which is deemed to be “excellent”. We believe that we are the first app to use mode 2 data in this way, and our source code for the algorithms are available, should anybody wish to offer suggestions, or should other countries want to use (and build on) the work that we’ve done.
+It also turns out that using the mode 2 API completely removes the “ghost notification issue”, which has caused concern for some users. Now, if the app notifies you, then it will only be for high-risk encounters - in which case you should follow the instructions provided, and help to keep your family, friends, and community safe.
+Along with colleagues at The Alan Turing Institute, I continue to offer independent scientific advice to the NHS COVID-19 app, to help to produce an app that offers maximum benefit to citizens in England and Wales, and the rest of the world. In research terms, we’re exploring the epidemiological impact of the app, the utility of the inclusion of (privacy preserving) indoors / outdoors indicators, adaptive Bluetooth sampling, Bayesian device calibration, and a set of other potential improvements that could make this app even better. I welcome input from interested collaborators.
+I would like to thank our collaborators for the interesting and informative conversations and comments to date, from organisations including Google, Apple, MIT, University of Liverpool, University College London, Glasgow University, University of Oxford, University of Cambridge, and NCSC – and all colleagues across NHS Test and Trace.
+© The Alan Turing Institute
+2023. All rights reserved.
+The Alan Turing Institute, a charity incorporated and registered in England and Wales with company number 09512457 and charity number 1162533 whose registered office is at British Library, 96 Euston Road, London, England, NW1 2DB, United Kingdom.
+For website-related enquiries email
+[email protected]
+
+Explore the Institute
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Legal
+Awards

@@ -1,0 +1,101 @@
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+
+Now in its 8th year, the Enrichment Scheme is designed for students looking to enhance and broaden their research within the Turing's community.
+Applications for the 2023 Enrichment scheme have now closed.
+For information on how to prepare a competitive Enrichment application, please view the slides used in the application session from the 25 January 2022.
+Our two open events have now taken place. We recorded the in-person sessions and will send to students who cannot make the event.
+You can now watch the open event on the Turing's YouTube channel. 
+As the Enrichment scheme enters its 8th year, the Turing announces that for the 2023/24 academic year we will only be offering the following option:
+
+The Placement Award offers candidates the opportunity to undertake a 6 or 9 month placement at the Turing HQ in London. This award carries an expectation that holders will engage in person at the office for a minimum of 2 days per week (subject to the office being open and government health guidelines). 
+Up to 55 awards will be offered and will become active in October 2023 or January 2024 at the candidate’s choice. A Placement award of £472.50 per month will be provided to facilitate relocating or commuting to the Turing HQ.
+
+For 2023 the Community Award will not be offered as we have for 2022. Following analysis, it has been decided to use the 2022 cohort as a pilot scheme; outcomes and impact will be monitored throughout the 2022/2023 academic year. A decision will be made in summer 2023 about whether the Community Award will be offered again for the 2024 Call.
+ 
+“The opportunities for engagement and networking the Turing Enrichment Scheme provided were second to none. From “Lunch and Learn” seminars to taking part in the AI UK conference (as a presenter, facilitator, and panel discussant), there were so many experiences that substantially enhanced my studies. Altogether, through the Enrichment Scheme I was able to receive world-class training, I expanded my (research) horizon, and became part of the extraordinary community the Turing is fostering.”Isabella Deutsch, University of Edinburgh, 2021 Enrichment student.
+
+ 
+The Enrichment scheme is designed to give students the opportunity to enhance, refresh, and broaden their research with the Turing’s community and in recognition of their place within the UK’s growing data science and AI research community. Placement Award holders receive funding to physically access the Institute’s facilities whilst also building both online communities and facilitating other activities such as attending training courses, going to conferences and visiting collaborators.
+
+The award should support and enhance the current work towards the PhD thesis and be supported by the student’s supervisor from their home university*. Students usually begin their engagement with us in their second or third years of a typical doctorate to further the work they are undertaking for their research project. Students must be in the active research phase of their studies for the duration of the award. There is no ‘typical’ Enrichment student, and we welcome students from a broad range of disciplines. *Home university is where the PhD will be awarded from.
+Enrichment students have the opportunity to find new collaborators for their research or related work. Enrichment Awards allow students to join a cohort from across the UK, as well as the range of researchers already active at the Turing. Collaboration and networking are encouraged at the Institute through interest groups, seminars, events and workshops and engagement with the Turing’s research programmes. 
+We encourage our Enrichment students to learn and apply new methodologies to enrich their research. Learning is supported through training activities offered by the Institute and elsewhere across the research landscape. Students will be able to apply to use the computing resources available through the Turing and will have access to academic mentors while at the Turing. Example training activities include:
+
+·    Research Software Engineering with Python:
+·    AI Ethics and Governance
+·    Research Data Science
+Enrichment students have an opportunity to develop their research independence as they engage on programme. With support from their home supervisors to spend time away from their usual work environment, students are able to engage in new research groups and with new ideas which can be beneficial to future research output.
+Considering the ethical implications of research is a core part of all the work at the Turing. All Enrichment students are encouraged to examine the ethical issues in their own projects and discuss them with others. Students are encouraged to engage with Turing Research Ethics (“TREx”) as well as contribute to ongoing discussions regarding fairness and transparency through projects such as The Turing Way, our open-source guide and gold-standard in developing reproducible data science projects. 
+ 
+“In addition to developing my core research skills by attending Turing courses such as the excellent RSE programme, I have gained a huge amount of insight and social support from being in a vibrant physical space filled with other research students. This informal mixing and sharing of ideas has helped me to further ground my research in the wider AI field, which will benefit me greatly when writing up my thesis over the coming year.”
+Tom Bewley, University of Bristol, 2021 Enrichment Student
+There is no typical Enrichment student. We welcome applications from students who will embrace the opportunity to enrich their own research through the Turing environment. We encourage applications from a broad range of academic disciplines and backgrounds, especially those whose research spans multiple disciplines and applications and aligns with the Institute’s research areas. Students should consider how they would best utilise the Enrichment scheme to support their current research and contribute to their doctoral work. You can see examples of the research our Enrichment students have conducted and what they got out of their placements in our yearbooks from our 2019/20 cohorts.
+Students will remain enrolled at their university during the Enrichment scheme and must have the support of their supervisor and university.
+Potential applicants should review the Call Document for full eligibility and assessment criteria before preparing their application.  
+Introduction and opening remarks - Professor Sir Adrian Smith, Institute Director
+
+Keynote speaker - Kirstie Whitaker, Programme Director for Tools, Practices and Systems 
+
+Enrichment student panel discussion 
+
+How to develop a competitive application - Kit Windows-Yule, Turing Fellow
+Application mentor panel discussion 
+
+ 
+ 
+ 
+ 
+ 
+Applications for the 2023 Enrichment scheme have now closed.
+The Alan Turing Institute is committed to championing equality, diversity, and inclusion. If you have questions about the Enrichment scheme or require any adjustments to the application process please contact our team on [email protected] or on 0203 862 3578.
+For more information about how we process applicants' data please see our transparency notice.
+Enrichment scheme call document
+Guidance for Universities and Supervisors
+FAQs
+ 
+© The Alan Turing Institute
+2023. All rights reserved.
+The Alan Turing Institute, a charity incorporated and registered in England and Wales with company number 09512457 and charity number 1162533 whose registered office is at British Library, 96 Euston Road, London, England, NW1 2DB, United Kingdom.
+For website-related enquiries email
+[email protected]
+
+Explore the Institute
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Legal
+Awards

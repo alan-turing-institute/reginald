@@ -1,0 +1,60 @@
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+There are tremendous demands for advanced statistical methodology to make scientific sense of the recent deluge of emerging data. Huge challenges in modelling, computation, and statistical algorithms have been created by diverse and important questions in virtually every area of human activity. This project aims to create a step change in the use of statistical methodology, motivated by challenges in modelling, computation, and statistical algorithms, for use in engineering and security.
+The problems this project will tackle will be characterised by complex large datasets indexed in space and often continuously in time. New models will require not only spatial components, but also large network and time-series structure often requiring the solutions to stochastic (randomly distributed) differential equations. 
+Inference - drawing conclusions from data - will require a completely new generation of algorithms. Such algorithms will need to be tailored for particular computer architecture, and will require underpinning theory to show they scale. New theory developed on the computational and statistical robustness of approaches will be required to ensure the usefulness of the procedures developed.
+The main focus of the research will be in developing and studying generic statistical methods which have applicability in a wide-range of applications. 
+The work will cover a range of different approaches:
+Please see the dedicated website for the project at www.cosines.org
+The research will focus on two major application domains which align with Turing research programmes: data-centric engineering, and defence and security. Partnership between the researchers and the Turing’s programmes will maximise the impact and speed of translation of the research being conducted.
+For data-centric engineering, an example is the project ‘A digital twin of the world’s first 3D printed steel bridge’. The project is presenting enormous challenges to existing applied mathematical and statistical modelling of complex structures where even the bulk material properties are unknown and randomly distributed. A new generation of numerical inferential methods are therefore needed to support this progress.
+For defence and security, there are many statistical challenges emerging from the need to process and communicate big and complex data sets, and to counter nefarious actors – from ‘bedroom hackers’ to state-sponsored terrorists – threatening cyber security. To counter such threats, it is necessary to produce a complete statistical representation of the virtual environment, in the presence of missing data, significant temporal change, and an adversary willing to manipulate systems in order to achieve their goals.
+To counter the threat of global terrorism, it is necessary for law-enforcement agencies within the UK to share data, whilst rigorously applying data protection laws to maintain individuals’ privacy. It is therefore necessary to have mathematical guarantees over such data sharing arrangements, and to formulate statistical methodologies for the ‘penetration testing’ of anonymised data.
+On November 2nd 2018, the project will be launched with an afternoon of presentations related to the project.
+Anyone who would like to attend should register their interest by emailing Shital Desai ([email protected]). Lunch (from 12.15) will be provided and the event will conclude with a short drinks reception to celebrate the beginning of the project. The talks are scheduled to finish by roughly 16.30 and will take place in Warwick University Oculus lecture theatre OC0.02. More information can be found on the CoSInES website.
+[email protected]
+© The Alan Turing Institute
+ 2023. All rights reserved.
+The Alan Turing Institute, a charity incorporated and registered in England and Wales with company number 09512457 and charity number 1162533 whose registered office is at British Library, 96 Euston Road, London, England, NW1 2DB, United Kingdom.
+For website-related enquiries email
+[email protected]
+
+Explore the Institute
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Legal
+Awards

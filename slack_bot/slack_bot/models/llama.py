@@ -27,9 +27,11 @@ from .base import MessageResponse, ResponseModel
 DATA_DIR = pathlib.Path(__file__).parent.parent.parent.parent / "data"
 # TOD Leaving out the wiki for now while we figure out if we are okay sending it to
 # OpenAI.
-DATA_FILES = [DATA_DIR / "handbook-scraped.csv"] + list(
-    (DATA_DIR / "the_turing_way_md").glob("*.md")
-)  #  + [DATA_DIR / "wiki-scraped.csv"]
+DATA_FILES = (
+    list((DATA_DIR / "public").glob("**/*.md"))
+    + list((DATA_DIR / "public").glob("**/*.csv"))
+    + list((DATA_DIR / "public").glob("**/*.txt"))
+)
 QUANTIZE = False  # Doesn't work on M1
 
 

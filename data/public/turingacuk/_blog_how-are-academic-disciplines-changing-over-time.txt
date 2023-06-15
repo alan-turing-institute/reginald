@@ -1,0 +1,60 @@
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+When will the next pandemic appear? How can we create sustainable energy? Can we build intelligent robots? All of the big societal questions require collaboration between researchers across multiple disciplines. Interdisciplinary research is something that is increasingly encouraged and embraced.
+But scientific disciplines are not rigid, well-defined entities. They are fluid and context-dependent. They are made up of interactions between academics in workplaces and conferences, via papers, presentations and informal conversations. They emerge as conventions from accumulated individual and collective behaviours. Various classifications exist, but these struggle to keep up with the changing research landscape.
+To better understand how individual disciplines evolve, we recently developed a new (interdisciplinary!) methodology, published in Humanities and Social Sciences Communications, which draws on techniques from computational linguistics and natural language processing (particularly algorithms that help us to determine how words change their meaning over time).
+The idea behind our linguistic line of research is that we can divide a corpus of texts into separate portions corresponding to different time periods (months, years, decades or centuries). We can then trace the evolution of a word’s meaning across the time periods by analysing how its context changes (we do this by building geometric representations of words, called word embeddings, from the data). For example, we can identify the evolution of the word ‘tweet’ to mean both ‘a message posted on Twitter’ and ‘a sound made by a small bird’.
+We applied this approach to scientific disciplines, analysing the discipline labels attached to over 21 million scientific articles published in 8,400 academic journals between 1990 and 2019 (this data all came from the Dimensions database). By creating geometric representations of these labels from the data and measuring the closeness between them, we tracked their development over time, detecting those that had changed the most.
+For example, computer hardware, a foundational part of the broader computer science field, has drifted closer to other computational disciplines over time, and away from specific application areas. In 1990-1992, the most similar disciplines to computer hardware (its ‘neighbours’) were in the biological sciences (plant biology, physiology, zoology, genetics and horticultural production), which points to a focus on biology-specific applications. If we fast-forward to 2017-2019, we find that its neighbours are more computational disciplines (distributed computing, computer software, data format, information systems, and computation theory and mathematics).
+The profile of communication and media studies has also changed significantly. In 1990-1992, its neighbours were medical biotechnology, physiology, building, veterinary sciences, and transportation and freight services. These neighbours fit well with the early focus of communication studies on health and risk management communication. From around 2002-2004, communication and media studies began to surround itself with neighbours including journalism and professional writing, religion and religious studies, and anthropology. This is compatible with the development of communication studies from a focus on applications towards a more theoretically informed field that studies multiple aspects of communication.
+Our research demonstrates how scientific disciplines are always in flux. Analysing the evolution of disciplines and their relationships can help us to better understand the broader research landscape of academics, research organisations, and funders. In academic publishing, our techniques could be used, for example, to help decide the scope and profile of new journal launches so that they best capture current disciplinary trends. Our work is also relevant to those who produce and use research strategies and policies, such as funding agencies and university research strategy offices.
+In the future, we plan to study the development of a larger number of disciplines to see if we can find confirmation of known shifts in discipline profiles, and even discover unknown ones. We’ll also be looking into the broader trends that our work has started to reveal.
+As we tackle the big societal problems, different disciplines are going to need to work together more efficiently and effectively. A clearer picture of the research landscape can only help with this endeavour.
+Read the paper:Investigating patterns of change, stability, and interaction among scientific disciplines using embeddings
+ 
+Top image: Pawel Czerwinski / Unsplash
+© The Alan Turing Institute
+2023. All rights reserved.
+The Alan Turing Institute, a charity incorporated and registered in England and Wales with company number 09512457 and charity number 1162533 whose registered office is at British Library, 96 Euston Road, London, England, NW1 2DB, United Kingdom.
+For website-related enquiries email
+[email protected]
+
+Explore the Institute
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Legal
+Awards
