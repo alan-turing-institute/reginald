@@ -17,7 +17,7 @@ def url_to_filename(url):
     valid_chars = "-_.()abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
     sanitized_filename = "".join(c for c in sanitized_filename if c in valid_chars)
 
-    return "data/" + sanitized_filename + ".txt"
+    return "data/unused/turingacuk/" + sanitized_filename + ".txt"
 
 
 def check_string(string):
