@@ -5,7 +5,7 @@
 For large datasets, processing in-memory on a single thread might be too slow.
 There are a few potential options for processing this data in parallel, some of which we'll look at very briefly here (we won't go into any details - for more information you are recommended to look at the linked documentation).
 
-## Batch processing 
+## Batch processing
 
 One option could be to split your dataset into smaller subsets, and use a batch system to run many jobs in parallel on a cluster or farm of computers.
 A popular batch job scheduler is _Slurm_ (https://slurm.schedmd.com/documentation.html) which offers tools for submitting jobs to batch queues, monitoring their progress, and keeping track of failures.
@@ -13,10 +13,10 @@ Cloud providers such as Microsoft Azure have their own batch offerings (e.g. _Az
 
 However, even with tools such as these, there is usually quite a bit of overhead involved in figuring out how to split up the data, write submission scripts, and keeping track of completed or failed jobs.
 
-## MapReduce 
+## MapReduce
 
 MapReduce is a programming model for processing data using a cluster of worker nodes, often on a distributed filesystem.
-One such implementation is _Apache Hadoop_ https://hadoop.apache.org/. 
+One such implementation is _Apache Hadoop_ https://hadoop.apache.org/.
 
 MapReduce consists of three main steps: **Map**, **Shuffle**, **Reduce**, which all operate on _key, value_ pairs.  Much of the possible speedup in a MapReduce workflow is if one is able to send "code-to-data", i.e. have expensive "map" operations run on nodes that have fast access to the relevant bit of data.
 
@@ -150,15 +150,15 @@ The workflow can be represented as a directed acyclic graph (DAG) with the nodes
 For some types of workflow, Spark is considerably (x100) quicker than Hadoop/MapReduce, and it can also handle streaming data by making micro-batches and processing them.
 
 The package _pyspark_ https://spark.apache.org/docs/latest/api/python/ provides a Python interface to the Spark API.
-However, it does still need a Java runtime environment to work. 
+However, it does still need a Java runtime environment to work.
 
-## Dask   
+## Dask
 
 Another option, which is growing in popularity in the academic and scientific communities, is _Dask_.
 The idea behind _Dask_ is to provide a familiar interface to _pandas_ and _numpy_ but to allow the same code to be run either locally or on a cluster.
 One of the tricks to facilitate this is "lazy evaluation" - when the code is run, the computation is not actually performed, but instead a "task graph" is built, where each node represents a Python function that performs a unit of computation, and the edges represent data dependencies between the upstream and downstream tasks.
 
-Once the task graph is generated, a "scheduler" (which can be either "single-machine" or "distributed" manages the workflow by using the task graph to assign tasks to workers in a way that optimizes parallelism while respecting the data dependencies. 
+Once the task graph is generated, a "scheduler" (which can be either "single-machine" or "distributed" manages the workflow by using the task graph to assign tasks to workers in a way that optimizes parallelism while respecting the data dependencies.
 
 
 ![dask_diagram.png](/Users/lbokeria/Documents/hack_week_2023/reginald/data_processing/rse_course_modules/module10_scientific_file_formats/10_06_processing_in_parallel_files/dask_diagram.png) (image from Dask documentation https://docs.dask.org/en/stable/ )
@@ -315,7 +315,7 @@ ddf.divisions
 
 
 The interface is very similar to _pandas_, with one important difference.
-For example, if we want to calculate the average of the "home_score" column, in _pandas_ we can do: 
+For example, if we want to calculate the average of the "home_score" column, in _pandas_ we can do:
 
 
 ```python

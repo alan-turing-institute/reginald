@@ -23,7 +23,7 @@ green-graph example.
 
 Our green-graph example involved making an array of all the maps between London
 and Birmingham. This kept them all in memory *at the same time*: first we
-downloaded all the maps, then we counted the green pixels in each of them. 
+downloaded all the maps, then we counted the green pixels in each of them.
 
 This would NOT work if we used more points: eventually, we would run out of memory.
 We need to use a **generator** instead. This chapter will look at iterators and generators in more detail:
@@ -142,9 +142,9 @@ next(a)
 
     /var/folders/xv/d5nvn2ps5r3fcf276w707n01qdmpqf/T/ipykernel_88854/1242322984.py in <module>
     ----> 1 next(a)
-    
 
-    StopIteration: 
+
+    StopIteration:
 
 
 This tells Python that the iteration is over. For example, if we are in a `for i in range(3)` loop, this lets us know when we should exit the loop.
@@ -314,9 +314,9 @@ image.show()
 ```
 
 
-    
+
 ![png](/Users/lbokeria/Documents/hack_week_2023/reginald/data_processing/rse_course_modules/module08_advanced_programming_techniques/08_02_iterators_and_generators_37_0.png)
-    
+
 
 
 
@@ -408,9 +408,9 @@ next(x)
 
     /var/folders/xv/d5nvn2ps5r3fcf276w707n01qdmpqf/T/ipykernel_88854/3485793935.py in <module>
     ----> 1 next(x)
-    
 
-    StopIteration: 
+
+    StopIteration:
 
 
 
@@ -510,9 +510,9 @@ plt.plot(list(yield_fibs(20)))
 
 
 
-    
+
 ![png](/Users/lbokeria/Documents/hack_week_2023/reginald/data_processing/rse_course_modules/module08_advanced_programming_techniques/08_02_iterators_and_generators_59_1.png)
-    
+
 
 
 # Related Concepts
@@ -663,7 +663,7 @@ hello("Cleese")
 
 
 
-We could also modify this to create a decorator that takes an argument specifying how many times the function should be repeated: 
+We could also modify this to create a decorator that takes an argument specifying how many times the function should be repeated:
 
 
 ```python
@@ -820,9 +820,9 @@ def test_python_4():
     rootdir: /Users/jrobinson/projects/applied-skills/rse-course/module08_advanced_programming_techniques
     plugins: anyio-3.6.1, cov-4.0.0, pylama-8.4.1
     collected 1 item                                                               [0m
-    
+
     test_skipped.py [33ms[0m[33m                                                        [100%][0m
-    
+
     [33m============================== [33m[1m1 skipped[0m[33m in 0.05s[0m[33m ==============================[0m
     [0m
 
@@ -851,17 +851,17 @@ def test_python_3():
     rootdir: /Users/jrobinson/projects/applied-skills/rse-course/module08_advanced_programming_techniques
     plugins: anyio-3.6.1, cov-4.0.0, pylama-8.4.1
     collected 1 item                                                               [0m
-    
+
     test_not_skipped.py [31mF[0m[31m                                                    [100%][0m
-    
+
     =================================== FAILURES ===================================
     [31m[1m________________________________ test_python_3 _________________________________[0m
-    
+
         [37m@pytest[39;49;00m.mark.skipif(sys.version_info < ([94m3[39;49;00m, [94m0[39;49;00m), reason=[33m"[39;49;00m[33mrequires python 3[39;49;00m[33m"[39;49;00m)
         [94mdef[39;49;00m [92mtest_python_3[39;49;00m():
     >       [94mraise[39;49;00m [96mRuntimeError[39;49;00m([33m"[39;49;00m[33msomething went wrong[39;49;00m[33m"[39;49;00m)
     [1m[31mE       RuntimeError: something went wrong[0m
-    
+
     [1m[31mtest_not_skipped.py[0m:7: RuntimeError
     =========================== short test summary info ============================
     FAILED test_not_skipped.py::test_python_3 - RuntimeError: something went wrong
@@ -929,4 +929,3 @@ test_runs()
 
 
     RuntimeError: This test is run
-

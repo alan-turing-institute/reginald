@@ -39,9 +39,9 @@ myfig = plt.plot([sin(pi * x / 100.0) for x in range(100)])
 ```
 
 
-    
+
 ![png](/Users/lbokeria/Documents/hack_week_2023/reginald/data_processing/rse_course_modules/module03_research_data_in_python/03_03_plotting_with_matplotlib_12_0.png)
-    
+
 
 
 The plot command *returns* a figure, just like the return value of any function.
@@ -64,9 +64,9 @@ plt.title("Hello")
 
 
 
-    
+
 ![png](/Users/lbokeria/Documents/hack_week_2023/reginald/data_processing/rse_course_modules/module03_research_data_in_python/03_03_plotting_with_matplotlib_15_1.png)
-    
+
 
 
 But this requires us to keep all our commands together in a single cell, and makes use of a "global" single "current plot", which, while convenient for quick exploratory sketches, is a bit cumbersome.
@@ -87,9 +87,9 @@ sine_graph, sine_graph_axes = plt.subplots()
 ```
 
 
-    
+
 ![png](/Users/lbokeria/Documents/hack_week_2023/reginald/data_processing/rse_course_modules/module03_research_data_in_python/03_03_plotting_with_matplotlib_20_0.png)
-    
+
 
 
 Once we have some axes, we can plot a graph on them:
@@ -155,9 +155,9 @@ sine_graph
 
 
 
-    
+
 ![png](/Users/lbokeria/Documents/hack_week_2023/reginald/data_processing/rse_course_modules/module03_research_data_in_python/03_03_plotting_with_matplotlib_28_0.png)
-    
+
 
 
 
@@ -183,9 +183,9 @@ sine_graph
 
 
 
-    
+
 ![png](/Users/lbokeria/Documents/hack_week_2023/reginald/data_processing/rse_course_modules/module03_research_data_in_python/03_03_plotting_with_matplotlib_31_0.png)
-    
+
 
 
 
@@ -211,9 +211,9 @@ sine_graph
 
 
 
-    
+
 ![png](/Users/lbokeria/Documents/hack_week_2023/reginald/data_processing/rse_course_modules/module03_research_data_in_python/03_03_plotting_with_matplotlib_34_0.png)
-    
+
 
 
 
@@ -242,9 +242,9 @@ Image(filename="my_graph.png")
 
 
 
-    
+
 ![png](/Users/lbokeria/Documents/hack_week_2023/reginald/data_processing/rse_course_modules/module03_research_data_in_python/03_03_plotting_with_matplotlib_40_0.png)
-    
+
 
 
 
@@ -279,9 +279,9 @@ double_graph
 
 
 
-    
+
 ![png](/Users/lbokeria/Documents/hack_week_2023/reginald/data_processing/rse_course_modules/module03_research_data_in_python/03_03_plotting_with_matplotlib_46_0.png)
-    
+
 
 
 
@@ -353,9 +353,9 @@ double_graph
 
 
 
-    
+
 ![png](/Users/lbokeria/Documents/hack_week_2023/reginald/data_processing/rse_course_modules/module03_research_data_in_python/03_03_plotting_with_matplotlib_52_0.png)
-    
+
 
 
 
@@ -382,9 +382,9 @@ cos_axes.set_xlabel("x")
 
 
 
-    
+
 ![png](/Users/lbokeria/Documents/hack_week_2023/reginald/data_processing/rse_course_modules/module03_research_data_in_python/03_03_plotting_with_matplotlib_55_1.png)
-    
+
 
 
 
@@ -412,9 +412,9 @@ double_graph
 
 
 
-    
+
 ![png](/Users/lbokeria/Documents/hack_week_2023/reginald/data_processing/rse_course_modules/module03_research_data_in_python/03_03_plotting_with_matplotlib_57_0.png)
-    
+
 
 
 
@@ -530,9 +530,9 @@ df.plot(subplots=True)
 ```
 
 
-    
+
 ![png](/Users/lbokeria/Documents/hack_week_2023/reginald/data_processing/rse_course_modules/module03_research_data_in_python/03_03_plotting_with_matplotlib_62_0.png)
-    
+
 
 
 Let's produce some more meaningful and useful visualisations by accessing the dataframe directly.
@@ -599,9 +599,9 @@ ax4.set_title("From List")
 
 
 
-    
+
 ![png](/Users/lbokeria/Documents/hack_week_2023/reginald/data_processing/rse_course_modules/module03_research_data_in_python/03_03_plotting_with_matplotlib_67_1.png)
-    
+
 
 
 In this example we are plotting columns from the `pandas` `DataFrame` (series), and from lists to show this method works for both.

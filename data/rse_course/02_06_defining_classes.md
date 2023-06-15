@@ -65,7 +65,7 @@ myroom.name
 
 
 
-The most common use of a class is to allow us to group data into an object in a way that is 
+The most common use of a class is to allow us to group data into an object in a way that is
 easier to read and understand than organising data into lists and dictionaries.
 
 
@@ -136,8 +136,8 @@ This is just a convention for this variable name, not a keyword. You could call 
 
 ## 2.6.3 Constructors
 
-Normally, though, we don't want to add data to the class attributes on the fly like that. 
-Instead, we define a **constructor** that converts input data into an object. 
+Normally, though, we don't want to add data to the class attributes on the fly like that.
+Instead, we define a **constructor** that converts input data into an object.
 
 
 ```python
@@ -345,35 +345,35 @@ house.simulate(3)
     livingroom: James
     garden: Sue Clare
     bedroom: Bob
-    
+
     James goes north to the kitchen
     Sue goes inside to the livingroom
     Clare goes inside to the livingroom
     Bob goes jump to the garden
-    
+
     livingroom: Sue Clare
     kitchen: James
     garden: Bob
-    
+
     Sue goes upstairs to the bedroom
     Clare goes outside to the garden
     James goes south to the livingroom
     Bob goes inside to the livingroom
-    
+
     livingroom: James Bob
     garden: Clare
     bedroom: Sue
-    
+
     James goes outside to the garden
     Bob goes north to the kitchen
     Clare goes inside to the livingroom
     Sue goes downstairs to the livingroom
-    
+
 
 
 ## 2.6.5 Alternative object models
 
-There are many choices for how to design programs to do this. Another choice would be to separately define exits as a different class from rooms. This way, 
+There are many choices for how to design programs to do this. Another choice would be to separately define exits as a different class from rooms. This way,
 we can use arrays instead of dictionaries, but we have to first define all our rooms, then define all our exits.
 
 
@@ -528,29 +528,29 @@ house.simulate(3)
     Sue is in the garden
     Bob is in the bedroom
     Clare is in the garden
-    
+
     James goes north to the kitchen
     Sue goes inside to the livingroom
     Bob goes downstairs to the livingroom
-    
+
     James is in the kitchen
     Sue is in the livingroom
     Bob is in the livingroom
     Clare is in the garden
-    
+
     Sue goes outside to the garden
     Bob goes upstairs to the bedroom
     Clare goes inside to the livingroom
-    
+
     James is in the kitchen
     Sue is in the garden
     Bob is in the bedroom
     Clare is in the livingroom
-    
+
     James goes south to the livingroom
     Bob goes jump to the garden
     Clare goes outside to the garden
-    
+
 
 
 This is a huge topic, about which many books have been written. The differences between these two designs are important, and will have long-term consequences for the project. That is the how we start to think about **software engineering**, as opposed to learning to program, and is an important part of this course.

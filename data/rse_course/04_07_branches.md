@@ -92,7 +92,7 @@ cat Wales.md
 
     Mountains In Wales
     ==================
-    
+
     * Pen y Fan
     * Tryfan
     * Snowdon
@@ -116,7 +116,7 @@ cat Wales.md
 
     Mountains In Wales
     ==================
-    
+
     * Pen y Fan
     * Tryfan
     * Snowdon
@@ -194,7 +194,7 @@ git log main..experiment
     commit a4378e56a723f2ba662262f94108a74be5f896f0
     Author: Turing Developer <developer@example.com>
     Date:   Mon Nov 8 14:06:02 2021 +0000
-    
+
         Add Cadair Idris
 
 
@@ -279,7 +279,7 @@ git diff Scotland.md
     --- a/Scotland.md
     +++ b/Scotland.md
     @@ -3,3 +3,4 @@ Mountains In Scotland
-    
+
      * Ben Eighe
      * Cairngorm
     +* Aonach Eagach

@@ -89,8 +89,3 @@ to software construction.
 * Code should be pleasant to read, a form of scholarly communication
 
 Read Steve McConnell's [Code Complete](https://en.wikipedia.org/wiki/Code_Complete).
-
-
-
-
-

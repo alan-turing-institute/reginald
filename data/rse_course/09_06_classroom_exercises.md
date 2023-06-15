@@ -3,11 +3,11 @@
 **List of exercises**
 
 
-[9a - Timing](#Exercise-9a-Timing) 
+[9a - Timing](#Exercise-9a-Timing)
 
-[9b -  Multiplication vs. power](#Exercise-9b-Multiplication-vs.-power) 
+[9b -  Multiplication vs. power](#Exercise-9b-Multiplication-vs.-power)
 
-[9c - Binary Mandelbrot](#Exercise-9c-Binary-Mandelbrot) 
+[9c - Binary Mandelbrot](#Exercise-9c-Binary-Mandelbrot)
 
 [9d - Parallelisation with Multiprocessing](#Exercise-9d-Parallelisation-with-Multiprocessing)
 
@@ -23,7 +23,7 @@ Which is faster
 complex(a,b)
 ```
 
-or 
+or
 
 ```python
 a + b*1j
@@ -41,7 +41,7 @@ with a = 5 and b = 6?
 
 *Relevant sections: 9.2.1, 9.2.2*
 
-Can you use this techinque to stop our values going to infinity? 
+Can you use this techinque to stop our values going to infinity?
 - Modify the function accordingly using the hint below.
 - Time the performance of the modified function.
 - Plot the result.
@@ -59,7 +59,7 @@ a
 *Relevant sections: 9.4.1, 9.4.2*
 
 - Remove the call to `sleep()`
-- Reload the `sleeping` module 
+- Reload the `sleeping` module
 - Run the `list(map(...))` vs `pool.map(...)` comparison again
 
 Which is faster, and by how much? Why?
