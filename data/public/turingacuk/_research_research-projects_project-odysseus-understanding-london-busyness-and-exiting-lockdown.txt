@@ -1,0 +1,67 @@
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+One of the key UK policies in tackling the coronavirus crisis has been to try and ‘flatten the curve’ through social distancing and evidence is beginning to show these may be influencing the number of total cases within London. Furthermore, it's now necessary to start designing strategies for exiting lockdown in a staged, principled, and data driven manner that will restore the economy and our way of life.
+This project aims to bring together multiple large-scale and heterogeneous datasets capturing mobility, transportation and traffic activity over the city of London to better understand “busyness” and enable targeted interventions and effective policy-making. The team from the Turing's Data Centric Engineering programme, sponsored by the Lloyd's Register Foundation, will work together with researchers from the University of Warwick, UCL and University of Cambridge to develop models, infrastructure and machine learning algorithms for understanding how and when busyness is changing across the capital in the wider context of COVID-19.
+The project is codenamed “Odysseus” because Corona is also known as the “Cyclops' eye”.
+This project will combine multiple data sources with varying spatio-temporal resolutions to provide a cohesive view of the city’s level of activity. These vary from JamCam cameras, traffic intersection monitors, and aggregate GPS activity from the Turing's London air quality project, to point of sale counts and public transit activity metrics.
+Integrating these datasets into a unified pipeline that collects live data is a challenging data science and software engineering problem. The infrastructure, systems and databases are the foundation upon which the analysis is conducted with fast and efficient access to information. Data often contains anomalies, noise or missing values which must be handled robustly.
+From this vast array of datasets, state of the art machine learning algorithms [Hamelijnck et al. 2019; Knoblauch et al. 2018], statistical time-series analysis [Haycock et al. 2020, Aglietti et al. 2019] and image processing [Walsh et al. 2020] will be applied to historical observations to generate a seasonally dependent set of pre-lockdown profiles. Upon construction of a live data-ingestion pipeline it is possible to provide the city with live deviation from these profiles. These metrics offer outlier detection in areas requiring intervention, and monitoring post-intervention, as we hopefully enter the ‘recovery’ period [O'Hara et al. 2020].
+ 
+As an example, selecting a time range at camera, we may group bounding box pixels counting toward intensity within the whole scene. With object tracking disabled here, intensity is higher where objects stay in frame. This is most evident with vehicle traffic waiting at closest set of traffic li­­­­ghts, and is adjusted via selecting distinct samples. 
+Given a calibrated scene, we can quickly generate distance estimates triangulation of pedestrians, estimate edge lengths, and record those less than 3 meters in the scene over time.
+Selecting a contour of 90th percentile activity in our calibrated scene and normalizing pedestrian densities relative to m^2 we may visualize the activity overlaid to satellite imagery. The pavement and active pedestrian crossing are selected as expected. 
+ 
+This project strives to help the London authorities understand the extent to which people are staying at home, i.e. the effectiveness of the current government approach. Pre-social distancing profiles will be produced as estimates of “normal activity” within the city, which will then be compared with post-distancing readings in near real-time, enabling direct assessment of the impact of policy intervention.
+The project will act to serve as an ‘early warning system’, that can trigger intervention review within London boroughs and increase targeted communications in the event that people prematurely do not observe social distancing or exit isolation.
+ 
+It will operate at a more nuanced level as restrictions are partially relaxed – to assess how people respond to the changes and provide statistics on whether to mediate the response.
+As the country moves into a ‘recovery’ period, busyness will actually be a good thing and understanding the extent to which London is returning to normal will also be important for policy makers and to guide interventions to stimulate the economy.
+The end product of this project will be an application program interface (API) with which the Greater London Authority, Transport for London, London Data Commission, and the Office for National Statistics may query for access to both the data sources and the analysis outputs from the algorithms and statistical models developed.
+The work will support the GLA with their implementations of visualisation of the analysis through dashboards and analysing the effect of policies and interventions.
+The outputs will be integrated inside the London Datastore, will also benefit the 'London air quality' project as additional emission sources are captured, and will be made available to as wide audience as possible together with open access to the software and models for benefiting other cities and groups worldwide.
+Finally, the output of the system can be used by routing algorithms that maximise social distancing when walking through London's streets. These algorithms will extend existing work [O'Hara et al, 2019] from the London air project to help Londoners avoid crowded roads and paths when exercising or commuting in the city.
+© The Alan Turing Institute
+2023. All rights reserved.
+The Alan Turing Institute, a charity incorporated and registered in England and Wales with company number 09512457 and charity number 1162533 whose registered office is at British Library, 96 Euston Road, London, England, NW1 2DB, United Kingdom.
+For website-related enquiries email
+[email protected]
+
+Explore the Institute
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Legal
+Awards

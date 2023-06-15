@@ -1,0 +1,60 @@
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Our focus is the theme of media, defined as the main means of mass communication. The importance of addressing this topic is highlighted by the prominent role of the media in political, economic, scientific, and social discourse. With a drastic shift towards digital communication, individuals and organizations are able to almost instantly disseminate information to a large audience with little-to-no regulation, creating both new challenges and opportunities.
+The purpose of the interest group is to bring together academics studying different aspects of the media and practitioners representing different sides of the media (e.g., journalists, fact-checkers and platforms), in order to explore several important themes and the wide range of efforts in today’s mediasphere. We will aim to create a community of individuals working in/on media and become a platform for interdisciplinary communication that facilitates concrete collaborations within and outside of academia.
+Digital media is vast, and the nature and sources of data within it are extremely varied (e.g., text, audio, images and videos on news websites and social media platforms). Media-related data is inherently time-dependent and there is often a lack of sufficiently large labeled ground truth data for many questions of interest (e.g., news credibility at the level of articles or claims). The variety of media data raises important questions around the generalisability of scientific tools across platforms, languages and data formats, and the interactive aspect of media brings up profound questions on detecting causality.
+Research challenges within digital media have been approached from many different angles, including natural language processing, network science, machine learning, statistics, computer science, social science, and political science. In this interest group, we hope to bring together researchers across these different communities and, in collaboration with practitioners, to define and address concrete real-world challenges.
+Key aims of this interest group are
+Our objectives will be to form close ties with key players in the media landscape, to develop a holistic understanding of the state-of-play, and to contribute to improving the reliability and robustness of the information sphere we live in today.
+We will organise a series of workshops (two per year) around narrowly defined media-related themes. Workshops will involve both UK-based and international speakers and participants. The interest group co-organisers will aim to publish a yearly report highlighting key workshop takeaways.
+Our workshops will favour depth over breadth by involving field experts on targeted domains, enable knowledge transfer between academics and practitioners (e.g., through mediated group discussions and panels), and explore different communication mediums (e.g., surveys and blog posts). Between workshops, we will aim to organise related and informal meet-ups, training sessions, and “hackathons” (e.g., through the Data Study Group).
+For an up-to-date list of our interest group events, please click here.
+Click here to request sign-up and join
+Marya Bazzi[email protected]
+Elena Kochkina[email protected]
+Karl Aberer, École Polytechnique Fédérale de LausanneRabab Ahmad Alkhalifa, Queen Mary University of LondonMadhav Chinnappa, Google and the Reuters InstituteJohn Dougrez-Lewis, University of WarwickGabriele Pergola, University of WarwickMarzieh Saeidi, Facebook ResearchQiang Zhang, UCLArkaitz Zubiaga, Queen Mary University of LondonChristoph Bregler, Google
+© The Alan Turing Institute
+2023. All rights reserved.
+The Alan Turing Institute, a charity incorporated and registered in England and Wales with company number 09512457 and charity number 1162533 whose registered office is at British Library, 96 Euston Road, London, England, NW1 2DB, United Kingdom.
+For website-related enquiries email
+[email protected]
+
+Explore the Institute
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Legal
+Awards

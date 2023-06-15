@@ -1,0 +1,55 @@
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Supply chains underpin much of the functioning of the economy, including critical sectors such as food, medicine, defense and engineering. Increased complexity, the adoption of lean management principles, and interdependence have resulted in increased vulnerability to disruptions that often spread through global networks, halting the flow of materials and services. Supply chain risk has been identiﬁed as a top business risk factor in a variety of industrial sectors and has been prioritised by numerous governments.
+The climate crisis and increased geopolitical instability are expected to exacerbate the challenges faced by production networks. Although there are already long-established academic fields that investigate supply networks, research is scattered across multiple disciplines, ranging from Manufacturing Engineering and Supply Chain Management to Complex Systems and Macroeconomics. To tackle modern challenges, however, the models that focus on understanding the supply chains of a single firm are too constrained in scope, and traditional macroeconomic models are too aggregate.
+We are specifically interested in reconstructing firm-level supply networks, so that awareness can be generated both at the micro (firm) level and at the macro (country) level. Underpinning this exploration is an understanding of datasets, data science methods and how they complement each other. For example how can longitudinal datasets can be used alongside periodic reconstruction.   
+In this interdisciplinary workshop, we will explore how “micro” and “macro” perspectives on firm-level supply networks can be reconciled, providing the foundations for a research agenda devoted to the development of realistic models based on global firm-level supply networks datasets. We are specifically interested in reconstructing firm-level supply networks when data is unavailable, by relying on an understanding of data sources, data science methods, and domain knowledge in supply chain management and economics.
+The event will kick off with speakers giving different perspectives on data availability, followed by technical talks on reconstruction methods. We will then discuss how reconstructed networks can be used to inform practitioners, for example to prepare for different scenarios of supply network disruptions. The workshop will also have more interactive sessions, to identify research topics ripe for exploration and perform sandbox style group activity to define the way forward
+In order to generate a coherent community and meet the goals of this workshop, registration for this event will be invitation-only in the first instance. The list of invited applicants includes a number of Turing Fellows and Turing-affiliated researchers.
+The remaining spaces will be filled through an open invitation. If oversubscribed, the organisers will assess/accept applicants to ensure the goals of the workshop are met.
+Interested participants should contact the organisers, Alexandra Brintrup and Francois Lafond to register for this event.
+© The Alan Turing Institute
+2023. All rights reserved.
+The Alan Turing Institute, a charity incorporated and registered in England and Wales with company number 09512457 and charity number 1162533 whose registered office is at British Library, 96 Euston Road, London, England, NW1 2DB, United Kingdom.
+For website-related enquiries email
+[email protected]
+
+Explore the Institute
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Legal
+Awards

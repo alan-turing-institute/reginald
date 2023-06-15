@@ -1,0 +1,57 @@
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Regression analysis is a common set of statistical procedures for estimating the relationships between variables. Problems that involve very large amounts of data with a high number of variables can be computationally intensive. This project is investigating how scalable, distributed computer systems and associated algorithms/software perform on such large scale problems. This will inform current best practice in terms of algorithms, architectures, and implementations.
+Regression analysis is a form of predictive modelling technique which investigates the relationship between a dependent (target or output) variable and independent (predictor or input) variables. This is used for forecasting, time series modelling, machine learning, and finding causal relationships between variables. For example, the relationship between rash driving and number of road accidents.
+The overall goal of regression is to examine whether recorded data effectively predict some other outcome variable, and in which ways particular variables impact the outcome variable. The statistical and computational performance of regression analysis methods in practice depends on the model relating the variables, the data actually recorded and the algorithm used to produce estimators and associated quantities.
+This project is looking at the effectiveness of running regression analysis for large datasets with a high number of variables, on distributed computing systems. Parallel distributed computing is a type of computation in which many calculations, or the execution of processes, are carried out simultaneously. Large problems can often be divided into smaller ones, which can then be solved at the same time. Related to this, a computer cluster is a set of connected computers that work together so that, in many respects, they can be viewed as a single system. Each node in the system is set to perform tasks that are controlled and scheduled by system software.
+The ultimate goal of this project is to critically understand how well different, readily available, large-scale regression algorithms, software, and frameworks perform on distributed systems. This understanding will help isolate computational and statistical performance issues.
+Challenging benchmark datasets be developed to add additional focus, and there is the potential for more sophisticated, but less readily-available algorithms to be analysed for comparative purposes.
+This project aligns to the Institute’s strategic priorities in establishing leadership and providing guidance for common data analysis tasks at scale. It also feeds into the larger data science at scale programme looking at the performance and usability of modern hardware and algorithms.
+In collaboration with Cray, the analysis in this project will be conducted on their Urika-GX agile analytics platform. The skills and software developed by the investigation will then be applied to large and challenging datasets.
+Throughout the project, documentation will be written that will enable other data scientists to perform large scale regressions with greater ease, and understand the implications of using different architectures, frameworks, algorithms, and implementations.
+Visit the github page for this project to read a blog summary of the work and view the code produced: turingintern2018.github.io.
+© The Alan Turing Institute
+2023. All rights reserved.
+The Alan Turing Institute, a charity incorporated and registered in England and Wales with company number 09512457 and charity number 1162533 whose registered office is at British Library, 96 Euston Road, London, England, NW1 2DB, United Kingdom.
+For website-related enquiries email
+[email protected]
+
+Explore the Institute
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Legal
+Awards

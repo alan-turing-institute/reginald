@@ -1,0 +1,63 @@
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+
+The new Special Issue on Multi-Agent Systems Research in the United Kingdom has now been published in the AI Communications journal. This volume contains 14 contributed articles from UK-based labs, detailing their research in multi-agent systems, developed methods, and open problems.Read the guest editorial, and access the full edition here.
+ 
+Multi-agent systems are a core area of research of modern artificial intelligence. A multi-agent system consists of multiple decision-making agents – such as software-based systems, physically-embodied robots, and humans - which interact in a shared environment to achieve certain goals. Multi-agent systems (MAS) research spans a range of technical problems, such as how to design planning and learning algorithms which enable agents to achieve specified goals in MAS; how to design MAS to incentivise certain behaviours in agents; how information is communicated and propagated among agents; and how norms, conventions and roles may emerge in MAS. A vast array of applications can be addressed using multi-agent methodologies, including autonomous driving, multi-robot factories, automated trading, commercial games, automated tutoring, and robotic rescue teams. 
+The purpose of this special issue, to be published in AI Communications, is to showcase current multi-agent systems research led by university and industry groups which are based in the UK. We invite all research groups or institutes in the UK that have significant activity in multi-agent systems research to submit an article describing:
+There is no fixed article structure as long as the above questions are addressed in sufficient detail.
+This special issue is being organised as part of the work of The Alan Turing Institute, the UK's the national institute for data science and artificial intelligence.
+Your research group should be located in the UK and have significant activity in multi-agent systems research, e.g., as evidenced by a sustained publication track record in multi-agent systems research in leading conferences/journals. We define ‘group’ broadly, to include groups led by a single PI and institutes, which involve multiple PIs working in multi-agent systems research. Groups may be located at universities or at companies with significant research activity.
+Articles should be formatted using the AI Communications LaTeX style. The article title should reflect the research focus of the group. There are no strict page limits, but we suggest no more than 10 pages. Articles can be submitted to the special issue via the submission portal below. At the 'select article type' step, please select 'Special issue: Multi-agent systems' from the drop down menu. Again at the 'section/category' step please also select 'Special issue on Multi-agent systems' from the drop down menu.
+Submit article
+Submissions must be received no later than 30 April 2022. Each submission will be screened by the editors for eligibility, formatting, and whether (1-3) above are covered. Accepted articles will be published together in a dedicated issue of the journal, and made available online. Authors may also upload their preprint to a repository such as arXiv.
+For any questions regarding the special issue or eligibility, please contact the special issue editors.
+Stefano V. Albrecht
+University of Edinburgh
+Michael Wooldridge
+University of Oxford
+© The Alan Turing Institute
+2023. All rights reserved.
+The Alan Turing Institute, a charity incorporated and registered in England and Wales with company number 09512457 and charity number 1162533 whose registered office is at British Library, 96 Euston Road, London, England, NW1 2DB, United Kingdom.
+For website-related enquiries email
+[email protected]
+
+Explore the Institute
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Legal
+Awards

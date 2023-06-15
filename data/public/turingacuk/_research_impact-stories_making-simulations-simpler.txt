@@ -1,0 +1,71 @@
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+​
+​Simulations are useful in a huge number of disciplines, from medical research to insurance to astronomy. For engineers studying fluid dynamics – the movement of liquids and gases – simulations are an invaluable part of their toolkit. They need to know how different variables, constraints, and design specifications affect the movement of, and stresses caused, by fluids. Setting up such simulations and visualising their results can be extremely complex and require considerable computing power.
+Often users wanting to run simulations are experts in their particular industrial or scientific fields, but not experts in the complex simulation software or the computing platforms required to run them effectively. As a result the real-world use of such software in industry is low.
+To tackle this problem, software engineers at The Alan Turing Institute, in collaboration with partners at Imperial College and UCL, have developed a user interface which aims to make the simulation process more user-friendly, and link seamlessly with cloud-based supercomputing. The tool has the potential to make running, visualising, sharing, and reproducing simulations simpler, for both academic and industrial communities.
+For the past five years Omar Matar, Professor of Fluid Mechanics at Imperial College, has been leading the MEMPHIS programme (Multi-scale Examination of Multiphase PHysics In flowS), which aims to generate the next generation of codes for complex fluid dynamics problems.
+One output of the programme is Blue, a set of code for simulating various ‘multi-phase’ fluid flow problems. As Professor Matar says, the team now wants to “transition Blue from an excellent research code to one that could be used by industry”, and do this by creating, “a simple, reliable tool that everybody code use”.
+“We bring research code out of the academy and onto the desktop”
+James Hetherington, Director of Research Engineering at the Turing
+Through funding from Imperial and the Turing’s programme in Data-Centric Engineering in partnership with the Lloyd’s Register Foundation, the Turing’s Research Engineering (RE) team became part of a multi-institution group working to create this tool – a customisable application that could run and visualise a range of different simulations. The RE team worked in collaboration with the MEMPHIS team and its industrial partners, as well as with the Research Software Development Group at UCL.
+James Hetherington, Director of Research Engineering at the Turing: “Making software that was developed for research easy to use is a critical part of our [team’s] mission, and a key part of this is developing user interfaces which make the complexity of scientific software accessible. We bring research code out of the academy and onto the desktop”.
+Simulations can be costly to run, both in time and money, and have a multitude of different parameters, variations in which can have significant effects on results (see visualisation below). Therefore, the application needed to allow people who have a working knowledge of what they want to simulate but don’t have the specific skills and coding knowledge required to launch simulations, to quickly and easily do so.
+This meant a well-designed, customisable user interface (UI) for this application needed to be built, that would help clearly visualise and summarise the simulations and their results, and satisfy the requirements of multiple different users and scenarios.
+It was also necessary that the tool work as part of a pipeline that includes seamless, secure connection to supercomputer clusters, like those available at Imperial or in cloud based systems like Microsoft Azure, in order to efficiently run the simulations.
+The application is designed to work in browser and be fully configurable to the user’s needs.
+“The user can define what kind of UI they want”, May Yong, Turing Research Engineer, explains, “Do they want sliders? Do they want text boxes? Do they want checkboxes? Instead of looking at a load of scripts, it’s a very visual way to set up experiments. So when it comes to something with 60 or more parameters this will make a big difference.”
+The UI can include various videos and graphs, which enable the user to not only view and analyse completed simulations, but also monitor experiments as they’re running. As Yong notes, “Very quickly you can see the initial results and whether the experiment is worth continuing. If there’s obviously something wrong you can stop it running right away, rather than checking it in a month’s time.”
+Furthermore, as the UI is browser-based it could be shared with others, along with a simulation’s output, so that results subsequently published in papers could be corroborated, and experiments checked and re-run with the same or different parameters.
+A proof of concept of the UI, customised for the Blue code, was demoed at an industry showcase for the MEMPHIS programme at Imperial College on 15 September 2017. Present were representatives from the programmes’ collaborative universities – Imperial, UCL, University of Birmingham, and University of Nottingham – and its industry sponsors and partners – EPSRC, P&G, BP, Chevron, and Johnson Matthey.
+Richard Craster, Professor of Applied Mathematics at Imperial, told us the demo was “a highlight…admired by several of our industry partners and certainly showed the concept is more than viable”.
+The team is now developing an enhanced prototype with the ultimate goal of having an application that industrial partners start using as part of their day to day businesses. The work is contributing to the key challenge of the Turing’s data-centric engineering programme to deliver safer, smarter engineering. Lowering the barrier to entry for running simulations increases opportunities for developing innovative solutions to modern, data-rich engineering problems.
+"Lowering the barrier to entry for running simulations increases opportunities for solving modern, data-rich problems"
+In line with The Alan Turing Institute’s open and collaborative approach to research and software development, the core code of the application will be made open source. Customisations required on top of this ‘open core’ for particular simulation software and scenarios will be retained as closed source intellectual property by the relevant research groups. For Imperial this will be for the Blue code, and for UCL this will be for BEM++, their platform for solving acoustic and electromagnetic problems.
+This open core code means the application could be used for many other domains, such as medical imaging. May Yong sums it up, “You’d just define your UI, have your simulation libraries running and the code would connect the two.”
+
+© The Alan Turing Institute
+2023. All rights reserved.
+The Alan Turing Institute, a charity incorporated and registered in England and Wales with company number 09512457 and charity number 1162533 whose registered office is at British Library, 96 Euston Road, London, England, NW1 2DB, United Kingdom.
+For website-related enquiries email
+[email protected]
+
+Explore the Institute
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Legal
+Awards
