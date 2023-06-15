@@ -2,13 +2,14 @@ from __future__ import annotations
 
 # Standard library imports
 import logging
+import os
 import pathlib
 import re
 
 # Third-party imports
 import pandas as pd
 import transformers
-from langchain.chat_models import ChatOpenAI
+from langchain.chat_models import AzureChatOpenAI, ChatOpenAI
 from langchain.embeddings.huggingface import HuggingFaceEmbeddings
 from langchain.llms.base import LLM
 from llama_index import (
@@ -126,6 +127,7 @@ class Llama(ResponseModel):
             llm_predictor=llm_predictor,
             embed_model=embed_model,
             prompt_helper=prompt_helper,
+            chunk_size_limit=chunk_size_limit,
         )
 
         logging.info(f"Load index is: {force_new_index}")
@@ -241,16 +243,47 @@ class LlamaDistilGPT2(Llama):
         super().__init__(*args, model_name="distilgpt2", max_input_size=1024, **kwargs)
 
 
-class LlamaGPT35Turbo(Llama):
+class LlamaGPT35TurboOpenAI(Llama):
+    def __init__(self, *args, **kwargs):
+        self.openai_api_key = os.getenv("OPENAI_API_KEY")
+        super().__init__(
+            *args, model_name="gpt-3.5-turbo", max_input_size=4096, **kwargs
+        )
+
     def _prep_llm_predictor(self):
         llm_predictor = LLMPredictor(
             llm=ChatOpenAI(
-                temperature=0.7, model=self.model_name, max_tokens=self.num_output
+                max_tokens=self.num_output,
+                model=self.model_name,
+                openai_api_key=self.openai_api_key,
+                temperature=0.7,
             )
         )
         return llm_predictor
 
+
+class LlamaGPT35TurboAzure(Llama):
     def __init__(self, *args, **kwargs):
+        self.deployment_name = "reginald-gpt35-turbo"
+        self.openai_api_base = os.getenv("OPENAI_AZURE_API_BASE")
+        self.openai_api_key = os.getenv("OPENAI_AZURE_API_KEY")
+        self.openai_api_version = "2023-03-15-preview"
+        self.temperature = 0.7
         super().__init__(
             *args, model_name="gpt-3.5-turbo", max_input_size=4096, **kwargs
         )
+
+    def _prep_llm_predictor(self):
+        llm_predictor = LLMPredictor(
+            llm=AzureChatOpenAI(
+                deployment_name=self.deployment_name,
+                temperature=self.temperature,
+                model=self.model_name,
+                max_tokens=self.num_output,
+                openai_api_key=self.openai_api_key,
+                openai_api_base=self.openai_api_base,
+                openai_api_version=self.openai_api_version,
+                openai_api_type="azure",
+            )
+        )
+        return llm_predictor
