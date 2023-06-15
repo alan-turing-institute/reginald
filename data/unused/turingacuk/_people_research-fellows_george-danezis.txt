@@ -1,0 +1,51 @@
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+George Danezis is a Professor of Security and Privacy Engineering at the Department of Computer Science of University College London, and Head of the Information Security Research Group. He has been working on anonymous communications, privacy enhancing technologies (PET), and traffic analysis since 2000. He has previously been a researcher for Microsoft Research, Cambridge; a visiting fellow at K.U.Leuven (Belgium); and a research associate at the University of Cambridge (UK), where he also completed his doctoral dissertation under the supervision of Prof. R.J. Anderson.
+His theoretical contributions to the Privacy Technologies field include the established information theoretic and other probabilistic metrics for anonymity and pioneering the study of statistical attacks against anonymity systems. On the practical side he is one of the lead designers of the anonymous mail system Mixminion, as well as Minx, Sphinx, Drac and Hornet; he has worked on the traffic analysis of deployed protocols such as Tor.
+His current research interests focus around secure communications, high-integirty systems to support privacy, smart grid privacy, peer-to-peer and social network security, as well as the application of machine learning techniques to security problems. He has published over 70 peer-reviewed scientific papers on these topics in international conferences and journals. He was the co-program chair of ACM Computer and Communications Security Conference in 2011 and 2012, IFCA Financial Cryptography and Data Security in 2011, the Privacy Enhancing Technologies Workshop in 2005 and 2006. He sits on the PET Symposium board and ACM CCS Steering committee and he regularly serves in program committees of leading conferences in the field of privacy and security. He is a fellow of the British Computing Society since 2014.
+George's research at the Turing revolves around two key themes, or privacy and distributed ledgers. First, he research how the degree of privacy protection may be quantified and experimentally calculated for different proposed Privacy Enhancing Technologies. His approach is influenced by Differential Privacy definitions, however it is adapted to the settings and driven by experimental, rather than purely analytical evaluations. Second, he researches distributed ledgers, which are transparent and accountable distributed computational platforms. Those form the core of `blockchain’ technologies, and are challenging to scale while retaining beneficial security and governance properties
+© The Alan Turing Institute
+2023. All rights reserved.
+The Alan Turing Institute, a charity incorporated and registered in England and Wales with company number 09512457 and charity number 1162533 whose registered office is at British Library, 96 Euston Road, London, England, NW1 2DB, United Kingdom.
+For website-related enquiries email
+[email protected]
+
+Explore the Institute
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Legal
+Awards

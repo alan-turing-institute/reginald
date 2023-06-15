@@ -1,0 +1,55 @@
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Researchers in field of fluid dynamics have been experimenting with machine learning since the 1990s, having driven many advances in the use of these methods in modelling and simulation. The combination of real and simulated data together with physics-informed machine learning is now used in climate modelling. The extensive experience in benchmarking and validating fluid dynamics simulations can inform climate modelling and other fields.   
+Chair - Dr. Gabriel Weymouth 
+
+In this event, we will hear from Dr. Steven Brunton and Professor Laure Zanna. 
+Dr. Steven Brunton - Machine learning for scientific discovery with examples in fluid mechanics 
+I will describe how machine learning may be used to develop accurate and efficient nonlinear dynamical systems models for complex natural and engineered systems. I explore the sparse identification of nonlinear dynamics (SINDy) algorithm, which identifies a minimal dynamical system model that balances model complexity with accuracy, avoiding overfitting. This approach tends to promote models that are interpretable and generalisable, capturing the essential “physics” of the system. Additionally, I discuss the importance of learning effective coordinate systems in which the dynamics may be expected to be sparse. This sparse modeling approach will be demonstrated on a range of challenging modeling problems in fluid dynamics and I will discuss how to incorporate these models into existing model-based control efforts. As fluid dynamics is central to transportation, health and defence systems, I will emphasise the importance of machine learning solutions that are interpretable, explainable, generalisable and that respect known physics.
+Professor Laure Zanna - Leveraging interpretable machine learning for climate physics 
+In this presentation, I will describe the complex and multiscale nature of the climate system and how machine learning can be leveraged to deepen our understanding of key physical climate processes. I will focus on advances in interpretable and physics-aware machine learning methods that have the potential to accelerate scientific discovery in climate physics and modeling. In particular, I will discuss examples of interpretable and generalisable machine learning models that capture ocean turbulence processes (horizontal scale of 10 km-100 km) and how these turbulent features can impact large-scale ocean currents (1000’s of kms). The machine-learned models of turbulent processes are shown to improve coarse-resolution climate simulations by faithfully capturing the complex multiscale dynamical properties in the climate system. 
+© The Alan Turing Institute
+2023. All rights reserved.
+The Alan Turing Institute, a charity incorporated and registered in England and Wales with company number 09512457 and charity number 1162533 whose registered office is at British Library, 96 Euston Road, London, England, NW1 2DB, United Kingdom.
+For website-related enquiries email
+[email protected]
+
+Explore the Institute
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Legal
+Awards

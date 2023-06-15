@@ -1,0 +1,58 @@
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+
+Inmarsat is a pioneer of mobile satellite communications and has been powering global connectivity for nearly four decades. They offer a broad portfolio of global satellite-communications solutions and their customers include governments, airlines, broadcast media, the oil and gas industry and humanitarian aid agencies among others.
+Inmarsat is exploring the potential to roll out a new ‘dynamic booking’ system for its customers and Data Study Group researchers were challenged to develop an algorithm that would enable the company to predict demand and supply for its services within a short time horizon.
+Siddhartha Ghosh, Head of Data Science, explains: “This is a commercially motivated challenge which will enable our networks to operate more efficiently. Internally it will allow better provisioning of capacity to match demand and supply. For example, media organisations often require large bandwidth for a short space of time. If you know the impact on total demand you might offer a good price based on that impact. A dynamic booking system would allow us to service customers requesting bandwidth on the fly.”
+The team of 13 researchers with expertise in machine learning, applied statistics and applied mathematics came up with a range of potential forecasting algorithms.
+Siddhartha says: “The researchers came up with a variety of ideas on how to approach the challenge. The problem was not solved, but it was definitely a good start. There are two proposed machine learning solutions that I intend to try internally and compare with the baseline. Within the allotted time it wasn’t possible for them to work on the extended datasets.”
+"The best thing was the genesis of ideas and ideation – it was very enriching"
+Siddhartha Ghosh, Head of Data Science, Inmarsat
+After five intense days of hard work, Siddhartha is satisfied that it was time well spent. He says: “The experience definitely met my expectations – it was absolutely worthwhile. Everyone was really motivated and enthused and they came up with lots of good ideas. My interaction with the Institute was really positive and our facilitator was supportive throughout. The main highlights for me were the brainstorming sessions which I found excellent. The best thing was the genesis of ideas and ideation – it was very enriching. I liked discussing these and helping to shape them.”
+Finally, he says: “We brought a data science problem to the Institute, so data science is definitely the answer. If the opportunity arises in future I would definitely do it again.”
+In terms of advice to any partners or organisations considering a collaboration with Institute, Siddhartha advises: “To get the most out of the experience I would say that the clarity of the question is key – this needs to be well posed. Availability and high quality data is also essential.”
+© The Alan Turing Institute
+2023. All rights reserved.
+The Alan Turing Institute, a charity incorporated and registered in England and Wales with company number 09512457 and charity number 1162533 whose registered office is at British Library, 96 Euston Road, London, England, NW1 2DB, United Kingdom.
+For website-related enquiries email
+[email protected]
+
+Explore the Institute
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Legal
+Awards

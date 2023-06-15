@@ -1,0 +1,79 @@
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+As AI based decision-making methods make their way from internet applications to more safety-critical physical systems, questions about the robustness of the models and policies become increasingly more important. This project is developing methods to address this through novel methods for learning specifications from human experts and synthesising policies that are correct by construction. These developments are grounded in the domain of surgical assistance with autonomous robots in the operating room.
+The work addresses a number of different scientific questions.
+The project is developing techniques for interactive learning, going from rich cross-modal data obtained as a human expert performs various tasks of interest, to the underlying specifications that implicitly define the task and associated models of activity. This work is extending the familiar paradigm of learning from demonstrations, which has been used successfully in robotics before, to one of 'programming by discussion', emphasising the interactive nature of the learning, as well as having engineering design specifications focus on the target of learning specifically.
+New techniques are being developed for interrogating the properties of the models being learned. By working with hybrid systems representations of planning and control tasks, wherein (probabilistic) programs are defined over underlying dynamical systems models, a variety of methods are adopted for analysis of behavioural properties, ranging from formal program analysis to statistical model checking. In particular, 'closed-loop' analysis methods are being developed that explore the input space to identify adversarial examples and subsequently repair the models to protect against these. The work also envisions the possibility of human inspection and knowledge injection, to facilitate incorporation of, for instance, 'codes of practice' that are already semi-formally available in many application domains. 
+The project is also developing methods for synthesising policies for action, through well understood paradigms. These include model predictive control and dynamic programming or reinforcement learning methods, which are correct by construction - in the sense that they are shown to satisfy the specifications learned through the above mentioned approaches. 
+This project will have two kinds of outcomes. 
+Firstly, a suite of software tools aimed at interactively learning specifications and activity models, which will in turn be used for synthesising policies for action with guaranteed behavioural properties, such as for safety. This will include methods for interrogating the learned models regarding these same properties, in order to verify the behaviour under new inputs and to ensure robustness with respect to adversarial inputs. 
+Secondly, this suite of tools will be developed in the context of autonomous robots being deployed as surgical assistants in operating rooms. From the outset, the project researchers are working closely with medical practitioners to understand the various use cases for such technology, and also to obtain the data needed to train the new models and conduct experiments. 
+In this project, the development of methods and software tools is tightly coupled with their continual application in use cases drawn from the application domain of surgical assistance. 
+Experimental work is carried out in a newly established living lab within the Bayes Centre at the University of Edinburgh, which provides a representative environment capturing many aspects of the eventual use case of the typical operating theatre in a hospital. Working closely with surgeons (including Co-I, Dr Brennan), the project is defining a collection of representative problems to be tackled, ranging from joint manipulation of tissue to automation of suction, tool handling and many other tasks that increase the cognitive load on the assisting surgical or nursing staff. 
+It's envisioned that the experiments being carried out in this project as a first step towards larger scale future experiments in situ, to demonstrate the usefulness of these methods in practice. 
+Equally, it's envisioned that the suite of tools and software will be useful more broadly in a variety of safety-critical applications of robots and autonomous systems.
+There is an acknowledged sensitivity around the introduction of automated technologies in a medical domain. Some will be worried about the implications of transferring some forms of human expertise to a machine, even though this project's focus is on skill augmentation rather than replacement. Likewise, there will be some who are worried about potential job losses due to automation. Here again, the researchers stress that the focus is on making AI capable as an assistance, so emphasising more the notion of augmenting intelligence rather than merely automating it away.
+[email protected]
+S.D.S. Marín, D. Gomez-Vargas, N. Céspedes, M. Múnera, F. Roberti, P. Barria, S. Ramamoorthy, M. Becker, R. Carelli, C. A. Cifuentes, Expectations and perceptions of healthcare professionals for robot deployment in hospital environments during the COVID-19 pandemic, Research topic: Robotics, Autonomous Systems and AI for Nonurgent/Nonemergent Healthcare Delivery During and After the COVID-19 Pandemic, Frontiers in Robotics and AI - Biomedical Robotics, 2021.
+C. Innes, S. Ramamoorthy, ProbRobScene: A probabilistic specification language for 3D robotic manipulation environments, In Proc. IEEE International Conference on Robotics and Automation (ICRA), 2021. Code repository
+M. Burke, K. Subr, S. Ramamoorthy, Action sequencing using visual permutations, IEEE Robotics and Automation Letters, 2021. Video clip
+Y. Hristov, S. Ramamoorthy, Learning from demonstration with weakly supervised disentanglement, In Proc. International Conference on Learning Representations (ICLR), 2021. Video clip
+E. Kahembwe, S. Ramamoorthy, Lower dimensional kernels for video discriminators, Neural Networks Journal, Special Issue on Deep Neural Network Representation and Generative Adversarial Learning, 2020. 
+D. Angelov, Y. Hristov, S. Ramamoorthy, From demonstrations to task-space specifications. Using causal analysis to extract rule parameterization from demonstrations, Autonomous Agents and Multi-Agent Systems, Vol. 34(45), 2020. 
+D. Angelov, Y. Hristov, M. Burke, S. Ramamoorthy, Composing diverse policies for temporally extended tasks, IEEE Robotics and Automation Letters, Vol 5(2): 2658-2665, 2020.  Video clip 
+M. Asenov, M. Burke, D. Angelov, T. Davchev, K. Subr, S. Ramamoorthy, Vid2Param: Modelling of dynamics parameters from video, IEEE Robotics and Automation Letters, Vol 5(2): 414-421, 2020. Video clip
+C. Innes, S. Ramamoorthy, Elaborating on learned demonstrations with temporal logic specifications, Robotics: Science and Systems (R:SS), 2020. Video clip
+A. Straizys, M. Burke, S. Ramamoorthy, Surfing on an uncertain edge: Precision cutting of soft tissue using torque-based medium classification, In Proc. IEEE International Conference on Robotics and Automation (ICRA), 2020. Video clip
+M. Asenov, N. Zotev, S. Ramamoorthy, A. Kirrander, Inversion of ultrafast X-ray scattering with dynamics constraints, In Proc. NeurIPS Workshop on Machine Learning and the Physical Sciences, 2020. Supplementary information
+M. Burke, Y. Hristov, S. Ramamoorthy, Hybrid system identification using switching density networks, Conference on Robot Learning (CoRL), 2019. 
+
+Y. Hristov, D. Angelov, A.Lascarides, M. Burke, S. Ramamoorthy, Disentangled Relational Representations for Explaining and Learning from Demonstration, Conference on Robot Learning (CoRL), 2019. Supplementary information
+M. Burke, S. Penkov, S. Ramamoorthy, From explanation to synthesis: Compositional program induction for learning from demonstration, Robotics: Science and Systems (R:SS), 2019. Video clip 
+D. Angelov, Y. Hristov, S. Ramamoorthy, Using causal analysis to learn specifications from task demonstrations, In Proc. International Conference on Autonomous Agents and Multiagent Systems (AAMAS), 2019. 
+D. Angelov, Y. Hristov, S. Ramamoorthy, DynoPlan: Combining Motion Planning and Deep Neural Network based Controllers for Safe HRL, In Proc. The Multi-disciplinary Conference on Reinforcement Learning and Decision Making (RLDM), 2019. 
+P. Ardón, M. Cabrera, È. Pairet, R. Petrick, S. Ramamoorthy, K. Lohan, M. Cakmak, Affordance-aware handovers with human arm mobility constraints, IEEE Robotics and Automation Letters, 2021. Video clip
+© The Alan Turing Institute
+2023. All rights reserved.
+The Alan Turing Institute, a charity incorporated and registered in England and Wales with company number 09512457 and charity number 1162533 whose registered office is at British Library, 96 Euston Road, London, England, NW1 2DB, United Kingdom.
+For website-related enquiries email
+[email protected]
+
+Explore the Institute
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Legal
+Awards

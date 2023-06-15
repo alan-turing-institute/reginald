@@ -1,0 +1,88 @@
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+This group unites international researchers and heritage professionals who have an interest in using digitised image collections (maps, photographs, newspapers, books) in computer vision tasks. Applying CV to historical datasets raises issues of provenance and bias as well as processing challenges distinct from the recent or born digital images used in most computer vision work. We offer researchers at the Turing and beyond an opportunity to establish connections and build this new interdisciplinary field together. We focus on shared practices in data science around computer vision, providing a much needed center of gravity for a growing, otherwise disparate community.
+Computer vision refers to a range of tasks and methods aimed at allowing computers to work effectively with images. Common computer vision tasks include the classification of images into different categories and segmenting images into smaller parts based on image content, for example, detecting which parts of an image contains a person. Computer vision methods have been applied across a broad range of scientific and engineering domains including application in self-driving vehicles, processing medical images and to process digitised documents to recognise text content (optical-character-recognition). Increasingly there is a growing interest in applying and expanding these techniques to work with heritage materials including maps, books, newspapers and paintings, which have been digitised. This raises questions about how well computer vision methods developed for other types of images perform on digitised heritage content as well as questions about how we effectively and responsibility work with collections at scale through automated methods.
+Challenges: Many libraries, archives, museums, and galleries have restrictions on sharing images of their collections that have been scanned in the last few decades.
+Example output: A white paper co-authored by researchers, curators, funders, and third-party digitisation partners about the future of open data access.
+Challenges: Computer vision literature currently focuses on problems related to certain kinds of relatively contemporary images (web content, photographs, remote sensing data, text with standard fonts).
+Example output: Case studies demonstrating open challenges for working with older materials (printed and manuscript maps, woodcuts, newspapers with historical fonts and layouts).
+Click here to join us and request sign-up
+The way we access information in the virtual space is changing. Discovery and exploration are no longer constrained by a keyword entered into a blank search bar. Instead, museums, libraries, archives, and galleries worldwide are welcoming a shift to 'generous interfaces' – presenting their collections online in browsable and linkable networks of information that allow users to explore and discover new ideas through meaningful and contextualised relationships.
+A key component in this emerging virtual browsing landscape is 'visual search', an AI-based method for matching similar images based on their visual characteristics (colour, pattern, shape), rather than a keyword description. The Deep Discoveries project aims to create a computer vision search platform that can identify and match images across digitised collections on a national scale. The research will focus on botanically themed content, allowing us to test how far we can stretch the recognition capabilities of the technology (can it recognise a rose in a textile pattern and the same flower in a herbarium specimen? How about on a ceramic vase?).
+One of the Towards a National Collection Foundation Projects, Deep Discoveries is a collaboration between The National Archives, the University of Surrey, Royal Botanic Gardens Edinburgh and the V&A. We started with ~30,000 botanical images from these institutions and our project partners Gainsborough Weaving Company, the Sanderson Design Archive, and the Museum of Domestic Design and Architecture. The wide range of partners allowed us to explore the necessary criteria for UK image collections to be linked, and to survey the searching needs of diverse audiences.
+Lora Angelova (Project PI) is Head of Conservation Research and Audience Development at The National Archives, UK, where she previously worked as a Conservation Scientist. Lora’s background is in chemistry and surface cleaning of cultural and heritage materials, and current focus lies in the intersection of heritage science, conservation research, and archival practice.
+John Collomosse (Project CI) is Professor of Computer Vision at the University of Surrey where he is a member of the Centre for Vision Speech and Signal Processing (CVSSP), one the UK's largest academic research groups for Artificial Intelligence with over 150 researchers. John is a Visiting Professor at Adobe Research, Creative Intelligence Lab (San Jose, CA).  John joined CVSSP in 2009.  Previously he was an Assistant Professor at the Department of Computer Science, University of Bath where he completed his PhD in 2004 on the topic of AI for Image Stylization.
+Dipu Manandhar (Project Researcher) is a Postdoctoral Researcher at the University of Surrey. Dipu obtained a PhD from Nanyang Technological University, Singapore where his work was related to visual search. Currently, he is a postdoctoral researcher working with Professor John Collomosse at CVSSP Lab, University of Surrey, where he works with graphic UI design layout modelling and visual search tasks.
+A talk by Stephen Law (UCL and The Alan Turing Institute) on 'Discussing the opportunities linking computer vision, urban analytics and digital humanities'. 
+We are living in an age where data is ubiquitous and data science methods are pervasive. A fundamental question that arises in interdisciplinary research is how do we adapt these novel data-driven methods across multiple domains. Stephen’s talk explored these opportunities on how different data science approaches including computer vision ones can be used to measure and map our cities in urban planning but also with potential implications for the digital humanities.
+Stephen Law is a Lecturer in UCL Geography and a Turing Fellow at The Alan Turing Institute. Prior to his appointment, he received a Research Fellowship at the Turing and was a senior research fellow at the UCL Bartlett. He completed a PhD in UCL Space Syntax Lab, studying the economic value of spatial network accessibility.
+The CVDH SIG welcomed Keith Burghardt (University of Southern California), who spoke about 'Reconstructing Settlements Reveals Varying Costs To Urbanisation' on March 4, 2022, from 15:00-16:30. 
+The structure of cities can strongly shape our lives, from improving food access and driving economies, to creating traffic jams and pollution. I will discuss my work on analysing and reconstructing how cities have developed since 1900, and what it shows about urbanisation in the US. We find that both small towns and large cities have created less-walkable environments, and as these regions have grown, they have become less dense and need more roads to connect people. That said, we also find that these problems are not universal, with larger cities consistently utilising their space more efficiently (an emergent property known as city scaling), and some regions developing more compact and walkable cities. I will discuss the reasons for this diversity, including how the data we created shows strong agreement with some theoretical models.
+Keith Burghardt is a Computer Scientist at the USC Information Sciences Institute who specializes in understanding human behavior with physics-inspired models. Burghardt received a 2021 ISI Meritorious Service Award and 2016 ISI Director’s Intern Award, and has papers in several high-tier venues, such as Communications Physics. Burghardt received a PhD in Physics and B.S. in Physics (Magna Cum Laude with High Honors) at the University of Maryland in 2016 and 2012, respectively. 
+On February 4, 2022 from 15:00-16:30 the CVDH SIG welcomed Leonardo Impett (Cambridge) to speak about 'Computer Vision as Symbolic Form: art history and bias in AI.'
+This talk will address the specifically visual component of bias in computer vision. We will consider the consequences for the use of computer vision in digital art history, digital art, and society in the ‘age of image-machines’ more generally. Reflecting on the incompleteness and inadequacy of technical solutions for identifying and mitigating bias in computer vision, I will attempt to highlight some fundamental contributions that art history (and art historians) can bring to the table. This opens the door to digital art history projects that, by engaging critically with computer vision, enable new ways of thinking about visual culture as inscribed in pictures and algorithms. 
+Leonardo Impett is assistant professor of digital humanities at Cambridge University. He was previously based at Durham University; the Bibliotheca Hertziana - Max Planck Institute for Art History; Villa I Tatti; and the École Polytechnique Fédérale de Lausanne. He has a background in computer vision, and is a PI of the collaborative “AI Forensics” project on bias in computer vision financed by the Vokswagen Stiftung.
+On November 19, 2021, we were happy to announce a talk about the Scivision project based at The Alan Turing Institute. We welcome Evangeline Corcoran, Sebastian Ahnert, and Alejandro Coca-Castro to discuss the project with the CVDH SIG. 
+Scivision aims to be a well-documented and generalisable python framework for applying computer vision methods to a wide range of scientific imagery.
+This tool aims to foster collaboration between data owners and developers by:
+We will welcome Dr Tarin Clanuwat and Professor Asanobu Kitamoto (both from the ROIS-DS Center for Open Data in the Humanities, Japan).
+Professor Asanobu Kitamoto will present a talk on “Visual and Spatial Digital Humanities Research for Japanese Culture”. Dr Clanuwat will be presenting her work on “miwo: Kuzushiji recognition smartphone application with AI”.
+Kitamoto Abstract: The talk introduces various research projects at the ROIS-DS Center for Open Data in the Humanities (CODH) with emphasis on visual and spatial data. In contrast to textual data, which is typical in digital humanities research, visual and spatial data requires different approaches and expertise, such as computer vision, machine learning, geographic information science, and linked data. The talk will discuss information technology to solve research questions in the humanities and data platforms such as IIIF (International Image Interoperability Framework) to create big structured data of the past.
+Project links (some in Japanese only):
+IIIF Curation Platform http://codh.rois.ac.jp/icp/
+Collection of Facial Expressions (KaoKore) http://codh.rois.ac.jp/face/
+Bukan Complete Collection http://codh.rois.ac.jp/bukan/
+Edo Maps http://codh.rois.ac.jp/edo-maps/
+GeoLOD https://geolod.ex.nii.ac.jp/
+Asanobu Kitamoto earned his Ph.D. in electronic engineering from the University of Tokyo in 1997. He is now Director of Center for Open Data in the Humanities (CODH), Joint Support-Center for Data Science Research (DS), Research Organization of Information and Systems (ROIS), Professor of National Institute of Informatics, and SOKENDAI (The Graduate University for Advanced Studies). His main technical interest is in developing data-driven science in a wide range of disciplines such as humanities, earth science and environment, and disaster reduction. He received Japan Media Arts Festival Jury Recommended Works, IPSJ Yamashita Award, and others. He is also interested in trans-disciplinary collaboration for the promotion of open science.
+Clanuwat Abstract: Reading kuzushiji (cursive script) is an essential skill for the study of premodern Japan, but gaining kuzushiji proficiency can be a challenge. This talk will offer a brief introduction to approaches to learning how to decipher kuzushiji. Dr. Clanuwat will demonstrate how artificial intelligence based kuzushiji recognition system works to transcribe premodern Japanese documents. Finally she will introduce the Kuzushiji recognition smartphone app “miwo”. The name “miwo” comes from the fourteenth chapter of The Tale of Genji, “Miwotsukushi”, referring to waterway markers. Just as the Miwotsukushi is a guide for boats in the sea, the miwo app aims to act as a guide for reading kuzushiji materials. https://tkasasagi.github.io/
+Dr Clanuwat is a project assistant professor at ROIS-DS Center for Open Data in the Humanities. She received her PhD from the Graduate school of Letters Arts and Sciences at Waseda University, where she specialized in Kamakura-era Tale of Genji commentaries. In 2018, she developed an AI-based kuzushiji recognition model called KuroNet. In 2019, she hosted a Kaggle machine learning competition for kuzushiji recognition which attracted over 300 machine learning researchers and engineers from around the world. Her AI and kuzushiji research won the Information Processing Society of Japan Yamashita Memorial Research Award. Her Kuzushiji recognition smartphone application won the ACT-X AI Powered Innovation and Creation research grant from Japan Science and Technology Agency.
+Visit our GitHub page.
+Katherine McDonough[email protected]
+The Colouring Cities repository provides open code for open data platforms on building stocks, co-developed as part of its international research programme, which currently operates across nine countries.
+A Generic Method for Segmented Map Realignment, using Local Features and Graph Neural Network. JADIS SuperMapRealigner offers automatic tools and models to semantically segment the road network of historical city maps and realign the maps on geographical coordinates. Created by Rémi Petitpierre, Maxime Jan, & Paul Guhennec (EPFL). 
+© The Alan Turing Institute
+2023. All rights reserved.
+The Alan Turing Institute, a charity incorporated and registered in England and Wales with company number 09512457 and charity number 1162533 whose registered office is at British Library, 96 Euston Road, London, England, NW1 2DB, United Kingdom.
+For website-related enquiries email
+[email protected]
+
+Explore the Institute
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Legal
+Awards

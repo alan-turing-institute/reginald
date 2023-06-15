@@ -1,0 +1,65 @@
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Understanding the ethical and societal implications of data is one of The Alan Turing Institute’s key research priorities. We have created the Data Ethics Group to lead our research in this area.
+Made up of a range of researchers specialising in ethics, social science, law, policy-making, and big data and algorithms, the Data Ethics Group drives the Institute’s research agenda in data ethics and works across the organisation on ethical best practice in data science.
+The Group works in collaboration with the broader data science community, supports public dialogue on relevant topics, and sets open calls for participation in workshops, as well as public events.
+Click here to join and request sign-up
+DEG Theme for 2022-23: AI, Power, and the Public Interest: Who’s in control?
+Despite the current swell of appeals to data science and “AI for the social good’ in the academic literature, the sociotechnical reality of contemporary data scientific practice seems to be telling a very different story. Present-day AI research and development ecosystems are contested fields composed of complex and contending interests, asymmetrical power relations, and prohibitive entry costs.
+Notwithstanding their projections of charitable rhetoric, large tech companies are increasingly engaged in a “commercially-driven production of the social good” that, many have argued, produce outcomes which run counter to the public interest. The corresponding rise of phenomena like “data colonialism” and “philanthro-capitalism” are complicating “AI for the social good” narratives. They are heralding the coalescence of high-entry-cost digital innovation ecosystems, multinational corporate business models, and marketing strategies with humanitarian data work, digital development schemes, and market forces.
+The result is the proliferation of privately controlled forms of extractionist data work, that are, in fact, often at cross-purposes with inclusive, equitable, and societally beneficial innovation. Trends such as these appear to be signalling “a profound rebalancing of power and governance in the domain of social life, privileging corporations with large-scale data power and making states (and other commercial and civil society actors) dependent on those corporations.” Similarly, incipient forms of data governmentality and commodification ever more infiltrate academic venues and research environments.
+In these, large tech companies’ proprietary data sets, seemingly unlimited financial resources, and massive computing power are, in effect, ‘de-democratising’ AI and data science. Several processes and dynamics hasten this. They include the control that corporations possess over access to data and compute resources, their command over labour power through the university-corporate hybridisation of ‘dual-affiliation’ career trajectories, and their manipulation of the terms of open research to protect their own rentiership claims to monopolistic control over intellectual property and infrastructural assets.
+The constellations of asymmetrical power relations, private corporate interests, and high entry costs for data innovation seem to establish the terms of engagement for accessing critical digital infrastructure that should otherwise be tightly bound up with the pursuit of the public good. The theme for our DEG dialogues this year, “AI, Power, and the Public Interest: Who’s in control?,” is framed around the difficult questions raised by these trends.
+Questions of concern include: Is the current universe of data scientific innovation—that is, the global assemblage of data infrastructures, compute infrastructures, algorithmic infrastructures, funding schemes, and research and delivery capabilities and resources—equipped to actualise responsible and sustainable data work that serves the public good? Or do these infrastructural, resourcing, and human factors operate, in fact, to curtail and elide possibilities for that actualisation?
+Is the human and biospheric interest in the realisation of the global public good being fostered by the current national and global configuration of power relations, sociotechnical affordances, platform ecosystems, and infrastructural networks that characterise contemporary data scientific research and innovation environments? How should terms such as “public good,” “social good”, and “public interest” be construed and reinterpreted in the light of the factors that purport to promote their realisation, or are seen as inhibiting them?
+What role should states and governments play in the provision of, and the regulation and governance of, critical digital infrastructure? How can, and should, effective technology governance (including laws, regulatory regimes, and other policy instruments) work in the complicated, multivalent, and transnational innovation ecosystems and platform political economy that is dominated by big tech?
+Open Dialogue: 'Foundation Models and the Public Interest’ on 11 May 2023, at 17:00 BST on Zoom.
+There is heightened anxiety about potential disruptions to markets, governments and civil society resulting from rapid developments in transformer architecture and roll-out of models trained on a burgeoning volume of data. While foundation models are trained on large corpora of data to be task-agnostic, their proliferation and interaction include are likely to exacerbate existing bias, discrimination and mis/disinformation which can augment structural inequities and power imbalances at both a domestic and global level. Further, the limitations of existing regulations, threats of model hallucination and negative environmental externalities, among others, call for a close inquiry into these contemporary developments and the future landscape of AI. 
+The Data Ethics Group will convene for an ‘Open Dialogue: Foundation Models and the Public Interest’ on 11 May 2023, at 17:00 BST on Zoom. In contrast to our previous dialogues, the upcoming event will not feature a presentation. Instead, members can utilise this as a platform to discuss the rapidly changing domain in relation to the 2023 theme: AI, Power, and the Public Interest: Who’s in control? The dialogue may present an opportunity for members of the DEG to develop a position paper on the proceedings.If you would like to attend, please sign up to the group by clicking the link under 'How to get involved' section.
+Our Public Dialogues have previously brought together a range of experts to engage in an open format discussion on how their work addresses the DEG theme. Previous events include: 
+[email protected]
+© The Alan Turing Institute
+2023. All rights reserved.
+The Alan Turing Institute, a charity incorporated and registered in England and Wales with company number 09512457 and charity number 1162533 whose registered office is at British Library, 96 Euston Road, London, England, NW1 2DB, United Kingdom.
+For website-related enquiries email
+[email protected]
+
+Explore the Institute
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Legal
+Awards

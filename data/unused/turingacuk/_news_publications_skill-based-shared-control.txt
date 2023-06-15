@@ -1,0 +1,50 @@
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Performing a number of motion patterns – referred to as skills – (e.g., wave, spiral, sweeping motions) during teleoperation is an integral part of many industrial processes such as spraying, welding, and wiping (cleaning, polishing). Maintaining these motions whilst simultaneously avoiding obstacles and traversing complex terrain requires expert operators. In this work, we propose a novel skill-based shared control framework for incorporating the notion of skill assistance to aid novice operators to sustain these motion patterns whilst adhering to environmental constraints. Our shared control method uses streaming joystick data to estimate the model parameters that provide a description of the operator’s intention. We introduce a novel parametrization for state and control that combines skill and underlying trajectory models, leveraging a special type of curve known as Clothoids. This new parameterization allows for efficient computation of skill-based short term horizon plans, enabling the use of a Model Predictive Control (MPC) loop. We perform experiments on a hardware mock-up, validating the effectiveness of our method to recognize a switch of intended skill, and showing an improved quality of output motion, even under dynamically changing obstacles.
+Mower, CE, Moura, J & Vijayakumar, S 2021, Skill-based Shared Control. in Robotics: Science and Systems 2021. Robotics: Science and Systems 2021, 12/07/21.
+2.3 MB
+© The Alan Turing Institute
+2023. All rights reserved.
+The Alan Turing Institute, a charity incorporated and registered in England and Wales with company number 09512457 and charity number 1162533 whose registered office is at British Library, 96 Euston Road, London, England, NW1 2DB, United Kingdom.
+For website-related enquiries email
+[email protected]
+
+Explore the Institute
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Legal
+Awards

@@ -1,0 +1,54 @@
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Charisma Choudhury is an Associate Professor of the University of Leeds where she is currently serving as the Deputy-Director of the Choice Modelling Centre. Prior to that, she has worked as an Assistant Professor at Bangladesh University of Engineering and Technology (BUET), as a Postdoctoral Research Associate at Massachusetts Institute of Technology (MIT) and as Analysts in RAND Europe, UK and Cambridge Systematics, USA. Charisma holds a PhD and MSc from Massachusetts Institute of Technology (MIT). In recognition of her doctoral research, she has received the Gordon Newell Best Dissertation Prize from the HKSTS and an Honourable Mention from the IATBR.
+At the Turing, Charisma plans to work towards bridging choice modelling (CM) with data science and artificial intelligence Travel behaviour models have traditionally relied on manually collected survey data, which are expensive to obtain and thereby generally have limited sample sizes and lower update frequencies. On the other hand, over the last decade, passively collected data sources, commonly termed as Big Data or Ubiquitous Data, have emerged as a very promising source of activity and travel information. The applications of such data have however been primarily limited to visualizations and pattern identifications using machine-learning (ML) techniques.
+However, there are criticism about the effectiveness of the ML algorithms due to the black-box approach and over-reliance on the training data, which questions their applicability in human behaviour prediction in the context of disruptive changes (e.g. radically new technologies, collapse of economy, etc.). Bridging ML with choice modelling holds the promise to make the best use of the data. CM techniques, which are based on principles of economic and psychology also have significant potential to augment AI. A particularly topical example is the set of AI models for Connected and Autonomous Vehicles (CAVs). Building on her previous research on driving behaviour modelling using CM techniques, Charisma is keen to augment AI models with behavioural underpinning.
+2011 Faculty for the Future Fellowship, Schlumberger Foundation Awarded each year to 100 exceptionally talented female STEM researchers from developing and emerging economies for pursuing postdoctoral research or doctoral studies at leading universities.
+2010 Gordon Newell Memorial Prize, Hong Kong Society for Transport Studies 1st prize of the annual dissertation competition launched in 2003 to laud the best doctoral dissertation in transportation conducted in any country by a student of Asian origin.
+2007 Honourable Mention, Eric Pas Dissertation Award, International Association of Travel Behaviour Research (IATBR) 2nd prize of the annual dissertation competition launched in 1998 to recognise the outstanding doctoral dissertations in the area of travel behaviour research.
+2004 Martin Family Society for Sustainability Fellowship, MIT Awarded annually to 20 outstanding doctoral students at MIT pursuing sustainability research.
+© The Alan Turing Institute
+2023. All rights reserved.
+The Alan Turing Institute, a charity incorporated and registered in England and Wales with company number 09512457 and charity number 1162533 whose registered office is at British Library, 96 Euston Road, London, England, NW1 2DB, United Kingdom.
+For website-related enquiries email
+[email protected]
+
+Explore the Institute
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Legal
+Awards

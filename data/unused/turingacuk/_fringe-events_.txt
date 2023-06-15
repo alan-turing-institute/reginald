@@ -1,0 +1,81 @@
+At a series of events between 6 – 31 March 2023, AI UK Fringe brings together leaders in academia from across the UK’s AI ecosystem to demonstrate, exhibit and update on their ground-breaking work.
+Attendees at our AI UK Fringe events will be able to network with local colleagues and peers and take part in specialist debates and roundtables relevant to their regions. Browse this year’s events below and make sure to register your place.
+Additional Fringe events will be added to this page as they’re confirmed; check back to see the latest.
+Date: Wednesday 8 March 2023Time and location: 15:00 – 17:30 GMT, 5G/6G Innovation Centre, University Of Surrey, Guildford, GU2 7XHOrganised by: Surrey Institute of People-Centred AI, University Of Surrey
+To celebrate International Women’s Day on 8th March, the Surrey Institute of People-Centred AI is holding a seminar on the theme of Women in AI.
+The confirmed speaker line-up includes:
+Additional speakers will be announced shortly. These sessions aim to be inspirational and practical, with the audience engaging with highlighted challenges, approaches and experiences, with a view to improving gender equality in AI and in STEM subjects more generally.
+Register now.
+
+Date: Wednesday 29 March 2023Time and location: 14:00 - 15:00, OnlineOrganised by: Edinburgh Futures Institute, The University of Edinburgh
+Our love of fashion is driving an unsustainable system of manufacturing, distributing and disposing of our clothing that is impacting our planet. How can we change our behaviour and the system for the love of the planet? What does the data tell us, how can we harness new technology such as Artificial Intelligence, robotics and informatics, and creative tools such as Augmented and Virtual Reality. What is the role of 3D environments, games and NFTs in fashion? Register now.
+Love Machine is a programme of events, created in collaboration with partners across the Edinburgh Futures Institute. The season explores the interconnections of AI and data with humanity through conversations, performances, and workshops. Explore the programme.
+
+Date: Friday 31 March 2023Time and location: 14:00 - 17:00, HybridOrganised by: The Alan Turing Institute
+We welcome you to join our first hybrid event to meet, connect and formally launch the Supra-Clinical AI Groups. These groups are focused on specialist interests in the particular clinical fields of Medical imaging and Computer Vision, Neurology and Mental Health and Anaesthetics and Intensive Care.
+You will hear from the leads of the Supra-interest groups, about our plans for the Clinical AI Summer School as well as it being a welcome opportunity to meet the wider community.
+Our keynote will be given by Alastair Denniston, Consultant Ophthalmologist (Uveitis and Medical Retina), University Hospitals Birmingham NHSFT & Honorary Professor, University of Birmingham, UK.
+His talk will be about 'Ensuring AI in health is safe, effective and equitable’.
+Register now.
+
+Date: Friday 31 March 2023Time and location: 10:00 – 15:00 GMT, Online via Microsoft TeamsOrganised by: School of Electronics and Computer Science, University of Southampton
+This workshop brings together researchers and practitioners working on and with AI in the Defence and Mental Health sectors to share experience gained and lessons learnt between these disciplines. We will discuss the key challenges AI faces today and attempt to signpost the current directions of travel within AI research to overcome these challenges in the short and medium term. Register now.
+
+Date: Monday 27 March 2023Time and location: 10:00 – 16:30 GMT, The Alan Turing Institute, British Library, 96 Euston Rd, London, NW1 2DBOrganised by: Safe and Ethical AI, The Alan Turing Institute
+Over the past few years, the use of AI has continued to increase in healthcare services. Many healthcare providers are deploying AI-driven applications across various business lines, services, and products. Although AI can bring a range of benefits to healthcare providers and patients, AI can also raise novel risks for patients and even healthcare providers. The UK government is working hard to regulate AI in health to support the use of responsible and trustworthy AI. By doing so, we can unleash the full potential of AI while safeguarding our fundamental values and keeping us safe and secure. Register now
+
+Date: Thursday 30 March 2023Time and location: 14:00 - 17:00, OnlineOrganised by: Queen's University Belfast
+After years of rapid progress in Artificial Intelligence and Natural Language Processing, ChatGPT has captured the public imagination in a way that is unprecedented for an AI system, reportedly acquiring over 100 million active users within two months of its launch. What are the scientific and societal implications of such models, and how will they impact the language sciences, language technology and society more generally? In this series of talks, experts in AI and the language sciences describe their recent research on the scientific and governance implications of large language models (LLMs). The event will also include a Q & A section, facilitating a more general discussion of the capabilities and impact of LLMs. Register now.
+
+Date: Wednesday 29 March 2023Time and Location: 10:00 – 16:00 GMT, Teesside University, Campus Heart, Southfield Rd, Middlesbrough, TS1 3BXOrganised by: Teesside University
+In this exciting one-day event, you will hear from leading researchers in the field of AI and cancer research, who will present the most recent applications of Data Science in healthcare. Through a series of inspiring talks from cancer modelling to machine learning techniques, you will learn about the different AI methodologies currently applied in cancer research. Register now
+
+Date: Friday 24 March 2023Time and Location: 09:00 – 16:30 GMT, Hybrid (Online via Zoom and Enigma 2.0, The Alan Turing Institute, British Library, 96 Euston Rd, London, NW1 2DB)Organised by: Theory and Methods Challenge Fortnights, The Alan Turing Institute
+This workshop will act as the follow-up workshop on "Accelerating Generative Models and Nonconvex Optimization" and will focus on theoretical and methodological challenges, solutions to some of those challenges, and exciting future directions on the foundations of generative models. Register in-person (deadline: Thursday 16 March 2023) or Register online.
+
+Date: Tuesday 7 March 2023Time and location: 17:00 GMT, Online via ZoomOrganised by: Living with Machines, The Alan Turing Institute
+Please join us for the launch of 'Collaborative Historical Research in the Age of Big Data: Lessons from an interdisciplinary project' in an online roundtable discussion, led by hosts Professor Jane Winters and Professor James Smithies, with the authors, Ruth Ahnert, Emma Griffin, Mia Ridge and Giorgia Tolfo. Register now.
+
+Date: Wednesday 15 March 2023Time and location: 10:00 – 12:00 GMT, Online via ZoomOrganised by: Department of Public Health and Primary Care, University of Cambridge
+An interactive, online workshop providing an introduction to the fundamentals of biomedical signal processing and learning for wearable signals of multiple modalities. The workshop will use pre-prepared teaching materials consisting of online Jupyter notebooks running Python code on the cloud so no installation is required on participants’ computers. Register now
+
+Date: Friday 31 March 2023Time and location: 14:00 - 17:00, HybridOrganised by: The Alan Turing Institute
+We welcome you to join our first hybrid event to meet, connect and formally launch the Supra-Clinical AI Groups. These groups are focused on specialist interests in the particular clinical fields of Medical imaging and Computer Vision, Neurology and Mental Health and Anaesthetics and Intensive Care.
+You will hear from the leads of the Supra-interest groups, about our plans for the Clinical AI Summer School as well as it being a welcome opportunity to meet the wider community.
+Our keynote will be given by Alastair Denniston, Consultant Ophthalmologist (Uveitis and Medical Retina), University Hospitals Birmingham NHSFT & Honorary Professor, University of Birmingham, UK.
+His talk will be about 'Ensuring AI in health is safe, effective and equitable’.
+Register now.
+Date: Thursday 30 March 2023Time and location: 14:00 - 17:00, OnlineOrganised by: Queen's University Belfast
+After years of rapid progress in Artificial Intelligence and Natural Language Processing, ChatGPT has captured the public imagination in a way that is unprecedented for an AI system, reportedly acquiring over 100 million active users within two months of its launch. What are the scientific and societal implications of such models, and how will they impact the language sciences, language technology and society more generally? In this series of talks, experts in AI and the language sciences describe their recent research on the scientific and governance implications of large language models (LLMs). The event will also include a Q & A section, facilitating a more general discussion of the capabilities and impact of LLMs. Register now.
+Date: Wednesday 29 March 2023Time and location: 14:00 - 15:00, OnlineOrganised by: Edinburgh Futures Institute, The University of Edinburgh
+Our love of fashion is driving an unsustainable system of manufacturing, distributing and disposing of our clothing that is impacting our planet. How can we change our behaviour and the system for the love of the planet? What does the data tell us, how can we harness new technology such as Artificial Intelligence, robotics and informatics, and creative tools such as Augmented and Virtual Reality. What is the role of 3D environments, games and NFTs in fashion? Register now.
+Love Machine is a programme of events, created in collaboration with partners across the Edinburgh Futures Institute. The season explores the interconnections of AI and data with humanity through conversations, performances, and workshops. Explore the programme.
+Date: Monday 27 March 2023Time and location: 10:00 – 16:30 GMT, The Alan Turing Institute, British Library, 96 Euston Rd, London, NW1 2DBOrganised by: Safe and Ethical AI, The Alan Turing Institute
+Over the past few years, the use of AI has continued to increase in healthcare services. Many healthcare providers are deploying AI-driven applications across various business lines, services, and products. Although AI can bring a range of benefits to healthcare providers and patients, AI can also raise novel risks for patients and even healthcare providers. The UK government is working hard to regulate AI in health to support the use of responsible and trustworthy AI. By doing so, we can unleash the full potential of AI while safeguarding our fundamental values and keeping us safe and secure. Register now
+Date: Wednesday 8 March 2023Time and location: 15:00 – 17:30 GMT, 5G/6G Innovation Centre, University Of Surrey, Guildford, GU2 7XHOrganised by: Surrey Institute of People-Centred AI, University Of Surrey
+To celebrate International Women’s Day on 8th March, the Surrey Institute of People-Centred AI is holding a seminar on the theme of Women in AI.
+The confirmed speaker line-up includes:
+Additional speakers will be announced shortly. These sessions aim to be inspirational and practical, with the audience engaging with highlighted challenges, approaches and experiences, with a view to improving gender equality in AI and in STEM subjects more generally.
+Register now.
+Date: Tuesday 7 March 2023Time and location: 17:00 GMT, Online via ZoomOrganised by: Living with Machines, The Alan Turing Institute
+Please join us for the launch of 'Collaborative Historical Research in the Age of Big Data: Lessons from an interdisciplinary project' in an online roundtable discussion, led by hosts Professor Jane Winters and Professor James Smithies, with the authors, Ruth Ahnert, Emma Griffin, Mia Ridge and Giorgia Tolfo. Register now.
+Date: Friday 24 March 2023Time and Location: 09:00 – 16:30 GMT, Hybrid (Online via Zoom and Enigma 2.0, The Alan Turing Institute, British Library, 96 Euston Rd, London, NW1 2DB)Organised by: Theory and Methods Challenge Fortnights, The Alan Turing Institute
+This workshop will act as the follow-up workshop on "Accelerating Generative Models and Nonconvex Optimization" and will focus on theoretical and methodological challenges, solutions to some of those challenges, and exciting future directions on the foundations of generative models. Register in-person (deadline: Thursday 16 March 2023) or Register online.
+Date: Friday 31 March 2023Time and location: 10:00 – 15:00 GMT, Online via Microsoft TeamsOrganised by: School of Electronics and Computer Science, University of Southampton
+This workshop brings together researchers and practitioners working on and with AI in the Defence and Mental Health sectors to share experience gained and lessons learnt between these disciplines. We will discuss the key challenges AI faces today and attempt to signpost the current directions of travel within AI research to overcome these challenges in the short and medium term. Register now.
+Date: Wednesday 29 March 2023Time and Location: 10:00 – 16:00 GMT, Teesside University, Campus Heart, Southfield Rd, Middlesbrough, TS1 3BXOrganised by: Teesside University
+In this exciting one-day event, you will hear from leading researchers in the field of AI and cancer research, who will present the most recent applications of Data Science in healthcare. Through a series of inspiring talks from cancer modelling to machine learning techniques, you will learn about the different AI methodologies currently applied in cancer research. Register now
+Date: Wednesday 15 March 2023Time and location: 10:00 – 12:00 GMT, Online via ZoomOrganised by: Department of Public Health and Primary Care, University of Cambridge
+An interactive, online workshop providing an introduction to the fundamentals of biomedical signal processing and learning for wearable signals of multiple modalities. The workshop will use pre-prepared teaching materials consisting of online Jupyter notebooks running Python code on the cloud so no installation is required on participants’ computers. Register now
+
+© The Alan Turing Institute 2022. All rights reserved.
+The Alan Turing Institute,
+a charity incorporated and registered in England and Wales with company number 09512457 and
+charity
+number 1162533 whose registered office is at British Library, 96 Euston Road, London, England,
+NW1
+2DB, United Kingdom.
+This site uses cookies to store information on your computer. We use cookies to improve your experience when you browse our website. For more information see our cookie notice here.
+This website uses cookies so that we can provide you with the best user experience possible. Cookie information is stored in your browser and performs functions such as recognising you when you return to our website and helping our team to understand which sections of the website you find most interesting and useful.
+Strictly Necessary Cookie should be enabled at all times so that we can save your preferences for cookie settings.
+If you disable this cookie, we will not be able to save your preferences. This means that every time you visit this website you will need to enable or disable cookies again.

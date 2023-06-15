@@ -1,0 +1,77 @@
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+
+In April 2021, Odin Vision collaborated with The Alan Turing Institute in a Data Study Group (DSG) to explore the interpretability of artificial intelligence (AI) models applied to early-stage characterisation of bowel cancer. Odin Vision – a UK company that has developed AI technology for detecting and characterising bowel cancer – hopes that this collaboration will help to boost user trust and demystify AI tech in the healthcare sector.
+In the UK, there are over 42,000 new cases of bowel cancer and 16,000 related deaths per year, making it the second leading cause of cancer deaths. With the number of related deaths predicted to increase by around 50% over the next 15 years, tackling this disease is an urgent health priority.
+In its early stages, bowel cancer is treatable and curable – the challenge is catching it early enough. Bowel cancer can be prevented through the detection and removal of precancerous polyps during a colonoscopy. However, even highly experienced clinicians can have difficulty spotting these often small and flat lesions, and then characterising them as precancerous or benign.
+“I’m an experienced colonoscopist but some of these lesions are just extremely hard to find.”
+Professor Laurence Lovat, Honorary Consultant Gastroenterologist, University College Hospital, and Clinical Advisor, Odin Vision
+By using AI to overcome clinical challenges, a new era of healthcare is emerging. Combining clinician experience and AI can provide solutions which assist doctors in their duties, improve patient outcomes and increase value for healthcare providers.
+This philosophy was employed by Odin Vision when it designed CADDIE, an AI system that combines the expertise of eminent clinicians and AI researchers. CADDIE is a cloud-based software that integrates with existing endoscopy equipment to augment its functionality. It detects the presence of polyps in real time on the endoscopy video feed and displays information about their visual characteristics, helping endoscopists to characterise the tissue as benign or precancerous.
+Although it is clear that AI has an important role in the future of healthcare, many questions remain regarding the interpretability of AI models. Some AI models are considered to be ‘black boxes’. Such models are validated through rigorous testing, but this provides little insight into what is going on inside the model. Users have visibility of the inputs (image or video data) and the outputs (predictions) but the internal workings of the model are difficult to interpret; in other words, it’s difficult to understand exactly why the model makes a particular decision.
+When clinicians make an optical characterisation, they use a set of features to classify polyps as either benign or precancerous – but what features do AI models rely on? In ambiguous cases, clinicians are able to seek more information through histopathological analysis before making a final diagnosis, but many AI models are unable to indicate the certainty with which they serve their prediction.
+Odin Vision collaborated with the Turing in a Data Study Group (DSG) to help answer these questions, leading to an intensive research project which brought together some of the UK’s top rising talents in data science, AI and wider fields.
+Odin Vision invited DSG participants to explore:
+For the early-stage researchers, this was an opportunity to apply their expertise to a real-world challenge, in many cases outside their usual domain. Led by Dr Paul Duckworth of the Oxford Robotics Institute, the team came from a broad range of disciplines – including astrophysics and computer animation – and institutions spanning the UK.
+“The multi-disciplinary team assembled by The Alan Turing Institute was fantastic! They immediately got to grips with the challenge, rapidly prototyping a range of different machine learning solutions. It’s been a pleasure to work with everyone on such an interesting and important project.”
+Dr Paul Duckworth, DSG PI and postdoctoral researcher at the Oxford Robotics Institute
+The DSG researchers split into smaller teams to focus on different parts of the challenge. The teams set objectives for each day and worked towards creating measurable outcomes for each objective. At the end of each day, the researchers presented ideas to Odin Vision’s research team and advisory clinicians, and fine-tuned their ideas based on the feedback. Over the course of the two weeks, the DSG researchers worked in close collaboration with Odin Vision to brainstorm innovative solutions to the problems.
+Some of the researchers explored the use of Bayesian neural networks to create an uncertainty measure for the model’s predictions. These methods enable the algorithms to state how sure they are about the answers they give. In much the same way that a human might say “hold on, I’m a little unsure about this”, AI models should also be afforded the same luxury. In a clinical setting, “I don’t know” is more acceptable than giving an incorrect answer – in this case, the clinician can seek further clarification through histopathological analysis.
+The team also prototyped a user interface to convey this valuable information to clinicians, and developed a condensed ‘uncertainty score’ of 1-5, which is understandable for general users.
+The researchers also explored attribution methods to detect which optical polyp features the model uses to determine whether the tissue is precancerous or benign.
+The team focused mainly on gradient-based attribution methods that identify which pixels on the input image predominantly contributed to the model’s predictions. This approach provides quick results that can be displayed in real time, which is highly important in a clinical setting.
+One such method, ‘Guided Grad-CAM’, highlighted the vessels and surface patterns on the polyp. Interestingly, the features highlighted were similar to those the endoscopist would use when making an optical characterisation.
+“Working with the Turing DSG has been an incredibly positive experience. The DSG perfectly illustrates how a diverse group of researchers from different technical backgrounds are able to bring new perspectives and create unique ideas to solve difficult problems.”
+Peter Mountney, CEO of Odin Vision
+The team has published a paper summarising its collaboration, available to read here.
+Following the DSG, there are many exciting research avenues to pursue. The tools and insights discovered during the project will help to make ‘black box’ models more interpretable, and mark a major step in the team’s efforts to demystify AI in the healthcare sector. Odin Vision is now working to further develop, fine-tune and productionise the ideas developed during the DSG, and incorporate these into its product range.
+“Making machine learning models more interpretable is an important and promising direction. There are a lot of exciting possibilities.”
+Shuyu Lin, DSG participant and computer science PhD student at University of Oxford
+Creating the next generation of AI-enabled endoscopy tools requires expertise from a multitude of backgrounds and disciplines. That’s why Odin Vision is so delighted to foster an ongoing, collaborative relationship with the Turing. Watch this space as innovation unfolds.
+This piece was written for the Turing website by Odin Vision.
+Top image: Siwakorn TH / Shutterstock
+© The Alan Turing Institute
+2023. All rights reserved.
+The Alan Turing Institute, a charity incorporated and registered in England and Wales with company number 09512457 and charity number 1162533 whose registered office is at British Library, 96 Euston Road, London, England, NW1 2DB, United Kingdom.
+For website-related enquiries email
+[email protected]
+
+Explore the Institute
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Legal
+Awards

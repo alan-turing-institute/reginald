@@ -1,0 +1,59 @@
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Words can change meaning, and polarity, quite fast. Spectral clustering methods and natural language processing can offer a solution to this problem. They allow for improvements to be made to the performance of sentiment analysis tools, which inform whether a text is talking positively or negatively about a person or an organisation.
+In natural language processing, sentiment analysis (SA) identifies a text's polarity. Existing approaches to SA do not account for a time factor. This is an important limitation, as the polarity of words can often change quickly. For example, the word ‘sick’ has recently acquired the meaning of ‘cool’ alongside the previous one of ‘unwell’. Being able to identify and react to this change is crucial for keeping SA systems up to date.
+Existing SA research usually requires large amounts of labelled data. Crucially, by transferring domain knowledge from ongoing interaction with Thompson Reuters, this project is using financial data to efficiently produce sentiment-labelled data.
+In algorithmic research, this project also seeks to further state of the art in spectral clustering methods – grouping a set of objects in such a way that objects in the same group (called a cluster) are more similar (in some sense) to each other than to those in other groups (clusters). The project will be extending constrained clustering to an online setting, where constraints arrive incrementally.
+The main challenge of incremental clustering is how to efficiently update a clustering so that it satisfies both the new and old constraints, as opposed to re-clustering the entire data set from scratch. A related problem involves incorporating user feedback in the clustering loop, a task common in active learning where the algorithm chooses constraints and queries the user.
+Utilising the JISC UK Web Domain Dataset 1996-2013 (JISC-UK), which is hosted at the British Library, to develop a system for polarity change detection which can improve existing sentiment analysis.
+The great advantage of working with a massive archive of language data covering a limited time period is that the change in words’ polarity can be tracked at a very high level of granularity, and thus enable sentiment analysis systems to react promptly to the ever-changing nature of today's language.
+Through collaborative development of clustering algorithms beyond the state of the art, the combination of the project researcher’s skills in natural language processing, mathematics, and history, will ensure the best use is made of this unique dataset.
+The real-world impact of this project concerns the improvement of tools to mine the sentiment of texts. This is a very active area in industry. From a scientific viewpoint, the project contributes to the Turing’s research on mathematical representations and understanding human behaviour.
+Concerning the wider research landscape, the polarity change detection system produced will be able to be used by the sentiment analysis community as a pre-trained resource.
+Questions in computational social science will also be addressed, such as establishing the communication flows between online communities and mainstream media, and the creation of online identities via their use of polarity of words (i.e. by using certain words in a positive versus a negative sense).
+March 2018: Project received seed funding from The Alan Turing Institute.
+© The Alan Turing Institute
+2023. All rights reserved.
+The Alan Turing Institute, a charity incorporated and registered in England and Wales with company number 09512457 and charity number 1162533 whose registered office is at British Library, 96 Euston Road, London, England, NW1 2DB, United Kingdom.
+For website-related enquiries email
+[email protected]
+
+Explore the Institute
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Legal
+Awards

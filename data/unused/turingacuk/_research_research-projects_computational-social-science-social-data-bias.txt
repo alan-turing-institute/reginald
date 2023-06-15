@@ -1,0 +1,55 @@
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Computational social science (CSS) provides a powerful approach to analyse and predict the social world, yet a widely known concern with this approach to understanding social phenomena is possible bias across all stages of the process. One underrepresented area is the application of social science theory and research to help to address social bias when building CSS tools and techniques. To provide a synthesis of the current state of knowledge across the fields of social and computational science on social bias we will conduct a scoping review and a series of workshops. We aim to publish the findings to help to raise awareness of some of the concerns and possible solutions to the issue of social bias in CSS.
+Beyond the current work we hope to continue the project and to build a community of interested parties enabling further problems to be investigated and for bias to be investigated in more detail.
+Computational social science refers to the attempt to use computational approaches to analyse and predict social phenomena.
+We consider ‘social bias’ as knowingly or unknowingly making judgments on certain groups of individuals, which typically relates to race/ethnicity, gender, or sexuality.
+Social science theories refer to those developed in disciplines such as psychology, sociology, or politics, to explain actions or behaviours. 
+ 
+The work will review and summarise what is known and still unknown in the area of social bias in CSS; offering critical evaluation of the current situation, identifying ways to address the highlighted issues, and outlining priorities for future research. In addition, the workshop events will bring together individuals in the Social Sciences and CSS communities and begin to build a network for this field. Ultimately, this work will help to drive forward thinking and encourage greater input from social science theory within the development of CSS techniques and tools. In doing so, the findings will identify and outline opportunities to further draw on social science to build fair and equitable AI systems—something that is crucial for society given that this bias can have severely negative consequences for groups of people, especially minority and underrepresented groups.
+The work has applications across government and industry where CSS is implemented—the findings will have implications for the design, development, and use of CSS. There are also possible benefits for academia; a comprehensive review of the current issues of social bias in CSS will indicate areas for improvement and highlight priorities for future research.
+© The Alan Turing Institute
+2023. All rights reserved.
+The Alan Turing Institute, a charity incorporated and registered in England and Wales with company number 09512457 and charity number 1162533 whose registered office is at British Library, 96 Euston Road, London, England, NW1 2DB, United Kingdom.
+For website-related enquiries email
+[email protected]
+
+Explore the Institute
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Legal
+Awards

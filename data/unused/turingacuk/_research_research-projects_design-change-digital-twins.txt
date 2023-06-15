@@ -1,0 +1,58 @@
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Engineers and managers find it difficult to understand the impacts of late design changes in complex systems, where changes in one sub-system may have implications for other sub-systems. Digital twins offer new opportunities, and research is starting to develop new decision-support methods, identifying key connections from design product and process data. This research will develop new methods to realise the benefit of the digital twin in data-driven design by providing engineering designers with leading indicators, helping them to trace and handle interdependencies and uncertainties in design.
+This work combines both data science and systems engineering to develop new methods for engineering design. Multidisciplinary design data based on criteria (e.g. energy consumption, cost and constructability) is analysed to improve collaborative design processes (in both early design and mature design). The project builds on new trajectories of research on: a) matrices to identify and track interdependencies and change propagation in the design of complex systems; b) techniques for automating the generation and interpretation of these matrices; and c) Building Information Modelling (BIM) techniques. 
+The first step in the research is to review existing approaches to automating generation of the Design Structure Matrix (DSM) from Building Information Modelling (BIM) data. The second step will then pilot and test novel approaches that extend this work to identify first and second order interdependencies. It is anticipated that this will use product and process generated in design and will extend the functionality available in commercial tools. It is anticipated that this research will require the development of new techniques for model integration, multi-criteria mapping and sensitivity analyses. The third step is to conduct global sensitivity analyses (GSA) to understand the uncertainties of outcomes associated with design changes. The fourth step involves simulating the performance of project outcomes to predict, and improve it across multiple aspects. In the fifth step, appropriate methods for developing optimal/near-optimal design solutions will be recommended from the analyses. 
+This work is informed by configuration management approaches, which are important in design change in complex systems as they seek to maintain the integrity of multidisciplinary design; ensuring consistency across requirements, digital information and physical assets. 
+ 
+The research aims to provide decision-support methods for designers evaluating late design changes by developing methods to identify interdependencies from the digital twin and analysing and visualising the associated uncertainty. Objectives are to:
+The deliverables are beneficial to both academia and industry in understanding and addressing the interdependencies and uncertainties of design in complex systems, improving the efficiency and reliability of design decision-making. The proposed methods will enable the project stakeholders to complete collaborative design work within uncertain and complex engineering design contexts and generate reliable and robust design solutions.
+A measure of success is that the project delivers both the tools and approaches for data-driven design change in complex systems; and it contributes to dealing with systems interdependencies and uncertainties of design decisions, and improving efficiency and reliability of design decision-making in practice. The contributions can be evidenced by publishable work in international peer-reviewed journals and the validation using real world data.
+This project is part of the Data-centric engineering programme's Grand Challenge of 'Data-driven engineering design under uncertainty'.
+The deliverables of research can be applied to design decision-making of infrastructure projects, and extended to other complex systems of which the complexity and interdependencies are growing faster than the design engineer's ability to address them. 
+Both academia and industry (especially the construction industry) involved in design decision-making can benefit from the proposed tools and approaches, delivering reliable and robust design solutions. 
+© The Alan Turing Institute
+2023. All rights reserved.
+The Alan Turing Institute, a charity incorporated and registered in England and Wales with company number 09512457 and charity number 1162533 whose registered office is at British Library, 96 Euston Road, London, England, NW1 2DB, United Kingdom.
+For website-related enquiries email
+[email protected]
+
+Explore the Institute
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Legal
+Awards

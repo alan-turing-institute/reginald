@@ -1,0 +1,59 @@
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Nick Holliman is Director of CUSP London and Professor in Computer Science at King's College London. He obtained a PhD from the Departments of Computing and Mechanical Engineering at the University of Leeds, sponsored by IBM UK. He worked in the computing industry, researching high quality graphics, computer vision and high-performance computing at Sharp's European Research Laboratories in Oxford, leading to a number of globally impactful products. He then moved to academia, most recently leading the development of research and teaching in the Data Science group at Newcastle University. His current research investigates the use of information theory to create novel visualization methods and empirically validates them worldwide using rigorous methods drawn from psychophysics.
+He is one of the main organisers of the Visualization Turing Interest Group.
+His research aims to find new ways to create data visualisations that directly address challenges in the human understanding of big data and AI. Starting off in electronic form in a computer, a display device converts information optically to light, this electromagnetic information is detected by the eye and the information finally exists as electro-chemical nerve impulses in the brain. How should we optimise this process so that we can quickly and accurately understand new ideas, and with these ideas take decisions about the world?
+His research at Newcastle has focused on exploiting the power of cloud super-computing to create more effective visualisations of urban analytics data. Cloud super-computing allows three orders of magnitude more computing power to be applied to data visualisation problems than would be possible on even the most powerful desktop computer. This is allowing the exploration of visual approaches to representing data that have not been see before, one example is the TeraScope project that is producing a visualisation from city scale to room scale in a single image of one trillion pixels.
+As a Turing Fellow he focuses on two directions of research: First to address the challenge of visualising uncertainty, how might we represent values and our confidence in values in immediately understandable ways. Second to address the challenge of how to automate visualisation, big data is too big for a human designer to confidently represent visually, how can we automate this process using stochastic optimisation techniques and perhaps also machine learning.
+As well as patents and academic papers his research outputs have included a number of award winning short stereoscopic 3D films on the role of dark matter in the creation of the universe in collaboration with Professor Carlos Frenk and the Institute for Computational Cosmology at Durham University. He is a member of the Association for Computing Machinery, The IEEE Computer Society, the Royal Statistical Society and the Society for Imaging Science and Technology.
+This course in data exploration and visualization covers cleaning and structuring datasets, and choosing suitable methods for visualizing them. It also provides theoretical knowledge of the underpinning descriptive statistics and the basics of human perception for cognition.
+Learners will acquire skills in data exploration and visualization. By the end of the course they will be able to take raw data sets, clean them, structure them and choose suitable methods for visualizing them. They will also acquire theoretical knowledge of the underpinning descriptive statistics and the basics of human perception for cognition.
+This is an introductory course on Data Visualization using Python, suitable for anyone with basic experience of Python programming.
+By the end of this course you will be able to:
+This course is released under a CC BY 4.0 license.
+It was designed by Professor Nick Holliman at Newcastle University.
+© The Alan Turing Institute
+2023. All rights reserved.
+The Alan Turing Institute, a charity incorporated and registered in England and Wales with company number 09512457 and charity number 1162533 whose registered office is at British Library, 96 Euston Road, London, England, NW1 2DB, United Kingdom.
+For website-related enquiries email
+[email protected]
+
+Explore the Institute
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Legal
+Awards

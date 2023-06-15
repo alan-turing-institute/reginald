@@ -1,0 +1,57 @@
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+The Turing-RSS Health Data Lab, a partnership established in August 2020 between the Turing and the Royal Statistical Society, has provided invaluable insights to the government’s UK Health Security Agency, which is responsible for public health protection in the UK.
+The Lab aims to develop statistical and machine learning techniques to answer policy-relevant questions about COVID-19. It is made up of over 35 people in research, leadership and operational roles from more than 10 institutes, including Imperial College London, MRC Harwell and the University of Oxford.
+“The Alan Turing Institute and the Royal Statistical Society came together at pace in response to the COVID-19 pandemic, providing world-class independent research and modelling expertise to the UK government.”
+Johanna Hutchinson, Director of Analytics and Data Science, UK Health Security Agency
+In December 2021, Lab researchers published a paper in Nature Microbiology describing a statistical framework that combines multiple sources of COVID-19 test data to provide more accurate estimates of local virus prevalence. This was followed in February 2022 by a statistical analysis from the Lab, published in The Lancet Regional Health, which found that deprived areas in England with higher proportions of non-White people were associated with higher COVID-19 infection rates. However, the strength of this association varied over the course of the pandemic and for different ethnic subgroups, highlighting the importance of continual monitoring when developing policies aimed at eliminating health inequalities.
+Other work at the Lab has included a project looking at the potential of diagnosing COVID-19 and other diseases by acoustically analysing someone’s speech or coughs, and a statistical model that uses incomplete COVID-19 test data to estimate (‘nowcast’) the total number of positive tests. Meanwhile, a recent paper describes the Lab’s overarching approach to statistical modelling, setting out a framework that will allow other research teams to rapidly build effective, data-driven models in response to future health emergencies.
+“The partnership has played a highly valuable role in developing and further enhancing the data science and advanced analytical capabilities within the UK Health Security Agency, both in responding to COVID-19 and in tackling new and existing threats to UK health.”
+Johanna Hutchinson, Director of Analytics and Data Science, UK Health Security Agency
+Further reading:
+This piece first appeared in The Alan Turing Institute’s Annual Report 2021-22Top image: Sergey Zaykov / Shutterstock
+© The Alan Turing Institute
+2023. All rights reserved.
+The Alan Turing Institute, a charity incorporated and registered in England and Wales with company number 09512457 and charity number 1162533 whose registered office is at British Library, 96 Euston Road, London, England, NW1 2DB, United Kingdom.
+For website-related enquiries email
+[email protected]
+
+Explore the Institute
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Legal
+Awards
