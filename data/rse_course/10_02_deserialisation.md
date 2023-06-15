@@ -142,12 +142,12 @@ print(yaml.dump(s.to_struct()))
       - 2
       - 1
       - 2
-    
+
 
 
 # Deserialising non-normal data structures
 
-We can see that this data structure, although seemingly 
+We can see that this data structure, although seemingly
 sensible, is horribly **non-normal**.
 
 * The stoichiometries information requires us to align each one to the corresponding molecule in order.
@@ -283,7 +283,7 @@ list(de_serialiser.molecules.keys())
 
 
 
-Remembering that a combination of columns uniquely defining an item is a valid  key - there is a key correspondence between a candidate key in the database sense and a "hashable" data structure that can be used to a key in a `dict`. 
+Remembering that a combination of columns uniquely defining an item is a valid  key - there is a key correspondence between a candidate key in the database sense and a "hashable" data structure that can be used to a key in a `dict`.
 
 Note that to make this example even reasonably doable, we had to exclude additional data from the objects (mass, rate etc)
 
@@ -382,7 +382,7 @@ print(yaml.dump(saver.save(s)))
       reactants:
         H2: 2
         O2: 1
-    
+
 
 
 We can see that to make an easily parsed file format, without having to
@@ -489,7 +489,7 @@ print(yaml.dump(saver.save(s)))
       reactants:
         1: 1
         4: 2
-    
+
 
 
 ## Reference counting
@@ -686,5 +686,3 @@ print(yaml.dump(s2.save()))
       reactants:
         2: 1
         3: 2
-    
-

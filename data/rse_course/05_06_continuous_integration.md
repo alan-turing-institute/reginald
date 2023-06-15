@@ -82,12 +82,12 @@ jobs:
   build:
     strategy:
       # We use `fail-fast: false` for teaching purposess. This ensure that all combinations of the matrix
-      # will run even if one or more fail. 
+      # will run even if one or more fail.
       fail-fast: false
       matrix:
         python-version: [3.8, 3.9, "3.10"]
         os: [ubuntu-latest, windows-latest]
-    
+
     runs-on: ${{ matrix.os }}
 
     steps:
@@ -96,8 +96,8 @@ jobs:
       uses: actions/setup-python@v1
       with:
         python-version: ${{ matrix.python-version }}
-    
-    # Yes we have to explictly install pytest. In a "real" example this could be included in a 
+
+    # Yes we have to explictly install pytest. In a "real" example this could be included in a
     # requirement.txt or environment.yml to setup your environment
     - name: Install PyTest
       run: |
@@ -125,5 +125,3 @@ These tests have been designed that they will both pass only if they are run on 
 
 * There can be cases where is it propriate to expect different behaviour on different platforms. [PyTest](https://docs.pytest.org/en/6.2.x/skipping.html) has features that allow for cases.
 * GitHub Actions themselves can be difficult to debug because of the need to commit and push every minor change. "[Act](https://github.com/nektos/act)" provides a tool to help debug some GH Actions locally.
-
-

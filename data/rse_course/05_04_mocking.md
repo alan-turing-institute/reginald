@@ -147,7 +147,7 @@ function()
        1155         raise result
 
 
-    StopIteration: 
+    StopIteration:
 
 
 ## Using mocks to model test resources
@@ -195,9 +195,9 @@ IPython.core.display.Image(london_map.content)
 
 
 
-    
+
 ![png](/Users/lbokeria/Documents/hack_week_2023/reginald/data_processing/rse_course_modules/module05_testing_your_code/05_04_mocking_25_0.png)
-    
+
 
 
 
@@ -313,7 +313,6 @@ Mock() - Mock()
 
     /var/folders/q7/nl3w6z854711jwsdy0hj7sxhwypcgh/T/ipykernel_66984/881210313.py in <module>
     ----> 1 Mock() - Mock()
-    
+
 
     TypeError: unsupported operand type(s) for -: 'Mock' and 'Mock'
-

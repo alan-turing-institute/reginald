@@ -73,7 +73,7 @@ This course will use the `git` version control system, but much of what you lear
 
 In this course, we will use, as an example, the development of a few text files containing a description of a topic of your choice.
 
-This could be your research, a hobby, or something else. In the end, we will show you how to display the content of these files as a very simple website. 
+This could be your research, a hobby, or something else. In the end, we will show you how to display the content of these files as a very simple website.
 
 ## Programming and documents
 
@@ -107,7 +107,7 @@ echo some output
     some output
 
 
-with the results you should see below. 
+with the results you should see below.
 
 In this document, we will show the new content of an edited document like this:
 
@@ -235,8 +235,7 @@ git status
 ```
 
     On branch main
-    
-    No commits yet
-    
-    nothing to commit (create/copy files and use "git add" to track)
 
+    No commits yet
+
+    nothing to commit (create/copy files and use "git add" to track)

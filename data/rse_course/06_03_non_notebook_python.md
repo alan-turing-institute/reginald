@@ -166,13 +166,13 @@ python command.py --help
 ```
 
     usage: command.py [-h] [--title TITLE] [--polite] personal family
-    
+
     Generate appropriate greetings
-    
+
     positional arguments:
       personal
       family
-    
+
     optional arguments:
       -h, --help            show this help message and exit
       --title TITLE, -t TITLE
@@ -286,7 +286,7 @@ python command.py Sarah Command
     Hey, Sarah Command
 
 
-Note that when we import `greeter.greet` the contents of the whole `greeter.py` file are executed, so the code to print the value of `__name__` still runs. However, `__name__` is now given the value `greeter`. This means when the if statement is executed `__name__ == "__main__"` returns `False`, and we don't see the "Hey, Laura Greeter" output. 
+Note that when we import `greeter.greet` the contents of the whole `greeter.py` file are executed, so the code to print the value of `__name__` still runs. However, `__name__` is now given the value `greeter`. This means when the if statement is executed `__name__ == "__main__"` returns `False`, and we don't see the "Hey, Laura Greeter" output.
 
 Without that if statement we would get
 

@@ -280,7 +280,7 @@ For one example of each type, what are the possible values the data can take, ac
 # TODO
 ```
 
-What is the minimum, maximum and mean value in each of your example columns? Taking into consideration the type of data in the column, are all of these values meaningful? 
+What is the minimum, maximum and mean value in each of your example columns? Taking into consideration the type of data in the column, are all of these values meaningful?
 
 
 ```python
