@@ -79,15 +79,19 @@ OPENAI_AZURE_API_BASE=""
 OPENAI_AZURE_API_KEY=""
 OPENAI_API_KEY=""
 REGINALD_MODEL=""
-SLACK_APP_TOKEN=""
-SLACK_BOT_TOKEN=""
+HANDBOOK_SLACK_APP_TOKEN=""
+HANDBOOK_SLACK_BOT_TOKEN=""
+LLAMA_SLACK_APP_TOKEN=""
+LLAMA_SLACK_BOT_TOKEN=""
 if [ -e ../.env ]; then
     OPENAI_AZURE_API_BASE=$(grep "OPENAI_AZURE_API_BASE" ../.env | grep -v "^#" | cut -d '"' -f 2)
     OPENAI_AZURE_API_KEY=$(grep "OPENAI_AZURE_API_KEY" ../.env | grep -v "^#" | cut -d '"' -f 2)
     OPENAI_API_KEY=$(grep "OPENAI_API_KEY" ../.env | grep -v "^#" | cut -d '"' -f 2)
     REGINALD_MODEL=$(grep "REGINALD_MODEL" ../.env | grep -v "^#" | cut -d '"' -f 2)
-    SLACK_APP_TOKEN=$(grep "SLACK_APP_TOKEN" ../.env | grep -v "^#" | cut -d '"' -f 2)
-    SLACK_BOT_TOKEN=$(grep "SLACK_BOT_TOKEN" ../.env | grep -v "^#" | cut -d '"' -f 2)
+    HANDBOOK_SLACK_APP_TOKEN=$(grep "HANDBOOK_SLACK_APP_TOKEN" ../.env | grep -v "^#" | cut -d '"' -f 2)
+    HANDBOOK_SLACK_BOT_TOKEN=$(grep "HANDBOOK_SLACK_BOT_TOKEN" ../.env | grep -v "^#" | cut -d '"' -f 2)
+    LLAMA_SLACK_APP_TOKEN=$(grep "LLAMA_SLACK_APP_TOKEN" ../.env | grep -v "^#" | cut -d '"' -f 2)
+    LLAMA_SLACK_BOT_TOKEN=$(grep "LLAMA_SLACK_BOT_TOKEN" ../.env | grep -v "^#" | cut -d '"' -f 2)
 fi
 
 # We always need a model name and Slack tokens
@@ -97,17 +101,29 @@ if [ -z "$REGINALD_MODEL" ]; then
 fi
 AZURE_KEYVAULT_AUTH_VIA_CLI=true pulumi config set REGINALD_MODEL "$REGINALD_MODEL"
 
-if [ -z "$SLACK_APP_TOKEN" ]; then
-    echo "Please provide a SLACK_APP_TOKEN:"
-    read -r SLACK_APP_TOKEN
+# Handbook
+if [ -z "$HANDBOOK_SLACK_APP_TOKEN" ]; then
+    echo "Please provide a HANDBOOK_SLACK_APP_TOKEN:"
+    read -r HANDBOOK_SLACK_APP_TOKEN
 fi
-AZURE_KEYVAULT_AUTH_VIA_CLI=true pulumi config set --secret SLACK_APP_TOKEN "$SLACK_APP_TOKEN"
+AZURE_KEYVAULT_AUTH_VIA_CLI=true pulumi config set --secret HANDBOOK_SLACK_APP_TOKEN "$HANDBOOK_SLACK_APP_TOKEN"
+if [ -z "$HANDBOOK_SLACK_BOT_TOKEN" ]; then
+    echo "Please provide a HANDBOOK_SLACK_BOT_TOKEN:"
+    read -r HANDBOOK_SLACK_BOT_TOKEN
+fi
+AZURE_KEYVAULT_AUTH_VIA_CLI=true pulumi config set --secret HANDBOOK_SLACK_BOT_TOKEN "$HANDBOOK_SLACK_BOT_TOKEN"
 
-if [ -z "$SLACK_BOT_TOKEN" ]; then
-    echo "Please provide a SLACK_BOT_TOKEN:"
-    read -r SLACK_BOT_TOKEN
+# Llama tokens
+if [ -z "$LLAMA_SLACK_APP_TOKEN" ]; then
+    echo "Please provide a LLAMA_SLACK_APP_TOKEN:"
+    read -r LLAMA_SLACK_APP_TOKEN
 fi
-AZURE_KEYVAULT_AUTH_VIA_CLI=true pulumi config set --secret SLACK_BOT_TOKEN "$SLACK_BOT_TOKEN"
+AZURE_KEYVAULT_AUTH_VIA_CLI=true pulumi config set --secret LLAMA_SLACK_APP_TOKEN "$LLAMA_SLACK_APP_TOKEN"
+if [ -z "$LLAMA_SLACK_BOT_TOKEN" ]; then
+    echo "Please provide a LLAMA_SLACK_BOT_TOKEN:"
+    read -r LLAMA_SLACK_BOT_TOKEN
+fi
+AZURE_KEYVAULT_AUTH_VIA_CLI=true pulumi config set --secret LLAMA_SLACK_BOT_TOKEN "$LLAMA_SLACK_BOT_TOKEN"
 
 # The ChatCompletionAzure and LlamaGPT35TurboAzure models need an Azure backend
 if [[ $REGINALD_MODEL == *azure* ]]; then
