@@ -45,15 +45,11 @@ class Bot(SocketModeRequestListener):
                 return None
 
             # If this is a direct message to REGinald...
-            if (
-                event_type == "message"
-                and event.get("subtype") is None
-                and not sender_is_bot
-            ):
+            if event_type == "message" and event["subtype"] is None:
                 model_response = self.model.direct_message(message, user_id)
 
             # If @REGinald is mentioned in a channel
-            elif event_type == "app_mention" and not sender_is_bot:
+            elif event_type == "app_mention":
                 model_response = self.model.channel_mention(message, user_id)
 
             # Otherwise
@@ -63,7 +59,11 @@ class Bot(SocketModeRequestListener):
 
             # Add an emoji and a reply as required
             if model_response:
+                if not self._request_field_exists(req, "channel", event):
+                    return None
                 if model_response.emoji:
+                    if not self._request_field_exists(req, "ts", event):
+                        return None
                     logging.info(f"Applying emoji {model_response.emoji}")
                     client.web_client.reactions_add(
                         name=model_response.emoji,
@@ -75,6 +75,9 @@ class Bot(SocketModeRequestListener):
                     client.web_client.chat_postMessage(
                         channel=event["channel"], text=model_response.message
                     )
+
+        except KeyError as exc:
+            logging.warning(f"Attempted to access key that does not exist.\n{str(exc)}")
 
         except Exception as exc:
             logging.error(
