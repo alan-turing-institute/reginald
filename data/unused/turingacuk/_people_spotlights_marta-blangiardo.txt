@@ -1,0 +1,54 @@
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+
+I am a professor of biostatistics and lead the Biostatistics and Data Science theme of the MRC Centre for Environment and Health, where I mainly work on environmental epidemiology. I’m currently developing spatio-temporal models and exploring some of the statistical challenges that these types of models pose. I have undertaken extensive work on air pollution and noise pollution, but have also worked on pesticides and recently on wastewater.
+Working on statistical modelling for climate change is exciting me at the moment. From a “one health” perspective, it is crucial to understand how changes in our climate impacts humans, as well as animals and ecosystems. I am working on this in the UK and Europe, mostly on the effect of temperature and heatwaves on population health. However I’m also am involved in some exciting work on scorpions with Brazilian collaborators.
+There are so many challenges - which makes my work even more interesting! I usually work with very large datasets, which makes the statistical inference computationally intensive. However, the biggest challenge is how to disseminate the results of spatio-temporal probabilistic models to policy makers and to the general public, something that needs to be carefully planned.
+Having my first book published and my first research grant funded. And both happened on the same day!
+I am going to be talking about some of the work on wastewater I have been doing as part of the RSS-Turing Health lab. I will show a spatio-temporal model we have developed to predict the distribution of viral concentration everywhere in England at high spatial resolution and how this can be used to predict COVID-19 prevalence.
+I have two very active young children, so I am always going on walks and bike rides. I love reading and running, hoping to run the London Marathon one day!
+© The Alan Turing Institute
+2023. All rights reserved.
+The Alan Turing Institute, a charity incorporated and registered in England and Wales with company number 09512457 and charity number 1162533 whose registered office is at British Library, 96 Euston Road, London, England, NW1 2DB, United Kingdom.
+For website-related enquiries email
+[email protected]
+
+Explore the Institute
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Legal
+Awards
