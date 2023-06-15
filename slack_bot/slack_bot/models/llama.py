@@ -32,6 +32,7 @@ from .base import MessageResponse, ResponseModel
 # OpenAI.
 
 LLAMA_INDEX_DIR = "llama_index_indices"
+PUBLIC_DATA_DIR = "public"
 QUANTIZE = False  # Doesn't work on M1
 
 
@@ -69,7 +70,21 @@ class Llama(ResponseModel):
     def _prep_documents(self) -> list[Document]:
         # Prep the contextual documents
         documents = []
-        data_files = [self.data_dir / "handbook-scraped.csv"]
+
+        if self.which_index == "handbook":
+            logging.info("Regenerating index only for the handbook")
+
+            data_files = [self.data_dir / PUBLIC_DATA_DIR / "handbook-scraped.csv"]
+
+        elif self.which_index == "all_data":
+            logging.info("Regenerating index for ALL DATA. Will take a long time...")
+
+            data_files = list((self.data_dir / PUBLIC_DATA_DIR).glob("**/*.md"))
+            data_files += list((self.data_dir / PUBLIC_DATA_DIR).glob("**/*.csv"))
+            data_files += list((self.data_dir / PUBLIC_DATA_DIR).glob("**/*.txt"))
+
+        else:
+            logging.info("The data_files directory is unrecognized")
 
         for data_file in data_files:
             if data_file.suffix == ".csv":
@@ -112,6 +127,7 @@ class Llama(ResponseModel):
         self.chunk_size_limit = chunk_size_limit
         self.chunk_overlap_ratio = chunk_overlap_ratio
         self.data_dir = pathlib.Path(data_dir)
+        self.which_index = which_index
 
         documents = self._prep_documents()
         llm_predictor = self._prep_llm_predictor()
@@ -132,8 +148,6 @@ class Llama(ResponseModel):
             prompt_helper=prompt_helper,
             chunk_size_limit=chunk_size_limit,
         )
-
-        logging.info(f"Load index is: {force_new_index}")
 
         if not force_new_index:
 
