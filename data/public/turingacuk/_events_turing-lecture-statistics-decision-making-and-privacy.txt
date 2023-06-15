@@ -1,0 +1,58 @@
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+​
+In the latest event in our series on data science in the public realm, the UK’s National Statistician, John Pullinger, will explain how data is helping Government and others make better decisions, from the National Census and many other sources, firmly based on evidence. Reflecting the importance of data ethics and privacy to making data as freely available as possible, in the second lecture Microsoft Research’s Cynthia Dwork will discuss the technical challenges of privacy and how new research may help increase access to valuable data in a way that safeguards the privacy of data owners.  
+
+‘Good’ data about the state of our economy and society, helps governments, businesses and citizens, to make informed decisions for the future. Demands to generate this data faster, in more detailed and tailored forms are growing, whilst the data revolution is providing rich opportunities for the data science community to come together to identify novel solutions to these demands. It also raises important questions about data ethics, data security and data quality, amongst other concerns. In this talk, John Pullinger will explore the nature of these questions, current responses to them, and the potential for building relationships between The Alan Turing Institute, the Office for National Statistics, the Government Statistical Service, and others who share an interest in developing insights from data to benefit the public.
+Biography
+John Pullinger is the UK National Statistician and most recent Chair of the United Nations Statistical Commission. He has previously been President of the Royal Statistical Society and Chair of the Getstats campaign for statistical literacy. He has worked in statistical, research, policy and leadership roles in the UK government at the Department of Trade and Industry, Department of Environment, and Office of Manpower Economics, as well as the UK Statistics Authority. He also spent ten years leading information services at the UK House of Commons as Librarian of the House, and developing new services to enable the public to engage with Parliament.
+Privacy-preserving data analysis has a long history, spanning at least five decades and numerous disciplines. Despite this extensive history, it is only in the last decade that an understanding has formed of the risk that the accumulation of small, seemingly insignificant statistical hints about confidential data, can pose to privacy. In this talk, Cynthia Dwork will discuss the implications of the loss of these ‘breadcrumbs’ of data, and show how differential privacy, a notion of privacy tailored to statistical analysis of large datasets, can control this risk, while at the same time permitting complex data analysis.
+Biography
+Cynthia Dwork, Distinguished Scientist at Microsoft Research, is renowned for placing privacy-preserving data analysis on a mathematically rigorous foundation. A cornerstone of this work is differential privacy, a strong privacy guarantee, frequently permitting highly accurate data analysis. Dr. Dwork has also made seminal contributions in cryptography and distributed computing, and is a recipient of the Edsger W. Dijkstra Prize, recognizing some of her earliest work establishing the pillars on which every fault-tolerant system has been built for decades. She is a member of the US National Academy of Sciences, the US National Academy of Engineering, and the American Philosophical Society, and a Fellow of the American Academy of Arts and Sciences. Dwork will join Harvard in January, 2017, as the Gordon McKay Professor of Computer Science at the Paulson School of Engineering and Applied Sciences, Radcliffe Alumnae Professor at the Radcliffe Institute for Advanced Study, and an Affiliated Faculty Member at Harvard Law School.
+The Alan Turing Institute
+1st floor of the British Library, 96 Euston Road, London, NW1 2DB
+© The Alan Turing Institute
+2023. All rights reserved.
+The Alan Turing Institute, a charity incorporated and registered in England and Wales with company number 09512457 and charity number 1162533 whose registered office is at British Library, 96 Euston Road, London, England, NW1 2DB, United Kingdom.
+For website-related enquiries email
+[email protected]
+
+Explore the Institute
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Legal
+Awards

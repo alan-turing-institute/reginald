@@ -1,0 +1,64 @@
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+
+There is a lot of jargon in data science and AI. We’ve created this glossary for non-specialists who want to find out more about these topics without the technical language. We also hope that it will be a useful resource for journalists and policy makers, as well as researchers in areas that intersect with data science and AI. This is an ongoing project, so we will regularly be reviewing the list of terms and definitions. If you would like to suggest any terms, please get in touch.
+A sequence of rules that a computer uses to complete a task. An algorithm takes an input (e.g. a dataset) and generates an output (e.g. a pattern that it has found in the data). Algorithms underpin the technology that makes our lives tick, from smartphones and social media to sat nav and online dating, and they are increasingly being used to make predictions and support decisions in areas as diverse as healthcare, employment, insurance and law.
+Unfairness that can arise from problems with an algorithm’s process or the way the algorithm is implemented, resulting in the algorithm inappropriately privileging or disadvantaging one group of users over another group. Algorithmic biases often result from biases in the data that has been used to train the algorithm, which can lead to the reinforcement of systemic prejudices around race, gender, sexuality, disability or ethnicity.
+A wide-ranging field of research that deals with large datasets. The field has grown rapidly over the past couple of decades as computer systems became capable of storing and analysing the vast amounts of data increasingly being collected about our lives and our planet. A key challenge in big data is working out how to generate useful insights from the data without inappropriately compromising the privacy of the people to whom the data relates.
+A software application that has been designed to mimic human conversation, allowing it to talk to users via text or speech. Chatbots are mostly used as virtual assistants in customer service, but there are also chatbot therapists and even chatbot politicians.
+A field of research that uses computers to obtain useful information from digital images or videos. Applications include object recognition (e.g. identifying animal species in photographs), facial recognition (smart passport checkers), medical imaging (spotting tumours in scans), navigation (self-driving cars) and video surveillance (monitoring crowd levels at events).
+An umbrella term for any field of research that involves the processing of large amounts of data in order to provide insights into real-world problems. Data scientists are a diverse tribe, ranging from engineers, medics and climatologists to ethicists, economists and linguists.
+A field of research that applies data science techniques to engineering problems. It often involves collecting copious amounts of data about the object being studied (this could be a bridge, a road network, a wind turbine, or even an underground farm), and then using the data to develop computer models for analysing and improving the object’s design and functioning (see ‘digital twin’).
+A form of machine learning that uses computational structures known as ‘neural networks’ to automatically recognise patterns in data and provide a suitable output, such as a prediction or evidence for a decision. Deep learning neural networks are loosely inspired by the way neurons in animal brains are organised, being composed of multiple layers of simple computational units (‘neurons’), and they are suited to complex learning tasks such as picking out features in images and speech. Deep learning thus forms the basis of the voice control in our phones and smart speakers, and enables driverless cars to identify pedestrians and stop signs. See also ‘neural network’.
+Synthetic audio, video or imagery in which someone is digitally altered so that they look, sound or act like someone else. Created by machine learning algorithms, deepfakes have raised concerns over their uses in fake celebrity pornography, financial fraud, and spreading false political information. ‘Deepfake’ can also refer to realistic but completely synthetic media of people and objects that have never physically existed; or sophisticated text generated by algorithms. See also ‘generative adversarial network’.
+A computer model that simulates an object in the real world, such as a jet engine, bridge, wind turbine, Formula One car, biological system, or even an entire city. Analysing the model’s output can tell researchers how the physical object will behave, helping them to improve its real-world design and/or functioning. Digital twins are a key tool in the field of data-centric engineering.
+A machine learning technique that can generate data, such as realistic ‘deepfake’ images, which is difficult to distinguish from the data it is trained on. A GAN is made up of two competing elements: a generator and a discriminator. The generator creates fake data, which the discriminator compares to real ‘training’ data and feeds back with where it has detected differences. Over time, the generator learns to create more realistic data, until the discriminator can no longer tell what is real and what is fake.
+An artificial intelligence system inspired by the biological brain, consisting of a large set of simple, interconnected computational units (‘neurons’), with data passing between them as between neurons in the brain. Neural networks can have hundreds of layers of these neurons, with each layer playing a role in solving the problem. They perform well in complex tasks such as face and voice recognition. See also ‘deep learning’.
+Software and data that are free to edit and share. This helps researchers to collaborate, as they can edit the resource to suit their needs and add new features that others in the community can benefit from. Open source resources save researchers time (as the resources don’t have to be built from scratch), and they are often more stable and secure than non-open alternatives because users can more quickly fix bugs that have been flagged up by the community. By allowing data and tools to be shared, open source projects also play an important role in enabling researchers to check and replicate findings.
+A machine that is capable of automatically carrying out a series of actions. The word ‘robot’ was coined by Czech writer Karel Čapek in his 1920 sci-fi play Rossum’s Universal Robots, but the idea of self-operating machines goes back to antiquity. Modern robots typically contain programmed computers and exhibit some form of artificial intelligence. They can include ‘humanoids’ that look and move like humans, industrial robots used in manufacturing, medical robots for performing surgery, and self-navigating drones.
+Data that is generated artificially, rather than by real-world events. It is especially useful for research in areas where privacy is key, such as healthcare and finance, as the generated data can retain the original data’s statistical properties, but with any identifying information removed. Synthetic data can also be used to augment a dataset with additional data points, often to help an artificial intelligence system to learn some desirable property; or to train algorithms in situations where it is dangerous to get hold of the real data, such as teaching a self-driving car how to deal with pedestrians in the road.
+© The Alan Turing Institute
+ 2023. All rights reserved.
+The Alan Turing Institute, a charity incorporated and registered in England and Wales with company number 09512457 and charity number 1162533 whose registered office is at British Library, 96 Euston Road, London, England, NW1 2DB, United Kingdom.
+For website-related enquiries email
+[email protected]
+
+Explore the Institute
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Legal
+Awards

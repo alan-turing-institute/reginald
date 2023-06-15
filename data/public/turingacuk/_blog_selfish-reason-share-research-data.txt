@@ -1,0 +1,63 @@
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+As many of us adapt to the benefits of remaining connected with our peers and colleagues digitally, new evidence suggests that scholarly papers might get increased citations by staying digitally connected to the research data that support their results.
+To promote open, reproducible research, many journals have started to encourage or even mandate that researchers share their research data and provide statements about the availability of their data in their published papers. These Data Availability Statements (DAS’s) in published papers (see Table for examples) provide a way to study if and how researchers share their data, and if data sharing correlates with citations of research.
+Previous studies have explored researchers’ data-sharing practices and their associations with citation counts in specific journals, or in specific research disciplines only. We analysed more than half a million papers across multiple journals and research disciplines, to explore the following questions:
+We analysed published articles from the PubMed Open Access collection to help answer these questions, and made all our code and data available for replication.
+Using an automated approach designed for the study, we classified different kinds of data availability statements, according to their main categories (illustrated in Table 1). The outcome is important as statements that contain a link to research data available in a public repository (category 3) are considered to be preferable over all other types of statements. However, depositing data in a repository may be more time-consuming for researchers than other approaches.
+"These Data Availability Statements in published papers provide a way to study if and how researchers share their data, and if data sharing correlates with citations of research."
+We found that data availability statements are now very common in published papers. We also found that journal mandates to include these statements are effective, with big increases in the number of statements in 2014 and 2015, when PLOS (Public Library of Science) and BMC (BioMed Central), respectively, mandated them. When journals only encourage that authors provide a statement, only a small percentage of papers include them. In 2018 93.7% of 21,793 PLOS articles and 88.2% of 31,956 BMC articles had data availability statements. Yet, data availability statements containing a link to data in a repository are just a fraction of the total. In 2017 and 2018, 20.8% of PLOS publications and 12.2% of BMC publications provided DAS containing a link to data in a repository. Figure 1 gives an overview of data availability trends over time in PLOS journals, while Figure 2 exemplifies distinct approaches to data sharing from two BMC journals.
+ 
+ 
+ 
+ 
+We also find that papers that link to data in a repository can have up to 25.36% (± 1.07%) higher citation impact on average, using a citation prediction model. While our results show that higher citations to a paper are correlated with linking to data in a repository, we cannot be certain this is the cause for the higher citations. However, this result may be encouraging for researchers, journals, publishers, funders and policymakers who are interested in data sharing and reproducible research. It suggests there might be a further incentive—beyond increasing transparency and reproducibility of results—to authors to make their data available using a repository.
+There might be a variety of reasons for this effect. More efforts and resources are put into papers sharing data, thus this choice might be made for better quality articles. It is also possible that more successful or visible research groups have also more resources at their disposal for sharing data. Sharing data likely also gives more credibility to an article’s results, as it supports reproducibility. Finally, data sharing encourages re-use, which might further contribute to citation counts.
+Researchers are concerned that there are insufficient resources and incentives to share their research data, and that more effort is required to publish data when publishing papers. However, this extra effort is really an investment rather than a cost. It is an investment in more reliable and reusable research for the scientific community, and this new evidence suggests it could also be a reasonable, “selfish” investment in researchers’ own reputations.
+Read the authors’ paper in PLOS ONE: The citation advantage of linking publications to research data
+Access the data in the following repository.
+© The Alan Turing Institute
+2023. All rights reserved.
+The Alan Turing Institute, a charity incorporated and registered in England and Wales with company number 09512457 and charity number 1162533 whose registered office is at British Library, 96 Euston Road, London, England, NW1 2DB, United Kingdom.
+For website-related enquiries email
+[email protected]
+
+Explore the Institute
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Legal
+Awards

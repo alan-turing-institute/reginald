@@ -1,0 +1,53 @@
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Peter Tennant is an Associate Professor of Health Data Science at the University of Leeds and Fellow of the Alan Turing Institute. Initially trained as an epidemiologist, his research is now primarily focussed on adapting and translating contemporary causal inference methods into health and social science research. He is also an experienced educator and renowned public speaker, who is regularly invited to speak to a diverse range of audiences. He leads the Causal Inference Interest Group within the Alan Turing Institute and the Introduction to Causal Inference Course for Health and Social Scientists.    
+Peter’s research is primarily focussed on adapting and translating contemporary causal inference methods into health and social science research. This takes place across four overlapping themes: 
+Methods and theory - increasing fundamental understanding of the analysis and interpretation of observational data using causal inference methods. Examples include his recent work on analyses of change scores and analyses of compositional data. 
+Meta-science and guidelines – increasing the use and improving the quality of causal inference research. Examples include his reviews on the use of directed acyclic graphs and on the use of causal and association language. 
+Applied domain implications - using causal inference theory to understand and explain methodological challenges in specific applied research domains. Examples include his recent work on adjustment for energy intake in nutritional research and the choice of outcomes in COVID-19 research. 
+Applied causal research – using causal inference methods to estimate causal effects in health and social science settings. Examples include his recent work on the effect of gestational diabetes on the risk of stillbirth and the effect of fasting plasma glucose on the risk of large-for-gestational age 
+© The Alan Turing Institute
+2023. All rights reserved.
+The Alan Turing Institute, a charity incorporated and registered in England and Wales with company number 09512457 and charity number 1162533 whose registered office is at British Library, 96 Euston Road, London, England, NW1 2DB, United Kingdom.
+For website-related enquiries email
+[email protected]
+
+Explore the Institute
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Legal
+Awards

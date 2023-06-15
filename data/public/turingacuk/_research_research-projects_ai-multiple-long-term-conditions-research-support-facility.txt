@@ -1,0 +1,70 @@
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+The Alan Turing Institute, in conjunction with Swansea University and the University of Edinburgh, is developing data standards, disseminating best practices, and building community around researchers, patients and the public involved in AI for multiple long-term conditions research.
+The innovative Research Support Facility is part of a £23 million investment by the NIHR in AI, and will connect researchers across the consortia, to ensure the investment delivers long-term, real-world impact for the programme and beyond.
+The new Research Support Facility (RSF), based at the Turing in conjunction with Swansea University and University of Edinburgh, will offer AI and advanced data science support to the research teams funded by AIM and foster collaboration. The facility, led by Dr Kirstie Whitaker and Professor Chris Holmes, will embed best practices in data security and standards, reproducibility, and public and patient engagement across the research collaborations funded by the programme, ensuring effective knowledge sharing and reinforcing the Turing’s role as a national convenor and capacity builder in data science and artificial intelligence.
+The Research Support Facility work is split across five, interconnected themes:
+Theme 1: Reproducible, secure and interoperable infrastructure
+This theme will bring different research collaborations across the UK together within a trusted research environment to facilitate data, software and analysis sharing. This will support a progressive move from reproducible, to reproduced, to reused research artefacts and outputs, maximizing the return on the NIHR’s investment in the overall research programme.
+Theme 2: Accessible, research ready data
+Data wranglers, experts in data curation and quality control, will work with the Research Collaborations to align datasets and standards. This will enable a broad range of data to be incorporated into extended analyses within AIM and beyond.Theme 3: Community building and training
+This theme aims to build connections between early career researchers across the AIM programme so their existing expertise can be shared across AIM and into the wider network. The other core aspect of the theme will be training and mentorship in the digital skills researchers need to deliver open source outputs from their Research Collaborations.Theme 4: Patient and public involvement and engagement
+Enhancing existing patient and public involvement networks across the AIM programme, this theme will support and empower people with lived experience of MLTC to co-create the research with the teams. Online engagement activities such as talks and seminars that are accessible to all will set the standard for patient involvement in other healthcare areas in the future.
+Theme 5: Sustainability and legacy
+This theme will work with researchers to embed outputs in existing communities, both clinical and academic, and engage with policy makers to coordinate a long term investment in MLTC research. It is a key part of ensuring that AIM research continues beyond the end of this specific investment and the impact of the work conducted benefits as many people as possible. 
+An estimated 14 million people in England are living with two or more long-term conditions, with two-thirds of adults aged over 65 expected to be living with multiple long-term conditions by 2035.
+People who develop multiple long-term conditions (MLTC) often do not have a random assortment of diseases but rather a largely predictable cluster of conditions. Developing a better understanding of these disease clusters, including how they develop over the course of a person’s life and are influenced by wider determinants of health, requires novel research and analytical tools that can operate across complex datasets.
+The Artificial Intelligence for Multiple Long-Term Conditions (AIM) call, from the National Institute for Health and Care Research (NIHR), in partnership with NHSX, funds research that combines data science and AI methods with health, care and social science expertise to identify new clusters of disease and understand how multiple long-term conditions develop over the life course.
+ 
+To support this work, the AIM RSF will host a series of ‘open invitation talks’ from thought-leaders and experts on aspects of data science and MLTC research. The talks will be open to everyone across the AIM programme and the broader multiple long-term conditions research community. Sessions will be made available on YouTube afterwards.
+The series is scheduled for the second week of each month on Tuesdays at 1:30-2:30, starting on 8th March 2022.
+For more information about the RSF’s programme of events, and to register for future sessions, please go to this page.
+
+The NIHR (National Institute for Health and Care Research) has awarded almost £12 million to new research that will use advanced data science and AI methods to identify and understand clusters of multiple long-term conditions and develop ways to prevent and treat them. The Alan Turing Institute, alongside Swansea University, University of Edinburgh and MRC Harwell, has been awarded £3 million to establish a new Research Support Facility as part of the programme. Find out more.
+
+[email protected]
+© The Alan Turing Institute
+2023. All rights reserved.
+The Alan Turing Institute, a charity incorporated and registered in England and Wales with company number 09512457 and charity number 1162533 whose registered office is at British Library, 96 Euston Road, London, England, NW1 2DB, United Kingdom.
+For website-related enquiries email
+[email protected]
+
+Explore the Institute
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Legal
+Awards

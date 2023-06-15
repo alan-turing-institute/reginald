@@ -1,0 +1,51 @@
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Roy Ruddle is a Professor of Computing at the University of Leeds, and Deputy Director (Research Technology) of the Leeds Institute for Data Analytics (LIDA). He has worked in both academia and industry, and researches visualization, visual analytics and human-computer interaction in spaces that range from high-dimensional data to virtual reality. In a 12-year collaboration with pathologists at the Leeds Teaching Hospitals NHS Trust (LTHT), he developed the Leeds Virtual Microscope (LVM) for visualizing tera-pixel image collections on Powerwall and ultra-high definition displays, leading to its use for pathology training in NHS hospitals and commercialisation by Roche.
+The LVM has already won awards for its research (ACM ToCHI Best Paper 2016) and application (Yorkshire & Humber NHS Innovation Award for Medical Devices and Diagnostics, 2014). His industry-sponsored petrophysics research led to the PETMiner software, which integrates objective and subjective data in visualizations for interactive data analysis, and has been commercialised by the spin-out Petriva Ltd. He currently researches novel visualization methods for data profiling, investigating data quality, and analysing complex coded data such as electronic health records and retail transactions. That research involves collaborations with NHS Digital, Leeds City Council, LTHT, Bradford Institute for Health Research, Sainsbury's, and other organisations.
+Professor Roy Ruddle designs, develops and evaluates visual analytic methods that address two neglected but challenging topics: (a) data quality, and (b) broken workflows. Both are essential if data analysis pipelines and models are to be rigorously designed, and hence are fundamental to data science. Visual analytics places users in the driving seat during the analysis of complex data, by combining the unique power of humans for detecting and reasoning about patterns (via interactive visualisation tools) and of machines for handling scale (via sophisticated models and powerful on-the-fly computation).
+Data quality spans everything from data that is missing ('completeness') to data that is invalid, inconsistent, incompatible, implausible or clearly an error (these are all types of 'correctness'). Broken workflow occurs because it is rare that users rigorously investigate the knock-on consequences of choices made in one analysis step on the output of the next.
+© The Alan Turing Institute
+2023. All rights reserved.
+The Alan Turing Institute, a charity incorporated and registered in England and Wales with company number 09512457 and charity number 1162533 whose registered office is at British Library, 96 Euston Road, London, England, NW1 2DB, United Kingdom.
+For website-related enquiries email
+[email protected]
+
+Explore the Institute
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Legal
+Awards

@@ -1,0 +1,59 @@
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Understanding inter-dependency in urban systems is often hindered by a lack of suitable data. This project combines research methods from geography, urban planning, economics, and history to provide a new approach to this issue. By creating a time series of input-output accounts for British cities in both the modern day and the nineteenth century, the project is able to model inter-city trade flows between economic centres.
+This work supports the Urban Analytics programme and Living with Machines project at the Turing.
+ 
+The foundational methods upon which this project builds are Leontief’s input-output analysis and Wilson’s family of spatial interaction models. It is the combination of the two which facilitates the creation of a mathematical model of trade flows between urban centres. The model can then be employed as an aid to economic analysis of the dynamics of city systems.
+Input-output analysis – made famous by Wassily Leontief in the mid-twentieth century – provides a framework for examining inter-dependencies between sectors in an economy. By examining the technical relationships, the method provides a way of considering not just the final output of an economic sector, but also the goods and services used to create other goods and/or services before they are sold to consumers.
+The Wilsonian family of spatial interaction models are ways of predicting movements between sets of origins and destinations within a system. They not only account for the distances between origin-destination pairs, but also incorporate the factors which might make one destination more attractive than another.
+By combining these two techniques, this project is able to estimate trade between every pair of British cities, for each economic sector.
+The project will create two mathematical models of inter-city trade, built from the same core specification and accompanied by custom visualisation tools. The first will model trade flows in the second half of the nineteenth century, and concentrate on historical development of the British economy. The second will focus on Britain in the modern day, and include forecasting of future scenarios.
+The project therefore seeks to provide insight regarding the evolution of cities over the nineteenth century, and the future challenges faced by modern cities. Both the historical and contemporary strands are motivated by a desire to understand the so-called ‘north-south’ divide: the former in terms of its origins; and the latter in relation to the ‘levelling-up’ agenda.
+The findings of this work will therefore have a significant impact on our understanding of city growth, development, and trade, and provide a framework for the analysis of future economic policy.
+Understanding the (past and future) evolution of cities has considerable importance for policymakers, urban planners, and third sector organisations. By creating dynamic tools – capable of modelling a variety of scenarios – the project will equip stakeholders with the necessary information to understand the long-term implications of current policy and urban development.
+Guy Solomon - [email protected]
+© The Alan Turing Institute
+2023. All rights reserved.
+The Alan Turing Institute, a charity incorporated and registered in England and Wales with company number 09512457 and charity number 1162533 whose registered office is at British Library, 96 Euston Road, London, England, NW1 2DB, United Kingdom.
+For website-related enquiries email
+[email protected]
+
+Explore the Institute
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Legal
+Awards

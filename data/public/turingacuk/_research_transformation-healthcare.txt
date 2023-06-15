@@ -1,0 +1,68 @@
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+To transform healthcare and enable better outcomes for all.
+The recent pandemic has brought starkly into view the scale of the transformation needed for health and social care systems around the world to be able to continue to ensure the future health of the population.  
+Some of the main challenges include the demographic pressures of an ageing population, increasing levels of multiple long term conditions, the rising personal and societal costs of poor health and persistent inequalities in health outcomes across populations.  
+There is a clear need for a more integrated approach across the spectrum of health, biology, social care, public policy and many other sectors addressing the underlying determinants of health.  
+The opportunities arising from the revolution in data science and AI to enable a more proactive focus on the prevention, the earlier identification of disease, and earlier better targeted interventions to improve health for all are yet to be fully realised. 
+The 'classic' machine learning challenge of mapping a large set of static and dynamic input data to a defined set of outcomes can be readily applied within a health context, and recent developments in this field are proving extraordinarily powerful in making progress in previously intractable areas such as computer vision, natural language parsing and object recognition. 
+However, we have yet to see widespread or systematic applications of data science or AI techniques to address major health challenges and to harness the power of the UK’s health data assets. Constraints on progress have included the difficulty in attaining coherent long term health data sets, legitimate and ongoing concerns over the implications for patient privacy, and the sheer complexity of health data, which requires strong collaborations across expertise domains.  
+There is the need for new approaches to data science and AI that appreciate inter-relations between drivers of health, and are informed by deep biomedical understanding, clinical expertise and wider societal and environmental context in which they relate.  
+The revolution in data science and AI for health will enable a more proactive focus on the prevention, earlier identification, and better targeted treatments of disease, driving better health for all across the UK. 
+As the national institute for data science and AI, Turing has been investing in, supporting and developing the UK’s research communities and building new partnerships necessary for success in addressing the challenge of realizing the power of AI to improve health for all.  
+Our unique strengths include collaboration with the UK’s world-class data science, AI and health research communities and links with international partners, access to large datasets of individual and population health records, close links with the NHS and other UK and international organizations to ensure the innovation in AI is has real-world applications, and partnerships with institutions and major life sciences companies, that are capable of making significant multi-year funding commitments to support the necessary research.  
+We believe the time is ripe for a concerted multi-disciplinary research effort to develop the concept of ‘Health AI’: data science and AI methodology co-developed with health practitioners and experts, leading to a practical working models and ultimately into health practice and policy. 
+'We worked with Turing both before and during the pandemic, bringing together a community of data scientists to address important questions by building novel and innovative models. It is testament to the Institute’s ability and value as a national institute to convene independent groups around important scientific and policy questions.
+It is rewarding to see this continued commitment to using data science and AI to support big national problems in their new strategy published today.'
+Johanna Hutchinson, Director of Analytics and Data Science, UK Health Security Agency 
+'Advances in AI and data science hold the potential to fuel transformational improvements in how we prevent, diagnose, and treat people living with devastating conditions, including many heart and circulatory diseases. Our own work with The Alan Turing Institute is already developing predictive tools to help patients and healthcare professionals make more informed decisions about their care. 
+Transforming healthcare through AI and data science will depend upon meaningful collaboration between clinicians and data scientists, underpinned by scientific rigour and the highest ethical practices. The Institute acts as a catalyst for this type of collaboration, and we look forward to working with them on advances to improve the lives of people with heart disease in the years to come.’ 
+Dr Charmaine Griffiths, Chief Executive, British Heart Foundation
+In consultation with partners from across the health sectors, we are developing four interrelated missions, that extend from the cellular to the social determinants of health. These include cell and molecular mechanisms of disease, population health, disease risk prediction, early diagnosis, innovation in clinical trials and applications for clinical evidence evaluation. 
+We need collaborators to help us to solve this Grand Challenge. Sign up to our newsletter to stay in touch with the latest news.
+
+© The Alan Turing Institute
+2023. All rights reserved.
+The Alan Turing Institute, a charity incorporated and registered in England and Wales with company number 09512457 and charity number 1162533 whose registered office is at British Library, 96 Euston Road, London, England, NW1 2DB, United Kingdom.
+For website-related enquiries email
+[email protected]
+
+Explore the Institute
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Legal
+Awards

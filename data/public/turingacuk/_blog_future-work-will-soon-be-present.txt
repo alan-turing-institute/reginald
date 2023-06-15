@@ -1,0 +1,54 @@
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+The future of work is a topic that is fuelling discussions and debates everywhere—from your neighbour’s dinner table to the break room of an IT outsourcing company in Bangalore and from an academic conference panel to the meeting room of an intergovernmental organisation. Everyone has a stake in the changing nature of work, yet many are confused about what is changing, why and how these changes take place, and whether anything can be done to shape the future.
+There is an increasing amount of research focused on this domain. Many of the related themes such as the impact of new technology and role of automation tend to be presented as if they were novel phenomena disconnected from the past experiences of our societies and economies. However, careful research is able to analyse these changes while reflecting on the long history of the changing nature of work. After all, the first wave of automation already took place a few centuries ago during the Industrial Revolution. So what then, if anything, is different this time around, and what is at stake?
+The overview that emerges from reviewing academic and policy literature on the topic suggests that multiple possible futures exist that depend on complex dynamics between context, choices and adaptability to new circumstances shaping the opportunities for individuals, firms, civil society organisations, governments and international organisations. Recent research on the topic has identified challenges, including rising inequality between and within countries, the undermining of collective power of workers, loss of jobs, hardship faced by younger generations and the disenfranchised and algorithmic control in the workplace.
+However, the changing nature and organisation of jobs and the adoption of new technologies throughout the economy, also gives rise to new opportunities, such as new jobs in both technology-driven and traditional industries. Widening market access, better-suited models to govern and regulate the changing nature and organisation of work and improved workplace technology are other areas where changes may lead to positive outcomes. While these changes affect economies and societies differently around the world, the challenges and opportunities give rise to research opportunities and open up avenues for collaboration and learning. 
+The changing nature and organisation of work and its diverse impacts on societies will need to be understood through not just best practice applied to new topics, but also emerging research approaches and themes rooted in data science and artificial intelligence, such as machine learning, robotics and network science. As the future of work quickly becomes the present, there is an urgent need for scholarship that attempts to understand how to make our new world of work sustainable, equitable and just.
+The Alan Turing Institute is the UK’s national institute for data science and artificial intelligence, which aims to further data science and artificial intelligence research to address real-world problems. The institute commissioned our review of recent literature in order to understand what are some of the key questions related to the future of work, what approaches and empirical challenges exist to answering these questions and what are some of the results found. We’d encourage readers and those working in this area to take a look at the review and use it as an introduction to the topic.
+Read the new landscaping report by the blog authors: Data Science, artificial intelligence and the futures of work commissioned by the Turing’s research programme in Economic Data Science. This week the Turing will publish a series of guest blogs exploring different angles of #futuresofwork as well as host a Data Debate: The AI will see you now, with the British Library the evening of Thursday 1 November. Later this autumn/winter the Turing will also be announcing a portfolio of research projects on 'The Changing Nature of Work' as part of the Turing-HSBC-ONS Economic Data Science Awards.
+© The Alan Turing Institute
+2023. All rights reserved.
+The Alan Turing Institute, a charity incorporated and registered in England and Wales with company number 09512457 and charity number 1162533 whose registered office is at British Library, 96 Euston Road, London, England, NW1 2DB, United Kingdom.
+For website-related enquiries email
+[email protected]
+
+Explore the Institute
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Legal
+Awards

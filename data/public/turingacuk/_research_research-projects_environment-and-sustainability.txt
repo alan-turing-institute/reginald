@@ -1,0 +1,56 @@
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+The effects of climate and environmental change constitute some of the most important challenges facing our society and quality, accessible, and reliable information across multiple scales, from global to molecular, is needed to understand the scale of these challenges and to develop strategies for mitigation and adaption.
+Developing methods to provide the meaningful insight to inform decision-making, improve risk management and enhance our resilience to climate change will require working across disciplines, bringing together methodology and expertise from different fields to develop tools and computational frameworks that can integrate data from multiple sources, available at different spatial and temporal resolutions and with different biases and uncertainties.
+The resulting frameworks will be applicable across a wide variety of applications, including integrating data from remote sensing satellites and traditional methods for ground observation with that from new sensor technologies; and integrating; integrating crop models, measurement data and climate projections to develop strategies for future agriculture; and understanding the threedimensional structure and dynamics of molecules.
+This project is supported entirely by public funds, through Wave 1 of the UK Research and Innovation Strategic Priorities Fund, under EPSRC Grant EP/T001569/1.
+ 
+The programme has a number of aims including:
+The programme combines inter-disciplinary expertise, covering a variety of areas including data science, AI, agriculture, environmental science, policy, meteorology, and ecology, from across the Turing community and external partners. Partners in this work include British Antarctic Survey, Earlham Institute, Norwich Bioscience Park (John Innes Centre), Rothamsted Research, The Met Office & Joint Centre for Excellence in Environmental Intelligence, University of Cambridge, MRC Laboratory of Molecular Biology and The Science and Technology Facilities Council.
+The environment and sustainability programme currently consists of three projects:
+Work in the environment and sustainability area addresses one of the defining crises of our time: the climate emergency. Developing robust and complex models integrating multiple datasets, real-time monitoring and data sources will enable enhanced decision making across a suit of policy areas. Sophisticated molecular modelling techniques will unlock more advanced and sustainable materials. Researchers will also be developing a toolbox of generalisable tools that will open the advances made to other areas of research, compounding the long-term potential impact of the work.
+© The Alan Turing Institute
+2023. All rights reserved.
+The Alan Turing Institute, a charity incorporated and registered in England and Wales with company number 09512457 and charity number 1162533 whose registered office is at British Library, 96 Euston Road, London, England, NW1 2DB, United Kingdom.
+For website-related enquiries email
+[email protected]
+
+Explore the Institute
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Legal
+Awards
