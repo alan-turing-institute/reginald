@@ -30,10 +30,11 @@ class Bot(SocketModeRequestListener):
             message = event["text"]
             user_id = event["user"]
             event_type = event["type"]
+            event_subtype = event.get("subtype", None)
             sender_is_bot = "bot_id" in event
 
             # Ignore changes to messages.
-            if event_type == "message" and event.get("subtype") == "message_changed":
+            if event_type == "message" and event_subtype == "message_changed":
                 logging.info(f"Ignoring changes to messages.")
                 return None
 
@@ -45,7 +46,7 @@ class Bot(SocketModeRequestListener):
                 return None
 
             # If this is a direct message to REGinald...
-            if event_type == "message" and event["subtype"] is None:
+            if event_type == "message" and event_subtype is None:
                 model_response = self.model.direct_message(message, user_id)
 
             # If @REGinald is mentioned in a channel
