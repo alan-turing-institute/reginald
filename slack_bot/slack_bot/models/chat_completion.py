@@ -9,7 +9,7 @@ from .base import MessageResponse, ResponseModel
 
 
 class ChatCompletionAzure(ResponseModel):
-    def __init__(self) -> None:
+    def __init__(self, **kwargs) -> None:
         self.api_base = os.getenv("OPENAI_AZURE_API_BASE")
         self.api_key = os.getenv("OPENAI_AZURE_API_KEY")
         self.api_type = "azure"
@@ -62,7 +62,7 @@ class ChatCompletionAzure(ResponseModel):
 
 
 class ChatCompletionOpenAI(ResponseModel):
-    def __init__(self) -> None:
+    def __init__(self, **kwargs) -> None:
         self.api_key = os.getenv("OPENAI_API_KEY")
 
     def direct_message(self, message: str, user_id: str) -> MessageResponse:

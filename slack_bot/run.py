@@ -2,6 +2,7 @@
 import argparse
 import logging
 import os
+import pathlib
 import sys
 import threading
 
@@ -16,6 +17,29 @@ if __name__ == "__main__":
     # Parse command line arguments
     parser = argparse.ArgumentParser()
     parser.add_argument("--model", "-m", help="Select which model to use", default=None)
+    parser.add_argument(
+        "--force-new-index",
+        "-f",
+        help="Recreate the index or not",
+        action=argparse.BooleanOptionalAction,
+        default=False,
+    )
+    parser.add_argument(
+        "--data-dir",
+        "-d",
+        help="Location for data",
+        default=(pathlib.Path(__file__).parent.parent / "data").resolve(),
+    )
+    parser.add_argument(
+        "--which-index",
+        "-w",
+        help="""Specifies the directory name for looking up/writing indices.
+        Currently supports 'all_data' and 'handbook'. If regenerating index, 'all_data'
+        will use all .txt .md. and .csv files in the data directory, 'handbook' will
+        only use 'handbook.csv' file.""",
+        default="all_data",
+    )
+
     args = parser.parse_args()
 
     # Initialise logging
@@ -40,7 +64,14 @@ if __name__ == "__main__":
         sys.exit(1)
 
     logging.info(f"Initialising bot with model {model_name}")
-    slack_bot = Bot(model())
+
+    slack_bot = Bot(
+        model(
+            force_new_index=args.force_new_index,
+            data_dir=args.data_dir,
+            which_index=args.which_index,
+        )
+    )
 
     # Initialize SocketModeClient with an app-level token + WebClient
     client = SocketModeClient(
