@@ -6,6 +6,7 @@ import math
 import os
 import pathlib
 import re
+from typing import Any, List, Optional
 
 # Third-party imports
 import pandas as pd
@@ -23,6 +24,7 @@ from llama_index import (
     load_index_from_storage,
 )
 from llama_index.indices.vector_store.base import GPTVectorStoreIndex
+from llama_index.response.schema import RESPONSE_TYPE
 from transformers import AutoModelForCausalLM, AutoTokenizer, pipeline
 
 # Local imports
@@ -30,7 +32,6 @@ from .base import MessageResponse, ResponseModel
 
 LLAMA_INDEX_DIR = "llama_index_indices"
 PUBLIC_DATA_DIR = "public"
-QUANTIZE = False  # Doesn't work on M1
 
 
 class CustomLLM(LLM):
@@ -41,7 +42,9 @@ class CustomLLM(LLM):
     def _llm_type(self) -> str:
         return "custom"
 
-    def _call(self, prompt, stop=None):
+    def _call(
+        self, prompt: str, stop: Optional[List[str]] = None
+    ) -> transformers.pipelines.text_generation.TextGenerationPipeline:
         return self.pipeline(prompt, max_new_tokens=9999)[0]["generated_text"]
 
     @property
@@ -51,60 +54,6 @@ class CustomLLM(LLM):
 
 
 class Llama(ResponseModel):
-    @staticmethod
-    def _format_sources(response):
-        texts = []
-        for source_node in response.source_nodes:
-            source_text = (
-                source_node.node.extra_info["filename"]
-                + f" (similarity: {source_node.score})"
-            )
-            texts.append(source_text)
-        result = "I read the following documents to compose this answer:\n"
-        result += "\n\n".join(texts)
-        return result
-
-    def _prep_documents(self) -> list[Document]:
-        # Prep the contextual documents
-        documents = []
-
-        if self.which_index == "handbook":
-            logging.info("Regenerating index only for the handbook")
-
-            data_files = [self.data_dir / PUBLIC_DATA_DIR / "handbook-scraped.csv"]
-
-        elif self.which_index == "all_data":
-            logging.info("Regenerating index for ALL DATA. Will take a long time...")
-            # TODO Leaving out the Turing internal data for now while we figure out if
-            # we are okay sending it to OpenAI.
-            data_files = list((self.data_dir / PUBLIC_DATA_DIR).glob("**/*.md"))
-            data_files += list((self.data_dir / PUBLIC_DATA_DIR).glob("**/*.csv"))
-            data_files += list((self.data_dir / PUBLIC_DATA_DIR).glob("**/*.txt"))
-
-        else:
-            logging.info("The data_files directory is unrecognized")
-
-        for data_file in data_files:
-            if data_file.suffix == ".csv":
-                df = pd.read_csv(data_file)
-                df = df[~df.loc[:, "body"].isna()]
-                documents += [
-                    Document(row[1]["body"], extra_info={"filename": row[1]["url"]})
-                    for row in df.iterrows()
-                ]
-            elif data_file.suffix in (".md", ".txt"):
-                with open(data_file, "r") as f:
-                    content = f.read()
-                documents.append(
-                    Document(content, extra_info={"filename": str(data_file)})
-                )
-        return documents
-
-    def _prep_llm_predictor(self):
-        raise NotImplemented(
-            "_prep_llm_predictor needs to be implemented by a subclass of Llama."
-        )
-
     def __init__(
         self,
         model_name: str,
@@ -115,7 +64,7 @@ class Llama(ResponseModel):
         chunk_size_limit: int | None = None,
         chunk_overlap_ratio: float = 0.1,
         force_new_index: bool = False,
-    ):
+    ) -> None:
         logging.info("Setting up Huggingface backend.")
         self.max_input_size = max_input_size
         self.model_name = model_name
@@ -185,6 +134,19 @@ class Llama(ResponseModel):
             "\n```\n{}\n```"
         )
 
+    @staticmethod
+    def _format_sources(response: RESPONSE_TYPE) -> str:
+        texts = []
+        for source_node in response.source_nodes:
+            source_text = (
+                source_node.node.extra_info["filename"]
+                + f" (similarity: {source_node.score})"
+            )
+            texts.append(source_text)
+        result = "I read the following documents to compose this answer:\n"
+        result += "\n\n".join(texts)
+        return result
+
     def _get_response(self, msg_in: str, user_id: str) -> str:
         msg_out = f"<@{user_id}>, you asked me: {msg_in}\n"
         try:
@@ -200,8 +162,7 @@ class Llama(ResponseModel):
         pattern = (
             r"(?s)^Context information is"
             r".*"
-            r"Given the context information and not prior knowledge, "
-            "answer the question: "
+            r"Given the context information and not prior knowledge, answer the question: "
             rf"{msg_in}"
             r"\n(.*)"
         )
@@ -210,12 +171,52 @@ class Llama(ResponseModel):
             answer = m.group(1)
         else:
             logging.warning(
-                "Was expecting a backend response with a regular expression "
-                "but couldn't find a match."
+                "Was expecting a backend response with a regular expression but couldn't find a match."
             )
             answer = response
         msg_out += answer
         return msg_out
+
+    def _prep_documents(self) -> List[Document]:
+        # Prep the contextual documents
+        documents = []
+
+        if self.which_index == "handbook":
+            logging.info("Regenerating index only for the handbook")
+
+            data_files = [self.data_dir / PUBLIC_DATA_DIR / "handbook-scraped.csv"]
+
+        elif self.which_index == "all_data":
+            logging.info("Regenerating index for ALL DATA. Will take a long time...")
+            # TODO Leaving out the Turing internal data for now while we figure out if
+            # we are okay sending it to OpenAI.
+            data_files = list((self.data_dir / PUBLIC_DATA_DIR).glob("**/*.md"))
+            data_files += list((self.data_dir / PUBLIC_DATA_DIR).glob("**/*.csv"))
+            data_files += list((self.data_dir / PUBLIC_DATA_DIR).glob("**/*.txt"))
+
+        else:
+            logging.info("The data_files directory is unrecognized")
+
+        for data_file in data_files:
+            if data_file.suffix == ".csv":
+                df = pd.read_csv(data_file)
+                df = df[~df.loc[:, "body"].isna()]
+                documents += [
+                    Document(row[1]["body"], extra_info={"filename": row[1]["url"]})
+                    for row in df.iterrows()
+                ]
+            elif data_file.suffix in (".md", ".txt"):
+                with open(data_file, "r") as f:
+                    content = f.read()
+                documents.append(
+                    Document(content, extra_info={"filename": str(data_file)})
+                )
+        return documents
+
+    def _prep_llm_predictor(self) -> LLMPredictor:
+        raise NotImplemented(
+            "_prep_llm_predictor needs to be implemented by a subclass of Llama."
+        )
 
     def direct_message(self, message: str, user_id: str) -> MessageResponse:
         backend_response = self._get_response(message, user_id)
@@ -227,7 +228,10 @@ class Llama(ResponseModel):
 
 
 class LlamaDistilGPT2(Llama):
-    def _prep_llm_predictor(self):
+    def __init__(self, *args: Any, **kwargs: Any) -> LLMPredictor:
+        super().__init__(*args, model_name="distilgpt2", max_input_size=1024, **kwargs)
+
+    def _prep_llm_predictor(self) -> LLMPredictor:
         # Create the model object
         tokenizer = AutoTokenizer.from_pretrained(self.model_name)
         model = AutoModelForCausalLM.from_pretrained(
@@ -240,24 +244,20 @@ class LlamaDistilGPT2(Llama):
             tokenizer=tokenizer,
         )
 
-        llm_predictor = LLMPredictor(
+        return LLMPredictor(
             llm=CustomLLM(model_name=self.model_name, pipeline=model_pipeline)
         )
-        return llm_predictor
-
-    def __init__(self, *args, **kwargs):
-        super().__init__(*args, model_name="distilgpt2", max_input_size=1024, **kwargs)
 
 
 class LlamaGPT35TurboOpenAI(Llama):
-    def __init__(self, *args, **kwargs):
+    def __init__(self, *args: Any, **kwargs: Any) -> None:
         self.openai_api_key = os.getenv("OPENAI_API_KEY")
         super().__init__(
             *args, model_name="gpt-3.5-turbo", max_input_size=4096, **kwargs
         )
 
-    def _prep_llm_predictor(self):
-        llm_predictor = LLMPredictor(
+    def _prep_llm_predictor(self) -> LLMPredictor:
+        return LLMPredictor(
             llm=ChatOpenAI(
                 max_tokens=self.num_output,
                 model=self.model_name,
@@ -265,11 +265,10 @@ class LlamaGPT35TurboOpenAI(Llama):
                 temperature=0.7,
             )
         )
-        return llm_predictor
 
 
 class LlamaGPT35TurboAzure(Llama):
-    def __init__(self, *args, **kwargs):
+    def __init__(self, *args: Any, **kwargs: Any) -> None:
         self.deployment_name = "reginald-gpt35-turbo"
         self.openai_api_base = os.getenv("OPENAI_AZURE_API_BASE")
         self.openai_api_key = os.getenv("OPENAI_AZURE_API_KEY")
@@ -279,8 +278,8 @@ class LlamaGPT35TurboAzure(Llama):
             *args, model_name="gpt-3.5-turbo", max_input_size=4096, **kwargs
         )
 
-    def _prep_llm_predictor(self):
-        llm_predictor = LLMPredictor(
+    def _prep_llm_predictor(self) -> LLMPredictor:
+        return LLMPredictor(
             llm=AzureChatOpenAI(
                 deployment_name=self.deployment_name,
                 temperature=self.temperature,
@@ -292,4 +291,3 @@ class LlamaGPT35TurboAzure(Llama):
                 openai_api_type="azure",
             )
         )
-        return llm_predictor
