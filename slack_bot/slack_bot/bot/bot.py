@@ -33,10 +33,7 @@ class Bot(SocketModeRequestListener):
             sender_is_bot = "bot_id" in event
 
             # Ignore changes to messages.
-            if (
-                event_type == "message"
-                and event.get("subtype") == "message_changed"
-            ):
+            if event_type == "message" and event.get("subtype") == "message_changed":
                 logging.info(f"Ignoring changes to messages.")
                 return None
 
