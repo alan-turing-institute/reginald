@@ -204,7 +204,7 @@ class LlamaDistilGPT2(Llama):
         super().__init__(*args, model_name="distilgpt2", max_input_size=1024, **kwargs)
 
 
-class LlamaGPT35Turbo(Llama):
+class LlamaGPT35TurboPersonal(Llama):
     def __init__(self, *args, **kwargs):
         super().__init__(
             *args, model_name="gpt-3.5-turbo", max_input_size=4096, **kwargs
