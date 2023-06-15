@@ -61,7 +61,7 @@ container_group = containerinstance.ContainerGroup(
                 ),
                 containerinstance.EnvironmentVariableArgs(
                     name="OPENAI_AZURE_API_KEY",
-                    value=config.get_secret("OPENAI_AZURE_API_KEY"),
+                    secure_value=config.get_secret("OPENAI_AZURE_API_KEY"),
                 ),
                 containerinstance.EnvironmentVariableArgs(
                     name="OPENAI_API_KEY",
