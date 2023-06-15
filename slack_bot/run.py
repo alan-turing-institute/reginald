@@ -25,7 +25,13 @@ if __name__ == "__main__":
     )
     parser.add_argument("--data-dir", "-d", help="Location for data", default=True)
     parser.add_argument(
-        "--which-index", "-w", help="Directory name for the index", default=True
+        "--which-index",
+        "-w",
+        help="""Specifies the directory name for looking up/writing indices.
+        Currently supports 'all_data' and 'handbook'. If regenerating index, 'all_data'
+        will use all .txt .md. and .csv files in the data directory, 'handbook' will
+        only use 'handbook.csv' file.""",
+        default=True,
     )
 
     args = parser.parse_args()
