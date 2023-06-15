@@ -1,0 +1,115 @@
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Accenture and The Alan Turing Institute have been working together since 2017, during which time they have conducted joint research projects into new techniques for network analytics for use in fraud detection, for example, in telecommunications. They have also run Data Study Groups to tackle challenges facing AI professionals, such as fairness in algorithmic decision-making.
+In 2020 we launched a five-year strategic partnership with Accenture that will sit within the finance and economics programme. Our partnership will build on an existing three-year alliance to create a world-leading strategic partnership in advanced data science, data analytics and artificial intelligence (AI) research with a focus on delivering substantial business and societal value.
+Some of the activities the partnership plans to undertake include conducting joint research in data science and AI across many areas including: 
+The partnership will also deliver engagement activities to help transform executives’ understanding of how AI and data science can be used as a tool for business. This will include guest lectures and seminars as well as internship opportunities for a range of students across the Turing network with Accenture and its clients.
+
+Read an edited version of Adrian Smith’s keynote speech given at the Accenture-Turing Innovation Symposium on 18 November 2021. This virtual event provided a unique opportunity for industry and academia to come together to discuss the research that is pioneering the conscientious uses of data science and AI, in areas including privacy, explainability, fairness and security.
+Read here.
+ 
+ 
+
+The government sees the National AI Strategy as fundamental to the UK’s economic growth over the next ten years. Mark Girolami, Chief Scientist of The Alan Turing Institute, and Accenture's Fernando Lucini discuss what this means for business and society. As a global AI powerhouse, UK business is already seeing opportunities to grow and transform.
+ 
+The latest episode of the Turing Podcast features a special roundtable discussion with Accenture about career options in the data science sector. Hosts Jo Dungate and Bea Costa Gomes were joined by three influential figures in AI and data science: Henrietta Ridley (Data Science Manager at Accenture), Alice Aspinall (Senior Manager at Mudano) and Kirstie Whitaker (the Turing’s Programme Director for Tools, Practices and Systems). 
+Click to listen
+ 
+You can view sessions from the Accenture Innovation Symposium below.
+Adrian Smith
+In addition to his role at the Turing, Adrian is President of the Royal Society, and a member of the government’s national AI council. In this talk, Adrian discusses the UK’s national data and AI strategies; focusing in on the key challenges to industry.
+Mihaela van der Schaar
+Mihaela is John Humphrey Plummer Professor of Machine Learning, Artificial Intelligence and Medicine at the University of Cambridge, and Turing Fellow. The Current emphasis of her research is on synthetic data with applications to medicine, finance and education. In this talk she focuses on new evaluation metrics for synthetic data generation.
+Timothy Dodwell
+Timothy is a senior lecturer in industrial applied mathematics within the Institute of Data Science and AI at the University of Exeter, and Turing Fellow. His work addresses the challenge of building a more sustainable aviation industry by building a virtual test pyramid. In this talk he focuses on deploying reinforcement learning in safety critical systems, as well as the Turing’s prosperity partnership with NATS.
+Maria Liakata
+Maria is a Professor in Natural Language Processing (NLP) at Queen Mary University of London and Turing Fellow. Her work utilises language data obtained from wide-spread use of digital technology such as social media as well as mobile phone data to develop novel natural language processing methods for automatically capturing changes in user behaviour over time. In this talk she looks at the applicability to mental health as NLP techniques will help provide experts with evidence for personalised changes in mood and cognition from everyday use of digital technologies.
+Jose Miguel Hernandez Lobato
+Jose is a lecturer in Machine Learning at the Department of Engineering of the University of Cambridge. His work focuses on increasing robustness in machine learning methods using probabilistic approaches. This talk addresses key concerns around providing training data collected under differing conditions.
+ 
+The COVID-19 pandemic brought into sharp focus the need for new data science and AI skills. Looking ahead, it’s clear we’re going to need data-informed non-therapeutic interventions to limit any resurgence of the virus for years to come.
+Click to read blog
+ 
+ 
+ 
+Professor Zoe Kourtzi gave a talk at Accenture as part of Mental Health Week 2021.
+Click to watch video
+ 
+ 
+How can you identify whether a problem or opportunity – whether it’s from industry, third sector, government or academia – is a suitable candidate for an AI-driven approach?
+Click to read blog
+ 
+Addressing the UK’s AI skills gap has never been more important. In this blog, Ray Eitel-Porter (Global Responsible AI Lead at Accenture), discusses the scale of the challenge, addressing diversity, and AI learning in schools.
+Click to read blog
+ 
+Applied Intelligence collaboration is at the heart of Accenture does. Read more about their work with some of the world’s leading academic and research institutions worldwide.
+Click to read blog
+
+ 
+Click to read blog
+ 
+
+ 
+On 7 October 2020, Accenture and The Alan Turing Institute partnered to host the Innovation Symposium, featuring the latest in applied data science and artificial intelligence research.
+Click to watch video
+
+ 
+Accenture’s challenge to the Turing's Data Study Group researchers was to develop a tool that can promote fairness in algorithmic decision-making across the financial services sector. Read more about the outcomes of the challenge.
+Click to read more
+ 
+The big data revolution is changing everything. Along with increasing computing power, data is the engine of data science and AI. It is having an impact across social and economic life through social media, new forms of public service delivery or the transformation of industries and employment.
+Click to read blog
+ 
+Accenture Turing strategic partnership: Expression of interest (Data sharing) – Through this call we are seeking to fund projects that fall under the “Data Sharing” research theme.
+Accenture and The Alan Turing Institute establish strategic partnership – A partnership to conduct AI and data science research and develop applications that solve real-world problems.
+Accenture challenge: Fairness in algorithmic decision-making – Accenture’s challenge to Turing DSG researchers was to develop a tool that can promote fairness in algorithmic decision-making across the financial services sector.
+The Alan Turing Institute and Accenture launch a new alliance to combat fraud and money laundering – The Alan Turing Institute and Accenture announced that they will work together to develop next generation artificial intelligence and data science tools, with the first in a series of projects to look at the security challenges faced by large business and government organisations.
+Accenture is a global professional services company with leading capabilities in digital, cloud and security. Combining unmatched experience and specialised skills across more than 40 industries, Accenture offer Strategy and Consulting, Interactive, Technology and Operations services – all powered by the world’s largest network of Advanced Technology and Intelligent Operations centres. Their 537,000 people deliver on the promise of technology and human ingenuity every day, serving clients in more than 120 countries. They embrace the power of change to create value and shared success for clients, people, shareholders, partners and communities. Visit at www.accenture.com.
+The finance and economics programme brings together leading experts in data science, machine learning, finance and the social sciences, from both academia and industry to tackle the most challenging questions by producing world-leading research with significant impact. We inform public policy and enable trusted, research-led thought leadership. The programme works closely with government and the industry to exploit the potential of new technologies in the financial sector and economic research, and to position the UK as the leader in these areas.
+In 2020 we launched a five-year Strategic Partnership with Accenture that will sit within the finance and economics programme. Our partnership will build on an existing three-year alliance to create a world-leading strategic partnership in advanced data science, data analytics and artificial intelligence (AI) research with a focus on delivering substantial business and societal value via:
+We will achieve our vision through four data science and AI pillars: (1) research sponsorship, (2) students and scholarship, (3) skills and training, and (4) use case commercialisation.
+© The Alan Turing Institute
+2023. All rights reserved.
+The Alan Turing Institute, a charity incorporated and registered in England and Wales with company number 09512457 and charity number 1162533 whose registered office is at British Library, 96 Euston Road, London, England, NW1 2DB, United Kingdom.
+For website-related enquiries email
+[email protected]
+
+Explore the Institute
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Legal
+Awards

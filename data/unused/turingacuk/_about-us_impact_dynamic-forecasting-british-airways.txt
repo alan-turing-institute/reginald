@@ -1,0 +1,65 @@
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Major airlines generate colossal amounts of information across a spectrum of domains: logistics, flight information, asset movements, pricing, fuelling, catering – you name it. In 2017, British Airways approached the Turing to tap into the Institute’s data science expertise to co-develop  techniques to help wrangle their massive amounts of data. In January 2018, an initial year-long joint project kicked off with the Turing’s Research Engineering Group, led by Evelina Gabasova, a Senior Research Data Scientist, and James Geddes, a Principal Research Data Scientist.
+Like all airlines, BA constantly updates its forecast ticket sales for each flight prior to take-off. It’s a vital piece of its pricing strategy. Typically, the first tranche of seats for a flight becomes available to book a year or so before departure. By tactically making different classes of seat available at different prices at different times, an airline can optimise its revenue without leaving empty seats. It's a balancing game of supply, demand and pricing, and the key to the game is making accurate, dynamic forecasts of passenger demand for each flight.
+The aim of the collaboration with the Turing was to develop bespoke machine learning techniques to improve BA’s dynamic demand forecasting. It’s an aim that speaks to one of the key missions of the Institute – developing cutting-edge data science approaches and championing their application to real-world problems. This is a mission that can sometimes be challenging due to the frequent inaccessibility of real-world data.
+The collaboration with BA, however, showed the value of giving talented researchers secure access to commercially sensitive data. BA entrusted the Turing with daily ticket sales for approximately one million flights from the previous three years. That’s a total of about six billion rows of data, with a complex time-series structure. Just the sort of juicy challenge that the Turing’s Research Engineering Group relishes.
+
+“In the collaborative process, BA was very open, and spent a lot of time explaining to us what was in the data, how it worked and so on,” says Jersakova, a team member in the Turing’s Research Engineering Group. “We shaped the research goals together. It was fantastic.”
+Then the researchers got to work using machine learning to create and test novel predictive models. “Our added value is that we used the Bayesian modelling approach, which not only provides estimated forecasts, but also the level of confidence in those predictions,” says Jersakova. Using such techniques on large, real-world data sets was traditionally hard, both mathematically and computationally, but recent developments in probabilistic programming is changing the game, providing the researchers with the tools they need.  
+Bayesian statistics allows models to incorporate historical data, existing knowledge, recent trends and new data when available. Such models start relatively simple, and grow iteratively as further data and information are added. Crucially, such models are not ‘black box’ algorithms; they make explicit assumptions about how the world works, so that the way they arrive at their forecasts is interpretable.
+It was clear that the data pertaining to a single flight was insufficient to provide an accurate prediction of future demand, and that occurrences that affect the sales of one flight – anything from external events to pricing decisions made by BA – have effects on other flights. What makes the data set even more challenging to model is that the “counterfactual” is missing: what would happen if a particular event didn’t occur, or BA made a different pricing decision, or took no action? This is where Bayesian techniques come into their own. “Bayesian methods allow the model to ‘borrow information’ across similar flights and use the data more efficiently,” says Gabasova.
+The collaborators’ approach to the project was to define, early on, an agreed measure of model performance and then to automate the process of testing each iteration of their model. This provided a clear, ongoing evaluation of how the modelling was progressing and, ultimately, the new predictive algorithms were ready to go head-to-head with BA’s more traditional forecasting methods.
+BA was pleased with how the collaboration evolved. “Working with the Turing was hassle-free and had none of the tensions of working with commercial consultants,” says Jack Bovey, Revenue Optimisation Manager at British Airways. “There was just a genuine desire to understand our challenges and help us think about new ways to tackle them. We valued that honest approach: some things will be possible, some things won’t, and it’s difficult to know how anything will go until we try it. It sounds basic but it makes us feel like we’re genuinely trying to find the best possible solution to our problems as opposed to feeling like we’re being pushed towards a pre-packaged solution. Everyone involved learned a lot from the Turing team – we trusted them.”
+“Everyone involved learned a lot from the Turing team – we trusted them.”
+Jack Bovey, Revenue Optimisation Manager at British Airways
+That trust is important, because working with sensitive commercial data requires high security. “The Turing has many collaborations with industry,” says Jersakova, “and the challenge from day one is always: how do you handle that data in a secure way, but flexibly enough that researchers can work with it effectively?”
+This is where the work with BA fed into a major ongoing project at the Turing; the creation of “data safe havens” in the cloud. This work, led by James Hetherington, the Turing’s Director of Research Engineering, is combining the development of secure environments for the analysis of sensitive data sets with high-performance computing capability. The idea is to provide secure research environments that do not hinder research, nor limit the tools a data scientist can bring to bear on their data. The project makes use of the Microsoft Azure cloud platform, following Microsoft’s sponsorship of the Turing with $5 million in Azure credits in 2016.
+The collaboration with BA has added breadth to the Turing’s ability to create the tools that data-rich industries will need if they are going to effectively exploit the ongoing revolution in data science. The cross-organisational nature of the Institute’s Research Engineering group means that the ideas, techniques and expertise developed in this collaboration can be built upon or adapted to address related challenges in other parts of the Turing’s diverse research portfolio, and in other parts of industry.
+From BA’s perspective, the airline’s dynamic forecasting capability was bolstered. “For us, it was the first step towards what will hopefully become an important part of how we forecast, and hence price, flights,” says Bovey. “It showed us that there are different ways to approach forecasting to how we have tried before; it showed us that this new approach can give promising-looking results; and that it could help us address lots of the challenges we’ve been thinking about.” He now hopes to see a “wider collaboration between BA and the Turing”.
+
+© The Alan Turing Institute
+2023. All rights reserved.
+The Alan Turing Institute, a charity incorporated and registered in England and Wales with company number 09512457 and charity number 1162533 whose registered office is at British Library, 96 Euston Road, London, England, NW1 2DB, United Kingdom.
+For website-related enquiries email
+[email protected]
+
+Explore the Institute
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Legal
+Awards

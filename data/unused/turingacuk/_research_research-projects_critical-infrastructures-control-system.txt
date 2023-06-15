@@ -1,0 +1,63 @@
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Robustness and resilience are among the most critical issues in modern smart infrastructures, since they provide essential services to our daily life, such as food, transport, and water. This project aims to develop advanced control strategies and communication protocols based on better understanding of data and wireless communications for complex critical infrastructures. The developments can be applied to large geographically distributed infrastructures, whose monitor and control resources, such as wireless communication bandwidth and energy supply, are limited.
+The main methodological basis for this project is event-triggered control. Normally, sensors and controllers are executed periodically, called periodic time-triggered control. Correspondingly, wireless communications are required periodically. However, this strategy does not consider the computer (sensor/actuator device) system requirements, and thus wastes system resources.
+Event-triggered control, on the other hand, carries sensing/processing and communications only when necessary, such as satisfying some pre-designed conditions, which is usually based on the sensor system output. Therefore, resource consumption can be reduced. However, as a trade-off, adapting a non-periodic approach increases issues regarding the scheduling of sensors and wireless transmissions to maintain the stability of the system.
+To overcome these problems, this project applies hybrid system methods and system verification to capture when the next event will come. Advanced communication protocols will be designed for this type of event-triggered control system. Providing guarantees out of low-cost, low-resourced hardware systems consisting of embedded microcontrollers and actuators operating over wireless networks is a massive challenge.
+Automatic control of our infrastructure has the potential to make that infrastructure more resilient to change and failures (adaptive to environmental change and breakage), more sustainable (consuming less resources) and last longer (predictive maintenance). This project aims to guarantee the robustness and resilience of critical infrastructures that are controlled by embedded systems, and to minimise computational resource consumption.
+The project aims to initially provide theoretical results for control strategies and communication protocols, then demonstrate practical results in construction machinery and equipment, smart cities and advanced farming. Success will involve being able to control critical infrastructures for long durations whilst giving guarantees that the control behaves in the way it is expected to.
+The project has the following key objectives:
+This project is part of the Data-centric engineering programme's Grand Challenge of 'Resilient and robust infrastructure'.
+The developed control strategies and communication protocols should be totally or partially applicable to critical infrastructures that have: large physical scales, agile and flexible cyber components, and wireless sensing/actuating networks. The aim is to apply this work in water distribution systems.
+Water distribution companies aim to demonstrate a high quality of service to their customers with reduced waste water, energy, and material. Next generation water systems will add even more sensors, actuators, controllers, and wireless networks to existing water infrastructure. The data will be collected from sensors, transmitted to the controllers to either compute control inputs to guarantee pre-designed quality of service, or to provide data for further analysis. In order to cover large physical scales, low power wide area (LPWA) technologies will used for efficient, cost-effective communication. 
+However, since LPWA data delivery rates and bandwidths are relatively low, the design of control strategies and communication protocols becomes a greater challenge, yet to be addressed so far. Analytics should demonstrate how water infrastructure maintenance costs will be reduced and the service quality and robustness of supplies better guaranteed.
+Other candidate applications that will benefit from this work include precision farming, smart grids, smart transports, and treatment plants.
+Publication: Anqi Fu, Ivana Tomic, Julie A. McCann, Asynchronous sampling for decentralized periodic event-triggered control', submitted.
+Grant: ABB has built and donated a 2-phase separator control system and corresponding tools to the project for experiments (worth 130k GBP).
+Partnership: Discussing next steps with Water company partner regarding the data-centric engineering of the Active Sludge System.
+Industry: Discussing with WRC Plc and Bristol Water Plc for data and parameters for regarding real-world water network control.
+© The Alan Turing Institute
+2023. All rights reserved.
+The Alan Turing Institute, a charity incorporated and registered in England and Wales with company number 09512457 and charity number 1162533 whose registered office is at British Library, 96 Euston Road, London, England, NW1 2DB, United Kingdom.
+For website-related enquiries email
+[email protected]
+
+Explore the Institute
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Legal
+Awards

@@ -1,0 +1,64 @@
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+The COVID-19 crisis has highlighted how vulnerable societies and governments are to shocks. This vulnerability is exacerbated by the propensity to design policy for narrow silos relating to singular policy areas and government departments, without adequate consideration of the interdependencies between them and the interconnected nature of local and global societies. The pandemic has brought into focus the fact that resilience in one policy area (e.g. health) can come at the cost of resilience in another (e.g. the economy). The overall aim of this large-scale, 2-year research project is to develop a better understanding of resilience in interconnected health, social, and economic systems and to use this understanding to identify robust policy measures.
+This project is supported entirely by public funds, through Wave 1 of the UK Research and Innovation Strategic Priorities Fund, under EPSRC Grant EP/T001569/1.
+
+
+ 
+The project brings together multidisciplinary expertise from across the Turing community, including in health, public policy, economics, and urban analytics. We work across discipline lines to develop a rigorous understanding of societal responses to shocks and a clear strategy for how to engender policy resilience. To achieve our aims, we require reliable, consistent, real-time, fine-grained data sources, as well as integrative, highly-granular models that bring together policy areas and cross organisational boundaries.
+The Shocks and Resilience project consists of five work packages:
+The aim of this work package is to use the current pandemic as an initial exemplar of a specific shock. Our primary focus is to develop a coupled epidemiologic and socio-economic model of COVID-19 dynamics and its societal effects. A crucial part of this package is the identification and curation of data sources that can be used to monitor the impact of policy interventions and inform subsequent models. Alongside data collection and curation, we are building an epidemiological model that allows for variations in social patterns as well as societal and economic factors, such as inequality, to affect the dynamics of spread.
+This work package focuses on developing new theory, methods, tools, and practices for understanding causality and dynamics in complex interconnected systems under conditions of uncertainty. A crucial part of this package is discovering ways to allow for feedback that is able to adapt and update as new data arrives. We aim to develop rigorous new statistical theory as well as computational methodology that allows for the incorporation of physical, economic, and biological principles into machine learning algorithms.
+The aim of this work package is to develop spatial modelling methods that can be integrated within the epidemiologic-socio-economic models in order to tackle policy questions that are relevant at the sub-national level (e.g., regional and local authorities). We are producing methodologies that offer ‘what if’ scenario modelling in relation to spatial variations in policy regulations, such as the local relaxation or reintroduction of social distancing rules, or local controls over business, leisure, and education. 
+This work package explores the role of social media in challenging resilience in socio-economic systems.  It will do so by investigating how the dynamics of social media activity shape patterns of diffusion and consumption of information and disinformation, which in turn shape public attitudes, reaction to shocks (such as terrorist attacks, pandemics or natural disasters) and compliance with government guidance and policy interventions.  We will use computational social science methodologies to collect and model social media data, looking for potential drivers of instability, such as rapid spread of disinformation, scaling up of social or political mobilisation, lurches in opinion and shifting attitudes to interventions such as vaccines or policy change.  We will combine different computational approaches, including (but not limited to): network science; statistical models; and  unsupervised machine learning. We will use the insight we gather on the role of social media activity in driving instability (particularly during or after shocks) to provide behavioural insight to policy-makers working on crisis management and the design of (for example) government guidance and public awareness campaigns.
+This work package distills general lessons learnt from the other work packages to develop a rigorous understanding of what resilience means in complex, interconnected socio-economic systems. We combine insight from different modelling approaches to explore the multi-faceted nature of resilience, such as: network science; agent-based models; compartmental ordinary/stochastic differential equation models; continuum/partial differential equation models; statistical models (e.g. hidden Markov processes); and microdynamics simulations. We will apply these models to a number of case studies which we are developing in partnership with policy-makers, tackling specific policy questions that arise as a result of the COVID-19 crisis.
+This work package focuses on ensuring that policy-makers play a key role in informing our research. We are consulting with representatives from various government departments and agencies to understand what their main questions are, especially related to COVID-19. We are using the input from these conversations to design case studies and to steer our data and modelling work.
+The primary aim behind us pursuing this large-scale programme of work in shocks and resilience is to produce data, methodologies, and tools that help policy-makers make better informed choices. Our hope is that our research, steered by constant feedback from policy-makers, will make governments, economies, and societies more resilient.
+The research meets governments' need for a data-driven understanding of policy resilience and for integrated models that allow policy-makers to assess how various interventions affect health and socio-economic outcomes. Throughout the project, we aim to produce regular policy reports accompanied by open source code, data repositories, and online tutorials.
+The project will help local and national governments understand the wider implications of different policy options. It will also enable them to prepare operationally for the challenges brought by future policy interventions related to the COVID-19 crisis, upcoming repercussions, and future shocks. 
+[email protected]
+© The Alan Turing Institute
+2023. All rights reserved.
+The Alan Turing Institute, a charity incorporated and registered in England and Wales with company number 09512457 and charity number 1162533 whose registered office is at British Library, 96 Euston Road, London, England, NW1 2DB, United Kingdom.
+For website-related enquiries email
+[email protected]
+
+Explore the Institute
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Legal
+Awards

@@ -1,0 +1,56 @@
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Design assurance can reduce design errors, but it is a highly manual process that is often done poorly and late. The research will seek to extract features from design assurance datasets to identify patterns in the data, and to link these to key performance indicators on outcomes. The work is vital to developing methods for data-driven design that will assist decision makers involved in the design of complex systems, ensuring high-quality design that conforms to requirements.
+Failures and errors in engineering practice are expensive and time-consuming to correct, especially in the late implementation phase of large engineering programs with safety requirements. A large percentage of failures that occur in the late implementation phase of engineering practice are attributed to the 'small' errors originating in earlier design process. Design assurance is the process of discovering, preventing, and correcting errors earlier in the design engineering life cycle when these problems are less expensive and possible to correct.
+Discovering and eliminating errors earlier in design and engineering process is a non-trivial task, since it’s hard to make predictions on the outcomes of current design decisions without actually approaching and experimenting at a later implementation stage. However, fortunately, design engineering practice is a data-intensive process which generates huge amounts of data about behaviour, actions, and decisions, along with design requirements and definitions, drawings and specifications, design decisions, reviews and verifications, engineering change requests/logs, supporting documents, and even designers’ emails and chat logs. All these datasets may have interesting relationships with the corresponding performance and outcome of the design process.
+Since most of this data is in text format, text mining and natural language processing can be applied as the key techniques to extract, build, and represent the hidden design process features from the unstructured texts. By linking these design process features with the key performance indicators, it is possible to use probabilistic approaches to quantify the correlation or dependency between the features and delivery performance in order to know what kinds of actions and decisions should be prevented or supported in the design process to ensure high-quality output. In addition, classification and regression models could be further built to provide a qualitative or even quantitative prediction on later performance based on early design process activities and decisions. 
+The work seeks to improve design assurance processes. The ambition is to link an archive of structured design data, which involves a significant body of text data and associated event information, with a dataset of key performance indicators, in order to address one or more of the following questions:
+The research seeks to develop results that can be generalised across industrial practices in engineering design, and can potentially yield advanced design assurance guidance in order to reduce process errors and improve delivery quality. Success is defined both in terms of the intellectual contribution to the development of methods and tools for data-driven design under uncertainty, and the practical impact on design assurance processes, the quality of design outputs, and the efficiency of their delivery. 
+The contribution to machine learning and design engineering disciplines will be evidenced by outputs in international research journals; while the practical contribution will be monitored and discussed with industry partners. The work is of value as robust design assurance processes are key to unlocking the significant potential of automating aspects of design.
+This project is part of the Data-centric engineering programme's Grand Challenge of 'Data-driven engineering design under uncertainty'.
+This work is applied to and can benefit complex engineering design, such as construction and infrastructure projects, where small efficiencies through improved understanding of design assurance can have major benefits and impact.  
+© The Alan Turing Institute
+2023. All rights reserved.
+The Alan Turing Institute, a charity incorporated and registered in England and Wales with company number 09512457 and charity number 1162533 whose registered office is at British Library, 96 Euston Road, London, England, NW1 2DB, United Kingdom.
+For website-related enquiries email
+[email protected]
+
+Explore the Institute
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Legal
+Awards

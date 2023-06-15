@@ -1,0 +1,53 @@
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Inelastic neutron scattering provides rich structural information about magnetic materials, but this data is incredibly complex and time consuming to analyse. This project is applying deep neural networks to analyse experimental outputs, without the need to many hours of expert input. The project will develop models capable of inferring magnetic structure from neuron data, and also capable of predicting the important regions of experimental hyperspace in which to find important information, helping to guide future experiments.
+Neutrons have a magnetic moment, so when they interact with a material the changes in neutron energy and momentum tell us about the magnetic structure of that material. Rich information about magnetic structure can be obtained by carefully analysing the behaviour of neutrons in the presence of a magnetic sample. However, interpreting the data related to these changes results in a multi-dimensional data analysis problem where finding the right regions of this multi-dimensional space and then analysing them requires large amounts of expert time. As a result, powerful neutron experiments on the magnetic structure of materials are only feasible for a small number of systems. 
+This work aims to develop methods which are significantly easier and quicker than existing analysis techniques for inelastic neutron scattering (INS). The project will implement networks for analysing existing datasets, to extract both model Hamiltonians (the sum of the kinetic energies plus the potential energies for all the particles in a system) and to parameterise these Hamiltonians from the data.
+The project will also use attention methods to probe the results of these models in order to identify important regions of the experimental hyperspace, to guide experimentalists on where to concentrate their efforts. The resulting workflows will be integrated to the Proper Analysis of Coherent Excitations (PACE) suite of tools used for analysis of INS data and will interface with the Spin-W code, which is used for numerical simulation of INS data.
+This work will remove the critical bottle neck to INS experiments i.e. data analysis and will allow for planning of experiments in advance by identifying critical regions of interest. This will greatly increase the bandwidth of INS analysis and allow this powerful technique to be more widely applied for example in the analysis of next-generation quantum materials.
+The work will be applied at the ISIS Neutron and Muon Source facility. When incorporated into the PACE package it will be available to users of this national facility. The experiments that are conducted at ISIS which will be best served using this approach will be those interested in magnetic structure of materials. Understanding the magnetic structure is critical in the rational design of materials in a number of contexts, for example data-storage and spintronics. 
+© The Alan Turing Institute
+2023. All rights reserved.
+The Alan Turing Institute, a charity incorporated and registered in England and Wales with company number 09512457 and charity number 1162533 whose registered office is at British Library, 96 Euston Road, London, England, NW1 2DB, United Kingdom.
+For website-related enquiries email
+[email protected]
+
+Explore the Institute
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Legal
+Awards

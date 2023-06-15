@@ -1,0 +1,60 @@
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+The use of digital platforms for citizen participation enables the engagement of a large number of citizens, who contribute with proposals, comments and through their interactions with one another. However, it can be very difficult for citizens and local government officials to get an overview or summary of the many thousands of different proposals and comments and this 'information overload' makes it difficult to identify and achieve common objectives.
+Machine learning and natural language processing (NLP) techniques have proven successful for facilitating access to large collections of information in situations of collective sense-making. Similar methods will be adapted to overcome this information overload problem in citizen participation platforms. This will, in turn, enable these platforms to have a more profound impact on institutions and on furthering direct democracy.
+The first stage of the project will be to develop ways of using citizen-contributed tagging (i.e., 'folksonomy') for semantically tagging proposals in ways that will improve citizens' ability to discover proposals relevant to their interests.
+The second stage focuses on the application of algorithms to cluster proposals into coherent topics and to generate summaries in ways that are easily understood by citizens. The approach will also allow topics to evolve over time as new proposals are submitted. The quality of the topic models and summaries will be evaluated using citizen feedback.
+The third stage will cluster citizens in terms of their support for, and their comments on proposals. This will be used to improve the existing ways in which proposal communities (groups of like-minded citizens) are recommended to citizens.
+The final stage will focus on grouping and summarising comments posted in response to proposals through, for example, analysis of the stance expressed in comments.
+The project aims to address barriers to achieving effective direct democratic systems. If successful, it will allow citizens to directly contribute to the most important decisions in their communities.
+The aim is to test the hypothesis that the use of machine learning and NLP techniques on a digital platform for citizen participation will significantly increase the capacity of citizens to participate in local democracy. The project will focus on one particular form of citizen engagement in which citizens submit proposals for policies they wish to see enacted by, e.g. local government administrators. Proposals must obtain a certain number of support votes as a condition for their proposals to be selected. With the use of machine learning and NLP techniques, it's hypothesised that a greater number of proposals will reach the support needed to be selected.
+The Consul platform is designed in a generic way to support collective intelligence processes (how people propose ideas, connect them, improve them, select the most relevant ones, etc.), so that it can be used in many other settings not related with direct democracy where large-scale, collective intelligence may bring benefits to institutions.
+Consul is currently in use by more than 100 institutions, ranging from city administrations such as New York, Buenos Aires and Paris, to national governments such as Colombia and Uruguay. It has been awarded the United Nations Public Service Award and is currently being used by the United Nations Development Programme and is also supported by the Inter-American Development Bank and the Open Government Partnership.
+Combining Crowds and Machines: Experiments in collective intelligence design report published. This is the final report of Nesta's Collective Intelligence Grants programme. The Alan Turing Institute is one of the grantees.
+Project received a Collective Intelligence Grant from Nesta to help fund the research.
+[email protected]
+© The Alan Turing Institute
+2023. All rights reserved.
+The Alan Turing Institute, a charity incorporated and registered in England and Wales with company number 09512457 and charity number 1162533 whose registered office is at British Library, 96 Euston Road, London, England, NW1 2DB, United Kingdom.
+For website-related enquiries email
+[email protected]
+
+Explore the Institute
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Legal
+Awards
