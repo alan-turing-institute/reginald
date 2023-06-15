@@ -1,0 +1,70 @@
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+“We can only see a short distance ahead, but we can see plenty there that needs to be done.”
+This is what Alan Turing, the pioneering mathematician, computer scientist, philosopher, code-breaker and icon of the 20th Century, said of the challenge of developing ‘machines that can think’ in his seminal paper ‘Computing Machinery and Intelligence’ in 1950. Seven decades later, and computing, machine learning and artificial intelligence (AI) have not only blossomed, but exploded.
+Today, the horizon has transformed, but Turing’s words still hold true. This Institute, named in his honour, is committed to tackling the plenty that needs to be done to ensure data science and AI changes the world for the better.
+To find out more, read the article below and watch the video where we asked the Institute's community what Alan Turing means to them:
+
+Throughout his life, Alan Turing’s fearless approach to daunting problems helped him break new conceptual ground. From his time at Cambridge, when he published papers now recognised as the foundation of computer science, through his vital work at Bletchley Park cracking German codes – shortening the Second World War by years – to his exploration of the notion of artificial intelligence and his fascination with the application of mathematics to the biological world.
+At the Institute we aim to adopt a similarly ground-breaking, multi-faceted approach to our research.
+Despite being a singular genius, Turing was also a great collaborator, both with the hundreds of women and men at Bletchley Park, and throughout his career working with other mathematicians, engineers and scientists.
+The biography Alan Turing: The Enigma by Andrew Hodges includes the following quote from Turing, which sums up the spirit in which the Institute operates: “The isolated man does not develop any intellectual power. It is necessary for him to be immersed in an environment of other[s]…The search for new techniques must be regarded as carried out by the human community as a whole, rather than by individuals.”
+"The search for new techniques must be regarded as carried out by the human community as a whole"
+Alan Turing
+Turing’s life was tragically affected by the societal norms of his time: despite his pivotal part in ensuring the safety of the nation and saving countless lives, his sexuality resulted in him being defined as a security risk, and he was harassed by police surveillance up until his untimely death in 1954.
+Though we now live in a more progressive and open society, at the Institute we recognise the importance of actively ensuring anyone in ‘the human community’ can contribute effectively to changing the world through data science. We do this through our commitment to equality, diversity and inclusion, demonstrated by events such as ‘Gamechangers for diversity in STEM’.
+On Turing’s influence on the modern world of data science Vinton Cerf, Chief Internet Evangelist for Google, says: “His practical realisations of computing engines shed bright light on the feasibility of purposeful computing and lit the way towards the computing rich environment we find in the 21st Century.” Our programme in Data Science at Scale continues this legacy, identifying the ways in which computers and algorithms can be better designed to fulfil a huge range of purposes and tasks. And our Research Engineering team, which likes to think of itself as an echo of the Bletchley Park ‘Hut 8’ group led by Turing, helps the Institute develop practical data science tools.
+The mathematical foundations strand of our Data-centric Engineering programme also recognises that delivering reliable and robust data science solutions requires rigorous theoretical research and practices. It’s a notion which aligns well with the ‘from first principles’ approach Turing often adopted in his work.
+Turing’s revolutionary ideas in cryptography were developed in service of public safety and security, and the Institute’s programme in Defence and Security is continuing this purpose. For example, we have multiple projects looking at ways to store sensitive data, such as health records, in the cloud, in a way that not only allows the data to remain encrypted, but also makes them accessible to publicly beneficial research, without compromising anyone’s privacy.
+In a talk broadcast by the BBC in 1951, Turing said: “I believe that the attempt to make a thinking machine will help us greatly in finding out how we think ourselves.” Today, ‘thinking machines’ are ubiquitous, from speech-recognition software to algorithms used in criminal justice systems. Serious consideration needs to therefore be given to how human mindsets – our social norms and subconscious biases – affect the development and implementation of these systems.
+Our programmes in Artificial Intelligence and Public Policy, and our Data Ethics Group, all explore how we can ensure that algorithmic systems are built to contribute reliably and fairly to the public good, and how they affect the way we interact with our world.
+In his later career, Turing became fascinated with the challenge of understanding biological pattern formation in nature. He proposed an explanation in terms of chemical interactions and developed equations for them. Decades later, scientists confirmed his theory. Ian Stewart, Emeritus Professor of Mathematics at the University of Warwick explained in a BBC documentary: “In an area where mathematics had never been used before, suddenly the door was opened.”
+This value of applying mathematics and computer science to other fields can be seen throughout the Institute’s research, particularly in the Data Science for Science programme and projects such as ‘Living with machines’ in collaboration with the British Library, which is bringing together data scientists with historians, computational linguists, and archivists to think critically about the interdependence of humans and machines in modern society.
+Alan Turing’s legacy and influence is felt the world over, and we make no claim that our Institute is sole heir to his mantle. For example, the Turing Trust, a charity run by Alan Turing's family, does fantastic work supporting education by reusing old ICT equipment that anyone in the UK can donate, providing the opportunity for students around the world to use digital technology for the first time.
+What we are is a proud torch-bearer for the man often dubbed the ‘father of computer science’ and we believe that our mission to make great leaps in data science and artificial intelligence research, for the betterment of all, is rightfully carried out in his name. And we, like Turing, can see plenty there that needs to be done.
+Header image of Alan Turing courtesy of the National Portrait Gallery.
+© The Alan Turing Institute
+2023. All rights reserved.
+The Alan Turing Institute, a charity incorporated and registered in England and Wales with company number 09512457 and charity number 1162533 whose registered office is at British Library, 96 Euston Road, London, England, NW1 2DB, United Kingdom.
+For website-related enquiries email
+[email protected]
+
+Explore the Institute
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Legal
+Awards

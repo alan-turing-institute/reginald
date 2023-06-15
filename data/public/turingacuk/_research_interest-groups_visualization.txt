@@ -1,0 +1,59 @@
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Visualization research and innovation has become critical to data science, it bridges the gap between digital data and human cognition. It is also emerging as an important methodology for helping visualize how machine learning and AI systems arrive at decisions, while clearly illustrating any bias in those decisions. The visualization interest group (VizTIG) meets regularly at the Turing, inviting internal and external partners to discussions, organising workshops and symposium, and contributing to national strategy on visualization research and innovation.
+Visualization research and innovation covers a wide range of activities in image synthesis intended to provide timely insight into datasets. It has application across all of the Turing's challenge areas whenever a data result needs to be understood by people.
+The theoretical basis for visualization methods is varied but three topics have a strong influence on the field: computer science, applied statistics and human psychology. Computer science provides an understanding of efficient algorithms and data structures, applied statistics provides analysis and summarization methods and human psychology helps define the limits of human perception and cognition.
+Visualization has emerged in data science and AI as a fundamental technology enabling human understanding of complex data and automated decision processes. There remains a challenge for visualization methods to keep pace with the scale and complexity of these activities. This needs research and innovation to create and deliver visualization tools that can continue to deliver technical, economic and social benefit.
+VizTIG brings together a community of researchers and innovators in visualization for data science and AI that have few similar forums in which to meet. A key task is to map the landscape for visualization in the UK and highlight new challenges to focus the group's other activities around. These will include input to strategic planning, seminars, workshops and an annual symposium.
+Challenges: Big data provides the challenge of ever increasing dataset size that needs to be visualized for humans whose abilities are staying the same. AI provides the challenge of not simply portraying automated decisions but also explaining complex automated outcomes to people.
+Example output: As one example of managing data scale the 'TeraScope' output from the 'Automating data visualisation' seedcorn project uses interactive trillion pixel images to enable visualization of urban data at scale from the whole city to a single desk in a building. See the related paper here.
+Challenges: It is not just end users of data pipelines that can benefit from visualization. The engineers and scientists who build and tune data science and machine learning systems could be better supported with tools that help: examine and prepare data for models; monitor and understand the model training process; compare the qualities of resultant models; explain the choices underpinning, and uncertainty of final model outcomes.
+Challenges: The limits of the HVS are exploited widely in image compression and internet standards such as JPEG and MPEG. Visualization methods make some direct use of results from HVS research, but there is a key challenge to use more evidence to help produce clearer and faster to comprehend visualization. Part of this is to also extend our understanding of the HVS in the context of visualization tasks.
+We are happy to hear from any academic, public sector, NGI or commercial body that has an interest in visualization and would like to suggest activities or provide input to VizTIG.
+Please contact Nick Holliman and the interest groups team in the first instance at [email protected] and [email protected].
+293.7 KB
+© The Alan Turing Institute
+2023. All rights reserved.
+The Alan Turing Institute, a charity incorporated and registered in England and Wales with company number 09512457 and charity number 1162533 whose registered office is at British Library, 96 Euston Road, London, England, NW1 2DB, United Kingdom.
+For website-related enquiries email
+[email protected]
+
+Explore the Institute
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Legal
+Awards

@@ -1,0 +1,84 @@
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+If you’ve been following the news recently, you’ve probably heard of ChatGPT. This AI chatbot, created by US research laboratory OpenAI, is making headlines with its ability to hold natural-looking conversations and write essays, product reviews, GSCE exam answers and even articles about itself.
+But how does ChatGPT fare with creating jokes? Humour is one of the most complex and nuanced aspects of human communication, and a challenge for even the best bot. So, as the festive season gets underway, we decided to put ChatGPT’s punning abilities to the test by asking it to create some Christmas cracker jokes.
+First, we asked it to make up some jokes about Christmas trees and Brussels sprouts. Here are a couple of its efforts:
+Why was the Christmas tree late for work?
+Because it was waiting for its ornaments!
+Why did the Brussels sprout get invited to all the best parties?
+Because it was always the life of the Brussels!
+These are funny, but only because they make no sense. In fact, you could call them anti-jokes. You can see what ChatGPT is trying to do here – working an element of the joke’s setup into the punchline – but it’s not quite there.
+Could we teach ChatGPT how to tell better jokes? One of us (Lydia) is an improv comedian in The Oxford Imps, and regularly teaches new performers how to create puns. Happily, ChatGPT is a keen pupil:
+Lydia: I would like to help you learn a way to make jokes. Would you like to try?ChatGPT: Sure, I would be happy to learn how to make jokes. Can you provide some guidance on how to do so?Lydia: First you need to take your keyword to start with. Let’s start with ‘elf’. Next you need to think of a word that sounds like ‘elf’. Can you think of any?
+ChatGPT was able to identify that ‘alph’ sounds like ‘elf’, and used this to create its own joke:
+Why was the elf bad at math?
+Because he was an alph-a-bet!
+This would make sense, if only ChatGPT had said ‘elf-a-bet’ instead! The chatbot needed more guidance, so Lydia advised that the joke’s punchline needs to contain ‘elf’. This led to the following joke:
+Why did the elf never get sick?
+Because he had an elf-thly immune system!
+This almost works! Replace ‘elf-thly’ with ‘elf-y’ and we would be there. This was as good as we got with the ‘words that rhyme with elf’ jokes but, after giving ChatGPT some more advice, Lydia next asked it to come up with a joke that played on the word ‘bauble’. This resulted in its most human-like joke:
+Why did the Christmas tree get mad at the elf?
+Because the elf burst its bauble!
+OK, it’s not quite Peter Kay, but this is a nice play on the phrase ‘burst its bubble’, and it’s as good as some of the Christmas cracker jokes we’ve had in the past. What’s especially interesting about ChatGPT is that we could teach it things as we would a person, and it took our advice on board, producing progressively better results.
+That said, ChatGPT’s jokes aren’t quite at the level of human ones, and we are seeing some of AI’s current limitations in this area. Essentially, chatbots are very good at parroting existing jokes (when we first asked ChatGPT for Christmas jokes, it gave us examples that could already be found online) but they lack a full understanding of what makes jokes funny in the first place, as is beautifully illustrated by this exchange:
+Lydia: Why is this funny: “What do you get if you cross a snowman and a shark? Frostbite.”ChatGPT: This joke is funny because it creates a surprising and unexpected contrast between two things that are normally very different: a snowman and a shark. The idea of a snowman and a shark crossing paths is absurd and unlikely…Additionally, the punchline uses wordplay, with the word ‘frostbite’ being used both as a way to describe the cold weather that a snowman might experience and as the name of a medical condition that a shark might get if it were exposed to cold water.
+Chatbots’ abilities at creating human-like text are truly impressive, but without a firm grasp of the subtleties of humour, they will continue to struggle with creating jokes. AI is most successful when it collaborates with humans, and it will need plenty more coaching before it can rival real-world comedians.
+In the meantime, we’re going to leave you with some Christmas jokes created especially for this blog by the (human) improvisers in The Oxford Imps. Enjoy!
+Why did the astronaut go to the South Pole?
+To go where snowman had been before!
+Why did I spend all Christmas in the cellar?
+I was mulling over the wines.
+How did the Christmas cheeseboard get a date?
+He pulled a cracker!
+Why was Sherlock Holmes at our house for Christmas?
+There’d been a myrrh-der.
+What do you use to lock away the Christmas dinner before it is ready?
+A tur-key!
+ 
+The authors would like to thank The Oxford Imps for their puns, and Giacomo Nanni and Anne Lauscher for helping with ideas.
+Top image: Jesper Jensen / Shutterstock
+© The Alan Turing Institute
+2023. All rights reserved.
+The Alan Turing Institute, a charity incorporated and registered in England and Wales with company number 09512457 and charity number 1162533 whose registered office is at British Library, 96 Euston Road, London, England, NW1 2DB, United Kingdom.
+For website-related enquiries email
+[email protected]
+
+Explore the Institute
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Legal
+Awards

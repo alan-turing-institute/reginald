@@ -1,0 +1,53 @@
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Bogdan is a final year PhD student in mathematics at the University of Oxford. There, he has been trained as an applied mathematician as part of the Centre for Doctoral Training in Industrially Focused Mathematical Modelling (InFoMM) and the Numerical Analysis Group. 
+His research is on grid-free compressed sensing/super-resolution under the supervision of Professor Jared Tanner and Dr Andrew Thompson and his project is in collaboration with the National Physical Laboratory.
+Previously, he received a BSc in Computer Science and Mathematics from the University of Manchester and he worked as a software developer in the financial sector in London for three years.
+Bogdan is interested in techniques for infering useful information from high-dimentional data. Specifically, he focuses on the mathematical approach to super-resolution, or grid-free compressed sensing, a field which was started when mathematicians took an interest in how we can improve the resolution of a microscope beyond the limit imposed by the laws of physics.
+The work done by Bogdan so far has been on the stability properties of the super-resolution problem. This gives us an insight into how well we can recover a sparse signal when the measurements are corrupted by noise. 
+For the rest of his PhD, and during his time at the Turing, Bogdan will work on the analysis of super-resolution algorithms. His PhD will conclude with the application of such algorithms to relevant datasets, for example from single-molecule fluorescence microscopy or localisation of ships in a shipping lane.
+© The Alan Turing Institute
+2023. All rights reserved.
+The Alan Turing Institute, a charity incorporated and registered in England and Wales with company number 09512457 and charity number 1162533 whose registered office is at British Library, 96 Euston Road, London, England, NW1 2DB, United Kingdom.
+For website-related enquiries email
+ [email protected]
+
+Explore the Institute
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Legal
+Awards

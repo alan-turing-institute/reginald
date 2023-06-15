@@ -1,0 +1,54 @@
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Despite the recent explosion of activity in causal inference (drawing conclusions about causal connections in data), little research has been undertaken into how to perform causal inference in settings that have spatio-temporal relationships, such as urban traffic. The project aims to extend recent methodologies in causal inference to this setting including propensity score (estimating the effect of an action) and instrumental variable methods, with focus on the urban traffic setting.
+Causal inference is difficult in observational studies due to issues with selection bias and confounding (when certain variables influences both the dependent variable and independent variable causing spurious associations). Methods to offset these issues include considering conditional probability. The project aims to extend these methods to more general settings.
+The project aims to investigate the use of advanced causal inference techniques in application for datasets with spatio-temporal correlations. 
+A major issue in the spatio-temporal setting is that recently developed advanced causal inference techniques rely on strong assumptions, including the assumption of no interference (i.e. that a treatment, or action, applied to one unit does not affect the outcome of another), and this is often violated in a spatio-temporal settings. The aim is to develop inference methodologies which account for this interference. 
+Extending causal inference methodologies to a spatio-temporal setting would be useful in a wide variety of applications.
+This project is part of the Data-centric engineering programme's Grand Challenge of 'Monitoring Complex Systems'.
+Whilst the methodologies developed will be applicable in a wide range of applications, the transportation setting is of particular interest. The methods developed would enable the answering of questions such as how traffic interventions, such as the introduction of speed limit zones, improve safety where potential 'covariates' (related, independent variables such as road type and traffic intensity) vary over space and time.
+© The Alan Turing Institute
+2023. All rights reserved.
+The Alan Turing Institute, a charity incorporated and registered in England and Wales with company number 09512457 and charity number 1162533 whose registered office is at British Library, 96 Euston Road, London, England, NW1 2DB, United Kingdom.
+For website-related enquiries email
+[email protected]
+
+Explore the Institute
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Legal
+Awards
