@@ -4,7 +4,6 @@ from pulumi_azure_native import containerinstance, network, resources, storage
 # Get some configuration variables
 stack_name = pulumi.get_stack()
 config = pulumi.Config()
-# azurecfg = pulumi.Config("azure-native")
 
 # Create an resource group
 resource_group = resources.ResourceGroup(
@@ -50,35 +49,31 @@ virtual_network = network.VirtualNetwork(
 # Define configuration file shares
 storage_account = storage.StorageAccount(
     "storage_account",
-    access_tier=storage.AccessTier.COOL,
-    account_name=f"sareginald{stack_name}configuration"[:24],  # max 24 characters
-    enable_https_traffic_only=False,
-    encryption=storage.EncryptionArgs(
-        key_source=storage.KeySource.MICROSOFT_STORAGE,
-        services=storage.EncryptionServicesArgs(
-            file=storage.EncryptionServiceArgs(
-                enabled=True, key_type=storage.KeyType.ACCOUNT
-            ),
-        ),
-    ),
-    kind=storage.Kind.FILE_STORAGE,
+    account_name=f"sareginald{stack_name}configuration"[:24],
+    kind=storage.Kind.STORAGE_V2,
     resource_group_name=resource_group.name,
-    sku=storage.SkuArgs(name=storage.SkuName.PREMIUM_ZRS),
+    sku=storage.SkuArgs(name=storage.SkuName.STANDARD_GRS),
 )
 file_share = storage.FileShare(
     "data_file_share",
-    access_tier=storage.ShareAccessTier.PREMIUM,
+    access_tier=storage.ShareAccessTier.TRANSACTION_OPTIMIZED,
     account_name=storage_account.name,
-    enabled_protocols=storage.EnabledProtocols.SMB,
     resource_group_name=resource_group.name,
     share_name="llama-data",
     share_quota=5120,
 )
-storage_account_keys = storage.list_storage_account_keys(
-    account_name=storage_account.name,
-    resource_group_name=resource_group.name,
+storage_account_keys = pulumi.Output.all(
+    storage_account.name, resource_group.name
+).apply(
+    lambda args: storage.list_storage_account_keys(
+        account_name=args[0],
+        resource_group_name=args[1],
+        opts=pulumi.InvokeOptions(parent=storage_account),
+    )
 )
-storage_account_key = pulumi.Output.secret(storage_account_keys.keys[0].value)
+storage_account_key = storage_account_keys.apply(
+    lambda keys: pulumi.Output.secret(keys.keys[0].value)
+)
 
 # Define the container group
 container_group = containerinstance.ContainerGroup(
