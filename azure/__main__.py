@@ -69,6 +69,7 @@ file_share = storage.FileShare(
     "data_file_share",
     access_tier=storage.ShareAccessTier.PREMIUM,
     account_name=storage_account.name,
+    enabled_protocols=storage.EnabledProtocols.SMB,
     resource_group_name=resource_group.name,
     share_name="llama-data",
     share_quota=5120,
@@ -81,7 +82,7 @@ container_group = containerinstance.ContainerGroup(
     containers=[
         containerinstance.ContainerArgs(
             image="ghcr.io/alan-turing-institute/reginald:main",
-            name="chat-completion-azure",  # maximum of 63 characters
+            name="reginald-handbook",  # maximum of 63 characters
             environment_variables=[
                 containerinstance.EnvironmentVariableArgs(
                     name="OPENAI_AZURE_API_BASE",
@@ -101,11 +102,11 @@ container_group = containerinstance.ContainerGroup(
                 ),
                 containerinstance.EnvironmentVariableArgs(
                     name="SLACK_APP_TOKEN",
-                    secure_value=config.get_secret("SLACK_APP_TOKEN"),
+                    secure_value=config.get_secret("HANDBOOK_SLACK_APP_TOKEN"),
                 ),
                 containerinstance.EnvironmentVariableArgs(
                     name="SLACK_BOT_TOKEN",
-                    secure_value=config.get_secret("SLACK_BOT_TOKEN"),
+                    secure_value=config.get_secret("HANDBOOK_SLACK_BOT_TOKEN"),
                 ),
             ],
             ports=[
@@ -116,8 +117,45 @@ container_group = containerinstance.ContainerGroup(
             ],
             resources=containerinstance.ResourceRequirementsArgs(
                 requests=containerinstance.ResourceRequestsArgs(
-                    cpu=2,
-                    memory_in_gb=8,
+                    cpu=1,
+                    memory_in_gb=4,
+                ),
+            ),
+        ),
+        containerinstance.ContainerArgs(
+            image="ghcr.io/alan-turing-institute/reginald:main",
+            name="reginald-llama",  # maximum of 63 characters
+            environment_variables=[
+                containerinstance.EnvironmentVariableArgs(
+                    name="OPENAI_AZURE_API_BASE",
+                    value=config.get_secret("OPENAI_AZURE_API_BASE"),
+                ),
+                containerinstance.EnvironmentVariableArgs(
+                    name="OPENAI_AZURE_API_KEY",
+                    secure_value=config.get_secret("OPENAI_AZURE_API_KEY"),
+                ),
+                containerinstance.EnvironmentVariableArgs(
+                    name="OPENAI_API_KEY",
+                    secure_value=config.get_secret("OPENAI_API_KEY"),
+                ),
+                containerinstance.EnvironmentVariableArgs(
+                    name="REGINALD_MODEL",
+                    value="llama-gpt-3.5-turbo-azure",
+                ),
+                containerinstance.EnvironmentVariableArgs(
+                    name="SLACK_APP_TOKEN",
+                    secure_value=config.get_secret("LLAMA_SLACK_APP_TOKEN"),
+                ),
+                containerinstance.EnvironmentVariableArgs(
+                    name="SLACK_BOT_TOKEN",
+                    secure_value=config.get_secret("LLAMA_SLACK_BOT_TOKEN"),
+                ),
+            ],
+            ports=[],
+            resources=containerinstance.ResourceRequirementsArgs(
+                requests=containerinstance.ResourceRequestsArgs(
+                    cpu=1,
+                    memory_in_gb=4,
                 ),
             ),
         ),
