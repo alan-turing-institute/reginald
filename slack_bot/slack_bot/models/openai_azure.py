@@ -10,8 +10,8 @@ from .base import MessageResponse, ResponseModel
 
 class OpenAIAzure(ResponseModel):
     def __init__(self) -> None:
-        self.api_base = os.getenv("OPENAI_API_BASE")
-        self.api_key = os.getenv("OPENAI_API_KEY")
+        self.api_base = os.getenv("OPENAI_AZURE_API_BASE")
+        self.api_key = os.getenv("OPENAI_AZURE_API_KEY")
         self.api_type = "azure"
         self.api_version = "2023-03-15-preview"
         self.engine = "reginald-gpt35"
