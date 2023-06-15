@@ -74,17 +74,17 @@ git stash apply
 
     On branch main
     Your branch is up to date with 'origin/main'.
-    
+
     Changes not staged for commit:
       (use "git add <file>..." to update what will be committed)
       (use "git restore <file>..." to discard changes in working directory)
     	modified:   Wales.md
-    
+
     Untracked files:
       (use "git add <file>..." to include in what will be committed)
     	__pycache__/
     	wsd.py
-    
+
     no changes added to commit (use "git add" and/or "git commit -a")
 
 
@@ -196,12 +196,12 @@ git status
 
     On branch main
     Your branch is up to date with 'origin/main'.
-    
+
     Changes not staged for commit:
       (use "git add <file>..." to update what will be committed)
       (use "git restore <file>..." to discard changes in working directory)
     	modified:   Wales.md
-    
+
     Untracked files:
       (use "git add <file>..." to include in what will be committed)
     	Makefile
@@ -211,7 +211,7 @@ git status
     	lakeland.pdf
     	test.pdf
     	wsd.py
-    
+
     no changes added to commit (use "git add" and/or "git commit -a")
 
 
@@ -234,19 +234,19 @@ git status
 
     On branch main
     Your branch is up to date with 'origin/main'.
-    
+
     Changes not staged for commit:
       (use "git add <file>..." to update what will be committed)
       (use "git restore <file>..." to discard changes in working directory)
     	modified:   Wales.md
-    
+
     Untracked files:
       (use "git add <file>..." to include in what will be committed)
     	.gitignore
     	Makefile
     	__pycache__/
     	wsd.py
-    
+
     no changes added to commit (use "git add" and/or "git commit -a")
 
 

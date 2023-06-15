@@ -82,7 +82,7 @@ def hello(name,greet='Hello',end="!"):
 ```
 
     [1mreformatted black_example.py[0m
-    
+
     [1mAll done! ✨ 🍰 ✨[0m
     [34m[1m1 file [0m[1mreformatted[0m.
 
@@ -95,8 +95,8 @@ After running `black` on the file its contents become:
 ```
 
     import numpy as np
-    
-    
+
+
     def my_complex_function(
         important_argument_1,
         important_argument_2,
@@ -110,8 +110,8 @@ After running `black` on the file its contents become:
             * optional_argument_3
             * optional_argument_4
         )
-    
-    
+
+
     def hello(name, greet="Hello", end="!"):
         print(greet, name, end)
 
@@ -170,14 +170,14 @@ If we run isort it becomes:
 !cat isort_example.py
 ```
 
-    
+
     import json
     import os
-    
+
     import numpy as np
     import pandas as pd
     from matplotlib import pyplot as plt
-    
+
     import black_example
 
 
@@ -251,10 +251,10 @@ def circumference(r):
     pylint_example.py:4:18: C0103: Argument name "r" doesn't conform to snake_case naming style (invalid-name)
     pylint_example.py:5:15: E0602: Undefined variable 'pi' (undefined-variable)
     pylint_example.py:2:0: W0611: Unused e imported from constants (unused-import)
-    
+
     ------------------------------------------------------------------
     Your code has been rated at 0.00/10 (previous run: 0.00/10, +0.00)
-    
+
     [0m
 
 Compared to `flake8`, in this case `pylint` also warns us that:
@@ -323,7 +323,7 @@ Many editors/IDEs have integrations with common linters or have their own built-
 
 There are also tools like [editorconfig](https://editorconfig.org/) to help sharing the conventions used within a project, where each contributor uses different IDEs and tools.
 
-#### [pre-commit](https://pre-commit.com/) 
+#### [pre-commit](https://pre-commit.com/)
 
 pre-commit is a manager for creating git "hooks" - scripts that run before making a commit. If a hook errors the commit won't be made, and you'll be prompted to fix the problems first. There are `pre-commit` plugins for all the linters discussed here, and it's a good way to ensure all code committed to your repo has had a level of quality control applied to it.
 

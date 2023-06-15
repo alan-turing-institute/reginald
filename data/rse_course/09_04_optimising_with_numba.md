@@ -158,9 +158,9 @@ plt.colorbar()
 
 
 
-    
+
 ![png](/Users/lbokeria/Documents/hack_week_2023/reginald/data_processing/rse_course_modules/module09_programming_for_speed/09_04_optimising_with_numba_16_1.png)
-    
+
 
 
 ## 9.4.2 Parallelisation with Multiprocessing
@@ -291,27 +291,27 @@ help(prange)
 ```
 
     Help on class prange in module numba.misc.special:
-    
+
     class prange(builtins.object)
      |  prange(*args)
-     |  
+     |
      |  Provides a 1D parallel iterator that generates a sequence of integers.
      |  In non-parallel contexts, prange is identical to range.
-     |  
+     |
      |  Static methods defined here:
-     |  
+     |
      |  __new__(cls, *args)
      |      Create and return a new object.  See help(type) for accurate signature.
-     |  
+     |
      |  ----------------------------------------------------------------------
      |  Data descriptors defined here:
-     |  
+     |
      |  __dict__
      |      dictionary for instance variables (if defined)
-     |  
+     |
      |  __weakref__
      |      list of weak references to the object (if defined)
-    
+
 
 
 
@@ -391,9 +391,9 @@ plt.colorbar()
 
 
 
-    
+
 ![png](/Users/lbokeria/Documents/hack_week_2023/reginald/data_processing/rse_course_modules/module09_programming_for_speed/09_04_optimising_with_numba_41_1.png)
-    
+
 
 
 We see that allowing numba to use all of our CPU cores has increased the performance with relatively few code changes. The best possible speedup with parallelisation with be a factor of `cpu_count()` but this often won't be realised in practice.

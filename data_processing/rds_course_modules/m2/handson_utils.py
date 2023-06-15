@@ -37,28 +37,38 @@ def parse_country_values_2011(categorical_values_df: pd.DataFrame) -> Dict[str, 
 def check_dataset_load(df):
     """Check data frame loaded correctly for 'Load and Explore' exercise"""
     try:
-        assert isinstance(df, pd.DataFrame), "❌ df is not a DataFrame" # check we've loaded data into a DataFrame
-        assert len(df) == 79270, "❌ unexpected no. of rows" # check number of rows matches expected
+        assert isinstance(
+            df, pd.DataFrame
+        ), "❌ df is not a DataFrame"  # check we've loaded data into a DataFrame
+        assert (
+            len(df) == 79270
+        ), "❌ unexpected no. of rows"  # check number of rows matches expected
         print("✅ df loaded correctly")
     except AssertionError as e:
         print(e)
 
 
-def check_dataset_explored(n_columns, n_float64_columns, Y11_Q31_mean_value, Y11_Country_n_unique):
+def check_dataset_explored(
+    n_columns, n_float64_columns, Y11_Q31_mean_value, Y11_Country_n_unique
+):
     # not using assert statements as they give away the answers!
     correct = 0
 
     n_columns_result = "✅ correct" if n_columns == 199 else "❌ incorrect"
     n_float64_result = "✅ correct" if n_float64_columns == 187 else "❌ incorrect"
-    Y11_Q31_mean_value_result = "✅ correct" if np.isclose(Y11_Q31_mean_value, 1.856049) else "❌ incorrect"
-    Y11_Country_n_unique_result = "✅ correct" if Y11_Country_n_unique == 35 else "❌ incorrect"
+    Y11_Q31_mean_value_result = (
+        "✅ correct" if np.isclose(Y11_Q31_mean_value, 1.856049) else "❌ incorrect"
+    )
+    Y11_Country_n_unique_result = (
+        "✅ correct" if Y11_Country_n_unique == 35 else "❌ incorrect"
+    )
 
     print(f"n_columns answer {n_columns_result}")
     print(f"n_float64_columns answer {n_float64_result}")
     print(f"Y11_Q31_mean_value answer {Y11_Q31_mean_value_result}")
     print(f"Y11_Country_n_unique answer {Y11_Country_n_unique_result}")
 
-    
+
 # manually pasted the answer here but not the code
 desired_column_mapping = {
     "Wave": "eqls_wave",
@@ -260,9 +270,9 @@ desired_column_mapping = {
     "RowID": "rowid_for_the_uk_data_service_public_api",
     "URIRowID": "root_uri_for_a_row_respondent_that_displays_all_data_values_for_a_single_row_via_the_uk_data_service_public_api",
     "UniqueID": "unique_respondent_id",
-}    
+}
 
-    
+
 def check_column_mapping(column_mapping, df):
     """Check column mapping for 'Making Things More Readable' exercise"""
     # check each in turn to give best error
@@ -298,10 +308,13 @@ def set_column_mapping(df, eqls_api_map_df):
     #  remove apostrophes
     #  replace whitespace with _
     #  rremove consecutive underscores
-    new_cols = eqls_api_map_df["VariableLabel"].str.lower()\
-                                            .str.replace("'",'')\
-                                            .str.replace('[^\w]','_')\
-                                            .str.replace("_+", "_")
+    new_cols = (
+        eqls_api_map_df["VariableLabel"]
+        .str.lower()
+        .str.replace("'", "")
+        .str.replace("[^\w]", "_")
+        .str.replace("_+", "_")
+    )
 
     column_mapping = dict(zip(old_cols, new_cols))
 

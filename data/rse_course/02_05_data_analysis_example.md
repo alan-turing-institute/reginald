@@ -63,7 +63,7 @@ print(london_location)
 ## 2.5.2 Using the Yandex API
 
 The Yandex API allows us to fetch a map of a place, given a longitude and latitude.
-The URLs look like: https://static-maps.yandex.ru/1.x/?size=400,400&ll=-0.1275,51.51&z=10&l=sat&lang=en_US 
+The URLs look like: https://static-maps.yandex.ru/1.x/?size=400,400&ll=-0.1275,51.51&z=10&l=sat&lang=en_US
 We'll probably end up working out these URLs quite a bit. So we'll make ourselves another function to build up a URL given our parameters.
 
 
@@ -138,7 +138,7 @@ def map_at(*args, **kwargs):
 ```
 
 We can use a library that comes with Jupyter notebook to display the image.
-Being able to work with variables which contain images, or documents, or any other weird kind of data, just as easily as we can with numbers or letters, is one of the really powerful things about modern programming languages like Python. 
+Being able to work with variables which contain images, or documents, or any other weird kind of data, just as easily as we can with numbers or letters, is one of the really powerful things about modern programming languages like Python.
 
 
 ```python
@@ -163,9 +163,9 @@ Image(map_png)
 
 
 
-    
+
 ![jpeg](/Users/lbokeria/Documents/hack_week_2023/reginald/data_processing/rse_course_modules/module02_intermediate_python/02_05_data_analysis_example_28_0.jpg)
-    
+
 
 
 
@@ -177,9 +177,9 @@ Image(map_at(*geolocate("New Delhi")))
 
 
 
-    
+
 ![jpeg](/Users/lbokeria/Documents/hack_week_2023/reginald/data_processing/rse_course_modules/module02_intermediate_python/02_05_data_analysis_example_29_0.jpg)
-    
+
 
 
 
@@ -285,9 +285,9 @@ Image(map_at(*london_location, satellite=True))
 
 
 
-    
+
 ![jpeg](/Users/lbokeria/Documents/hack_week_2023/reginald/data_processing/rse_course_modules/module02_intermediate_python/02_05_data_analysis_example_46_0.jpg)
-    
+
 
 
 
@@ -304,9 +304,9 @@ Image(show_green_in_png(map_at(*london_location, satellite=True)))
 
 
 
-    
+
 ![png](/Users/lbokeria/Documents/hack_week_2023/reginald/data_processing/rse_course_modules/module02_intermediate_python/02_05_data_analysis_example_47_1.png)
-    
+
 
 
 
@@ -321,27 +321,27 @@ for location in location_sequence(geolocate("London"), geolocate("Birmingham"), 
 ```
 
 
-    
+
 ![jpeg](/Users/lbokeria/Documents/hack_week_2023/reginald/data_processing/rse_course_modules/module02_intermediate_python/02_05_data_analysis_example_50_0.jpg)
-    
 
 
 
-    
+
+
 ![jpeg](/Users/lbokeria/Documents/hack_week_2023/reginald/data_processing/rse_course_modules/module02_intermediate_python/02_05_data_analysis_example_50_1.jpg)
-    
 
 
 
-    
+
+
 ![jpeg](/Users/lbokeria/Documents/hack_week_2023/reginald/data_processing/rse_course_modules/module02_intermediate_python/02_05_data_analysis_example_50_2.jpg)
-    
 
 
 
-    
+
+
 ![jpeg](/Users/lbokeria/Documents/hack_week_2023/reginald/data_processing/rse_course_modules/module02_intermediate_python/02_05_data_analysis_example_50_3.jpg)
-    
+
 
 
 So now we can count the green from London to Birmingham!
@@ -387,9 +387,9 @@ plt.plot(
 
 
 
-    
+
 ![png](/Users/lbokeria/Documents/hack_week_2023/reginald/data_processing/rse_course_modules/module02_intermediate_python/02_05_data_analysis_example_55_1.png)
-    
+
 
 
 From a research perspective, of course, this code needs a lot of work. But I hope the power of using programming is clear.
@@ -430,9 +430,9 @@ plt.plot(green_between("New York", "Chicago", 20))
 
 
 
-    
+
 ![png](/Users/lbokeria/Documents/hack_week_2023/reginald/data_processing/rse_course_modules/module02_intermediate_python/02_05_data_analysis_example_61_1.png)
-    
+
 
 
 And that's it! We've used Python to analyse data from an internet API and visualise it in interesting ways.

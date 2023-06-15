@@ -47,7 +47,7 @@ git revert HEAD~
      1 file changed, 2 deletions(-)
 
 
-An editor may pop up, with some default text which you can accept and save. 
+An editor may pop up, with some default text which you can accept and save.
 
 ## Conflicted reverts
 
@@ -70,27 +70,27 @@ git log --date=short
     commit c489aababc4488d5556ef340257905ee18873125
     Author: Turing Developer <developer@example.com>
     Date:   2021-11-08
-    
+
         Revert "Add a lie about a mountain"
-        
+
         This reverts commit 6e8a302387007780675dbd5cb1823901d1a7b59b.
-    
+
     commit f79cacc17500651a228f9b5a1922c3b50ea723c3
     Author: Turing Developer <developer@example.com>
     Date:   2021-11-08
-    
+
         Change title
-    
+
     commit 6e8a302387007780675dbd5cb1823901d1a7b59b
     Author: Turing Developer <developer@example.com>
     Date:   2021-11-08
-    
+
         Add a lie about a mountain
-    
+
     commit 238eaff15e2769e0ef1d989f1a2e8be1873fa0ab
     Author: Turing Developer <developer@example.com>
     Date:   2021-11-08
-    
+
         First commit of discourse on UK topography
 
 
@@ -173,33 +173,33 @@ git log --date=short
     commit 13cfc78608055a7e681195e13e47bea96934e648
     Author: Turing Developer <developer@example.com>
     Date:   2021-11-08
-    
+
         Add a silly spelling
-    
+
     commit c489aababc4488d5556ef340257905ee18873125
     Author: Turing Developer <developer@example.com>
     Date:   2021-11-08
-    
+
         Revert "Add a lie about a mountain"
-        
+
         This reverts commit 6e8a302387007780675dbd5cb1823901d1a7b59b.
-    
+
     commit f79cacc17500651a228f9b5a1922c3b50ea723c3
     Author: Turing Developer <developer@example.com>
     Date:   2021-11-08
-    
+
         Change title
-    
+
     commit 6e8a302387007780675dbd5cb1823901d1a7b59b
     Author: Turing Developer <developer@example.com>
     Date:   2021-11-08
-    
+
         Add a lie about a mountain
-    
+
     commit 238eaff15e2769e0ef1d989f1a2e8be1873fa0ab
     Author: Turing Developer <developer@example.com>
     Date:   2021-11-08
-    
+
         First commit of discourse on UK topography
 
 
@@ -224,27 +224,27 @@ git log --date=short
     commit c489aababc4488d5556ef340257905ee18873125
     Author: Turing Developer <developer@example.com>
     Date:   2021-11-08
-    
+
         Revert "Add a lie about a mountain"
-        
+
         This reverts commit 6e8a302387007780675dbd5cb1823901d1a7b59b.
-    
+
     commit f79cacc17500651a228f9b5a1922c3b50ea723c3
     Author: Turing Developer <developer@example.com>
     Date:   2021-11-08
-    
+
         Change title
-    
+
     commit 6e8a302387007780675dbd5cb1823901d1a7b59b
     Author: Turing Developer <developer@example.com>
     Date:   2021-11-08
-    
+
         Add a lie about a mountain
-    
+
     commit 238eaff15e2769e0ef1d989f1a2e8be1873fa0ab
     Author: Turing Developer <developer@example.com>
     Date:   2021-11-08
-    
+
         First commit of discourse on UK topography
 
 
@@ -254,7 +254,7 @@ The silly spelling *is no longer in the log*. This approach to fixing mistakes, 
 
 ## Resetting the working area
 
-When `git reset` removes commits, it leaves your working directory unchanged -- so you can keep the work in the bad change if you want. 
+When `git reset` removes commits, it leaves your working directory unchanged -- so you can keep the work in the bad change if you want.
 
 
 ```bash
@@ -315,9 +315,9 @@ wsd(message)
 
 
 
-    
+
 ![png](/Users/lbokeria/Documents/hack_week_2023/reginald/data_processing/rse_course_modules/module04_version_control_with_git/04_02_fixing_mistakes_29_0.png)
-    
+
 
 
 
@@ -358,8 +358,5 @@ wsd(message)
 
 
 
-    
+
 ![png](/Users/lbokeria/Documents/hack_week_2023/reginald/data_processing/rse_course_modules/module04_version_control_with_git/04_02_fixing_mistakes_31_0.png)
-    
-
-

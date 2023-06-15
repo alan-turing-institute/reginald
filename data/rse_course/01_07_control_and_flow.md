@@ -41,7 +41,7 @@ if x < 0:
 
 The first time through, the print statement never happened.
 
-The **controlled** statements are indented. Once we remove the indent, the statements will once again happen regardless. 
+The **controlled** statements are indented. Once we remove the indent, the statements will once again happen regardless.
 
 ### Else and Elif
 
@@ -162,7 +162,7 @@ And you cannot compare a string of a number to a number.
 
     /var/folders/q7/nl3w6z854711jwsdy0hj7sxhwypcgh/T/ipykernel_64389/4031537418.py in <module>
     ----> 1 "1" < 2
-    
+
 
     TypeError: '<' not supported between instances of 'str' and 'int'
 
@@ -179,7 +179,7 @@ And you cannot compare a string of a number to a number.
 
     /var/folders/q7/nl3w6z854711jwsdy0hj7sxhwypcgh/T/ipykernel_64389/1549792606.py in <module>
     ----> 1 "5" < 2
-    
+
 
     TypeError: '<' not supported between instances of 'str' and 'int'
 
@@ -196,7 +196,7 @@ And you cannot compare a string of a number to a number.
 
     /var/folders/q7/nl3w6z854711jwsdy0hj7sxhwypcgh/T/ipykernel_64389/1687267052.py in <module>
     ----> 1 "1" > 2
-    
+
 
     TypeError: '>' not supported between instances of 'str' and 'int'
 
@@ -434,7 +434,7 @@ This can be annoying when commenting things out. (With `#`)
 ```python
 if x > 0:
     # print x
-    
+
 print("Hello")
 ```
 
@@ -464,4 +464,3 @@ print("Hello")
 ```
 
     Hello
-
