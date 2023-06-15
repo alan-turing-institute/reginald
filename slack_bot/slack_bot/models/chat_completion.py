@@ -8,10 +8,10 @@ import openai
 from .base import MessageResponse, ResponseModel
 
 
-class OpenAIAzure(ResponseModel):
+class ChatCompletionAzure(ResponseModel):
     def __init__(self) -> None:
-        self.api_base = os.getenv("OPENAI_API_BASE")
-        self.api_key = os.getenv("OPENAI_API_KEY")
+        self.api_base = os.getenv("OPENAI_AZURE_API_BASE")
+        self.api_key = os.getenv("OPENAI_AZURE_API_KEY")
         self.api_type = "azure"
         self.api_version = "2023-03-15-preview"
         self.engine = "reginald-gpt35"
@@ -53,6 +53,27 @@ class OpenAIAzure(ResponseModel):
             stop=None,
             temperature=self.temperature,
             top_p=self.top_p,
+        )
+        text = response["choices"][0]["message"]["content"]
+        return MessageResponse(text, None)
+
+
+class ChatCompletionOpenAI(ResponseModel):
+    def __init__(self) -> None:
+        self.api_key = os.getenv("OPENAI_API_KEY")
+
+    def direct_message(self, message: str, user_id: str) -> MessageResponse:
+        openai.api_key = self.api_key
+        response = openai.ChatCompletion.create(
+            model="gpt-3.5-turbo", messages=[{"role": "user", "content": message}]
+        )
+        text = response["choices"][0]["message"]["content"]
+        return MessageResponse(text, None)
+
+    def channel_mention(self, message: str, user_id: str) -> MessageResponse:
+        openai.api_key = self.api_key
+        response = openai.ChatCompletion.create(
+            model="gpt-3.5-turbo", messages=[{"role": "user", "content": message}]
         )
         text = response["choices"][0]["message"]["content"]
         return MessageResponse(text, None)
