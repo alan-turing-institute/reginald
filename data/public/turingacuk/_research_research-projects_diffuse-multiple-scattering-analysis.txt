@@ -1,0 +1,54 @@
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Diffuse multiple scattering (DMS) is a powerful new X-ray technique that can provide information about all the phases (crystal structures) present in a material sample at unprecedented resolution. However, highly complex data analysis requirements currently limit the application of this technique. This project is developing neural networks that can take a DMS pattern and automatically infer the crystal structures present as well as providing an estimate of the lattice parameters of the materials. The methods developed will be applied in the analysis of DMS patterns for important technological systems such as ferroelectrics and alloys.
+Header image: Science and Technology Facilities Council
+X-ray scattering happens when X-rays hit a material and alter their direction of travel. Diffuse multiple scattering (DMS) happens when a material has defects in the perfect crystal and it provides structural information not only about the region of the sample in the X-ray beam but in remote regions too. It also allows characterisation of the relative locations of atoms with far higher precision than regular X-ray scattering. 
+Ferroelectrics are materials with in internal permanent electric field which can be switched in direction by an applied electric field. Ferroelectrics are currently widely applied as actuators, converting electrical to mechanical energy. These are important for example in sonar pulse systems of submarines. Ferroelectrics also have great potential for application in computer memory. Current champion ferroelectrics all contain lead and there is a drive to understand the role that lead plays in these materials in order to design new materials with comparable function, but no toxic elements. DMS has the potential to provide unprecedented levels of detail regarding the mechanisms underpinning the function of current lead-based ferroelectrics.  
+This project aims to develop a workflow that can be applied for rapid, easy analysis of DMS patterns. The work will develop examples and pre-trained network architectures for extracting:
+The project will also establish a database of simulated patterns and data labels to allow users to train different networks in the future. This data-analysis workflow will make DMS accessible to a much wider community of materials scientists than it is currently available to. DMS has the potential to offer unprecedented insights into complex phase transition phenomena which underpin the operation of ferroelectric materials (e.g. in sensors, actuators and antennae). The availability of an automated, easy to apply analysis pipeline is crucial to the success of the method.
+The work will be applied by users of the Diamond Light Source facility at Rutherford Appleton Laboratory. In particular the work is of interested to the industrial community interested in ferroelectrics, an industry worth up to $480M worldwide. Moreover ferroelectrics are of intense research interest in a range of areas, such as next generation computing, photovoltaics and catalysis. The current champion materials are lead-based and the atomic scale understanding of the mechanisms of ferroelectricity and how multiple phases interact is critical to a rational design programme to make lead free ferroelectrics.
+© The Alan Turing Institute
+2023. All rights reserved.
+The Alan Turing Institute, a charity incorporated and registered in England and Wales with company number 09512457 and charity number 1162533 whose registered office is at British Library, 96 Euston Road, London, England, NW1 2DB, United Kingdom.
+For website-related enquiries email
+[email protected]
+
+Explore the Institute
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Legal
+Awards

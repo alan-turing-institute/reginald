@@ -1,0 +1,105 @@
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+
+On the first day you will hear the different challenge pitches. After lunch you choose which of these challenges you would like to work on for the rest of the week. With groups formed around the challenges, you will then begin to explore the data and brainstorm ideas which you will then develop over the next three days.
+During the week, you will need to keep a record of your work, which you and your group will compile into a report for the DSG Challenge Owner. On the Friday, you will present your work to all participants and Challenge Owners.
+Throughout the week you will be supported by your group facilitator, chosen from the participant applications, who will help move the project forward. There will be a representative from the DSG Challenge Owner’s organisation who will work alongside you and give you insights into the business problem, the datasets, and approaches that have been tried before. You will also be able to call upon the knowledge and help of the whole data study group.
+But it won’t all be work; there will also be social activities planned throughout the week.
+"The challenge was particularly interesting from a research point of view as there could be many different approaches to solving this problem. Therefore, the project drew a fantastic selection of candidates to our team from different fields."
+Chanuki Seresinhe, Turing Enrichment Year Doctoral Student
+ 
+Researchers are typically PhD students and early career academics from statistics, computer science, engineering, mathematics, and computational social science, as well as wider disciplines where data science and AI skills are increasingly becoming relevant. Participating researchers include talent from across the UK and are recruited through regular open calls on the Institute’s website. 
+ 
+You will need to be able to commit to an intensive five days at the Institute, based in the British Library in London.
+Catering and travel to and from the event (up to £200 for those who are travelling from abroad) will be covered by the Turing as well as accommodation for those who don’t live in London.
+ 
+If my application is unsuccessful, will individual feedback be available?
+Unfortunately due to the high volume of applicants we are unable to provide feedback on an individual basis. 
+I think I am a high calibre candidate, why has my application been unsuccessful?
+Remember, you must explain and demonstrate your ability in the application form. Answering with a few short sentences is probably not enough to show reviewers your ability. It may be that your skillset is not a perfect match to the featured challenges. We do our best to ensure each DSG caters to different strengths so please try again next time! 
+The equal opportunities questions on the application form are a little invasive – do I have to answer them?
+No. Answering these questions is optional and will not affect your application.
+ Do I need to enter my real address on the application form?
+No. You may enter a superfluous address, however, please note that other Turing opportunities may require a genuine address.
+Do I have to create a Flexi-Grant account to apply for a DSG?
+You will need to register with Flexi-Grant in order to access the application form. Registration should take no more than one minute.
+I will need to obtain a visa to attend, is it possible to be notified any earlier if my application is successful or not?  
+If you are an especially strong candidate we may be able to notify you up to one week in advance. Please be sure that you indicate that you will require a visa on the application form (there is a question on this) and email us at [email protected].
+ What happens if I need to obtain a visa to attend the DSG?
+We try our best to ensure that participants are notified of acceptance in time to obtain a visa, additionally please email [email protected] flagging your visa deadlines and we will endeavour to ensure your application is dealt with promptly. Additionally, we are happy to provide you with a visa letter of invitation should it be required. The cost of the visa is included in the travel allowance of up to £200 which will be reimbursed.
+Please note that overseas participants that are invited to attend the DSG should not purchase travel tickets until they have received their visas. 
+Do you accept applicants from industry?
+Yes, however applicants from industry are expected to take annual leave to attend in order to represent themselves as individuals rather than their organisations.
+  Do I need to be able to code to attend the DSG?
+Yes. The Data Study Group is considered a collaboration opportunity more than a training exercise. As a minimum, participants should be able to code using Python. 
+Do I have the necessary experience/qualifications/skills to apply?
+In general, we look for the following qualities in a reasonable application:
+I have attended at DSG previously, am I able to apply again?
+Yes, past applicants are welcome to apply.
+ Are all applicants expected to have a PhD?
+Generally, only a small hand full of MSc applicants are successful, the majority will be PhD and postdoc candidates. Students working towards a Masters level qualification may need to provide a reference letter from their supervisor.
+Do you have to have a university affiliation to attend?
+No. You do not have to have a university affiliation; this will have no impact on your application.
+Where does the DSG take place?
+The DSG takes place at The Alan Turing Institute, which is located within the British Library, central London.
+ Will I be reimbursed for my travel expenses?
+Yes. Travel and visa costs up to a maximum of £200 will be covered by The Alan Turing Institute. Please note: This is only applicable to in-person events, not virtual events.
+ Is accommodation provided?
+Yes, free accommodation is available throughout the week (Sunday - Friday morning) for an in-person Data Study Group. Please note: this is not applicable to virtual events.
+What catering is included?
+Lunch and dinner is provided during the week. We will try to cater for all dietary requirements provided you let us know when you have been accepted to participate in the event. Please note: This is only applicable to in-person events, not virtual events.
+ How are participants assigned challenges?
+On the first day of the event, after the morning presentations, all participants will be asked to list their first and second choice. If a group is too large or too small we will ask if participants would like to swap based on their second choice selections.
+What kind of time commitment does the DSG involve?
+The Alan Turing Institute is committed to supporting individual circumstances, please do not hesitate to email [email protected] if you feel that you may have to miss certain days/sessions of the Data Study Group.
+If you know that you will likely have to miss a day/s or that you will not be able to engage fully due to revision, deadlines, teaching commitments, applications or other reasons, please do get in touch with us at [email protected] as we are happy to approach everyone's individual situation.
+There will be frequent breaks during the Data Study Group, with participants able to turn their attention to their other commitments such as childcare etc. Please do let the Data Study Group Team know ahead of the event and we will be more than happy to accommodate your needs as best we can.
+ Who owns any IP/code produced during the DSG week?
+Although this is unlikely, any IP produced during the week is owned by the Turing, participants are not able to keep or publish code. If published at a later date credit will be given to the authors. 
+ 
+Find out first when the next DSG challenges will be taking place and more – select 'Receive Applied Skills updates'.
+© The Alan Turing Institute
+2023. All rights reserved.
+The Alan Turing Institute, a charity incorporated and registered in England and Wales with company number 09512457 and charity number 1162533 whose registered office is at British Library, 96 Euston Road, London, England, NW1 2DB, United Kingdom.
+For website-related enquiries email
+[email protected]
+
+Explore the Institute
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Legal
+Awards

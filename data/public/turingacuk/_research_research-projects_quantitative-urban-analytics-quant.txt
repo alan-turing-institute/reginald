@@ -1,0 +1,70 @@
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+QUANT is a land use transportation model simulating the location of employment, population and transport interactions designed for predicting the impact of changes to and on these activities. The model predicts the impact of changes in the pattern of urban development as measured by employment, population, transport and physical land use constraints. It simulates such changes using physical models based on gravitational principles which determine location and interactions as a function of travel costs. Its outputs are highly visual for the model is operated in a visual web-based environment delivering many different urban solutions in a matter of seconds so that policy makers and professionals can evaluate a wide range of scenarios associated with future urban plans.
+The model simulate spatial interactions which are captured over 3 modes of travel - road, rail and bus - in such a way that the they compete for patronage based on a comparison of the different travel times associated with the underlying networks for each mode. For example if we add a new rail line, this will (usually) reduce the time and thence be more competitive relative to the other modes whose travel times remain the same. This will attract users from road and bus to  travel on rail.
+In formal terms, the models that we use to simulate transport are subject to constraints on  employment but they essentially predict where employment resides. The many competitive effects between transport modes and the relative locations of different volumes of population and employment are worked out by the model which in typical systems fashion involve a structure where everything relates to everything else directly but mainly indirectly. The model is highly visual as it is web-based. It resides on a server and using any client - from mobile phone to desktop workstation, it can be accessed and then run in real time. The upper number of users is not known but as yet it is not optimised for many users accessing the system all at the same time. It opens up a separate thread for each distinct user. The following block diagram shows the structure and visual interface.
+ 
+The model is web-based and available free for anyone who wishes to evaluate planning scenarios in any part of the country. After the model has been calibrated (that is, tuned to replicate the existing situation at the base year), a user can define a scenario on-the-fly and then evaluate it through new input data which a user can enter into the model on screen, then running the model which delivers solutions in a matter of seconds. The aim is to empower policy makers and town planning professionals with tools that are big enough to replicate their systems of interest but are available from any place at any time across the web. As the model runs in seconds, a user can generate a sequence of scenarios which can then be used in the selection of a best plan. Planners in practice lack tools to simulate urban futures and although this is a relatively simple sketch planning too, we consider it would have achieved success if it is eventually adopted by  planners in practice. This is a long term aim and it will require much more targeted investment in digital technologies in practice than possible currently, but the project provides a demonstration and a direction. The zoning system for England-Scotland-Wales for employment, population and vector flow averages is shown as  
+ 
+
+ 
+QUANT is being applied to large-scale scenarios associated with new urban development and transport which we list as follows in the order that we have modelled their impact.
+1. The development of the new east west rail line in London and the South East called Crossrail 1. This rail line involves tunnelling under central London and it joins Reading in the west to Shenfield in the east. We have simulated the modal shifts from road and bus to rail in this scenarios and these shifts plus changes in accessibility are reflected  in house price rises which are already factored in.
+2. The development of HS2 - the high speed line from London Euston to Birmingham and thence onwards to Manchester. Recently we have tested the change in this line which involves cutting off the eastern leg to Nottingham-Leeds, which was proposed at the end of 2021.
+3. The impact of the third runway extension at Heathrow airport which is in the Greenbelt. Basically the Davies Commission has predicted the growth of 50,000 new jobs if the runway is built and we have tested this on various scenarios involving changes to the Greenbelt in this area.
+4. The impact of the line proposed from Cambridge to Oxford via Milton Keynes (in the CAMKOX corridor) known as East-West Rail. This is a highly controversial growth area. 
+5. We are currently developing methods for evaluating multiple scenarios defining future solution spaces for different outputs from the model, involving simple machine learning techniques. 
+To give some idea of what the model can be used for, we show the impact of Crossrail 1 below. The line is in essence a high speed 'tube' line called the Elizabeth Line to be opened by the end of 2022. As tube in London is heavy rail in any case, it dovetails with National Rail with a link to Heathrow, so that travellers are now able to get from the main London airport to Kings Cross-St. Pancras much more easily and quickly than the current fast trains into London Paddington. The following illustrations show a) the rail line itself b) the improvements in travel times on rail through southern England and c) the growth (red) and decline (blue) in population along the line caused by shifts from road and bus to rail and relocation of population to optimise their relative accessibilities.
+ 
+a)                                    
+b)
+ 
+c)
+
+The project so far has been in 2 stages - starting in February 2020 with an end date of January 2021 and then from February 2021 to end January 2022. Currently we are bidding for a third year of funds from Turing. In the first stage we extended the initial QUANT model which had been funded by the Future Cities Catapult to include Scotland. We also used it to link with the LUISA model developed by Ying Jin at the Martin Centre, University of Cambridge where we interfaced the model with output area zones, solving various problems caused by this change of scale. In the second stage, Richard Milton has been working with scenario optimisation and this work is yet to be written up. A major paper has now been published on the model and various elements of QUANT have been used to simulate the RAMP epidemic model developed in the Turing Urban Analytics stream: see 
+ 
+© The Alan Turing Institute
+2023. All rights reserved.
+The Alan Turing Institute, a charity incorporated and registered in England and Wales with company number 09512457 and charity number 1162533 whose registered office is at British Library, 96 Euston Road, London, England, NW1 2DB, United Kingdom.
+For website-related enquiries email
+[email protected]
+
+Explore the Institute
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Legal
+Awards

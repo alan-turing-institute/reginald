@@ -1,0 +1,53 @@
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Ioannis Kosmidis is a Professor of Statistics at the Department of Statistics, University of Warwick, Theory and Methods Challenge Fortnights Lead, and Turing Fellow at The Alan Turing Institute, the UK's national institute for data science and artificial intelligence.
+He obtained his BSc in Statistics from the Athens University of Economics and Business in 2004. He was awarded a PhD in Statistics in 2007 at the Department of Statistics, University of Warwick with a thesis titled "Bias reduction in exponential family nonlinear models". He then held an appointment as a CRiSM Research Fellow until 2010. In September 2010, he joined the Department of Statistical Science at University College London as a Lecturer (equivalent to Assistant Professor), and he got promoted to Senior Lecturer (equivalent to Associate Professor) in 2015. He moved back to University of Warwick as a Reader in Data Science in January 2018, and got promoted to Professor of Statistics  in August 2021.
+
+Ioannis' theoretical and methodological research focuses on optimal estimation and inference from complex statistical models, penalized and pseudo-likelihood methods and clustering. A particular focus of his work is the development of efficient, in terms of computational complexity and implementation, algorithms for applying the methods he develops to prominent data-analytic scenarios. He is doing extensive work in producing corresponding, well-documented, open-source software that delivers the methodological advances to the data science community and beyond (see his software page for information). Ioannis also actively engages in a range of cross-disciplinary applications (e.g. applications in earthquake engineering, finance, sport and health analytics, and neuroscience), particularly in settings where statistical modelling and the associated algorithms can impact policy-making. 
+He is a founding member of the Data science for sports, activity, and well-being Turing Interest Group, before which he led and run the Statistics in Sports and Health research group at UCL between 2014 and 2017.
+He is an associate editor for Biometrika and the Journal of Statistical Software, and a member of the Research Section of the Royal Statistical Society. Detailed, up-to-date information on his research, teaching, enabling and engaging activities can be found on his website and his CV.
+© The Alan Turing Institute
+2023. All rights reserved.
+The Alan Turing Institute, a charity incorporated and registered in England and Wales with company number 09512457 and charity number 1162533 whose registered office is at British Library, 96 Euston Road, London, England, NW1 2DB, United Kingdom.
+For website-related enquiries email
+[email protected]
+
+Explore the Institute
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Legal
+Awards

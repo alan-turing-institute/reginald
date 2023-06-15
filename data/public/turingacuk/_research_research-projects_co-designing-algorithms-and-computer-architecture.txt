@@ -1,0 +1,52 @@
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+As data science continues to grow as an industry and research sector, data-driven algorithms such as those required by deep learning - multi-level networks that gradually identify things at higher levels of detail - take up an increasing amount of valuable time and energy in data centres. This provokes a need for computing companies to rethink how they manage the technical challenges caused by this emerging new science.
+In a high-performance computing environment, such as a data centre with hundreds or thousands of interconnected computers, well-designed algorithms - often complex sequences of repeatable steps - allow huge data analysis tasks to be performed. For example, classifying millions of images of tissue samples to identify whether they contain anomalous features that should be examined by a doctor, and give an effective yes/no output.
+While these high-performance systems operate well for some computing needs, they often run at less than half their full capacity for many data science tasks. This is because when new computer systems are designed they are typically developed to perform well for a number of model algorithms, which don't include some of the most important data science algorithms used today. At the same time, data science algorithms are designed so as to perform well on existing, rather than potential future, hardware. The absence of feedback between these two design tasks is impeding progress in high-performance, large-scale data analysis.
+In this five-year project funded by Intel, scientists at the Turing are working to address the technical challenges of data science, through co-designing computer hardware and software. That is, hardware will be designed to suit the needs of data science algorithms, which will similarly be designed to suit the capabilities of the hardware. The research, once complete, promises to dramatically increase the speed and efficiency of data-driven computing tasks and will provide Intel with the tools to build the next generation of computer processors and high-performance systems.
+[email protected]
+© The Alan Turing Institute
+2023. All rights reserved.
+The Alan Turing Institute, a charity incorporated and registered in England and Wales with company number 09512457 and charity number 1162533 whose registered office is at British Library, 96 Euston Road, London, England, NW1 2DB, United Kingdom.
+For website-related enquiries email
+[email protected]
+
+Explore the Institute
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Legal
+Awards

@@ -1,0 +1,56 @@
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Governments around the world are increasingly concerned by the prevalence, spread and impact of harmful online content, such as harassment, bullying and hate speech. Online abuse poses myriad concerns: it can inflict harm on targeted victims, pollute civic discourse, make online environments unsafe, create and exacerbate social divisions, and erode trust in the host platforms.
+Many hope that increasingly sophisticated and powerful algorithms will ‘solve’ the problem of online abuse by making this content easier to detect and take down. However, abusive content detection has proven to be a wicked challenge. Not only is it a very difficult engineering task; it is also imbued with complex legal, social and political challenges. Researchers are increasingly drawing attention to the biases in some widely used tools and datasets, raising concerns that they might perpetuate the injustices they are designed to overcome.
+Currently, Facebook’s ‘Supreme Court’ of content moderation is gearing up to pass judgements; the UK Government is reviewing its wide-ranging Online Harms White Paper; social media platforms across the world are tightening up their community guidelines and investing in more tech to counter online abuse. In this pertinent moment, our experts discuss a fundamental question for society: Can technology solve online abuse?
+This is the third event of the 'Driving Data Futures' lecture series in the Public Policy Programme, where we invite audiences to learn and critically engage with new research at the intersection of new technologies, public policy, and ethics. At this event, there will be presentations delivered by academia, industry, and government, in addition to the Turing’s Hate Speech project team presenting their latest research in the field. This will be followed by a detailed Q&A, chaired by Dr Bertie Vidgen
+Additional speakers will be announced soon
+For more details on the Hate Speech project, including our most recent paper “Challenges and frontiers in abusive content detection”, please see – https://www.turing.ac.uk/research/research-projects/hate-speech-measures-and-counter-measures
+ 
+The Alan Turing Institute
+1st floor of the British Library, 96 Euston Road, London, NW1 2DB
+© The Alan Turing Institute
+2023. All rights reserved.
+The Alan Turing Institute, a charity incorporated and registered in England and Wales with company number 09512457 and charity number 1162533 whose registered office is at British Library, 96 Euston Road, London, England, NW1 2DB, United Kingdom.
+For website-related enquiries email
+[email protected]
+
+Explore the Institute
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Legal
+Awards

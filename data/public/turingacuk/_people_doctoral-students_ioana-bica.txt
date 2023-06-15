@@ -1,0 +1,71 @@
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Ioana is a second year Doctoral student at the Department of Engineering Science, University of Oxford. She is supervised by Professor Mihaela van der Schaar and co-supervised by Professor Pietro Lio. She has previously completed a BA and MPhil in Computer Science at the University of Cambridge where she has specialised in machine learning and its applications to biomedicine. Ioana has worked on research projects involving integration of transcriptomics and epigenomics data using cross-modal neural networks, variational autoencoders for modelling gene expression data and neural network interpretability.
+Ioana’s doctoral research focuses on developing machine learning methods aimed at improving healthcare and advancing medical research. She has worked on building methods for causal inference and individualised treatment effect estimation from observational data. In particular, she has developed machine learning methods capable of estimating the heterogeneous effects of time-dependent treatments, thus enabling us to determine when to give treatments to patients and how to select among multiple treatments over time. Recently, Ioana has started working on methods for understanding and modelling clinical decision making through causality and inverse reinforcement learning.
+Peer-reviewed conference publications (* denotes equal contribution). Ioana has presented their work at all the conferences for which they were the first author on the paper.
+1. Ioana Bica, Ahmed M. Alaa, James Jordon, and Mihaela van der Schaar. "Estimating counterfactual treatment outcomes over time through adversarially balanced representations.” in International Conference on Learning Representation (2020).
+2. Ioana Bica, Ahmed Alaa, and Mihaela Van Der Schaar. "Time Series Deconfounder: Estimating treatment effects over time in the presence of hidden confounders." in International Conference on Machine Learning (2020).
+3. Ioana Bica*, James Jordon*, and Mihaela van der Schaar. "Estimating the Effects of Continuous-valued Interventions using Generative Adversarial Networks." Advances in Neural Information Processing Systems (2020).
+4. Daniel Jarrett*, Ioana Bica*, and Mihaela van der Schaar. "Strictly Batch Imitation Learning by Energy-based Distribution Matching." Advances in Neural Information Processing Systems (2020).
+5. Jeroen Berrevoets, James Jordon, Ioana Bica, and Mihaela van der Schaar. "OrganITE: Optimal transplant donor organ offering using an individual treatment effect." Advances in Neural Information Processing Systems (2020).
+6. Can Xu, Ahmed Alaa, Ioana Bica, Brent Ershoff, Maxime Cannesson, and Mihaela Schaar. "Learning Matching Representations for Individualized Organ Transplantation Allocation." in International Conference on Artificial Intelligence and Statistics (2021).
+7. Ioana Bica, Daniel Jarrett, Alihan Hüyük, and Mihaela van der Schaar. " Learning "What-if" Explanations for Sequential Decision-Making" in International Conference on Learning Representations (2021).
+8. Daniel Jarrett, Jinsung Yoon, Ioana Bica, Zhaozhi Qian, Ari Ercole, and Mihaela van der Schaar. "Clairvoyance: A Pipeline Toolkit for Medical Time Series.” in International Conference on Learning Representations (2021).
+9. Ioana Bica*, Daniel Jarrett*, Mihaela van der Schaar. “Invariant Causal Imitation Learning for Generalizable Policies” in Advances in Neural Information Processing Systems (2021).
+10. Zhaozhi Qian, Yao Zhang, Ioana Bica, Angela Mary Wood, Mihaela van der Schaar. “SyncTwin: Treatment Effect Estimation with Longitudinal Outcomes” in Advances in Neural Information Processing Systems (2021).
+11. Daniel Jarrett, Ioana Bica, and Mihaela van der Schaar. “Time-series Generation by Contrastive Imitation” in Advances in Neural Information Processing Systems (2021).
+12. Alex J. Chan, Ioana Bica, Alihan Huyuk, Daniel Jarrett, and Mihaela van der Schaar. "The Medkit-Learn (ing) Environment: Medical Decision Modelling through Simulation." in Advances in Neural Information Processing Systems Datasets and Benchmarks Track (2021).
+Peer-reviewed journal publications:
+13. Ioana Bica, Ahmed M. Alaa, Craig Lambert, and Mihaela van der Schaar. "From real‐world patient data to individualized treatment effects using machine learning: Current and future methods to address underlying challenges." Clinical Pharmacology & Therapeutics (2020).
+14. Pedro Baqui*, Ioana Bica*, Valerio Marra, Ari Ercole, and Mihaela van Der Schaar. "Ethnic and regional variations in hospital mortality from COVID-19 in Brazil: a cross-sectional observational study." The Lancet Global Health, (2020).
+15. William R.Zame, Ioana Bica, Cong Shen, Alicia Curth, Hyun-Suk Lee, Stuart Bailey, James Weatherall, David Wright, Frank Bretz, and Mihaela van der Schaar. "Machine learning for clinical trials in the era of COVID-19." Statistics in Biopharmaceutical Research (2020).
+Workshops organized:
+
+- Machine Learning for Healthcare (ML4H) Workshop at NeurIPS 2020.
+- AI for Public Health Workshop at ICLR 2021.
+- Machine Learning for Healthcare (ML4H) Symposium co-located with NeurIPS 20201.
+© The Alan Turing Institute
+2023. All rights reserved.
+The Alan Turing Institute, a charity incorporated and registered in England and Wales with company number 09512457 and charity number 1162533 whose registered office is at British Library, 96 Euston Road, London, England, NW1 2DB, United Kingdom.
+For website-related enquiries email
+[email protected]
+
+Explore the Institute
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Legal
+Awards

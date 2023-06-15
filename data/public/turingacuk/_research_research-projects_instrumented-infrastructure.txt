@@ -1,0 +1,58 @@
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Instrumentation of infrastructure is revolutionising how it is delivered, maintained and controlled. For example, engineers are starting to instrument railway bridges with fibre optic sensors, in order to understand more about the structural health of networks of bridges, and manage their operation, resilience, and reliability. In this project, new statistical methods are being developed to improve productivity of networks through better understanding of the vast amounts of data produced by instrumented infrastructure.
+
+In this project, we are currently investigating a prototype railway bridge instrumented with ~130 fibre-optic sensors that record changes in wavelength over time. These time series of wavelength readings are converted to strain measurements that are used to monitor how the load of a train is distributed across the entire bridge. The sensor readings are correlated and exhibit time-lagged and dampened features due to the different locations of the sensors and the force exerted by an incoming train.
+Structural engineers are interested in characterising these correlations as a train passes over the bridge in order to understand the strength and stiffness at different locations and also detect any changes in bridges structure. We are currently investigating various statistical methods to model the wavelength readings, that encapsulate the correlation structure between sensors. In order to detect degradation of the bridge, we shall monitor this correlation signature of the bridge and signal when there is a departure. This may involve using statistical techniques used in the change-point detection literature.
+Further, this model will be used to predict the strain of the bridge at non-sensor locations and at future times. These models need to be able to produce predictions along with a measure of uncertainty i.e. a confidence interval. This is of key importance to structural engineers, who always prefer conservative predictions.
+Watch a short presentation from project leader Dr Liam Butler about the instrumented infrastructure work:
+
+The investigation described in 'Explaining the science' is establishing statistical methods for modelling sensor readings and detecting changes in the structure. Once these methods have been established, the project will focus on how to deploy such methods across multiple instrumented bridges. This will allow for monitoring the structural health of similar bridges over time and perhaps indicate which bridges at most at risk.
+The project work is being done alongside engineers in the Cambridge Centre for Smart Infrastructure and Construction that are monitoring railway bridges.
+This work may lead to a more accurate assessment of the capacity of bridges and their degradation could avoid heavy-handed and costly interventions. The results of this project will benefit both engineering and statistics researchers and industry by improving the understanding of instrumented infrastructure and by taking the first step toward adaptive sequential control of systems. Industry partners i.e. railway companies who own and maintain such bridges, will also be interested in using these data-driven techniques to guide inspection policies.
+[email protected]
+© The Alan Turing Institute
+2023. All rights reserved.
+The Alan Turing Institute, a charity incorporated and registered in England and Wales with company number 09512457 and charity number 1162533 whose registered office is at British Library, 96 Euston Road, London, England, NW1 2DB, United Kingdom.
+For website-related enquiries email
+[email protected]
+
+Explore the Institute
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Legal
+Awards

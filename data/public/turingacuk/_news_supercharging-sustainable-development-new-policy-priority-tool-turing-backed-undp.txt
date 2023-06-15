@@ -1,0 +1,68 @@
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+All over the world, countries are striving to meet the United Nation’s Sustainable Development Goals (SDGs) by 2030 – an ambitious agenda by any measure. These SDGs address the myriad global challenges faced by humanity, such as inequality, access to healthcare and education, climate change, and of course the COVID-19 global pandemic which has changed our world in ways previously unimagined.
+Whatever the country, sustainable development is a transformational process impacted by targeted government funding and resources. Progress towards the 17 SDGs are monitored by the collection of data on over 200 “development indicators.” A new collaboration between researchers in the UK and Mexico has resulted in a suite of analytical tools that can successfully model the impact of a variety of policy decisions on development indicators which show progress towards the SDGs.
+Today, Wednesday 27 May, the Turing publishes an impact story detailing this new AI approach, called ‘Policy Priority Inference’ (PPI), explaining how it is being championed by the United Nations Development Programme (UNDP) and is already in practice across Latin America, with ambitions to bring it to other global regions. It is increasingly critical that policymakers correctly prioritise public expenditure to ensure that these multi-dimensional global goals are met, especially as new challenges loom large on the horizon.
+ESRC/Turing Fellow Omar Guerrero from University College London, with his research partner, Professor Gonzalo Castañeda of the Center for Research and Teaching in Economics in Mexico are pioneering a new approach with potential to supercharge the effectiveness of government-backed sustainable development to the benefit of billions of people—and the planet itself.
+Guerrero explains how the tool can be used today to keep governments on track despite setbacks from the pandemic: “Recently, governments around the world have had to destine substantial resources in order to fight the COVID-19 pandemic; preventing them from achieving their original goals. This is extremely important for the 2030 Agenda of the SDGs, to which all UN Member States have committed.
+PPI can support reaching the SDGs by helping answering questions such as: How long will it take to reach the SDGs? How can governments reallocate their public expenditure in order to minimise delays? What countries/goals will experience the longest delays? What synergies between SDGs should be promoted?”
+
+Prioritising issues for maximum impact is an enormous challenge for governments. The range of development policy options is countless, often with unanticipated inefficiencies that waste resources. And, crucially, there are complex interdependencies between policies that should be taken into consideration (e.g. investing in industrialisation tends also to produce negative outcomes for the environment, while investing in public transport might also boost education outcomes because more children become able to access school.)
+Previously, economists focused on GDP as a measure of development, but this is a blunt, unidimensional measure and is ill-equipped to monitor progress on the 17 SDGs and over 200 development indicators today. Modelling these sorts of complex scenarios is exactly the sort of ‘wicked’, long-running policy challenge the Turing’s Public Policy programme is committed to working on with policymakers around the world and that cutting-edge data science and AI technology can make a huge impact on.
+PPI builds on a behavioural computational model, taking into account the learning process of public officials, coordination problems, incomplete information, and imperfect governmental monitoring mechanisms. The approach is a unique mix of economic theory, behavioural economics, network science and agent-based modelling.
+“The results of this project show the potential the Policy Priority Inference model has for providing governments with concrete information on how to increase the effectiveness of public spending and accelerate the achievement of development goals,” says Annabelle Sulmont, Public Policy Project Coordinator for the UNDP office in Mexico. “The model also provides a common language that enables its implementation in other parts of the world, and facilitates sharing and comparing results across regions and countries.”
+“Government expenditure data will take this technology to a whole new level,” says Guerrero. And PPI is not only about government, Guerrero stresses, but also about accountability. “We want to bring these tools to NGOs too, because this is useful for them to assess the actions of governments. NGOs can check if governments are prioritising the right policies.”
+Media enquiries
+Beth Wood
+Press and Communications Manager
+The Alan Turing Institute
+T  +44 (0)20 3862 3390
+M +44 (0)75 3803 8168[email protected]Vanessa Hidalgo
+United Nations Development Programme
+T +1 646 3389462[email protected]
+Notes to Editors:
+© The Alan Turing Institute
+2023. All rights reserved.
+The Alan Turing Institute, a charity incorporated and registered in England and Wales with company number 09512457 and charity number 1162533 whose registered office is at British Library, 96 Euston Road, London, England, NW1 2DB, United Kingdom.
+For website-related enquiries email
+[email protected]
+
+Explore the Institute
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Legal
+Awards

@@ -1,0 +1,79 @@
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Advancing data justice research and practice is a collaboration between the Global Partnership on AI (GPAI), The Alan Turing Institute, 12 policy pilot partners, and participants and communities across the globe. The project aims to widen the lens of current thinking around data justice and to provide actionable resources that will help policymakers, practitioners, and impacted communities gain a broader understanding of what equitable, freedom-promoting, and rights-sustaining data collection, governance, and use should look like in increasingly dynamic and global data innovation ecosystems.
+
+This project aims to fill a gap in data justice research and practice and provide resources that help policymakers, practitioners, and impacted communities gain a broader understanding of data governance. It is our hope that our resources are open and accessible to anyone interesting in learning more about data justice and how to promote it within their context. The research aims to offer practical guidance and conceptual framings for illuminating how historically rooted conditions of power asymmetry, inequality, discrimination, and exploitation are drawn into processes of data protection, extraction, and use. This includes considerations of equity and data justice informed by affected communities that encompass questions of access to, and visibility and representation in, data used in the development of AI and machine learning (AI/ML) systems. To achieve this, the research proposes six pillars of data justice power, equity, access, identity, participation, and knowledge. These provide a framing on how stakeholders can understand and engage in critical reflection of their data practices. 
+The project outputs include (a) an assessment of the current state of research in this area and the identification of gaps to create a forward-looking research agenda and (b) Data Justice in Practice Guides for three target audiences: policymakers, developers, and communities impacted by AI/ML systems. The guidance includes practical questions to consider in the practice, use, and experience of AI/ML systems, with particular emphasis on realising the 2030 Sustainable Development Goals. 
+This research includes valuable contributions of many individuals and civil society organisations through consultations and an online participatory platform decidim. The 12 policy pilot partners from around the world made significant contributions, through their own research reports informed by a series of interviews and workshops, and by providing iterative feedback on our research throughout the project.  
+The research from this project is a core component of the Global Partnership on AI’s (GPAI) Data Governance Framework. 
+As scholars, advocates, and individuals, we are committed to social justice and to revealing the systemic bases of intersectional discrimination in our research practices and life choices. Some members of our team relate to marginalised stakeholders from both a position of kinship and one of solidarity, navigating their own lived experiences and confronting intersectional discrimination. Others reflexively acknowledge their inheritance of legacies of unquestioned privilege along with the limited mindsets that derive therefrom. From such a critical self-acknowledgement of privilege and difference, comes a deep sense of responsibility—namely, the responsibility to marshal the advantages of carrying out research in power centres of the Global North and at well-funded research institutions to serve the interests of those on our planet who are all too often marginalised, de-prioritised, and exploited in the global data innovation ecosystem. We recognise how critically important diversity, equity, and inclusion are to carrying out substantively objective and reflexive research. 
+‘Uncovering Data Injustice’, the second episode of the three-part ‘Advancing Data Justice’ documentary series premiered at the AI UK 2023 conference.
+
+A series of short video infographics were created to discuss the concepts developed within the ADJRP project and its output guides.
+Data Justice in Practice: A Guide for Policymakers  
+Data Justice in Practice: A Guide for Impacted Communities  
+Data Justice in Practice: A Guide for Developers  
+Advancing Data Justice: Research and Practice - An Integrated Literature Review  
+Advancing Data Justice: Research and Practice - Data Justice Stories: A Repository of Case Studies  
+Advancing Data Justice Research and Practice: An Interim Annotated Bibliography and Table of Organisations 
+International Centre of Expertise in Montréal on Artificial Intelligence (CEIMIA)
+GPAI Data Governance Working Group
+AfroLeadership, Cameroon
+CIPESA, Eastern and Southern Africa
+CIPIT, Kenya
+WOUGNET, Uganda
+Gob_Lab UAI, Chile
+ITS Rio, Brazil
+Internet Bolivia, Bolivia
+Digital Empowerment Foundation, India
+Digital Natives Academy, Aotearoa
+Digital Rights Foundation, Pakistan
+Open Data China, China
+EngageMedia, Asia-Pacific
+[email protected]
+ 
+© The Alan Turing Institute
+2023. All rights reserved.
+The Alan Turing Institute, a charity incorporated and registered in England and Wales with company number 09512457 and charity number 1162533 whose registered office is at British Library, 96 Euston Road, London, England, NW1 2DB, United Kingdom.
+For website-related enquiries email
+[email protected]
+
+Explore the Institute
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Legal
+Awards
