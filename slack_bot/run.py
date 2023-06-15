@@ -11,7 +11,7 @@ from slack_sdk.socket_mode import SocketModeClient
 from slack_sdk.web import WebClient
 
 # Local imports
-from slack_bot import MODELS, Bot
+from .slack_bot import MODELS, Bot
 
 if __name__ == "__main__":
     # Parse command line arguments
@@ -49,21 +49,28 @@ if __name__ == "__main__":
         level=logging.INFO,
     )
 
-    # Read environment variables and command line arguments
+    # Set model name
     model_name = os.environ.get("REGINALD_MODEL")
     if args.model:
         model_name = args.model
     if not model_name:
         model_name = "hello"
-    force_new_index = (
-        os.environ.get("REGINALD_FORCE_NEW_INDEX") == "true" or args.force_new_index
-    )
-    data_dir = os.environ.get("REGINALD_DATA_DIR")
+
+    # Set force new index
+    if os.environ.get("LLAMA_FORCE_NEW_INDEX"):
+        force_new_index = os.environ.get("LLAMA_FORCE_NEW_INDEX").lower() == "true"
+    if args.force_new_index:
+        force_new_index = True
+
+    # Set data directory
+    data_dir = os.environ.get("LLAMA_DATA_DIR")
     if args.data_dir:
         data_dir = args.data_dir
     if not data_dir:
         data_dir = (pathlib.Path(__file__).parent.parent / "data").resolve()
-    which_index = os.environ.get("REGINALD_WHICH_INDEX")
+
+    # Set which index
+    which_index = os.environ.get("LLAMA_WHICH_INDEX")
     if args.which_index:
         which_index = args.which_index
     if not which_index:
@@ -95,7 +102,6 @@ if __name__ == "__main__":
     )
 
     # Add a new listener to receive messages from Slack
-    # You can add more listeners like this
     client.socket_mode_request_listeners.append(slack_bot)
     # Establish a WebSocket connection to the Socket Mode servers
     client.connect()
