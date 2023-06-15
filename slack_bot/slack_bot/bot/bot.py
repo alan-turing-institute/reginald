@@ -27,33 +27,42 @@ class Bot(SocketModeRequestListener):
         try:
             # Extract user and message information
             event = req.payload["event"]
-            if (
-                event.get("type") == "message"
-                and event.get("subtype") == "message_changed"
-            ):
-                # We are not processing changes to messages.
-                return None
             message = event["text"]
             user_id = event["user"]
+            event_type = event["type"]
             sender_is_bot = "bot_id" in event
+
+            # Ignore changes to messages.
+            if (
+                event_type == "message"
+                and event.get("subtype") == "message_changed"
+            ):
+                logging.info(f"Ignoring changes to messages.")
+                return None
+
             logging.info(f"Received message '{message}' from user '{user_id}'")
+
+            # Ignore messages from bots
+            if sender_is_bot:
+                logging.info(f"Ignoring messages from bots.")
+                return None
 
             # If this is a direct message to REGinald...
             if (
-                event["type"] == "message"
+                event_type == "message"
                 and event.get("subtype") is None
                 and not sender_is_bot
             ):
                 model_response = self.model.direct_message(message, user_id)
 
             # If @REGinald is mentioned in a channel
-            elif event["type"] == "app_mention" and not sender_is_bot:
+            elif event_type == "app_mention" and not sender_is_bot:
                 model_response = self.model.channel_mention(message, user_id)
 
             # Otherwise
             else:
                 logging.info(f"Received unexpected event of type '{event['type']}'")
-                model_response = None
+                return None
 
             # Add an emoji and a reply as required
             if model_response:
