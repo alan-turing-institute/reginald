@@ -15,13 +15,6 @@ class Bot(SocketModeRequestListener):
     def __init__(self, model: ResponseModel) -> None:
         self.model = model
 
-    @staticmethod
-    def _request_field_exists(req, key, mapping):
-        exists = key in mapping
-        if not exists:
-            logging.warning(f"Got a request without a '{key}' field: {req.payload}")
-        return exists
-
     def __call__(self, client: SocketModeClient, req: SocketModeRequest) -> None:
         if req.type != "events_api":
             logging.info(f"Received unexpected request of type '{req.type}'")
