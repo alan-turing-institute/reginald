@@ -2,6 +2,7 @@ from __future__ import annotations
 
 # Standard library imports
 import logging
+import math
 import os
 import pathlib
 import re
@@ -65,7 +66,7 @@ class Llama(ResponseModel):
         result += "\n\n".join(texts)
         return result
 
-    def _prep_documents(self):
+    def _prep_documents(self) -> list[Document]:
         # Prep the contextual documents
         documents = []
         for data_file in DATA_FILES:
@@ -91,16 +92,18 @@ class Llama(ResponseModel):
 
     def __init__(
         self,
-        model_name,
-        max_input_size,
-        num_output=512,
-        chunk_size_limit=300,
-        chunk_overlap_ratio=0.1,
+        model_name: str,
+        max_input_size: int,
+        num_output: int = 256,
+        chunk_size_limit: int | None = None,
+        chunk_overlap_ratio: float = 0.1,
     ):
         logging.info("Setting up Huggingface backend.")
         self.max_input_size = max_input_size
         self.model_name = model_name
         self.num_output = num_output
+        if chunk_size_limit is None:
+            chunk_size_limit = math.ceil(max_input_size / 2)
         self.chunk_size_limit = chunk_size_limit
         self.chunk_overlap_ratio = chunk_overlap_ratio
 
