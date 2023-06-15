@@ -1,8 +1,8 @@
-import requests
 import os
-from bs4 import BeautifulSoup
 import urllib.parse
 
+import requests
+from bs4 import BeautifulSoup
 
 CONST_BASE_URL = "https://turing.ac.uk"
 
@@ -10,12 +10,12 @@ CONST_BASE_URL = "https://turing.ac.uk"
 def url_to_filename(url):
     parsed_url = urllib.parse.urlparse(url)
     file_path = parsed_url.path
-    filename = "_".join(file_path.split('/'))
+    filename = "_".join(file_path.split("/"))
     sanitized_filename = urllib.parse.unquote(filename)
 
     # Remove any invalid characters from the filename
-    valid_chars = '-_.()abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789'
-    sanitized_filename = ''.join(c for c in sanitized_filename if c in valid_chars)
+    valid_chars = "-_.()abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+    sanitized_filename = "".join(c for c in sanitized_filename if c in valid_chars)
 
     return "data/" + sanitized_filename + ".txt"
 
@@ -36,13 +36,13 @@ def get_page(url, depth=0):
 
     response = requests.get(url)
 
-    soup = BeautifulSoup(response.text, 'html.parser')
+    soup = BeautifulSoup(response.text, "html.parser")
 
-    links = soup.find_all('a')
+    links = soup.find_all("a")
 
     for link in links:
         if link is not None:
-            href = link.get('href')
+            href = link.get("href")
             if href is not None:
                 if check_string(href):
                     get_page(href, depth + 1)
@@ -63,11 +63,11 @@ def get_page(url, depth=0):
 
     filename = url_to_filename(url)
 
-    with open(filename, 'w', encoding='utf-8') as file:
-        paragraphs = soup.find_all('p')
+    with open(filename, "w", encoding="utf-8") as file:
+        paragraphs = soup.find_all("p")
         for paragraph in paragraphs:
             text = paragraph.get_text()
-            file.write(text + '\n')
+            file.write(text + "\n")
 
 
 if __name__ == "__main__":
