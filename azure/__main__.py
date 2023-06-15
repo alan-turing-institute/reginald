@@ -1,9 +1,10 @@
 import pulumi
-from pulumi_azure_native import containerinstance, network, resources
+from pulumi_azure_native import containerinstance, network, resources, storage
 
 # Get some configuration variables
 stack_name = pulumi.get_stack()
 config = pulumi.Config()
+# azurecfg = pulumi.Config("azure-native")
 
 # Create an resource group
 resource_group = resources.ResourceGroup(
@@ -46,6 +47,33 @@ virtual_network = network.VirtualNetwork(
     virtual_network_peerings=[],
 )
 
+# Define configuration file shares
+storage_account = storage.StorageAccount(
+    "storage_account",
+    access_tier=storage.AccessTier.COOL,
+    account_name=f"sareginald{stack_name}configuration"[:24],  # max 24 characters
+    enable_https_traffic_only=False,
+    encryption=storage.EncryptionArgs(
+        key_source=storage.KeySource.MICROSOFT_STORAGE,
+        services=storage.EncryptionServicesArgs(
+            file=storage.EncryptionServiceArgs(
+                enabled=True, key_type=storage.KeyType.ACCOUNT
+            ),
+        ),
+    ),
+    kind=storage.Kind.FILE_STORAGE,
+    resource_group_name=resource_group.name,
+    sku=storage.SkuArgs(name=storage.SkuName.PREMIUM_ZRS),
+)
+file_share = storage.FileShare(
+    "data_file_share",
+    access_tier=storage.ShareAccessTier.PREMIUM,
+    account_name=storage_account.name,
+    resource_group_name=resource_group.name,
+    share_name="llama-data",
+    share_quota=5120,
+)
+
 # Define the container group
 container_group = containerinstance.ContainerGroup(
     "container_group",
@@ -53,7 +81,7 @@ container_group = containerinstance.ContainerGroup(
     containers=[
         containerinstance.ContainerArgs(
             image="ghcr.io/alan-turing-institute/reginald:main",
-            name="reginald",  # maximum of 63 characters
+            name="chat-completion-azure",  # maximum of 63 characters
             environment_variables=[
                 containerinstance.EnvironmentVariableArgs(
                     name="OPENAI_AZURE_API_BASE",
@@ -69,7 +97,7 @@ container_group = containerinstance.ContainerGroup(
                 ),
                 containerinstance.EnvironmentVariableArgs(
                     name="REGINALD_MODEL",
-                    value="openai",
+                    value="chat-completion-azure",
                 ),
                 containerinstance.EnvironmentVariableArgs(
                     name="SLACK_APP_TOKEN",
