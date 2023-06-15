@@ -28,7 +28,7 @@ if __name__ == "__main__":
         "--data-dir",
         "-d",
         help="Location for data",
-        default=None,
+        default=(pathlib.Path(__file__).parent.parent / "data").resolve(),,
     )
     parser.add_argument(
         "--which-index",
@@ -37,7 +37,7 @@ if __name__ == "__main__":
         Currently supports 'all_data' and 'handbook'. If regenerating index, 'all_data'
         will use all .txt .md. and .csv files in the data directory, 'handbook' will
         only use 'handbook.csv' file.""",
-        default=None,
+        default="all_data",
     )
 
     args = parser.parse_args()
