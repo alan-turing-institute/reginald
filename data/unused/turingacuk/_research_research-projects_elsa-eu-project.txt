@@ -1,0 +1,56 @@
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+A large network of top European experts in artificial intelligence (AI) and machine learning (ML) is to promote the development and deployment of cutting-edge AI solutions in the future and make Europe the world's lighthouse of AI. The EU is funding the project with around €7.5 million, with a further €2.5 million coming from the United Kingdom and Switzerland. The "European Lighthouse on Secure and Safe AI" (ELSA) project networks excellent researchers from 26 top research institutions and companies in Europe to pool their expertise in the field of AI and machine learning. The growing network builds upon the European Laboratory for Learning and Intelligent Systems (ELLIS) and is coordinated by the CISPA Helmholtz Center for Information Security in Saarbrücken which is member of the ELLIS Unit Saarbrücken.
+"Artificial intelligence has the potential to improve all our lives enormously - be it through better healthcare or completely new possibilities for mobility. But a blessing can quickly turn into a curse if the technology is not based on a secure foundation. I see enormous potential in bringing together Europe's top researchers through ELSA so that we can face the great challenges of AI and ML together. I am sure we can make a lot of difference together," says Mario Fritz, faculty at CISPA.
+The new virtual centre of excellence will focus on the further development of ML methods, in particular so-called deep learning, as these methods form the basis for most modern AI applications. The initial three-year project will focus on developing robust technical approaches that are compatible with legal and ethical principles. At the same time, the network of excellence aims to create the necessary structures to promote the development and use of AI technology and to break down barriers. ELSA builds on and extends ELLIS. Founded in 2018,  ELLIS is an internationally recognized pan-European AI network of excellence which wants to ensure that the highest level of modern AI research can be performed in the open societies of Europe.
+“ELLIS has set out to build a European brand of AI. For this it is crucial not only to have state-of-the-art performance, but also a high level of transparency, accountability, and trust. With its focus on security and safety, ELSA tackles some of the core issues, and with its outstanding team drawing from the extended ELLIS community, it has the technical power to make progress on some of the hard open problems", says ELLIS President Bernhard Schölkopf.
+ELLIS and its partner network ELISE (European Network of AI Excellence Centres) have already demonstrated in the past what Europe is capable of in the field of AI and ML. Following their success and structure, ELSA also rests on three pillars: selected research programs, local research units, and a PhD and postdoc program.
+The ELSA research programs will underpin the research agenda of the 26 partnering institutions and will focus on technical robustness and security, privacy protection techniques and infrastructures, and human agency and oversight. One of the primary goals of the network of excellence is to detect threats early and mitigate damage. This is important because areas for AI solutions are such sensitive as the healthcare sector or autonomous driving. Artificial intelligence is also used in robotics, cybersecurity, media and document security. All of these application areas are the focus of the network.
+To achieve its goals, the network is addressing three major challenges: The development of robustness guarantees and certificates, data-secure and robust collaborative learning, and the development of human control mechanisms for the ethical and secure use of AI. The local research units are designed to bring together the best AI researchers in Europe not only virtually, but also at their sites. In addition, excellent researchers from other institutions can be connected to ELSA units through fellowships. Above all, the network will be open to contributions from industry partners and collaborations in order to significantly advance AI solutions and remain internationally competitive.
+This is where the ELSA Innovation Lab will make a decisive contribution. Building on the already existing and highly successful PhD and postdoc programs of ELLIS and ELISE, ELSA will support young researchers from all over the world. They will benefit from the knowledge and shared mentorship of leading scientists in the network, be able to participate in events to network, and have the opportunity to further their education through workshops. ELSA is funded under Horizon Europe, one of the largest research and innovation funding programs in the world. Its content is geared toward important societal issues such as health, sustainable development, and digitalisation. A central goal of the EU framework program is to promote excellence in European science. For more information please visit here.
+The Turing is working primarily on WP3 'Human Agency and Oversight' T3.3, T3.4 with University of Birmingham in order to deliver T3.5 which the Institute is leading on. The Turing is responsible for delivering D3.6 Papers and accompanying code from Task 3.5 with new methods and open source tools.
+© The Alan Turing Institute
+2023. All rights reserved.
+The Alan Turing Institute, a charity incorporated and registered in England and Wales with company number 09512457 and charity number 1162533 whose registered office is at British Library, 96 Euston Road, London, England, NW1 2DB, United Kingdom.
+For website-related enquiries email
+[email protected]
+
+Explore the Institute
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Legal
+Awards

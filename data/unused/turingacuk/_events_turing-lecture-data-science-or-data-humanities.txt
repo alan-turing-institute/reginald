@@ -1,0 +1,61 @@
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+
+This event is now full, however you can join remotely by visiting our YouTube channel on the day.
+Melissa Terras is the Professor of Digital Cultural Heritage at the University of Edinburgh‘s College of Arts, Humanities, and Social Sciences, leading digital aspects of research within CAHSS, and Director of Research in the new Edinburgh Futures Institute. Her research focuses on the use of computational techniques to enable research in the arts, humanities, and wider cultural heritage and information environment that would otherwise be impossible.
+With a background in Classical Art History and English Literature (MA, University of Glasgow), and Computing Science (MSc IT with distinction in Software and Systems, University of Glasgow), her doctorate (Engineering, University of Oxford) examined how to use image processing and machine learning to interpret and read deteriorated Ancient Roman texts. She is an Honorary Professor of Digital Humanities in UCL Department of Information Studies, where she was employed from 2003-2017, Directing UCL Centre for Digital Humanities from 2013. Books include “Image to Interpretation: An Intelligent System to Aid Historians in Reading the Vindolanda Texts” (2006, Oxford University Press) and and “Defining Digital Humanities: A Reader” (Ashgate 2013) which has been translated into Russian and Chinese.
+She is a Trustee of the National Library of Scotland, serves on the Board of Curators of the University of Oxford Libraries. is a Fellow of the Chartered Institute of Library and Information Professionals, and Fellow of the British Computer Society. You can generally find her on twitter @melissaterras.
+
+What are the opportunities, issues, and rewards for researchers developing data-led approaches to answer research questions in the Arts and Humanities? How can we build and utilise appropriate computational methods for the analysis of our past and present societies? What possibilities and barriers are there in working in this crossover point from data science to the humanities? And how can the humanities contribute to development of data science approaches? From the development of Handwritten Text Recognition for archival material, and the mining of millions of words of historical newspaper archives, this talk will showcase a range of innovative international research projects, whilst also giving pointers on how others can approach this interdisciplinary space successfully. In addition, it will raise issues of how tricky yet rewarding “interdisciplinary research” – which we are all now being encouraged to do – can be.
+14:00 - 14:30 - Registration
+14:30 - 14:35 - Introduction (Barbara McGillivray)                          
+14:35 - 15:25 - Data science or data humanities? (Melissa Terras)
+15:25 - 16:00 - Q&A
+16:00             - Close
+The Alan Turing Institute
+1st floor of the British Library, 96 Euston Road, London, NW1 2DB
+© The Alan Turing Institute
+2023. All rights reserved.
+The Alan Turing Institute, a charity incorporated and registered in England and Wales with company number 09512457 and charity number 1162533 whose registered office is at British Library, 96 Euston Road, London, England, NW1 2DB, United Kingdom.
+For website-related enquiries email
+[email protected]
+
+Explore the Institute
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Legal
+Awards

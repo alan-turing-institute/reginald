@@ -1,0 +1,55 @@
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+The Turing was a key academic partner in the Digital Sandbox Pilot – an initiative from the Financial Conduct Authority (FCA) and the City of London Corporation that ran in winter 2020-21 and provided 28 financial technology (fintech) firms with tools to test, develop and showcase their technologies. The aim was to develop products and services to tackle financial challenges brought about by the COVID-19 pandemic, including supporting people who have become financially vulnerable, and preventing fraud and scams.
+A crucial aspect of this pilot was synthetic data – artificially generated data that has realistic statistical properties but no identifying information, making it suited for training and validating computer models in areas where privacy is key. The Turing was the lead evaluator of the synthetic data used in the pilot, with researchers in the finance and economics programme and Research Engineering team analysing the data to ensure that it was good quality. The synthetic data made available to participants included details of seven million fictional individuals, 400 million banking transactions made through five fictional banks, and five million devices used for electronic payments.
+“Our project wouldn’t have been possible without the synthetic data that was evaluated by the Turing’s experts. They helped us to make sure that the data matched up as closely as possible to real-world data.”
+Matt Lowe, Senior Technical Specialist at the FCA and technical lead on the Digital Sandbox Pilot
+The pilot ran from November 2020 to February 2021, and the FCA hopes to make the synthetic data more widely available, so that other fintech firms can benefit. The FCA is now planning a second pilot, this time focusing on financial challenges related to sustainability, while also exploring operating and governance models for a permanent version of the digital sandbox.
+ 
+This piece first appeared in The Alan Turing Institute’s Annual Report 2020-21
+Top image: alevision / Unsplash
+© The Alan Turing Institute
+2023. All rights reserved.
+The Alan Turing Institute, a charity incorporated and registered in England and Wales with company number 09512457 and charity number 1162533 whose registered office is at British Library, 96 Euston Road, London, England, NW1 2DB, United Kingdom.
+For website-related enquiries email
+[email protected]
+
+Explore the Institute
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Legal
+Awards

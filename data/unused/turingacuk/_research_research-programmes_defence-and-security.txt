@@ -1,0 +1,75 @@
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+The defence and security (D&S) community – represented by the Ministry of Defence (Defence Science and Technology Laboratory [Dstl] and Joint Forces Command), GCHQ and MI5 – are collaborating with The Alan Turing Institute to deliver an ambitious programme of data science and artificial intelligence (AI) research to deliver impact in real world scenarios. 
+Following the signing of a collaboration agreement and a year of knowledge exchange the D&S programme was launched in 2017. Since then, programme personnel has grown across research, leadership, and support. 
+The programme’s vision is to undertake multidisciplinary data science and AI research to ensure a safe, secure, and prosperous society:
+The programme carries out this vision through traditional academic research (e.g. DSO Partnership, AI for Cyber Defence Research Centre [AICD]), capability development (e.g. Applied Research Centre for Defence and Security [ARC]) and policy analysis (e.g. Centre for Emerging Technology and Security [CETaS])
+The D&S programme is solving challenges across four key areas:
+Existing projects:
+Existing projects:
+Existing projects:
+Existing projects:
+Starting with the identification of three core research projects, the programme’s activity has rapidly expanded. Additional research projects in our remaining two key challenge areas will begin before the end of the year, and several interdisciplinary research themes have evolved that cut across the Turing’s strategic partners. Our activities are driven by the programme’s goals of delivering world-leading research with real-world impact.
+Every computer network is vulnerable to cyber criminals and hackers. Detecting attackers within a network is a complex task, and even skilled operators struggle to keep track of them all.
+To bolster network defences and speed up response times, computer security organisations are increasingly looking to autonomous systems. Researchers led by the Turing’s Vasilios Mavroudis and Chris Hicks are exploring a technique called reinforcement learning – a field of artificial intelligence in which computer algorithms learn by solving problems through trial and error, with the goal of maximising a specified reward.
+In 2022, the team won the first Cyber Autonomy Gym for Experimentation (CAGE) challenge, run by The Technical Cooperation Program. The team has made its code publicly available so that others can benefit from and expand upon this work.
+Read the full case study as seen in the 2021-22 Alan Turing Institute Annual Report
+An announcement was made that the programme’s long-term work has been bolstered by a number of shorter, strategically important projects supported by funding from GCHQ. Each up to six months in duration, these projects aim to demonstrate immediate, meaningful impact, and address the key challenges that frame the defence and security programme.
+The projects are focusing on a diverse range of applications including understanding hacker communities, adversarial machine learning, encryption, modelling of civil conflict, topological data analysis, and utilising game theory in cyber security. The projects are expected to yield academic impact through publications, and real-world impact through software, which will be released for use and further development.
+The Manufacturer, the UK’s premier industry publication for providing manufacturing news, articles, and insights, published an article about the announcement.
+Read the Manufacturer article – “Alan Turing Institute to help combat global cyber security challenges”
+ 
+Work produced by Turing Fellow Dr Weisi Guo is aiming to understand the mechanics that cause conflict and identify multi-scale population areas that are at risk of conflict. The research utilises the latest developments in complex networks and spatial interaction theory to model the effect of multiplexed regional-global interactions.
+Findings have shown that ‘crossroad’ towns and cities where there are few other routes correlate strongly with data on violence; including terrorism, war between states, and gang violence. The work is building an evidence base which aims to help sustainable global development of infrastructure in order to reduce conflict.
+Dr Guo was interviewed by BBC News about his work, the article going into depth about the potential ramifications of the work and the role of the Turing in the research.
+Read the BBC article – “Can mapping conflict data explain, predict and prevent violence?”
+ 
+Turing Fellow Dr Weisi Guo and Director of Special Projects Sir Alan Wilson have written a comment piece for Nature, explaining how using artificial intelligence to predict outbursts of violence and probe their causes could save lives.
+The piece details existing research being conducted into the forecasting of conflict, including the work of Guo and Wilson at the Turing. The piece identifies three things that will improve conflict forecasting: new machine-learning techniques; more information about the wider causes of conflicts and their resolution; and theoretical models that better reflect the complexity of social interactions and human decision-making. The piece goes on to propose that an international consortium be set up to develop formal methods to model the steps society takes to wage war.
+Read the full Nature comment piece
+For more information, please contact Tracey Peterson ([email protected]) and Hushpreet Dhaliwal ([email protected]).
+© The Alan Turing Institute
+2023. All rights reserved.
+The Alan Turing Institute, a charity incorporated and registered in England and Wales with company number 09512457 and charity number 1162533 whose registered office is at British Library, 96 Euston Road, London, England, NW1 2DB, United Kingdom.
+For website-related enquiries email
+[email protected]
+
+Explore the Institute
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Legal
+Awards

@@ -1,0 +1,53 @@
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Achieving and maintaining normal sub-lingual blood flow in small ( 20m) vessels, termed as microcirculation, is essential for critically ill intensive care patients since this is where the delivery of blood and oxygen to tissues occurs. However, historically, most clinical trials & treatments have focused on blood flow in the larger blood vessels (macrocirculation) [20, 21, 14], largely due to the greater ease with which this can be practically measured.
+Technological advances have enabled video recordings of the sub-lingual microcirculation (i.e. from under the tongue) to be obtained using darkfield microscopy (DFM). However, the difficulties in analysing these videos has hindered the uptake and utilisation of this imaging modality. Currently, these short video sequences are analysed mostly by hand, to quantify the vessel density and flow within vessels within the field of view. The manual analysis and vessel segmentation is an extremely labour intensive procedure, which can take up to one hour to score a single video [12].
+This challenge aimed to establish whether a single validated measure of microcirculatory perfusion (microcirculatory flow index) can be predicted directly from a DFM video sequence, without intermediate manual analysis steps. Automatic analysis that can be carried out in (near) real-time would facilitate the incorporation of microcirulatory targets into clinical trials by enabling the impact of interventions to be quantified and enacted upon with the aim of optimising the microcirculation and improving patient outcomes.
+Data Study Group team. (2022, July 5). Data Study Group Final Report: University of Birmingham. Zenodo. https://doi.org/10.5281/zenodo.6799096
+PI: Kashif Rajpoot
+4.9 MB
+© The Alan Turing Institute
+2023. All rights reserved.
+The Alan Turing Institute, a charity incorporated and registered in England and Wales with company number 09512457 and charity number 1162533 whose registered office is at British Library, 96 Euston Road, London, England, NW1 2DB, United Kingdom.
+For website-related enquiries email
+[email protected]
+
+Explore the Institute
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Legal
+Awards

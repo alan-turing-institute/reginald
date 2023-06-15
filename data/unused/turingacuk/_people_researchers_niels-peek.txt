@@ -1,0 +1,51 @@
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Niels Peek is Professor of Health Informatics and Strategic Research Domain Director for Digital Health at the University of Manchester. He has a background in Computer Science and Artificial Intelligence, and his research focuses on data-driven methods for health research, healthcare quality improvement, and computerised decision support. He leads the Greater Manchester Connected Health City, which is part of the £20M "Health North" investment to establish a learning health system in the North of England. Professor Peek has co-authored more than 150 peer-reviewed scientific publications. From 2013 to 2017 he was the President of the Society for Artificial Intelligence in Medicine.
+He is a member of the editorial boards of the Journal of the American Medical Informatics Association and the Artificial Intelligence in Medicine journal. In April 2017, he organised the Informatics for Health 2017 conference in Manchester which was attended by more than 800 people from 30 countries. He also co-chaired the Scientific Programme Committee of MEDINFO-2017, the 16th World Congress on Health and Biomedical Informatics, which was held in Hangzhou, China, in August 2017. In 2018 he was elected to become a fellow of the American Collecege of Medical Informaticians and a fellow of the Alan Turing Institute.
+Health data, for example from electronic health records or other sources such as wearables and the Internet, are subject to complex data generation processes, which are not addressed with existing methods for risk prediction. Professor Peek's research for the Turing focuses on two key issues. First, routine health data is subject to ‘informative presence’ whereby presence of a particular observation (e.g. a blood test) is informative independent of the actual result of the test. For example, it gives information about an individual’s tendency to engage with the healthcare system, and/or information about a clinician’s prior beliefs about a patient’s condition that drives them to run particular tests. This is challenging to model because it essentially corresponds to a ‘missing not at random’ scenario. Second, existing risk prediction models model prognostic risk only – and do not allow consideration of ‘what-if’ scenarios.
+potential outcomes (causal) framework would allow us to infer risk under different intervention scenarios – both at individual patient level and at policy level. Initial work has explored the use of marginal structural models to infer potential outcomes for patients at risk of cardiovascular events – where the intervention is a statin prescription. Currently more advanced models that allow ‘what-if’ prediction modelling using messy observational data are being developed.
+© The Alan Turing Institute
+2023. All rights reserved.
+The Alan Turing Institute, a charity incorporated and registered in England and Wales with company number 09512457 and charity number 1162533 whose registered office is at British Library, 96 Euston Road, London, England, NW1 2DB, United Kingdom.
+For website-related enquiries email
+[email protected]
+
+Explore the Institute
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Legal
+Awards

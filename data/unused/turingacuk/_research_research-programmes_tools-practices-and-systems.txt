@@ -1,0 +1,66 @@
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Data science and artificial intelligence are becoming ever more prevalent in the UK with common needs and challenges arising. Solving these challenges requires novel tools, practices and systems which can unlock advances across the wider sector and accelerate innovation.
+The tools, practices and systems (TPS) programme at the Turing represents a cross-cutting set of initiatives which seek to build open source infrastructure that is accessible to all, and to empower a global, decentralised network of people who connect data with domain experts.
+The programme will:
+The programme builds upon work done under the Turing’s AI for science and government integrated research programme, supported by the UKRI Strategic Priorities fund.
+TPS also supports the Turing's Ethics Advisory Group to implement guidance developed by social scientists and philosophers in the public policy programme.
+TPS is closely aligned with the Research Engineering Group at the Turing.
+ 
+Header image created by Scriberia for The Turing Way community and used under a CC-BY licence.
+Open-source toolkits represent a hugely valuable resource for a wide range of sectors and industries. TPS will work closely with developers, stakeholders and end-users to support the creation and maintenance of essential open-source software libraries. Key widely-used products supported by the TPS programme to date include a machine learning framework for the Julia programming language, and a toolbox for time series analysis in data science.
+ 
+Effective science relies on reproducibility. TPS will continue to promote and embed practices which ensure that data science research is carried out in a reproducible way from inception to completion. The Turing Way guide for reproducible research is used around the world to ensure that published results can be interrogated and extended with ease.
+ 
+Secure infrastructure is essential for research and innovation that deals with high-sensitivity data. The Data Safe Haven initiated under TPS is now deployed around the UK – this secure research environment gives data scientists the scale and power of the cloud to predict personalised outcomes without sacrificing the privacy of people represented in the dataset. TPS also prioritises development of high-performance computing infrastructure which can optimise potential of scientific research.
+ 
+TPS looks to co-create solutions in a multidisciplinary and mutually respectful environment. We are committed to demonstrating the creativity and transformative vision that can only be delivered by a diverse group of experts in a welcoming and collaborative space. Researchers and practitioners will be trained and mentored to transparently communicate their insights, and programme participation and outputs will be promoted openly to reach a broad community.
+The crisis of reproducibility in science is well known. The combination of ‘publish or perish’ incentives, secrecy around data and the drive for novelty at all costs can result in fragile advances and lots of wasted time and money. Even in data science, when a paper is published there is generally no way for an outsider to verify its results, because the data from which the findings were derived are not available for scrutiny. Such science cannot be built upon very easily: siloed science is slow science.
+That’s one of the reasons funders and publishers are beginning to require that publications include access to the underlying data and analysis code. It’s clear that this new era of data science needs a new cultural and practical approach, one which embraces openness and collaboration more than ever before. To this end, a group of Turing researchers have created The Turing Way – an evolving online 'handbook' on how to conduct world-leading, reproducible research in data science and artificial intelligence.
+Read the full impact story
+Please contact Programme Lead Kirstie Whitaker at [email protected] with any enquiries.
+© The Alan Turing Institute
+2023. All rights reserved.
+The Alan Turing Institute, a charity incorporated and registered in England and Wales with company number 09512457 and charity number 1162533 whose registered office is at British Library, 96 Euston Road, London, England, NW1 2DB, United Kingdom.
+For website-related enquiries email
+[email protected]
+
+Explore the Institute
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Legal
+Awards

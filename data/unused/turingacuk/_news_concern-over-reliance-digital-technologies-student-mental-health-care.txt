@@ -1,0 +1,64 @@
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Students and staff at universities have significant concerns about the impact of relying on digital technologies for mental healthcare, according to new research published today by The Alan Turing Institute. 
+Students that participated in this research expressed concerns about the data privacy policies of digital mental health tools and that in-person care was diminishing and being replaced with digital technologies and services. 
+Students were also concerned by the lack of empathy offered by technology and the potential exacerbation of social isolation by digital offerings. 
+The university mental health administrators that took part voiced concerns over the clinical effectiveness and the management of risks on digital mental health platforms. 
+They also expressed concerns that the introduction of digital services can influence who is seen to take responsibility for the mental ill-health of students, as responsibility is shifted from the institution to the individual, and so impacts on how duty of care is understood. 
+The findings come from a series of interviews and participatory workshops, which took place with 25 university students and university administrators from across 10 UK universities. 
+The crisis in student mental health across UK universities worsened during the pandemic. For many universities, the additional challenges faced by the COVID-19 pandemic have resulted in an increased reliance on digital mental health technologies, from online chatbots to cognitive behavioural therapy (CBT) delivered by smartphones. 
+The report provides key recommendations to the university sector on how they can best navigate the complex and radically shifting landscape of digital mental health tools.  
+These recommendations include ensuring there are clear and open communications with students around the benefits and risks of digital mental health services and ensuring issues of digital poverty are taken into account when planning for the implementation of technological solutions. 
+To build trust in digital mental health technologies, it is essential to show how ethical principles have been considered and included in their design, development, and deployment. 
+To address this need, the report authors have set out a positive proposal for a framework and methodology called 'Trustworthy Assurance'. This will help regulators, policymakers, developers, and researchers show how they’ve embedded core ethical principals in the design, development, and deployment of these technologies.  
+Dr Chris Burr, lead author and Ethics Fellow at The Alan Turing Institute, said: “Digital technologies are already transforming mental health research and the provision of mental healthcare services. However, the increasing availability of such technologies raises important ethical questions for affected users about their right to privacy and the varying quality of care offered. It also offers significant challenges for regulators and developers about how best to manage the design, development, and deployment of these technologies. The lack of transparency around these technologies at present is contributing to a culture of distrust which impacts vulnerable people getting support. 
+“Our research aims to address some of these concerns, which we hope will help make these technologies more responsible and trustworthy. Most importantly, we hope that our work can contribute to improving mental health services for those who need them.” 
+Professor Mark Girolami, Chief Scientist at The Alan Turing Institute, said: “With mental health services under more pressure than ever before, more people are turning to digital services and solutions. 
+“That’s why this research is so important. It’s essential that anyone providing digital mental health services for people at a potentially vulnerable time in their lives, can be sure that the services are safe and have been created responsibly.” 
+Rianna Walcott, a workshop participant and mental health advocate, said: “In my experience digital mental health services can be really beneficial. I found my therapist online using these services.  
+“But it’s important that they’re carefully monitored and used with some caution.  There shouldn’t be a one size fits all approach – particularly when it comes to mental health care because different people will use technology differently. What works for me won’t work for someone else. So, I was happy to be a part of this research to try and improve mental health provisions for young people, particularly those who are marginalised at the intersections of race, gender, class, sexuality.  
+© The Alan Turing Institute
+2023. All rights reserved.
+The Alan Turing Institute, a charity incorporated and registered in England and Wales with company number 09512457 and charity number 1162533 whose registered office is at British Library, 96 Euston Road, London, England, NW1 2DB, United Kingdom.
+For website-related enquiries email
+[email protected]
+
+Explore the Institute
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Legal
+Awards

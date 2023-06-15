@@ -1,0 +1,52 @@
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Like all financial institutions, HSBC uses a large amount of data to support its primary goals of providing trusted services to customers. Data that is personal can play a significant role in protecting the bank, and its customers, from financial loss including bad lending decisions and/or fraud. Therefore, this project investigates the role of synthetic data to undertake various analysis and modelling projects without having to directly rely on personal data. For example, better analysing customers propensity to acquire further products (mortgages, loans etc) or fraud. This project is also interested to understand the striking and appropriate balance between privacy and utility and to support the understanding of of synthetic data as a service, by investigating commercially available synthetic data techniques and tools.
+There is a natural tension, in modern data science between wanting to apply or develop novel AI techniques and wanting to preserve the privacy of individuals or other sensitive information. One way to address this, is to use algorithms to construct synthetic datasets which will be close enough to the real data to perform the necessary development and testing, but far enough away not to impact the privacy of individuals or reveal sensitive information.
+The project aims to understand the appropriate balance between privacy, fidelity and utility of synthetic data, and to develop methods around said generation in the context of finance, such as analysing banking customers’ propensity to acquire further products such as mortgages and loans.​​
+As above this work is being applied with our HSBC partners, but the ideas have broad applicability, and we are working with other Turing teams working on similar areas.
+Monica Vakil-Dewar[email protected]
+© The Alan Turing Institute
+2023. All rights reserved.
+The Alan Turing Institute, a charity incorporated and registered in England and Wales with company number 09512457 and charity number 1162533 whose registered office is at British Library, 96 Euston Road, London, England, NW1 2DB, United Kingdom.
+For website-related enquiries email
+[email protected]
+
+Explore the Institute
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Legal
+Awards

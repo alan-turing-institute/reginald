@@ -1,0 +1,54 @@
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+
+I am currently researching AI ethics and accountability, with a focus on data bias and the implications for criminal justice. This forms the basis of the Turing project I am leading, which is exploring the predictive mechanisms underpinning a machine learning algorithm used by some police services to forecast future crime locations. The project’s primary objective is to identify possible conduits of bias and corrective measures. To do this, the project uses a computational model that replicates the algorithm to run large-scale tests and observe correlations between data inputs and outputs (predictions).
+Similarly, another project I’m leading is investigating the relationship of AI and criminal justice. The study, funded by the Web Science Institute (WSI) at the University of Southampton, is exploring how platform algorithms integrated into Online Social Networking Sites (ONSs) interact with broad social factors to structure discourses about crime and punishment.
+Leading two research projects on the benefits of digitisation for criminal justice services initially led me to become interested in AI ethics and accountability. I found that data-related issues can prompt predictive algorithms to entrench the belief that social categories such as race and social status are somewhat linked to risk of recidivism. An example is the tendency of some predictive algorithms to obscure problems such as racial bias and infer from patterns in datasets that high rates of arrest are risk predictors. An additional example is the inference that structural problems, for example, poor access to education and employment are also risk predictors.
+I find the interdisciplinarity of my current projects particularly exciting, as they bring together researchers from social, computer, and data science disciplines. This makes it possible to bridge gaps between the technical and the social, demonstrating how innovative interdisciplinary methods can be when used to study pressing social problems.
+AI ethics, data bias, digital society.
+Reading! My preferences are historical fiction and literary/narrative non-fiction. I am also a keen runner.
+© The Alan Turing Institute
+2023. All rights reserved.
+The Alan Turing Institute, a charity incorporated and registered in England and Wales with company number 09512457 and charity number 1162533 whose registered office is at British Library, 96 Euston Road, London, England, NW1 2DB, United Kingdom.
+For website-related enquiries email
+[email protected]
+
+Explore the Institute
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Legal
+Awards

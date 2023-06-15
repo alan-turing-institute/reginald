@@ -1,0 +1,53 @@
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+The software agent paradigm emerged in the late 1980s, when it was envisaged as a new mode of user interface. Instead of software acting as a dumb, passive recipient of our instructions, the dream was to build software applications that would instead act as pro-active assistants, working with us on our everyday tasks. This approach is now standard: we have software agents on our phones and in our homes – Siri, Alexa, and Cortana are all manifestations of the software agent dream. A natural development of the software agent paradigm is the idea that these agents will interact not just with humans, but with each other, and it is this idea that gives rise to the paradigm of multi-agent systems.
+Traditionally, AI focussed on attributes of intelligent behaviour such as learning, planning, and problem solving. Multi-agent systems (MAS) emphasise a different set of skills. Specifically, to make the dream of multi-agent systems a reality, then we will need to build AI systems that have social skills – the ability to cooperate, coordinate, and negotiate with other software agents and with humans in order to autonomously achieve delegated goals. Considerable emphasis has recently been given to issues of AI safety, and multi-agent systems bring with them their own challenges – in particular, the dynamics of multi-agent systems can be unpredictable and difficult to understand. To make safe multi-agent systems a reality, we need to address these challenges head on.
+Multi-agent systems are now a standard technique in many areas, for example in agent-based financial modelling, agent-based epidemiological modelling, automated trading, business process modelling, security resource allocation, and multi-robot systems. The work of this programme will have impacts across this spread of applications.
+The MAS interest group at The Alan Turing Institute provides a central meeting point for UK-based researchers in universities, industry, and defence who are interested in MAS research. We maintain a UK-wide MAS mailing list through which list members can communicate relevant opportunities and events. We organise regular events (spotlight presentations, UK-MAS symposia) and maintain a virtual MAS labs map. Find out more about the interest group.
+Mike Wooldridge [email protected]
+You can find out more information about the multi-agent systems interest group by joining the mailing list.
+© The Alan Turing Institute
+2023. All rights reserved.
+The Alan Turing Institute, a charity incorporated and registered in England and Wales with company number 09512457 and charity number 1162533 whose registered office is at British Library, 96 Euston Road, London, England, NW1 2DB, United Kingdom.
+For website-related enquiries email
+ [email protected]
+
+Explore the Institute
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Legal
+Awards

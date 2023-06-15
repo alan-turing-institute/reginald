@@ -1,0 +1,58 @@
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+
+I have a medical background and have always been interested in how technology could be used to improve healthcare. Around three years ago, I started my journey into data science by learning Python - I remember how excited I was when I wrote my first program ‘Hello world!’. 
+My journey into data science led me to the exciting opportunity to be involved in the HDR UK’s second black internship programme. This is one of several steps they are taking to give black data scientists, a heavily under-represented group, the chance to be involved and flourish in the health data science sector. Interns are matched to various host organisations, and I was delighted to have been be welcomed and supported by The Alan Turing Institute. 
+I had the opportunity to work as a research data scientist with the Research Engineering Team (REG) (a team of about 40 research data scientists and software engineers).  
+I worked on a project exploring the use of synthetic data generators. This offers a way to generate realistic (but not real) patient data and associated health records in the OMOP (Observational Medical Outcomes Partnership) data models format using Synthea, an open-source patient generator. As a result of privacy and legal issues, healthcare data is difficult to access - synthetic data is useful to help enable data science experiments and machine learning applications.  
+During the internship, with a lot of effort from myself, help from team members, my project team lead - May Yong, my line manager - Iain Stenson, my mentor - Markus Hauru, and Martin O’Reilly, Director of Research Engineering at the Turing. I developed technical and personal skills that will be extremely beneficial in my career
+I had a very rewarding experience working at the Turing and it will certainly help my future in the field of health data science. I am grateful to have been given this opportunity to sharpen my job skills in this field and the chance to work for such a wonderful organisation.  
+The most memorable experience was attending the RSECon 2022, the sixth annual conference for Research Software Engineering. There were interesting talks and enlightening workshops. I met people from different organisations, the dinner was amazing and the show at the dinner was just incredible.  
+Attracting people from diverse backgrounds must be intentional and the Turing has made efforts in this regard with the Equality, Diversity and Inclusivity (EDI) strategy and action plan launched in September 2021.  
+It is crucial to focus on growing the existing diverse talent in the Turing. If you can effectively nurture and promote diversity within an organisation, minorities will see it as an excellent place to work and will apply for open positions. Also, recruitment teams must actively seek out diverse candidates. One approach is to encourage diverse employees within the Turing to refer their connections. Creating a diverse candidate referral program is a great way to boost diversity. 
+Finally, demonstrating the diversity already in the Turing is important to attract talents from diverse backgrounds,. This could be achieved by having a diverse interview panel for the interview process and displaying pictures that show the diversity at the Turing in places accessible to the public, for example the Turing’s website. A picture is still worth a thousand words. These could have far-reaching effects in encouraging people from a range of backgrounds to apply to the Turing.  
+© The Alan Turing Institute
+2023. All rights reserved.
+The Alan Turing Institute, a charity incorporated and registered in England and Wales with company number 09512457 and charity number 1162533 whose registered office is at British Library, 96 Euston Road, London, England, NW1 2DB, United Kingdom.
+For website-related enquiries email
+[email protected]
+
+Explore the Institute
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Legal
+Awards
