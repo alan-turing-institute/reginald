@@ -1,0 +1,62 @@
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Living with Machines invites you to join us for two events with Professor Jo Guldi, where you will hear first hand from one of the world's leading digital humanists. During this event, you will get insights into recently published historical research on global land rights and land reform and understand more about how the humanities is an area of extreme potential for growth in data science.
+Event 1
+Jo warns of an age of pseudo-history promoted by GPT-3 and easy algorithms, fuelling nationalism and populism. Jo will contrast the naive use of algorithms with "hybrid knowledge," the exciting domain where data-driven analysis of large-scale textual repositories meets critical thinking from the humanities and social sciences. This event is suited for a cross-disciplinary audience. 
+Event 2
+Jo will present on her latest book, The Long Land War, which tells a story as old as human history: the global struggle over food, water, land, and shelter. The Long Land War focuses on technology and expertise. This event is open to the public. 
+This event is organised by The Alan Turing Institute, Living with Machines and the British Library. This event is virtual and free to attend. 
+Event 1: Pseudo History and Digital History: The Dangerous Art of Text Mining
+Jo argues that a world awash in text requires interpretive tools that traditional quantitative science cannot provide. Text mining is dangerous because analysts trained in quantification often lack a sense of what could go wrong when archives are biased, incomplete, or evidence the suppressions of the past. Jo's talk will review a brief catalogue of disasters created by data science experts who voyage into humanistic study.
+It finds a solution in “hybrid knowledge,” or the application of historical methods to algorithm and analysis. Case studies engage recent work from the philosophy of history (including Koselleck, Erle, Assman, Tanaka, Chakrabarty, and others) and investigate the “fit” of algorithms with each historical frame of reference on the past.
+Event 2: The Long Land War: The Global Struggle for Occupancy Rights, 1881-1974
+The Long Land War tells a story as old as human history: the global struggle over food, water, land, and shelter. The book follows rent strikes, political movements and ideas from Ireland and India to the United Nations, Latin America, Asia, Africa, and the rest of the developed world, tracing the intersection of popular protest, nationalism, Communist and capitalist ideology, and utopian schemes involving the potential of small-scale technology and large-scale maps. Through struggle, those movements redefined private property as a collective resource whose value was its ability to support food and housing.
+Jo Guldi will tell the history of state-engineered “land reform” projects from their triumphant origins in Victorian Ireland to their quiet assassination by the United States in 1974. She introduces land reform as a movement forged by a complex diversity of international actors, among them Irish peasants, Hindu saints, development analysts, economists, and indigenous farmers. Her research examines the success and failure of land reform against the complex interplay of Cold War ideology, United Nations schemes for improvement, World Bank dogma, grassroots activism, and human shortcomings.
+The 1974 coup cast poor peoples around the world into a state of dependency on landlords: it has made a world of occupancy rights increasingly difficult to imagine. Today, land use represents a major key to the governance of climate change. We can apply the lessons of the past to the governance of climate change today, but we only have a vanishingly small window in which to do so.
+
+ 
+© The Alan Turing Institute
+2023. All rights reserved.
+The Alan Turing Institute, a charity incorporated and registered in England and Wales with company number 09512457 and charity number 1162533 whose registered office is at British Library, 96 Euston Road, London, England, NW1 2DB, United Kingdom.
+For website-related enquiries email
+[email protected]
+
+Explore the Institute
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Legal
+Awards

@@ -1,0 +1,75 @@
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Digital twins are radically reshaping most aspects of modern technology. A key objective of a digital twin is that it can faithfully capture time-evolutionary behaviour of the physical twin. Significant value and advantage can then be obtained by monitoring data and anticipating changes that happen over time, e.g. for asset management, scheduling of operation and maintenance, extending operational life and increasing security and resilience, to mention just a few tasks. 
+At present, there is only a very rudimentary understanding of how the time-evolution of a digital twin will work. Understanding more completely the dynamics and control of the twin across a range of time scales is one of the central research questions of this project. More specifically, it will focus on high-value engineering applications from aerospace to civil infrastructure.
+Digital twins are a fusion of physics-based and data-based models that evolve over time, and are connected to the physical twin via a data flow. Defining how the time evolution occurs will depend on the specific context of the application, but should also have some generic properties. For example, processes that need to happen in real-time are treated very differently from those that can be carried out offline, or at other time-scales.
+The scheduling of required processes across multiple time scales concurrently is an important function of the digital twin. In addition to this, enabling the processes to access data between the digital and physical twin, both directly and remotely is an area that is yet to be fully developed. This is something that is being investigated in a parallel project, in partnership with IOTICS who provide data ecosystems.
+1: Regional Hub - We provide a regional research hub that has important links with key UK industries such as aerospace, automotive, infrastructure and renewable energy, that will accelerate advancements in digital twin research into direct societal impact.
+2: Research Excellence - bringing together expert teams, we act as a centre of excellence for research in digital twins for high-value engineering applications.
+3: Cross-disciplinary - bring together researchers from across disciplinary boundaries to drive forward the understanding, development, and integration of digital twin science and technology.
+Digital twins are live digital couplings between virtual duplicates of real-world systems and the physical twin.  They are radically reshaping most aspects of modern technology from healthcare to manufacturing and are perceived as crucial to providing solutions to urgent societal issues such as climate change. 
+This project will focus on applications relating to aerospace, manufacturing and energy use in buildings. The project will run from October 2021 until March 2022, and is intended to deliver working prototypes in the three application areas defined above. The primary scientific objective is to investigate the time-evolving behaviour of digital twins.
+“This project will bring together research experts from across disciplinary boundaries to drive forward the understanding, development, and integration of digital twin science and technology” said project lead Professor David Wagg. “The work being carried out at the Advanced Manufacturing Research Centre and the Faculty of Engineering will provide a regional research hub for digital twins in the North of England, that has important links with key UK industries such as aerospace, automotive, infrastructure and renewable energy”.
+At a societal level, digital twins will be a key part of solutions for; green energy (e.g. asset management of offshore wind farms); healthcare (e.g. via personalised medicine); smart cities (e.g. by managing energy consumption) and; more efficient manufacturing (e.g by reducing costs and increasing time efficiency) to name just a few important application areas.
+At the University of Sheffield we are seeing first hand the urgent need to respond to research challenges that have an important societal impact. We believe that digital twin technology will have a significant impact on these societal challenges for the UK and wider world.
+
+Figure 1 Hawk Test 1
+ 
+
+Figure 2LVV Chamber
+ 
+
+Figure 3 LVV Hawk
+ 
+
+Figure 4 LVV Chamber
+David Wagg - [email protected]
+ 
+The challenge facing industry is the access to “right time data” and security of that data. The problem isn't that the data doesn't exist, it's that we can't securely access it when and where it’s needed.
+IOTICS is changing the way the world uses and shares data. Our Dynamic Data Sharing Architecture delivers a decentralized, secure and accessible data ecosystem with the flexibility to grow with your data needs.
+Using your existing IT systems and the addition of IOTICSpace, data becomes Findable, Accessible, Interoperable and Reusable. Reducing operational costs and delivering scalable building blocks for your data strategy, without locking you into architectural choices.
+© The Alan Turing Institute
+2023. All rights reserved.
+The Alan Turing Institute, a charity incorporated and registered in England and Wales with company number 09512457 and charity number 1162533 whose registered office is at British Library, 96 Euston Road, London, England, NW1 2DB, United Kingdom.
+For website-related enquiries email
+[email protected]
+
+Explore the Institute
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Legal
+Awards

@@ -1,0 +1,79 @@
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+The public policy programme works alongside policy makers to explore how data-driven public service provision and policy innovation might solve long running ‘wicked’ policy problems and to develop the ethical foundations for the use of data science and artificial intelligence in policy-making.
+Our aim is to contribute to the Institute's mission – to make great leaps in data science and artificial intelligence research in order to change the world for the better – by developing research, tools, and techniques that have a positive impact on the lives of as many people as possible.
+The public policy programme has four challenges.
+In a world of changing and interlinked policy measures, data science and AI can provide policy makers with unprecedented insight: from identifying policy priorities by modelling complex systems and scenarios, to evaluating hard-to-measure policy outcomes. Our aim is to equip policy makers across all levels of government with the tools they need to not only design effective public policy, but also to track and measure policy impacts.
+ 
+Governments today are major holders of data which data science and AI can harness to improve the design and provision of public services. The public policy programme brings researchers and policy makers together in order to develop innovative ways to provide public services. Our aim is to change everyday life for the better: from allocating resources in the fairest and most transparent way, to designing personalised public services that are tailored to people's individual needs and situations.
+ 
+Understanding the ethical and societal implications of data science is one of The Alan Turing Institute's key research priorities. Our Data Ethics Group leads research in this area. The public policy programme will work with the Data Ethics Group to develop the ethical foundations for the use of data science and AI in policy-making, with the aim of securing the benefits and addressing the risks these technologies pose.
+ 
+The effects of data science and AI on society are already being felt, and their impact will only grow in the years to come. Our aim is to ensure that this impact is as beneficial and equitable as possible. The public policy programme will work with policy makers to develop well-crafted laws and sensible regulation, using the ethical principles and norms developed with the Data Ethics Group that clarify the socially acceptable uses of these powerful technologies.
+AI and machine learning technologies are helping people do remarkable things. From assisting doctors in the early detection of diseases and supporting scientists who are wrestling with climate change to bringing together diverse groups from around the globe through real-time speech-to-speech translation, AI systems are enabling humans to successfully confront an ever-widening range of societal challenges.
+This progress has, however, brought with it a new set of difficulties. Many machine learning applications, such as those in natural language processing and computer vision, identify subtle patterns in large datasets. These patterns allow them to complete their assigned tasks by linking together many hundreds, thousands—or sometimes even millions—of data points at a time. Humans don’t think this way and because of this have difficulty understanding and explaining how these sorts of AI systems reach their results.     
+This gap in AI explainability becomes crucial when the outcomes of AI-assisted decisions have a significant impact on affected individuals and their communities. If an AI system is opaque then there is no way to ensure that its data processing is robust, reliable and safe. Similarly, in cases where social or demographic data are being used as inputs in AI decision-support systems—for instance, in domains such as criminal justice, social care, or job recruitment—the employment of ‘black box’ models leaves designers and deployers no way to properly safeguard against possibilities of lurking biases that may produce inequitable or discriminatory results.
+Over the last year, The Alan Turing Institute and the Information Commissioner’s Office (ICO) have been working together to discover ways to tackle these difficult issues. The ultimate product of this joint endeavour - the most comprehensive practical guidance on AI explanation produced anywhere to date - has now been released for consultation. The consultation runs until 24 January 2020, with the final guidance due to be released later in the year.
+Read more.
+ 
+In order to manage the impacts of AI responsibly and to direct the development of AI systems toward optimal public benefit, The Alan Turing Institute's public policy programme partnered with the Office for Artificial Intelligence and the Government Digital Service to produce guidance on the responsible design and implementation of AI systems in the public sector. 
+The guide, Understanding Artificial Intelligence Ethics and Safety, is the most comprehensive guidance on the topic of AI ethics and safety in the public sector to date. It identifies the potential harms caused by AI systems and proposes concrete, operationalisable measures to counteract them. The guide stresses that public sector organisations can anticipate and prevent these potential harms by stewarding a culture of responsible innovation and by putting in place governance processes that support the design and implementation of ethical, fair, and safe AI systems.
+The guidance is relevant to everyone involved in the design, production, and deployment of a public sector AI project: from data scientists and data engineers to domain experts, delivery managers and departmental leads. Our aim -- and hope -- in writing the guide is to encourage civil servants interested in conducting AI projects to make considerations of AI ethics and safety a first priority.
+Read more
+ 
+ 
+Consultation
+The creation of the Centre for Data Ethics and Innovation was announced in late 2017. The Government launched its Consultation on the Centre in June 2018, seeking the views of interested groups from across society regarding how the Centre should operate, and which work it should prioritise.
+Summary of the Turing’s submission
+The Institute’s response addresses each question posed by the Consultation, and focuses on two areas that we feel we are particularly suited to advise on: how the new Centre should work, and which issues in data ethics it should focus on.
+On how the Centre should work, we raise questions around the overall resources that the Centre will have at its disposal, how it is structured, and to what extent research will be undertaken by the Centre itself versus by outside groups on the Centre’s behalf. We argue that amongst the Centre’s proposed functions, its mandate to “publish recommendations to Government” and to “provide expert advice and support to regulators” will allow it to differentiate itself in an increasingly crowded field of digital ethics.
+On which issues it should work on, we agree that the Centre’s identification of six areas of interest represents a good overview of the current state of the field. We also highlight other areas, including accountability, proportionality, and consent, which we feel are relatively underemphasised in the Consultation, and argue that some of the existing themes require more conceptual clarity.
+Our response also includes comments on the legal and political basis of the new Centre, the ways in which it might engage with stakeholders, and how it should deliver its recommendations to Government.
+Read more
+For more information, please contact the public policy programme's team at:
+[email protected]
+© The Alan Turing Institute
+2023. All rights reserved.
+The Alan Turing Institute, a charity incorporated and registered in England and Wales with company number 09512457 and charity number 1162533 whose registered office is at British Library, 96 Euston Road, London, England, NW1 2DB, United Kingdom.
+For website-related enquiries email
+[email protected]
+
+Explore the Institute
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Legal
+Awards

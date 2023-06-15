@@ -1,0 +1,90 @@
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Introduction
+Stage 1: The Precursor Stage (part-time)
+Event Stage (full-time)
+Applicants should be able to commit to the duration of the event. The Alan Turing Institute is committed to supporting individual circumstances, please do not hesitate to email [email protected] to discuss any reasonable adjustments.
+Challenges
+The challenges are:
+NBN Trust
+Spatiotemporal analysis of species in the UK using the largest publicly accessible source of biodiversity data
+This challenge presents an exciting opportunity for researchers to work on the UK’s largest publicly accessible source of biodiversity data to help ensure that this remarkable national resource has the greatest possible value and impact for nature.
+The datasets on the NBN Atlas consist of records of species observations within the UK at a given location and time. While the datasets are rich and valuable, they are incredibly heterogenous in space, time and taxonomic coverage. This challenge seeks to examine the comprehensiveness of the biodiversity inventory and what the impact of records from individual data providers is on the coverage and completeness of the inventory. We ask, where are the gaps in data and how can we measure our progress towards a goal of a comprehensive biodiversity inventory?
+Peak District National Park Authority
+Using multi-spectral remotely sensed imagery to improve land cover classification
+National Parks in the UK have been shaped by the longstanding interaction of natural and cultural forces, with no element of the landscape untouched by past or present human activity. This has created a rich diversity of habitats such as broad open moorlands, grasslands, enclosed farmlands and wooded valleys that exhibit variation in both their spectral and spatial properties. However there is currently no contemporary overview of land cover of National Parks in the UK.
+This DSG’s objective is to develop techniques that are able to leverage the information of multi-spectral satellite images to improve automated land cover classification. The PDNP recently acquired detailed aerial and satellite imagery of the National Park, and has started to classify land cover based on visible imagery. However, other spectral bands outside the visible spectrum (such as infrared etc.) have the potential to drastically improve classification performance of particular classes.
+If successful, this analysis would help quantify the effects of human activities and climate change on the National Park’s landscape, biodiversity and land use from the 1980s until today. Furthermore, an automated land cover classification protocol would enable National Parks in the UK to continue to monitor landscape changes in the future, and help target our resources to protect and enhance the landscape.
+Environmental Investigation Agency
+Identifying tiger stripe patterns
+The Environmental Investigation Agency (EIA) has an existing image database of 158 unique individual tiger skins following encounters with illegal wildlife traders in physical markets and online. Each skin is linked to one or more traders. They also collect images of seized tiger skins and carcasses. New skins are periodically added to the database and manually cross-referenced to determine if they are duplicate images, or duplicate skins but in different images; either of which can reveal dynamics of interest to law enforcement.
+This project seeks to develop a user-friendly tool for identifying individual tigers from their stripe patterns, to inform enforcement efforts and counter trade in tiger skins, carcasses, and individuals.
+Dstl
+Topic Modelling to find topics and trends in academic papers.
+The Discovery Project at Dstl uses topic modelling to find emerging topics and trends in academic papers for futures analysts. We hypothesise that studying a time series of topic model runs would allow important dynamics to be uncovered that would otherwise remain unseen in a single run. By tracking how topic models change over time, we expect emerging technologies can be identified at a faster pace than manual scanning, therefore giving the UK a competitive edge in assessing these technologies' applicability to Defence and Security.
+To help identify emerging technologies, the Discovery project aims to develop an algorithm that can flag significant differences between a time series of multiple topic model runs. Can machine learning be applied to locate these differences and find emerging, merging/splitting and converging/diverging topics? Further, can the method be extended such that future trends can be predicted?
+Johnson Matthey
+Meeting the Challenges of Sustainable Chemical Plant Operations: A Machine Learning Approach for Optimizing Renewable Energy Use and Transient Dynamics.
+Chemical processes are inherently complex, with multiple process states and paths possible for a given setting. As the industry moves towards for sustainable operations, the use of renewable energy and feedstocks is a key priority. As a consequence of this, chemical plant operations will depart from conventional steady-state operation (slow dynamics) to a more transient basis (fast dynamics) to maximise the use of the resource (e.g. wind power). Such a change introduces process control challenges and the use of large amounts of time-series data to ensure safe and reliable operation.
+This challenge is to develop a machine learning-based modelling framework that can accurately predict and optimise plant response in subsequent time steps based on these time-series data.
+Our early work in this area, as shown through a feasibility study on a Methanol simulator, has demonstrated that flexible Bayesian regression techniques can effectively optimise nonlinear processes at steady-state.
+What are Data Study Groups?
+These are intensive 'collaborative hackathons' hosted at the Turing, which bring together organisations from industry, government and the third sector, with talented multi-disciplinary researchers from academia.
+Organisations act as Data Study Group 'Challenge Owners', providing real-world problems and datasets to be tackled by small groups of highly talented, carefully selected researchers.
+Researchers brainstorm and engineer data science solutions, presenting their work at the end of the week.
+Read reports from previous Data Study Groups to see challenges and outcomes.
+FAQs
+What if I am already part of the Turing community?
+If you are employed by one of the Institute’s 13 university partners, please contact your University Liaison Manager – list available here – to make them aware of your application. They can provide support, answer questions and involve you as part of the Turing community at your university from now on.
+If you are employed at a university that received a Turing Network Development Award, please contact your Award lead – list available here (scroll to the bottom of the page) – to make them aware of your application.
+More FAQs for Data Study Group applicants.
+Find out more
+Learn more about being a DSG participant including FAQs
+How to write a great Data Study Group application
+Queries can be directed to the Data Study Group Team
+ 
+© The Alan Turing Institute
+2023. All rights reserved.
+The Alan Turing Institute, a charity incorporated and registered in England and Wales with company number 09512457 and charity number 1162533 whose registered office is at British Library, 96 Euston Road, London, England, NW1 2DB, United Kingdom.
+For website-related enquiries email
+[email protected]
+
+Explore the Institute
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Legal
+Awards
