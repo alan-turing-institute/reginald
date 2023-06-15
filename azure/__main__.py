@@ -74,7 +74,7 @@ file_share = storage.FileShare(
     share_name="llama-data",
     share_quota=5120,
 )
-storage_account_keys = storage_account.list_storage_account_keys(
+storage_account_keys = storage.list_storage_account_keys(
     account_name=storage_account.name,
     resource_group_name=resource_group.name,
 )
