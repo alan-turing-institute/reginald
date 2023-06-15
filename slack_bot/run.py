@@ -28,7 +28,7 @@ if __name__ == "__main__":
         "--data-dir",
         "-d",
         help="Location for data",
-        default=(pathlib.Path(__file__).parent.parent / "data").resolve(),,
+        default=(pathlib.Path(__file__).parent.parent / "data").resolve(),
     )
     parser.add_argument(
         "--which-index",
