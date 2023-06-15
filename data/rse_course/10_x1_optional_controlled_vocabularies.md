@@ -16,9 +16,9 @@ This is the goal of the technologies introduced this lecture.
 ## The URI
 
 The key concept that underpins these tools is the URI: uniform resource **indicator**.
-    
+
 These look like URLs:
-    
+
 `www.turing.ac.uk/rsd-engineering/schema/reaction/element`
 
 But, if I load that as a web address, there's nothing there!
@@ -93,7 +93,7 @@ print(etree.tostring(tree, pretty_print=True, encoding=str))
             </products>
         </reaction>
     </system>
-    
+
 
 
 Note that our previous XPath query no longer finds anything.
@@ -130,8 +130,8 @@ tree.xpath("//r:molecule/r:atom[@number='1']/@symbol", namespaces=namespaces)
 Note the prefix `r` used to bind the namespace in the query: any string will do - it's just a dummy variable.
 
 The above file specified our namespace as a default namespace: this is like doing `from numpy import *` in python.
-    
-It's often better to bind the namespace to a prefix:    
+
+It's often better to bind the namespace to a prefix:
 
 
 ```python
@@ -179,7 +179,7 @@ It's a good idea to serve the schema itself from the URI of the namespace treate
         <xs:attribute name="number" type="xs:integer"/>
     </xs:complexType>
 </xs:element>
-    
+
 <xs:element name="molecule">
     <xs:complexType>
         <xs:sequence>
@@ -188,7 +188,7 @@ It's a good idea to serve the schema itself from the URI of the namespace treate
         <xs:attribute name="stoichiometry" type="xs:integer"/>
     </xs:complexType>
 </xs:element>
-    
+
 <xs:element name="reactants">
     <xs:complexType>
         <xs:sequence>
@@ -196,15 +196,15 @@ It's a good idea to serve the schema itself from the URI of the namespace treate
         </xs:sequence>
     </xs:complexType>
 </xs:element>
-    
+
 <xs:element name="products">
     <xs:complexType>
         <xs:sequence>
             <xs:element ref="r:molecule" maxOccurs="unbounded"/>
         </xs:sequence>
     </xs:complexType>
-</xs:element>    
-    
+</xs:element>
+
 <xs:element name="reaction">
     <xs:complexType>
         <xs:sequence>
@@ -220,8 +220,8 @@ It's a good idea to serve the schema itself from the URI of the namespace treate
             <xs:element ref="r:reaction" maxOccurs="unbounded"/>
         </xs:sequence>
     </xs:complexType>
-</xs:element>   
-    
+</xs:element>
+
 </xs:schema>
 ```
 
@@ -328,6 +328,5 @@ Why is this useful for us in discussing file formats?
 One of the goals of the **semantic web** is to create a way to make file formats which are universally meaningful
 as found data: if I have a file format defined using any formalised ontology, then by tracing statements
 through *rdf:sameAs* relationships, I should be able to reconstruct the information I need.
-    
-That will be the goal of the next lecture.
 
+That will be the goal of the next lecture.

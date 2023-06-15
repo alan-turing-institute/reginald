@@ -20,7 +20,7 @@ When we learned about testing, we saw that Python complains when things go wrong
 
     /var/folders/q7/nl3w6z854711jwsdy0hj7sxhwypcgh/T/ipykernel_53197/1455669704.py in <module>
     ----> 1 1 / 0
-    
+
 
     ZeroDivisionError: division by zero
 
@@ -66,7 +66,7 @@ for y in x:
 
     /var/folders/q7/nl3w6z854711jwsdy0hj7sxhwypcgh/T/ipykernel_53197/380152974.py in <module>
           1 x = 1
-          2 
+          2
     ----> 3 for y in x:
           4     print(y)
 
@@ -89,7 +89,7 @@ inspect.getmro(TypeError)
 ## Create your own Exception
 
 When we were looking at testing, we saw that it is important for code to crash with a meaningful exception type when something is wrong.
-We raise an Exception with `raise`. Often, we can look for an appropriate exception from the standard set to raise. 
+We raise an Exception with `raise`. Often, we can look for an appropriate exception from the standard set to raise.
 
 However, we may want to define our own exceptions. Doing this is as simple as inheriting from Exception (or one of its subclasses):
 
@@ -108,10 +108,10 @@ raise MyCustomErrorType("Problem")
     MyCustomErrorType                         Traceback (most recent call last)
 
     /var/folders/xv/d5nvn2ps5r3fcf276w707n01qdmpqf/T/ipykernel_48929/4088117092.py in <module>
-          3 
-          4 
+          3
+          4
     ----> 5 raise (MyCustomErrorType("Problem"))
-    
+
 
     MyCustomErrorType: Problem
 
@@ -142,10 +142,10 @@ raise MyCustomErrorType(404)
     MyCustomErrorType                         Traceback (most recent call last)
 
     /var/folders/q7/nl3w6z854711jwsdy0hj7sxhwypcgh/T/ipykernel_53197/1595425230.py in <module>
-          7 
-          8 
+          7
+          8
     ----> 9 raise (MyCustomErrorType(404))
-    
+
 
     MyCustomErrorType: Error, category 404
 
@@ -202,7 +202,7 @@ print(user)
     anonymous
 
 
-This can be dangerous and can make it hard to find errors! There was a mistyped function name there ('`safe_lod`'), but we did not notice the error, as the generic except caught it. 
+This can be dangerous and can make it hard to find errors! There was a mistyped function name there ('`safe_lod`'), but we did not notice the error, as the generic except caught it.
 Therefore, we should be specific and catch only the type of error we want.
 
 ## Managing multiple exceptions
@@ -518,7 +518,7 @@ analysis("example.yaml")
 
 
 
-However, we can also use the try-it-and-handle-exceptions approach to this. 
+However, we can also use the try-it-and-handle-exceptions approach to this.
 
 
 
@@ -573,7 +573,7 @@ analysis("modelname: Amazing")
 
 Sometimes we want to catch an error, partially handle it, perhaps add some
 extra data to the exception, and then re-raise to be caught again further up
-the call stack. 
+the call stack.
 
 The keyword "`raise`" with no argument in an `except:` clause will cause the
 caught error to be re-thrown. Doing this is the only circumstance where it is
@@ -621,29 +621,29 @@ higher_function()
     /var/folders/q7/nl3w6z854711jwsdy0hj7sxhwypcgh/T/ipykernel_53197/1206802253.py in lower_function()
           1 def lower_function():
     ----> 2     raise ValueError("Error in lower function!")
-          3 
+          3
 
 
     ValueError: Error in lower function!
 
-    
+
     The above exception was the direct cause of the following exception:
 
 
     RuntimeError                              Traceback (most recent call last)
 
     /var/folders/q7/nl3w6z854711jwsdy0hj7sxhwypcgh/T/ipykernel_53197/1206802253.py in <module>
-         10 
-         11 
+         10
+         11
     ---> 12 higher_function()
-    
+
 
     /var/folders/q7/nl3w6z854711jwsdy0hj7sxhwypcgh/T/ipykernel_53197/1206802253.py in higher_function()
           7         lower_function()
           8     except ValueError as e:
     ----> 9         raise RuntimeError("Error in higher function!") from e
-         10 
-         11 
+         10
+         11
 
 
     RuntimeError: Error in higher function!
@@ -656,6 +656,3 @@ It can be useful to catch and re-throw an error as you go up the chain, doing an
 The error will finally be caught and not re-thrown only at a higher program
 layer that knows how to recover. This is known as the "throw low catch high"
 principle.
-
-
-

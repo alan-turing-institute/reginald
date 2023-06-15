@@ -97,11 +97,11 @@ The results are very close. A bit disappointing, but at least the list comprehen
 
 ## 9.1.2 Profiling
 
-It looks like we don't gain much by changing the way we call the function. Maybe we should instead focus on the function itself. 
+It looks like we don't gain much by changing the way we call the function. Maybe we should instead focus on the function itself.
 There are useful tools out there that we can use to gain more insight into which part of a function takes up most computation time. In this module we use `line_profiler`.
 
 `line_profiler` is a Python module that we need to install into our virtual environment before we can use it.
-This tool breaks down the computation time of our function line by line. 
+This tool breaks down the computation time of our function line by line.
 
 
 ```python
@@ -110,7 +110,7 @@ This tool breaks down the computation time of our function line by line.
 ```
 
     Requirement already satisfied: line_profiler in /Users/pwochner/Projects/rse-course-2022/rse-course/.venv/lib/python3.7/site-packages (3.5.1)
-    
+
     [1m[[0m[34;49mnotice[0m[1;39;49m][0m[39;49m A new release of pip available: [0m[31;49m22.3[0m[39;49m -> [0m[32;49m22.3.1[0m
     [1m[[0m[34;49mnotice[0m[1;39;49m][0m[39;49m To update, run: [0m[32;49mpip install --upgrade pip[0m
 
@@ -132,7 +132,7 @@ This tool breaks down the computation time of our function line by line.
 
 ## 9.1.3 Attempt 2: Multiplication vs. power
 
-Looking at the `line_profiler` output, it seems like the line where we compute the value of the series for the current iteration takes quite long. The operations that are performed are squaring the value (using power 2) and adding a constant. Maybe we can speed up the code by replacing the power operation by multiplying the value with itself. 
+Looking at the `line_profiler` output, it seems like the line where we compute the value of the series for the current iteration takes quite long. The operations that are performed are squaring the value (using power 2) and adding a constant. Maybe we can speed up the code by replacing the power operation by multiplying the value with itself.
 
 Before we re-write the `mandel()` function, we will write new functions that repeatedly squares a value for a given number of iterations.
 
@@ -151,22 +151,22 @@ assert square_power(2, 1) == 4
 assert square_power(2, 0) == 2
 ```
 
-Go to notebook **9.6 Classroom Exercises** and do exercise 9b. 
+Go to notebook **9.6 Classroom Exercises** and do exercise 9b.
 
  ...
- 
+
 
  ...
- 
- 
- ...
- 
- ...
- 
+
 
  ...
- 
- 
+
+ ...
+
+
+ ...
+
+
  ...
 
 We now have another function to square a value, this time by multiplying the value with itself. This function could look like this.
@@ -186,7 +186,7 @@ assert square_multiply(2, 1) == 4
 assert square_multiply(2, 0) == 2
 ```
 
-The computational cost for `square_power` and `square_multiply` are quite different. 
+The computational cost for `square_power` and `square_multiply` are quite different.
 Conclusion: `**` is not simply a wrapper around `*`.
 
 Can we find out more about this?
@@ -210,14 +210,14 @@ dis.dis(square_power)
                   8 GET_ITER
             >>   10 FOR_ITER                12 (to 24)
                  12 STORE_FAST               2 (_)
-    
+
       5          14 LOAD_FAST                0 (value)
                  16 LOAD_CONST               1 (2)
                  18 BINARY_POWER
                  20 STORE_FAST               0 (value)
                  22 JUMP_ABSOLUTE           10
             >>   24 POP_BLOCK
-    
+
       7     >>   26 LOAD_FAST                0 (value)
                  28 RETURN_VALUE
 
@@ -234,14 +234,14 @@ dis.dis(square_multiply)
                   8 GET_ITER
             >>   10 FOR_ITER                12 (to 24)
                  12 STORE_FAST               2 (_)
-    
+
       5          14 LOAD_FAST                0 (value)
                  16 LOAD_FAST                0 (value)
                  18 BINARY_MULTIPLY
                  20 STORE_FAST               0 (value)
                  22 JUMP_ABSOLUTE           10
             >>   24 POP_BLOCK
-    
+
       7     >>   26 LOAD_FAST                0 (value)
                  28 RETURN_VALUE
 
@@ -290,14 +290,14 @@ dis.dis(square_inplace_multiply)
                   8 GET_ITER
             >>   10 FOR_ITER                12 (to 24)
                  12 STORE_FAST               2 (_)
-    
+
       5          14 LOAD_FAST                0 (value)
                  16 LOAD_FAST                0 (value)
                  18 INPLACE_MULTIPLY
                  20 STORE_FAST               0 (value)
                  22 JUMP_ABSOLUTE           10
             >>   24 POP_BLOCK
-    
+
       7     >>   26 LOAD_FAST                0 (value)
                  28 RETURN_VALUE
 
@@ -350,7 +350,6 @@ assert mandel(0.5) == 5
 ## Things to be aware of
 
 - Try to understand _why_ one method is faster than the other.
-- Is it worth the speed up? 
+- Is it worth the speed up?
 - Do you get the same answers for all possible inputs?
 - We're using CPython. Would the optimisations still hold for other implementations of Python?
-

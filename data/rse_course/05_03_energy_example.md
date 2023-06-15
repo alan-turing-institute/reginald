@@ -40,9 +40,9 @@ ax.set_xlabel("Position $i$")
 
 
 
-    
+
 ![png](/Users/lbokeria/Documents/hack_week_2023/reginald/data_processing/rse_course_modules/module05_testing_your_code/05_03_energy_example_3_1.png)
-    
+
 
 
 Here, the total energy due to position 2 is $3 (3-1)=6$, and due to column 7 is $1 (1-1)=0$. We need to sum these to get the
@@ -61,7 +61,7 @@ touch diffusion/__init__.py
 ```
 
 **Windows:** You will need to run the following instead
-    
+
 ```cmd
 %%cmd
 rmdir /s diffusion
@@ -69,7 +69,7 @@ mkdir diffusion
 type nul > diffusion/__init__.py
 ```
 
-**NB.** If you are using the Windows command prompt, you will also have to replace all subsequent `%%bash` directives with `%%cmd` 
+**NB.** If you are using the Windows command prompt, you will also have to replace all subsequent `%%bash` directives with `%%cmd`
 
 * Implementation file: diffusion_model.py
 
@@ -123,9 +123,9 @@ pytest
     rootdir: /home/runner/work/rse-course/rse-course/module05_testing_your_code/diffusion
     plugins: cov-4.0.0, anyio-3.6.2, pylama-8.4.1
     collected 1 item
-    
+
     test_model.py .                                                          [100%]
-    
+
     ============================== 1 passed in 0.05s ===============================
 
 
@@ -258,9 +258,9 @@ pytest
     rootdir: /home/runner/work/rse-course/rse-course/module05_testing_your_code/diffusion
     plugins: cov-4.0.0, anyio-3.6.2, pylama-8.4.1
     collected 6 items
-    
+
     test_model.py ......                                                     [100%]
-    
+
     ============================== 6 passed in 0.29s ===============================
 
 
@@ -280,9 +280,9 @@ pytest --cov
     rootdir: /home/runner/work/rse-course/rse-course/module05_testing_your_code/diffusion
     plugins: cov-4.0.0, anyio-3.6.2, pylama-8.4.1
     collected 6 items
-    
+
     test_model.py ......                                                     [100%]
-    
+
     ---------- coverage: platform darwin, python 3.8.12-final-0 ----------
     Name            Stmts   Miss  Cover
     -----------------------------------
@@ -291,8 +291,8 @@ pytest --cov
     test_model.py      33      0   100%
     -----------------------------------
     TOTAL              43      0   100%
-    
-    
+
+
     ============================== 6 passed in 0.41s ===============================
 
 
@@ -311,13 +311,13 @@ pytest --cov --cov-report html
     rootdir: /home/runner/work/rse-course/rse-course/module05_testing_your_code/diffusion
     plugins: cov-4.0.0, anyio-3.6.2, pylama-8.4.1
     collected 6 items
-    
+
     test_model.py ......                                                     [100%]
-    
+
     ---------- coverage: platform darwin, python 3.8.12-final-0 ----------
     Coverage HTML written to dir htmlcov
-    
-    
+
+
     ============================== 6 passed in 0.49s ===============================
 
 

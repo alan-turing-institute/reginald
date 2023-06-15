@@ -127,7 +127,7 @@ coordinates_as_lat_lon = [
 ## Exercise 2f Defining Classes
 *Relevant Sections: 2.6.1, 2.6.2, 2.6.3, 2.6.4, 2.6.5*
 
-In section 2.6.4 and 2.6.5 two examples of the maze model were given. 
+In section 2.6.4 and 2.6.5 two examples of the maze model were given.
 
 Compare the two solutions.
 Discuss with a partner which you like better, and why.
@@ -142,5 +142,3 @@ Use the function you wrote in 2e above as the basis for a new function that will
 Use this function to save a map image file somewhere on your local disk.
 
 *Zoom between 14 and 16 work well for the example coordinates*
-
-

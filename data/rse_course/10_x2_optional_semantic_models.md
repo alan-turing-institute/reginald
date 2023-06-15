@@ -28,7 +28,7 @@ We can then use these defined terms to specify facts, using a URI for the subjec
 
 
 ```python
-%%writefile reaction.ttl 
+%%writefile reaction.ttl
 
 <http://dbpedia.org/ontology/water>
     <http://purl.obolibrary.org/obo/PATO_0001681>
@@ -89,7 +89,7 @@ print(graph.serialize(format="xml"))
         <ns1:PATO_0001681 rdf:datatype="http://purl.obolibrary.org/obo/UO_0000088">18.01528</ns1:PATO_0001681>
       </rdf:Description>
     </rdf:RDF>
-    
+
 
 
 We can also use namespace prefixes in Turtle:
@@ -100,10 +100,10 @@ print(graph.serialize(format="ttl"))
 ```
 
     @prefix ns1: <http://purl.obolibrary.org/obo/> .
-    
+
     <http://dbpedia.org/ontology/water> ns1:PATO_0001681 "18.01528"^^ns1:UO_0000088 .
-    
-    
+
+
 
 
 ## Normal forms and Triples
@@ -121,7 +121,7 @@ However, there's a problem. We can do:
 
 
 ```python
-%%writefile reaction.ttl 
+%%writefile reaction.ttl
 
 @prefix disr: <http://www.turing.ac.uk/rsd-engineering/ontologies/reactions/> .
 @prefix dbo: <http://dbpedia.org/ontology/> .
@@ -158,7 +158,7 @@ print(graph.serialize(format="xml"))
         <disr:containsElement rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33260"/>
       </rdf:Description>
     </rdf:RDF>
-    
+
 
 
 However, we can't express `hasTwo` in this way without making an infinite number of properties!
@@ -183,7 +183,7 @@ Imagine if we had to make a URN for oxygen-in-water, hydrogen-in-water etc!
 
 
 ```python
-%%writefile reaction.ttl 
+%%writefile reaction.ttl
 
 @prefix disr: <http://www.turing.ac.uk/rsd-engineering/ontologies/reactions/> .
 @prefix dbo: <http://dbpedia.org/ontology/> .
@@ -192,8 +192,8 @@ Imagine if we had to make a URN for oxygen-in-water, hydrogen-in-water etc!
 
 dbo:water obo:PATO_0001681 "18.01528"^^obo:UO_0000088 ;
           disr:containsElement obo:CHEBI_33260 ;
-          disr:hasElementQuantity [ 
-              disr:countedElement obo:CHEBI_33260 ; 
+          disr:hasElementQuantity [
+              disr:countedElement obo:CHEBI_33260 ;
               disr:countOfElement "2"^^xs:integer
           ] .
 ```
@@ -208,7 +208,7 @@ Another turtle syntax for an anonymous "blank node" is this:
 
 
 ```python
-%%writefile reaction.ttl 
+%%writefile reaction.ttl
 
 @prefix disr: <http://www.turing.ac.uk/rsd-engineering/ontologies/reactions/> .
 @prefix dbo: <http://dbpedia.org/ontology/> .
@@ -218,15 +218,15 @@ Another turtle syntax for an anonymous "blank node" is this:
 dbo:water obo:PATO_0001681 "18.01528"^^obo:UO_0000088 ;
           disr:containsElement obo:CHEBI_33260 ;
           disr:hasElementQuantity _:a .
-                
-_:a disr:countedElement obo:CHEBI_33260 ; 
+
+_:a disr:countedElement obo:CHEBI_33260 ;
     disr:countOfElement "2"^^xs:integer .
 ```
 
     Overwriting reaction.ttl
 
 
-## Serialising to RDF 
+## Serialising to RDF
 
 Here's code to write our model to Turtle:
 
@@ -237,8 +237,8 @@ Here's code to write our model to Turtle:
 @prefix disr: <http://www.turing.ac.uk/rsd-engineering/ontologies/reactions/> .
 @prefix obo: <http://purl.obolibrary.org/obo/> .
 @prefix xs: <http://www.w3.org/2001/XMLSchema> .
-        
-[ 
+
+[
 %for reaction in reactions:
     disr:hasReaction [
         %for molecule in reaction.reactants.molecules:
@@ -280,7 +280,7 @@ a disr:system
 
 
 "a" in Turtle is an always available abbreviation for https://www.w3.org/1999/02/22-rdf-syntax-ns#type
-    
+
 
 We've also used:
 
@@ -304,7 +304,7 @@ display(Math(str(system)))
 ```
 
 
-$\displaystyle C_6H_{12}O_6 + 6O_2 \rightarrow 6CO_2 + 6H_2O\\ 
+$\displaystyle C_6H_{12}O_6 + 6O_2 \rightarrow 6CO_2 + 6H_2O\\
 2H_2 + O_2 \rightarrow 2H_2O$
 
 
@@ -322,12 +322,12 @@ with open("system.ttl", "w") as ttlfile:
 !cat system.ttl
 ```
 
-    
+
     @prefix disr: <http://www.turing.ac.uk/rsd-engineering/ontologies/reactions/> .
     @prefix obo: <http://purl.obolibrary.org/obo/> .
     @prefix xs: <http://www.w3.org/2001/XMLSchema> .
-            
-    [ 
+
+    [
         disr:hasReaction [
                 disr:hasReactant [
                         disr:hasElementQuantity [
@@ -603,7 +603,7 @@ print(graph.serialize(format="xml"))
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/CHEBI_23367"/>
       </rdf:Description>
     </rdf:RDF>
-    
+
 
 
 We can see why the group of triples is called a *graph*: each node is an entity and each arc a property relating entities.
@@ -621,7 +621,7 @@ Our http://www.turing.ac.uk/rsd-engineering/ontologies/reactions/ namespace now 
 * disr:hasProduct
 * disr:containsElement
 * disr:countedElement
-* disr:hasElementQuantity     
+* disr:hasElementQuantity
 * disr:countOfElement
 * disr:symbol
 
@@ -631,7 +631,7 @@ And two classes:
 * disr:reaction
 
 We would now like to find a way to formally specify some of the relationships between these.
-   
+
 The **type** (`http://www.w3.org/1999/02/22-rdf-syntax-ns#type` or `a`) of the subject of hasReaction
 must be `disr:system`.
 
@@ -656,7 +656,7 @@ disr:system a rdfs:Class .
 disr:reaction a rdfs:Class .
 disr:hasReaction a rdf:Property .
 disr:hasReaction rdfs:domain disr:system .
-disr:hasReaction rdfs:range disr:reaction .          
+disr:hasReaction rdfs:range disr:reaction .
 ```
 
     Overwriting turing_ontology.ttl
@@ -691,7 +691,7 @@ disr:system a rdfs:Class .
 disr:reaction a rdfs:Class .
 disr:hasReaction a rdf:Property .
 disr:hasReaction rdfs:domain disr:system .
-disr:hasReaction rdfs:range disr:reaction .     
+disr:hasReaction rdfs:range disr:reaction .
 
 disr:hasParticipant a rdf:Property .
 disr:hasReactant rdfs:subPropertyOf disr:hasParticipant .
@@ -701,7 +701,7 @@ disr:hasProduct rdfs:subPropertyOf disr:hasParticipant
     Overwriting turing_ontology.ttl
 
 
-[OWL](https://www.w3.org/TR/owl-ref/) extends RDFS even further. 
+[OWL](https://www.w3.org/TR/owl-ref/) extends RDFS even further.
 
 Inferring additional rules from existing rules and schema is very powerful: an interesting branch of AI. (Unfortunately the [python tool](https://github.com/RDFLib/OWL-RL) for doing this automatically is currently not updated to python 3 so I'm not going to demo it. Instead, we'll see in a moment how to apply inferences to our graph to introduce new properties.)
 

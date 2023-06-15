@@ -8,7 +8,7 @@ Here we attempt to give some basic advice on choosing a license for your softwar
 
 * we are NOT lawyers
 * opinions differ (and flamewars are boring)
-* this training does NOT constitute legal advice. 
+* this training does NOT constitute legal advice.
 
 For an in-depth discussion of software licenses, read the [O'Reilly book](https://www.oreilly.com/library/view/understanding-open-source/0596005814/bk01-toc.html).
 
@@ -16,7 +16,7 @@ Your organisation may have policies about applying licenses to code you create w
 
 ## Choose a license
 
-It is important to choose a license and to create a *license file* to tell people what it is. 
+It is important to choose a license and to create a *license file* to tell people what it is.
 
 The license lets people know whether they can reuse your code and
 under what terms. [This course has one](https://github.com/alan-turing-institute/rse-course/blob/main/LICENSE.md), for example.
@@ -28,7 +28,7 @@ See [GitHub's advice on how to choose a license](http://choosealicense.com/)
 ## Open source doesn't stop you making money
 
 A common misconception about open source software is the thought that
-open source means you can't make any money. This is *wrong*. 
+open source means you can't make any money. This is *wrong*.
 
 Plenty of people open source their software and profit from:
 
@@ -49,22 +49,22 @@ anonymity or theft.
 
 ## Your code *is* good enough
 
-New coders worry that they'll be laughed at if they put their code online. Don't worry. Everyone, including people who've been coding for decades, 
+New coders worry that they'll be laughed at if they put their code online. Don't worry. Everyone, including people who've been coding for decades,
 writes shoddy code that is full of bugs.
 
-The only thing that will make your code better, is *other people reading it*. 
+The only thing that will make your code better, is *other people reading it*.
 
 For small scripts that no one but you will ever use,
-my recommendation is to use an open repository anyway. 
+my recommendation is to use an open repository anyway.
 Find a buddy, and get them to comment on it.
 
 ## Worry about license compatibility and proliferation
 
 Not all open source code can be used in all projects. Some licenses are legally incompatible.
 
-This is a huge and annoying problem. 
+This is a huge and annoying problem.
 As an author, you might not care, but you can't anticipate the exciting uses people might find by
-mixing your code with someone else's. 
+mixing your code with someone else's.
 
 Use a standard license from the small list that are well-used.
 Then people will understand. *Don't make up your own*.
@@ -82,11 +82,11 @@ For example:
 >Copyright (c) 2013 Prof. Foo.
 >All rights reserved.
 >
->You may use and modify this software for any non-commercial purpose within your educational 
->institution. Teaching, academic research, and personal experimentation are examples of purpose 
+>You may use and modify this software for any non-commercial purpose within your educational
+>institution. Teaching, academic research, and personal experimentation are examples of purpose
 >which can be non-commercial.
 >
->You may redistribute the software and modifications to the software for non-commercial 
+>You may redistribute the software and modifications to the software for non-commercial
 >purposes, but only to eligible users of the software (for example, to another university
 >student or faculty to support joint academic research).
 
@@ -139,7 +139,7 @@ but offer the code under more permissive terms, allowing for commercial use, for
 
 ## Patents
 
-Intellectual property law distinguishes copyright from patents. 
+Intellectual property law distinguishes copyright from patents.
 This is a complex field, which I am far from qualified to teach!
 
 People who think carefully about intellectual property law distinguish software licenses
@@ -155,7 +155,7 @@ This "loophole" in the GPL is closed by the AGPL ("Affero GPL")
 
 ## Library linking
 
-If I use your code just as a library, without modifying it or including it directly in my own code, 
+If I use your code just as a library, without modifying it or including it directly in my own code,
 does the copyleft term of the GPL apply?
 
 *Yes*
@@ -165,7 +165,7 @@ If you don't want it to, use the LGPL. ("Lesser GPL"). This has an exception for
 ## Referencing the license in every file
 
 Some licenses require that you include license information in every file.
-Others do not. 
+Others do not.
 
 Typically, every file should contain something like:
 
@@ -208,7 +208,7 @@ This is best done with a [CITATION](http://www.software.ac.uk/blog/2013-09-02-en
 
 If you'd like to make your software more easily citable, there are a few options for creating software papers and DOIs. These include:
 
-- Software journals such as [The Jounal of Open Source Software (JOSS)](https://joss.theoj.org/), which publishes software with a short paper/codebase description attached, 
+- Software journals such as [The Jounal of Open Source Software (JOSS)](https://joss.theoj.org/), which publishes software with a short paper/codebase description attached,
 - File hosting services like [Zenodo](https://zenodo.org/), which will generate a DOI you can use to link to a specific version of your code.
 
 ## Open source does not equal free maintenance

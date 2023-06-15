@@ -106,7 +106,7 @@ git push -uf jack89roberts main || echo "Push failed"
 
     ERROR: Permission to jack89roberts/github-example.git denied to deploy key.
     fatal: Could not read from remote repository.
-    
+
     Please make sure you have the correct access rights
     and the repository exists.
 
@@ -295,4 +295,4 @@ page](https://github.com/settings/ssh) on GitHub and upload your public key by
 copying the content from your computer. (Probably at .ssh/id_rsa.pub)
 
 If you have difficulties, the instructions for this are [on the GitHub
-website](https://help.github.com/articles/generating-ssh-keys). 
+website](https://help.github.com/articles/generating-ssh-keys).

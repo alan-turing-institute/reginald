@@ -1,7 +1,7 @@
 digraph G {
 
-  writeTest -> checkTest 
-  writeCode -> checkAllTests 
+  writeTest -> checkTest
+  writeCode -> checkAllTests
 
   cleanup -> writeTest [tailport=e, headport=n]
   checkTest -> writeTest [label="passed", tailport=w, headport=w]

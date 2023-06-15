@@ -90,9 +90,9 @@ cat lakeland.md
 
     Lakeland
     ========
-    
+
     Cumbria has some pretty hills, and lakes too
-    
+
     Mountains:
     * Helvellyn
 
@@ -331,7 +331,7 @@ git diff
     +++ b/Wales.md
     @@ -2,4 +2,4 @@ Mountains In Wales
      ==================
-    
+
      * Tryfan
     -* Yr Wyddfa
     +* Snowdon
@@ -592,9 +592,9 @@ wsd(message)
 
 
 
-    
+
 ![png](/Users/lbokeria/Documents/hack_week_2023/reginald/data_processing/rse_course_modules/module04_version_control_with_git/04_04_collaboration_59_0.png)
-    
+
 
 
 
@@ -715,7 +715,7 @@ cat Wales.md
 
     Mountains In Wales
     ==================
-    
+
     * Pen y Fan
     * Tryfan
     * Snowdon
@@ -796,7 +796,7 @@ cat Wales.md
 
     Mountains In Wales
     ==================
-    
+
     * Pen y Fan
     * Tryfan
     * Snowdon
@@ -882,9 +882,9 @@ wsd(message)
 
 
 
-    
+
 ![png](/Users/lbokeria/Documents/hack_week_2023/reginald/data_processing/rse_course_modules/module04_version_control_with_git/04_04_collaboration_81_0.png)
-    
+
 
 
 
@@ -911,9 +911,9 @@ wsd(message)
 
 
 
-    
+
 ![png](/Users/lbokeria/Documents/hack_week_2023/reginald/data_processing/rse_course_modules/module04_version_control_with_git/04_04_collaboration_83_0.png)
-    
+
 
 
 
@@ -923,9 +923,9 @@ Note that you can also make changes in the GitHub website itself. Visit one of y
 
 Make a change in the edit window, and add an appropriate commit message.
 
-That change now appears on the website, but not in your local copy. (Verify this). 
+That change now appears on the website, but not in your local copy. (Verify this).
 
-Now pull, and check the change is now present on your local version. 
+Now pull, and check the change is now present on your local version.
 
 ## GitHub as a social network
 

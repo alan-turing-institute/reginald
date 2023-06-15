@@ -137,7 +137,7 @@ s2.add_reaction(combustion_hydrogen)
 print(s2)
 ```
 
-    C_6H_{12}O_6 + 6O_2 \rightarrow 6CO_2 + 6H_2O\\ 
+    C_6H_{12}O_6 + 6O_2 \rightarrow 6CO_2 + 6H_2O\\
     2H_2 + O_2 \rightarrow 2H_2O
 
 
@@ -149,7 +149,7 @@ display(Math(str(s2)))
 ```
 
 
-$\displaystyle C_6H_{12}O_6 + 6O_2 \rightarrow 6CO_2 + 6H_2O\\ 
+$\displaystyle C_6H_{12}O_6 + 6O_2 \rightarrow 6CO_2 + 6H_2O\\
 2H_2 + O_2 \rightarrow 2H_2O$
 
 
@@ -239,7 +239,7 @@ while True:
 print(str(s2))
 ```
 
-    C_6H_{12}O_6 + 6O_2 \rightarrow 6CO_2 + 6H_2O\\ 
+    C_6H_{12}O_6 + 6O_2 \rightarrow 6CO_2 + 6H_2O\\
     2H_2 + O_2 \rightarrow 2H_2O
 
 
@@ -509,9 +509,9 @@ head -n 100 parser.out
 ```
 
     Created by PLY version 3.11 (http://www.dabeaz.com/ply)
-    
+
     Grammar
-    
+
     Rule 0     S' -> system
     Rule 1     system -> equation
     Rule 2     system -> system TEXNEWLINE NEWLINE equation
@@ -526,9 +526,9 @@ head -n 100 parser.out
     Rule 11    molecule -> molecule countedelement
     Rule 12    atomcount -> SUBSCRIPT NUMBER
     Rule 13    atomcount -> SUBSCRIPT LBRACE NUMBER RBRACE
-    
+
     Terminals, with rules where they appear
-    
+
     ARROW                : 3
     ELEMENT              : 9 10
     LBRACE               : 13
@@ -538,10 +538,10 @@ head -n 100 parser.out
     RBRACE               : 13
     SUBSCRIPT            : 12 13
     TEXNEWLINE           : 2
-    error                : 
-    
+    error                :
+
     Nonterminals, with rules where they appear
-    
+
     atomcount            : 10
     countedelement       : 8 11
     equation             : 1 2
@@ -549,11 +549,11 @@ head -n 100 parser.out
     molecules            : 4 7
     side                 : 3 3 7
     system               : 2 0
-    
+
     Parsing method: LALR
-    
+
     state 0
-    
+
         (0) S' -> . system
         (1) system -> . equation
         (2) system -> . system TEXNEWLINE NEWLINE equation
@@ -566,46 +566,46 @@ head -n 100 parser.out
         (11) molecule -> . molecule countedelement
         (9) countedelement -> . ELEMENT
         (10) countedelement -> . ELEMENT atomcount
-    
+
         NUMBER          shift and go to state 6
         ELEMENT         shift and go to state 8
-    
+
         system                         shift and go to state 1
         equation                       shift and go to state 2
         side                           shift and go to state 3
         molecules                      shift and go to state 4
         molecule                       shift and go to state 5
         countedelement                 shift and go to state 7
-    
+
     state 1
-    
+
         (0) S' -> system .
         (2) system -> system . TEXNEWLINE NEWLINE equation
-    
+
         TEXNEWLINE      shift and go to state 9
-    
-    
+
+
     state 2
-    
+
         (1) system -> equation .
-    
+
         TEXNEWLINE      reduce using rule 1 (system -> equation .)
         $end            reduce using rule 1 (system -> equation .)
-    
-    
+
+
     state 3
-    
+
         (3) equation -> side . ARROW side
         (7) side -> side . PLUS molecules
-    
+
         ARROW           shift and go to state 10
         PLUS            shift and go to state 11
-    
-    
+
+
     state 4
-    
+
         (4) side -> molecules .
-    
+
         ARROW           reduce using rule 4 (side -> molecules .)
         PLUS            reduce using rule 4 (side -> molecules .)
 
@@ -616,7 +616,7 @@ display(Math(str(roundtrip_system)))
 ```
 
 
-$\displaystyle C_6H_{12}O_6 + 6O_2 \rightarrow 6CO_2 + 6H_2O\\ 
+$\displaystyle C_6H_{12}O_6 + 6O_2 \rightarrow 6CO_2 + 6H_2O\\
 2H_2 + O_2 \rightarrow 2H_2O$
 
 
@@ -631,7 +631,7 @@ with open("system.tex", "w") as texfile:
 !cat system.tex
 ```
 
-    C_6H_{12}O_6 + 6O_2 \rightarrow 6CO_2 + 6H_2O\\ 
+    C_6H_{12}O_6 + 6O_2 \rightarrow 6CO_2 + 6H_2O\\
     2H_2 + O_2 \rightarrow 2H_2O
 
 ## Internal DSLs
@@ -639,7 +639,7 @@ with open("system.tex", "w") as texfile:
 In doing the above, we have defined what is called an "external DSL":
     our code is in Python, but the file format is a language with a grammar
     of its own.
-    
+
 However, we can use the language itself to define something almost
 as fluent, without having to write our own grammar,
 by using operator overloading and metaprogramming tricks:
@@ -823,7 +823,7 @@ display(Math(str(current_system)))
 ```
 
 
-$\displaystyle 2H_2 + O_2 \rightarrow 2H_2O\\ 
+$\displaystyle 2H_2 + O_2 \rightarrow 2H_2O\\
 6O_2 + C_6H_{12}O_6 \rightarrow 6H_2O + 6CO_2$
 
 

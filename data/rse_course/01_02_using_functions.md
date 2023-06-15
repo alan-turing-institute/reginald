@@ -42,7 +42,7 @@ Which gives us back a *list* of the letters in Python, sorted alphabetically (mo
 
 The input goes in brackets after the function name, and the output emerges wherever the function is used.
 
-So we can put a function call anywhere we could put a "literal" object or a variable. 
+So we can put a function call anywhere we could put a "literal" object or a variable.
 
 
 ```python
@@ -118,7 +118,7 @@ x.upper()
 
     /var/folders/q7/nl3w6z854711jwsdy0hj7sxhwypcgh/T/ipykernel_63968/1145191538.py in <module>
     ----> 1 x.upper()
-    
+
 
     AttributeError: 'int' object has no attribute 'upper'
 
@@ -137,7 +137,7 @@ x.wrong
 
     /var/folders/q7/nl3w6z854711jwsdy0hj7sxhwypcgh/T/ipykernel_63968/64132422.py in <module>
     ----> 1 x.wrong
-    
+
 
     AttributeError: 'int' object has no attribute 'wrong'
 
@@ -288,13 +288,13 @@ help(sorted)
 ```
 
     Help on built-in function sorted in module builtins:
-    
+
     sorted(iterable, /, *, key=None, reverse=False)
         Return a new list containing all items from the iterable in ascending order.
-        
+
         A custom key function can be supplied to customize the sort order, and the
         reverse flag can be set to request the result in descending order.
-    
+
 
 
 The 'dir' function, when applied to an object, lists all its attributes (properties and methods):
@@ -410,17 +410,17 @@ help("FIsh".replace)
 ```
 
     Help on built-in function replace:
-    
+
     replace(old, new, count=-1, /) method of builtins.str instance
         Return a copy with all occurrences of substring old replaced by new.
-        
+
           count
             Maximum number of occurrences to replace.
             -1 (the default value) means replace all occurrences.
-        
+
         If the optional argument count is given, only the first count occurrences are
         replaced.
-    
+
 
 
 ## 1.2.5 Operators
@@ -444,7 +444,7 @@ print(x)
 This is just a pretty way of calling an "add" function. Things would be more symmetrical if add were actually written
 
     x = +(2, 3)
-    
+
 Where '+' is just the name of the name of the adding function.
 
 In python, these functions **do** exist, but they're actually **methods** of the first input: they're the mysterious `__` functions we saw earlier (Two underscores.)
@@ -515,7 +515,7 @@ Sometimes we get an error when a type doesn't have an operator:
 
     /var/folders/q7/nl3w6z854711jwsdy0hj7sxhwypcgh/T/ipykernel_63968/929060672.py in <module>
     ----> 1 [2, 3, 4] - [5, 6]
-    
+
 
     TypeError: unsupported operand type(s) for -: 'list' and 'list'
 
@@ -536,7 +536,7 @@ Or when two types can't work together with an operator:
 
     /var/folders/q7/nl3w6z854711jwsdy0hj7sxhwypcgh/T/ipykernel_63968/708834880.py in <module>
     ----> 1 [2, 3, 4] + 5
-    
+
 
     TypeError: can only concatenate list (not "int") to list
 

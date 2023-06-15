@@ -1,6 +1,6 @@
 import matplotlib.pyplot as plt
-from numpy import sum, array
-from numpy.random import randint, choice
+from numpy import array, sum
+from numpy.random import choice, randint
 
 
 class MonteCarlo:
@@ -101,7 +101,7 @@ def energy(density, coefficient=1):
     density: array of positive integers
     Number of particles at each position i in the array/geometry
     """
-    from numpy import array, any, sum
+    from numpy import any, array, sum
 
     # Make sure input is an array
     density = array(density)

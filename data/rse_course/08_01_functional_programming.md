@@ -144,7 +144,7 @@ add_seven
 
     /var/folders/xv/d5nvn2ps5r3fcf276w707n01qdmpqf/T/ipykernel_87026/277320641.py in <module>
     ----> 1 add_seven
-    
+
 
     NameError: name 'add_seven' is not defined
 
@@ -380,7 +380,7 @@ efficient parallel programming: different computers can apply the *mapped*
 function to their input at the same time. We call this Single Program, Multiple
 Data (SPMD). **map** is half of the [**map-reduce**](https://en.wikipedia.org/wiki/MapReduce) functional programming
 paradigm which is key to the efficient operation of much of today's "data
-science" explosion. 
+science" explosion.
 
 Let's continue our functional programming mind-stretch by looking at **reduce** operations.
 
@@ -637,7 +637,7 @@ most_of_given_base_in_any_sequence(data, "A")
 
 
 
-The above fragment defined a lambda function as a **closure** over `base`. If you understood that, you've got it! 
+The above fragment defined a lambda function as a **closure** over `base`. If you understood that, you've got it!
 
 
 
@@ -733,9 +733,9 @@ plt.plot(*solved)
 
 
 
-    
+
 ![png](/Users/lbokeria/Documents/hack_week_2023/reginald/data_processing/rse_course_modules/module08_advanced_programming_techniques/08_01_functional_programming_71_2.png)
-    
+
 
 
 
@@ -792,9 +792,9 @@ print(newton(derivative(solve_me, 0.01), 0))
 
 
 
-    
+
 ![png](/Users/lbokeria/Documents/hack_week_2023/reginald/data_processing/rse_course_modules/module08_advanced_programming_techniques/08_01_functional_programming_78_1.png)
-    
+
 
 
 Of course, coding your own numerical methods is bad, because the implementations you develop are likely to be less efficient, less accurate and more error-prone than what you can find in existing established libraries.
@@ -828,5 +828,3 @@ newton(derivative(solve_me), 0)
 If you've done a moderate amount of calculus, then you'll find similarities
 between functional programming in computer science and Functionals in the
 calculus of variations.
-
-

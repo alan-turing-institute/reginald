@@ -1,7 +1,7 @@
-
-import numpy as np
 from io import BytesIO
+
 import imageio as img
+import numpy as np
 import requests
 
 
