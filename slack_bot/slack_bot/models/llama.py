@@ -74,7 +74,7 @@ class Llama(ResponseModel):
                     Document(row[1]["body"], extra_info={"filename": row[1]["url"]})
                     for row in df.iterrows()
                 ]
-            elif data_file.suffix == ".md":
+            elif data_file.suffix in (".md", ".txt"):
                 with open(data_file, "r") as f:
                     content = f.read()
                 documents.append(
