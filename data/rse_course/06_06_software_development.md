@@ -179,7 +179,7 @@ is a common slogan. Most bugs are found by people *using* code -- so exposing co
 
 
 Code is created by people. People work best when they feel ownership and pride in their work. Division of responsiblities into designers
-and programmers results in a ["Code Monkey"](http://open.spotify.com/track/1rIFZk9tTUtHP3vULR5wXe) role, where the craftspersonship and 
+and programmers results in a ["Code Monkey"](http://open.spotify.com/track/1rIFZk9tTUtHP3vULR5wXe) role, where the craftspersonship and
 sense of responsibility for code quality is lost. Agile approaches encourage programmers, designers, clients, and businesspeople to see
 themselves as one team, working together, with fluid roles. Programmers grab issues from the backlog according to interest, aptitude,
 and community spirit.
@@ -220,11 +220,11 @@ BUT
 
 ## Further reading
 
-Below is a small seleciton of the many books and articales writen on this topic: 
+Below is a small seleciton of the many books and articales writen on this topic:
 
-* **The Mythical Man Month** 
+* **The Mythical Man Month**
 https://en.wikipedia.org/wiki/The_Mythical_Man-Month
-First published in 1975, but still worth reading. 
+First published in 1975, but still worth reading.
 
 * **Peopleware**
 https://en.wikipedia.org/wiki/Peopleware:_Productive_Projects_and_Teams
@@ -241,6 +241,4 @@ A talk given by one of the Manifesto's signators, over a decade after the origio
 
 * **Five Worlds**
 https://www.joelonsoftware.com/2002/05/06/five-worlds/
-Argues that different software development contexts need different approaches (techniquies, methodologies etc). The specific contexts are slightly dated, but the core advice is not - you should interperate any software development advise by considering the context from which it was derived. 
-
-
+Argues that different software development contexts need different approaches (techniquies, methodologies etc). The specific contexts are slightly dated, but the core advice is not - you should interperate any software development advise by considering the context from which it was derived.

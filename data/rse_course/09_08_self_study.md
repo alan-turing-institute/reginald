@@ -2,7 +2,7 @@
 
 The following parts are not covered during the taught session and are for self-study.
 
-##  9.8.0 Optimising with NumPy 
+##  9.8.0 Optimising with NumPy
 
 *Relevant notebook: 9.2 Optimising with NumPy*
 
@@ -85,14 +85,14 @@ plt.imshow(
 
 
 
-    
+
 ![png](/Users/lbokeria/Documents/hack_week_2023/reginald/data_processing/rse_course_modules/module09_programming_for_speed/09_08_self_study_6_1.png)
-    
+
 
 
 This was **not faster** even though it was **doing less work**. This often happens: on modern computers, **branches** (if statements, function calls) and **memory access** is usually the rate-determining step, not maths. Complicating your logic to avoid calculations sometimes therefore slows you down. The only way to know is to **measure**.You need to *experiment* to see which optimisations will work. Performance programming needs to be empirical.
 
-## 9.8.1 Optimising with Cython 
+## 9.8.1 Optimising with Cython
 
 *Relevant notebook: 9.3 Optimising with Cython*
 
@@ -253,9 +253,9 @@ plt.colorbar()
 
 
 
-    
+
 ![png](/Users/lbokeria/Documents/hack_week_2023/reginald/data_processing/rse_course_modules/module09_programming_for_speed/09_08_self_study_23_1.png)
-    
+
 
 
 
@@ -299,9 +299,9 @@ plt.colorbar()
 
 
 
-    
+
 ![png](/Users/lbokeria/Documents/hack_week_2023/reginald/data_processing/rse_course_modules/module09_programming_for_speed/09_08_self_study_27_1.png)
-    
+
 
 
 ## 9.8.3 Performance Scaling
@@ -357,9 +357,9 @@ plot_time(time_lookup_middle_element_in_list, counts)
 ```
 
 
-    
+
 ![png](/Users/lbokeria/Documents/hack_week_2023/reginald/data_processing/rse_course_modules/module09_programming_for_speed/09_08_self_study_34_0.png)
-    
+
 
 
 
@@ -368,9 +368,9 @@ plot_time(time_lookup_middle_element_in_ndarray, counts)
 ```
 
 
-    
+
 ![png](/Users/lbokeria/Documents/hack_week_2023/reginald/data_processing/rse_course_modules/module09_programming_for_speed/09_08_self_study_35_0.png)
-    
+
 
 
 Both scale well for accessing the middle element.
@@ -417,9 +417,9 @@ plot_time(time_insert_to_list, counts)
 ```
 
 
-    
+
 ![png](/Users/lbokeria/Documents/hack_week_2023/reginald/data_processing/rse_course_modules/module09_programming_for_speed/09_08_self_study_41_0.png)
-    
+
 
 
 `list` performs **badly** for insertions at the beginning!
@@ -447,9 +447,9 @@ plot_time(time_insert_to_deque, counts)
 ```
 
 
-    
+
 ![png](/Users/lbokeria/Documents/hack_week_2023/reginald/data_processing/rse_course_modules/module09_programming_for_speed/09_08_self_study_46_0.png)
-    
+
 
 
 But looking up in the middle scales badly:
@@ -472,9 +472,9 @@ plot_time(time_lookup_middle_element_in_deque, counts)
 ```
 
 
-    
+
 ![png](/Users/lbokeria/Documents/hack_week_2023/reginald/data_processing/rse_course_modules/module09_programming_for_speed/09_08_self_study_49_0.png)
-    
+
 
 
 What is going on here?
@@ -489,7 +489,7 @@ The Python `list` type is **also** an array, but it is allocated with **extra me
 
 ![Adding an element to a list - memory representation](list_memory.svg)
 
-If the extra memory is typically the size of the current array, a copy is needed every 1/N appends, and costs N to make, so **on average** copies are cheap. We call this **amortized constant time**. 
+If the extra memory is typically the size of the current array, a copy is needed every 1/N appends, and costs N to make, so **on average** copies are cheap. We call this **amortized constant time**.
 
 This makes it fast to look up values in the middle. However, it may also use more space than is needed.
 
@@ -643,9 +643,9 @@ plot_time(time_sorted, counts, title="sorted")
 ```
 
 
-    
+
 ![png](/Users/lbokeria/Documents/hack_week_2023/reginald/data_processing/rse_course_modules/module09_programming_for_speed/09_08_self_study_76_0.png)
-    
+
 
 
 We can't really see what's going on here for the sorted example as there's too much noise, but theoretically we should get **logarithmic** asymptotic performance. We write this down as $O(\ln N)$. This doesn't mean there isn't also a constant term, or a term proportional to something that grows slower (such as $\ln(\ln N)$): we always write down just the term that is dominant for large $N$. We saw before that `list` is $O(1)$ for appends, $O(N)$ for inserts. Numpy's `array` is $O(N)$ for appends.
@@ -657,9 +657,9 @@ plot_time(time_evil, counts, title="evil")
 ```
 
 
-    
+
 ![png](/Users/lbokeria/Documents/hack_week_2023/reginald/data_processing/rse_course_modules/module09_programming_for_speed/09_08_self_study_78_0.png)
-    
+
 
 
 The simple check-each-in-turn solution is $O(N)$ - linear time.
@@ -671,9 +671,9 @@ plot_time(time_dict, counts, title="dict")
 ```
 
 
-    
+
 ![png](/Users/lbokeria/Documents/hack_week_2023/reginald/data_processing/rse_course_modules/module09_programming_for_speed/09_08_self_study_80_0.png)
-    
+
 
 
 Python's built-in dictionary is, amazingly, O(1): the time is **independent** of the size of the dictionary.

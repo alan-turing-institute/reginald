@@ -4,7 +4,7 @@
 
 ## Introduction
 
-As we write code, we want to be sure that it does behaves the way we'd like it to - so we test it. Testing (and re-testing) our code is something that needs to be done regularly (ideally after every change to the code), comprehensively, quickly and reliably. In short testing is an task that is ideally suited to automation. 
+As we write code, we want to be sure that it does behaves the way we'd like it to - so we test it. Testing (and re-testing) our code is something that needs to be done regularly (ideally after every change to the code), comprehensively, quickly and reliably. In short testing is an task that is ideally suited to automation.
 
 We write additional code to test the behaviour for our main code. We use these terms to distinguish between the two types of code:
 
@@ -50,12 +50,12 @@ Also, automated tests only test a narrow interpretation of quality software deve
 
 Level of test           | Area covered by test                                      | Notes
 ----------------------- | --------------------------------------------------------- | ---------------------
-**Unit testing**        | smallest logical block of work (often < 10 lines of code) | Unit tests should run fast (eg ~1/100th sec) so that they can be re-run regularly (eg every git commit). To achieve this they should not invoke network access or substantial disk access. 
+**Unit testing**        | smallest logical block of work (often < 10 lines of code) | Unit tests should run fast (eg ~1/100th sec) so that they can be re-run regularly (eg every git commit). To achieve this they should not invoke network access or substantial disk access.
 **Component testing**   | several logical blocks of work together                   | These can be useful where you need to tease out the expected/useful behaviour of 3rd party libraries.
 **Integration testing** | all components together / whole program                   | These can take longer to run, and can be run less often.
 
 
-* When writing new code (see below) always start by creating tests at the smallest scale (unit tests). 
+* When writing new code (see below) always start by creating tests at the smallest scale (unit tests).
 * If a unit test is too complicated to write, then consider adjusting your production code (possibly by breaking it down into smaller, individually testable functions). Ensuring that your production code is easy to test is a healthy habit.
 
 ### Legacy code hardening
@@ -86,7 +86,7 @@ check output against expected result
 
 ```python
 if energy > 0:
-    ! Do this 
+    ! Do this
 else:
     ! Do that
 ```

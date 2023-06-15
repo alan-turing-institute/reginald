@@ -16,7 +16,7 @@ You'll need to add this content:
 > ```
 
 A pair of lines with three dashes, to the top of each markdown file. This is how GitHub knows which markdown files to make into web pages.
-[Here's why](https://jekyllrb.com/docs/front-matter/) for the curious. 
+[Here's why](https://jekyllrb.com/docs/front-matter/) for the curious.
 
 
 ```python
@@ -107,4 +107,3 @@ git branch --remote
        c8ba483..12ee6ad  main -> main
     To github.com:alan-turing-institute/github-example.git
      - [deleted]         gh-pages
-

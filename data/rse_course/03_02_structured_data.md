@@ -125,7 +125,7 @@ print(yaml.safe_dump(my_yaml_data, default_flow_style=True))
 ```
 
     {somekey: [a list, with values, for yaml]}
-    
+
 
 
 
@@ -137,7 +137,7 @@ print(yaml.safe_dump(my_yaml_data, default_flow_style=False))
     - a list
     - with values
     - for yaml
-    
+
 
 
 `default_flow_style=False` uses a "block style" (rather than an "inline" or "flow style") to delineate data structures.

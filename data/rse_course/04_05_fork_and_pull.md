@@ -17,7 +17,7 @@ Numpy has done so much for you asking nothing in return, that you really want to
 
 You make all of the changes but you can't push it back to Numpy's repository because you don't have permissions.
 
-The right way to do this is __forking Numpy's repository__. 
+The right way to do this is __forking Numpy's repository__.
 
 ## Forking a repository on GitHub
 

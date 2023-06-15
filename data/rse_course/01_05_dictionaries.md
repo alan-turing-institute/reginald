@@ -153,7 +153,7 @@ When we test for containment on a `dict` we test on the **keys**:
 ### Immutable Keys Only
 
 The way in which dictionaries work is one of the coolest things in computer science:
-the "hash table". The details of this are beyond the scope of this course, but we will consider some aspects in the section on performance programming. 
+the "hash table". The details of this are beyond the scope of this course, but we will consider some aspects in the section on performance programming.
 
 One consequence of this implementation is that you can only use **immutable** things as keys.
 

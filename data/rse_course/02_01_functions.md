@@ -1,4 +1,4 @@
-# 2.1 Functions 
+# 2.1 Functions
 
 *Estimated time for this notebook: 15 minutes*
 
@@ -174,7 +174,7 @@ are_there_cats(second_list)
 
 ## 2.1.4 Scoping
 
-There are differences in how variables and names are accessed by your code based on where they are defined. 
+There are differences in how variables and names are accessed by your code based on where they are defined.
 
 Within this notebook any variables that have been defined outside of a function will be available to the rest of the notebook. At this point in the notebook, x has not been defined.
 
@@ -190,7 +190,7 @@ x
 
     <ipython-input-15-6fcf9dfbd479> in <module>
     ----> 1 x
-    
+
 
     NameError: name 'x' is not defined
 
@@ -243,7 +243,7 @@ y
 
     <ipython-input-18-9063a9f0e032> in <module>
     ----> 1 y
-    
+
 
     NameError: name 'y' is not defined
 
@@ -285,7 +285,7 @@ In this example, we're using `[:]` to access into the same list, and write its d
 
 would just move a local label, not change the input.
 
-See Module 1.5 - Memory and Containers for a refresher 
+See Module 1.5 - Memory and Containers for a refresher
 
 But I'd usually just write this as a function which **returned** the output:
 
@@ -466,4 +466,3 @@ somefunc(1, 2, 3, 4, 5, fish="Haddock")
     B: 2
     args: (3, 4, 5)
     keyword args {'fish': 'Haddock'}
-

@@ -11,7 +11,7 @@ Frameworks should simplify our lives:
     * Fixtures
     * Setup/Tear down
     * Parameterized tests (same test, mostly same input)
-* Find all our tests in a complicated code-base 
+* Find all our tests in a complicated code-base
 * Run all our tests with a quick command
 * Run only some tests, e.g. ``test --only "tests about fields"``
 * **Report failing tests**
@@ -22,7 +22,7 @@ Frameworks should simplify our lives:
 * Language agnostic: [CTest](https://cmake.org/cmake/help/latest/manual/ctest.1.html)
   * Test runner for executables, bash scripts, etc...
   * Great for legacy code hardening
-    
+
 * C unit-tests:
     * all c++ frameworks,
     * [Check](https://libcheck.github.io/check/),
@@ -138,17 +138,17 @@ pytest || echo "Tests failed"
     rootdir: /Users/a.smith/code/teaching/rse-course/module05_testing_your_code/saskatchewan
     plugins: cov-4.0.0, anyio-3.6.2, pylama-8.4.1
     collected 3 items
-    
+
     test_overlap.py ..F                                                      [100%]
-    
+
     =================================== FAILURES ===================================
     _______________________________ test_no_overlap ________________________________
-    
+
         def test_no_overlap():
     >       assert overlap((1, 1, 4, 4), (4.5, 4.5, 5, 5)) == 0.0
     E       assert 0.25 == 0.0
     E        +  where 0.25 = overlap((1, 1, 4, 4), (4.5, 4.5, 5, 5))
-    
+
     test_overlap.py:13: AssertionError
     =========================== short test summary info ============================
     FAILED test_overlap.py::test_no_overlap - assert 0.25 == 0.0

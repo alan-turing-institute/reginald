@@ -46,7 +46,7 @@ np.arange(5) * np.arange(6)
     ----> 1 np.arange(5) * np.arange(6)
 
 
-    ValueError: operands could not be broadcast together with shapes (5,) (6,) 
+    ValueError: operands could not be broadcast together with shapes (5,) (6,)
 
 
 
@@ -63,7 +63,7 @@ np.zeros([2, 3]) * np.zeros([2, 4])
     ----> 1 np.zeros([2, 3]) * np.zeros([2, 4])
 
 
-    ValueError: operands could not be broadcast together with shapes (2,3) (2,4) 
+    ValueError: operands could not be broadcast together with shapes (2,3) (2,4)
 
 
 
@@ -90,7 +90,7 @@ m1 + m2
     ----> 1 m1 + m2
 
 
-    ValueError: operands could not be broadcast together with shapes (10,10) (10,5,2) 
+    ValueError: operands could not be broadcast together with shapes (10,10) (10,5,2)
 
 
 Arrays must match in **all** dimensions in order to be compatible:
@@ -354,7 +354,7 @@ y
 
     array([[[0, 1],
             [2, 3]],
-    
+
            [[4, 5],
             [6, 7]]])
 
@@ -396,8 +396,8 @@ y_dash
 
     array([[[[0, 1],
              [2, 3]]],
-    
-    
+
+
            [[[4, 5],
              [6, 7]]]])
 
@@ -459,9 +459,9 @@ threebythree[:, np.newaxis, :]
 
 
     array([[[0, 1, 2]],
-    
+
            [[3, 4, 5]],
-    
+
            [[6, 7, 8]]])
 
 
@@ -555,11 +555,11 @@ a[:, :, np.newaxis] * b[np.newaxis, :, :]
     array([[[ 0,  0,  0],
             [ 6,  7,  8],
             [18, 20, 22]],
-    
+
            [[ 9, 12, 15],
             [24, 28, 32],
             [45, 50, 55]],
-    
+
            [[18, 24, 30],
             [42, 49, 56],
             [72, 80, 88]]])
