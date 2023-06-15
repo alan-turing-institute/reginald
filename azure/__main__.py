@@ -8,8 +8,7 @@ config = pulumi.Config()
 
 # Create an resource group
 resource_group = resources.ResourceGroup(
-    "resource_group",
-    resource_group_name=f"rg-reginald-{stack_name}-deployment"
+    "resource_group", resource_group_name=f"rg-reginald-{stack_name}-deployment"
 )
 
 # Create a network security group
@@ -52,7 +51,7 @@ virtual_network = network.VirtualNetwork(
 storage_account = storage.StorageAccount(
     "storage_account",
     access_tier=storage.AccessTier.COOL,
-    account_name=f"sareginald{stack_name}configuration"[:24], # max 24 characters
+    account_name=f"sareginald{stack_name}configuration"[:24],  # max 24 characters
     enable_https_traffic_only=False,
     encryption=storage.EncryptionArgs(
         key_source=storage.KeySource.MICROSOFT_STORAGE,
