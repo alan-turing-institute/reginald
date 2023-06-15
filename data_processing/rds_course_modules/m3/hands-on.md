@@ -9,7 +9,7 @@ it. At the end of the session the students will present their work to
 the class. The timeline for this session is the following: - Phase 1:
 Presentation of tasks and goals of the hands-on session (15 minutes), -
 Phase 2: Groups are formed and students choose task to develop (15
-minutes)  
+minutes)
 - Phase 3: Work on the tasks (2.5 hours + with two 15 m breaks) - Phase
 4: Students present their findings and discussion (1 hour)
 

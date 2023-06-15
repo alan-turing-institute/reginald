@@ -685,7 +685,7 @@ df["Y11_Q53a"].value_counts().sort_index()
 
 
 
-What is the minimum, maximum and mean value in each of your example columns? Taking into consideration the type of data in the column, are all of these values meaningful? 
+What is the minimum, maximum and mean value in each of your example columns? Taking into consideration the type of data in the column, are all of these values meaningful?
 
 
 ```python
@@ -1304,7 +1304,7 @@ Looking at the possible values for each column in the dataset documentation, fin
 - `education_3_groups` (`Y11_Education` before renaming)
    - 5 = "Don't know", 6 = "Refused to Answer".
    - 4 = "Educated abroad": Could also be considered missing (as we don't know whether it was primary/secondary/tertiary education)
-   
+
 - `direct_contact_with_children` (`Y11_Q33a` before renaming)
    - 6 = "NA"
 
@@ -1328,7 +1328,7 @@ print(column, ":", (df[column] == 6).sum(), "Numeric representation of missing v
 
     education_3_groups : 623 Pandas missing values
     education_3_groups : 276 Numeric representation of missing values
-    
+
     direct_contact_with_children : 47519 Pandas missing values
     direct_contact_with_children : 6860 Numeric representation of missing values
 
@@ -1667,10 +1667,10 @@ by_country = df_2011.groupby("country_human").apply(lambda g: g.isna().mean() * 
 uk_vs_spain = by_country[["UK", "Spain"]]
 ```
 
-    /var/folders/xv/d5nvn2ps5r3fcf276w707n01qdmpqf/T/ipykernel_77880/1548146086.py:2: SettingWithCopyWarning: 
+    /var/folders/xv/d5nvn2ps5r3fcf276w707n01qdmpqf/T/ipykernel_77880/1548146086.py:2: SettingWithCopyWarning:
     A value is trying to be set on a copy of a slice from a DataFrame.
     Try using .loc[row_indexer,col_indexer] = value instead
-    
+
     See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
       df_2011["country_human"] = df_2011["country"].map(country_mapping_2011) # ignore set with copy warning
 

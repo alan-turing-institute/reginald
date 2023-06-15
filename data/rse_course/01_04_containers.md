@@ -111,7 +111,7 @@ my_tuple[0] = "Goodbye"
     /var/folders/q7/nl3w6z854711jwsdy0hj7sxhwypcgh/T/ipykernel_63992/1208414676.py in <module>
           1 my_tuple = ("Hello", "World")
     ----> 2 my_tuple[0] = "Goodbye"
-    
+
 
     TypeError: 'tuple' object does not support item assignment
 
@@ -144,7 +144,7 @@ fish[0] = "R"
     /var/folders/q7/nl3w6z854711jwsdy0hj7sxhwypcgh/T/ipykernel_63992/2286101535.py in <module>
           1 fish = "Hake"
     ----> 2 fish[0] = "R"
-    
+
 
     TypeError: 'str' object does not support item assignment
 
@@ -365,7 +365,7 @@ in memory:
 
 
 
-The == operator checks, element by element, that two containers have the same data. 
+The == operator checks, element by element, that two containers have the same data.
 The `is` operator checks that they are actually the same object.
 
 But, and this point is really subtle, for immutables, the python language might save memory by reusing a single instantiated copy. This will always be safe.
@@ -448,5 +448,3 @@ x is z
 
 
     False
-
-

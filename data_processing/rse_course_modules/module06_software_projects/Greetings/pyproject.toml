@@ -13,4 +13,3 @@ dev = ["pytest ~= 7.1.2"]
 
 [project.scripts]
 greet = "greetings.command:process"
-

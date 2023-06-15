@@ -8,11 +8,11 @@ figures from bad ones, helping improve the way
 you use visualisation to effectively and accurately communicate insights
 from data.
 
-This module is structured as follows: 
-- **Figures Gone Wrong**. Real-world for examples of bad figures, showing how easy misakes are (knowingly or unknowingly) made. 
-- **Rules of the data visualisation game**. A whip-round of the basics. 
-- **Atlas of Visualisations**. How visualisations are commonly adapted for different scenarios and data types. 
-- **Storytelling with data visualisation**. How to ensure your figure is delivering the intended message. 
+This module is structured as follows:
+- **Figures Gone Wrong**. Real-world for examples of bad figures, showing how easy misakes are (knowingly or unknowingly) made.
+- **Rules of the data visualisation game**. A whip-round of the basics.
+- **Atlas of Visualisations**. How visualisations are commonly adapted for different scenarios and data types.
+- **Storytelling with data visualisation**. How to ensure your figure is delivering the intended message.
 - **Visualisation for Data Exploration**. Exploring the dataset introduced in Modules 1 & 2 through visualisations.
 
 **References**:

@@ -59,9 +59,9 @@ plt.plot(xs, zs)
 
 
 
-    
+
 ![png](/Users/lbokeria/Documents/hack_week_2023/reginald/data_processing/rse_course_modules/module09_programming_for_speed/09_00_performance_programming_9_1.png)
-    
+
 
 
 Note how quickly the series grows outside of +/- 1.
@@ -114,13 +114,13 @@ plt.plot(xs, zs)
 
 
 
-    
+
 ![png](/Users/lbokeria/Documents/hack_week_2023/reginald/data_processing/rse_course_modules/module09_programming_for_speed/09_00_performance_programming_12_1.png)
-    
+
 
 
 We can generalise this to complex numbers.
-A complex number $c$, for example $c = 5 + 6 \cdot j$, has a real part $Re(c) = 5$ and an imaginary part $Im(c) = 6$. 
+A complex number $c$, for example $c = 5 + 6 \cdot j$, has a real part $Re(c) = 5$ and an imaginary part $Im(c) = 6$.
 The definition of the imaginary unit $j$ is given by $j = \sqrt{-1}$.
 Note that we use the $j$ (instead of $i$) as it is common for engineers and this is the convention that Python follows.
 
@@ -154,9 +154,9 @@ plt.grid()
 ```
 
 
-    
+
 ![png](/Users/lbokeria/Documents/hack_week_2023/reginald/data_processing/rse_course_modules/module09_programming_for_speed/09_00_performance_programming_18_0.png)
-    
+
 
 
 
@@ -172,7 +172,7 @@ abs(c)
 
 
 
-Back to our series. We want to apply our function on different complex starting points and visualise the result. 
+Back to our series. We want to apply our function on different complex starting points and visualise the result.
 This means we need to change our line plot to a 2D heatmap.
 
 
@@ -190,7 +190,7 @@ ys = [(ymin + ystep * i) for i in range(resolution)]
 zs = [[series2(x + y * 1j) for x in xs] for y in ys]
 ```
 
-Questions for you: 
+Questions for you:
 - How would you describe the data structure of `zs`?
 - How many complex numbers are in the list `zs`?
 
@@ -211,9 +211,9 @@ plt.colorbar()
 
 
 
-    
+
 ![png](/Users/lbokeria/Documents/hack_week_2023/reginald/data_processing/rse_course_modules/module09_programming_for_speed/09_00_performance_programming_23_1.png)
-    
+
 
 
 We see that there is a circle of radius 1 so we know that series will diverge whenever the start point is further than 1 from the origin.
@@ -225,7 +225,7 @@ Things get much more interesting when we change the series from
 
 $z_{i+1}=z_{i}^2$ (with $z_0=c$)
 
-to 
+to
 
 $z_{i+1}=z_{i}^2 + c$, starting from $z_0 = 0$, where $c$ is a complex constant and $i = 1, 2, 3, \dots$.
 
@@ -282,22 +282,22 @@ plt.colorbar()
 
 
 
-    
+
 ![png](/Users/lbokeria/Documents/hack_week_2023/reginald/data_processing/rse_course_modules/module09_programming_for_speed/09_00_performance_programming_28_1.png)
-    
 
 
-<div class="alert alert-block alert-info">  The Mandelbrot set consists of all values of complex numbers $c$ for which the series $z_{i+1} = z_i^2 + c$ does not diverge to infinity when iterated from the seed $z_0 = 0$. 
-    
+
+<div class="alert alert-block alert-info">  The Mandelbrot set consists of all values of complex numbers $c$ for which the series $z_{i+1} = z_i^2 + c$ does not diverge to infinity when iterated from the seed $z_0 = 0$.
+
 It can be proven that if there is an $i$ for which $|z_i| > 2$, then the sequence tends to infinity. </div>
 
 ## 9.0.3 Fractals
 
-The yellow area are those complex values for which the series hasn't exploded. The values within the yellow area form the Mandelbrot set. 
+The yellow area are those complex values for which the series hasn't exploded. The values within the yellow area form the Mandelbrot set.
 
 It was first defined and drawn by Robert W. Brooks and Peter Matelski in 1978 but is named after Benoit Mandelbrot, who obtained high quality visualizations of it, in 1980, while working at IBM's Thomas J. Watson Research Center.
 
-The boundary of the Mandelbrot set is a fractal. **Fractals** are geometrical patterns that are **self-similar** at different scales, which means that every part of a fractal, no matter how much we zoom in, looks similar to the whole. 
+The boundary of the Mandelbrot set is a fractal. **Fractals** are geometrical patterns that are **self-similar** at different scales, which means that every part of a fractal, no matter how much we zoom in, looks similar to the whole.
 It's easier to understand what that means by looking at some examples:
 
 
@@ -330,9 +330,9 @@ plt.colorbar()
 
 
 
-    
+
 ![png](/Users/lbokeria/Documents/hack_week_2023/reginald/data_processing/rse_course_modules/module09_programming_for_speed/09_00_performance_programming_32_1.png)
-    
+
 
 
 Here's a nice visualisation for this on [Wikipedia](https://commons.wikimedia.org/wiki/File:Mandelbrot_sequence_new.gif#/media/File:Mandelbrot_sequence_new.gif).

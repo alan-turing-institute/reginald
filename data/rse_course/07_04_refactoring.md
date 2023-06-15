@@ -410,6 +410,3 @@ add new tests for them.
 And many more...
 
 Read [The Refactoring Book](https://martinfowler.com/books/refactoring.html).
-
-
-

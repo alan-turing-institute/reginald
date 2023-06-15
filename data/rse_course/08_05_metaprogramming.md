@@ -101,7 +101,7 @@ baskets = [bananas, apples, oranges, kiwis]
 
     /var/folders/xv/d5nvn2ps5r3fcf276w707n01qdmpqf/T/ipykernel_48934/672045426.py in <module>
     ----> 1 baskets = [bananas, apples, oranges, kiwis]
-    
+
 
     NameError: name 'kiwis' is not defined
 
@@ -131,7 +131,7 @@ print("\nWith these keys:\n", globals().keys())
 
     globals() is a
      <class 'dict'>
-    
+
     With these keys:
      dict_keys(['__name__', '__doc__', '__package__', '__loader__', '__spec__', '__builtin__', '__builtins__', '_ih', '_oh', '_dh', 'In', 'Out', 'get_ipython', 'exit', 'quit', '_', '__', '___', '_i', '_ii', '_iii', '_i1', 'bananas', 'apples', 'oranges', '_i2', 'initial_fruit_count', '_i3', 'Basket', '_i4', 'baskets', 'basket', '_i5', '_i6'])
 
@@ -186,7 +186,7 @@ kiwis.count
 
 This is **metaprogramming**.
 
-I would NOT recommend using it for an example as trivial as the one above. 
+I would NOT recommend using it for an example as trivial as the one above.
 A better, more Pythonic choice here would be to use a data structure to manage your set of fruit baskets:
 
 
@@ -233,7 +233,7 @@ baskets["kiwis"].count
 Which is the nicest way to do this, I think. Code which feels like
 metaprogramming is needed to make it less repetitive can often instead be DRYed
 up using a refactored data structure, in a way which is cleaner and more easy
-to understand. Nevertheless, metaprogramming is worth knowing. 
+to understand. Nevertheless, metaprogramming is worth knowing.
 
 
 ## Metaprogramming class attributes
@@ -518,4 +518,3 @@ DRY principle, but there is another equally important principle:
 
 Whenever you write code and you think, "Gosh, I'm really clever",you're
 probably *doing it wrong*. Code should be about clarity, not showing off.
-

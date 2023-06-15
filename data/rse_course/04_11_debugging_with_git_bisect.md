@@ -201,9 +201,9 @@ git bisect run python squares.py 2
     commit 5b19f6ff5e0ad5cd90b997a40e7534fbf9963e68
     Author: Shawn Siefkas <shawn.siefkas@meredith.com>
     Date:   Thu Nov 14 09:23:55 2013 -0600
-    
+
         Breaking argument type
-    
+
      squares.py | 2 +-
      1 file changed, 1 insertion(+), 1 deletion(-)
     bisect run success

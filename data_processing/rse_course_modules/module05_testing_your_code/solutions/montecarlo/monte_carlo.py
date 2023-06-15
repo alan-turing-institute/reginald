@@ -1,5 +1,5 @@
 class MonteCarlo:
-    """ A simple Monte Carlo implementation """
+    """A simple Monte Carlo implementation"""
 
     def __init__(self, temperature=100, itermax=100):
 
@@ -14,9 +14,9 @@ class MonteCarlo:
         """ Maximum number of iterations """
 
     def change_density(self, density):
-        """ Move one particle left or right. """
-        from numpy import sum, array
-        from numpy.random import randint, choice
+        """Move one particle left or right."""
+        from numpy import array, sum
+        from numpy.random import choice, randint
 
         # Particle index
         particle = randint(sum(density))
@@ -42,7 +42,7 @@ class MonteCarlo:
         return result
 
     def accept_change(self, prior, successor):
-        """ Returns true if should accept change. """
+        """Returns true if should accept change."""
         from numpy import exp
         from numpy.random import uniform
 
@@ -51,7 +51,7 @@ class MonteCarlo:
         return exp(-(successor - prior) / self.temperature) > uniform()
 
     def __call__(self, energy, density):
-        """ Runs Monte-carlo """
+        """Runs Monte-carlo"""
         from numpy import any, array
 
         density = array(density)

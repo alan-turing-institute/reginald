@@ -2,8 +2,8 @@
 Loads the Palmer penguins data and adds some rows to represent issues that can
 arise with data consistency.
 """
-import pandas as pd
 import numpy as np
+import pandas as pd
 
 df = pd.read_csv("penguins_original.csv")
 print("\nOriginal data frame info:\n")

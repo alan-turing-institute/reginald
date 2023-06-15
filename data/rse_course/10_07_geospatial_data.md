@@ -45,7 +45,7 @@ ds
         history: 2004-09-15 17:04:29 GMT by mars2netcdf-0.92
         dimensions(sizes): longitude(144), latitude(73), time(62)
         variables(dimensions): float32 longitude(longitude), float32 latitude(latitude), int32 time(time), int16 tcw(time, latitude, longitude), int16 tcwv(time, latitude, longitude), int16 lsp(time, latitude, longitude), int16 cp(time, latitude, longitude), int16 msl(time, latitude, longitude), int16 blh(time, latitude, longitude), int16 tcc(time, latitude, longitude), int16 p10u(time, latitude, longitude), int16 p10v(time, latitude, longitude), int16 p2t(time, latitude, longitude), int16 p2d(time, latitude, longitude), int16 e(time, latitude, longitude), int16 lcc(time, latitude, longitude), int16 mcc(time, latitude, longitude), int16 hcc(time, latitude, longitude), int16 tco3(time, latitude, longitude), int16 tp(time, latitude, longitude)
-        groups: 
+        groups:
 
 
 
@@ -62,7 +62,7 @@ for dim in ds.dimensions.values():
     <class 'netCDF4._netCDF4.Dimension'> (unlimited): name = 'time', size = 62
 
 
-Let's make a map of "total column ozone" (the amount of ozone from the surface of the Earth to the edge of the atmosphere)  for the first time point in this file (the times here are in "hours since 1/1/1900"). 
+Let's make a map of "total column ozone" (the amount of ozone from the surface of the Earth to the edge of the atmosphere)  for the first time point in this file (the times here are in "hours since 1/1/1900").
 
 From the ECMWF parameter database (linked above) we can see that the variable we want for the total column ozone is "tco3".
 We can put the longitude and latitude (which will be our _x_ and _y_ coordinates), and tco3 (which will be the _z_ coordinate)) into numpy data structures:
@@ -96,9 +96,9 @@ plt.colorbar()
 
 
 
-    
+
 ![png](/Users/lbokeria/Documents/hack_week_2023/reginald/data_processing/rse_course_modules/module10_scientific_file_formats/10_07_geospatial_data_13_1.png)
-    
+
 
 
 ## Pangeo: big data geoscience

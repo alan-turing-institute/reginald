@@ -12,8 +12,8 @@ The basic concepts of object orientation are necessary to follow much of the sof
 ## Design processes
 
 
-In addition to object-oriented architecture, software engineers have focused on the development of processes for robust, reliable software development. 
-These codified ways of working hope to enable organisations to repeatably and reliably complete complex software projects in a way that minimises both development 
+In addition to object-oriented architecture, software engineers have focused on the development of processes for robust, reliable software development.
+These codified ways of working hope to enable organisations to repeatably and reliably complete complex software projects in a way that minimises both development
 and maintainance costs, and meets user requirements.
 
 
@@ -50,7 +50,7 @@ terry = Person("Terry", 76)
 terry.home = "Colwyn Bay"  # don't add new properties like this!
 ```
 
-### Declaring a class 
+### Declaring a class
 
 **Class:** A user-defined type
 
@@ -191,7 +191,7 @@ if hawk.can_see(starling):
 
 ### Replace method arguments with member variables
 
-💩**Smell**: A variable is nearly always used in arguments to 
+💩**Smell**: A variable is nearly always used in arguments to
 a class.
 
 

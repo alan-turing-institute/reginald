@@ -148,7 +148,7 @@ some standard ways to solve them, which will lead us to the idea of **normalisat
 
 Consider the mistakes that someone might make when typing in a reaction in the above format: they could easily, if there are multiple reactions in a system, type glucose in correctly as `C_6H_{12}O_6` the first time, but the second type accidentally type `C_6H_{12}o_6.`
 
-The system wouldn't know these are the same molecule, so, for example, if building a mass action model of reaction kinetics, the differential equations would come out wrong. 
+The system wouldn't know these are the same molecule, so, for example, if building a mass action model of reaction kinetics, the differential equations would come out wrong.
 
 The natural-seeming solution to this is, in your data format, to name each molecule and atom, and consider a representation in terms of CSV files:
 

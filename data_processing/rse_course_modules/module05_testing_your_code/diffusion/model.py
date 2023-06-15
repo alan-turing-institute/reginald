@@ -1,5 +1,5 @@
 """Simplistic 1-dimensional diffusion model."""
-from numpy import array, any, sum
+from numpy import any, array, sum
 
 
 def energy(density):
