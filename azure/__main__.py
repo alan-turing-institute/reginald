@@ -81,7 +81,7 @@ container_group = containerinstance.ContainerGroup(
     containers=[
         containerinstance.ContainerArgs(
             image="ghcr.io/alan-turing-institute/reginald:main",
-            name="reginald",  # maximum of 63 characters
+            name="chat-completion-azure",  # maximum of 63 characters
             environment_variables=[
                 containerinstance.EnvironmentVariableArgs(
                     name="OPENAI_AZURE_API_BASE",
@@ -97,7 +97,7 @@ container_group = containerinstance.ContainerGroup(
                 ),
                 containerinstance.EnvironmentVariableArgs(
                     name="REGINALD_MODEL",
-                    value="openai",
+                    value="chat-completion-azure",
                 ),
                 containerinstance.EnvironmentVariableArgs(
                     name="SLACK_APP_TOKEN",
