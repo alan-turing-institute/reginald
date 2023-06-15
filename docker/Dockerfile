@@ -11,10 +11,6 @@ COPY pyproject.toml .
 COPY poetry.lock .
 RUN poetry install --extras bot
 
-# Copy public data
-RUN mkdir -p data/public
-COPY data/public data/public
-
 # Set entrypoint
 ENTRYPOINT [ "poetry" ]
 CMD ["run", "python", "/app/slack_bot/run.py"]
