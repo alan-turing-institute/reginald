@@ -11,8 +11,9 @@ COPY pyproject.toml .
 COPY poetry.lock .
 RUN poetry install --extras bot
 
-# Copy data
-COPY data data
+# Copy public data
+RUN mkdir -p data/public
+COPY data/public data/public
 
 # Set entrypoint
 ENTRYPOINT [ "poetry" ]
