@@ -56,8 +56,12 @@ container_group = containerinstance.ContainerGroup(
             name="reginald",  # maximum of 63 characters
             environment_variables=[
                 containerinstance.EnvironmentVariableArgs(
-                    name="OPENAI_API_BASE",
-                    value=config.get_secret("OPENAI_API_BASE"),
+                    name="OPENAI_AZURE_API_BASE",
+                    value=config.get_secret("OPENAI_AZURE_API_BASE"),
+                ),
+                containerinstance.EnvironmentVariableArgs(
+                    name="OPENAI_AZURE_API_KEY",
+                    secure_value=config.get_secret("OPENAI_AZURE_API_KEY"),
                 ),
                 containerinstance.EnvironmentVariableArgs(
                     name="OPENAI_API_KEY",
