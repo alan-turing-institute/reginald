@@ -136,7 +136,5 @@ plt.plot(data)
 
 
 
-    
-![png](/Users/lbokeria/Documents/hack_week_2023/reginald/data_processing/rse_course_modules/module02_intermediate_python/02_07_data_analysis_with_classes_12_1.png)
-    
 
+![png](/Users/lbokeria/Documents/hack_week_2023/reginald/data_processing/rse_course_modules/module02_intermediate_python/02_07_data_analysis_with_classes_12_1.png)

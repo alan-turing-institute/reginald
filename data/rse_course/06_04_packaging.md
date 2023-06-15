@@ -301,13 +301,13 @@ greet --help
 ```
 
     usage: greet [-h] [--title TITLE] [--polite] personal family
-    
+
     Generate appropriate greetings
-    
+
     positional arguments:
       personal
       family
-    
+
     optional arguments:
       -h, --help            show this help message and exit
       --title TITLE, -t TITLE
@@ -364,9 +364,9 @@ pytest
     rootdir: /Users/jroberts/GitHub/rse-course/module06_software_projects/Greetings
     plugins: anyio-3.6.1, cov-3.0.0
     collected 1 item
-    
+
     tests/test_greeter.py .                                                  [100%]
-    
+
     ============================== 1 passed in 0.08s ===============================
 
 
@@ -385,7 +385,7 @@ This is a very simple example package used as part of the Turing
 [Research Software Engineering with Python](https://alan-turing-institute.github.io/rse-course) course.
 
 Usage:
-    
+
 Invoke the tool with greet <FirstName> <Secondname>
 ```
 
@@ -471,10 +471,10 @@ help(greetings.greeter.greet)
 ```
 
     Help on function greet in module greetings.greeter:
-    
+
     greet(personal, family, title='', polite=False)
         Generate a greeting string for a person.
-        
+
         Parameters
         ----------
         personal: str
@@ -485,10 +485,8 @@ help(greetings.greeter.greet)
             An optional title, such as Captain or Reverend
         polite: bool
             True for a formal greeting, False for informal.
-        
+
         Returns
         -------
         string
             An appropriate greeting
-    
-

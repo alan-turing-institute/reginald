@@ -14,7 +14,7 @@ import numpy as np
 from matplotlib import pyplot as plt
 ```
 
-Let's look at appending data to a NumPy array, compared to a plain Python list: 
+Let's look at appending data to a NumPy array, compared to a plain Python list:
 
 
 ```python
@@ -34,10 +34,10 @@ help(repeat)
 ```
 
     Help on function repeat in module timeit:
-    
+
     repeat(stmt='pass', setup='pass', timer=<built-in function perf_counter>, repeat=5, number=1000000, globals=None)
         Convenience function to create Timer object and call repeat method.
-    
+
 
 
 
@@ -65,9 +65,9 @@ plot_time(time_append_to_list, counts)
 ```
 
 
-    
+
 ![png](/Users/lbokeria/Documents/hack_week_2023/reginald/data_processing/rse_course_modules/module09_programming_for_speed/09_05_performance_scaling_10_0.png)
-    
+
 
 
 
@@ -76,9 +76,9 @@ plot_time(time_append_to_ndarray, counts)
 ```
 
 
-    
+
 ![png](/Users/lbokeria/Documents/hack_week_2023/reginald/data_processing/rse_course_modules/module09_programming_for_speed/09_05_performance_scaling_11_0.png)
-    
+
 
 
 Adding an element to a Python list is way faster! Also, it seems that adding an element to a Python list is independent of the length of the list, but it's not so for a NumPy array.
@@ -89,7 +89,7 @@ We would say that adding an element to a Numpy array is "linear time". This is w
 
 If something is $O(n + 1)$ then we shorten that to $O(n)$ because the $1$ becomes negligible as $n$ grows very large.
 
-$O()$ or "big oh" notation is also used to describe the amount of memory required to perform some operation such as sorting. 
+$O()$ or "big oh" notation is also used to describe the amount of memory required to perform some operation such as sorting.
 
 Go to notebook **9.6 Classroom Exercises** and do *Exercise 9e*.
 

@@ -46,7 +46,7 @@ Using the course material from this module to help:
   [tool.setuptools.packages]
   include = ["<my_package_directory>*"]
   ```
-  
+
   replacing `<my_package_directory>` with the name of the directory that contains your package (`.py` files)
 
 **7.** Check that you can import your package and run a script to play a game.
@@ -556,98 +556,98 @@ g = Game(d)
 g.run(max_steps=10)
 ```
 
-     _____            _  _   _____                                     
-    |_   _| _ _  ___ | || | |_   _| _ _  ___  __ _  ___ _  _  _ _  ___ 
+     _____            _  _   _____
+    |_   _| _ _  ___ | || | |_   _| _ _  ___  __ _  ___ _  _  _ _  ___
       | |  | '_|/ _ \| || |   | |  | '_|/ -_)/ _` |(_-<| || || '_|/ -_)
       |_|  |_|  \___/|_||_|   |_|  |_|  \___|\__,_|/__/ \_,_||_|  \___|
-                                                                       
-    
-    
+
+
+
     The Adventurer is looking for treasure in a mysterious dungeon.
     Will they succeed or be dinner for the Troll that lurks there?
-    
+
     The map of the dungeon is below:
     o : an empty room
     o - o : connected rooms
     T : Troll
     a : Adventurer
     * : the treasure
-                
-            *           
-            |        
-        o - o - o       
-        |       |    
-    o - a       o - T   
-        |       |    
-        o - o - o       
-            |        
-            o           
-    
+
+            *
+            |
+        o - o - o
+        |       |
+    o - a       o - T
+        |       |
+        o - o - o
+            |
+            o
+
     Let the hunt begin!
-    
+
     Turn 1
     Adventurer moves up
     Troll moves left
-    
-            *           
-            |        
-        a - o - o       
-        |       |    
-    o - o       T - o   
-        |       |    
-        o - o - o       
-            |        
-            o           
-    
+
+            *
+            |
+        a - o - o
+        |       |
+    o - o       T - o
+        |       |
+        o - o - o
+            |
+            o
+
     Turn 2
     Adventurer moves right
     Troll moves up
-    
-            *           
-            |        
-        o - a - T       
-        |       |    
-    o - o       o - o   
-        |       |    
-        o - o - o       
-            |        
-            o           
-    
+
+            *
+            |
+        o - a - T
+        |       |
+    o - o       o - o
+        |       |
+        o - o - o
+            |
+            o
+
     Turn 3
     Adventurer moves left
     Troll moves nowhere
-    
-            *           
-            |        
-        a - o - T       
-        |       |    
-    o - o       o - o   
-        |       |    
-        o - o - o       
-            |        
-            o           
-    
+
+            *
+            |
+        a - o - T
+        |       |
+    o - o       o - o
+        |       |
+        o - o - o
+            |
+            o
+
     Turn 4
     Adventurer moves right
     Troll moves left
-    
-            *           
-            |        
-        o - T - o       
-        |       |    
-    o - o       o - o   
-        |       |    
-        o - o - o       
-            |        
-            o           
-    
+
+            *
+            |
+        o - T - o
+        |       |
+    o - o       o - o
+        |       |
+        o - o - o
+            |
+            o
+
     Troll will eat tonight!
-      ___    _    __  __  ___    ___  __   __ ___  ___ 
+      ___    _    __  __  ___    ___  __   __ ___  ___
      / __|  /_\  |  \/  || __|  / _ \ \ \ / /| __|| _ \
     | (_ | / _ \ | |\/| || _|  | (_) | \ V / | _| |   /
      \___|/_/ \_\|_|  |_||___|  \___/   \_/  |___||_|_\
-                                                       
-    
+
+
 
 
 
@@ -671,5 +671,3 @@ g.probability(max_steps=10)
 
 
     {-1: 0.2237, 0: 0.5918, 1: 0.1845}
-
-
