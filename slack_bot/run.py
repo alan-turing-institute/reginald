@@ -28,7 +28,7 @@ if __name__ == "__main__":
         "--data-dir",
         "-d",
         help="Location for data",
-        default=(pathlib.Path(__file__).parent.parent / "data").resolve(),
+        default=None,
     )
     parser.add_argument(
         "--which-index",
@@ -37,7 +37,7 @@ if __name__ == "__main__":
         Currently supports 'all_data' and 'handbook'. If regenerating index, 'all_data'
         will use all .txt .md. and .csv files in the data directory, 'handbook' will
         only use 'handbook.csv' file.""",
-        default="all_data",
+        default=None,
     )
 
     args = parser.parse_args()
@@ -49,12 +49,25 @@ if __name__ == "__main__":
         level=logging.INFO,
     )
 
-    # Set the model name
+    # Read environment variables and command line arguments
     model_name = os.environ.get("REGINALD_MODEL")
     if args.model:
         model_name = args.model
     if not model_name:
         model_name = "hello"
+    force_new_index = (
+        os.environ.get("REGINALD_FORCE_NEW_INDEX") == "true" or args.force_new_index
+    )
+    data_dir = os.environ.get("REGINALD_DATA_DIR")
+    if args.data_dir:
+        data_dir = args.data_dir
+    if not data_dir:
+        data_dir = (pathlib.Path(__file__).parent.parent / "data").resolve()
+    which_index = os.environ.get("REGINALD_WHICH_INDEX")
+    if args.which_index:
+        which_index = args.which_index
+    if not which_index:
+        which_index = "all_data"
 
     # Initialise a new Slack bot with the requested model
     try:
@@ -67,9 +80,9 @@ if __name__ == "__main__":
 
     slack_bot = Bot(
         model(
-            force_new_index=args.force_new_index,
-            data_dir=args.data_dir,
-            which_index=args.which_index,
+            force_new_index=force_new_index,
+            data_dir=data_dir,
+            which_index=which_index,
         )
     )
 
