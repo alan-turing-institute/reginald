@@ -1,0 +1,63 @@
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Assurance is a process of building trust and justified confidence in a system or technology through engagement and communication. Trustworthy and ethical assurance is a process and structured methodology for communicating the basis for how ethical goals, such as fairness and explainability, have been operationalised and implemented throughout the project lifecycle of a digital and data-driven technology—specifically, those that use some form of machine learning or artificial intelligence.
+This collaborative project between the Assuring Autonomy International Programme (University of York) and the Alan Turing Institute seeks to build on and harmonise existing research and work in trustworthy and ethical assurance, including the development of open and reproducible tools that help project teams meet ethical and regulatory best practices in health research and healthcare for a range of digital and data-driven technologies.
+Trustworthy and ethical assurance is a procedure for developing a structured argument, which provides reviewable (and contestable) assurance that a set of claims about the ethical properties of a data-driven technology are warranted given the available evidence.
+This definition captures three important and interlocking components of trustworthy assurance:
+
+Figure 1: a schematic showing the three interlocking components that support trustworthy and ethical assurance.
+The SAFE-D Principles are a set of ethical principles developed within the Ethics Team (Public Policy Programme) to serve as starting points for reflection and deliberation about possible harms and benefits associated with data-driven technologies. The acronym, ‘SAFE-D’ stands for the following ethical principles:
+The SAFE-D principles provide high-level normative goals, which can be specified and operationalised throughout a project’s lifecycle to support the identification and evaluation of core attributes that require assurance - find out more about the SAFE-D principles. Argument patterns can be developed for each of the SAFE-D principles to support context-specific development of assurance cases (e.g. fair digital twins used in healthcare).
+Developing trustworthy and ethical assurance cases can be complex. Identifying and evaluating the practical actions undertaken throughout the design, development, and deployment of a project’s lifecycle requires wide-ranging expertise and diverse stakeholder engagement.
+The development of our assurance platform seeks to improve the accessibility and usability of the methodology to drive impact and use, especially in digital healthcare where emerging regulation around the use of data-driven technologies can often lead to confusion regarding how to demonstrate and communicate that goals such as fairness have been sufficiently established.
+This project has the following objectives:
+Key to this project will be the application of the methodology and platform to the specific context of digital healthcare. The project team will use a case study approach to identify exemplary projects to help a) develop the methodology and platform through stakeholder engagement, and b) demonstrate the benefits of the methodology.
+This application will support the creation of reusable argument patterns to help researchers and developers know how to communicate and justify how ethical goals have been established in their work, and also help support the emergence of best practices for regulatory compliance.
+The project team will work closely with researchers in the Turing Research and Innovation Cluster in Digital Twins and the Health programme to identify salient use cases (e.g. digital twins for cardiology).
+If you have any queries about the project or would like to get involved, please send the project team an email at [email protected]
+This project is supported by the Assuring Autonomy International Programme, a partnership between Lloyd’s Register Foundation and the University of York.
+© The Alan Turing Institute
+2023. All rights reserved.
+The Alan Turing Institute, a charity incorporated and registered in England and Wales with company number 09512457 and charity number 1162533 whose registered office is at British Library, 96 Euston Road, London, England, NW1 2DB, United Kingdom.
+For website-related enquiries email
+[email protected]
+
+Explore the Institute
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Legal
+Awards

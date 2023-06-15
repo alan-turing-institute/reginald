@@ -1,0 +1,56 @@
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Technologies that use big data like artificial intelligence (AI) and machine learning (ML) are seamlessly woven into our lives, shaping our experiences in ways we may not even realise. They can make it easy to access and digest vast amounts of information, saving us time at work and at home. So far much of the debate surrounding these technologies focuses on the way these tools influence our judgement - the deliberate actions we take or choices we make. It might be the way we vote, our choice of whom to meet or what to eat, or the decisions of people in power. From police officers to healthcare providers, via educators and judges, we know that data-reliant tools increasingly shape consequential decisions. What is far less discussed is the impact of those technologies on the coping skills that we use on a daily basis.
+Every day we do myriad intelligent things without deliberating about it. We simply do, or cope with what the environment throws at us. Some of those things are mundane, like crossing the road or ordering coffee. Others are not. For example, when neonatal nurses detect life-threatening infections before blood tests come back positive, they draw upon skilled intuitions. Firemen do the same when they sense that a building is about to collapse. These important intuitions are developed by drawing upon practice and experience.
+Our daily navigation of situations that affect the well-being of others is not that dissimilar. Of course, we do deliberate about how we should live from time to time (some of us more than others). But we get a distorted picture of the work involved in living an ethical life if we only focus on these instances of deliberation. What we miss is the piecemeal development of ‘intelligent intuitions’ that play a significant role in ethical decisions, just like those of neonatal nurses or firemen.
+Among all the intelligent intuitions that are undermined by a compromised ability to learn through experimentation, the intuitive skills that make up our ethical know-how rank among the most vulnerable. To be receptive to the presence of the unacknowledged ‘other’ not only demands a willingness to embrace, rather than fence off, the uncertainty inherent in each situation. It also requires a way of cultivating habits (and the intuitions they give rise to) that are malleable enough. This is never easy. It becomes unworkable in environments that are engineered to make any learning through back and forth experimentation impossible. In the same way as firemen and neonatal nurses would be unable to build and refine their ‘intelligent intuitions’ without a process of experimentation with their environment, so are we left bereft in environments that have been optimised to maximise user engagement while forbidding any form of experimentation.
+So we need to keep sharpening our ethically-relevant intuitions. This demands malleable habits that can be transformed through ongoing experimentation. This is never easy. In an environment that has been engineered so smoothly as to prevent any form of learning through interaction, this becomes unworkable. In the same way as firemen and neo-natal nurses would be unable to build and refine their ‘intelligent intuitions’ without a process of experimentation with their environment, so are we left bereft in environments that have been optimised to maximise user engagement while forbidding any form of experimentation.  
+This need not be so. It is never too late to insist on designing structures that foster engagement from users. The opportunities are particularly ripe when it comes to the structure of our online environment. ‘Bottom-up data trusts’ (empowering us to ‘take the reins’ of our data) are but one example of the infrastructure that needs to be in place if we are to learn novel forms of participation. Yet it is an important one, given the extent to which top-down data governance has reinforced a powerful habit of passivity: who hasn’t ever clicked away yet another ‘data consent’ pop-up?
+There are a number of ways in which we can each change some feature of our environment to challenge any rigidification of our ethically-relevant habits. To insist on a digital infrastructure that lends itself to co-design - online platforms or augmentation tools that we can mould just as much as they mould us - would be a good start.
+To read more about Habitual Ethics, read Professor Sylvie Delacroix’s latest open access book on the topic.
+ 
+© The Alan Turing Institute
+2023. All rights reserved.
+The Alan Turing Institute, a charity incorporated and registered in England and Wales with company number 09512457 and charity number 1162533 whose registered office is at British Library, 96 Euston Road, London, England, NW1 2DB, United Kingdom.
+For website-related enquiries email
+[email protected]
+
+Explore the Institute
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Legal
+Awards

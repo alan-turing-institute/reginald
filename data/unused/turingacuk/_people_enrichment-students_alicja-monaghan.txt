@@ -1,0 +1,49 @@
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Alicja Monaghan is a PhD student based at the MRC Cognition and Brain Sciences Unit, University of Cambridge. She obtained her BA in Experimental Psychology at St. John's College, University of Oxford, and her MSc in Neuroscience at King's College London. Her PhD aims to take advantage of large, open-access datasets to simulate how structural and functional connectivity arises in the brain across childhood, and how such connectivity relates to genetics, both at the levels of gene expression in the brain and participant-derived genetics using cruder genetic measures, including short nucleotide polymorphisms. Therefore, her overall aim is to quantify large-scale principles of brain organisation. Her future aims for the project is to explore structure-function relationships in the brain, and including epigenetic and "omic" mechanisms as additional predictors of brain development, in humans and in animal models.
+Unifying structural and functional brain development with genetic influences and cognition is an overarching aim of developmental neuroscience. Structural and functional organisation, using diffusion-weighed and functional magnetic resonance imaging, respectively, can be inferred by considering each as graph-theory-based networks (connectomes) made up of nodes (brain regions) connected by edges (vertices). However, such descriptive approaches lack accounts of how organisation arises. Generative network models (GNM) may address this, using pre-defined wiring rules to simulate connectivity by adding a new connection stochastically at each iteration from a sparse network, until the target is reached. Whilst GNMs have a major advantage of explaining how brain connectivity arises in the first instance, its biological plausibility is questionable, and the extent to which such models are more useful than simpler alternatives is unclear. Therefore, whilst a useful first-year project, she hopes to use this placement to expand upon the above by creating a comparison of the predictive validity of different brain-modelling approaches for cognition, such as GNMs against simpler graph theory metrics. Second, she hopes to improve GNM biological plausibility by incorporating the possibility of multiple connections being added at a single time point, biasing connection formation using neurochemical gradient data, and using longitudinal models. Third, she will explore how structure-function relationships differ across different childhood developmental timepoints and attempt to extend existing GNMs to structure-function GNMs. In doing so, I hope to capture structure-function interactions as an additional metric of brain development. Fourth, she will incorporate transcriptomic and epigenetic insights into structural and functional brain development, such as combining genetic data from the Human Brain Transcriptome Project with brain imaging datasets. 
+© The Alan Turing Institute
+2023. All rights reserved.
+The Alan Turing Institute, a charity incorporated and registered in England and Wales with company number 09512457 and charity number 1162533 whose registered office is at British Library, 96 Euston Road, London, England, NW1 2DB, United Kingdom.
+For website-related enquiries email
+[email protected]
+
+Explore the Institute
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Legal
+Awards
