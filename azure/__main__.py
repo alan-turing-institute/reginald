@@ -1,13 +1,15 @@
 import pulumi
-from pulumi_azure_native import containerinstance, network, resources
+from pulumi_azure_native import containerinstance, network, resources, storage
 
 # Get some configuration variables
 stack_name = pulumi.get_stack()
 config = pulumi.Config()
+# azurecfg = pulumi.Config("azure-native")
 
 # Create an resource group
 resource_group = resources.ResourceGroup(
-    "resource_group", resource_group_name=f"rg-reginald-{stack_name}-deployment"
+    "resource_group",
+    resource_group_name=f"rg-reginald-{stack_name}-deployment"
 )
 
 # Create a network security group
@@ -44,6 +46,33 @@ virtual_network = network.VirtualNetwork(
     ],
     virtual_network_name=f"vnet-reginald-{stack_name}",
     virtual_network_peerings=[],
+)
+
+# Define configuration file shares
+storage_account = storage.StorageAccount(
+    "storage_account",
+    access_tier=storage.AccessTier.COOL,
+    account_name=f"sareginald{stack_name}configuration"[:24], # max 24 characters
+    enable_https_traffic_only=False,
+    encryption=storage.EncryptionArgs(
+        key_source=storage.KeySource.MICROSOFT_STORAGE,
+        services=storage.EncryptionServicesArgs(
+            file=storage.EncryptionServiceArgs(
+                enabled=True, key_type=storage.KeyType.ACCOUNT
+            ),
+        ),
+    ),
+    kind=storage.Kind.FILE_STORAGE,
+    resource_group_name=resource_group.name,
+    sku=storage.SkuArgs(name=storage.SkuName.PREMIUM_ZRS),
+)
+file_share = storage.FileShare(
+    "data_file_share",
+    access_tier="TransactionOptimized",
+    account_name=storage_account.name,
+    resource_group_name=resource_group.name,
+    share_name="llama-data",
+    share_quota=5120,
 )
 
 # Define the container group
