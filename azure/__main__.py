@@ -67,7 +67,7 @@ storage_account = storage.StorageAccount(
 )
 file_share = storage.FileShare(
     "data_file_share",
-    access_tier="TransactionOptimized",
+    access_tier=storage.ShareAccessTier.PREMIUM,
     account_name=storage_account.name,
     resource_group_name=resource_group.name,
     share_name="llama-data",
