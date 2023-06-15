@@ -1,0 +1,85 @@
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+On 21 and 22 March, the Turing is hosting AI UK 2023 at the Queen Elizabeth II Centre in London. The event comes at a crucial time in the Turing, and the wider data science and AI landscape. Since last year’s record-breaking showcase, we’ve announced the expansion of our AI programme, launched a new AI Standards Hub, and are preparing to launch our first ever Institute Strategy, among many other exciting developments.
+AI UK 2023 will be themed around the priorities of sustainability, healthcare and national security. I’ve picked out my seven sessions not to miss, but don’t forget that as well as sessions on our three main stages, we have lightning talks, scientific demonstrations, and AI UK Fringe events up and down the UK.
+ 
+Where the women are: WiDENing STEM
+Research Stage, 11:05 – 12:00
+Why are there still so many barriers to women in STEM, and what kind of impact is this having on data science? A panel of data scientists from a diverse range of disciplinary backgrounds will discuss these questions, and introduce WiDEN (Women in Digital Environments) -  a new community to support women in the digital professions. Anyone interested in this topic may also like to catch Did we do better in data science? on the Conversation Stage at 16:00 (Day 1), a sequel to one of the most popular and successful sessions at AI UK 2021, where a panel will discuss the progress being made in areas from algorithmic fairness to increasing diversity and representation in the data science field.
+ 
+Launching the future of digital twins
+Research Stage, 13:30 – 15:30
+Digital twins have the potential to transform everything from construction and engineering to aerospace and urban governance, so I’m very excited that AI UK 2023 will see the official launch of our new Turing Research and Innovation Cluster in Digital Twins (TRIC-DT). I’ll be joined by an expert panel including TRIC-DT’s six Co-Directors, where we’ll explain exactly what the TRIC-DT will do, and how it can help stakeholders across the UK’s AI ecosystem meet priorities across healthcare, defence, sustainability and the digital economy.
+ 
+Are foundation models the right foundation for AI?
+Research Stage, 16:00 – 16:55
+I’m particularly looking forward to this one given the emphasis the Turing has placed on foundation models with our newly expanded AI programme. The Turing’s Director of AI Research Mike Wooldridge, alongside Turing researchers Mhairi Aitken and Maria Liakata, will welcome Gary Marcus, who has recently made waves with his outspoken scepticism of large language models such as ChatGPT. Those interested in a deeper dive into the background of ChatGPT should also attend ChatGPT: Friend or foe? at 10:00 (Day 1) on the Conversation Stage, where Gary Marcus will scrutinise the claims made by ChatGPT’s developers and ask whether we can find a stronger basis than large language models for the future of AI development.
+
+Gary Marcus will join two sessions on Day 1 to discuss large language models
+ 
+PitchFest
+Conversation Stage, 10:00 – 10:55
+Watch as Turing researchers give 90-second pitches of their work to our expert panel and audience, with the winner receiving a mentoring session with the Turing’s Research Application Management team. This session is a must-watch for anyone interested in developing their science communication skills, as well as those who want to see just what a wealth of ingenuity and talent we have within our Turing research community.
+ 
+How to make an impact: Public participation stories
+Impact Stage, 11:05 – 12:00
+A panel of speakers including the Turing’s Public Engagement Manager Jessie Pearce will discuss why creative new ways of engaging the public with AI issues are more important than ever, sharing examples of best practice from education and smart cities to the economy and the arts. Public engagement is at the heart of our Institute Strategy goal to drive an informed public conversation, so I’m delighted to see this included in the AI UK programme.
+ 
+The future of cities
+Conversation Stage, 13:30 – 14:25
+Mark Birkin, Programme Director for Urban Analytics, will be joined by guests including Bradford Council Chief Executive Kersten England to discuss whether AI can make our urban areas fairer, greener, and safer places to live. Among other subjects, they will be discussing a project aimed at improving lives in the most deprived districts of Bradford using targeted policy interventions, one of many success stories from the Turing’s AI for science and government (ASG) programme that we’ll be showcasing at this year’s AI UK.
+
+Kersten England joins a panel on the future of cities
+ 
+Individual skills for global impact
+Research Stage, 14:35-15:30
+How will AI transform the future of research, and how can we ensure greater collaboration across disciplines and across the economy more broadly? This timely panel discussion with researchers from The Turing Way will look at the tools and best practices we can develop to help navigate an increasingly AI- and data-focused economy and research landscape, a goal which forms the basis of the People and Skills strand of the Institute Strategy.
+
+Monica Granados and Mark Richards join Turing researchers for a discussion on AI and skills
+ 
+Secure your online ticket for AI UK 2023.
+© The Alan Turing Institute
+2023. All rights reserved.
+The Alan Turing Institute, a charity incorporated and registered in England and Wales with company number 09512457 and charity number 1162533 whose registered office is at British Library, 96 Euston Road, London, England, NW1 2DB, United Kingdom.
+For website-related enquiries email
+[email protected]
+
+Explore the Institute
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Legal
+Awards

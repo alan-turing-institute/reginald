@@ -1,0 +1,68 @@
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+The Eurovision Song Contest is the longest running international televised music competition. Its seventy-year history offers a rich dataset to explore trends over time as part of our Turing Data Stories project. We hope that exploring the data of a globally loved contest contributes to the public conversation around data and encourages people to consider what data can – and can’t – tell us.  
+The Data Stories project, run by the Turing’s Research Engineering Group (REG), uses a mix of open data, code, narrative, visuals and knowledge to try and help more people understand the data-driven world around us in an accessible way. 
+To coincide with this year’s competition in Liverpool we’ve predicted – based purely on existing data – which countries are likely to fare well at this year’s contest. We also analysed inter-country voting, gender split and song language. 
+The Eurovision Song Contest started in 1956 as a technical experiment in live broadcasting and has taken place every year since – except for 2020. It has grown in terms of the number of countries participating, musical variety and, arguably, visual flair. 
+Predicting the likely winner isn’t without challenges. There are many aspects of music that are hard to measure, including genre and prior artist popularity, lyrics, stage production, or the current political landscape. To try and help us predict this year’s winner we developed three models of increasing complexity: a simple baseline model; an ordinal Bayesian regression model; and a machine learning model.  
+The Bayesian regression and the machine learning model take in additional information about the performances (such as the language of the song lyrics) and the countries in the voter-performer pair (e.g. whether they share a land border). The baseline model only looks at past performance in the competition to make predictions (i.e. it predicts the rank of each country for this year to be the average of its rank over past competitions it participated in). 
+When exploring different datasets, it is common practice to use different statistical modelling methods in order to get a more accurate result. Different models have different strengths and weaknesses, including how challenging they are to implement, how capable they are at capturing complex structure in the data, and how easy they are to interpret once they have been fitted to the data. 
+Interestingly, all three models shared the same countries as their top three predictions – Italy, Ukraine and Sweden. The baseline and the machine learning model both predicted that Italy would come first, Ukraine second and Sweden third. However, the Bayesian model predicted that Ukraine would come first, Sweden second and Italy third.  
+To make these predictions we pooled previous performance data from a number of sources. All data was pulled from open sources to make the analysis reproducible.  
+This included voting score and data on languages used from the online data science community Kaggle, official country language and competition winner data from Wikipedia, and country border and migration data from the World Bank and GeoDataSource. We hope that people will be inspired to do their own analysis on the data. 
+The Eurovision Song Contest has undergone several changes to its voting system since it began in 1956. To model uniform voting scores over time, we limited our analysis to contests from 1998 onwards, when the jury and televoting score was weighted 50:50. 
+A common idea is that countries bordering each other tend to award each other points. We partly explored this idea in the plot below. It shows the top five pairs of countries that give each other high scores, low scores, and unequal scores. The point next to a country name is the score it received from the other country. 
+For example, we found that both Germany and France on average receive low scores from Turkey, but they both give Turkey high scores. Another pattern was that Cyprus and Greece give each other high scores, whilst Albania and Lithuania tend to give each other low scores.  
+We also found that 46% of the countries performed (at least partly) in one of their listed official languages. We discovered that typically, where countries did not sing in their official language, they sang in English. 
+
+When we examined how frequently countries sing in English at the competition, we found that Montenegro and Slovakia have never performed in English, while Czechia and Georgia have exclusively done so. 
+
+We also considered the gender of participants put forward by their country, finding that since 1998 40% of acts were solo female singers, 30.33% were solo male singers, and 29.67% were classified as being in a group. It is important to note that there were no non-binary solo acts that reached the finals in the years we studied, which is why that doesn’t feature as a category.
+
+In conclusion, our work points to some of the trends throughout the show’s long history as well as our predictions of who might win this year. The data from this story is available here - so you can have a look and do your own analysis.
+So based on our models this year our bets are with Italy, Ukraine or Sweden (in no particular order!), although we should add that our models only consider a small amount of information about the contest and there are many other factors that impact which acts do well - not least the quality of the performance! So as to who will actually win this year’s competition, we will have to wait until the night. Good luck to all this year’s contestants! 
+© The Alan Turing Institute
+2023. All rights reserved.
+The Alan Turing Institute, a charity incorporated and registered in England and Wales with company number 09512457 and charity number 1162533 whose registered office is at British Library, 96 Euston Road, London, England, NW1 2DB, United Kingdom.
+For website-related enquiries email
+[email protected]
+
+Explore the Institute
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Legal
+Awards

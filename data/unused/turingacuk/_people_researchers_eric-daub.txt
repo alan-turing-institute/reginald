@@ -1,0 +1,52 @@
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Prior to joining Turing REG, Eric spent 5 years as an Assistant Professor at the Center for Earthquake Research and Information at the University of Memphis. As an academic he taught geophysics courses and led a research group using computational models to study earthquakes.
+Eric has a PhD in Computational Physics from the University of California, Santa Barbara, where his thesis research was to perform simulations of earthquakes and material failure. Following his PhD, Eric spent 4.5 years as a researcher at Los Alamos National Laboratory, Université Grenoble-Alpes, and ETH Zurich where he continued to work in geophysics and materials science.
+Eric's current interests stem from his experience doing computational simulations but finding that they are rarely used in practice to make predictions or forecasts about the real world. This is particularly true in earthquake science, where Probabilistic Seismic Hazard Analysis is based almost entirely on extremely limited empirical data and does not incorporate any knowledge of the physics of earthquakes. In his time as an academic researcher, Eric has spent a lot of time and energy doing advanced computer simulations to understand the mechanics of how earthquakes worked, but there is a significant barrier in going from that information to making practical advances in how scientists estimate the damaging effects of future earthquakes.
+At the Turing, Eric led the Research Engineering efforts to tackle this problem by writing software tools that make Uncertainty Quantification methods accessible to domain experts. This is spread over several projects to develop a diverse set of methods and libraries for this approach. Eric's hope is that making these tools part of a robust, well-designed software library will help researchers focus on their specific research goals and help them compute realistic error bars on their simulations to improve confidence in simulations.
+ 
+© The Alan Turing Institute
+2023. All rights reserved.
+The Alan Turing Institute, a charity incorporated and registered in England and Wales with company number 09512457 and charity number 1162533 whose registered office is at British Library, 96 Euston Road, London, England, NW1 2DB, United Kingdom.
+For website-related enquiries email
+[email protected]
+
+Explore the Institute
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Legal
+Awards

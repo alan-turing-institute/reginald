@@ -1,0 +1,50 @@
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Ilan has long been driven by two passions – social justice on the one hand, and the joint power of mathematics and computing on the other. He has an interdisciplinary background in applied mathematics and philosophy, and took two years out to run a youth movement before returning to do his masters in Mathematics at Oxford University in 2016. He later worked as a research assistant at Oxford’s Mathematical Institute, before beginning his PhD there in October 2018. 
+Since 2016, Ilan has picked up a growing interest in machine learning and its potential to change the world for the better, substantial risks notwithstanding. Alongside his PhD studies, he is also currently a co-director of the Rhodes Artificial Intelligence Lab (RAIL), a student group which, among other things, works pro-bono with NGOs, Governments and companies to develop machine learning solutions which have social impact. 
+Deep learning research has seen a massive surge in research and applications over the last six years. It achieves state-of-the-art (and sometime even super-human) performance on classical supervised learning tasks, and is the basis many of the applications of machine learning that we all interact with every day. However, despite these successes there remain a large number of crucial open questions. Why do these methods generalise (and therefore perform) as well as they do? Are there more principles ways of designing deep neural networks? And can we guarantee when they will work? Ilan’s research will contribute to this growing body of theory for deep learning, with a particular focus on understanding adversarial examples - datapoint engineered to trick well trained models - with a view to building safer, more robust algorithms.
+© The Alan Turing Institute
+2023. All rights reserved.
+The Alan Turing Institute, a charity incorporated and registered in England and Wales with company number 09512457 and charity number 1162533 whose registered office is at British Library, 96 Euston Road, London, England, NW1 2DB, United Kingdom.
+For website-related enquiries email
+[email protected]
+
+Explore the Institute
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Legal
+Awards
