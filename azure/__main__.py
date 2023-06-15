@@ -74,6 +74,11 @@ file_share = storage.FileShare(
     share_name="llama-data",
     share_quota=5120,
 )
+storage_account_keys = storage_account.list_storage_account_keys(
+    account_name=storage_account.name,
+    resource_group_name=resource_group.name,
+)
+storage_account_key=pulumi.Output.secret(storage_account_keys.keys[0].value)
 
 # Define the container group
 container_group = containerinstance.ContainerGroup(
@@ -158,11 +163,27 @@ container_group = containerinstance.ContainerGroup(
                     memory_in_gb=4,
                 ),
             ),
+            volume_mounts=[
+                containerinstance.VolumeMountArgs(
+                    mount_path="/app/data",
+                    name="llama-data",
+                    read_only=True,
+                ),
+            ],
         ),
     ],
     os_type=containerinstance.OperatingSystemTypes.LINUX,
     resource_group_name=resource_group.name,
     restart_policy=containerinstance.ContainerGroupRestartPolicy.ALWAYS,
     sku=containerinstance.ContainerGroupSku.STANDARD,
-    volumes=[],
+    volumes=[
+        containerinstance.VolumeArgs(
+            azure_file=containerinstance.AzureFileVolumeArgs(
+                share_name=file_share.name,
+                storage_account_key=storage_account_key,
+                storage_account_name=storage_account.name,
+            ),
+            name="llama-data",
+        ),
+    ],
 )
