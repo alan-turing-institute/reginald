@@ -2,6 +2,7 @@
 import argparse
 import logging
 import os
+import pathlib
 import sys
 import threading
 
@@ -23,7 +24,12 @@ if __name__ == "__main__":
         action=argparse.BooleanOptionalAction,
         default=False,
     )
-    parser.add_argument("--data-dir", "-d", help="Location for data", default=True)
+    parser.add_argument(
+        "--data-dir",
+        "-d",
+        help="Location for data",
+        default=(pathlib.Path(__file__).parent / "data").resolve(),
+    )
     parser.add_argument(
         "--which-index",
         "-w",
@@ -31,7 +37,7 @@ if __name__ == "__main__":
         Currently supports 'all_data' and 'handbook'. If regenerating index, 'all_data'
         will use all .txt .md. and .csv files in the data directory, 'handbook' will
         only use 'handbook.csv' file.""",
-        default=True,
+        default="all_data",
     )
 
     args = parser.parse_args()
@@ -50,10 +56,6 @@ if __name__ == "__main__":
     if not model_name:
         model_name = "hello"
 
-    force_new_index = args.force_new_index
-    data_dir = args.data_dir
-    which_index = args.which_index
-
     # Initialise a new Slack bot with the requested model
     try:
         model = MODELS[model_name.lower()]
@@ -65,7 +67,9 @@ if __name__ == "__main__":
 
     slack_bot = Bot(
         model(
-            force_new_index=force_new_index, data_dir=data_dir, which_index=which_index
+            force_new_index=args.force_new_index,
+            data_dir=args.data_dir,
+            which_index=args.which_index,
         )
     )
 
