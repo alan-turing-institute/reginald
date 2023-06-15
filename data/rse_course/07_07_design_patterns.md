@@ -101,9 +101,9 @@ yuml(
 
 
 
-    
+
 ![svg](/Users/lbokeria/Documents/hack_week_2023/reginald/data_processing/rse_course_modules/module07_construction_and_design/07_07_design_patterns_15_0.svg)
-    
+
 
 
 
@@ -184,7 +184,7 @@ class WebAgentFactory(AgentModel):
 
 
 
-There is no need to define an explicit base interface for the "Agent" concept in Python: anything that responds to "simulate" and "interact" 
+There is no need to define an explicit base interface for the "Agent" concept in Python: anything that responds to "simulate" and "interact"
 methods will do: this is our Agent concept.
 
 
@@ -246,9 +246,9 @@ yuml(
 
 
 
-    
+
 ![svg](/Users/lbokeria/Documents/hack_week_2023/reginald/data_processing/rse_course_modules/module07_construction_and_design/07_07_design_patterns_36_0.svg)
-    
+
 
 
 
@@ -282,7 +282,7 @@ class AdvancedModel:
 ### Builder preferred to complex constructor
 
 
-However, long constructors easily become very complicated. Instead, it can be cleaner to define a Builder for models. A builder is like a 
+However, long constructors easily become very complicated. Instead, it can be cleaner to define a Builder for models. A builder is like a
 deferred factory: each step of the construction process is implemented as an individual method call, and the completed object
 is returned when the model is ready.
 
@@ -360,7 +360,7 @@ But we'd need to put these in *every* method of the class, whereas with a builde
 ## Strategy Pattern
 
 
-Define a family of algorithms, encapsulate each one, and make them interchangeable. 
+Define a family of algorithms, encapsulate each one, and make them interchangeable.
 Strategy lets the algorithm vary independently from clients that use it.
 
 
@@ -413,9 +413,9 @@ plt.plot(spots)
 
 
 
-    
+
 ![png](/Users/lbokeria/Documents/hack_week_2023/reginald/data_processing/rse_course_modules/module07_construction_and_design/07_07_design_patterns_55_1.png)
-    
+
 
 
 ### Sunspot cycle has periodicity
@@ -432,9 +432,9 @@ plt.savefig("fixed.png")
 ```
 
 
-    
+
 ![png](/Users/lbokeria/Documents/hack_week_2023/reginald/data_processing/rse_course_modules/module07_construction_and_design/07_07_design_patterns_57_0.png)
-    
+
 
 
 ### Years are not constant length
@@ -462,7 +462,7 @@ We could:
 
 We also want to find the period of the strongest periodic signal in the data, there are
 various different methods we could use for this also, such as integrating the fourier series
-by quadrature to find the mean frequency, or choosing the largest single value. 
+by quadrature to find the mean frequency, or choosing the largest single value.
 
 
 ### Too many classes!
@@ -705,9 +705,9 @@ plt.xlim(0, 16)
 
 
 
-    
+
 ![png](/Users/lbokeria/Documents/hack_week_2023/reginald/data_processing/rse_course_modules/module07_construction_and_design/07_07_design_patterns_83_1.png)
-    
+
 
 
 ### Results: Deviation of year length from average
@@ -725,9 +725,9 @@ plt.plot(deviation)
 
 
 
-    
+
 ![png](/Users/lbokeria/Documents/hack_week_2023/reginald/data_processing/rse_course_modules/module07_construction_and_design/07_07_design_patterns_85_1.png)
-    
+
 
 
 ## Model-View-Controller
@@ -815,9 +815,9 @@ contl = Controller()
 ```
 
 
-    
+
 ![png](/Users/lbokeria/Documents/hack_week_2023/reginald/data_processing/rse_course_modules/module07_construction_and_design/07_07_design_patterns_95_0.png)
-    
+
 
 
 
@@ -23802,4 +23802,3 @@ kopkgEmSimSASZKKZIBJkopkgEmSimSASZKKZIBJkor0/1YOE/xZm4zXAAAAAElFTkSuQmCC\
 - [A collection of design patterns and idioms in Python](https://github.com/faif/python-patterns).
 - [Head First Design Patterns](http://www.worldcat.org/title/head-first-design-patterns/oclc/893944765) - based on Java (with [online course at Lynda.com](https://www.lynda.com/Developer-Programming-Foundations-tutorials/Foundations-Programming-Design-Patterns/135365-2.html)).
 - [Design Pattern for Dummies](http://www.worldcat.org/title/design-patterns-for-dummies/oclc/69537420&referer=brief_results).
-

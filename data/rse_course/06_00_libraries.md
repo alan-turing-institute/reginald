@@ -96,5 +96,5 @@ You've already seen a few packages in this library: `math`, `pdb`, `pytest`, `da
 
 
 Python's real power, however, comes with the Python Package Index: [PyPI](https://pypi.python.org/pypi).
-This is a huge array of libraries, with all kinds of capabilities, all easily installable from the 
+This is a huge array of libraries, with all kinds of capabilities, all easily installable from the
 command line or through your Python distribution.

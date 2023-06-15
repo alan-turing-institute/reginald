@@ -21,7 +21,7 @@ The old saw "Garbage in Garbage out" is not the real problem for science:
 
 
 
-### Why write software to manage your data and plots? 
+### Why write software to manage your data and plots?
 
 We can use programs for our entire research pipeline.
 Not just big scientific simulation codes, but also the small scripts which we use to tidy up data and produce plots.
@@ -81,14 +81,14 @@ axes.plot(0.5 * np.sin(theta), np.cos(theta / 2))
 
 
 
-    
+
 ![png](/Users/lbokeria/Documents/hack_week_2023/reginald/data_processing/rse_course_modules/module01_introduction_to_python/01_00_introduction_to_python_17_1.png)
-    
+
 
 
 We're going to be mainly working in the Jupyter notebook in this course. To get hold of a copy of the notebook, follow the [setup instructions shown on the course website](https://alan-turing-institute.github.io/rse-course/html/course_prerequisites/index.html).
 
-Jupyter notebooks consist of discussion cells, referred to as "markdown cells", and "code cells", which contain Python. This document has been created using Jupyter notebook, and this very cell is a **Markdown Cell**. 
+Jupyter notebooks consist of discussion cells, referred to as "markdown cells", and "code cells", which contain Python. This document has been created using Jupyter notebook, and this very cell is a **Markdown Cell**.
 
 
 ```python
@@ -100,7 +100,7 @@ print("This cell is a code cell")
 
 Code cell inputs are numbered, and show the output below.
 
-Markdown cells contain text which uses a simple format to achive pretty layout, 
+Markdown cells contain text which uses a simple format to achive pretty layout,
 for example, to obtain:
 
 **bold**, *italic*
@@ -228,12 +228,11 @@ image = draw_eight.make_figure()
 ```
 
 
-    
+
 ![png](/Users/lbokeria/Documents/hack_week_2023/reginald/data_processing/rse_course_modules/module01_introduction_to_python/01_00_introduction_to_python_40_0.png)
-    
+
 
 
 There is a huge variety of available packages to do pretty much anything. For instance, try `import antigravity`.
 
 The `%%` at the beginning of a cell is called *magics*. There's a [large list of them available](https://ipython.readthedocs.io/en/stable/interactive/magics.html) and you can [create your own](http://ipython.readthedocs.io/en/stable/config/custommagics.html).
-

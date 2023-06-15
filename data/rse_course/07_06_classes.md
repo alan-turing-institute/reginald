@@ -82,9 +82,9 @@ yuml("[Particle|position;velocity|move()]")
 
 
 
-    
+
 ![svg](/Users/lbokeria/Documents/hack_week_2023/reginald/data_processing/rse_course_modules/module07_construction_and_design/07_06_classes_12_0.svg)
-    
+
 
 
 
@@ -95,7 +95,7 @@ The representation of the `Particle` class defined above in UML is done with a b
 Sometimes, our design for a program would be broken if users start messing around with variables we don't want them to change.
 
 Robust class design requires consideration of which subroutines are intended for users to use, and which are internal.
-Languages provide features to implement this: access control. 
+Languages provide features to implement this: access control.
 
 In python, we use leading underscores to control whether member variables and methods can be accessed from outside the class:
 
@@ -165,7 +165,7 @@ MyClass().__private_method()  # Generates error
 
     /var/folders/xv/d5nvn2ps5r3fcf276w707n01qdmpqf/T/ipykernel_38875/2203733493.py in <module>
     ----> 1 MyClass().__private_method()  # Generates error
-    
+
 
     AttributeError: 'MyClass' object has no attribute '__private_method'
 
@@ -182,7 +182,7 @@ print(MyClass().__private_data)  # Generates error
 
     /var/folders/xv/d5nvn2ps5r3fcf276w707n01qdmpqf/T/ipykernel_38875/2773553887.py in <module>
     ----> 1 print(MyClass().__private_data)  # Generates error
-    
+
 
     AttributeError: 'MyClass' object has no attribute '__private_data'
 
@@ -349,9 +349,9 @@ yuml("[Particle|+public;-private|+publicmethod();-privatemethod]")
 
 
 
-    
+
 ![svg](/Users/lbokeria/Documents/hack_week_2023/reginald/data_processing/rse_course_modules/module07_construction_and_design/07_06_classes_39_0.svg)
-    
+
 
 
 
@@ -546,9 +546,9 @@ yuml("[Animal]^-[Bird],[Bird]^-[Eagle],[Bird]^-[Starling]")
 
 
 
-    
+
 ![svg](/Users/lbokeria/Documents/hack_week_2023/reginald/data_processing/rse_course_modules/module07_construction_and_design/07_06_classes_65_0.svg)
-    
+
 
 
 
@@ -573,9 +573,9 @@ yuml("[Model]<>-*>[Boid],[Boid]position++->[Vector],[Boid]velocity++->[Vector]")
 
 
 
-    
+
 ![svg](/Users/lbokeria/Documents/hack_week_2023/reginald/data_processing/rse_course_modules/module07_construction_and_design/07_06_classes_70_0.svg)
-    
+
 
 
 
@@ -686,7 +686,7 @@ whatever class the object is an instance of.
 
 
 Often, polymorphism uses multiple derived classes with a common base class.
-However, [duck typing](https://en.wikipedia.org/wiki/Duck_typing) in Python means that all that is required is that the 
+However, [duck typing](https://en.wikipedia.org/wiki/Duck_typing) in Python means that all that is required is that the
 types support a common **Concept** (Such as iterable, or container, or, in this case, the
 Noisy concept.)
 
@@ -760,7 +760,7 @@ Worm().noise()  # Generates error
 
     /var/folders/xv/d5nvn2ps5r3fcf276w707n01qdmpqf/T/ipykernel_38875/2660778470.py in <module>
     ----> 1 Worm().noise()  # Generates error
-    
+
 
     AttributeError: 'Worm' object has no attribute 'noise'
 
@@ -798,7 +798,7 @@ the methods which derived classes must implement. Classes which define these met
 into actual objects, are called "abstract base" classes or "interfaces".
 
 Python's Duck Typing approach means explicitly declaring these is unnesssary: any class concept which implements
-appropriately named methods will do. These as user-defined **concepts**, just as "iterable" or "container" are 
+appropriately named methods will do. These as user-defined **concepts**, just as "iterable" or "container" are
 built-in Python concepts. A class is said to "implement an interface" or "satisfy a concept".
 
 
@@ -814,9 +814,9 @@ yuml("[<<Animal>>]^-.-[Dog]")
 
 
 
-    
+
 ![svg](/Users/lbokeria/Documents/hack_week_2023/reginald/data_processing/rse_course_modules/module07_construction_and_design/07_06_classes_95_0.svg)
-    
+
 
 
 
@@ -831,4 +831,3 @@ UML is a much larger diagram language than the aspects we've shown here.
 
 
 Read more about UML on Martin Fowler's [book about the topic](https://martinfowler.com/books/uml.html).
-

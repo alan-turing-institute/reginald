@@ -25,14 +25,14 @@ On a computer you control, on which you have installed python via Anaconda, you 
 to invoke the library-installer program, `pip`.
 
 * On windows, go to start->all programs->Anaconda->Anaconda Command Prompt
-* On mac, start *terminal*. 
+* On mac, start *terminal*.
 * On linux, open a bash shell.
 
 Into this shell, type:
-    
+
 `pip install scikit-learn`
 
-The computer will install the package automatically from PyPI. 
+The computer will install the package automatically from PyPI.
 
 Now, close the Jupyter notebook if you have it open, and reopen it. Check your new library is installed with:
 
@@ -73,29 +73,29 @@ plt.yticks(())
 
 
 
-    
+
 ![png](/Users/lbokeria/Documents/hack_week_2023/reginald/data_processing/rse_course_modules/module06_software_projects/06_01_installing_packages_16_1.png)
-    
+
 
 
 That was actually pretty easy, I hope. This is how you'll install new libraries when you need them.
 
 Troubleshooting:
-    
+
 On mac or linux, you *might* get a complaint that you need "superuser", "root", or "administrator" access. If so type:
 
 * `pip install --user scikit-learn`
 
 and enter your password.
-    
+
 If you get a complaint like: 'pip is not recognized as an internal or external command', try the following:
-        
+
 * `conda install pip` (if you are using conda)
 * or follow the [official instructions](https://packaging.python.org/en/latest/tutorials/installing-packages/#ensure-you-can-run-pip-from-the-command-line) otherwise
 
 Ask one of the instructors/helpers if you're having difficulties, or open an issue in [the course repo](https://github.com/alan-turing-institute/rse-course/issues).
 
-## Where do these libraries go? 
+## Where do these libraries go?
 
 
 ```python
@@ -170,7 +170,7 @@ pip install .  # install the library at the current path
 `pip` is the usual Python tool for installing libraries. But there's one area of library installation that is still awkward:
 some python libraries depend not on other **python** libraries, but on libraries in C++ or Fortran.
 
-This can cause you to run into difficulties installing some libraries. 
+This can cause you to run into difficulties installing some libraries.
 Fortunately, Anaconda provide a carefully managed set of scripts for installing lots of these awkward non-python libraries too. You can do this with the `conda` command line tool, if you're using Anaconda.
 
 Simply type
@@ -187,7 +187,7 @@ The maintainers of packages may have also provided releases of their software vi
 
 ## Other Distribution tools
 
-Distribution tools allow one to obtain a working copy of someone else's package. 
+Distribution tools allow one to obtain a working copy of someone else's package.
 
 Language-specific tools:
 
@@ -198,7 +198,7 @@ Language-specific tools:
 
 Platform-specific packagers:
 
-- Ubuntu and Debian: [dpkg](https://www.debian.org/doc/manuals/debian-reference/ch02.en.html) for `apt-get` 
+- Ubuntu and Debian: [dpkg](https://www.debian.org/doc/manuals/debian-reference/ch02.en.html) for `apt-get`
 - Redhat and Fedora: [rpm](https://rpm.org/) for `yum`
 - Mac OS: [homebrew](https://brew.sh/)
 - Windows: [Chocolatey](https://chocolatey.org)

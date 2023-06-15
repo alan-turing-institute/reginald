@@ -51,7 +51,7 @@ However, note that `pip freeze` won't output only your direct dependencies, but 
 - the dependencies of the dependencies of your dependencies
 - ...
 
-It may be better to only specify your direct dependencies and let the maintainers of those libraries deal with their own dependencies (but that can also come with future problems and incompatibilities in some cases). 
+It may be better to only specify your direct dependencies and let the maintainers of those libraries deal with their own dependencies (but that can also come with future problems and incompatibilities in some cases).
 
 ### Version ranges
 
@@ -113,7 +113,7 @@ For these reasons we'd recommend using a separate "virtual environment" for each
 In a virtual environment all the packages you install are isolated from other environments, so you could have one environment using `Python 3.10` and `numpy 1.23.1`, and another using `Python 3.8` and `numpy 1.20.3`, for example.
 
 
-### venv 
+### venv
 
 `venv` is included in the Python standard library and can be used to create virtual environments (see the docs [here](https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments/#creating-a-virtual-environment)).
 
@@ -141,7 +141,7 @@ ls -F myenv/
     pyvenv.cfg
 
 
-The `which` bash command returns the path to an executable on your system. Currently, `which python` will return the path to the environment you're using to run the course notebooks: 
+The `which` bash command returns the path to an executable on your system. Currently, `which python` will return the path to the environment you're using to run the course notebooks:
 
 
 ```bash
@@ -221,7 +221,7 @@ echo "======================"
     /Users/jroberts/GitHub/rse-course/module06_software_projects/myenv/bin/python
     Old C programmers don't die, they're just cast into void.
     ======================
-    
+
     ======================
     Outside myenv, python path:
     /Users/jroberts/opt/anaconda3/envs/rse-course/bin/python
@@ -285,19 +285,19 @@ conda deactivate
 There's a large ecosystem of different Python (and general) dependency, environment, and packaging tools, many more than we've seen here. A few other notable ones are:
 
 - [Docker](https://www.docker.com) - creates isolated "containers" which are whole virtual systems, allowing you to configure everything including the operating system to use. This is a "maximally reproducible" solution that ensures future users of your code get a complete and identical environment from the ground up.
-- [pyenv](https://github.com/pyenv/pyenv) - install and manage different versions of Python 
+- [pyenv](https://github.com/pyenv/pyenv) - install and manage different versions of Python
 - [Poetry](https://python-poetry.org/) - create virtual environments and Python packages, and improved dependency management
 - [setuptools](https://setuptools.pypa.io/en/latest/userguide/quickstart.html) - for creating Python packages (we'll be looking at this later)
 
 Which are best for your project depends on what you're trying to achieve and personal preference. It's also likely that you'll be using multiple tools as they all have different priorities and features.
 
-This table gives a rough summary of what the tools mentioned in this course can be used for, loosely ordered from most flexibility (but perhaps most involved setup) at the top, to simpler, single-usecase tools at the botom: 
+This table gives a rough summary of what the tools mentioned in this course can be used for, loosely ordered from most flexibility (but perhaps most involved setup) at the top, to simpler, single-usecase tools at the botom:
 
 |       | Virtual environments | Install non-Python dependencies | Install Python versions | Manage Python dependencies | Create Python packages |
 | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
 | Docker      |  ✅  |  ✅   |  ✅  |  ❌  |  ❌  |
-| conda       |  ✅  |  ✅   |  ✅  |  ✅  |  ✅  |  
-| Poetry      |  ✅  |  ❌  |  ❌  |  ✅  |  ✅  | 
+| conda       |  ✅  |  ✅   |  ✅  |  ✅  |  ✅  |
+| Poetry      |  ✅  |  ❌  |  ❌  |  ✅  |  ✅  |
 | pyenv      |  ✅  |  ❌  |  ✅  |   ❌  |  ❌  |
 | setuptools      |  ❌  |  ❌  |  ❌  |  ✅  |  ✅  |
 | venv      |  ✅  |  ❌  |  ❌  |  ❌  |  ❌  |
