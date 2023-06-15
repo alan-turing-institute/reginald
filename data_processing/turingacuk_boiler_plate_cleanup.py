@@ -1,7 +1,7 @@
 import pathlib
 import re
 
-csv_in = pathlib.Path("data/public/turingacuk.csv")
+csv_in = pathlib.Path("data/unused/turingacuk.csv")
 csv_out = pathlib.Path("data/public/turingacuk-no-boilerplate.csv")
 with open(csv_in, "r") as f:
     content = f.read()
