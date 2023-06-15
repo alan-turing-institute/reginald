@@ -28,9 +28,6 @@ from transformers import AutoModelForCausalLM, AutoTokenizer, pipeline
 # Local imports
 from .base import MessageResponse, ResponseModel
 
-# TOD Leaving out the wiki for now while we figure out if we are okay sending it to
-# OpenAI.
-
 LLAMA_INDEX_DIR = "llama_index_indices"
 PUBLIC_DATA_DIR = "public"
 QUANTIZE = False  # Doesn't work on M1
@@ -78,7 +75,8 @@ class Llama(ResponseModel):
 
         elif self.which_index == "all_data":
             logging.info("Regenerating index for ALL DATA. Will take a long time...")
-
+            # TODO Leaving out the Turing internal data for now while we figure out if
+            # we are okay sending it to OpenAI.
             data_files = list((self.data_dir / PUBLIC_DATA_DIR).glob("**/*.md"))
             data_files += list((self.data_dir / PUBLIC_DATA_DIR).glob("**/*.csv"))
             data_files += list((self.data_dir / PUBLIC_DATA_DIR).glob("**/*.txt"))
@@ -150,7 +148,6 @@ class Llama(ResponseModel):
         )
 
         if not force_new_index:
-
             logging.info("loading the pre-processed index!")
 
             logging.info("Generating the storage context")
@@ -166,7 +163,6 @@ class Llama(ResponseModel):
             )
 
         else:
-
             logging.info("Generating the index anew")
 
             self.index = GPTVectorStoreIndex.from_documents(
