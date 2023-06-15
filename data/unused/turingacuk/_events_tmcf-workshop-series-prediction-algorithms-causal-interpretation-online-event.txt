@@ -1,0 +1,60 @@
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+38.7 KB
+This event will present the outcomes of the Turing's Theory and Methods Challenge Fortnights in Data Science and AI event, Prediction algorithms with a causal interpretation, held in Manchester in February 2020. A challenge team, comprising twelve academics in predictive modelling, machine learning, and causal inference, will share the findings from the challenge - including perspectives on 'counterfactual prediction' and pilot work to address some of the methodological challenges involved. This is now topical work, as such methods can be used for decision support in the COVID-19 pandemic. 
+For participants less familiar with causal inference and prediction, we are holding a companion introductory session in the morning of the same day.
+This event will take place via Zoom webinar
+ 
+Prediction algorithms in AI use machine learning and statistics to make predictions about an event, given what we know so far. Examples include whether a COVID-19 patient will require ventilation, or whether a person seeking insurance will make a claim. These predictions can be used for planning and decision making. However, a limitation of these approaches is they cannot (and should not) be used to ask ‘what if’ questions. For example, ‘what if we give a patient CPAP rather than ventilation?’ or ‘what if the person seeking insurance had a different ethnicity?’ The first example is important for decision making, while the second has implications for fairness because it could be considered discriminatory to charge a different insurance premium based on ethnicity. In both cases, causal inference can help to enrich prediction algorithms with ‘what if’ capabilities.
+For further questions, contact [email protected].
+1 MB
+2.3 MB
+7 MB
+1.8 MB
+8.5 MB
+3.6 MB
+© The Alan Turing Institute
+2023. All rights reserved.
+The Alan Turing Institute, a charity incorporated and registered in England and Wales with company number 09512457 and charity number 1162533 whose registered office is at British Library, 96 Euston Road, London, England, NW1 2DB, United Kingdom.
+For website-related enquiries email
+[email protected]
+
+Explore the Institute
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Legal
+Awards

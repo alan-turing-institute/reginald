@@ -2,6 +2,7 @@ from __future__ import annotations
 
 # Standard library imports
 import logging
+import math
 import os
 import pathlib
 import re
@@ -65,7 +66,7 @@ class Llama(ResponseModel):
         result += "\n\n".join(texts)
         return result
 
-    def _prep_documents(self):
+    def _prep_documents(self) -> list[Document]:
         # Prep the contextual documents
         documents = []
         data_files = [self.data_dir / "handbook-scraped.csv"]
@@ -78,7 +79,7 @@ class Llama(ResponseModel):
                     Document(row[1]["body"], extra_info={"filename": row[1]["url"]})
                     for row in df.iterrows()
                 ]
-            elif data_file.suffix == ".md":
+            elif data_file.suffix in (".md", ".txt"):
                 with open(data_file, "r") as f:
                     content = f.read()
                 documents.append(
@@ -93,19 +94,21 @@ class Llama(ResponseModel):
 
     def __init__(
         self,
-        model_name,
-        max_input_size,
-        data_dir,
-        which_index,
-        num_output=512,
-        chunk_size_limit=300,
-        chunk_overlap_ratio=0.1,
-        force_new_index=False,
+        model_name: str,
+        max_input_size: int,
+        data_dir: str,
+        which_index: str,
+        num_output: int = 256,
+        chunk_size_limit: int | None = None,
+        chunk_overlap_ratio: float = 0.1,
+        force_new_index: bool = False,
     ):
         logging.info("Setting up Huggingface backend.")
         self.max_input_size = max_input_size
         self.model_name = model_name
         self.num_output = num_output
+        if chunk_size_limit is None:
+            chunk_size_limit = math.ceil(max_input_size / 2)
         self.chunk_size_limit = chunk_size_limit
         self.chunk_overlap_ratio = chunk_overlap_ratio
         self.data_dir = pathlib.Path(data_dir)
@@ -215,11 +218,6 @@ class Llama(ResponseModel):
 
 class LlamaDistilGPT2(Llama):
     def _prep_llm_predictor(self):
-        # Use open-source LLM from transformers
-        # Decide what device to use
-        # accelerator = accelerate.Accelerator()
-        # device = accelerator.device
-
         # Create the model object
         tokenizer = AutoTokenizer.from_pretrained(self.model_name)
         model = AutoModelForCausalLM.from_pretrained(
@@ -230,8 +228,6 @@ class LlamaDistilGPT2(Llama):
             "text-generation",
             model=model,
             tokenizer=tokenizer,
-            # TODO Commenting this in breaks on M1.
-            # device=device,
         )
 
         llm_predictor = LLMPredictor(

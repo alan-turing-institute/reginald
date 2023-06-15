@@ -1,0 +1,62 @@
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+This interest group will bring key data stakeholders together with Data Scientists and Artificial Intelligence experts in order to organise and develop best practices with regard to collecting Cybersecurity Data. It will seek to develop acceptable standards for collecting data, analysing and using that data in a way that is both ethically safe, minimal in bias and also useful for building insights into how all organisations (public, private and third sector) can be made more cybersecure in the future.
+This will be a hard task from the outset because collecting and processing data from key stakeholders that relates to their own security presents many challenges to their existing organisational and occupational cultures. Not least, without checks, the data may perpetuate bias. Victims may be reluctant to share it, for example, as they may be concerned that sharing attack data could damage their reputation if publicly revealed. They may, as is sometimes the case, not even be aware that sensitive information has been stolen, even though an attack may have taken place. Furthermore, requests for data may be made just after a cybercrime incident when the organisation is either most risk-averse, or not be capable of assessing the damage, or even be in a position to report it. In the worst-case scenario, the data could even provide an attacker with vital information that can be used to make further attacks.
+Guided by the principle of developing better security for all, the interest group will work together to develop best practices that will enable participants to manage expectations and achieve the best science possible in the circumstances.
+The project will employ a grounded method which begins with the participants own perspectives about their sector's specific needs and requirements. Such an approach enables ideas to progress from the ground up. The project, however, will seek solutions based upon practices and (ethical) practicalities rather than theory. It is anticipated that a dataset will be co-created between organisations and researchers rather than produced by one and consumed by the other.
+The aims of this interest group are directly related to the goals of the ATI: 
+During a time when the cybersecurity stakes are heightened by new types and intensities of threats, especially those which can retard the economic recovery from COVID-19, why is there such reluctance to participate in cybersecurity research since all parties have a common interest to do so?
+Why do researchers have a problem in accessing organisations and data?
+What cybersecurity data will help researchers get the job done? Are researchers thinking in or out of the box? Do expectations match the data that is available?
+Can the gap between what researchers want to do with cybersecurity data and what organisations want it to be used for be reconciled?
+Given that there is evidence that cyber attackers are using all data at their disposal to attack us should we not be doing the same to protect ourselves?
+What can we (victims, agencies and researchers) do to work together to solve a problem that affects us all?
+How can viable working partnerships be created that engenders trust between participants?
+Click here to join us and request sign-up
+Stephen McGough[email protected]
+David Wall[email protected]
+© The Alan Turing Institute
+2023. All rights reserved.
+The Alan Turing Institute, a charity incorporated and registered in England and Wales with company number 09512457 and charity number 1162533 whose registered office is at British Library, 96 Euston Road, London, England, NW1 2DB, United Kingdom.
+For website-related enquiries email
+[email protected]
+
+Explore the Institute
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Legal
+Awards

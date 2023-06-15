@@ -1,0 +1,57 @@
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Social media is where most of us find information, read the news and discuss ideas – and watch cute cat videos. But unfortunately, online platforms are also used for spreading malicious messages, such as hate speech and harassment. This can cause real harm to people’s wellbeing, and also wider society – online hate has been linked to terrorism and gun violence, for example. According to the Turing’s 2019 report ‘How much online abuse is there?’, 30-40% of people in the UK have witnessed online abuse, and 10-20% of people have been personally targeted.
+Traditionally, online hate mitigation has focused on developing AI tools for automatically detecting harmful content, which can be used to moderate content at scale. For instance, out of all the hate speech that Facebook took action on in Q1 2022, 96% was found before users reported it, with automated classification systems playing a key role. However, while content moderation can immediately reduce the number of harmful messages, it can also limit free speech and may not be effective at tackling hate in the long term. Content moderation does little to provide support to victims, build resilience within communities, or change the beliefs of hateful individuals. And, concerningly, content removed on one platform might just be reposted somewhere else.
+Counterspeech has been proposed as a more effective approach to challenging online hate. Instead of blocking or removing content, counterspeech directly presents an alternative, polite and non-aggressive response to whatever has been posted. A 2021 study in Proceedings of the National Academy of Sciences (PNAS) found that empathy-based counterspeech can encourage Twitter users to delete their own racist posts. An example of empathetic counterspeech to racist content might be: “I feel sorry for the victims. As a mother, any types of violence are always alarming and disturbing. We should try to make a better world.” (This is a modified version of a real tweet in our project’s dataset.)
+Counterspeech can take the form of text, graphics or video, and it offers several benefits over content moderation, such as protecting free speech, supporting victims, and signalling to other social media users that hate is unacceptable. However, creating effective counterspeech requires considerable expertise and time, and many community groups that create counterspeech don’t have the resources to scale up their work. What’s more, there has been relatively little academic work in this area, primarily due to a lack of data about existing counterspeech.
+To help address these issues, the Turing’s Online Safety Team, part of the public policy programme, has launched a new project that aims to use AI computer models to automatically detect and generate counterspeech in English. First, we are collecting datasets of abusive social media posts, and their spontaneous responses, so that we can study how online hate is responded to in the wild. This will give us valuable data with which to train our models.
+Automatically detecting counterspeech in this data is a difficult task – it tends to be very rare on social media, and uses similar language and grammar to other forms of language. One approach that’s been used in previous studies uses keyword or pattern matching to look for content that is identical to known counterspeech, but this misses any new counterspeech. Our approach will instead use more complex AI models (trained on large pools of labelled data) to evaluate how similar the content looks to known counterspeech. Once these models have been trained to know what counterspeech looks like, they could be used to automatically generate their own examples from scratch, which would help to make addressing online hate radically more easy.
+With this project, we aim to advance academic knowledge, support the work of practitioners, experts and activists, and raise awareness of the benefits of having more content on social media platforms (i.e. through counterspeech) rather than less (i.e. through content takedowns). We aim to make all of our work open source, sharing the guidelines, datasets and other resources we create.
+We are actively looking for partners to help us with this project, and we welcome any expressions of interest from researchers, civil society organisations or social media platforms. To find out more, please get in touch with Yi-Ling Chung, the project’s lead researcher.
+ 
+Top image: Rodion Kutsaev / Unsplash
+© The Alan Turing Institute
+2023. All rights reserved.
+The Alan Turing Institute, a charity incorporated and registered in England and Wales with company number 09512457 and charity number 1162533 whose registered office is at British Library, 96 Euston Road, London, England, NW1 2DB, United Kingdom.
+For website-related enquiries email
+[email protected]
+
+Explore the Institute
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Legal
+Awards

@@ -1,0 +1,61 @@
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Toxin diagnosis by cellular morphology
+Diagnosing toxin exposure is not a trivial task, unlike viruses and bacteria that both contain DNA and can be cultured both of which can be used to identify their presence after exposure, toxins do not exhibit either of these properties.
+The Data Study Group will focus on a proof of concept challenge, utilising data from a published manuscript. We would like to see if it is possible to utilise the morphology of the cell to identify if it has been exposed to toxin. Cell exposure data collected by imaging flow cytometry over a 48 hour time course can be used in this challenge, with ground truth populations available for both toxin exposed vs unexposed cells. This data is an excellent resource for a proof of concept tool to diagnose toxin exposure. Participants will be split into two groups: one focusing on the analysis of images and one focusing on characteristics that can be extracted from the dataset. Participants in both groups can utilise any methodology they see fit to complete this task. 
+These are intensive 'collaborative hackathons' hosted at the Turing, which bring together organisations from industry, government and the third sector, with talented multi-disciplinary researchers from academia.
+Organisations act as Data Study Group 'Challenge Owners', providing real-world problems and datasets to be tackled by small groups of highly talented, carefully selected researchers.
+Researchers brainstorm and engineer data science solutions, presenting their work at the end of the week.
+Read reports from previous Data Study Groups to see challenges and outcomes.
+Applications are being accepted through Flexi-Grant. Please note, this Data Study Group has limited places - apply now to avoid disappointment.
+The application deadline is noon on Monday 10 July 2023.
+Apply now
+What if I am already part of the Turing community?
+If you are employed at one of the universities in the Institute’s Turing University Network (TUN), please contact your Turing Liaison – list available here - to make them aware of your application. They can provide support, answer questions and involve you as part of the Turing community at your university from now on.
+More FAQs for Data Study Group applicants.
+University of Exeter - Streatham Campus
+© The Alan Turing Institute
+2023. All rights reserved.
+The Alan Turing Institute, a charity incorporated and registered in England and Wales with company number 09512457 and charity number 1162533 whose registered office is at British Library, 96 Euston Road, London, England, NW1 2DB, United Kingdom.
+For website-related enquiries email
+[email protected]
+
+Explore the Institute
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Legal
+Awards

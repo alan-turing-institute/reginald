@@ -1,0 +1,67 @@
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+
+In collaboration with the Barbican. Please note that bookings for this lecture are through the Barbican.
+
+“Deepfakes” or the use of AI to convincingly simulate or synthesise content, voice, images or video for malicious purposes (Nesta, 2018) , has become prominent recently, perhaps most obviously as a means to create realistic but fake pornography involving celebrities or particular victims .
+As such,  there has already been some discussion regarding whether these “unreal” products constitute criminal material such as revenge porn ( better referred to as nonconsensual sharing of private or sexual images) or images of child sexual abuse ( “child pornography”) (Chesney and  Citron,2018) .
+Its implications are however far greater. Techniques to generate deepfakes are evolving in response to a parallel arms war of detection techniques, and may eventually result in a world where the problems currently being experienced with “fake news” expand to everything we see, hear and experience , not just news we read. Obvious areas where this may impact on the law include the law of evidence: the law of intellectual property, primarily copyright: and fraudulent misrepresentation and anti-consumer scams: but these will only be the start of a deluge when our world of reality becomes inscrutably a constructed and manipulated text.
+We suggest that pro-actively a number of governance approaches should be examined to try to forestall the impact of deepfakes on reality. These include;
+Finally we consider in the light of work on transparency as to whether robots/ bots are persons  (EPSRC Principles of Robotics; California Senate Bill No 1001,  2018) if  a duty to certificate or separate reality from unreality or to filter unreality out, to the standard of comprehension of a reasonably perceptive person, should be imposed on service providers and platforms. Should the right to know what is real be a new human right?
+ 
+Agenda
+18:00 - 18:30  Registration
+18:30 - 18:35  Introduction
+18:35 - 19:35  Regulating unreality, Professor Lilian Edwards (Newcastle Law School, UK)
+19:35 - 19:55  Q&A
+ 
+ 
+Barbican Centre (Frobisher Auditorium)
+Silk Street
+London
+EC2Y 8DS
+© The Alan Turing Institute
+2023. All rights reserved.
+The Alan Turing Institute, a charity incorporated and registered in England and Wales with company number 09512457 and charity number 1162533 whose registered office is at British Library, 96 Euston Road, London, England, NW1 2DB, United Kingdom.
+For website-related enquiries email
+[email protected]
+
+Explore the Institute
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Legal
+Awards
