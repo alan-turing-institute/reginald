@@ -1,0 +1,1764 @@
+{
+  "prompt": "What is a page in the handbook made of",
+  "completion": "A page in the handbook is made of a YAML front matter section followed by the page contents in Markdown. The front matter contains keys such as `title` and `weight`, which define metadata about the page. The content section is formatted in Markdown and can contain built-in or custom shortcodes."
+}
+{
+  "prompt": "What is the purpose of front matter",
+  "completion": "The purpose of front matter in a Markdown file is to define metadata related to a page, such as the title and weight that determine the page's position in the navigation menu. Other valid fields related to the theme may also be documented. The content section follows the front matter and is formatted in Markdown."
+}
+{
+  "prompt": "What are the keys most commonly used in front matter",
+  "completion": "The most commonly used keys in front matter are `title` and `weight`. `title` defines the title of a page as it appears in the navigation menu, while `weight` determines the order of pages in the navigation menu. Other predefined keys can be found in the Hugo documentation."
+}
+{
+  "prompt": "What does the weight key do",
+  "completion": "The weight key in the front matter of a page determines its order in the navigation menu. Pages with lower weight numbers appear first in the menu."
+}
+{
+  "prompt": "Where can you find the predefined front matter keys for the handbook theme",
+  "completion": "The predefined front matter keys for the handbook theme can be found in the Hugo documentation and in the theme's README. The two most important keys are `title`, which determines the title of a page as it appears in the navigation menu, and `weight`, which determines the order of pages in the navigation menu."
+}
+{
+  "prompt": "What is the content section of a page in the handbook",
+  "completion": "The content section of a page in the handbook is the portion of the page that contains the actual written content, formatted in Markdown. It comes after the front matter section, which contains metadata about the page such as its title and weight. The content section may also include shortcodes for including more complex features."
+}
+{
+  "prompt": "What is Markdown",
+  "completion": "Markdown is a formatting language used to create web content. Markdown files include front matter with metadata such as the page title and weight, and content written in the Markdown syntax. Shortcodes can be used to add more complex features to the content."
+}
+{
+  "prompt": "What are shortcodes in the handbook",
+  "completion": "Shortcodes are templates that can be parameterized and included in the content section of a Markdown file. They can be used to include more complex features than Markdown's simple syntax allows, and can be called in Markdown content files using a specific syntax. Hugo has a set of built-in shortcodes, and the theme used for the handbook has its own set of shortcodes as well."
+}
+{
+  "prompt": "What is the difference between using a shortcode and raw HTML in a content file",
+  "completion": "Using a shortcode is preferable to including raw HTML in a content file. Shortcodes are templates that can be parametrized and called in Markdown content files, while raw HTML can only be included directly in the file. Shortcodes provide a more flexible and manageable approach to including complex features in a page."
+}
+{
+  "prompt": "What are some of the built-in shortcodes in Hugo",
+  "completion": "Hugo has a set of built-in shortcodes including figure, gist, highlight, param, and ref/relref. The theme also has its own set of shortcodes like hints, expand, KaTeX, and tabs. Repo_link can be used to create links to files or directories in the handbook's repository."
+}
+{
+  "prompt": "What are some of the shortcodes in the handbook theme ",
+  "completion": "Some of the shortcodes in the handbook theme include figure, gist, highlight, and KaTeX, as well as custom ones specific to the theme such as hints, expand, and tabs. Shortcodes are templates that can be parametrized and can be included in the content section of a Markdown file to enable more complex features than Markdown's simple syntax allows."
+}
+{
+  "prompt": "How can shortcodes be included in the handbook's repository",
+  "completion": "Shortcodes can be included in the handbook's repository by creating them using the syntax outlined in the handbook and storing them in the designated folder. They can then be called in Markdown content files using the appropriate syntax. This allows for the use of templates and more complex features than are possible with Markdown's simple syntax."
+}
+{
+  "prompt": "What is the repo_link shortcode used for in the handbook?",
+  "completion": "The repo_link shortcode is used to create a link to a file or directory in the handbook's repository. It takes a path argument, which is the path to the file or directory relative to the root of the repository, and a text argument, which is the text of the link (which can include Markdown formatting)."
+ }
+{
+  "prompt": "What is Lunchtime Tech Talks",
+  "completion": "Lunchtime Tech Talks is an event where the Research Engineering team meets most Tuesdays over lunch and someone presents or discusses a project or data science/computer science/software engineering topic. They also have shorter lightning talks and the schedule and sign-up information can be found on The Data Science Skills wiki."
+}
+{
+  "prompt": "When do the Lunchtime Tech Talks take place",
+  "completion": "The Lunchtime Tech Talks take place most Tuesdays over lunch at 12:30. The talks are presented by someone from the Research Engineering team and cover various topics related to projects, data science, computer science, and software engineering. The schedule and sign-up information can be found on The Data Science Skills wiki."
+}
+{
+  "prompt": "Who usually presents or discusses something at Lunchtime Tech Talks",
+  "completion": "Someone in the Research Engineering team usually presents or discusses something at Lunchtime Tech Talks, which take place most Tuesdays over lunch. The talks can cover topics related to projects, data science, computer science, or software engineering, and can also serve as opportunities to seek help and input."
+}
+{
+  "prompt": "What kind of topics are discussed at Lunchtime Tech Talks",
+  "completion": "The Lunchtime Tech Talks cover a range of topics related to data science, computer science, and software engineering. The talks are presented by members of the Research Engineering team and can include discussions about projects, problem-solving, and seeking input. Shorter lightning talks are also given by multiple speakers."
+}
+{
+  "prompt": "What are some examples of the types of talks that can be presented at Lunchtime Tech Talks",
+  "completion": "Talks at Lunchtime Tech Talks can include presentations on projects, as well as discussions on data science, computer science, and software engineering topics. They can also be used to seek help or input on a problem. Shorter lightning talks are also an option."
+}
+{
+  "prompt": "What is the purpose of Lunchtime Tech Talks",
+  "completion": "The purpose of Lunchtime Tech Talks is to provide a forum for members of the Research Engineering team to present or discuss data science, computer science, or software engineering topics. Additionally, the talks serve as an opportunity to seek help and input from colleagues. The talks are usually held on Tuesday afternoons over lunch."
+}
+{
+  "prompt": "Are lightning talks a part of Lunchtime Tech Talks",
+  "completion": "Yes, lightning talks are a shorter format included in Lunchtime Tech Talks where several people give a shorter talk. The talks are usually presented by someone in the Research Engineering team and cover topics such as projects or data science/computer science/software engineering topics. The schedule and instructions for signing up for a talk can be found on The Data Science Skills wiki."
+}
+{
+  "prompt": "How long do the lightning talks last",
+  "completion": "The length of lightning talks is not specified, but they are shorter than regular talks. Lunchtime Tech Talks take place most Tuesdays over lunch and are presented by someone in REG on topics related to projects, data science, or software engineering. The talks can also be used as an opportunity to seek help or input."
+}
+{
+  "prompt": "Where can you find the schedule for Lunchtime Tech Talks",
+  "completion": "The schedule for Lunchtime Tech Talks can be found on the Data Science Skills wiki, which includes the talks schedule, calendar invitation instructions, and information on signing up for a talk. The Research Engineering team meets most Tuesdays over lunch to discuss various topics, and lightning talks are also available."
+}
+{
+  "prompt": "Is it necessary to sign up for a talk to attend Lunchtime Tech Talks",
+  "completion": "Yes, according to the information provided in the Lunchtime Tech Talks section of The Data Science Skills wiki, signing up for a talk is necessary. The wiki contains information on how to sign up, as well as the talks schedule and calendar invitation instructions."
+}
+{
+  "prompt": "What information is provided on the Data Science Skills wiki for Lunchtime Tech Talks",
+  "completion": "The Data Science Skills wiki provides information about the schedule, calendar invitation instructions, and sign up process for Lunchtime Tech Talks."
+}
+{
+  "prompt": "How can one sign up for a talk at Lunchtime Tech Talks",
+  "completion": "To sign up for a talk at Lunchtime Tech Talks, refer to The Data Science Skills wiki which contains the talks schedule, calendar invitation instructions, and information on signing up for a talk. The Research Engineering team holds the talks most Tuesdays during lunchtime, where someone presents or discusses something related to projects, data science, computer science, or software engineering. Lightning talks are also available for shorter presentations."
+}
+{
+  "prompt": "Is there a limit to the number of attendees for Lunchtime Tech Talks",
+  "completion": "The context provided does not give a specific limit to the number of attendees for Lunchtime Tech Talks."
+}
+{
+  "prompt": "Can non-REG members attend Lunchtime Tech Talks",
+  "completion": "It is not specified in the context whether non-REG members can or cannot attend Lunchtime Tech Talks. More information may be found in the Data Science Skills wiki."
+}
+{
+  "prompt": "How is the content for Lunchtime Tech Talks decided upon?",
+  "completion": "The content for Lunchtime Tech Talks is usually decided by someone from the Research Engineering team who presents or discusses something related to their project, data science, computer science, or software engineering. The talks can also be used to seek help or input and the schedule can be found on The Data Science Skills wiki."
+ }
+{
+  "prompt": "What is the purpose of the Knowledge Sharing page",
+  "completion": "The purpose of the Knowledge Sharing page is to provide tools and resources for promoting communication and sharing knowledge across the team at REG (and the Turing as a whole), as well as to suggest ways to improve this process. It includes daily, weekly, monthly, and less frequent activities such as coffee breaks, Slack messaging, team meetings, hack sessions, and repo audits."
+}
+{
+  "prompt": "What are some of the tools, resources and activities available on the Knowledge Sharing page",
+  "completion": "The Knowledge Sharing page lists various tools, resources, and activities available for REG members to promote knowledge sharing and general communication. These include daily coffee breaks on Gather, Slack messaging channels, regular tech talks and reading groups, REG team meetings, and a monthly newsletter, among others. Additionally, there are less frequent or ad-hoc opportunities such as data study groups, hack sessions, and shadowing projects to promote collaboration and learning."
+}
+{
+  "prompt": "How can you learn something new or get help with a problem using the Knowledge Sharing page",
+  "completion": "To learn something new or get help with a problem using the Knowledge Sharing page, you can make use of various tools, resources, and activities listed on the page, such as the Github Hut23 Repo, Slack, Tech Talks, and Reading Groups. Additionally, you can attend REG Team Meetings, Turing Events, and Data Study Groups, or organize hack sessions or co-working sessions remotely or elicit help through code audits, project retrospectives, and shadowing projects, among others."
+}
+{
+  "prompt": "What are coffee breaks and how can you participate",
+  "completion": "Coffee breaks are a daily event on Gather where REG team members can take a break and chat with each other. If the scheduled times don't work, team members can also post on Slack to organize a break at a more convenient time."
+}
+{
+  "prompt": "What is Slack and how is it used by the REG team",
+  "completion": "Slack is a tool used by the REG team for informal messaging and announcements, as well as for asking for help. It is used in conjunction with other tools and activities to promote knowledge sharing across the team and the Turing as a whole. Geekbot is a Slack App used for a daily virtual standup and ice-breaker style questions, and channels of interest include #hut23 and #tps."
+}
+{
+  "prompt": "What are some of the channels of interest on Slack",
+  "completion": "Some of the channels of interest on Slack for the REG team at the Turing include #hut23, #tps, #askaway, and #interesting-events. Other channels of interest include #general, #social, and #random for general chat and announcements about what's happening around the Turing. Slack is the main tool for informal messaging and announcements, and it's a great place to ask for help."
+}
+{
+  "prompt": "How is Geekbot used by the REG team",
+  "completion": "Geekbot is used by the REG team in two different voluntary ways. It facilitates a virtual daily standup where members share their daily plans, achievements, and any issues faced. It also asks ice breaker-style questions a few times a week."
+}
+{
+  "prompt": "How can you join in with the use of Geekbot",
+  "completion": "To join in with the use of Geekbot, add the Geekbot app to Slack and join the slack channels #hut23standup and #hut23standup-tasks. Geekbot is used for a virtual daily standup and ice breaker-style questions a few times a week."
+}
+{
+  "prompt": "What are Tech Talks and how often do they occur",
+  "completion": "Tech Talks are weekly events held at the Turing that aim to share knowledge and expertise in various areas of technology."
+}
+{
+  "prompt": "What are Reading Groups and how often do they occur",
+  "completion": "Reading groups are regular events that occur weekly at REG. More information on how they work can be found on the Reading Groups page."
+}
+{
+  "prompt": "What is an all-REG meeting and how often do they occur",
+  "completion": "An all-REG meeting is a monthly meeting where REG welcomes new joiners and presents news from around REG or the Turing, followed by a discussion on a topic of interest for the wider team."
+}
+{
+  "prompt": "How can you attend Turing Events",
+  "completion": "To attend Turing Events, REG members are encouraged to check the Turing website for upcoming public talks and workshops. Additionally, REG members can attend Turing Catchups & Town Halls, which are regular meetings open to all staff with updates from around the institute, as well as join in with other REG activities such as coffee breaks, tech talks, and reading groups."
+}
+{
+  "prompt": "What is the REG newsletter and how often is it sent out",
+  "completion": "The REG newsletter is a monthly email containing short project updates and other news/updates from around the team and the institute. It is sent around a week before the monthly team meeting and comes to the Hut23 mailing list."
+}
+{
+  "prompt": "What is the Hut23 Mailing List and how can you be added to it",
+  "completion": "The Hut23 Mailing List is a communication channel used by the REG team at the Turing Institute for organising events, sharing news, and communicating in a more permanent and formal way than Slack. To be added to the Hut23 Mailing List, one should ask their line manager or email the newsletter owner."
+}
+{
+  "prompt": "What are Data Study Groups and how often do they occur",
+  "completion": "Data Study Groups are week-long hack sessions on different projects that happen a few times a year, where participants are drawn from across the Turing and REG people have previously joined both as team members and project PIs. These groups occur less frequently or on an ad-hoc basis."
+}
+{
+  "prompt": "What training opportunities are available around the Turing",
+  "completion": "Various training opportunities are available around the Turing, including tech talks, reading groups, data study groups, courses and training, and hack sessions. There are also remote co-working options, project retrospectives, and the opportunity to work on other projects and shadow them. Slack and the Hut23 mailing list are good places to organize events and contact everyone in the team."
+}
+{
+  "prompt": "How is remote co-working organised by the REG team",
+  "completion": "REG team organises remote co-working occasionally via Zoom to Gather to work together while chatting. This is not done regularly and occurs only on an ad-hoc basis. It can be requested on Slack by anyone who is interested in working in this way."
+}
+{
+  "prompt": "What is a hack session and how can you organise one",
+  "completion": "A hack session is a collaborative working session where a group of people work together to achieve a specific goal or complete a project. To organize a hack session, one can post about it on Slack or the Hut23 mailing list, and gather interested participants. The session should have a specific goal and can be longer but less frequent than a reading group, focused on implementing rather than reading."
+}
+{
+  "prompt": "What are repo audits and how are they organised",
+  "completion": "Repo audits are organised by a small group to help check documentation, usage, and installation instructions or review code for a project. This is done to ensure clarity and identify areas for improvement. It is one of the less frequent or ad-hoc activities listed among the REG's knowledge sharing tools and activities."
+}
+{
+  "prompt": "What is a Snark Hunt and how is it organised",
+  "completion": "A Snark Hunt is a facilitated discussion held after a project has finished, where the project team and other members reflect on the experience of working on the project. It is aimed at identifying what went well and what could have been done better. The Hunt is organised as part of the project retrospective and is one of the less frequent or ad-hoc activities of the Research Engineering Group."
+}
+{
+  "prompt": "How can working on other projects promote knowledge sharing within the team?",
+  "completion": "Working on other projects allows team members to collaborate and share knowledge with different people and across different domains, which can improve overall knowledge sharing within the team. This can happen through different opportunities such as rotating between projects, participating in hack sessions, or shadowing projects."
+ }
+{
+  "prompt": "What is the process of contributing changes to a remote repository",
+  "completion": "The process of contributing changes to a remote repository involves creating a new branch, making changes, and opening a pull request. The changes are checked through a series of tests, including a Markdown linter and a Hugo build. The changes must receive at least one approval from maintainers before merging."
+}
+{
+  "prompt": "What is the GitHub flow workflow",
+  "completion": "The GitHub flow workflow involves creating a branch, making changes, opening a pull request, reviewing, and then merging to 'main.' This process helps ensure changes are deployed quickly. Reviews are not currently required but may be enabled for auto-merge."
+}
+{
+  "prompt": "Why should changes be made on a new branch rather than on the main branch",
+  "completion": "Changes should be made on a new branch rather than on the main branch in order to make it easier to merge changes from many contributors and to ensure that pull requests are small and easy to review. Sticking to this practice will also help ensure that changes are self-contained and address a single issue, making it simpler to keep the branch up to date and avoiding problems during the review process."
+}
+{
+  "prompt": "What should be considered when naming a new branch",
+  "completion": "When naming a new branch for contributing changes, it is important to use a short and descriptive name that reflects the change being made. The branch should not be created on `main`, and changes on one branch should address a single issue and be self-contained. It is also important to reference any related issues when opening a pull request and to ensure all required tests pass before merging."
+}
+{
+  "prompt": "How many issues should a branch or pull request address",
+  "completion": "A branch or pull request should address a single issue and be self-contained. Multiple unrelated problems should not be solved at once to ensure small and easy-to-review pull requests, prevent making many changes during review, and avoid difficulty in keeping the branch up to date."
+}
+{
+  "prompt": "What are the required tests for passing before merging a pull request",
+  "completion": "The required tests for passing before merging a pull request are a Markdown linter and a Hugo build. Other tests, such as a Markdown link checker and a HTML proofer, are not required but recommended to pass."
+}
+{
+  "prompt": "What are the optional but recommended tests to pass before merging a pull request",
+  "completion": "The recommended tests to pass before merging a pull request include a Markdown linter and a Hugo build, while passing a Markdown link checker and an HTML proofer on the output of Hugo are optional but recommended."
+}
+{
+  "prompt": "What are the consequences of having an out-of-date branch when attempting to merge",
+  "completion": "If your branch is out-of-date, it will not be possible to merge it due to branch protection rules applied to `main`. To fix this, you can use either merging or rebasing to update your branch with the latest changes from `origin/main`. Rewriting history is considered impolite on a collaborative branch, and merging is the simpler way to get your branch up to date."
+}
+{
+  "prompt": "What are the two methods for keeping a branch up to date",
+  "completion": "The two methods for keeping a branch up to date are merging the changes from \"origin/main\" into the branch or rebasing the branch on top of \"origin/main\"."
+}
+{
+  "prompt": "What is the review process for a pull request?",
+  "completion": "Currently, reviews are not required for pull requests to be merged when all required CI checks pass. However, pull requests require at least one approval from the maintainers before merging, and any requested changes or comments must be resolved before merging."
+ }
+{
+  "prompt": "What are the two principles that inform the overtime practices at REG ",
+  "completion": "The two principles that inform the overtime practices at REG are working the contractually agreed number of hours and having flexible hours as long as employees are available for meetings during normal office hours. REG encourages employees to recover any extra hours worked within a week or two and to talk to their line manager if they are frequently overworking. In cases where employees anticipate needing to work more than their usual hours, they can arrange a formal Time Off In Lieu with their manager."
+}
+{
+  "prompt": "How do the overtime practices at REG differ from those of academics",
+  "completion": "REG operates with the principle of truly working contractual hours and having flexible hours as long as you are available for meetings during normal office hours. They allow for recovering of extra hours worked within a week or two without formal time tracking, but overworking requires talking to a line manager. They also offer Time Off In Lieu (TOIL) arrangements for anticipated extra hours beyond the flexibility of recovery."
+}
+{
+  "prompt": "Is overtime at REG flexible ",
+  "completion": "Yes, overtime at REG is flexible as long as the total number of hours is below one working day's worth and can be recovered within a week or two. Anticipated overtime beyond this limit requires a formal Time Off In Lieu arrangement with your line manager."
+}
+{
+  "prompt": "What happens if you need to work more than your usual hours on some days or weeks at REG ",
+  "completion": "If you need to work more than your usual hours on some days or weeks at REG, you should try to recover those hours back within a week or two. If you find that you are frequently overworking, you should talk to your line manager about your workload. If you anticipate needing to work more than your usual hours due to a specific, temporary work package, talk to your line manager about a formal Time Off In Lieu (TOIL) arrangement."
+}
+{
+  "prompt": "Do you need manager approval for flexible overtime at REG ",
+  "completion": "No, you do not need manager approval or formal time tracking for flexible overtime at REG as long as you are able to recover the additional hours within a week or two and the total number of overtime hours is below one working day's worth. If you are frequently working more than your usual hours and struggling to recover those hours back within a week or two, you should talk to your line manager about your workload. If you anticipate needing to work more than your usual hours due to a specific, temporary work package that goes beyond the flexibility of point 1, talk to your line manager about a formal Time Off in Lieu (TOIL) arrangement."
+}
+{
+  "prompt": "What should you do if you find yourself frequently overworking at REG ",
+  "completion": "If you find yourself frequently overworking at REG, you should talk to your line manager about your workload and how it should be changed. If you anticipate needing to work more than your usual hours, talk to your line manager about a formal Time Off In Lieu (TOIL) arrangement to make sure you recover those hours later. Keeping a healthy work-life balance is important, especially when working remotely."
+}
+{
+  "prompt": "What is the Time Off In Lieu (TOIL) arrangement at REG ",
+  "completion": "The Time Off In Lieu (TOIL) arrangement at REG is a formal process for recovering hours worked beyond the flexibility allowed for point 1. Employees must discuss the need for TOIL with their line manager in advance for specific, temporary work packages. Keeping a healthy work-life balance is encouraged, especially when working remotely."
+}
+{
+  "prompt": "Under what circumstance should you talk to your line manager about a TOIL arrangement ",
+  "completion": "You should talk to your line manager about a formal Time Off In Lieu (TOIL) arrangement if you anticipate in advance needing to work more than your usual hours due to some specific, temporary work package that goes beyond the flexibility of recovering hours back within a week or two."
+}
+{
+  "prompt": "Why is it important to maintain a healthy work-life balance at REG ",
+  "completion": "Maintaining a healthy work-life balance is important at REG because overworking can lead to burnout and decreased productivity. REG's overtime practices prioritize the avoidance of overworking and encourage a clear separation between work and free time to promote employee well-being. This is particularly crucial when working remotely."
+}
+{
+  "prompt": "What can make it hard to maintain a work-life balance when working remotely at REG ",
+  "completion": "Maintaining a work-life balance can be especially hard when working remotely at REG, as people are trusted to organize their own schedules and there is a flexibility in hours. Employees are encouraged to keep a clear separation between free time and work time and switch off from work-related platforms when not working to avoid overworking."
+}
+{
+  "prompt": "Does REG trust its employees to organize their own schedules ",
+  "completion": "Yes, REG trusts its employees to organize their own schedules as long as they stick to their contractually agreed number of hours and are available for meetings during normal office hours. They also encourage employees to maintain a healthy work-life balance and switch off from work communication when not working."
+}
+{
+  "prompt": "What actions does REG encourage its employees to take to maintain a healthy work-life balance ",
+  "completion": "REG encourages its employees to maintain a healthy work-life balance by allowing flexible working hours and encouraging them to recover any extra hours worked within a week or two. They also encourage employees to speak with their line managers if they are frequently working extra hours and struggling to recover them. Additionally, they recommend maintaining a clear separation between work and free time and switching off from work-related communication when not working."
+}
+{
+  "prompt": "Should you remain available for meetings during normal office hours at REG ",
+  "completion": "Yes, as long as you are available for meetings when necessary during normal office hours. REG operates with flexible hours as long as the contracted number of hours are worked and overtime is managed within the guidelines outlined above."
+}
+{
+  "prompt": "Is formal time tracking required for flexible overtime at REG ",
+  "completion": "No, formal time tracking is not required for flexible overtime at REG as long as the extra hours can be recovered within a week or two and the total number of hours is below a working day's worth. If the extra hours cannot be recovered within this timeframe or exceed the flexibility of point 1, a Time Off In Lieu (TOIL) arrangement must be discussed with the line manager."
+}
+{
+  "prompt": "How can you recover hours worked over your usual hours at REG?",
+  "completion": "If you work more than your usual hours at REG, you should try to recover these hours back within a week or two. If you find it hard to recover those hours, you must talk to your line manager. If you anticipate needing to work more than your usual hours, talk to your line manager about a formal Time Off In Lieu (TOIL) arrangement."
+ }
+{
+  "prompt": "What are Lightning Talks",
+  "completion": "Lightning Talks are short 10-minute presentations in which people share what they're working on in an informal setting. The talks can be on any topic and aim to find overlaps between projects, generate ideas for future talks, and do so without a big time commitment for presenters and attendees. The talk format includes a brief background, project goals, status, tools, and a summary."
+}
+{
+  "prompt": "What are the main goals of Lightning Talks",
+  "completion": "The main goals of Lightning Talks are to regularly share what the team is working on, find overlaps between projects, and generate ideas for future tech talks, all without a big time commitment for presenters and attendees. These short, 10 minute talks can be on any topic and informal discussions without slides or much preparation are encouraged. The talk format can vary, but should provide a concise, high-level overview of the topic."
+}
+{
+  "prompt": "What are some topics that Lightning Talks can cover",
+  "completion": "Lightning Talks can cover any topic in a short 10-minute presentation format, including projects, tools or techniques, or something the presenter needs help with. The talks aim to encourage knowledge sharing, collaboration, and idea generation in a low-commitment format. Previous talks and their slides can be found on the group's wiki page."
+}
+{
+  "prompt": "How long is each Lightning Talk",
+  "completion": "Each Lightning Talk slot is 10 minutes long, with a few minutes afterwards for questions. The format can be informal with or without slides, but presenters are encouraged to be concise and give high-level overviews of their topic. The main goals are to share ongoing work, find collaborations, generate ideas for future talks, and maintain a low time commitment for presenters and attendees."
+}
+{
+  "prompt": "How strict is the timing for Lightning Talks",
+  "completion": "Each Lightning Talk slot is 10 minutes long with a few minutes for questions afterwards, and the organizers will be fairly strict with time to ensure everyone on the agenda gets to present. The talks can be in any format, but concise, high-level overviews of topics are encouraged. Informal talks or discussions without slides or much preparation are also welcome."
+}
+{
+  "prompt": "What are some formats that can be used for Lightning Talks",
+  "completion": "The Lightning Talks can be in any format, including slides, markdown, notebook, or freestyle. However, the talks should be concise and provide a high-level overview of the topic in 10 minutes, with a few minutes for questions afterward. A PowerPoint template and examples from previous talks are available for those who wish to use slides."
+}
+{
+  "prompt": "What are some tips for presenting a Lightning Talk on a project",
+  "completion": "Some tips for presenting a Lightning Talk on a project include being concise and focusing on the background, goals, status, tools & techniques, and summary. Slides are optional, but if used, there is a PowerPoint template and examples available. Always remember the 10-minute time limit and sign up on the designated list beforehand."
+}
+{
+  "prompt": "Where can you find examples of PowerPoint templates for Lightning Talks",
+  "completion": "Examples of PowerPoint templates for Lightning Talks can be found on the Alan Turing Institute's SharePoint page linked in the \"Talk Format\" section. Additionally, previous talks and their slides can be found on the Institute's GitHub page. To sign up for a Lightning Talk, interested individuals can add themselves to the sign-up list linked in the same section."
+}
+{
+  "prompt": "How do you sign up to present a Lightning Talk",
+  "completion": "To sign up to present a Lightning Talk, add yourself to the signup list which is located on the Lightning Talks page of the Research Engineering Group's wiki. The talks are 10 minutes long with a few minutes for questions after, and can be on any topic. Slides, markdown, notebooks, or freestyle formats are all acceptable."
+}
+{
+  "prompt": "Where can you find previous Lightning Talks and their slides?",
+  "completion": "Previous Lightning Talks and their slides can be found on the \"Lightning Talks: History of Talks\" page on the Github repository for the Alan Turing Institute's research engineering group. The talks cover a variety of topics, and slides can be prepared using a provided PowerPoint template and examples from previous talks."
+ }
+{
+  "prompt": "What is the purpose of the document \"Defining Project Doneness\"",
+  "completion": "The purpose of the document \"Defining Project Doneness\" is to provide a framework for Research Software Engineers to define clear objectives, assess the current status of the project, and determine where to prioritize their efforts when collaboration begins on an existing codebase. The framework includes objectives for improving impact and legacy, expanding communities of practice, and providing a confident codebase for future research. It provides clear criteria for when a collaboration is considered done."
+}
+{
+  "prompt": "What are some of the challenges faced in collaborative projects as a Research Software Engineer (RSE)",
+  "completion": "As a Research Software Engineer, some of the challenges faced in collaborative projects include defining clear objectives, prioritizing time and effort, and establishing a common language and framework for collaborators. The framework presented in this document includes objectives related to reach and robustness, functionality, documentation, testing, and open release, with specific levels of achievement for each category."
+}
+{
+  "prompt": "What are the objectives of the framework in \"Defining Project Doneness\"",
+  "completion": "The objectives of the framework are to showcase what is important to RSEs, assess the current status of an existing repository, define clear objectives, determine where to put effort, provide a common framework and language for collaborators, and clearly define when the collaboration is done. The objectives focus on improving the impact and legacy of the software, expanding communities of practice, and providing a confident codebase for future research. The framework includes objectives for reach and robustness, functionality, documentation, testing, and open release."
+}
+{
+  "prompt": "How can the \"Defining Project Doneness\" document help in providing a common framework and language for collaborators",
+  "completion": "The \"Defining Project Doneness\" document can help provide a common framework and language for collaborators by outlining objectives and levels for different categories such as reach and robustness, functionality, documentation, testing, and open release. It allows for clear definition of when a collaboration is done and addresses priority areas for effort allocation."
+}
+{
+  "prompt": "What is the minimum aim for defining \"done\" in the \"Reach and Robustness\" category at level 01",
+  "completion": "The minimum aim for defining \"done\" in the \"Reach and Robustness\" category at level 01 is to identify how internal users already use the tool and its current issues."
+}
+{
+  "prompt": "What is the level 03 objective in the \"Functionality\" category",
+  "completion": "The level 03 objective in the \"Functionality\" category is to try out normal range but more advanced use cases, with edge cases."
+}
+{
+  "prompt": "What is the minimum level requirement for \"Documentation\" in \"Defining Project Doneness\" at level 01",
+  "completion": "The minimum level requirement for \"Documentation\" in \"Defining Project Doneness\" at level 01 is to follow the existing starting point of documentation."
+}
+{
+  "prompt": "What is the level 02 objective in \"Testing\" as per the \"Defining Project Doneness\" document",
+  "completion": "The level 02 objective in \"Testing\" as per the \"Defining Project Doneness\" document is to have a conversation about what are the expected outcomes/how the tool works before creating end-to-end tests that check expected outcomes."
+}
+{
+  "prompt": "What is the minimum level requirement needed to make a repository public as per the \"Open Release\" category",
+  "completion": "The minimum level requirement needed to make a repository public as per the \"Open Release\" category is Level 03, which is to make the repo public."
+}
+{
+  "prompt": "What is the purpose of identifying minimum criteria in level 01 of the \"Open Release\" category?",
+  "completion": "The purpose of identifying minimum criteria in level 01 of the \"Open Release\" category is to find the barriers that need to be solved before making the repository public, such as authorship, sensitivity, licensing, publicity, and timings. This helps prioritize efforts and ensure that the collaboration is done when the identified criteria are met."
+ }
+{
+  "prompt": "What is the significance of the first directory after `content/` in Hugo",
+  "completion": "The first directory after `content/` in Hugo defines the content type and is significant for arranging pages in the tree-like menu. All handbook pages should be nested in the `content/docs/` directory, and sections may be created in `content/docs/` by creating a directory containing a content file called `_index.md`."
+}
+{
+  "prompt": "What is the recommended directory for all handbook pages in Hugo",
+  "completion": "The recommended directory for all handbook pages in Hugo is `content/docs/`. This is significant because the first directory after `content/` defines the content type and is necessary for Hugo to correctly assign pages to sections and arrange pages in the tree-like menu. To create a new page or section, the `hugo new` command can be used."
+}
+{
+  "prompt": "What is the function of `_index.md` in Hugo",
+  "completion": "The `_index.md` file is used in Hugo to define a section and its content type. It must exist for Hugo to assign pages to sections correctly and for themes to arrange pages in a tree-like menu. It is created in a directory to any depth within the `content/docs/` directory."
+}
+{
+  "prompt": "Why is it important to have an index file in Hugo",
+  "completion": "It is important to have an index file in Hugo to correctly assign pages to sections and for the theme to arrange pages in the tree-like menu. The first directory after \"content/\" is significant and defines the content type, and sections may be created in \"content/docs/\" (to any depth) by creating a directory containing a content file called \"_index.md\"."
+}
+{
+  "prompt": "What happens if the index file does not exist in Hugo",
+  "completion": "If the index file does not exist for a section in Hugo, pages will not be correctly assigned to the section and the theme will not arrange pages in the menu tree. It is important for the index file to exist to maintain proper organization and functionality within the website."
+}
+{
+  "prompt": "What is the command to create a new handbook page in Hugo",
+  "completion": "The command to create a new handbook page in Hugo is `hugo new content/docs/<path/to/page>.md`. For example, to create a page titled \"Creating a Page\" under the \"contributing\" section, the command would be `hugo new content/docs/contributing/creating_a_page.md`. Hugo automatically assigns a URL based on the file's location in the content directory."
+}
+{
+  "prompt": "What is the recommended archetype to use for a document in the `docs` directory in Hugo",
+  "completion": "The recommended archetype to use for a document in the `docs` directory in Hugo is `docs.md`. This archetype can be found in the `archetypes` directory. When creating a new page or section in the `docs` directory, Hugo will automatically use this archetype as a template."
+}
+{
+  "prompt": "What is an example of a command to edit a new page in Hugo",
+  "completion": "To edit a new page in Hugo, use the \"hugo new\" command followed by the desired file path and name. For example, to create a new page called \"creating_a_page\" in the \"contributing\" section of the \"docs\" directory, type \"hugo new content/docs/contributing/creating_a_page.md\" in the terminal."
+}
+{
+  "prompt": "How can you create a new section in Hugo using the `hugo new` command",
+  "completion": "To create a new section in Hugo using the `hugo new` command, first create a directory containing a content file called `_index.md` in the `content/docs/` directory. Then, run the command `hugo new content/docs/new_section/_index.md` to create the directory and index file for the new section. If you only want a section to organize pages and not to have a page of its own, leave the content section of `_index.md` empty."
+}
+{
+  "prompt": "What should you do if you only want a section to organize some pages and not have a page of its own in Hugo?",
+  "completion": "If you only want a section to organize some pages and not have a page of its own in Hugo, you can simply leave the content section of `_index.md` (after the YAML front matter) empty. It is important for the index file to exist for Hugo to correctly assign pages to sections and for the theme to arrange pages in the menu. Creating a new section and directory can be done by using the `hugo new` command."
+ }
+{
+  "prompt": "Why is it important to have a meeting record",
+  "completion": "Having a meeting record is important because it provides a clear and thorough reference for what happened at the meeting, including decisions and actions assigned, and is invaluable for those who were unable to attend. A meeting record template is suggested for creating a comprehensive record, which can be distributed to all attendees or stored in a visible location for future reference."
+}
+{
+  "prompt": "What information should be included in a meeting record",
+  "completion": "The meeting record should include clear and thorough documentation of what happened at the meeting, including any decisions made or actions assigned. A template using Pandoc Markdown is suggested for creating a good record. The document should be created collaboratively before the meeting and circulated to all attendees for editing and agreement on agenda items."
+}
+{
+  "prompt": "How can a meeting record be useful to those who did not attend the meeting",
+  "completion": "A meeting record can be useful to those who did not attend the meeting as it provides a clear reference of what occurred during the meeting, including decisions made and actions assigned. Additionally, a good meeting record can be distributed or stored in a location visible to everyone who may need to read it."
+}
+{
+  "prompt": "What is the recommended template for a meeting record",
+  "completion": "The recommended template for a meeting record can be found at the provided link, which uses Pandoc Markdown and includes instructions for creating the record before the meeting, using a collaborative text editor, and distributing the record or storing it in a visible location. The template may also be used to avoid a meeting entirely by completing the document collaboratively and asynchronously."
+}
+{
+  "prompt": "What is Pandoc and how is it used in relation to meeting records",
+  "completion": "Pandoc is a tool used to convert a meeting record document created in Pandoc Markdown to a PDF format. It also includes a YAML metadata block at the top of the template to render the meeting record into a well-designed PDF document. The tool can be used with a collaborative text editor like HackMD to prepare and edit the meeting record document."
+}
+{
+  "prompt": "How can a meeting record be converted to pdf using Pandoc",
+  "completion": "To convert a meeting record to pdf using Pandoc, use the command `bash pandoc meeting_record.md -o meeting_record.pdf`, as stated in the Meeting Records section of the webpage, which also provides a suggested template for a meeting record document using Pandoc Markdown."
+}
+{
+  "prompt": "What is a YAML metadata block and how is it used in meeting records",
+  "completion": "A YAML metadata block is used in meeting records to contain metadata about the meeting and help the record render into a good-looking PDF document. It is located at the top of the meeting record template and contains information such as the title and weight of the page in the navigation menu."
+}
+{
+  "prompt": "What is a collaborative text editor and how can it be used in creating a meeting record",
+  "completion": "A collaborative text editor is a tool that allows multiple people to edit a document simultaneously. It can be used in creating a meeting record by allowing all attendees to edit the document, adding and agreeing on agenda items, and distributing or storing the record for future reference."
+}
+{
+  "prompt": "How should the meeting record be distributed or stored",
+  "completion": "The meeting record should be distributed or stored in a location visible to everyone who may need to read it. The suggested template for a meeting record document can be converted to PDF using Pandoc for wider distribution. It is recommended to use a collaborative text editor like HackMD to create and edit the document."
+}
+{
+  "prompt": "Can the meeting record template be used in lieu of an actual meeting?",
+  "completion": "The meeting record template cannot be used in lieu of an actual meeting, but rather it is meant to be used as a tool for producing a clear and thorough record of a synchronous meeting. It is ideal for reference, decision-making and actions assigned at the meeting."
+ }
+{
+  "prompt": "What is the benefit of using templates in Hugo ",
+  "completion": "Using templates in Hugo allows for building page content from data files, creating custom shortcodes, and reducing repeated code in partial templates. This helps to maintain structured data, simplify maintenance, and make changes easier."
+}
+{
+  "prompt": "How can datafiles be used to build page content ",
+  "completion": "Datafiles can be used to build page content through templates in Hugo. This is useful for displaying structured data and maintaining datafiles rather than Markdown or HTML documents. Shortcodes and partial templates can also be used to create page content."
+}
+{
+  "prompt": "What is a shortcode in Hugo ",
+  "completion": "A shortcode in Hugo is a custom markup tag that allows you to create reusable content blocks, often used for displaying structured data from a data file or for using HTML code within a Markdown file. Shortcodes are stored in the \"layouts/shortcodes/\" directory and can be created using Hugo's templates and functions documentation."
+}
+{
+  "prompt": "Where should shortcodes be placed in Hugo ",
+  "completion": "Shortcodes should be placed in the \"layouts/shortcodes/\" directory in Hugo. This directory can be accessed using the \"{{% repo_link path=\"layouts/shortcodes/\" text=\"`layouts/shortcodes/`\" %}}\" shortcode. Shortcodes are useful for creating page content from a datafile or using HTML."
+}
+{
+  "prompt": "What are some of the resources available for writing a shortcode ",
+  "completion": "Hugo's templates and functions documentation provide resources for writing a shortcode. Shortcodes should be placed in the layouts/shortcodes directory. Partial templates can also help reduce repeated code in templates."
+}
+{
+  "prompt": "What are partial templates in Hugo ",
+  "completion": "Partial templates in Hugo are smaller templates that are used to build whole page templates, reducing repeated code and making changes simple. They are particularly useful when building page content from datafiles or when using custom shortcodes."
+}
+{
+  "prompt": "How do partial templates help with making changes to templates ",
+  "completion": "Partial templates help to reduce repeated code in templates and make changes simpler by breaking the page templates into smaller components that can be easily edited and replaced without affecting the entire page."
+}
+{
+  "prompt": "What are dummy partial templates in Hugo's theme ",
+  "completion": "Dummy partial templates in Hugo's theme are predefined templates that can be overwritten to customize the look and feel of a website. They reduce repeated code in templates and make changes simpler."
+}
+{
+  "prompt": "How can the Creative Commons notice at the bottom of each page be added or edited in Hugo ",
+  "completion": "To add or edit the Creative Commons notice at the bottom of each page in Hugo, one should edit the `footer.html` partial template file located at `layouts/partials/docs/inject/footer.html`. The Creative Commons notice is included in this file and can be modified as needed."
+}
+{
+  "prompt": "What is the purpose of the 'bookCollapseSection' and 'bookHidden' options in Hugo?",
+  "completion": "The 'bookCollapseSection' option in Hugo is used to hide nested pages in a collapsed menu, while the 'bookHidden' option is used to hide a page from the navigation menu. These options provide control over the appearance of the navigation menu in Hugo."
+ }
+{
+  "prompt": "What are the two principles that inform overtime practices at REG",
+  "completion": "The two principles that inform overtime practices at REG are: working the contractually agreed number of hours and maintaining flexibility in hours as long as one is available for meetings during normal office hours. If an employee needs to work more than their usual hours, they should try to recover those hours back within a week or two, and if they frequently work more than their usual hours, they must talk to their line manager about workload changes."
+}
+{
+  "prompt": "How does REG differ from academics in terms of working hours",
+  "completion": "REG differs from academics in terms of working hours by truly working their contractually agreed number of hours and having flexible hours as long as they are available for meetings during normal office hours. Overworking is discouraged, with the expectation that any additional hours worked should be recovered within a week or two, and if necessary, a formal Time Off In Lieu arrangement should be made."
+}
+{
+  "prompt": "What is the flexibility offered by REG for working hours",
+  "completion": "REG offers flexible working hours as long as employees are available for meetings during normal office hours. Employees can work more than their usual hours but should aim to recover them back within a week or two, without manager approval or formal time tracking. If an employee anticipates needing to work more than their usual hours, they should talk to their line manager about a formal Time Off In Lieu arrangement."
+}
+{
+  "prompt": "What is the timeframe within which employees can recover extra hours worked",
+  "completion": "Employees should try to recover extra hours worked within a week or two on their own without formal time tracking or manager approval, as long as the total number of hours is below one working day's worth. If they frequently struggle to recover those hours, they must talk to their line manager about workload changes. In cases where anticipating needing to work more than usual hours, employees must talk to their manager about a formal Time Off In Lieu (TOIL) arrangement."
+}
+{
+  "prompt": "Can employees recover extra hours worked without manager approval or formal time tracking",
+  "completion": "Yes, employees can recover extra hours worked without manager approval or formal time tracking as long as they are able to recover the hours back within a week or two, and the total number of hours is below one working day's worth. However, if an employee frequently works more than their usual hours and struggle to recover those hours back within a week or two, they must talk to their line manager about their workload and how it should be changed."
+}
+{
+  "prompt": "What should employees do if they frequently work more than their usual hours",
+  "completion": "If employees frequently work more than their usual hours and struggle to recover those hours back within a week or two, they must talk to their line manager about their workload and how it should be changed. Additionally, if they anticipate needing to work more than their usual hours due to some specific, temporary work package, they should talk to their line manager about a formal Time Off In Lieu (TOIL) arrangement. It's important for employees to maintain a healthy work-life balance and to keep a clear separation between free time and work time."
+}
+{
+  "prompt": "Who should employees talk to if they anticipate needing to work more than their usual hours due to a specific work package",
+  "completion": "Employees should talk to their line manager if they anticipate needing to work more than their usual hours due to a specific, temporary work package that goes beyond the flexibility of recovering those hours within a week or two. A formal Time Off In Lieu (TOIL) arrangement can be discussed to ensure that the hours are recovered later."
+}
+{
+  "prompt": "What is Time Off In Lieu (TOIL) arrangement",
+  "completion": "Time Off In Lieu (TOIL) is a formal arrangement where an employee who anticipates needing to work more than their usual hours can recover those hours later. It is recommended to avoid overworking and maintain a healthy work-life balance. It is important to discuss with the line manager if frequent overworking is needed."
+}
+{
+  "prompt": "When should employees talk to their line manager about a TOIL arrangement",
+  "completion": "Employees should talk to their line manager about a formal Time Off In Lieu (TOIL) arrangement if they anticipate needing to work more than their usual hours due to some specific, temporary work package that goes beyond the flexibility of recovering hours within a week or two."
+}
+{
+  "prompt": "Why is it important to maintain a healthy work-life balance",
+  "completion": "Maintaining a healthy work-life balance is important to prevent overworking and burnout. Flexible hours and recovery of extra hours within a certain timeframe are offered, but if overworking becomes a frequent issue, it should be discussed with a line manager. Remote work can make it difficult to separate free time from work time, so it's important to disconnect from work when not working."
+}
+{
+  "prompt": "What challenges may arise when working remotely",
+  "completion": "Challenges that may arise when working remotely include the difficulty of maintaining a healthy work-life balance, overworking, and struggling to recover overtime hours. It is important to communicate openly with your line manager and establish clear boundaries between work and personal time to avoid burnout."
+}
+{
+  "prompt": "How can employees maintain a clear separation between free time and work time",
+  "completion": "Employees can maintain a clear separation between free time and work time by keeping a healthy work-life balance, avoiding overworking, and switching off from work-related communication when not working. They should also talk to their line manager about formal Time Off In Lieu arrangements if they anticipate needing to work more than their usual hours."
+}
+{
+  "prompt": "Should employees switch off from Slack, email, and other work-related communication channels when not working",
+  "completion": "Yes, employees should switch off from Slack, email, and other work-related communication channels when not working. It is important to maintain a healthy work-life balance and to avoid overworking, especially when working remotely. This is encouraged by the company, although trusted employees are responsible for organizing their own schedules."
+}
+{
+  "prompt": "What are the consequences of overworking",
+  "completion": "Overworking can lead to physical and mental health problems such as fatigue, anxiety, and depression. It can also negatively impact work performance, productivity, and quality. Therefore, it is important to maintain a healthy work-life balance and communicate with managers if workload becomes too heavy."
+}
+{
+  "prompt": "How can employees manage their workload effectively without overworking?",
+  "completion": "Employees can manage their workload effectively without overworking by trying to recover any extra hours worked within a week or two, speaking to their line manager if overworking becomes frequent, and discussing a Time Off In Lieu arrangement for anticipated workload increases beyond their flexibility. It is important to maintain a healthy work-life balance and switch off from work during free time, especially while working remotely."
+ }
+{
+  "prompt": "What is EditorConfig and how does it allow for common coding standards",
+  "completion": "EditorConfig is a tool that allows for common coding standards to be set for a team in a code base, while allowing for individual differences in editor configurations. It works by placing a .editorconfig file in the root directory of the repo and can be used with many editors/IDEs, either natively or with a plugin. It overlaps with Flake8, but applies standards to files as they are created/edited instead of checking all files on demand."
+}
+{
+  "prompt": "",
+  "completion": "What is EditorConfig and how can it help maintain common coding standards between collaborators in a code base?\n\nEditorConfig is a tool that allows for formatting/encoding options to be configured for a range of editors/IDEs by using a `.editorconfig` placed in the root of the repo. It enables different members of a project team to use their own favorite editor while maintaining common coding standards."
+}
+{
+  "prompt": "How do EditorConfig and Flake8 differ in their functionality",
+  "completion": "EditorConfig applies standards to files as they are created/edited, while Flake8 checks all files (irrespective of origin) on demand. Both tools need to be set up and mutually compatible, but the configurations for both Flake8 and EditorConfig rarely change after the initial setup of the project."
+}
+{
+  "prompt": "",
+  "completion": "What is EditorConfig and how can it help maintain coding standards?\n\nEditorConfig is a tool that enables common formatting and encoding options across a range of editors/IDEs by using a `.editorconfig` file in the root of a repository. It allows different members of a project team to use their preferred editor while maintaining common coding standards. Many editors support EditorConfig files, either natively or through a plugin."
+}
+{
+  "prompt": "Which editors natively support EditorConfig and which ones require a plugin",
+  "completion": "The article mentions that many editors support EditorConfig files, allowing different members of a project team to use their own favorite editor while maintaining common coding standards. Some editors, such as VS Code, require a plugin to support EditorConfig, while others support it natively. The article recommends placing a `.editorconfig` file in the root of the repo to configure common, particular formatting/encoding options."
+}
+{
+  "prompt": "",
+  "completion": "What is EditorConfig and how can it help maintain coding standards across a team?\n\nEditorConfig is a tool that allows for common code standards to be maintained across a team's collaboration in the code base across editors and IDEs with its settings applied as files are created and edited, while allowing for individual preferences."
+}
+{
+  "prompt": "What are some useful VS Code extensions for Python",
+  "completion": "Some useful VS Code extensions for Python include Python (adds core functionality for linting/navigating/debugging/etc.), Pylance (for improved auto-completion/code suggestions), and autoDocstring (for auto-generating template docstrings). Additionally, VS Code can be configured to use a specific Python interpreter for each workspace."
+}
+{
+  "prompt": "",
+  "completion": "What is EditorConfig and how does it relate to Flake8?\n\nEditorConfig is a tool that allows for the configuration of common formatting/encoding options for a range of editors/IDEs. While Flake8 checks all files, irrespective of their origin, EditorConfig applies standards to files as they are created or edited. Both tools need to be set up to ensure they are mutually compatible."
+}
+{
+  "prompt": "What does the suggested VS Code configuration for Python include",
+  "completion": "The suggested VS Code configuration for Python includes installing useful extensions such as Python, Pylance, and Jupyter, and setting up linting, formatting, and testing options in the settings.json file. It also allows for selecting a specific Python interpreter for each workspace and provides various helpful tips and tricks such as auto-import and Git integration."
+}
+{
+  "prompt": "",
+  "completion": "What is EditorConfig and how can it be used to maintain common coding standards among project collaborators?\n\nEditorConfig is a tool that can be used to configure common, particular formatting/encoding options for a range of editors/IDEs by using a `.editorconfig` file in the root of your repo. Many editors support EditorConfig files allowing different members of your project team to use their own favourite editor while maintaining common coding standards."
+}
+{
+  "prompt": "How can one select the Python interpreter in VS Code",
+  "completion": "To select the Python interpreter in VS Code, open a .py file, click on the details of the currently used environment on the status bar, and select an interpreter from the list that appears, or write the path to it. Alternatively, you can use the command palette by searching for \"Python: Select Interpreter.\""
+}
+{
+  "prompt": "",
+  "completion": "What is EditorConfig and how can it be used to maintain coding standards in a team?\n\nEditorConfig is a tool that enables common coding standards to be applied across a range of editors/IDEs by using a `.editorconfig` file placed in the root of a repo. This allows different members of a team to use their own favourite editor while maintaining common coding standards. Some editors support EditorConfig natively, while others require a plugin."
+}
+{
+  "prompt": "What happens when linters are activated in VS Code and how are problems highlighted",
+  "completion": "When linters are activated in VS Code, any problems encountered by the enabled tools will be highlighted in-line in the editor, and be listed in the \"Problems\" tab of the panel at the bottom. In the provided context, activating linters will highlight coding standard violations and other issues with Flake8, while EditorConfig applies standards to files as they are created/edited. Both tools need to be set up to ensure that they are mutually compatible."
+}
+{
+  "prompt": "",
+  "completion": "What is EditorConfig and how can it be used to maintain common coding standards among collaborators?\n\nEditorConfig is a tool that allows for the configuration of common, particular formatting/encoding options for a range of editors/IDEs by using a `.editorconfig` file in the root of a repo. This enables different members of a project team to use their own favourite editor while maintaining common coding standards."
+}
+{
+  "prompt": "How can one format code in VS Code and which formatter is recommended",
+  "completion": "To format code in VS Code, the editor supports various file formatters such as Black formatter, yapf, and autopep8, among others. Among these, the Black formatter is recommended, and it can be set up to run automatically when saving files or using keyboard shortcuts. Additionally, VS Code supports linting, debugging, and testing of Python code, and it provides useful extensions like Pylance, autoDocstring, and IntelliCode."
+}
+{
+  "prompt": "",
+  "completion": "What is EditorConfig, and how can it be used to maintain coding conventions? \n\nEditorConfig is a tool that allows individuals to configure editors to their preferences while ensuring coding conventions are maintained when collaborating on a codebase. A `.editorconfig` file can be placed in the root of a repository to apply common formatting/encoding options for different editors/IDEs. Some editors support EditorConfig files natively, but others require a plugin."
+}
+{
+  "prompt": "What testing and debugging capabilities does VS Code have for Python",
+  "completion": "VS Code has various testing and debugging capabilities for Python, including built-in linting for Flake8, Mypy, and Pylint, as well as support for running and debugging tests and formatting code using Pylance, Black formatter, and isort. Additionally, VS Code allows users to select a specific Python interpreter and offers helpful extensions like AutoDocstring and Python Type Hint."
+}
+{
+  "prompt": "",
+  "completion": "What is EditorConfig, and how can it be used to maintain coding standards in a project?\n\nEditorConfig is a tool that allows for the configuration of common formatting and encoding options for a variety of editors and IDEs. By creating a .editorconfig file in the root of a project, collaborators can use their individual editors while still maintaining common coding standards."
+}
+{
+  "prompt": "What are some additional tips and tricks for using VS Code for Python development?",
+  "completion": "Some additional tips and tricks for using VS Code for Python development include using the EditorConfig to maintain common coding standards between collaborators, installing useful extensions like Pylance and autoDocstring, selecting the Python interpreter for each workspace, and using shortcuts to run tests, format documents, and debug code."
+ }
+{
+  "prompt": "What is the purpose of the review process",
+  "completion": "The purpose of the review process is to ensure high quality and catch problems in contributions, particularly in regards to code quality. It should not be an adversarial process, and reviewers should use line comments and collaborate with contributors to resolve any issues before approving a pull request for merging."
+}
+{
+  "prompt": "How should a reviewer approach their role in the review process",
+  "completion": "A reviewer should approach their role in the review process as a collaborator and knowledge sharer, aiming to ensure code quality and catch problems in contributions. They should use the GitHub review system to check the diffs of all source files, leave line comments, and suggest changes where appropriate. If changes are requested, the iterative process should aim to resolve all conversations before merging."
+}
+{
+  "prompt": "What is the role of the CI process in assessing pull requests",
+  "completion": "The CI process is responsible for assessing pull requests by subjecting each commit to a series of tests, ensuring the quality of the codebase remains high. The process blocks merging until all required tests pass, and reviewers should always aim to have all tests passing and investigate any failing tests."
+}
+{
+  "prompt": "What should you do if a CI test fails",
+  "completion": "If a CI test fails, investigate why it failed and aim to have all tests passing. Clone the branch, build the handbook locally, and inspect the changes using your browser. Use the GitHub review system to check the diffs of all source files and communicate with the contributors to resolve any conversations before merging."
+}
+{
+  "prompt": "Why should you clone the branch and build the handbook locally when reviewing a pull request",
+  "completion": "You should clone the branch and build the handbook locally when reviewing a pull request because not all bugs will be caught by CI and some changes may not be obvious in the source files. Inspecting the changes using your browser ensures that you catch any issues that may have been missed by automated testing."
+}
+{
+  "prompt": "How should you use the GitHub review system when reviewing changes in a pull request",
+  "completion": "Use the GitHub review system to check diffs of all source files and make use of line comments to provide context, suggest changes, and share knowledge. When finished, submit your review as \"comment\", \"approve\", or \"request changes\". All conversations must be resolved before merging."
+}
+{
+  "prompt": "What are line comments and how should they be used in the review process",
+  "completion": "Line comments are comments made on specific lines or sections of code during the review process, allowing reviewers to provide context or suggest changes. They should be used when there are comments or questions about certain lines or sections and can also be used to suggest simple solutions. Line comments should be included in the GitHub review system."
+}
+{
+  "prompt": "What should you do when you are finished with a review",
+  "completion": "Submit your review and choose \"comment\", \"approve\" or \"request changes\" as appropriate using the GitHub review system. If you request changes, the pull request will enter an iterative process where the contributors make adjustments you repeat the review process. When all reviewers are satisfied, merge the pull request."
+}
+{
+  "prompt": "What happens if you request changes on a pull request",
+  "completion": "If changes are requested on a pull request, the contributors will enter an iterative process of making adjustments and the reviewer will repeat the review process. The contributors may accept, make their own or push back against changes and it is important to work together to resolve any conversations before merging."
+}
+{
+  "prompt": "How should you handle conversations with contributors when reviewing changes",
+  "completion": "When reviewing changes as a contributor, it is important to approach the review process with a collaborative mindset, using line comments for specific feedback and suggesting changes when appropriate. Any conversations with contributors must be resolved before merging."
+}
+{
+  "prompt": "When is it appropriate to merge a pull request",
+  "completion": "It is appropriate to merge a pull request when all reviewers are satisfied with the state of the pull request. Before merging, all conversations must be resolved, and the review status should be updated to \"approve.\""
+}
+{
+  "prompt": "What should be the status of your review when you are ready to merge a pull request?",
+  "completion": "Your review status should be \"approve\" when you are ready to merge a pull request. All conversations regarding the changes must be resolved before merging."
+ }
+{
+  "prompt": "What is the purpose of the Systems Set Up page",
+  "completion": "The Systems Set Up page provides instructions for new employees on setting up their computer, installing software such as Homebrew and joining communication channels like Slack and GitHub. The page also includes information on lower priority tasks such as setting up HR systems and creating a public profile on the Turing website. Additionally, it serves as a reference for regular events and common technical practices."
+}
+{
+  "prompt": "What should you do first once you receive a new computer from IT",
+  "completion": "The first thing to do once you receive a new computer from IT is to log in with the password provided and change your password to a strong, unique one. You should also configure fingerprint authentication and ensure that FileVault is on. Lastly, install Homebrew as your Mac package manager and set up communication channels such as Slack and GitHub."
+}
+{
+  "prompt": "What are the requirements for a strong password",
+  "completion": "A strong password should be unique to the machine/system, randomly generated with at least 64 bits of entropy, and at least 12 characters long if alphanumeric. It should also be generated by a password manager or a diceware-style passphrase. Additionally, fingerprint authentication should be configured, and FileVault should be turned on."
+}
+{
+  "prompt": "What package manager is recommended for Mac users",
+  "completion": "Homebrew is the recommended package manager for Mac users, according to the \"Systems Set Up\" documentation provided by the Alan Turing Institute. IT may install it by default on laptops, but if not, users can follow the instructions on the Homebrew website to install it under /opt/homebrew/bin/brew."
+}
+{
+  "prompt": "How can you join the Turing Slack",
+  "completion": "To join the Turing Slack, first install Slack using `zsh brew install --cask slack`. Then, self-subscribe to the Turing Slack using your @turing.ac.uk email address and join important channels like `#general` and `#hut23`."
+}
+{
+  "prompt": "What are some important channels to join in Slack",
+  "completion": "Important Slack channels to join include #general, #random, #hut23, and, if applicable, #line-managers for seniors. Other channels related to programs or projects can be joined as well, while communication through GitHub is also important, particularly for project coordination."
+}
+{
+  "prompt": "How can you get access to the Turing GitHub",
+  "completion": "To get access to the Turing GitHub, create a GitHub account (or use an existing one) and fill out the form on this Turing Complete page with your GitHub handle. Let the GitHub org controller know that you have done this and they can add you straight away."
+}
+{
+  "prompt": "What is Harvest used for",
+  "completion": "Harvest is used to loosely track time and record activities in the Alan Turing Institute. It is accessible through the following URL: https://thealanturinginstitute.harvestapp.com/time/week."
+}
+{
+  "prompt": "What is Cezanne HR used for",
+  "completion": "Cezanne HR is an HR system used by the organization for requesting annual leave, recording days off due to illness, and managing the objective setting and performance review process after the probation period. It can be accessed with Turing credentials through the \"Enterprise login\" option."
+}
+{
+  "prompt": "How can you get a free GitHub Pro account and professional IDEs",
+  "completion": "Turing employees can get a free GitHub Pro account and access to professional versions of IDEs by applying through education.github.com and verifying their employment with a screenshot of their Turing contract or Cezanne. The free educational licenses can be obtained for various JetBrains IDEs, such as PyCharm or IntelliJ."
+}
+{
+  "prompt": "What is Mathison",
+  "completion": "The context describes instructions for setting up various systems and tools recommended for employees at the Alan Turing Institute, including getting a computer, installing Homebrew, joining Slack and GitHub, and configuring Harvest and Forecast. The page is split into high priority tasks, low priority tasks, and reference material."
+}
+{
+  "prompt": "What is the budget for purchasing home office equipment and how can you claim it back?",
+  "completion": "The budget for purchasing home office equipment is up to \u00a3200, which can be claimed back by following the guidelines on Mathison. Contact IT Services to purchase peripherals such as monitors, mice, and keyboards."
+ }
+{
+  "prompt": "What is the purpose of the review process",
+  "completion": "The purpose of the review process is to ensure high quality and catch problems in contributions, particularly in regards to code quality. It should not be an adversarial process, and reviewers should use line comments and collaborate with contributors to resolve any issues before approving a pull request for merging."
+}
+{
+  "prompt": "How should a reviewer approach their role in the review process",
+  "completion": "A reviewer should approach their role in the review process as a collaborator and knowledge sharer, aiming to ensure code quality and catch problems in contributions. They should use the GitHub review system to check the diffs of all source files, leave line comments, and suggest changes where appropriate. If changes are requested, the iterative process should aim to resolve all conversations before merging."
+}
+{
+  "prompt": "What is the role of the CI process in assessing pull requests",
+  "completion": "The CI process is responsible for assessing pull requests by subjecting each commit to a series of tests, ensuring the quality of the codebase remains high. The process blocks merging until all required tests pass, and reviewers should always aim to have all tests passing and investigate any failing tests."
+}
+{
+  "prompt": "What should you do if a CI test fails",
+  "completion": "If a CI test fails, investigate why it failed and aim to have all tests passing. Clone the branch, build the handbook locally, and inspect the changes using your browser. Use the GitHub review system to check the diffs of all source files and communicate with the contributors to resolve any conversations before merging."
+}
+{
+  "prompt": "Why should you clone the branch and build the handbook locally when reviewing a pull request",
+  "completion": "You should clone the branch and build the handbook locally when reviewing a pull request because not all bugs will be caught by CI and some changes may not be obvious in the source files. Inspecting the changes using your browser ensures that you catch any issues that may have been missed by automated testing."
+}
+{
+  "prompt": "How should you use the GitHub review system when reviewing changes in a pull request",
+  "completion": "Use the GitHub review system to check diffs of all source files and make use of line comments to provide context, suggest changes, and share knowledge. When finished, submit your review as \"comment\", \"approve\", or \"request changes\". All conversations must be resolved before merging."
+}
+{
+  "prompt": "What are line comments and how should they be used in the review process",
+  "completion": "Line comments are comments made on specific lines or sections of code during the review process, allowing reviewers to provide context or suggest changes. They should be used when there are comments or questions about certain lines or sections and can also be used to suggest simple solutions. Line comments should be included in the GitHub review system."
+}
+{
+  "prompt": "What should you do when you are finished with a review",
+  "completion": "Submit your review and choose \"comment\", \"approve\" or \"request changes\" as appropriate using the GitHub review system. If you request changes, the pull request will enter an iterative process where the contributors make adjustments you repeat the review process. When all reviewers are satisfied, merge the pull request."
+}
+{
+  "prompt": "What happens if you request changes on a pull request",
+  "completion": "If changes are requested on a pull request, the contributors will enter an iterative process of making adjustments and the reviewer will repeat the review process. The contributors may accept, make their own or push back against changes and it is important to work together to resolve any conversations before merging."
+}
+{
+  "prompt": "How should you handle conversations with contributors when reviewing changes",
+  "completion": "When reviewing changes as a contributor, it is important to approach the review process with a collaborative mindset, using line comments for specific feedback and suggesting changes when appropriate. Any conversations with contributors must be resolved before merging."
+}
+{
+  "prompt": "When is it appropriate to merge a pull request",
+  "completion": "It is appropriate to merge a pull request when all reviewers are satisfied with the state of the pull request. Before merging, all conversations must be resolved, and the review status should be updated to \"approve.\""
+}
+{
+  "prompt": "What should be the status of your review when you are ready to merge a pull request?",
+  "completion": "Your review status should be \"approve\" when you are ready to merge a pull request. All conversations regarding the changes must be resolved before merging."
+ }
+{
+  "prompt": "What is the purpose of the Project Tracking page",
+  "completion": "The purpose of the Project Tracking page is to provide information on the tools used by the team for tracking projects and tasks. It includes details on the Hut23 GitHub repo, project repositories, and the use of Forecast and Wimbledon for tracking team allocations to projects."
+}
+{
+  "prompt": "What is the Hut23 GitHub Repo",
+  "completion": "The Hut23 GitHub repo is a central hub for most team matters and admin at the Alan Turing Institute. It includes a project tracker board with a voting system, issues for each project, and project-specific repositories with the tag \"hut23.\" The team also uses Forecast and Wimbledon planner to track allocations to projects."
+}
+{
+  "prompt": "How does the Project Tracker board work",
+  "completion": "The Project Tracker board is used to show all upcoming, current, and completed projects in one central hub. Members of the team can assign themselves to projects by using emojis to vote for the projects they are interested in and can find more information about each project in the Issues section. This tool, along with other tools such as Hut23 GitHub Repo and Forecast, helps to track projects and tasks within the team."
+}
+{
+  "prompt": "What are the different emojis used for voting on projects",
+  "completion": "Emojis such as :thumbsup:, :thumbsdown:, and :smile: are used for voting on projects on the Hut23 GitHub repo. The emojis represent whether a team member is interested in working on a project or not. The voting system is used for assigning REG team members to projects."
+}
+{
+  "prompt": "What is the purpose of using emojis to vote on projects",
+  "completion": "The purpose of using emojis to vote on projects is to allow REG team members to express their interest in taking part in upcoming, current, and completed projects on the Hut23 GitHub Repo. The emojis provide a simple and efficient way to gauge interest and allocate team members accordingly."
+}
+{
+  "prompt": "What are Issues on the Hut23 repo",
+  "completion": "Issues on the Hut23 repo are used to track projects and other tasks within the team, with a specific issue for each project following a common template. The repo also uses emojis to allow REG team members to vote for projects they are interested in working on."
+}
+{
+  "prompt": "What is the general template for Issues on the Hut23 repo",
+  "completion": "The general template for Issues on the Hut23 repo includes a page title, weight, and options to hide or exclude the page from the navigation or search. Each project has an issue following a common template, including a general description and current status, and there are also issues for service areas and other activities/organisational issues for the team."
+}
+{
+  "prompt": "How can you search for previous projects on the Hut23 repo",
+  "completion": "To search for previous projects on the Hut23 repo, one can look for repositories tagged with \"hut23\" under the Turing organization on GitHub. Additionally, projects should have a tag in the format \"hut23-123,\" where 123 is the issue number for that project in the Hut23 repo."
+}
+{
+  "prompt": "What is the hut23 tag",
+  "completion": "The hut23 tag is used to identify repos in the Turing organization that REG has worked on, as well as issues for service areas and other activities/organizational issues for the team. The tag should have the format \"hut23-123,\" where 123 is the issue number for that project in the Hut23 repo."
+}
+{
+  "prompt": "What is the purpose of using Forecast",
+  "completion": "The purpose of using Forecast is to track everyone's allocations to projects and to see what they were allocated to in the past and will be allocated to in the future. It is used in conjunction with the Hut23 GitHub repo to manage projects and track progress. The Wimbledon planner is an online version of a physical poster used to display Forecast information."
+}
+{
+  "prompt": "What can you see on Forecast",
+  "completion": "Forecast is used to track allocations to projects and service areas, and allows you to see what each team member is currently involved in, as well as past and future allocations. The Wimbledon planner is an online tool that displays the same information as Forecast, but in a poster format and with the ability to click on project names for more details."
+}
+{
+  "prompt": "What is the Wimbledon planner",
+  "completion": "The Wimbledon planner is an online tool used to display project allocations tracked in Forecast, with the ability to click on project names to go directly to the relevant issue in the Hut23 GitHub repository. It replaces a physical poster previously used in the office."
+}
+{
+  "prompt": "What is the purpose of the Wimbledon planner",
+  "completion": "The purpose of the Wimbledon planner is to display team members' allocations to projects and service areas using Forecast in an online platform. It allows for a longer period of time to be seen and project names can be clicked to go directly to their descriptions on the Hut23 repo."
+}
+{
+  "prompt": "How does the Wimbledon planner differ from Forecast",
+  "completion": "The page describes tools used for tracking projects and tasks within the team. They use Forecast to track allocations and an online version called \"Wimbledon planner\" to display the information. The page does not provide further details on how these tools differ."
+}
+{
+  "prompt": "What benefits does the Wimbledon planner offer over Forecast",
+  "completion": "The Wimbledon planner offers easier visibility of project allocations for a longer period of time and allows for direct access to the Hut23 repo's project descriptions. This is an improvement over Forecast's tracking system."
+}
+{
+  "prompt": "How is information on the Forecast allocated?",
+  "completion": "Information on the Forecast is used to track everyone's allocations to projects and service areas in the team and can be accessed through the Forecast website or the Wimbledon planner, an online version of a poster that displays the same information."
+ }
+{
+  "prompt": "What is the purpose of the buddy system",
+  "completion": "The purpose of the buddy system is to provide new employees with friendly faces who can offer advice, guidance, and encouragement in any aspect of working within the company. Buddies also serve as a safe space where new starters can get help with any technical questions and feel comfortable admitting to concerns. The buddy system is managed by the person in charge of onboarding and is guided by specific guidelines and tips."
+}
+{
+  "prompt": "How many buddies are new employees assigned",
+  "completion": "New employees are assigned two buddies from the buddy pool, and ideally a third buddy from a different team. This is to provide informal support, advice, and guidance on any aspect of working within the organization."
+}
+{
+  "prompt": "Where are the buddies chosen from",
+  "completion": "The buddies are chosen from the buddy pool, which is made up of volunteers from the research engineering group. Each new starter is assigned two buddies from this pool, and ideally, one additional buddy from another team to help them get a feel for the wider Turing ecosystem."
+}
+{
+  "prompt": "What is the responsibility of the buddies",
+  "completion": "The responsibility of the buddies is to provide informal guidance, advice, and encouragement to new employees, including help with technical questions that they may feel uncomfortable asking others. Buddies should also help socialize new employees to the group's culture and processes, maintain confidentiality, and be available for check-in chats throughout the new employee's first few weeks."
+}
+{
+  "prompt": "What should the buddies do on the new employee's first day",
+  "completion": "On the new employee's first day, the buddies should have a coffee with them, introduce them to the team, make them feel welcome and comfortable, ensure they are familiar with the new starter page and emphasize that they can get in touch any time for questions and concerns regardless of triviality. Additionally, they should help socialize the new employee to the group's culture and processes."
+}
+{
+  "prompt": "Who manages the buddy system",
+  "completion": "The buddy system is managed by the person in charge of onboarding within the Research Engineering Group at the Alan Turing Institute. Buddies are assigned to new employees to provide informal guidance, advice, and technical help. Guidelines and tips for buddies are provided to help them support new starters effectively."
+}
+{
+  "prompt": "What are the guidelines for buddies",
+  "completion": "The guidelines for buddies include having a coffee with the new employee on their first day, being informal and welcoming, checking for sticking points, emphasizing availability for technical questions and concerns, and having check-in chats. Buddies should be patient, positive, identify communication styles, adapt, avoid being judgmental, and maintain a good attitude. To become a buddy, sign up on the buddy pool."
+}
+{
+  "prompt": "What are some tips for buddies",
+  "completion": "Some tips for buddies include being patient, adapting to the new employee's communication style, and maintaining a teaching spirit. Buddies should also be a safe space for new-starters to ask any questions, regardless of their triviality. Additionally, volunteering to buddy with people outside of REG can help new-starters meet people and get a feel for the wider Turing ecosystem."
+}
+{
+  "prompt": "Why is being a buddy a rewarding process",
+  "completion": "Being a buddy is a rewarding process because it allows you to provide guidance and support to new employees, helping them feel welcomed and comfortable in their new environment. Additionally, being a buddy offers the opportunity to develop relationships and make a positive impact on someone's experience at work."
+}
+{
+  "prompt": "How can one sign up to be a buddy ",
+  "completion": "To sign up as a buddy, add your name to the buddy pool found at the following link: https://github.com/alan-turing-institute/research-engineering-group/wiki/Buddy-Sign-up-and-Matches. Being a buddy involves providing informal advice, guidance, and encouragement to new employees to help them feel comfortable and succeed in their new role."
+}
+{
+  "prompt": "What kind of questions can the new employee ask their buddy",
+  "completion": "What is the role of a buddy in the onboarding process for new employees at REG and ARC, and what are some guidelines for being an effective buddy?"
+}
+{
+  "prompt": "How often should the buddies have a check-in chat with the new employee",
+  "completion": "The buddies should have a check-in chat with the new employee at least once in the first couple of weeks, and again a few weeks after."
+}
+{
+  "prompt": "What is the significance of the role of a buddy in a remote or hybrid setting",
+  "completion": "In a remote or hybrid setting, the role of a buddy is significant as they provide informal support, guidance, and encouragement to new employees. They also offer a safe space for employees to ask questions and get help with technical issues they may not feel comfortable admitting to the broader group. Buddies can also help new employees socialize with the wider team and get a feel for the organization's culture and processes."
+}
+{
+  "prompt": "What is the role of the person in charge of onboarding ",
+  "completion": "The person in charge of onboarding is responsible for managing the buddy system, which assigns new employees with experienced colleagues who offer advice, guidance, and technical help. The role of the onboarding manager is to ensure that new starters are aware of their buddies' role and that the buddy guidelines are followed."
+}
+{
+  "prompt": "In what ways do buddies help to establish the new employee within the group's culture and processes?",
+  "completion": "Buddies help to establish the new employee within the group's culture and processes by providing informal advice, guidance, and encouragement, serving as a safe space for technical questions, and helping to socialize the new employee to the group's culture and processes. Additionally, buddies are there to offer support and help alleviate any imposter syndrome anxiety."
+ }
+{
+  "prompt": "What are Semantic Line Breaks",
+  "completion": "Semantic Line Breaks are a writing practice that improves the readability of source files and makes diffs clearer. It involves placing line breaks after sentences and independent clauses, and sometimes after dependent clauses. This is encouraged in the handbook, which should be written in Markdown whenever possible."
+}
+{
+  "prompt": "Why should we use Semantic Line Breaks",
+  "completion": "Semantic Line Breaks should be used to improve the readability of source files and make diffs clearer, as it clarifies grammatical structure and satisfies line length constraints. This is encouraged when writing for the handbook, along with using Markdown rather than HTML whenever possible."
+}
+{
+  "prompt": "What are the most important rules of Semantic Line Breaks",
+  "completion": "The most important rules of Semantic Line Breaks include using a line break after a sentence and after an independent clause. It is encouraged to use Semantic Line Breaks in the handbook to improve readability and clarity. Markdown should also be used whenever possible, and data should be stored in data files to enforce consistent styling."
+}
+{
+  "prompt": "When writing for the handbook, what is encouraged",
+  "completion": "When writing for the handbook, it is encouraged to use Semantic Line Breaks and Markdown whenever possible. Semantic Line Breaks improve source file readability and Markdown styling is enforced by markdownlint. Data should also be stored in data files and processed using shortcodes."
+}
+{
+  "prompt": "Why is it beneficial to write in Markdown",
+  "completion": "Using Markdown is beneficial because it allows for easier and more standardized formatting of text, and can be converted into HTML effortlessly. Additionally, it is encouraged to use Semantic Line Breaks as it enhances readability of source files and makes diffs clearer."
+}
+{
+  "prompt": "When should HTML be used instead of Markdown",
+  "completion": "HTML should be used instead of Markdown when Markdown is not sufficient to achieve the desired formatting or functionality for the web page. However, whenever possible, the handbook's prose should be written in Markdown rather than HTML."
+}
+{
+  "prompt": "What is the advantage of storing data in data files and processing using shortcodes",
+  "completion": "Storing data in data files and processing it using shortcodes allows for easier organization and manipulation of data within a project, reducing the need for repetitive code and potential errors. Additionally, Markdown styling can be enforced to maintain consistency and readability within the project."
+}
+{
+  "prompt": "What is markdownlint and what is its purpose",
+  "completion": "Markdownlint is a tool used to enforce Markdown styling rules in source files and improve their readability. Its purpose is to ensure that Markdown files follow established rules and best practices, making it easier to read and edit them, while also preventing common errors."
+}
+{
+  "prompt": "How is Markdown styling enforced",
+  "completion": "Markdown styling is enforced by markdownlint using a configuration file. The rules for formatting are explained in the markdownlint documentation. The handbook encourages the use of Semantic Line Breaks and Markdown whenever possible for improved readability and maintainability."
+}
+{
+  "prompt": "Can you explain the rules of markdownlint?",
+  "completion": "Markdownlint enforces Markdown styling using a set of rules outlined in their documentation found on their GitHub page, with an explanation found on the RULES.md page. Markdown should be used whenever possible and data should be stored in data files."
+ }
+{
+  "prompt": "What dependencies are needed to contribute to the handbook",
+  "completion": "To contribute to the handbook, you will need Git, Hugo (extended version with Sass/SCSS support), and your favorite text editor. It might also be helpful to install markdownlint. Then, clone the repository with appropriate authentication and use Hugo's server command to serve the handbook locally while working on it."
+}
+{
+  "prompt": "What is the purpose of installing markdownlint",
+  "completion": "The purpose of installing markdownlint is to be able to lint your branch before making a pull request when contributing to the handbook. The linting style used is included in the root of the repository as `.mdl_style.rb`."
+}
+{
+  "prompt": "Where can you find the linting style used for the handbook",
+  "completion": "The linting style used for the handbook can be found in the root of the repository, \".mdl_style.rb\". Markdownlint can be installed to lint the branch before making a pull request."
+}
+{
+  "prompt": "Why is the \"--recurse-submodules\" flag important when cloning the handbook repository",
+  "completion": "The \"--recurse-submodules\" flag is important when cloning the handbook repository because the handbook's theme is included as a Git submodule, and this flag ensures that the submodule is also downloaded. This is necessary to properly build and serve the handbook locally."
+}
+{
+  "prompt": "What is included as a Git submodule in the handbook's theme",
+  "completion": "The handbook's theme is included as a Git submodule when cloning the repository for the RegTech Data Handbook."
+}
+{
+  "prompt": "What command can you use to serve the handbook locally",
+  "completion": "To serve the handbook locally, use the command \"hugo server --minify\" after cloning the repository and installing the necessary dependencies (Git and Hugo with Sass/SCSS support). The URL of the locally served site will be displayed in the output of this command, which can be navigated to in the browser to preview the handbook."
+}
+{
+  "prompt": "What is the purpose of Hugo's \"server\" command",
+  "completion": "The purpose of Hugo's \"server\" command is to serve the handbook locally, allowing the user to preview changes made to the handbook in their browser. This command is used after cloning the handbook repository and installing the necessary dependencies. The \"server\" command is run using the text command \"hugo server --minify\"."
+}
+{
+  "prompt": "How can you preview the handbook locally after running the Hugo server",
+  "completion": "To preview the handbook locally after running the Hugo server, use the `hugo server --minify` command and navigate to the URL provided in the output (e.g., http://localhost:1313/REG-handbook/) in your browser. The Hugo server will monitor the files in the repository and automatically rebuild the site whenever changes are made, allowing you to immediately view your changes."
+}
+{
+  "prompt": "What does the Hugo server do when you make changes to the files in the repository",
+  "completion": "The Hugo server will monitor the files in the repository and automatically rebuild the site whenever changes are made. This allows for immediate viewing of changes in the locally served site."
+}
+{
+  "prompt": "What is the URL for the locally served site when using the Hugo server?",
+  "completion": "The URL for the locally served site when using the Hugo server is http://localhost:1313/REG-handbook/. It can be accessed by navigating to this address in a browser. The Hugo server monitors files in the repository and automatically rebuilds the site whenever changes are made."
+ }
+{
+  "prompt": "What are Semantic Line Breaks",
+  "completion": "Semantic Line Breaks are a writing practice that improves the readability of source files and makes diffs clearer. It involves placing line breaks after sentences and independent clauses, and sometimes after dependent clauses. This is encouraged in the handbook, which should be written in Markdown whenever possible."
+}
+{
+  "prompt": "Why should we use Semantic Line Breaks",
+  "completion": "Semantic Line Breaks should be used to improve the readability of source files and make diffs clearer, as it clarifies grammatical structure and satisfies line length constraints. This is encouraged when writing for the handbook, along with using Markdown rather than HTML whenever possible."
+}
+{
+  "prompt": "What are the most important rules of Semantic Line Breaks",
+  "completion": "The most important rules of Semantic Line Breaks include using a line break after a sentence and after an independent clause. It is encouraged to use Semantic Line Breaks in the handbook to improve readability and clarity. Markdown should also be used whenever possible, and data should be stored in data files to enforce consistent styling."
+}
+{
+  "prompt": "When writing for the handbook, what is encouraged",
+  "completion": "When writing for the handbook, it is encouraged to use Semantic Line Breaks and Markdown whenever possible. Semantic Line Breaks improve source file readability and Markdown styling is enforced by markdownlint. Data should also be stored in data files and processed using shortcodes."
+}
+{
+  "prompt": "Why is it beneficial to write in Markdown",
+  "completion": "Using Markdown is beneficial because it allows for easier and more standardized formatting of text, and can be converted into HTML effortlessly. Additionally, it is encouraged to use Semantic Line Breaks as it enhances readability of source files and makes diffs clearer."
+}
+{
+  "prompt": "When should HTML be used instead of Markdown",
+  "completion": "HTML should be used instead of Markdown when Markdown is not sufficient to achieve the desired formatting or functionality for the web page. However, whenever possible, the handbook's prose should be written in Markdown rather than HTML."
+}
+{
+  "prompt": "What is the advantage of storing data in data files and processing using shortcodes",
+  "completion": "Storing data in data files and processing it using shortcodes allows for easier organization and manipulation of data within a project, reducing the need for repetitive code and potential errors. Additionally, Markdown styling can be enforced to maintain consistency and readability within the project."
+}
+{
+  "prompt": "What is markdownlint and what is its purpose",
+  "completion": "Markdownlint is a tool used to enforce Markdown styling rules in source files and improve their readability. Its purpose is to ensure that Markdown files follow established rules and best practices, making it easier to read and edit them, while also preventing common errors."
+}
+{
+  "prompt": "How is Markdown styling enforced",
+  "completion": "Markdown styling is enforced by markdownlint using a configuration file. The rules for formatting are explained in the markdownlint documentation. The handbook encourages the use of Semantic Line Breaks and Markdown whenever possible for improved readability and maintainability."
+}
+{
+  "prompt": "Can you explain the rules of markdownlint?",
+  "completion": "Markdownlint enforces Markdown styling using a set of rules outlined in their documentation found on their GitHub page, with an explanation found on the RULES.md page. Markdown should be used whenever possible and data should be stored in data files."
+ }
+{
+  "prompt": "What is the purpose of the Project Tracking page",
+  "completion": "The purpose of the Project Tracking page is to provide information on the tools used by the team for tracking projects and tasks. It includes details on the Hut23 GitHub repo, project repositories, and the use of Forecast and Wimbledon for tracking team allocations to projects."
+}
+{
+  "prompt": "What is the Hut23 GitHub Repo",
+  "completion": "The Hut23 GitHub repo is a central hub for most team matters and admin at the Alan Turing Institute. It includes a project tracker board with a voting system, issues for each project, and project-specific repositories with the tag \"hut23.\" The team also uses Forecast and Wimbledon planner to track allocations to projects."
+}
+{
+  "prompt": "How does the Project Tracker board work",
+  "completion": "The Project Tracker board is used to show all upcoming, current, and completed projects in one central hub. Members of the team can assign themselves to projects by using emojis to vote for the projects they are interested in and can find more information about each project in the Issues section. This tool, along with other tools such as Hut23 GitHub Repo and Forecast, helps to track projects and tasks within the team."
+}
+{
+  "prompt": "What are the different emojis used for voting on projects",
+  "completion": "Emojis such as :thumbsup:, :thumbsdown:, and :smile: are used for voting on projects on the Hut23 GitHub repo. The emojis represent whether a team member is interested in working on a project or not. The voting system is used for assigning REG team members to projects."
+}
+{
+  "prompt": "What is the purpose of using emojis to vote on projects",
+  "completion": "The purpose of using emojis to vote on projects is to allow REG team members to express their interest in taking part in upcoming, current, and completed projects on the Hut23 GitHub Repo. The emojis provide a simple and efficient way to gauge interest and allocate team members accordingly."
+}
+{
+  "prompt": "What are Issues on the Hut23 repo",
+  "completion": "Issues on the Hut23 repo are used to track projects and other tasks within the team, with a specific issue for each project following a common template. The repo also uses emojis to allow REG team members to vote for projects they are interested in working on."
+}
+{
+  "prompt": "What is the general template for Issues on the Hut23 repo",
+  "completion": "The general template for Issues on the Hut23 repo includes a page title, weight, and options to hide or exclude the page from the navigation or search. Each project has an issue following a common template, including a general description and current status, and there are also issues for service areas and other activities/organisational issues for the team."
+}
+{
+  "prompt": "How can you search for previous projects on the Hut23 repo",
+  "completion": "To search for previous projects on the Hut23 repo, one can look for repositories tagged with \"hut23\" under the Turing organization on GitHub. Additionally, projects should have a tag in the format \"hut23-123,\" where 123 is the issue number for that project in the Hut23 repo."
+}
+{
+  "prompt": "What is the hut23 tag",
+  "completion": "The hut23 tag is used to identify repos in the Turing organization that REG has worked on, as well as issues for service areas and other activities/organizational issues for the team. The tag should have the format \"hut23-123,\" where 123 is the issue number for that project in the Hut23 repo."
+}
+{
+  "prompt": "What is the purpose of using Forecast",
+  "completion": "The purpose of using Forecast is to track everyone's allocations to projects and to see what they were allocated to in the past and will be allocated to in the future. It is used in conjunction with the Hut23 GitHub repo to manage projects and track progress. The Wimbledon planner is an online version of a physical poster used to display Forecast information."
+}
+{
+  "prompt": "What can you see on Forecast",
+  "completion": "Forecast is used to track allocations to projects and service areas, and allows you to see what each team member is currently involved in, as well as past and future allocations. The Wimbledon planner is an online tool that displays the same information as Forecast, but in a poster format and with the ability to click on project names for more details."
+}
+{
+  "prompt": "What is the Wimbledon planner",
+  "completion": "The Wimbledon planner is an online tool used to display project allocations tracked in Forecast, with the ability to click on project names to go directly to the relevant issue in the Hut23 GitHub repository. It replaces a physical poster previously used in the office."
+}
+{
+  "prompt": "What is the purpose of the Wimbledon planner",
+  "completion": "The purpose of the Wimbledon planner is to display team members' allocations to projects and service areas using Forecast in an online platform. It allows for a longer period of time to be seen and project names can be clicked to go directly to their descriptions on the Hut23 repo."
+}
+{
+  "prompt": "How does the Wimbledon planner differ from Forecast",
+  "completion": "The page describes tools used for tracking projects and tasks within the team. They use Forecast to track allocations and an online version called \"Wimbledon planner\" to display the information. The page does not provide further details on how these tools differ."
+}
+{
+  "prompt": "What benefits does the Wimbledon planner offer over Forecast",
+  "completion": "The Wimbledon planner offers easier visibility of project allocations for a longer period of time and allows for direct access to the Hut23 repo's project descriptions. This is an improvement over Forecast's tracking system."
+}
+{
+  "prompt": "How is information on the Forecast allocated?",
+  "completion": "Information on the Forecast is used to track everyone's allocations to projects and service areas in the team and can be accessed through the Forecast website or the Wimbledon planner, an online version of a poster that displays the same information."
+ }
+{
+  "prompt": "What is the purpose of the buddy system",
+  "completion": "The purpose of the buddy system is to provide new employees with friendly faces who can offer advice, guidance, and encouragement in any aspect of working within the company. Buddies also serve as a safe space where new starters can get help with any technical questions and feel comfortable admitting to concerns. The buddy system is managed by the person in charge of onboarding and is guided by specific guidelines and tips."
+}
+{
+  "prompt": "How many buddies are new employees assigned",
+  "completion": "New employees are assigned two buddies from the buddy pool, and ideally a third buddy from a different team. This is to provide informal support, advice, and guidance on any aspect of working within the organization."
+}
+{
+  "prompt": "Where are the buddies chosen from",
+  "completion": "The buddies are chosen from the buddy pool, which is made up of volunteers from the research engineering group. Each new starter is assigned two buddies from this pool, and ideally, one additional buddy from another team to help them get a feel for the wider Turing ecosystem."
+}
+{
+  "prompt": "What is the responsibility of the buddies",
+  "completion": "The responsibility of the buddies is to provide informal guidance, advice, and encouragement to new employees, including help with technical questions that they may feel uncomfortable asking others. Buddies should also help socialize new employees to the group's culture and processes, maintain confidentiality, and be available for check-in chats throughout the new employee's first few weeks."
+}
+{
+  "prompt": "What should the buddies do on the new employee's first day",
+  "completion": "On the new employee's first day, the buddies should have a coffee with them, introduce them to the team, make them feel welcome and comfortable, ensure they are familiar with the new starter page and emphasize that they can get in touch any time for questions and concerns regardless of triviality. Additionally, they should help socialize the new employee to the group's culture and processes."
+}
+{
+  "prompt": "Who manages the buddy system",
+  "completion": "The buddy system is managed by the person in charge of onboarding within the Research Engineering Group at the Alan Turing Institute. Buddies are assigned to new employees to provide informal guidance, advice, and technical help. Guidelines and tips for buddies are provided to help them support new starters effectively."
+}
+{
+  "prompt": "What are the guidelines for buddies",
+  "completion": "The guidelines for buddies include having a coffee with the new employee on their first day, being informal and welcoming, checking for sticking points, emphasizing availability for technical questions and concerns, and having check-in chats. Buddies should be patient, positive, identify communication styles, adapt, avoid being judgmental, and maintain a good attitude. To become a buddy, sign up on the buddy pool."
+}
+{
+  "prompt": "What are some tips for buddies",
+  "completion": "Some tips for buddies include being patient, adapting to the new employee's communication style, and maintaining a teaching spirit. Buddies should also be a safe space for new-starters to ask any questions, regardless of their triviality. Additionally, volunteering to buddy with people outside of REG can help new-starters meet people and get a feel for the wider Turing ecosystem."
+}
+{
+  "prompt": "Why is being a buddy a rewarding process",
+  "completion": "Being a buddy is a rewarding process because it allows you to provide guidance and support to new employees, helping them feel welcomed and comfortable in their new environment. Additionally, being a buddy offers the opportunity to develop relationships and make a positive impact on someone's experience at work."
+}
+{
+  "prompt": "How can one sign up to be a buddy ",
+  "completion": "To sign up as a buddy, add your name to the buddy pool found at the following link: https://github.com/alan-turing-institute/research-engineering-group/wiki/Buddy-Sign-up-and-Matches. Being a buddy involves providing informal advice, guidance, and encouragement to new employees to help them feel comfortable and succeed in their new role."
+}
+{
+  "prompt": "What kind of questions can the new employee ask their buddy",
+  "completion": "What is the role of a buddy in the onboarding process for new employees at REG and ARC, and what are some guidelines for being an effective buddy?"
+}
+{
+  "prompt": "How often should the buddies have a check-in chat with the new employee",
+  "completion": "The buddies should have a check-in chat with the new employee at least once in the first couple of weeks, and again a few weeks after."
+}
+{
+  "prompt": "What is the significance of the role of a buddy in a remote or hybrid setting",
+  "completion": "In a remote or hybrid setting, the role of a buddy is significant as they provide informal support, guidance, and encouragement to new employees. They also offer a safe space for employees to ask questions and get help with technical issues they may not feel comfortable admitting to the broader group. Buddies can also help new employees socialize with the wider team and get a feel for the organization's culture and processes."
+}
+{
+  "prompt": "What is the role of the person in charge of onboarding ",
+  "completion": "The person in charge of onboarding is responsible for managing the buddy system, which assigns new employees with experienced colleagues who offer advice, guidance, and technical help. The role of the onboarding manager is to ensure that new starters are aware of their buddies' role and that the buddy guidelines are followed."
+}
+{
+  "prompt": "In what ways do buddies help to establish the new employee within the group's culture and processes?",
+  "completion": "Buddies help to establish the new employee within the group's culture and processes by providing informal advice, guidance, and encouragement, serving as a safe space for technical questions, and helping to socialize the new employee to the group's culture and processes. Additionally, buddies are there to offer support and help alleviate any imposter syndrome anxiety."
+ }
+{
+  "prompt": "What is the purpose of the Systems Set Up page",
+  "completion": "The Systems Set Up page provides instructions for new employees on setting up their computer, installing software such as Homebrew and joining communication channels like Slack and GitHub. The page also includes information on lower priority tasks such as setting up HR systems and creating a public profile on the Turing website. Additionally, it serves as a reference for regular events and common technical practices."
+}
+{
+  "prompt": "What should you do first once you receive a new computer from IT",
+  "completion": "The first thing to do once you receive a new computer from IT is to log in with the password provided and change your password to a strong, unique one. You should also configure fingerprint authentication and ensure that FileVault is on. Lastly, install Homebrew as your Mac package manager and set up communication channels such as Slack and GitHub."
+}
+{
+  "prompt": "What are the requirements for a strong password",
+  "completion": "A strong password should be unique to the machine/system, randomly generated with at least 64 bits of entropy, and at least 12 characters long if alphanumeric. It should also be generated by a password manager or a diceware-style passphrase. Additionally, fingerprint authentication should be configured, and FileVault should be turned on."
+}
+{
+  "prompt": "What package manager is recommended for Mac users",
+  "completion": "Homebrew is the recommended package manager for Mac users, according to the \"Systems Set Up\" documentation provided by the Alan Turing Institute. IT may install it by default on laptops, but if not, users can follow the instructions on the Homebrew website to install it under /opt/homebrew/bin/brew."
+}
+{
+  "prompt": "How can you join the Turing Slack",
+  "completion": "To join the Turing Slack, first install Slack using `zsh brew install --cask slack`. Then, self-subscribe to the Turing Slack using your @turing.ac.uk email address and join important channels like `#general` and `#hut23`."
+}
+{
+  "prompt": "What are some important channels to join in Slack",
+  "completion": "Important Slack channels to join include #general, #random, #hut23, and, if applicable, #line-managers for seniors. Other channels related to programs or projects can be joined as well, while communication through GitHub is also important, particularly for project coordination."
+}
+{
+  "prompt": "How can you get access to the Turing GitHub",
+  "completion": "To get access to the Turing GitHub, create a GitHub account (or use an existing one) and fill out the form on this Turing Complete page with your GitHub handle. Let the GitHub org controller know that you have done this and they can add you straight away."
+}
+{
+  "prompt": "What is Harvest used for",
+  "completion": "Harvest is used to loosely track time and record activities in the Alan Turing Institute. It is accessible through the following URL: https://thealanturinginstitute.harvestapp.com/time/week."
+}
+{
+  "prompt": "What is Cezanne HR used for",
+  "completion": "Cezanne HR is an HR system used by the organization for requesting annual leave, recording days off due to illness, and managing the objective setting and performance review process after the probation period. It can be accessed with Turing credentials through the \"Enterprise login\" option."
+}
+{
+  "prompt": "How can you get a free GitHub Pro account and professional IDEs",
+  "completion": "Turing employees can get a free GitHub Pro account and access to professional versions of IDEs by applying through education.github.com and verifying their employment with a screenshot of their Turing contract or Cezanne. The free educational licenses can be obtained for various JetBrains IDEs, such as PyCharm or IntelliJ."
+}
+{
+  "prompt": "What is Mathison",
+  "completion": "The context describes instructions for setting up various systems and tools recommended for employees at the Alan Turing Institute, including getting a computer, installing Homebrew, joining Slack and GitHub, and configuring Harvest and Forecast. The page is split into high priority tasks, low priority tasks, and reference material."
+}
+{
+  "prompt": "What is the budget for purchasing home office equipment and how can you claim it back?",
+  "completion": "The budget for purchasing home office equipment is up to \u00a3200, which can be claimed back by following the guidelines on Mathison. Contact IT Services to purchase peripherals such as monitors, mice, and keyboards."
+ }
+{
+  "prompt": "What is EditorConfig and how does it allow for common coding standards",
+  "completion": "EditorConfig is a tool that allows for common coding standards to be set for a team in a code base, while allowing for individual differences in editor configurations. It works by placing a .editorconfig file in the root directory of the repo and can be used with many editors/IDEs, either natively or with a plugin. It overlaps with Flake8, but applies standards to files as they are created/edited instead of checking all files on demand."
+}
+{
+  "prompt": "",
+  "completion": "What is EditorConfig and how can it help maintain common coding standards between collaborators in a code base?\n\nEditorConfig is a tool that allows for formatting/encoding options to be configured for a range of editors/IDEs by using a `.editorconfig` placed in the root of the repo. It enables different members of a project team to use their own favorite editor while maintaining common coding standards."
+}
+{
+  "prompt": "How do EditorConfig and Flake8 differ in their functionality",
+  "completion": "EditorConfig applies standards to files as they are created/edited, while Flake8 checks all files (irrespective of origin) on demand. Both tools need to be set up and mutually compatible, but the configurations for both Flake8 and EditorConfig rarely change after the initial setup of the project."
+}
+{
+  "prompt": "",
+  "completion": "What is EditorConfig and how can it help maintain coding standards?\n\nEditorConfig is a tool that enables common formatting and encoding options across a range of editors/IDEs by using a `.editorconfig` file in the root of a repository. It allows different members of a project team to use their preferred editor while maintaining common coding standards. Many editors support EditorConfig files, either natively or through a plugin."
+}
+{
+  "prompt": "Which editors natively support EditorConfig and which ones require a plugin",
+  "completion": "The article mentions that many editors support EditorConfig files, allowing different members of a project team to use their own favorite editor while maintaining common coding standards. Some editors, such as VS Code, require a plugin to support EditorConfig, while others support it natively. The article recommends placing a `.editorconfig` file in the root of the repo to configure common, particular formatting/encoding options."
+}
+{
+  "prompt": "",
+  "completion": "What is EditorConfig and how can it help maintain coding standards across a team?\n\nEditorConfig is a tool that allows for common code standards to be maintained across a team's collaboration in the code base across editors and IDEs with its settings applied as files are created and edited, while allowing for individual preferences."
+}
+{
+  "prompt": "What are some useful VS Code extensions for Python",
+  "completion": "Some useful VS Code extensions for Python include Python (adds core functionality for linting/navigating/debugging/etc.), Pylance (for improved auto-completion/code suggestions), and autoDocstring (for auto-generating template docstrings). Additionally, VS Code can be configured to use a specific Python interpreter for each workspace."
+}
+{
+  "prompt": "",
+  "completion": "What is EditorConfig and how does it relate to Flake8?\n\nEditorConfig is a tool that allows for the configuration of common formatting/encoding options for a range of editors/IDEs. While Flake8 checks all files, irrespective of their origin, EditorConfig applies standards to files as they are created or edited. Both tools need to be set up to ensure they are mutually compatible."
+}
+{
+  "prompt": "What does the suggested VS Code configuration for Python include",
+  "completion": "The suggested VS Code configuration for Python includes installing useful extensions such as Python, Pylance, and Jupyter, and setting up linting, formatting, and testing options in the settings.json file. It also allows for selecting a specific Python interpreter for each workspace and provides various helpful tips and tricks such as auto-import and Git integration."
+}
+{
+  "prompt": "",
+  "completion": "What is EditorConfig and how can it be used to maintain common coding standards among project collaborators?\n\nEditorConfig is a tool that can be used to configure common, particular formatting/encoding options for a range of editors/IDEs by using a `.editorconfig` file in the root of your repo. Many editors support EditorConfig files allowing different members of your project team to use their own favourite editor while maintaining common coding standards."
+}
+{
+  "prompt": "How can one select the Python interpreter in VS Code",
+  "completion": "To select the Python interpreter in VS Code, open a .py file, click on the details of the currently used environment on the status bar, and select an interpreter from the list that appears, or write the path to it. Alternatively, you can use the command palette by searching for \"Python: Select Interpreter.\""
+}
+{
+  "prompt": "",
+  "completion": "What is EditorConfig and how can it be used to maintain coding standards in a team?\n\nEditorConfig is a tool that enables common coding standards to be applied across a range of editors/IDEs by using a `.editorconfig` file placed in the root of a repo. This allows different members of a team to use their own favourite editor while maintaining common coding standards. Some editors support EditorConfig natively, while others require a plugin."
+}
+{
+  "prompt": "What happens when linters are activated in VS Code and how are problems highlighted",
+  "completion": "When linters are activated in VS Code, any problems encountered by the enabled tools will be highlighted in-line in the editor, and be listed in the \"Problems\" tab of the panel at the bottom. In the provided context, activating linters will highlight coding standard violations and other issues with Flake8, while EditorConfig applies standards to files as they are created/edited. Both tools need to be set up to ensure that they are mutually compatible."
+}
+{
+  "prompt": "",
+  "completion": "What is EditorConfig and how can it be used to maintain common coding standards among collaborators?\n\nEditorConfig is a tool that allows for the configuration of common, particular formatting/encoding options for a range of editors/IDEs by using a `.editorconfig` file in the root of a repo. This enables different members of a project team to use their own favourite editor while maintaining common coding standards."
+}
+{
+  "prompt": "How can one format code in VS Code and which formatter is recommended",
+  "completion": "To format code in VS Code, the editor supports various file formatters such as Black formatter, yapf, and autopep8, among others. Among these, the Black formatter is recommended, and it can be set up to run automatically when saving files or using keyboard shortcuts. Additionally, VS Code supports linting, debugging, and testing of Python code, and it provides useful extensions like Pylance, autoDocstring, and IntelliCode."
+}
+{
+  "prompt": "",
+  "completion": "What is EditorConfig, and how can it be used to maintain coding conventions? \n\nEditorConfig is a tool that allows individuals to configure editors to their preferences while ensuring coding conventions are maintained when collaborating on a codebase. A `.editorconfig` file can be placed in the root of a repository to apply common formatting/encoding options for different editors/IDEs. Some editors support EditorConfig files natively, but others require a plugin."
+}
+{
+  "prompt": "What testing and debugging capabilities does VS Code have for Python",
+  "completion": "VS Code has various testing and debugging capabilities for Python, including built-in linting for Flake8, Mypy, and Pylint, as well as support for running and debugging tests and formatting code using Pylance, Black formatter, and isort. Additionally, VS Code allows users to select a specific Python interpreter and offers helpful extensions like AutoDocstring and Python Type Hint."
+}
+{
+  "prompt": "",
+  "completion": "What is EditorConfig, and how can it be used to maintain coding standards in a project?\n\nEditorConfig is a tool that allows for the configuration of common formatting and encoding options for a variety of editors and IDEs. By creating a .editorconfig file in the root of a project, collaborators can use their individual editors while still maintaining common coding standards."
+}
+{
+  "prompt": "What are some additional tips and tricks for using VS Code for Python development?",
+  "completion": "Some additional tips and tricks for using VS Code for Python development include using the EditorConfig to maintain common coding standards between collaborators, installing useful extensions like Pylance and autoDocstring, selecting the Python interpreter for each workspace, and using shortcuts to run tests, format documents, and debug code."
+ }
+{
+  "prompt": "What is the purpose of the review process",
+  "completion": "The purpose of the review process is to ensure high quality and catch problems in contributions, particularly in regards to code quality. It should not be an adversarial process, and reviewers should use line comments and collaborate with contributors to resolve any issues before approving a pull request for merging."
+}
+{
+  "prompt": "How should a reviewer approach their role in the review process",
+  "completion": "A reviewer should approach their role in the review process as a collaborator and knowledge sharer, aiming to ensure code quality and catch problems in contributions. They should use the GitHub review system to check the diffs of all source files, leave line comments, and suggest changes where appropriate. If changes are requested, the iterative process should aim to resolve all conversations before merging."
+}
+{
+  "prompt": "What is the role of the CI process in assessing pull requests",
+  "completion": "The CI process is responsible for assessing pull requests by subjecting each commit to a series of tests, ensuring the quality of the codebase remains high. The process blocks merging until all required tests pass, and reviewers should always aim to have all tests passing and investigate any failing tests."
+}
+{
+  "prompt": "What should you do if a CI test fails",
+  "completion": "If a CI test fails, investigate why it failed and aim to have all tests passing. Clone the branch, build the handbook locally, and inspect the changes using your browser. Use the GitHub review system to check the diffs of all source files and communicate with the contributors to resolve any conversations before merging."
+}
+{
+  "prompt": "Why should you clone the branch and build the handbook locally when reviewing a pull request",
+  "completion": "You should clone the branch and build the handbook locally when reviewing a pull request because not all bugs will be caught by CI and some changes may not be obvious in the source files. Inspecting the changes using your browser ensures that you catch any issues that may have been missed by automated testing."
+}
+{
+  "prompt": "How should you use the GitHub review system when reviewing changes in a pull request",
+  "completion": "Use the GitHub review system to check diffs of all source files and make use of line comments to provide context, suggest changes, and share knowledge. When finished, submit your review as \"comment\", \"approve\", or \"request changes\". All conversations must be resolved before merging."
+}
+{
+  "prompt": "What are line comments and how should they be used in the review process",
+  "completion": "Line comments are comments made on specific lines or sections of code during the review process, allowing reviewers to provide context or suggest changes. They should be used when there are comments or questions about certain lines or sections and can also be used to suggest simple solutions. Line comments should be included in the GitHub review system."
+}
+{
+  "prompt": "What should you do when you are finished with a review",
+  "completion": "Submit your review and choose \"comment\", \"approve\" or \"request changes\" as appropriate using the GitHub review system. If you request changes, the pull request will enter an iterative process where the contributors make adjustments you repeat the review process. When all reviewers are satisfied, merge the pull request."
+}
+{
+  "prompt": "What happens if you request changes on a pull request",
+  "completion": "If changes are requested on a pull request, the contributors will enter an iterative process of making adjustments and the reviewer will repeat the review process. The contributors may accept, make their own or push back against changes and it is important to work together to resolve any conversations before merging."
+}
+{
+  "prompt": "How should you handle conversations with contributors when reviewing changes",
+  "completion": "When reviewing changes as a contributor, it is important to approach the review process with a collaborative mindset, using line comments for specific feedback and suggesting changes when appropriate. Any conversations with contributors must be resolved before merging."
+}
+{
+  "prompt": "When is it appropriate to merge a pull request",
+  "completion": "It is appropriate to merge a pull request when all reviewers are satisfied with the state of the pull request. Before merging, all conversations must be resolved, and the review status should be updated to \"approve.\""
+}
+{
+  "prompt": "What should be the status of your review when you are ready to merge a pull request?",
+  "completion": "Your review status should be \"approve\" when you are ready to merge a pull request. All conversations regarding the changes must be resolved before merging."
+ }
+{
+  "prompt": "What is a Changelog",
+  "completion": "A Changelog is a record of changes from the perspective of users, rather than just git commit messages. It is recommended to maintain a Changelog file to document all notable changes to a project."
+}
+{
+  "prompt": "Why is it worth maintaining a Changelog",
+  "completion": "It is worth maintaining a Changelog for non-trivial code as it provides a record of changes from the perspective of users. Changelog files should follow a recommended format and should document all notable changes to a project. Additionally, semantic versioning should be explicitly stated in both the project's README and Changelog files."
+}
+{
+  "prompt": "What perspective should Changelog changes be recorded from",
+  "completion": "Changelog changes should be recorded from the perspective of users, as this provides a clear and meaningful record of changes. It is recommended to follow the format given at Keep a Changelog, and to explicitly state whether or not your project is using semantic versioning in both the README and CHANGELOG files."
+}
+{
+  "prompt": "What is the recommended format for Changelog files",
+  "completion": "The recommended format for Changelog files is provided by Keep a changelog. It is important to maintain a Changelog as it records changes from the users' perspective, while semantic versioning is also recommended and should be explicitly stated in the project's README and CHANGELOG files."
+}
+{
+  "prompt": "Where can you find the recommended format for Changelog files",
+  "completion": "A recommended format for Changelog files can be found at Keep a changelog. It is suggested to use this format when documenting all notable changes to a project from the perspective of users. This should be done in addition to stating whether or not Semantic Versioning is being used in the project's README and Changelog files."
+}
+{
+  "prompt": "What should be documented in a Changelog",
+  "completion": "A Changelog should document all notable changes to a project from the perspective of users. It is recommended to use a standard format such as that provided by Keep a Changelog. The project's use (or non-use) of Semantic Versioning should be explicitly stated in both the README and Changelog."
+}
+{
+  "prompt": "What is semantic versioning",
+  "completion": "Semantic versioning is a recommended approach to version numbering for code projects, which involves using a three-part version number that increases in a meaningful way with each release. It ensures compatibility with existing code that uses an earlier version, and helps users to understand the significance of each update. It should be documented in the project's README and CHANGELOG files."
+}
+{
+  "prompt": "Is semantic versioning recommended",
+  "completion": "Yes, semantic versioning is recommended according to the context provided. It is stated that in most cases, semantic versioning is recommended and developers should explicitly state whether or not they are using semantic versioning in their project's README and CHANGELOG files."
+}
+{
+  "prompt": "Where should you state whether or not you are using semantic versioning",
+  "completion": "You should state explicitly whether or not you are using semantic versioning in both your project's README and CHANGELOG files."
+}
+{
+  "prompt": "Why should you state whether or not you are using semantic versioning",
+  "completion": "You should state whether or not you are using semantic versioning because it is recommended and helps users understand how changes in your project will affect their own work. This information should be included in both your project's README and CHANGELOG files."
+}
+{
+  "prompt": "What files should you include information about semantic versioning in",
+  "completion": "You should include information about semantic versioning in both your project's README and CHANGELOG files. It is recommended to use semantic versioning for most cases. The format for Changelog files is given at Keep a changelog."
+}
+{
+  "prompt": "What is the purpose of having a Changelog and using semantic versioning?",
+  "completion": "The purpose of having a Changelog is to provide users with a record of changes made to a project. Semantic versioning is used to indicate changes in a project's version number, which helps users understand the extent of the changes made and whether the update is compatible with their current setup."
+ }
+{
+  "prompt": "What are the Drop-in Sessions and who can attend them",
+  "completion": "The Drop-in Sessions are regular, informal, community-led sessions for students and researchers where they can ask technical questions or seek advice. The sessions offer a friendly and non-judgmental environment to receive assistance, covering topics such as general programming, cloud computing, software sustainability, reproducible research, and high-performance computing. Anyone can join the weekly one-hour sessions on Zoom every Tuesday without registering in advance."
+}
+{
+  "prompt": "What kind of technical problems can be discussed in the Drop-in Sessions",
+  "completion": "The technical problems that can be discussed in the Drop-in Sessions include general programming problems, cloud computing questions, software sustainability, reproducible research, and high-performance computing. These sessions offer a non-judgemental environment for students and researchers to seek advice and assistance. The sessions run for one hour every Tuesday and are hosted on Zoom."
+}
+{
+  "prompt": "What kind of technical advice can be sought in the Drop-in Sessions",
+  "completion": "In the Drop-in Sessions, technical advice can be sought for general programming problems, cloud computing questions (particularly on Azure), software sustainability, reproducible research, and High Performance Computing (HPC) advice and support. The sessions are held every Tuesday on Zoom from 13:30-14:30 and are open to everyone without registration."
+}
+{
+  "prompt": "What kind of environment is provided in the Drop-in Sessions",
+  "completion": "The Drop-in Sessions provide a friendly, welcoming, non-judgemental environment for students and researchers to receive general technical advice or assistance with specific technical problems related to programming, cloud computing, software sustainability, reproducible research, and high performance computing. The sessions are community-led and run for an hour every Tuesday on Zoom, and everyone is welcome to drop-in at any time without the need to register in advance."
+}
+{
+  "prompt": "Why can software programming be overwhelming for researchers",
+  "completion": "Software programming can be overwhelming for researchers because many researchers have been trained in domains where computing was not a key element, leading to a lot to learn in terms of new jargon and technical skills. The Drop-in Sessions offer a friendly, welcoming environment for researchers to receive advice or assistance without concern about being judged on technical knowledge, expertise or understanding."
+}
+{
+  "prompt": "What kind of programming problems can be addressed in the Drop-in Sessions",
+  "completion": "The Drop-in Sessions can address general programming problems such as fixing bugs, cloud computing questions on Azure, and software sustainability including best practices for testing, managing, and packaging code. They can also provide support and advice on reproducible research and HPC resources available at the Turing. These weekly sessions run every Tuesday from 13:30-14:30 on Zoom and are open to everyone without the need to register in advance."
+}
+{
+  "prompt": "What kind of questions related to cloud computing can be addressed in the Drop-in Sessions",
+  "completion": "Questions related to getting started with cloud computing on Azure can be addressed in the Drop-in Sessions for students and researchers, which offer a friendly and non-judgmental environment to receive technical advice. Other topics covered include general programming problems, software sustainability, reproducible research, and advice on HPC resources available at the Turing."
+}
+{
+  "prompt": "What kind of software sustainability questions can be addressed in the Drop-in Sessions",
+  "completion": "The Drop-in Sessions can address software sustainability questions related to best practices for testing, managing, and packaging code, as well as techniques for packaging and archiving code to support reproducible research. Participants can receive support and advice on these topics in a friendly and non-judgmental environment. The sessions are open to anyone and do not require registration in advance."
+}
+{
+  "prompt": "What are the best practices for managing and packaging your software code",
+  "completion": "The best practices for managing and packaging software code include testing, version control, documentation, and creating installable packages. It is important to use consistent naming conventions and to follow coding standards. Collaboration and communication among team members is also crucial for effective code management."
+}
+{
+  "prompt": "How can software be developed to support long-term reproducibility",
+  "completion": "Software can be developed to support long-term reproducibility by implementing best practices for packaging and archiving code, ensuring documentation is comprehensive and up-to-date, and following standards such as the FAIR principles to make data and code findable, accessible, interoperable, and reusable. The Drop-in Sessions offered by the research community provide advice and assistance on software sustainability, including techniques for packaging and archiving code."
+}
+{
+  "prompt": "What kind of support and advice can be given on High-Performance Computing (HPC)",
+  "completion": "The Drop-in Sessions offer a friendly environment for students and researchers to seek technical advice and assistance, including support on High Performance Computing (HPC) resources available at the Turing. The group can help with general programming problems, cloud computing questions, software sustainability, and reproducible research. Weekly sessions are held every Tuesday and are open to everyone without registration in advance."
+}
+{
+  "prompt": "When do the weekly sessions take place and on what platform",
+  "completion": "The weekly Drop-in Sessions take place every Tuesday from 13:30-14:30 and are hosted on Zoom. No registration is required and anyone is welcome to drop-in at any time."
+}
+{
+  "prompt": "Is there a need to register in advance for the Drop-in Sessions",
+  "completion": "No, there is no need to register in advance for the Drop-in Sessions. The weekly sessions run for one hour every Tuesday and everyone is welcome to drop-in at any time, with no registration required."
+}
+{
+  "prompt": "How can one access the Zoom link for the Drop-in Sessions",
+  "completion": "To access the Zoom link for the Drop-in Sessions, visit the REGistry page on the GitHub website and click on the provided Zoom link. The sessions run for one hour every Tuesday and no registration is required."
+}
+{
+  "prompt": "Is there a specific time limit for each Drop-in Session?",
+  "completion": "Yes, the Drop-in Sessions run for one hour from 13:30-14:30 every Tuesday."
+ }
+{
+  "prompt": "What is the importance of reporting issues and discussing ideas in contributing",
+  "completion": "Reporting issues and discussing ideas are important aspects of contributing because they can lead to improvements and collaborations within a project. The handbook uses both discussions and issues on GitHub to facilitate this process. Issues are best used for development work, while discussions are better for informal talk about the handbook."
+}
+{
+  "prompt": "Where are the handbook Discussions located",
+  "completion": "The handbook Discussions are located on GitHub at https://github.com/alan-turing-institute/REG-handbook/discussions, where users can have informal talks about the handbook on various topics such as questions, bugs, chapter suggestions, and community support."
+}
+{
+  "prompt": "Can anyone create a discussion on any relevant topic in the handbook Discussions",
+  "completion": "Yes, anyone can create a discussion on any relevant topic in the handbook Discussions section, which is dedicated to informal talk about the handbook. Good examples of discussions include questions, possible bugs, chapter suggestions, and looking for collaborators."
+}
+{
+  "prompt": "What are some good examples of topics to discuss in the handbook Discussions",
+  "completion": "Good examples of topics to discuss in the handbook Discussions include questions, possible bugs, chapter suggestions, looking for collaborators, community support, and any other on-topic talk. While the Issues section is best for development work, good examples of issues include bug reports with technical detail, developed chapter proposals, feature requests, and specific ideas for changes. When opening an issue, pick a suitable template to make the process easier."
+}
+{
+  "prompt": "What is the purpose of the issue tracker",
+  "completion": "The purpose of the issue tracker is for development work and integration with GitHub development tools. Each issue should represent a self-contained piece of work suitable for a single pull request, such as bug reports, chapter proposals, feature requests, or specific ideas for changes."
+}
+{
+  "prompt": "Why is the issue tracker best used for development work",
+  "completion": "The issue tracker is best used for development work because it integrates well with GitHub development tools like projects, pull requests, and assignments. Each issue should represent a well-defined, self-contained piece of work suitable to become a single pull request."
+}
+{
+  "prompt": "What tools does the issue tracker integrate well with",
+  "completion": "The issue tracker integrates well with GitHub development tools such as projects, pull requests, and assignments."
+}
+{
+  "prompt": "How should each issue be represented ideally",
+  "completion": "Discussions are best for informal talk while issues are for development work. Each issue should ideally represent a well-defined, self-contained piece of work suitable to become a single pull request. Good examples of issues include bug reports, developed chapter proposals, feature requests, and specific ideas for changes."
+}
+{
+  "prompt": "What are some good examples of issues to report on the issue tracker",
+  "completion": "Good examples of issues to report on the issue tracker include bug reports with technical detail, developed chapter proposals, feature requests (such as new shortcodes), and specific ideas for changes. Each issue should ideally represent a well-defined, self-contained piece of work suitable to become a single pull request."
+}
+{
+  "prompt": "Should a template be used when opening an issue?",
+  "completion": "Yes, it is recommended to pick a suitable template when opening an issue to make the process easier, as stated in the provided context."
+ }
+{
+  "prompt": "What are reading groups",
+  "completion": "Reading groups are groups of people who come together to learn about a topic by discussing books, papers, or implementing something. These groups may meet weekly and are often created by members of a team. Information about current reading groups can be found on the Data Science Skills wiki."
+}
+{
+  "prompt": "How often do reading groups typically meet",
+  "completion": "Reading groups typically meet on a weekly basis to discuss a chapter from a book or a paper, or to work together on implementing something. The frequency of meetings may vary depending on the project or general interest. Current reading groups and information about them can be found on the Data Science Skills wiki."
+}
+{
+  "prompt": "What types of materials do reading groups discuss",
+  "completion": "Reading groups discuss materials such as chapters from books, papers, or implementation projects. The reading materials are stored in the Data Science Skills repository, and information about current reading groups can be found on the Data Science Skills wiki. Additionally, there are other informal groups such as the Turing Interest Groups."
+}
+{
+  "prompt": "Where can information about current reading groups be found",
+  "completion": "Information about current reading groups can be found on the Data Science Skills wiki and the material for these groups is stored in the Data Science Skills repository. Additionally, there are other informal groups around the Turing Institute."
+}
+{
+  "prompt": "What is the purpose of the Data Science Skills wiki",
+  "completion": "The purpose of the Data Science Skills wiki's Reading Groups page is to provide information on the current reading groups created by the team for learning about a topic. The page also links to the repository where the material for the reading groups is stored. Additionally, there are other interest groups available through the Turing institute."
+}
+{
+  "prompt": "Where is the material for reading groups stored",
+  "completion": "The material for reading groups is stored in the Data Science Skills repository. A list of current reading groups and information about them can be found on the Data Science Skills wiki. There are also other informal groups around the Turing."
+}
+{
+  "prompt": "What are Turing Interest Groups",
+  "completion": "Turing Interest Groups are informal groups at the Alan Turing Institute that focus on specific research interests or topics. One type of interest group is the reading group, where members come together to discuss and learn about a particular subject by reading and discussing books, papers, or implementations. Information about current reading groups can be found on the Data Science Skills wiki and materials are stored in the Data Science Skills repository."
+}
+{
+  "prompt": "Are there any other informal groups around Turing",
+  "completion": "Yes, there are many other informal groups around the Turing, as mentioned on their website and in the context provided. Some of these groups may be related to data science skills or specific interests, while others may be more broadly focused. The specific groups and their areas of inquiry may vary over time."
+}
+{
+  "prompt": "How can one join a reading group",
+  "completion": "To join a reading group, visit the Data Science Skills wiki to find a list of current groups and information about them. Material for the groups is stored in the Data Science Skills repository. There are also other informal groups around the Turing."
+}
+{
+  "prompt": "Can reading groups be formed for personal interest or just for projects",
+  "completion": "Yes, reading groups can be formed for personal interest or for projects. Members of a team can create reading groups to learn about a topic by discussing a chapter from a book or working together on implementing something. Current reading groups and their information can be found on the Data Science Skills wiki."
+}
+{
+  "prompt": "Why would someone choose to participate in a reading group",
+  "completion": "Someone may choose to participate in a reading group to learn more about a topic or to work on implementing something with a group. Current reading groups and their information can be found on the Data Science Skills wiki and materials are stored in the Data Science Skills repository."
+}
+{
+  "prompt": "Do reading groups have a set structure or format",
+  "completion": "There is no set structure or format for reading groups. Members of a team may create reading groups to learn about a topic and can meet weekly to discuss a chapter from a book or a paper. Information about current reading groups can be found on the Data Science Skills wiki."
+}
+{
+  "prompt": "Can reading groups be conducted virtually",
+  "completion": "Yes, reading groups can be conducted virtually, as evidenced by the fact that the Alan Turing Institute has online reading groups listed on their website. The reading materials are stored in a repository and discussions may take place on a weekly basis."
+}
+{
+  "prompt": "What is the benefit of discussing ideas with others in a group setting",
+  "completion": "Discussing ideas with others in a group setting can provide multiple perspectives and insights that may not have been considered. It allows for collaboration and the exchange of ideas, leading to a deeper understanding of the topic and potential solutions to challenges. In addition, it can also promote team building and foster a sense of community."
+}
+{
+  "prompt": "Is there a limit to the number of members allowed in a reading group?",
+  "completion": "The text does not provide information about a limit to the number of members allowed in a reading group."
+ }
+{
+  "prompt": "What is the purpose of the Twitter account for the Turing research engineering group",
+  "completion": "The purpose of the Turing research engineering group's Twitter account is to have an informal public-facing channel where they can communicate about projects they are working on and about life as a research engineer at the Turing. They also share blog posts, talks, conferences and workshops, and any public outputs like research papers or published code. Access to the account is only granted to authorized members, and they have to comply with the Turing's social media policy when making posts."
+}
+{
+  "prompt": "What is the handle for the Turing research engineering group's Twitter account",
+  "completion": "The handle for the Turing research engineering group's Twitter account is @turinghut23. The account is used as an informal public-facing channel to communicate about the projects they are working on and about life as a research engineer at the Turing. To tweet under the group account, permission from the account controller is needed."
+}
+{
+  "prompt": "How can someone gain access to tweet under the group account",
+  "completion": "To gain access to tweet under the group account, one should ask the account controller for access. This can be done by visiting the group's account on Twitter and following the instructions listed on their page. Once granted access, one can post about projects, talks, conferences, and any public outputs following the Turing's social media policy."
+}
+{
+  "prompt": "In addition to projects, what else can the group post about on their Twitter account",
+  "completion": "The group can also post about blog posts, talks that they organize, conferences and workshops, and any public outputs such as papers and published code on their Twitter account. However, they should refer to the Turing's social media policy when making posts."
+}
+{
+  "prompt": "What is the purpose of the Medium account linked to the group's Twitter account",
+  "completion": "The Medium account linked to the group's Twitter account is used for posting blog posts, public projects, talks, workshops, and outputs such as papers and published code. Access to the account is given by the account controller and users are expected to adhere to the Turing's social media policy when making posts."
+}
+{
+  "prompt": "Does the Turing have a social media policy for posts on their accounts, including the group's Twitter account",
+  "completion": "Yes, the Turing has a social media policy for posts on their accounts, including the group's Twitter account. The policy can be found on their website and should be referred to when making posts. The content allowed to be posted includes projects, blog posts, talks, conferences, workshops, and public outputs such as papers and published code."
+}
+{
+  "prompt": "What types of public outputs can the group share on their Twitter account",
+  "completion": "The group can share projects they are working on, blog posts, talks they organize, conferences and workshops they attend, and any public outputs such as papers and published code on their Twitter account [@turinghut23]. They are advised to refer to the Turing's social media policy when making posts. Access to the account can be obtained by asking the account controller."
+}
+{
+  "prompt": "How can someone learn more about the Turing's social media policy",
+  "completion": "To learn more about Turing's social media policy, one can refer to the policy document available at https://mathison.turing.ac.uk/Interact/Pages/Content/Document.aspx?id=2203&SearchId=11587. The policy should be consulted while making posts on Turing's Twitter account, which can be accessed by requesting permission from the account controller. The Twitter account is used to communicate about projects and research work at Turing."
+}
+{
+  "prompt": "Are there any restrictions on what the group can post on their Twitter account",
+  "completion": "Yes, there are restrictions on what the group can post on their Twitter account. They are only allowed to post about projects they work on (if public), blog posts, talks they organize, conferences and workshops, and any public outputs such as papers or published code. They must also refer to the Turing's social media policy when making posts."
+}
+{
+  "prompt": "Can anyone in the Turing research engineering group post on the group's Twitter account?",
+  "completion": "No, not anyone in the Turing research engineering group can post on the group's Twitter account [@turinghut23]. To tweet under the group account, one needs to ask the account controller for access, as mentioned on the page. The Twitter account is primarily used for communicating about projects, life as a research engineer, and public outputs, and one should refer to the Turing's social media policy before making any posts."
+ }
+{
+  "prompt": "What is the purpose of this page",
+  "completion": "The purpose of this page is to provide new starters with an overview of what to expect in their first few days, including introductions, administrative tasks, an overview of how the Research Engineering Group operates, regular events, and points of contact. It also encourages new starters to edit the page if there are useful changes to be made."
+}
+{
+  "prompt": "Who assigns buddies to new starters",
+  "completion": "The person in charge of onboarding assigns buddies to new starters."
+}
+{
+  "prompt": "What happens if the onboarding person doesn't inform new starters about their buddies",
+  "completion": "If the onboarding person doesn't inform new starters about their buddies, the new starter may not have a friendly point of contact, which could lead to a sense of isolation and difficulty in integrating into the group culture."
+}
+{
+  "prompt": "What is the purpose of the welcome coffee",
+  "completion": "The purpose of the welcome coffee is to give new starters a chance to introduce themselves to the whole REG team during their first few days."
+}
+{
+  "prompt": "Who will new starters have a meeting with within their first few weeks",
+  "completion": "New starters will have a 1-on-1 meeting with REG's Director within their first few weeks."
+}
+{
+  "prompt": "What should new starters do during the week or so before they are assigned to a project",
+  "completion": "New starters should use the week or so before being assigned to a project to complete administrative tasks, set up their laptop and tools, get to know people, read the internal wiki and handbook, and shadow meetings to get a feel for how the group works. They should also write a short paragraph about their background for the REG newsletter."
+}
+{
+  "prompt": "Is there a checklist for new starters to follow",
+  "completion": "Yes, there is a new starter checklist available on the Research Engineering Group's internal wiki, which includes tasks such as administrative setup, shadowing meetings, and setting up your coding environment. The checklist is open to edits by new starters if they find it useful to make any changes."
+}
+{
+  "prompt": "What are HR and IT meetings for",
+  "completion": "HR and IT meetings are held in the first few days to discuss general information, such as pay, health, leaves, benefits, and to set up accounts for Turing-wide systems. These meetings are typically arranged for the first day or two after joining the group."
+}
+{
+  "prompt": "What is the purpose of the \"high priority\" section",
+  "completion": "The purpose of the \"high priority\" section is to prompt new starters to look at the dedicated page for various systems REG uses, as it contains important information that should be reviewed on the first day."
+}
+{
+  "prompt": "Is there a page for remote working",
+  "completion": "Yes, there is a page for remote working on the Alan Turing Institute's Research Engineering Group wiki, which provides information on Zoom, Teams, and Gather."
+}
+{
+  "prompt": "Are new starters allowed to shadow meetings",
+  "completion": "Yes, new starters are allowed to shadow meetings during their first few weeks at REG in order to get a feel for how the group operates. The shadowing document should be updated with meetings that new starters are free to attend."
+}
+{
+  "prompt": "Who is responsible for updating the shadowing document",
+  "completion": "The person in charge of onboarding is responsible for updating the shadowing document."
+}
+{
+  "prompt": "How can new starters access the office",
+  "completion": "New starters need a British Library pass to access the office, which they can obtain by completing the background screening check. In the meantime, they can either enter through the general public entrance and contact Turing's reception, or arrange for a visitor pass."
+}
+{
+  "prompt": "What is required to get a British Library pass",
+  "completion": "To get a British Library pass, a background screening check is required. Once the check is completed and approved by HR, the pass will be ready within a few days, and until then, visitors can enter through the general public entrance or arrange for a visitor pass."
+}
+{
+  "prompt": "What should new starters do if their screening process hasn't started yet",
+  "completion": "New starters should email the person in charge of onboarding to determine who their assigned buddies are and use their first week to set up their tools and acquaint themselves with the internal handbook and wiki. If the background screening process has not started yet, they should reach out to HR to ensure it gets started."
+}
+{
+  "prompt": "What should new starters do for the first day or two to enter the British Library",
+  "completion": "New starters should arrange for a visitor pass for themselves to enter the British Library for the first day or two. After that, they can directly ask reception for access. They should also use their first few days to do admin tasks, set up their laptop and tools, get to know people, read the handbook and internal wiki, and shadow meetings."
+}
+{
+  "prompt": "Is there Wi-Fi available in the office",
+  "completion": "Yes, the password for the \"ATI Guest\" Wi-Fi network can be seen hanging around the office, and IT can arrange access to the Eduroam network."
+}
+{
+  "prompt": "Are new starters required to write anything for the REG newsletter",
+  "completion": "Yes, new starters are required to write a short, informal paragraph about their background for the REG newsletter and send it to the newsletter owner."
+}
+{
+  "prompt": "What is the main focus of work at REG",
+  "completion": "The main focus of work at REG is on projects and service areas, with new starters typically assigned to two projects and encouraged to learn new things. The group also gives its members time for side projects and coordinates work tasks with the people in their projects."
+}
+{
+  "prompt": "How many projects will a new starter typically be assigned to",
+  "completion": "A new starter will typically be assigned to a project after their first week or so, once they have completed administrative tasks, set up their laptop and tools, and shadowed meetings. They will typically be assigned two different projects at any time."
+}
+{
+  "prompt": "What are service areas at REG",
+  "completion": "Service areas at REG refer to internal work such as managing computational resources, organizing recruitment, and maintaining the handbook. Members typically contribute to one service area which requires half a day a week."
+}
+{
+  "prompt": "How much time should be allocated for service area work",
+  "completion": "The context does not provide enough information to answer this question."
+}
+{
+  "prompt": "What is \"22 days time\"",
+  "completion": "\"22 days time\" is a period of time given to members of REG to work on side projects that they find interesting."
+}
+{
+  "prompt": "Is REG a hierarchical culture",
+  "completion": "The text does not provide clear evidence whether REG is a hierarchical culture or not."
+}
+{
+  "prompt": "What should new starters discuss with their line manager",
+  "completion": "New starters should discuss project allocation, time management and growth, the company's practices and tools, and opportunities for development with their line manager. They should also use their first week to set up their laptop, do admin work, get to know people, and shadow meetings. HR and IT will have meetings with new starters to discuss general information and systems set up."
+}
+{
+  "prompt": "Where can new starters find useful information about REG",
+  "completion": "New starters can find useful information about REG on the First Few Days page, which includes an introduction to the team, an overview of how REG operates, and guidance on administrative and technical setup tasks."
+}
+{
+  "prompt": "Is there a regular event at REG that new starters should consider attending",
+  "completion": "Yes, new starters should consider attending REG's regular events, including weekly tech talks and coffee breaks, as well as other events listed on their website."
+}
+{
+  "prompt": "Who should new starters contact for information about the regular tech talks",
+  "completion": "New starters should ask the person in charge of onboarding to add them to the mailing list for the weekly tech talks."
+}
+{
+  "prompt": "Where can useful points of contact be found for new starters",
+  "completion": "Useful points of contact for new starters can be found on the \"Points of Contact\" page of the Research Engineering Group's wiki, which includes information on HR, IT, and the person in charge of onboarding, among others. New starters are also assigned two \"buddies\" who serve as friendly points of contact. Additionally, the \"First Few Days\" page provides information on the onboarding process, introductions, and set up tasks, among other things."
+}
+{
+  "prompt": "What other useful information can be found on the The-REGistry page?",
+  "completion": "Other useful information that can be found on The-REGistry page includes points of contact, remote meeting details, and team responsibilities."
+ }
+{
+  "prompt": "What are coffee chats",
+  "completion": "Coffee chats are daily optional meetings held at 08:45 and 13:45. They mostly take place in Gather, but there is also a Zoom room available. More information can be obtained from the given link."
+}
+{
+  "prompt": "What time are the daily coffee chats held",
+  "completion": "The daily coffee chats are held at 08:45 and 13:45. They usually happen in Gather, but there is also a Zoom room available as a backup option. The details for both rooms are provided on the website."
+}
+{
+  "prompt": "Where do the coffee chats usually take place",
+  "completion": "The coffee chats usually take place in Gather or a Zoom room at 08:45 and 13:45 daily. Details for both rooms can be found on the REGistry webpage."
+}
+{
+  "prompt": "What is the alternative option if Gather is unavailable",
+  "completion": "If Gather is unavailable, the alternative option for the daily coffee chats is the Zoom room. The details for both rooms can be found on the website provided."
+}
+{
+  "prompt": "How often are the coffee chats held",
+  "completion": "The coffee chats are held twice a day at 08:45 and 13:45. They are optional and usually take place in Gather, with a Zoom room as a backup. More information on the video call links can be found on the wiki page."
+}
+{
+  "prompt": "What is the purpose of the coffee chats",
+  "completion": "The purpose of the coffee chats is to provide an opportunity for the team to socialize and connect with each other on a daily basis. The chats are optional and serve as a way to foster a sense of community within the team. They take place both on Gather and Zoom."
+}
+{
+  "prompt": "Who is invited to attend the coffee chats",
+  "completion": "All team members are invited to attend the daily coffee chats, which take place at 08:45 and 13:45. The chats are usually held in Gather but also have a Zoom room available in case Gather is unavailable. Links to both rooms can be found on the team's wiki page."
+}
+{
+  "prompt": "Are the coffee chats mandatory or optional",
+  "completion": "The coffee chats are optional and not mandatory. The team has two daily coffee chat options at 08:45 and 13:45 in Gather or a Zoom room. Details for both rooms can be found on the team's Wiki page."
+}
+{
+  "prompt": "What is the duration of the coffee chats",
+  "completion": "The duration of the coffee chats is not specified in the given context. However, it is mentioned that there are two optional and daily coffee chats at 08:45 and 13:45, which usually happen in Gather or Zoom. Links for both rooms can be found on the given website."
+}
+{
+  "prompt": "Are there any specific topics of discussion during the coffee chats",
+  "completion": "No, there are no specific topics of discussion mentioned for the daily coffee chats. They are optional and simply provide an opportunity for team members to chat and catch up with each other informally. The chats can take place in Gather or a Zoom room, and the links to these rooms can be found on the team's wiki page."
+}
+{
+  "prompt": "Who is responsible for organizing the coffee chats",
+  "completion": "It is not specified who is responsible for organizing the coffee chats in the provided context."
+}
+{
+  "prompt": "How do you join the coffee chats",
+  "completion": "To join the coffee chats, go to Gather or access the Zoom room listed in the link provided on the Coffee Chats page. The chats occur twice daily at 08:45 and 13:45 and are optional for the team to attend."
+}
+{
+  "prompt": "Are there any ground rules for the coffee chats",
+  "completion": "No ground rules for the coffee chats are mentioned in the given context. The team has two optional daily coffee chats at 08:45 and 13:45, which take place in Gather or on Zoom. Details for both rooms can be found on the provided link."
+}
+{
+  "prompt": "Are there any dress codes for the coffee chats",
+  "completion": "The given context does not provide any information about dress codes for the coffee chats. Therefore, it can be assumed that there are no specific dress codes for the chats. Participants may dress casually or professionally based on their personal preference."
+}
+{
+  "prompt": "Is there any cost involved in attending the coffee chats",
+  "completion": "The context does not provide any information on the cost involved in attending the coffee chats. Therefore, it is safe to assume that there is no cost involved in attending these chats."
+}
+{
+  "prompt": "Are there any beverages served during the coffee chats",
+  "completion": "The passage does not mention any beverages being served during coffee chats. The focus is on the timing, location, and platform for the chats."
+}
+{
+  "prompt": "How many people typically attend the coffee chats",
+  "completion": "The text does not provide information on how many people typically attend the coffee chats."
+}
+{
+  "prompt": "How long have the coffee chats been running",
+  "completion": "It is not specified in the given context how long the coffee chats have been running. The information only indicates that there are two optional coffee chats held daily at specific times and provides details on where they are held."
+}
+{
+  "prompt": "What is the feedback on the coffee chats",
+  "completion": "There is no information provided on the feedback regarding the coffee chats."
+}
+{
+  "prompt": "What other activities are connected to the coffee chats?",
+  "completion": "The provided information does not mention any other activities that are connected to the coffee chats. Therefore, it is not possible to answer this question based on the provided context."
+}
