@@ -206,6 +206,7 @@ class LlamaDistilGPT2(Llama):
 
 class LlamaGPT35TurboOpenAI(Llama):
     def __init__(self, *args, **kwargs):
+        self.openai_api_key = os.getenv("OPENAI_API_KEY")
         super().__init__(
             *args, model_name="gpt-3.5-turbo", max_input_size=4096, **kwargs
         )
@@ -213,11 +214,10 @@ class LlamaGPT35TurboOpenAI(Llama):
     def _prep_llm_predictor(self):
         llm_predictor = LLMPredictor(
             llm=ChatOpenAI(
-                temperature=0.7,
-                model=self.model_name,
                 max_tokens=self.num_output,
+                model=self.model_name,
                 openai_api_key=self.openai_api_key,
-                openai_api_base=self.openai_api_base,
+                temperature=0.7,
             )
         )
         return llm_predictor
