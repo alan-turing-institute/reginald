@@ -19,6 +19,8 @@ from llama_index import (
     LLMPredictor,
     PromptHelper,
     ServiceContext,
+    StorageContext,
+    load_index_from_storage,
 )
 from llama_index.indices.vector_store.base import GPTVectorStoreIndex
 from transformers import AutoModelForCausalLM, AutoTokenizer, pipeline
@@ -26,10 +28,9 @@ from transformers import AutoModelForCausalLM, AutoTokenizer, pipeline
 # Local imports
 from .base import MessageResponse, ResponseModel
 
-DATA_DIR = (pathlib.Path(__file__).parent.parent.parent.parent / "data").resolve()
-DATA_FILES = list((DATA_DIR / "public").glob("**/*.csv"))
-DATA_FILES += list((DATA_DIR / "public").glob("**/*.md"))
-DATA_FILES += list((DATA_DIR / "public").glob("**/*.txt"))
+LLAMA_INDEX_DIR = "llama_index_indices"
+PUBLIC_DATA_DIR = "public"
+QUANTIZE = False  # Doesn't work on M1
 
 
 class CustomLLM(LLM):
@@ -66,7 +67,24 @@ class Llama(ResponseModel):
     def _prep_documents(self) -> list[Document]:
         # Prep the contextual documents
         documents = []
-        for data_file in DATA_FILES:
+
+        if self.which_index == "handbook":
+            logging.info("Regenerating index only for the handbook")
+
+            data_files = [self.data_dir / PUBLIC_DATA_DIR / "handbook-scraped.csv"]
+
+        elif self.which_index == "all_data":
+            logging.info("Regenerating index for ALL DATA. Will take a long time...")
+            # TODO Leaving out the Turing internal data for now while we figure out if
+            # we are okay sending it to OpenAI.
+            data_files = list((self.data_dir / PUBLIC_DATA_DIR).glob("**/*.md"))
+            data_files += list((self.data_dir / PUBLIC_DATA_DIR).glob("**/*.csv"))
+            data_files += list((self.data_dir / PUBLIC_DATA_DIR).glob("**/*.txt"))
+
+        else:
+            logging.info("The data_files directory is unrecognized")
+
+        for data_file in data_files:
             if data_file.suffix == ".csv":
                 df = pd.read_csv(data_file)
                 df = df[~df.loc[:, "body"].isna()]
@@ -91,9 +109,12 @@ class Llama(ResponseModel):
         self,
         model_name: str,
         max_input_size: int,
+        data_dir: str,
+        which_index: str,
         num_output: int = 256,
         chunk_size_limit: int | None = None,
         chunk_overlap_ratio: float = 0.1,
+        force_new_index: bool = False,
     ):
         logging.info("Setting up Huggingface backend.")
         self.max_input_size = max_input_size
@@ -103,6 +124,8 @@ class Llama(ResponseModel):
             chunk_size_limit = math.ceil(max_input_size / 2)
         self.chunk_size_limit = chunk_size_limit
         self.chunk_overlap_ratio = chunk_overlap_ratio
+        self.data_dir = pathlib.Path(data_dir)
+        self.which_index = which_index
 
         documents = self._prep_documents()
         llm_predictor = self._prep_llm_predictor()
@@ -124,9 +147,35 @@ class Llama(ResponseModel):
             chunk_size_limit=chunk_size_limit,
         )
 
-        self.index = GPTVectorStoreIndex.from_documents(
-            documents, service_context=service_context
-        )
+        if not force_new_index:
+            logging.info("loading the pre-processed index!")
+
+            logging.info("Generating the storage context")
+
+            storage_context = StorageContext.from_defaults(
+                persist_dir=self.data_dir / LLAMA_INDEX_DIR / which_index
+            )
+
+            logging.info("Loading the index")
+
+            self.index = load_index_from_storage(
+                storage_context=storage_context, service_context=service_context
+            )
+
+        else:
+            logging.info("Generating the index anew")
+
+            self.index = GPTVectorStoreIndex.from_documents(
+                documents, service_context=service_context
+            )
+
+            logging.info("Saving the index...")
+
+            # Save the service context and persist the index
+            self.index.storage_context.persist(
+                persist_dir=self.data_dir / LLAMA_INDEX_DIR / which_index
+            )
+
         self.query_engine = self.index.as_query_engine()
         logging.info("Done setting up Huggingface backend.")
 
