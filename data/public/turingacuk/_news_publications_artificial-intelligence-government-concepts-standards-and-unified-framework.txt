@@ -1,0 +1,50 @@
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Recent advances in artificial intelligence (AI) and machine learning (ML) hold the promise of improving government. Given the advanced capabilities of AI applications, it is critical that these are embedded using standard operational procedures, clear epistemic criteria, and behave in alignment with the normative expectations of society. Scholars in multiple domains have subsequently begun to conceptualize the different forms that AI systems may take, highlighting both their potential benefits and pitfalls. However, the literature remains fragmented, with researchers in social science disciplines like public administration and political science, and the fast-moving fields of AI, ML, and robotics, all developing concepts in relative isolation. Although there are calls to formalize the emerging study of AI in government, a balanced account that captures the full breadth of theoretical perspectives needed to understand the consequences of embedding AI into a public sector context is lacking. Here, we unify efforts across social and technical disciplines by using concept mapping to identify 107 different terms used in the multidisciplinary study of AI. We inductively sort these into three distinct semantic groups, which we label the (a) operational, (b) epistemic, and (c) normative domains. We then build on the results of this mapping exercise by proposing three new multifaceted concepts to study AI-based systems for government (AI-GOV) in an integrated, forward-looking way, which we call (1) operational fitness, (2) epistemic completeness, and (3) normative salience. Finally, we put these concepts to work by using them as dimensions in a conceptual typology of AI-GOV and connecting each with emerging AI technical measurement standards to encourage operationalization, foster cross-disciplinary dialogue, and stimulate debate among those aiming to reshape public administration with AI.
+Straub, V. J., Morgan, D., Bright, J., and Margetts, H. (2022). Artificial intelligence in government: Concepts, standards, and a unified framework. arXiv preprint arXiv:2210.17218. DOI: https://doi.org/10.48550/arXiv.2210.17218.
+131.7 KB
+© The Alan Turing Institute
+2023. All rights reserved.
+The Alan Turing Institute, a charity incorporated and registered in England and Wales with company number 09512457 and charity number 1162533 whose registered office is at British Library, 96 Euston Road, London, England, NW1 2DB, United Kingdom.
+For website-related enquiries email
+[email protected]
+
+Explore the Institute
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Legal
+Awards

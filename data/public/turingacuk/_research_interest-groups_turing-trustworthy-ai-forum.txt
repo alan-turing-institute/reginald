@@ -1,0 +1,64 @@
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+The benefits of AI are relatively well-understood, including driving revenue, reducing costs, and improving the efficiency and delivery of products and services. However, when it comes to deploying AI systems in the real-world, there are significant barriers to progress and obstacles to AI adoption. Some barriers are cultural – there are still too few executives and board members of organisations who understand how to deliver AI-driven systems in a safe and ethical way by managing their risks. Some are skills related - there is still not sufficient AI talent around, it can be hard to recruit and retain people with diverse perspectives and upskilling for existing staff in the desired areas can also be challenging. Another barrier is the data readiness level of organisations due to poor data quality or legacy systems hindering data usage.
+Beyond all of these barriers, one of the main reasons for organisations not innovating using AI or deploying AI systems is the lack of understanding of how to manage the risks and ethical considerations of AI, especially given the uncertainty around regulatory thinking. Indeed whilst there are hundreds of high-level ethical AI guidelines available, operationalising these ethical principles remains hard to do.
+ 
+The Turing, as the national institute for data science and AI, is well positioned to convene players from across sectors, together with technical experts and leading researchers in ethics and the humanities, so as to provide a safe space for dialogue on the subject of trustworthy AI design, development, and deployment. 
+The purpose of this forum is to engender active dialogues between academics and organisational leaders, with real-life practice informing our researchers and our research informing best practices. Through the Turing trustworthy AI forum, Institute-affiliated researchers and staff are uniquely positioned to present on the most recent advances in related fields in an accessible way, whilst organisations from across domains can describe specific use cases, and share best practice and challenges they face in managing the risks of AI. A wide range of organisations stand to gain by hearing about latest developments across academia and industry and by sharing their thinking and questions where appropriate – this could help translate ideas into best practice and work towards meaningful and implementable action items for AI/ML that businesses can adopt with clarity.
+In the longer-term, there is potential for the Turing to leverage its independent research expertise, and that of universities across its network, to help to develop guidance for implementing AI systems safely and ethically, and potentially also actually to set appropriate AI standards – providing a common understanding and clear articulation on the development and deployment of trustworthy AI. This could include, and is by no means limited to, AI governance, bias removal, best-practice development processes as well as other topics such as AI privacy and AI safety.
+The Turing is very well positioned to help the UK to be a leader in developing and implementing trustworthy AI across sectors. Many private, public and third sector organisations we speak to say that they would like to have more guidance on AI and greater understanding of key issues as well as best practice sharing. They are also typically in search of independent scientific advice to help them understand AI better and they would like to see better standards and accountability in AI.
+There is a great deal of enthusiasm for this across industries concerned with safety (for example, manufacturing and pharmaceuticals), privacy (for example, e-commerce) and conduct (such as financial services). Convening and bridging research-industry discussions on trustworthy AI by acting as a convener of independent AI experts is a natural extension of the Turing’s activities.
+The benefits to UK Plc include, in the short-term:
+In the longer-term:
+The aims of the trustworthy AI forum are to:
+The trustworthy AI forum differs from traditional interest groups because it goes beyond research discussions, providing a platform for practitioners and executives who currently are not able to share use cases easily between one another or have facile access to the cutting-edge in AI and/or independent scientific advice. This forum supports the sharing of ideas and best practice for participants. It does not have an advisory function for the Institute.
+The first meeting of the Turing trustworthy AI forum, on the subject of human-machine teaming took place on Friday 29 October. You can read this blog post summarising the discussions.
+Click here to request sign up and join
+Ruth Drysdale [email protected]  
+Nicolas Guernion [email protected]
+Interest groups [email protected]  
+© The Alan Turing Institute
+2023. All rights reserved.
+The Alan Turing Institute, a charity incorporated and registered in England and Wales with company number 09512457 and charity number 1162533 whose registered office is at British Library, 96 Euston Road, London, England, NW1 2DB, United Kingdom.
+For website-related enquiries email
+[email protected]
+
+Explore the Institute
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Legal
+Awards

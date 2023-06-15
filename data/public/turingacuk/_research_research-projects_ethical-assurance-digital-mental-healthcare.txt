@@ -1,0 +1,56 @@
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+The use of data-driven technologies in mental healthcare, such as machine learning or AI, poses a series of well-known ethical, social, and legal risks for matters such as data privacy, explainability of automated decisions, and respect for mental integrity. Providing assurance that these matters have been addressed responsibly requires a participatory approach that includes affected stakeholders within the design, development, or deployment of the respective technology. This project will work with a range of stakeholders to understand what issues matter most to them, and how to develop a justifiable method of assurance that helps promote trust and confidence in digital mental healthcare.
+The method of assurance that this project will rely upon is known as argument- based assurance. This is a process of using structured argumentation to provide evidence-based justification to another party that a system or product will operate as intended within a well-defined environment. Argument-based assurance is an established method of governance in safety-critical areas, and facilitates trustworthy communication between developers and stakeholders.
+Key to this method is the development of an assurance case, which serves as a formal and visual means for representing how a particular goal has been achieved, by reference to a set of claims that establish central properties about the system or project. In turn, these claims are warranted by reference to clearly documented evidence that can help stakeholders assess the overall justifiability of the assurance case (or, argument).
+Argument-based assurance has a range of supporting tools and mechanisms to enabled the development and review of assurance cases. For instance, there are models and argument patterns that serve as guides and templates for building an assurance case. In addition, there are best practices for how to frame an assurance case so that it supports a wide range of functions, such as anticipatory reflection, risk identification and minimisation, and accessible and transparent communication.
+This project will expand these tools and methods such that they can also provide assurance for key ethical goals, such as sustainability, accountability, fairness, and explainability. Because each goal presupposes a core set of normative values, it is vital that ethical assurance is an inherently participatory activity. Therefore, our project will also demonstrate how to support stakeholder engagement and participation and link these activities with the building of an assurance case.
+ 
+There already exist a wide range of standards for the assurance of a product or system’s safety, security, or reliability (e.g. NCAP standards for car safety). These standards of assurance are both important governance mechanisms and also valuable means of communicating and establishing trust between different stakeholder groups.
+However, similar standards or frameworks for ethical properties, such as sustainability, accountability, fairness, and explainability are, by comparison, not sufficiently nor widely established or accepted.
+By showing how a method of ethical assurance can support and enhance the governance of a project involving a digital mental healthcare technology, this project will develop both a theoretical framework and practical mechanism that can assist the design, development, and deployment of the technology.
+© The Alan Turing Institute
+2023. All rights reserved.
+The Alan Turing Institute, a charity incorporated and registered in England and Wales with company number 09512457 and charity number 1162533 whose registered office is at British Library, 96 Euston Road, London, England, NW1 2DB, United Kingdom.
+For website-related enquiries email
+[email protected]
+
+Explore the Institute
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Legal
+Awards

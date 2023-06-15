@@ -1,0 +1,57 @@
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+This work aims to explore how combinations of sensing instrumentation, actuation, and a spectrum of data analytics can improve and protect the assets within ecosystems such as a cities and farms. The work also aims for ‘joined-up thinking' about how such assets interact and impact upon each other in an ecosystem. The work has the potential to improve the long-term safety of such systems and the safety of people and property.
+An example of how critical ecosystems are considered is how water companies want to optimise customer quality of service and pipe lifetimes, but are not really concerned with transport infrastructures, and vice versa. Imagine a future where when one network detects a leak and the road traffic is automatically re-routed to avoid this. Better still the water network predicts a leak and schedules maintenance activities. This would enable more efficient ecosystem operation which in turn can make resources more sustainable.
+Such a 'joined-up' system has the potential to improve the long-term safety of such systems (i.e. water delivery and food production) and the safety of people and property.
+This multi-disciplinary project brings together researchers and user partners with expertise across sensor networks, food production (farming), and water networks. It addresses key priorities, end user needs, and challenges, with a diversity that means the solutions produced have the potential to be truly transformative and impactful.
+The work is scheduled to run over five years and aims to answer the following overarching research question: Through data analysis, how can we enhance critical ecosystems and the cyber-physical systems that support them continuously?
+The main research objectives are:
+Taking water distribution networks and precision agriculture as two examples of critical infrastructure, we will initially instrument a sensing computing infrastructure to obtain data from each type of critical infrastructure. Using data-driven modelling, the operation of these computing infrastructures will be mapped to a control model and the control devices will then be deployed to close the loop.
+Water distribution networks are large scale and topologically complex with many constraints that impact their operation (customer demand, weather, pipe lifetime etc). The main barriers for such systems are cost and resilience. In these kinds of systems, the data required to operate the control loop, guarantee computer system and water systems lifetimes, and keep both types of system secure, is not necessarily all the same, therefore understanding these trade-offs is very important.
+Agriculture also brings large scale and a diversity of data (soil, foliage, weather etc), but also the need to convince farmers to trust in precision agriculture systems. However, farmers do acknowledge the benefits that can be obtained from being part of a network of farms (e.g. early warning of infestations etc.).
+[email protected]
+© The Alan Turing Institute
+2023. All rights reserved.
+The Alan Turing Institute, a charity incorporated and registered in England and Wales with company number 09512457 and charity number 1162533 whose registered office is at British Library, 96 Euston Road, London, England, NW1 2DB, United Kingdom.
+For website-related enquiries email
+[email protected]
+
+Explore the Institute
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Legal
+Awards

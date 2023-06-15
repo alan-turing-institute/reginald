@@ -1,0 +1,297 @@
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+
+The [email protected] student cohort consists of the 2020 Enrichment scheme offer holders. Following the cancellation of the scheme for 2020/21, a remote engagement package ([email protected]) was organised in order to offer the students a chance to access excellent training in data science and AI, and to form meaningful connections with fellow students, and the wider Turing research network.
+As part of a Doctoral Showcase that took place on 19 February 2021, the [email protected] students produced one-slide posters and video presentations, which are available here. 
+The Showcase themes included Natural Sciences, Theoretical ML, Health Care & Life Sciences, Fairness & Explainability, Applied ML and Privacy & Security.
+ 
+Adam Ó Conghaile, University of Cambridge
+
+[email protected]
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Alys McAlpine, London School of Hygiene and Tropical Medicine
+
+[email protected]
+My research interests sit at the intersection of gender-based violence, migration, and public health using computational social science methods. My PhD explores low-wage labour migration pathways between Myanmar and Thailand to inform safer migration interventions aiming to prevent human trafficking and labour exploitation. This research incorporates complex systems and social network theory using egocentric network analysis, interactive visualisations, and multi-scale agent-based modelling. I am interested in collaborating with others on developing new methods to calibrate and validate ABMs informed by empirical mixed-methods data in data scarce research areas.
+Andrea Luppi, University of Cambridge
+
+[email protected]
+Coming from a background in philosophy and cognitive science, Andrea’s PhD at the University of Cambridge aims to characterise how the capacity for cognition and consciousness arises from the complex interactions between brain systems. To this end, Andrea’s work combines tools from information theory, network science and whole-brain computational modelling to study information-sharing in the brain across pharmacological and pathological states of consciousness, with the ultimate goal of promoting recovery of consciousness in brain-injured patients.
+Andreea Avramescu, University of Manchester
+
+ 
+[email protected]
+Andreea's research interests lie in the fields of personalised medicine, optimisation, and data science, and how all these can be used together to improve the availability of targeted treatments at a global scale. Andreea has an MSc in Data Science and has previously worked on various research problems from within the fields of social sciences, law, computer science, and operations research.
+ 
+Andrew Mitchell, UCL
+
+[email protected]
+Andrew Mitchell is a doctoral researcher in urban soundscapes at University College London (UCL). His research interests include soundscape analysis, machine learning, and human perception of complex sounds. His current work focusses on creating computational models for predicting soundscape assessment in urban public spaces, making use of cutting edge acoustics analysis and machine learning methods and applying them to modern smart city design.
+Anthony Lindley, University of Southampton and National Oceanography Centre
+
+[email protected]
+ 
+ 
+ 
+ 
+ 
+Arnaud Dyevre, London School of Economics
+
+[email protected]
+Arnaud is a first-year PhD student in economics, with interests in macroeconomics and public economics. He is interested in the formation of production networks—the complex webs of trading relationships between firms—and how their evolution relates to trends in inequality, innovation and market power. To address these questions, he uses large-scale administrative and patent data, as well as models inspired by graph theory. During his time at the Turing, he is interested to collaborate with, and learn from, anyone interested in (1) non-conventional economic data, (2) network formation and (3) partial differential equations or functional analysis.
+Bryn Elesedy, University of Oxford
+
+[email protected]
+I did my undergrad at Cambridge, focussing on maths and theoretical physics, after which I spent some time working in quantitative finance. I am now doing a DPhil in machine learning at Oxford, supervised by Varun Kanade and Yee Whye Teh. I am broadly interested in theoretical aspects of statistical machine learning, deep learning and reinforcement learning. In the past I have worked on the lottery ticket hypothesis and the implications of symmetry (invariance/equivariance) for learning and generalisation. During the pandemic I have also worked on COVID related projects as part of the Royal Society's DELVE initiative.
+ 
+Carlos Vladimiro Gonzalez Zelaya, Newcastle University
+
+[email protected]
+PhD student, part of the CDT in Cloud Computing for Big Data. Did a Bachelors in Maths, an MSc in Combinatorial Game Theory and an MRes in Cloud Computing. His main interests are algorithmic fairness and transparency. Specifically, he's interested in understanding and making use of data preprocessing techniques to detect and correct discriminatory behaviours in classification tasks. So far, he has developed two fairness-correcting methods and he is now working on a third paper on preprocessing pipelines optimisation.
+Chaoyi Lu, University College Dublin
+
+[email protected]
+Chaoyi is a PhD student from University College Dublin and main focus are Approximate Bayesian Computation, MCMC and relevant area. Current interests are network models including LPM , SBM, etc.
+ 
+ 
+ 
+ 
+ 
+ 
+Ekaterina Zossimova, University of Exeter
+
+[email protected]
+Ekaterina is pursuing a PhD in Physics with a focus on advanced computational electromagnetism for nanophotonics and biosensing. She uses a combination of classical and ab initio methods to predict how single molecules interact with plasmonic biosensors. She is interested in developing new methodologies based on machine learning to predict the optical response of these systems and is keen to connect with researchers from the Machine Learning for Molecules and Materials group at the Turing institute.
+Fergus Imrie, University of Oxford
+
+[email protected]
+Fergus is a DPhil (PhD) student at the Department of Statistics, University of Oxford. He is a member of the Oxford Protein Informatics Group (OPIG) and works closely with his industrial partner, Exscientia. His work is focused on the development of novel deep learning methods for applications to drug discovery. His interests span predictive modelling, generative modelling, and understanding human decision-making.
+ 
+Fu Xiang Quah, University of Cambridge
+
+[email protected]
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Hannah Nicholls, Queen Mary University of London
+
+[email protected]
+Hannah is researching machine learning applications to better understand the genetics of cardiovascular disease - specifically investigating the prioritisation of cardiovascular disease genes from genome-wide association studies. Her background is in biomedical science with previous experience in experimental electrocardiography research. Hannah’s research interests that she is looking to collaborate on are multi-omic data integration, machine learning for personalised medicine, bias in machine learning for biological applications, and data science approaches for improving experimental data interpretation.
+Heather Jackson, Imperial College London
+
+[email protected]
+My PhD thesis focuses on using 'omic datasets to understand and diagnose paediatric infectious diseases. I am interested in using bioinformatic approaches to identify novel biomarkers of infection and to explore the heterogeneity in the host response to infection at the genetic, transcriptional and translational level. I use multi-omic integration methods to harness the full potential that these datasets provide. I am interested in all elements of infectious diseases and 'omic data analysis, and would be interested in collaborating with people working in these fields at the Turing.
+Hector McKimm, University of Warwick
+
+[email protected]
+I am a third year PhD student at the University of Warwick, supervised by Gareth Roberts and Murray Pollock. I am on the Oxford-Warwick Statistics Programme (OxWaSP), a Centre for Doctoral Training (CDT) run by the Universities of Oxford and Warwick. My research is on Monte Carlo methods. I am interested in collaborating on novel algorithms for privacy-preserving statistical inference.
+ 
+ 
+Ilaria Manco, Queen Mary University of London
+
+[email protected]
+Ilaria Manco is a PhD student at the UKRI CDT in Artificial Intelligence and Music. Her primary research area is multimodal deep learning for music informatics, with a focus on developing audio-linguistic models to help machines understand and reason about music. During her time at the Turing, she is interested in collaborating on grounded language models and creative applications of AI. Prior to her PhD, she worked as a data scientist and obtained an MSci in physics from Imperial College London.
+Jason Gray, Royal Holloway University
+
+[email protected]
+Jason is a PhD cybersecurity student with the Systems & Software Security Lab at the Information Security Group (ISG) at Royal Holloway, University of London and the Systems Security Research Lab at King's College London where his research explores Malware Attribution from a binary perspective. He is supervised by Dr Jorge Blasco, Dr Daniele Sgandurra and Prof. Lorenzo Cavallaro. Jason’s research lies between computation forensics of binaries and linguistic forensics, in particularly the application of machine learning to those fields.
+ 
+James Wilsenach, DPhil Student
+
+[email protected]
+James is a neuroinformatics and bioinformatics researcher interested in consciousness and applications of machine learning to understand the mind, improve the lives of others and combat disease. James has particular interest in Brain-Computer Interaction (BCI) with an emphasis on helping those with decreased mobility and disorders of consciousness (DOCs). James' research focuses on eliminating bias caused by long range dependencies in neurobiological data, including neuroimaging, proteomics and microscopy modalities. James is most interested in furthering his understanding of unsupervised, semi-supervised and reinforcement learning methods while at the Turing, as a means to extract signal from noisy spatio-temporal and networks data in the neuroimaging and neuromicroscopy space (where high quality labelled data is rare). James is also interested in learning about AI-applications to BCI and has a background in practical application of neural networks and analysis of complex systems (signals processing and modelling).
+James Fulton, University of Edinburgh
+
+[email protected]
+I'm interested in the pragmatic application of machine learning to climate physics. Weather and climate poses a lot of interesting problems. And some of the solutions, but certainly not all, could be ML. Previously, I studied unsupervised ML for isolating the natural variability of our climate. More recently, I've been using cycleGANs to make our climate simulations match observations better. I'm also interested in how ML models can be used to replace the nastier parts of weather models.
+ 
+ 
+Josh Nevin, University of Cambridge
+
+[email protected]
+Josh is a PhD student at Cambridge predominantly working on Bayesian approaches to physical layer problems in optical communications networks. Coming from a physics background, Josh is particularly interested in how prior knowledge obtained from physical models can be used to enhance the performance and explainability of machine learning approaches. He is looking for collaborations in application areas in which approximate physical models exist and domains which require a more explainable, probabilistic approach to machine learning.
+Joshua Tan, University of Oxford
+
+[email protected]
+I am currently a doctoral student in computer science at Oxford studying under Samson Abramsky and Bob Coecke. For my thesis, I’ve been exploring different ways of applying category theory and sheaf theory to machine learning (especially deep generative methods). I also help run a research group called the Metagovernance Project (metagov.org) that does a lot of work in the modeling and specification of complex social systems, especially those that exist online.
+ 
+Junwei Yang, University of Cambridge
+
+[email protected]
+He is a second-year PhD student with experience in processing and analysis of biomedical images. His research interests mainly lie in the application of deep learning algorithms to extract and understand the pattern behind biomedical images, with specific focuses on the design of reconstruction and segmentation algorithms to enable fast image acquisition and computer-assisted diagnoses. He looks forward to collaboration on topics related to the extraction of latent information across different modalities of biomedical images.
+Kate Highnam, Imperial College London
+
+[email protected]
+Kate Highnam harnesses her professional experience in machine learning and cyber security to motivate her current research into domain adaption for intrusion detection with real world applications. Her working projects include a novel concept drift detector to later enhance the robustness of a black box machine learning model in a production environment and a novel cloud honeypot which gathers kernel-level logs. She welcomes further experience in control engineering/learning, optimal transport, Bayesian nonparametric modelling, and all things cybersecurity.
+Katharina Zuhlsdorff, University of Cambridge
+
+[email protected]
+Katharina is a second year PhD student at the Department of Psychology and DAMTP at the University of Cambridge. She researches the neural basis of reinforcement learning and relates this to disorders such as depression and addiction. She is interested in the translating findings from rodent models to humans, as well as applying deep learning algorithms, such as Graph Neural Networks, to large-scale datasets and relating behaviour with neuroimaging data. If you are interested in collaborating on the application of neural networks to big neuroscience data, feel free to get in touch.
+Kimberly Mai, UCL
+
+[email protected]
+Kimberly Mai is a PhD candidate at UCL researching representation learning for anomaly detection. Prior to commencing her studies, Kimberly worked in financial crime at a global investment bank and was funded by DeepMind to read a master’s degree in Data Science and Machine Learning. Beyond the scope of her PhD, she is interested in machine learning for security, explainable artificial intelligence, and learning with limited amounts of labelled data.
+ 
+ 
+Linus Too, University of Southampton
+
+[email protected]
+Linus Too is a Theoretical Physics PhD student working on String Theory. His research focuses on obtaining Quantum Information quantity using geometric techniques by the virtue of the Holographic principle. There is a quantity called entanglement entropy which can be represented by the area of a minimal surface and is characterized by the topology of such surface. This led him to become interested in applying topological data analysis on tensor network that models some key features of entanglement in spacetime.
+Lorenzo Zanisi, University of Southampton
+
+[email protected]
+Astrophysicist on a quest to understand how galaxies evolve in our Universe, with also a keen interest in medical applications of data science. Winner of a STEM for Britain 2019 Silver Award, he has publications in data-driven Monte Carlo modelling of populations, from galaxies to patients undergoing hypertension treatment. He developed an Out of Distribution detection framework to spot unrealistic galaxies in simulations, and he is interested in applications of generative models and graph neural networks in the healthcare sector.
+ 
+Marios Kalomenopoulos, University of Edinburgh
+
+[email protected]
+Marios is a third year PhD at the University of Edinburgh, working at the interface between cosmology and gravitational waves. He finished his physics undergraduate degree at the University of Athens, followed by a Masters in Theoretical Physics in Edinburgh. Now he studies how matter in the universe affects the propagation of gravitational waves and how the latter can be utilised to calculate cosmological parameters. For this he exploits data from large, numerical simulations. During his time in Turing he wants to learn more about working with big data and discover about new statistical techniques to analyse gravitational wave signals.
+Matthew Nixon, University of Cambridge
+
+[email protected]
+Matthew is a PhD student at Cambridge University working on exoplanet atmospheres. He has expertise in several areas of physics, including fluid mechanics and radiative transfer. He has substantial programming experience (Python/C++/Matlab) and has used statistical inference tools (e.g. MCMC) and supervised ML techniques (e.g. Random Forest) in his research. Matthew would love to collaborate with experts in other areas of ML, such as neural networks to develop surrogate atmospheric models, and Gaussian processes to analyse telescope data.
+Melike Dila Karatas, University of Exeter
+
+[email protected]
+Melike Dila is a doctoral student in Computer Science at the University of Exeter. Her PhD project combines machine learning with nature-inspired algorithms to optimise highly-parametrised predictive models. While the methods concern areas including engineering and applied optimisation problems, her primary application area is gene regulatory networks from computational biology domain. Her research interests span Evolutionary Computation & Optimisation, Machine Learning, Uncertainty Quantification and Data Visualisation. As her research is multi-disciplined, she is interested to collaborate with computer scientists, mathematicians and system biologists at the Turing.
+Michael Smith, University of Hertfordshire
+
+[email protected]
+Mike is interested in applying deep learning methods (particularly self-supervised, unsupervised, and generative learning methods) to cross-disciplinary problems in astrophysics, earth observation (EO), medical diagnosis and imagery, and other fields. His PhD work concentrates on building deep learning models that can efficiently mine and process very large scale (~petabyte!) astronomical datasets. He is also currently using deep learning to extract useful information from EO imagery data -- there is a surprising amount of overlap between EO and astronomy.
+Michelle Seng Ah Lee, University of Cambridge
+
+[email protected]
+Michelle is a PhD student at Cambridge Computer Lab in the Compliant and Accountable Systems group, supervised by Jat Singh and Jon Crowcroft. Her research focuses on end-to-end governance of unfair bias in machine learning. Her past publications include: - landscape and gaps of open source fairness toolkits, - ethical trade-offs in mortgage lending, - contrasting “fairness” definitions in computer science/philosophy/welfare economics. She’s looking for collaborators in ML fairness, especially researchers in Bayesian inference or causality.
+Mohammad Noorbakhsh, University of Warwick
+
+[email protected]
+Mohammad is a third-year PhD student in the MathSys CDT at the University of Warwick. His doctoral research focuses on developing forecasting models to improve long-lead prediction of drought. His research interests are Machine/Deep Learning, Reinforcement learning, Time Series, and Causality applied in real-world problems such as climate and finance. Before starting his PhD, he worked in financial services for several years. He earned three MSc degrees in finance (Cranfield), data science (Royal Holloway), mathematics (Warwick) and a BSc degree in computer science.
+Nitin Agrawal, University of Oxford
+
+[email protected]
+Nitin is a doctoral student in Computer Science at the University of Oxford supervised by Prof Sir Nigel Shadbolt. He started at Oxford as a Masters student on Commonwealth scholarship after graduating from the B.Tech program in Information Technology & Mathematical Innovations based at Cluster Innovation Centre, University of Delhi. His area of research involves privacy aware machine learning. He works on designing privacy-preserving protocols for training, inference and integrity attestation over Deep Neural Network architectures, primarily employing Secure Multi-Party Computation protocols, Federated learning and Homomorphic Encryption. He also focusses on ethics in AI and human factors associated with adoption, explanations and barriers to privacy preserving computation.
+Ondrej Bohdal, University of Edinburgh
+
+[email protected]
+Ondrej is currently a second-year PhD student in Data Science at the University of Edinburgh. He works on efficient meta-learning, with applications to problems such as dataset distillation, domain generalization and cross-domain few-shot learning. He is broadly interested in various aspects of machine learning, including the underlying mathematical theory and applications of ML to domains such as computer vision or NLP. He is especially keen to collaborate on projects where meta-learning could unlock new opportunities.
+Paul Röttger, University of Oxford
+
+[email protected]
+Paul Röttger is a DPhil candidate in Social Data Science at the Oxford Internet Institute. His research focuses on adapting natural language processing methods to address linguistic challenges in online hate speech detection and other applications. Currently, he is most interested in how pre-trained language models could be modified to better account for context dependence and language change.
+Prem Gill, University of Cambridge
+
+[email protected]
+Prem Gill is a PhD candidate leading the "Seals from Space: the study of Antarctic pack-ice seals by remote sensing" priority project with the Scott Polar Research Institute (SPRI), British Antarctic Survey (BAS) and World Wildlife Fund (WWF). For this, Prem explores the use of very high-resolution satellite imagery to study seals and their sea ice habitats. Prem is also interested in increasing opportunities for underrepresented groups to enter non-typical fields (e.g. polar / conservation science) at leading institutes.
+Quentin Paletta, University of Cambridge
+
+[email protected]
+ 
+ 
+ 
+ 
+ 
+ 
+Rafiah Badat, City, University of London
+
+[email protected]
+Rafiah is an NHS Speech and Language Therapist supporting children with language and learning needs. In 2019, Rafiah began an NIHR Clinical Doctoral Research Fellowship; her PhD involves developing a user co-designed digital therapy tool. During the pandemic, Rafiah has supported clinicians with remote working. As part of this, she is the lead author on the Royal College of Speech and Language Therapist’s COVID-19 Telehealth Guidance. She is currently on a part-time secondment at NHSX where she is supporting the digital transformation of health and social care.
+Rebecca Green, King's College London
+
+[email protected]
+Becki is a PhD student at King’s College London (Institute of Psychology, Psychiatry and Neuroscience), where she is supervised by Dr Petroula Proitsi and Professor Marcus Richards (UCL). Her current work looks at biological markers and risk factors of early dementia, and she is particularly interested in omics data, machine learning, epidemiology, and causal inference. She is keen to collaborate with others at the Turing, and is looking forward to learning from those applying similar methods in different fields. Twitter: @becki_e_green
+Sabrina  Li, University of Oxford
+
+[email protected]
+Sabrina Li is a DPhil candidate in the School of Geography and the Environment at the University of Oxford. She is interested in investigating the contributions of human-environment interactions on viral infectious disease spread using a combination of GIS, spatial epidemiology, and machine learning modelling techniques. At the Turing, She plans to explore how AI and data science can be integrated to understand complex human population behaviour for predicting the spread of emerging and re-emerging infectious diseases, and how it can be used towards developing a data-driven public health policy framework.
+Samuel Bell, University of Cambridge
+
+[email protected]
+Sam is a PhD student in Computer Science at the University of Cambridge. His research sits at the intersection of machine learning and the psychology of human learning, and he is broadly interested in whether, and in what circumstances, neural networks learn like humans. He aims to shed light on the complex learning dynamics, and surprisingly effective learning behaviour, of modern neural networks, using methods from psychology and cognitive science. Previously, Sam obtained his master’s in deep learning and natural language processing, also at Cambridge, and his bachelor’s in Computer Science from the University of Manchester. In between, he’s simulated financial crises in market risk at Goldman Sachs, built new retail banks at Thought Machine, and developed next generation credit scores at Credit Kudos. At the Turing, Sam is interested in applying his research to the domains of machine learning fairness and interpretability.
+Sophie Parslow, Loughborough University
+
+[email protected]
+Sophie’s research uses the method of conversation analysis, to examine how primary care receptionists communicate with patients, and how they make decisions about the services offered. As part of her project, Sophie focuses on the tacit categorisation of callers to healthcare services, asking: “Can AI be trained to identify, analyse and respond to implicit vocal cues in order to progress requests for primary care services?”.
+Syu-Ning Johnn, University of Edinburgh
+
+[email protected]
+Syu-Ning (Shunee) is currently a second-year PhD student from the Optimization and Operational Research research group at the University of Edinburgh. She is interested in mathematically modelling and formulating real-life supply chain problems using Combinatorial Optimisation techniques. Her research currently involves vehicle routing, facility location and other general network design problems in food logistics, taking customer uncertainty, driver workload balance and reliability issues into account. She looks forward to bringing Machine Learning into her model to deal with model deterioration, improve computational speed and analyse customer behaviours.
+Teddy Cunningham, University of Warwick
+
+[email protected]
+Teddy is a third-year PhD researcher at the University of Warwick. His primary research is focused on incorporating real-world knowledge into differentially private data release and synthesis, with a particular focus on the location domain. His other research involves quantifying and improving access to key urban services (e.g. schools, job centres, vaccination centres) via the public transport network. He is interested in collaborating with any Turing academic or student that has an interest in extending the work in these two important research areas.
+Thomas Statham, University of Bristol
+
+[email protected]
+ 
+ 
+Tiffany Vlaar, University of Edinburgh
+
+[email protected]
+Tiffany has a Physics BSc (Leiden University), Geophysics MSc (joint from TU Delft, ETH Zurich, RWTH Aachen), and a Theoretical Physics MSc (Perimeter Institute). For her Applied Mathematics PhD at the University of Edinburgh (joint with Heriot-Watt) she uses techniques from molecular dynamics and stochastic differential equations to develop new optimisation schemes for the training of deep neural networks. She's eager to talk about how to improve ML research in general and data applications that are not CIFAR/ImageNet.
+Umang Bhatt, University of Cambridge
+
+[email protected]
+Umang Bhatt is a PhD candidate in the Machine Learning Group at the University of Cambridge. His research interests lie within the transparency, fairness, and robustness of machine learning systems. He aims to build symbiotic human-AI teams, wherein an ML system provides domain experts with transparency into the system's reasoning. He is a Fellow at the Mozilla Foundation and was a Research Fellow at the Partnership on AI. Before moving to the UK, he received his BS and MS from Carnegie Mellon University.
+William Finnegan, University of Oxford
+
+ 
+[email protected]
+Bill is a social scientist whose doctoral research spans human geography and environmental education. He is exploring how secondary schools in the UK are responding to the climate crisis, the social practices of energy consumption in schools, and youth perspectives on climate futures. Bill is interested in how data feedback and visualisation of energy consumption and climate impacts can enable more sustainable schools and improve climate literacy in the classroom.
+ 
+© The Alan Turing Institute
+2023. All rights reserved.
+The Alan Turing Institute, a charity incorporated and registered in England and Wales with company number 09512457 and charity number 1162533 whose registered office is at British Library, 96 Euston Road, London, England, NW1 2DB, United Kingdom.
+For website-related enquiries email
+[email protected]
+
+Explore the Institute
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Legal
+Awards

@@ -1,0 +1,50 @@
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Failure diagnosis for large compute clusters using only message logs is known to be incomplete. Recent availability of resource use data provides another potentially useful source of data for failure detection and diagnosis. Early work combining message logs and resource use data for failure diagnosis has shown promising results. This paper describes the CRUMEL framework which implements a new approach to combining rationalized message logs and resource use data for failure diagnosis. CRUMEL identifies patterns of errors and resource use and correlates these patterns by time with system failures. Application of CRUMEL to data from the Ranger supercomputer has yielded improved diagnoses over previous research.
+CRUMEL has: (i) showed that more events correlated with system failures can only be identified by applying different correlation algorithms, (ii) confirmed six groups of errors, (iii) identified Lustre I/O resource use counters which are correlated with occurrence of Lustre faults which are potential flags for online detection of failures, (iv) matched the dates of correlated error events and correlated resource use with the dates of compute node hang-ups and (v) identified two more error groups associated with compute node hang-ups. The pre-processed data will be put on the public domain in September, 2016.
+E. Chuah, A. Jhumka, J. C. Browne, N. Gurumdimma, S. Narasimhamurthy and B. Barth, "Using Message Logs and Resource Use Data for Cluster Failure Diagnosis," 2016 IEEE 23rd International Conference on High Performance Computing (HiPC), Hyderabad, 2016, pp. 232-241. doi: 10.1109/HiPC.2016.035
+© The Alan Turing Institute
+2023. All rights reserved.
+The Alan Turing Institute, a charity incorporated and registered in England and Wales with company number 09512457 and charity number 1162533 whose registered office is at British Library, 96 Euston Road, London, England, NW1 2DB, United Kingdom.
+For website-related enquiries email
+[email protected]
+
+Explore the Institute
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Legal
+Awards

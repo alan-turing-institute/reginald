@@ -1,0 +1,65 @@
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Navigating parenthood is a bewildering experience for the newly initiated. Everything changes… almost daily. Just as you begin to feel as though you’ve learned the rhythm of your little one’s routine, they start to crawl! And this all has to be navigated while suffering from ever-increasing fatigue. Despite being a father for nine months now, I’m still shocked every day around midnight to find out it’s only 6pm!
+Perhaps it’s because I work in the Turing’s public policy programme, but I think parenting is a lot like trying to keep up with the social impacts of technological innovation. Similar to the hard-to-fathom rhythm of a child’s development, technology changes almost daily.
+So, when Camden Council decided to develop a Data Charter to guide its use of emerging data-driven technologies, it did the same thing that all new parents do when faced with a new challenge: it reached out to its community for help.
+The saying “it takes a village to raise a child” is an acknowledgement of the myriad challenges faced by all parents and the diverse forms of help that are required. Making decisions about how data ought to be used in the delivery of public services also requires a village. Well, a London borough to be precise.
+In late 2021, over the course of three weekends, Camden Council brought together 20 of its residents to co-develop a Data Charter, giving the residents a say in how their data will be collected, stored and used. This representative panel of Camden’s residents was asked about its views on issues such as:
+Questions such as these become more complex the more you explore them, so our project team wanted to equip the residents with the platform and technical knowledge necessary to engage, debate and reach a consensus. To provide the residents with background information on the ethical, social and legal issues around data, I put together a short guide, which I am now in the process of revising for a broader audience.
+In planning these sessions, we aimed to strike an appropriate balance between three components: the educational component (overseen by the Turing), which ensured that residents were equipped to deliberate on an equally informed basis; the deliberative component (overseen by public participation charity Involve), which enabled residents to reflect and deliberate through a series of structured exercises; and the practical component, i.e. the logistical processes put in place by Camden Council to ensure that this could all happen.
+The resulting Data Charter, which was published by Camden Council last week, emphasises principles such as greater transparency, improved accessibility of information, and clear mechanisms of accountability, to ensure that all residents can be involved in decisions about the delivery of services that affect them. But alongside these principles, which are reinforced by data protection and privacy laws, is a positive vision for how data ought to be used. Far from being an afterthought, ethical values such as fairness and equity are deeply woven into the charter, expressing a clear commitment from the residents that data should be treated not solely as an economic commodity, but also as a co-developed resource that promotes public good.
+Just as raising a child works best with support, I believe that this collaboration with residents has produced a more inclusive, forward-looking and mutually-beneficial Data Charter than we ever could have achieved alone.
+Media theorist Marshall McLuhan coined the term ‘global village’ in the 1960s to describe how technology extends our communicative abilities across the globe, creating an interconnected world that can feel more like a village.
+However, technology clearly doesn’t affect everyone in the global village equally. The positive impacts continue to accrue to wealthier nations and those individuals who have the greatest capacity to use and understand technology, while the negative impacts exacerbate existing social injustices that disproportionately affect marginalised or vulnerable populations. Whether intentional or not, these consequences are always the result of a series of choices to design, develop and deploy data-driven technologies in a specific social context.
+As our lives become increasingly influenced by data-driven technology, the only way to ensure a more equitable society is to create accessible, public spaces for debate, which are supportive and inclusive to diverse voices. When faced with the enormity of this challenge, it can be easy to get overwhelmed. Data flows across the boundaries of boroughs, cities, countries and continents. And, therefore, its governance can extend beyond the regulatory remit of any one local council, regional body, or even national government.
+Despite making up only ~3% of the Capital’s nine-million-plus population, Camden has taken an important, and in many ways unprecedented, step towards a more positive vision for how data can be used for the public good. Camden Council’s decisions about how it collects data to inform policy decisions, or which data is shared with local healthcare providers, will help inform similar decisions made by other local authorities.
+Here in our Camden-based offices in the British Library, the Turing will continue to work closely with the council and its residents to support its vision. However, as a national institute, it is also vital that we build on the lessons of this project and explore how the initiative might be applied in other councils around the UK.
+After all, no two children are the same!
+Find out more and connect with the researchers:Developing a data charter with Camden Council
+ 
+Top image: Zck_ / Unsplash
+© The Alan Turing Institute
+2023. All rights reserved.
+The Alan Turing Institute, a charity incorporated and registered in England and Wales with company number 09512457 and charity number 1162533 whose registered office is at British Library, 96 Euston Road, London, England, NW1 2DB, United Kingdom.
+For website-related enquiries email
+[email protected]
+
+Explore the Institute
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Legal
+Awards

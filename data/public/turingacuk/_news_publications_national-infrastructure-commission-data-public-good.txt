@@ -1,0 +1,52 @@
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+New technologies like artificial intelligence and machine learning could help cut delays and disruptions across the UK’s infrastructure network. The National Infrastructure Commission’s report examined the opportunities that these new innovations present, and made recommendations to increase open data sharing to make the most of them. A first Call for Evidence was made on 15 February 2017, with a second following on 27 July 2017.
+The recommendation is made that the government should encourage the uptake of new data-driven solutions to the asset management of critical infrastructures. Potential barriers to rollout include the differing levels of readiness and uncertainty towards integrating new methods into large-scale existing practices. The development of a national ‘digital twin’ of UK infrastructure can help to bridge geographic and sectorial divides, provide a framework for determining sensor locations, and serve as a technology demonstrator for new tools.
+The submission also identifies smart traffic management as another key way to utilise data to improve our cities. By deploying open and social media data it is possible to facilitate smart urban management, repurposing existing data created by third parties and the government itself, thus creating ‘lightweight’ smart cities.
+Lastly it is suggested that the effective use of big data requires greater standards to make the data accessible and usable. Currently, combining datasets from numerous sources and getting value from them is an arduous task. This would be made easier by having defined and widely accepted standards for data structures, labelling, cleanliness, security procedures, and sharing methods.
+Weisi Guo, Turing Fellow, University of WarwickMark Girolami, Programme Director for Data-Centric EngineeringDarren Grey, Programme Manager for Data-Centric EngineeringDin-Houn Lau, Department of Mathematics, Imperial CollegeRicardo Silva, Turing Fellow, UCLVictoria Stephenson, EPICentre, UCLTim Sullivan, Applied Mathematics, Free University of BerlinSebastian Vollmer, Turing Fellow, University of WarwickDaniel Graham, Department of Civil and Environmental Engineering, Imperial CollegeScott Hale, Turing Fellow, University of OxfordMohammed Elshafie, Department of Engineering, University of CambridgeJulie McCann, Department of Computing, Imperial College
+© The Alan Turing Institute
+2023. All rights reserved.
+The Alan Turing Institute, a charity incorporated and registered in England and Wales with company number 09512457 and charity number 1162533 whose registered office is at British Library, 96 Euston Road, London, England, NW1 2DB, United Kingdom.
+For website-related enquiries email
+[email protected]
+
+Explore the Institute
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Legal
+Awards

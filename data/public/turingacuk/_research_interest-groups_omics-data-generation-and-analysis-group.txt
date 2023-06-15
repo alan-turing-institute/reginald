@@ -1,0 +1,60 @@
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+The group aims to bring together Turing Fellows who have a research interest in genomics, proteomic, transcriptomic, metabolomic technologies to share best practice in experimental design and develop new methodologies to interpret these data through the application of machine learning, AI and novel computational and mathematical methods.
+Modern omic methods enable the generation of large amount of biological data with ever decreasing cost from a single experiment. However, badly designed experiments can result in worthless data. This interest group aims to ensure that these challenges are resolved before the first experiment has begun.
+With the advent of whole-genome sequencing, single-cell sequencing and the advances in mass spectrometry methods, good experimental design and data analysis methods are more important than ever. Our objective is, therefore, to share best practice at the interface between data sciences and experimental biologists to ensure reproducible science and improve research outcomes. This meets the Turing goal to "advance world-class research and apply it to real-world problems."
+Challenges: Experiments are easily confounded by other variables, and poor experimental design may prevent answering the key research questions.
+Example output: Publication of best practice methods.
+Challenges: Machine learning is incredible powerful; however, in the biomedical contact the results of model may be complex to interpret and implement the results.
+Outcome: Strategies for design and interpreting machine learning strategies for real world impact.
+Click here to request sign-up and join
+Andrew Holding [email protected]
+Ben MacArthur [email protected]
+ 
+Heather Jackson, Imperial College LondonMichal Zulcinski, University of LeedsLaurent Gatto, Université catholique de LouvainSrijit Seal, University of CambridgeVasiliki Rahimzadeh, Stanford UniversityFotios Drenos, Brunel University LondonZhi Yao, LifearcAtif Khan, Newcastle University (WCMR, CDT for Big Data & Newcastle AI Lab)Jack Kelly, University of ManchesterKonstantinos Thalassinos, University College LondonRob Ewing, University of SouthamptonAnas Rana, University of BirminghamBecki Green, King’s College LondonNazanin Kermani, Imperial College LondonNathan Skene, Imperial College LondonSarvesh Nikumbh,  Imperial College London & MRC London Institute of Medical SciencesJean Baptiste Cazier, University of BirminghamBrian Schilder, UK Dementia Research Institute at Imperial College LondonFotios Drenos, Brunel University LondonAndrew Owen, University of BirminghamAladdin Ayesh, De Montfort University, LeicesterJames Timmons, William Harvey Research Institute, Barts & The London School of Medicine & Dentistry, Queen Mary University of London
+ 
+© The Alan Turing Institute
+2023. All rights reserved.
+The Alan Turing Institute, a charity incorporated and registered in England and Wales with company number 09512457 and charity number 1162533 whose registered office is at British Library, 96 Euston Road, London, England, NW1 2DB, United Kingdom.
+For website-related enquiries email
+[email protected]
+
+Explore the Institute
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Legal
+Awards
