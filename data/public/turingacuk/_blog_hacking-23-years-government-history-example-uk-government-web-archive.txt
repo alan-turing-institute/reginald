@@ -1,0 +1,63 @@
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Web archives provide a key resource for the public. They allow us to access a wide range of data reflecting all areas of a society but, as they are large and meticulously maintained datasets, they can be daunting and difficult to navigate. 
+In December 2019, The Alan Turing Institute and The National Archives co-organised a Data Study Group challenge. Data Study Groups (DSGs) are events hosted by the Turing, which bring together some of the top talent from data science, artificial intelligence, and wider fields from across the world, to analyse real-world data science challenges.
+The culmination of that work is now available to read via the published Data Study Group report ‘Discovering topics and trends in the UK government web archive’ here.
+
+This DSG brought together a group of international, multi-disciplinary researchers in a hackathon format, to explore new ways of accessing the UK Government Web Archive (UKGWA). The UKGWA is a collection of UK central government information published on the web and managed by The National Archives, (the official archive and publisher for the UK Government and for England and Wales). The web archive includes videos, tweets, images and websites dating from 1996 to present, housing more than five billion resources, with hundreds of thousands of page views per month. The data covers a wide range of topics, from health to international policy.
+The DSG provided a chance to apply innovative data science methods to current challenges related to accessing and researching this vast resource. The size, variety of file formats, and complexity of this vast collection makes the discoverability of its content challenging to the user and to the search service. The study group’s aims were to learn what approaches could be used to assist in understanding the UKGWA data, and to learn the most viable approaches for improving data search for users.  
+The collaboration between The National Archives and The Alan Turing Institute brought together computational and collections expertise that investigated potential future applications with the UKGWA and opened further avenues for related research, as well as providing practical recommendations for improvements to service delivery.
+In brief, the main research challenge included the use of natural language processing, deep learning language models and clustering to enhance search and discovery in this vast archive, either through browsing by subject area, or finding similar material to subsets of documents. One of the aims was to build an algorithm capable of identifying similar documents and inferring the likely topics that they cover (e.g. “climate change” or “healthy living”). 
+The research questions and high-level aims of this challenge were to investigate approaches for improving resource discovery within the UKGWA collection, using approaches led by evidence from users. The project team’s aim was, through experimentation, to investigate approaches for improving resource discovery within the UKGWA collection.
+The main outcomes of the collaboration appear in a 50-page report. The report is a detailed presentation of (i) the data; (ii) the research problems and methods; and, most importantly, (iii) recommendations for implementation of some of the findings in order to improve services and access to the UKGWA.
+David Beavan, the Principal Investigator of this DSG challenge said: “It was such a pleasure to see this collaboration come to fruition over the course of the week. Initiated by Turing Fellow, Barbara McGillivray and expertly facilitated by Fazl Barez, it consisted of an interdisciplinary team, with wide-ranging expertise only the Turing could draw together. I also want to acknowledge the hard work both Turing and The National Archives teams dedicated to preparing for this.”
+Engagements such as this show that arts, humanities, and culture are important and growing parts of the Turing’s activities. David Beavan believes “Successful AI and data science is dependent on the humanities, and in particular humanities ways of thinking. They let us work with conflicting influences, ambiguities and perspectives, while focusing on people, heritage and our culture.”
+Most importantly, this DSG helped cement a truly deep and lasting collaboration with The National Archives. It gave fresh new directions to challenges, suggesting innovative research and development paths to explore. This has been a springboard for additional project proposals and collaborations, the DSG was just the beginning.
+
+This was highly collaborative and interdisciplinary accomplishment; it would not have been possible without everyone’s dedication. Read the published Data Study Group report ‘Discovering topics and trends in the UK government web archive’ here. 
+You can learn more about The Alan Turing Institute’s Data Study Groups here. If your corporate, public, third sector or academic organisation has a data science or AI challenge that needs tackling, Data Study Groups may be of interest to you. We welcome new challenges. Find out more.
+© The Alan Turing Institute
+2023. All rights reserved.
+The Alan Turing Institute, a charity incorporated and registered in England and Wales with company number 09512457 and charity number 1162533 whose registered office is at British Library, 96 Euston Road, London, England, NW1 2DB, United Kingdom.
+For website-related enquiries email
+[email protected]
+
+Explore the Institute
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Legal
+Awards

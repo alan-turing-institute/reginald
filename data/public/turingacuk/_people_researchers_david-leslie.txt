@@ -1,0 +1,54 @@
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+David Leslie is the Director of Ethics and Responsible Innovation Research at The Alan Turing Institute and Professor of Ethics, Technology and Society at Queen Mary University of London. He previously taught at Princeton’s University Center for Human Values, where he also participated in the UCHV’s 2017-2018 research collaboration with Princeton’s Center for Information Technology Policy on “Technology Ethics, Political Philosophy and Human Values: Ethical Dilemmas in AI Governance.” Prior to teaching at Princeton, David held academic appointments at Yale’s programme in Ethics, Politics and Economics and at Harvard’s Committee on Degrees in Social Studies, where he received over a dozen teaching awards including the 2014 Stanley Hoffman Prize for Teaching Excellence. He was also a 2017-2018 Mellon-Sawyer Fellow in Technology and the Humanities at Boston University and a 2018-2019 Fellow at MIT’s Dalai Lama Center for Ethics and Transformative Values.
+David is the author of the UK Government’s official guidance on the responsible design and implementation of AI systems in the public sector, Understanding artificial intelligence ethics and safety (2019) and a principal co-author of Explaining decisions made with AI (2020), a co-badged guidance on AI explainability published by the Information Commissioner’s Office and The Alan Turing Institute. After serving as an elected member of the Bureau of the Council of Europe’s (CoE) Ad Hoc Committee on Artificial Intelligence (CAHAI) (2021-2022), he was appointed Specialist Advisor to the CoE’s Committee on AI where he has led the writing of the zero draft of its Human Rights, Democracy and the Rule of Law Impact Assessment for AI, which will accompany its forthcoming AI Convention. In his advisory role with the CoE, David led his team in writing a Primer to support the meaningful participation of citizens and civil society organizations in the stakeholder outreach of the CAHAI’s Feasibility Study, published March 2021 and translated into French and Dutch. He and his team were then asked by the CoE to carry out research into the Impact Assessment Instrument to be submitted to the Council of Ministers as part of the CoE legal framework on AI and published the 335-page Human Rights, Democracy, and the Rule of Law Assurance Framework for AI Systems  submitted in September 2021.  As part of his international work, he also serves on UNESCO’s High-Level Expert Group steering the implementation of its Recommendation on the Ethics of Artificial Intelligence, a first-of-its-kind document adopted by the 193 Member States of the Organization.
+David is on the editorial board of the Harvard Data Science Review (HDSR) and is a founding editor of the Springer journal, AI and Ethics. He is also Principal Investigator of a UKRI/ESRC-funded project called PATH-AI: Mapping an Intercultural Path to Privacy, Agency and Trust in Human-AI Ecosystems, which is a research collaboration with RIKEN, one of Japan’s National Research and Development Institutes founded in 1917. More recently, he has received a series of grants from the Global Partnership on AI, the UK Engineering and Physical Sciences Research Council, and BEIS to lead a project titled, Advancing Data Justice Research and Practice, which explores how current discourses around the problem of data justice, and digital rights more generally, can be extended from the predominance of Western-centred and Global North standpoints to non-Western and intercultural perspectives alive to issues of structural inequality, coloniality, and discriminatory legacies. This project yielded collaborations with research teams from Aotearoa (New Zealand), Australia, China, India, Pakistan, Uganda, Cameroon, Kenya, Brazil, Chile, and Bolivia, and ultimately the publication, in March 2022, of 12 project reports from the field as well as a Project Documentary, an Integrated Literature Review, Data Justice Stories: A Repository of Case Studies, Data Justice in Practice: A Guide for Policymakers, Data Justice in Practice: A Guide for Developers, and Data Justice in Practice: A Guide for Impacted Communities.
+David was a Principal Investigator and lead co-author of the NESTA-funded Ethics review of machine learning in children’s social care(2020). His other recent publications include ‘The Ethics of Computational Social Science’, (2023) published In Handbook of Computational Social Science for Policy for the European Commission Joint Research Centre/Centre for Advanced Studies, ‘Artificial intelligence and the heritage of democratic equity’ (2022) published by The Venice Commission of the Council of Europe, the HDSR articles “Tackling COVID-19 through responsible AI innovation: Five steps in the right direction” (2020) and “The arc of the data scientific universe” (2021) as well as Understanding bias in facial recognition technologies (2020), an explainer published to support a BBC investigative journalism piece that won the 2021 Royal Statistical Society Award for Excellence in Investigative Journalism. David is also a co-author of Mind the gap: how to fill the equality and AI accountability gap in an automated world (2020), the Final Report of the Institute for the Future of Work’s Equality Task Force and lead author of “Does AI stand for augmenting inequality in the COVID-19 era of healthcare” (2021) published in the British Medical Journal. In his shorter writings, David has explored subjects such as the life and work of Alan Turing, the Ofqual fiasco, the history of facial recognition systems and the conceptual foundations of AI for popular outlets from the BBC to Nature.
+ 
+David’s recent and upcoming invited lectures, talks, and public appearances include:
+David's current research focuses on digital ethics, algorithmic accountability, explainability, and the social and ethical impacts of machine learning and data-driven innovations. In his wider research, David studies the moral and ethical implications of emerging technologies. In particular, he is keen to question how the biospherically and geohistorically ramifying scope of contemporary scientific innovation (in areas ranging from AI and synthetic biology to nanotechnology and geoengineering) is putting pressure on the conventional action-orienting categories and norms by which humans, at present, regulate their behaviour.
+© The Alan Turing Institute
+2023. All rights reserved.
+The Alan Turing Institute, a charity incorporated and registered in England and Wales with company number 09512457 and charity number 1162533 whose registered office is at British Library, 96 Euston Road, London, England, NW1 2DB, United Kingdom.
+For website-related enquiries email
+[email protected]
+
+Explore the Institute
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Legal
+Awards

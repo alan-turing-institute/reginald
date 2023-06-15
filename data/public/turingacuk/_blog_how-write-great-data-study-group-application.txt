@@ -1,0 +1,62 @@
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+The point of this post is to give you some guidance on what we’re looking for when we review the applications. I hope you find it helpful.
+Back in November, I headed home from the office early and opened up 130 applications for the Data Study Group which coming up in December 2017.
+Some of the applications were outstanding. We had students from mathematics, statistics, bioinformatics, computer science, engineering, political science, psychology and philosophy. There were data scientists working in startups and multinational corporations (and a few companies in between!) It was a joy to read how data science was being harnessed and advanced by so many interesting people.
+But (there’s always a but) some of the applications were difficult to score.
+I’ll summarise the questions you will be asked in the application form::
+For the first two questions we also ask you to share with us some links that provide some evidence for your answers.
+We ask about technical skills because we want to deliver the very best data science solutions to real world problems. There are lots of ways to evidence that you have technical skills, but a list of programming languages is not a great one. Think about how the challenge team would benefit from your expertise. What problems have you solved using these skills? Why might they be relevant for a fast-paced data study group week?
+A great way to share evidence for your technical skills is to share links to GitHub repositories. We understand that not everyone is able to publicly share the code they’ve written, so a dropbox link, or a link to a google drive file, works very well. The best answers provide specific links to skills that were highlighted in the technical skills answer.
+Another top tip from a busy person: check that the links work before you send them. Write up your application outside of the google form and send it to a friend. Make sure they can access all the files you want the reviewers to see.
+Making sure all our DSG participants have fun and learn from each other is of equally high priority as our goal of delivering world class solutions.
+I noticed when I read the December applications that most people answered a version of “What collaborative or interdisciplinary work have you done?” These answers missed a focus on how your team would benefit from having you there. Just because you have worked with others doesn’t mean you’re good at it. Show us how you will help complete a challenging project in one week.
+Here’s my second top tip: clear communication is key. Your application itself is evidence of how well you can convey your expertise to an audience outside of your specialty. Can you bring out the best in others? Have you done this in the past? Can you be creative in how you evidence this understanding of your teammates’ motivations? (I think you can!) Do you have leadership or project management expertise? Make us excited to have you with us for the week!
+Your answer to the question of what you want to get out of the Data Study Group contributes to your score in two distinct ways. The first is whether you understand what a data study group entails: are your expectations aligned with what can be achieved during the week? Have you accurately assessed how you can contribute and what you can learn?
+We also want to test whether our Data Study Group is right for you. Are you looking to change the world when you graduate from your PhD? Do you want a taster of what industry collaboration would look like? Are the opportunities to work with real world data limited in your current position? Data Study Groups allow us to share the experience that we have very day at the Turing of working with great people from a huge range of backgrounds from around the world.
+We look forward to hearing from you with your applications for our next Data Study Group.
+© The Alan Turing Institute
+2023. All rights reserved.
+The Alan Turing Institute, a charity incorporated and registered in England and Wales with company number 09512457 and charity number 1162533 whose registered office is at British Library, 96 Euston Road, London, England, NW1 2DB, United Kingdom.
+For website-related enquiries email
+[email protected]
+
+Explore the Institute
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Legal
+Awards

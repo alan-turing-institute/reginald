@@ -1,0 +1,57 @@
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+The Alan Turing Institute and Ofcom have worked together to analyse more than 2.3 million tweets directed at Premier League footballers over the first five months of the 2021/22 season.
+The study found that nearly 60,000 abusive posts were sent in the period, affecting seven in ten Premier League players. It also found that 68% of players (418 out of 618) received at least one abusive tweet, and one in fourteen (7%) received abuse every day.
+Researchers discovered that half of all abuse towards Premier League footballers is directed at twelve particular players. These players each received an average of 15 abusive tweets every day.
+The team developed a machine learning model that was trained on thousands of tweets until it could automatically identify whether or not a tweet was abusive. It was trained using two cutting-edge techniques: ‘active learning’ (in which the model essentially chose what data it needed to learn from) and ‘adversarial data generation’ (in which the model learnt from data that has been created in order to trick it).
+To provide a benchmark for the model and a more in-depth breakdown of the tweet content, the team also hand-labelled 3,000 tweets, categorising them as either ‘abuse’, ‘positive’, ‘critical’ or ‘neutral’.
+The model used to identify the abusive tweets was developed as part of The Alan Turing Institute’s Online Harms Observatory, led by their Online Safety Team. 
+Ofcom, the UK's communications regulator, is holding an event today (Tuesday 2 August) to discuss these findings. Hosted by broadcast journalist and BT Sport presenter, Jules Breach, the event will hear from presenter and former England player Gary Lineker; Manchester United player Aoife Mannion; Professional Footballers' Association Chief Executive Maheta Molango; and Kick It Out Chair Sanjay Bhandari.
+Dr Bertie Vidgen, lead author of the report and Head of Online Safety at The Alan Turing Institute said: “These stark findings uncover the extent to which footballers are subjected to vile abuse across social media. Prominent players receive messages from thousands of accounts daily on some platforms, and it wouldn’t have been possible to find all the abuse without the innovative AI techniques developed at the Turing.
+“While tackling online abuse is difficult, we can’t leave it unchallenged. More must be done to stop the worst forms of content to ensure that players can do their job without being subjected to abuse.”
+Read the full story, view the report or find out more about The Online Harms Observatory at The Alan Turing Institute.
+© The Alan Turing Institute
+2023. All rights reserved.
+The Alan Turing Institute, a charity incorporated and registered in England and Wales with company number 09512457 and charity number 1162533 whose registered office is at British Library, 96 Euston Road, London, England, NW1 2DB, United Kingdom.
+For website-related enquiries email
+[email protected]
+
+Explore the Institute
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Legal
+Awards

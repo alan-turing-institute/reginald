@@ -1,0 +1,60 @@
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Header image credit: a humpback breaches (c) fernando reyes 
+We spoke to Turing Lecturer and nature filmmaker Tom Mustill about his encounter with a whale in California, how AI can help us speak to whales and what developments in AI and animal communication he’s most excited about. 
+In 2015 I was kayaking with my friend in Monterey Bay, California, when a humpback whale the size of three T-Rexes leapt out of the ocean and landed on us. A nearby tourist captured the moment by chance. We nearly died, and scientists who analysed the video told us we only survived because the whale saw us and turned to avoid us at the last minute. 
+As a result of this encounter I learnt about how artificial intelligence (AI) is being used to decode patterns in animals. Researchers were able to use AI to identify the whale - I now know how old he is, who his mother is and where he was born. I can follow his life every time another tourist takes a photo of him and the AI tool HappyWhale WhaleID identifies him.
+As a biologist who has spent a lot of time squinting at rare birds in forests or at pilot whale fins in the sea trying to identify them, this was a revelation to me. I then learnt that other AI tools are being used to find patterns in animal communications, with big expeditions currently working to decode whale speak. I became fascinated by this.
+A perhaps unsurprising problem with learning to speak whale is that we are humans! The sea is dangerous and vast and we are badly adapted to listen to their wild lives. Now recording robots, and other devices, can go there for us and listen to their communications without disturbing them. This includes the young ones learning to talk. We can now see the context of how they talk, what is happening, which whales are speaking, and can start to discover patterns that give clues as to whether they have rules in their ‘speech’, like those of our language. 
+Another problem humans have with looking for other kinds of language is that we are trapped in our own ways of thinking - we might not be able to see other kinds of language because we can only try to find patterns similar to our own language. This is where AI comes in. It can see patterns we miss and do things that we cannot on vastly bigger scales.
+This is what is really exciting. Current expeditions are hoping to record huge samples of wild whale communications - machine learning and other AI analysis can then help us find patterns in these recordings that we cannot perceive. This has already been demonstrated in human languages, where AI has discovered patterns that humans are unable to detect in large datasets of written or spoken language, and translate between them in a totally different way than human translators - this is how Google Translate works.
+That there are fish that live in the anus of sea cucumbers! Also that orcas have teamed up with humans to go hunting in Australia, and other orcas had a craze for wearing salmon hats. 
+An exciting development is that these tools are becoming more general purpose and available to the public. Anyone can already use AI on their phones to identify birds by their song, and plants from photographs . I don't think it is far-fetched to think that soon we will be able to take a picture of something in nature, like a bird in a tree, and  then find out information such as what species the animal is, who the individual is, what tree they are sitting on, what rock that tree is growing on, how old the animal is and perhaps even what they are chirping. 
+I think if quantum computing takes off, this will be huge. If biology is the study of finding patterns in nature, then making pattern-finding tools vastly more effective and powerful will reveal new patterns in nature.
+Hope and wonder. I also hope people will learn that there are still many things we don't understand about how animals communicate, that technology is not always bad for nature and that some of these tools can help us heal our broken relationship with other living creatures.
+
+© The Alan Turing Institute
+2023. All rights reserved.
+The Alan Turing Institute, a charity incorporated and registered in England and Wales with company number 09512457 and charity number 1162533 whose registered office is at British Library, 96 Euston Road, London, England, NW1 2DB, United Kingdom.
+For website-related enquiries email
+[email protected]
+
+Explore the Institute
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Legal
+Awards

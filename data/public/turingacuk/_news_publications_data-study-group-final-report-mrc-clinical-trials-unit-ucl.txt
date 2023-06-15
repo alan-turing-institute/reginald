@@ -1,0 +1,54 @@
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Monitoring in clinical trials: Identifying poor performance at recruitment sites
+This Data Study Group (DSG) Challenge aimed to build a human-in-the-loop machine learning model that could assist the Medical Research Council Clinical Trials Unit (MRC CTU) at University College London, in identifying clinical trial sites that are performing poorly and require monitoring intervention. When running clinical trials, patient safety is the greatest priority, with robust operation a secondary but nevertheless key feature in ensuring successful outcome of the trial. Poor performance therefore relates to any trial conduct that could compromise safety or lead to variation in how a trial is conducted between sites, making monitoring trials a large and complex challenge.
+The CTU is responsible for ensuring that all clinical trial sites gather quality data, while also protecting patient rights and well-being. Currently risk-based monitoring is used to evaluate whether individual sites are following trial protocol. This approach relies on pre-defined metrics, such as those measuring the correct and timely completion of trial forms, as indicators of site performance and uses a trigger system based on those indicators to alert the CTU when a site visit is considered necessary. However, a recent study found that the intuitively developed pre-defined metrics were not sufficient at discriminating sites requiring a site visit, where relevant features may have been missed.
+The purpose of this DSG challenge was therefore to undertake an initial investigation into whether machine learning approaches can improve identification of poorly performing sites.
+Data Study Group team. (2022, September 13). Data Study Group Final Report: MRC Clinical Trials Unit, UCL. Zenodo. https://doi.org/10.5281/zenodo.7075637
+PI: Louise Coutts
+2.3 MB
+© The Alan Turing Institute
+2023. All rights reserved.
+The Alan Turing Institute, a charity incorporated and registered in England and Wales with company number 09512457 and charity number 1162533 whose registered office is at British Library, 96 Euston Road, London, England, NW1 2DB, United Kingdom.
+For website-related enquiries email
+[email protected]
+
+Explore the Institute
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Legal
+Awards
