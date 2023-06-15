@@ -1,0 +1,61 @@
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+AMSTERDAM, 15 JULY 2021 – The world’s first 3D printed steel bridge opens to the public today: a  pedestrian structure located in the city centre of Amsterdam. The bridge is a result of a multi-disciplinary team of experts collaborating on the future design of public spaces.
+The Alan Turing Institute’s data-centric engineering (DCE) programme has been integral to the bridge’s development. They have teamed with Dutch scale up MX3D and other global collaborators to install the bridge over Oudezijds Achterburgwal canal.
+The bridge was not only printed by robotic arms, but is also equipped with an innovative sensor network, linked to a ‘digital twin’ computer model that monitors its performance in real-time. Everyone that walks, runs, or cycles over the bridge will generate data, which will help to monitor the bridge’s structure and provide information about how it’s being used.
+The bridge has the potential to revolutionise how urban infrastructure is designed, built and maintained. 3D printed steel is a new material, which may have the power to radically change conventional construction and overhaul the building industry.
+As a new material, safety is crucial. After extensive pre-installation testing, the bridge team has also created an inbuilt ‘digital twin’ of the physical structure. This means that sensors built into the bridge will constantly be gathering data on strain, displacement, vibration, air quality and temperature.
+This data will be used to create a digital version – or twin – of the bridge. This digital twin can then predict how the structure will behave as the bridge is used. So, not only can maintenance needs be highlighted at the earliest opportunity, but the digital twin will also help engineers understand how 3D printed steel might be used for larger scale and more complex building projects.
+DCE Programme Director Mark Girolami said, “We are incredibly excited about the 3D printed bridge project. Not only is it a stunning design, but with the sensors inbuilt into the fabric of the bridge it is also pioneering ground-breaking digital twin technologies. It is a significant step towards making huge changes to how we think about and improve the engineered world and our built environment. It is fantastic to see the project coming to life and the public engaging with it.”
+The bridge is an international collaborative effort. It was designed and built in the Netherlands by Joris Laarman Labs and 3D printing company MX3D. Researchers at The Alan Turing Institute in the UK undertook the materials testing and are designing the digital twin, incorporating San Francisco company Autodesk’s software.
+It is living science. Simply by walking or cycling over the bridge the public is contributing to a potentially world-changing scientific endeavour.
+Cover photo credit/caption: Her Majesty the Queen of the Netherlands, Máxima, opens the first 3D printed steel bridge in the oldest neighbourhood of Amsterdam. Photo by Adriaan de Groot.
+Turing researcher Eric Daub explains why we created a ‘digital twin’ for the world’s first 3D printed steel bridge.
+A detailed look at the science behind the bridge.
+Location of the bridge
+
+© The Alan Turing Institute
+2023. All rights reserved.
+The Alan Turing Institute, a charity incorporated and registered in England and Wales with company number 09512457 and charity number 1162533 whose registered office is at British Library, 96 Euston Road, London, England, NW1 2DB, United Kingdom.
+For website-related enquiries email
+[email protected]
+
+Explore the Institute
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Legal
+Awards

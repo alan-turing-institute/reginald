@@ -1,0 +1,60 @@
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Cities across the world, including London, Singapore and Nairobi, are harnessing the power of trees to help fight climate change. Tree planting is a go-to initiative for cities looking to invest in the environment because trees can help reduce urban temperatures and clean the air of harmful pollutants, while also improving residents’ quality of life.
+However, research has shown that the effect of urban trees depends on their exact location. For example, trees planted along some roadways can impede airflow, preventing the dispersal of pollutants and decreasing the local air quality for residents. Meanwhile, trees planted thoughtfully around buildings can have a cooling effect, reducing energy usage in hot months, although this effect depends on the type of tree and the landscape. To fully understand the environmental impact of a city’s trees, researchers therefore need accurate maps of the ‘urban tree canopy’ (the trees’ locations), which is something we’re working on in the Turing’s ‘AI for public services’ team.
+Mapping the urban tree canopy is no easy task, however. Surveying techniques can be used to count trees in a few selected areas before estimating the canopy for the whole city, but these maps are usually low-resolution and also lack an easy method of validation. Other maps have relied on citizens reporting the locations of trees, but while this approach can work well in small areas, it often suffers from a lack of uptake and coverage.
+A more accurate method is to use AI tools, particularly machine learning (ML). The city of London, for example, worked with Breadboard Labs (a tech company focused on environmental issues) to create ML algorithms that segment aerial images into areas labelled as trees. ML methods represent an important advance over prior techniques, as they allow for very detailed canopy estimates over any size region. But there is still room for improvement. For one, error-prone humans are usually required to manually annotate detailed images. Additionally, current methods are only able to estimate tree cover, not the height component of trees. This is critical because taller trees tend to have a greater environmental effect than shorter trees, with numerous shorter trees often unable to match the impact of a single tall tree.
+At the Turing, we are pioneering an improved ML method for measuring the urban canopy, demonstrating its potential by applying it to the trees of Chicago. The secret to our method is that it combines imagery from planes and satellites with highly accurate lidar data to measure both the tree cover and the canopy height, while also removing the need for human annotation.
+Lidar is a technique that involves bouncing light beams off objects to measure distances, and it can be used to generate a 3D model of the environment accurate to within a few centimetres: perfect for mapping trees in a city. The downside is that using lidar to map trees over a large area is expensive – both in time and money – which limits how often it can be implemented. Chicago, for example, last collected lidar data in 2017, and the distribution of trees will have changed significantly since then.
+Our solution was to develop a computer model that uses a neural network – a ML technique inspired by the way the biological brain works. We trained this neural network on Chicago’s 2017 lidar data, as well as aerial and satellite imagery from the same year, until it could accurately predict the city’s 2017 tree cover and canopy height. Once trained, we could then use our model to estimate the 2019 tree canopy from more recent aerial and satellite imagery. Our analyses showed that tree cover in Chicago’s neighbourhoods varied widely, with tree covers ranging from less than 1% to 52% and average canopy heights ranging from only a few metres to over 20 metres.
+By combining multiple sources of data, our technique can create a more holistic map of the urban tree canopy. We aim to further refine this methodology so that we can apply it to different climates and begin coordinating with local authorities so that other towns and cities can benefit from this work.
+With better maps of urban trees, researchers and local authorities will be able to build a clearer picture of the impacts of greenery on residents, prioritising planting where it is needed most. Ultimately, cities need more reliable and useable data on all aspects of their infrastructure, so that decisions can be made with more confidence to generate lasting benefits for communities and the environment.
+Find out more:
+This work was carried out by the ‘AI for public services’ team, part of the public policy programme at The Alan Turing Institute. Our team aims to help policy makers harness data science and AI to inform decisions and improve public services. To find out more about our work, or discuss possible collaborations, please get in touch.
+ 
+Top image: Drop of Light / Shutterstock
+© The Alan Turing Institute
+2023. All rights reserved.
+The Alan Turing Institute, a charity incorporated and registered in England and Wales with company number 09512457 and charity number 1162533 whose registered office is at British Library, 96 Euston Road, London, England, NW1 2DB, United Kingdom.
+For website-related enquiries email
+[email protected]
+
+Explore the Institute
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Legal
+Awards

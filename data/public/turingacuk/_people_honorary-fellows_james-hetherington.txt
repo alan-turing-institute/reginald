@@ -1,0 +1,59 @@
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+James is an experienced senior leader in the application of mathematically and computationally intensive methodologies for innovation and insight, working with stakeholders at the highest levels across government, academia and industry.
+As Director of Digital Research Infrastructure at UK Research and Innovation, James led on strategy for the software, supercomputers, skills, data services and clouds that underpin computational science and digital scholarship in the UK.
+As Director of Research Engineering at The Alan Turing Institute, he founded, grew and led a team of thirty research software engineers and data scientists contributing to a huge range of data- and compute-intensive research. The team continue to build and use tools to analyse and present large datasets, and create complex models running on state of the art supercomputers. In particular, he directed the "Tools, Practices and Systems" research programme within the UK's strategic priority research programme "AI for Science, Engineering, Health and Government".
+James was founding head of UCL’s Research Software Engineering Group, the first such group in a UK university. Fields addressed included machine learning for intensive care, ancient Mesopotamian history, graph theoretical approaches to modelling chemical catalysis, computer vision for astronomy, trans-oceanic journalistic exchanges, data centric engineering, brain blood flow simulations and DNA crime scene analysis. This new model for applied computational research groups in universities, pioneered under his leadership, has been adopted by research intensive universities across the globe.
+As senior scientist at AMEE UK Limited, a London startup funded by Amadeus Capital and Union Square Ventures, he developed systems to make it easier for organisations to understand and cost their environmental impact and resulting liabilities. He conceived, prototyped, and led development and release of AMEE Discover, winner of a Best of What’s New award in Popular Science Magazine.
+As senior developer in the Model Management group at the MathWorks, creators of MATLAB, he designed and launched new capabilities for their technical computing and systems modelling software, applied to domains from computational finance to automotive engineering. In particular, these tools focused on searching for, linking, differencing and combining mathematical models.
+At the UK Business Department’s flagship "Beacon Project" at the UCL Centre for Mathematics and Physics in the Life Sciences, he developed a framework for understanding disease by combining physiological models using different assumptions, formalisms, and computational platforms, later used by Merck Inc.
+He is currently engaged as Chief Data Science Advisor to the Joint Biosecurity Centre in the Department of Health and Social Care, leading on the development of a robust ensemble of mathematical and statistical models constituting our understanding of the progress of the pandemic in the UK, in partnership with the Turing’s Health programme.
+He is also currently a leading contributor to the UK’s National Digital Twin programme, focused on helping to define the protocols and standards that will enable an interoperable open, secure marketplace for digital twins in the built environment and beyond
+Data Science and Artificial Intelligence have the potential to provide transformative benefits to productivity, capability and decision making in all aspects of our economy and society. These benefits can only be realised through deep and multi-directional connections between the academic and technical communities where innovations are developed and the professional, commercial and social contexts where they have their impact. As Director of Data Science in Practice, Dr James Hetherington helps to deliver on this vision through strategic leadership and individual contribution.
+Continued engagement as a professional practitioner in applied Data Science and AI is central to effective strategic insight. As such, Dr Hetherington maintains a significant portfolio as an applied data scientist and research engineer. His particular focus is the robust delivery of novel mathematical and statistical approaches through well-engineered, scalable software and systems: the ‘AI plumbing’ that makes advanced approaches real.
+Get in touch with James at [email protected] for availability.
+© The Alan Turing Institute
+2023. All rights reserved.
+The Alan Turing Institute, a charity incorporated and registered in England and Wales with company number 09512457 and charity number 1162533 whose registered office is at British Library, 96 Euston Road, London, England, NW1 2DB, United Kingdom.
+For website-related enquiries email
+[email protected]
+
+Explore the Institute
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Legal
+Awards

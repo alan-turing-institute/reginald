@@ -1,0 +1,49 @@
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Mihai received his PhD in Applied and Computational Mathematics (PACM) at Princeton University in 2012, supervised by Amit Singer. His thesis was on the low-rank matrix completion problem and several distance geometry problems with applications to sensor network localization and three-dimensional structuring of molecules. During 2013-2016 he was a CAM Assistant Adjunct Professor in Computational Applied Mathematics at UCLA. During Fall 2014, he was a Research Fellow at the Simons Institute for Theory of Computing at UC Berkeley, in the program Algorithmic Spectral Graph Theory.
+Mihai's research interests concern the development and mathematical analysis of algorithms for large networks, certain inverse problems on graphs, and big data analysis, with applications to various problems in engineering, machine learning, finance, and biology. Particular areas of interest are spectral and SDP-relaxation algorithms and applications, the group synchronisation problem, ranking from noisy pairwise comparisons, lead-lag relationships in multivariate time series, clustering, core-periphery structure in networks, multiplex networks, dimensionality reduction and diffusion maps (with an eye towards heterogeneous data and nonlinear time series), spectral algorithms for analysis of signed graphs and correlation networks. The above problems share an important feature: they can all be solved by exploiting the spectrum of their corresponding graph Laplacian.
+© The Alan Turing Institute
+2023. All rights reserved.
+The Alan Turing Institute, a charity incorporated and registered in England and Wales with company number 09512457 and charity number 1162533 whose registered office is at British Library, 96 Euston Road, London, England, NW1 2DB, United Kingdom.
+For website-related enquiries email
+[email protected]
+
+Explore the Institute
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Legal
+Awards

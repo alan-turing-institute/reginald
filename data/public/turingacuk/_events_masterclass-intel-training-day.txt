@@ -1,0 +1,59 @@
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+​
+Speakers: James Cownie (Intel, UK) and Andrew Mallinson (Intel, UK) Date: Monday 15 May 2017 Time: 11:00 – 16:00 Email: The Alan Turing Doctoral Scheme to attend. Some sections will be live-streamed, for more details see the programme outline below. Recordings will be made available on our YouTube channel after the event.
+The Alan Turing is delighted to announce the masterclass, a day of lectures exploring and learning about the Intel cluster. As outlined below, the day will include two lectures in the morning and three in the afternoon led by Jim Cownie and Andrew Mallinson.
+11:00 - 12:00 - Why are our machines the way they are? James Cownie (Intel, UK)  This lecture will describe the physical realities that underlie our hardware designs, historic performance trends, and their implications for the way that we will need to write our programs to achieve high performance now and in the future. By the end of it, you should understand why we don't give you the very fast single processor scalar machine with huge memory capacity and bandwidth that you would like to have. This lecture will be live-streamed.
+12:00 - 13:00 - Introduction to the Intel® Architecture  Andrew Mallinson (Intel, UK) This lecture will introduce the Intel® architecture and describe the different components of the processor (vectors, registers, processors, caches, ...) and the system (network, storage). It will explain why you need to know about these if you want to achieve the highest performance from your code.
+14:00 - 15:00  - Introduction to Programming Models, Libraries and Tools James Cownie (Intel, UK)  This lecture will introduce the different programming models and programming languages that can be used to achieve performance as well as the software libraries and tools which you can use to help you to achieve that noble objective. This lecture will be live-streamed.
+15:00 - 15:30 - Introduction to The Alan Turing Institute Cluster Andrew Mallinson (Intel, UK) This lecture will describe the hardware that is in the Turing cluster being installed in Edinburgh, the interesting options for research which it makes available, and how to gain access to it.
+15:30 - 16:00 - Intel Training Syllabus for The Alan Turing Institute and General Discussions  Andrew Mallinson (Intel, UK)  This lecture will present the future training courses which Intel is proposing to deliver to Turing researchers. It will also include some time for a general discussion regarding Turing research and training priorities, with feedback being used to influence future training course offerings.  
+Bios: Jim Cownie is an ACM Distinguished Engineer and Intel Principal Engineer. He has been involved with parallel computing since starting to work for Inmos in 1979. Along the way, he owned a chapter in the MPI-1 standard and has worked on parallel debuggers and OpenMP implementations. Andrew Mallinson is a senior application engineering within Intel’s Developer Relations Division. His focus is on working with scientific researchers to enable them to fully utilise Intel’s processing technologies, in particular, the Intel® Xeon Phi™ processor. Andrew holds a PhD from the University of Warwick and his research interests include Partitioned Global Address Space (PGAS) programming paradigms and their use within irregular and data intensive applications within the field of data science.  
+​
+The Alan Turing Institute
+1st floor of the British Library, 96 Euston Road, London, NW1 2DB
+© The Alan Turing Institute
+2023. All rights reserved.
+The Alan Turing Institute, a charity incorporated and registered in England and Wales with company number 09512457 and charity number 1162533 whose registered office is at British Library, 96 Euston Road, London, England, NW1 2DB, United Kingdom.
+For website-related enquiries email
+[email protected]
+
+Explore the Institute
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Legal
+Awards

@@ -1,0 +1,52 @@
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Frederik was a visiting researcher at the University of Edinburgh collaborating with Ben Leimkuhler on adapting sampling methods to neural networks and exploring their loss manifolds. He received his PhD in Applied Mathematics at the Rheinische Friedrich-Wilhelms-Universität, Bonn in Germany, in 2014 under the supervision of Michael Griebel. There, he learned a lot about material science, ab-initio methods in quantum chemistry, C++ programming, third-party projects, and proper experimental practice in computational sciences.
+He has held a post doc position in Thomas Schuster's group on inverse problems in Saarbrücken from 2013 till 2016, where he worked on matrix factorization and hyperspectral imaging.
+Frederik's research interest are multitudinous but the common theme is the underlying problem of optimization of non-convex functions. He worked on extending the well-known Conjugate Gradient method to Banach spaces and applied the resulting method to low-rank matrix factorization in the context of hyperspectral images, see the library BASSO at https://github.com/FrederikHeber/BASSO.
+He has a strong interest in material sciences and biomolecules. He helped to realise a software library of various fast solvers for the Coulomb problem (http://www.scafacos.de/). Moreover, he maintains a large software suite (http://www.molecuilder.de/) on constructing and equilibrating molecular systems and boot-strapping molecular simulations. There, the holy grail is to explore the potential energy surface whose knowledge would allow to assess material stability, devise chemical reactions, and ascertain reaction paths in biological processes. While local minima are found by optimization, global minima require enhanced sampling and other strategies.
+At the moment, he is bringing these sampling methods to the realm of data science, where they will (hopefully) help to explore the loss manifold of (deep) neural networks and unravel the baffling mystery why neural networks work so well.
+© The Alan Turing Institute
+2023. All rights reserved.
+The Alan Turing Institute, a charity incorporated and registered in England and Wales with company number 09512457 and charity number 1162533 whose registered office is at British Library, 96 Euston Road, London, England, NW1 2DB, United Kingdom.
+For website-related enquiries email
+[email protected]
+
+Explore the Institute
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Legal
+Awards
