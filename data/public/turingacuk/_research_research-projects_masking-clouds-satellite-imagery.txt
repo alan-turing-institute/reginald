@@ -1,0 +1,54 @@
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Clouds appear ubiquitously in the Earth's atmosphere, and thus present a persistent problem for the accurate retrieval of remotely sensed information. By applying machine learning to the problem this project aims to more accurately detect cloudy pixels in remotely sensed images. Improved detection of cloudy pixels can facilitate more accurate retrieval of climate variables such as sea and land surface temperature.
+One of the ways to measure sea surface temperature (SST) at a given point and time is to take a satellite image over a particular region of the ocean. Then using the thermal imaging bands from the the 'Sea and Land Surface Temperature Radiometer' (SLSTR) fitted to SENTINEL-3 satellites, which are measured in units of Kelvin, it's possible to estimate the temperature of a particular ocean pixel. To ensure accurate retrieval this can then be compared with the values recorded from drifter buoys floating on the sea surface by matching the location of the buoy to the pixel in the satellite image. 
+However, pixels can often be occluded or contaminated by clouds, which will make the value recorded by the satellite different from the one measured on the ground. Accurately classifying pixels as either clear or cloud contaminated, and then removing the contaminated ones from an image, in effect reduces noise and therefore reduces the uncertainty in the measurements. 
+The Sea and Land Surface Temperature Radiometer (SLSTR) on board SENTINEL-3 satellites provide a continuous measurement of both land and sea surface temperatures to high accuracy. Unfortunately, the retrieval of such variables is hindered by pixels which are contaminated by cloud. 
+This project aims to use a machine learning approach to improve on existing cloud masking approaches for the SLSTR to produce a high quality, versatile cloud mask. Such a mask will perform well in difficult images where the identification of cloudy pixels is complicated by other phenomena such as sea ice, snow, aerosols, sun glint etc. The project also aims to validate its approach against the retrieval of climate variables from satellite scenes, with the hope of showing increased performance in practical applications. 
+With the increasing urgency of the climate crisis it is essential to gather an accurate record of variables affecting the world's climate from which to inform our understanding of the global climate system. 
+The ability to remove cloudy pixels, which effectively act as noise, from remotely sensed images has a direct impact on the quality of our climate monitoring. This in turn impacts the projections one can make about how severely climate change will affect the world, which has wide ranging impacts on many environmental, economic, and societal areas. The output of this work will be applied by colleagues in RAL Space and the Centre for Environmental Data Analysis (CEDA) to aid in their future work. 
+© The Alan Turing Institute
+2023. All rights reserved.
+The Alan Turing Institute, a charity incorporated and registered in England and Wales with company number 09512457 and charity number 1162533 whose registered office is at British Library, 96 Euston Road, London, England, NW1 2DB, United Kingdom.
+For website-related enquiries email
+[email protected]
+
+Explore the Institute
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Legal
+Awards

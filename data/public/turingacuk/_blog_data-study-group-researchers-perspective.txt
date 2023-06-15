@@ -1,0 +1,64 @@
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+In May, The Alan Turing Institute hosted a week-long Data Study Group event organised by Turing Fellow Sebastian Vollmer: an opportunity for academics to work on data science challenges posed by industry.
+As a Turing Doctoral Student, this was my second time taking part in a data study group, and on this occasion, I was a facilitator for the Defence Science and Technology Laboratory (Dstl) – Urban Analytics group.
+Initially, I was a little nervous about guiding a team of mainly strangers (the data study groups involves academics from all around the world) to deliver some useful methods for Dstl to take forward in less than a week! Luckily, unlike a hackathon, we were not obliged to fully complete a solution to tackle the problem. In fact, the data study group’s intention is to provide companies with several methods they can take forward either in-house or as a future collaboration with the Institute.
+I think this is great as although hackathons are fantastic at generating innovative solutions quickly, due to the time constraints often ideas haven’t been thoroughly tested and then fail at the implementation stage. Instead, providing industry clients with cutting-edge academic knowledge on how to apply different data science approaches to tackle their problem is far more valuable, as there is real knowledge these companies can take back and apply to other challenges the companies might face in the future.
+The project that Dstl proposed was a very interesting challenge to tackle. We analysed large amounts of spatial data, such as highways networks, points of interest and locations of crime activities, in order to develop models which can predict likely locations of facilities (e.g. nuclear power plants) or events (e.g. civil unrest) at a global level.
+The challenge was particularly interesting from a research point of view as there could be many different approaches to solving this problem. Therefore, the project drew a fantastic selection of candidates to our team from different fields – varying from spatial analysis and epidemiology to mathematics and physics.
+
+Urban Analytics group working on the Defence Science and Technology Laboratory (Dstl) challenge
+In the first few hours, we produced a plethora of ideas on how to tackle the challenge Dstl had posed to us. We decided to split into subgroups and explore our different approaches, with daily catch-ups to update the group on our progress. This didn’t mean that the subgroups purely stayed working on their own approach: as soon as the other groups saw how the other approaches could enhance their own approach, they started to include these insights in their own work. I saw some great interdisciplinary collaboration.
+Dstl were extremely impressed with how quickly we managed to come together with so many approaches to tackle their challenge, as well as with the dedication of the team members to find useful solutions.
+Matt, a Dstl representative, commenting on the work developed, said:
+“The Data Study Group week was one of the best experiences I’ve had working with external suppliers of any kind in my 8 years in the Ministry of Defence. A large team of very capable academics worked extremely hard on my problem and demonstrated multiple approaches to solve it. To have so many interesting approaches thoroughly explored in such a short time period is very impressive and incredibly useful to our organisation. The team was very well led by the Turing facilitator, Chanuki Seresinhe, the few IT issues that arose were dealt with immediately and on occasion world leading experts in particular fields were called in from elsewhere in the Institute. I have already recommended to colleagues that more of our problems should be pitched to the Turing Data Study Group events.”
+Overall, this was a fantastic experience. If you are an academic who wants to get some hands-on experience working on industry challenges in a dynamic and inspiring atmosphere, then I would highly recommend joining a future Data Study Group. I also think the Data Study Group is equally valuable to industry partners, as it is rare to be able to work with a group of top academics around the country all at once for some valuable insights into cutting-edge approaches and also just some fresh inspiration.
+
+Defence Science and Technology Laboratory (Dstl) – Urban Analytics research group
+This blog was written by Chanuki Seresinhe, Turing Enrichment Year Doctoral Student and facilitator for the urban analytics group which worked on challenges posed by the Defence Science and Technology Laboratory (Dstl).
+The Alan Turing Institute organises several data study groups per year. If your organisation would like to get involved please email [email protected].
+© The Alan Turing Institute
+2023. All rights reserved.
+The Alan Turing Institute, a charity incorporated and registered in England and Wales with company number 09512457 and charity number 1162533 whose registered office is at British Library, 96 Euston Road, London, England, NW1 2DB, United Kingdom.
+For website-related enquiries email
+[email protected]
+
+Explore the Institute
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Legal
+Awards

@@ -1,0 +1,55 @@
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+While scientists have observed and studied the rapid decline in Arctic sea ice over the past few decades, a high level of uncertainty remains about how the rate of ice loss will change over the coming years. Machine learning techniques have the potential to help us untangle the underlying mechanisms in order to reduce these uncertainties. Providing reliable forecasts of likely Arctic sea ice cover would help improve regional and global climate model predictions.
+The decrease of Arctic sea ice cover is concerning as its white surface reflects up to 80 percent of incoming sunlight, deflecting additional energy away from the Earth's lower atmosphere and back towards space. With a declining spatial extent of sea ice, the dark ocean surface which replaces it absorbs considerably more sunlight energy. This leads to a self-perpetuating cycle with further warming of the atmosphere and surface waters and more melting of ice. This process is known as ‘ice-albedo feedback’ and is most prevalent during the summer months. Conversely, in the darker months other climate drivers, such as variability in oceanic currents and atmospheric weather patterns, are more likely to dominate the variation in sea ice.
+This research is being undertaken by the British Antarctic Survey (BAS) AI Lab.
+The aim of this research is to further our understanding of the complex inter-connectedness of large-scale climate phenomena and sea ice variability in order to reduce uncertainties in future climate predictions. 
+Applying machine learning techniques in new ways to this area will enable us to work more efficiently and effectively than using current climate model simulators alone, not least as these simulators are highly computationally expensive. The machine learning predictions generated within this project will be benchmarked against those from state-of-the art climate simulators to track ongoing improvements.
+The vast areas of white ice and snow in the Arctic region is responsible for reflecting sunlight back to space, keeping our planet cool and regulating regional and global weather patterns. It is also an extreme living environment which supports a wide range of indigenous people and wildlife.
+Being able to better predict the likely fluctuations in sea ice extent across the Arctic region, and the impact this can have on the global climate, is fundamentally important as these changes will effect weather patterns which in turn will have impacts on food, water, and economic security across the globe. Furthermore, improving our understanding of the potential changes facing this irreplaceable environment can also be used to support wildlife conservation efforts and indigenous peoples around the polar regions, whose way of life is under threat through environmental change. 
+ 
+© The Alan Turing Institute
+2023. All rights reserved.
+The Alan Turing Institute, a charity incorporated and registered in England and Wales with company number 09512457 and charity number 1162533 whose registered office is at British Library, 96 Euston Road, London, England, NW1 2DB, United Kingdom.
+For website-related enquiries email
+[email protected]
+
+Explore the Institute
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Legal
+Awards

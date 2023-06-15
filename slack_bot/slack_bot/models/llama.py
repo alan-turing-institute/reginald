@@ -2,6 +2,7 @@ from __future__ import annotations
 
 # Standard library imports
 import logging
+import math
 import os
 import pathlib
 import re
@@ -25,11 +26,10 @@ from transformers import AutoModelForCausalLM, AutoTokenizer, pipeline
 # Local imports
 from .base import MessageResponse, ResponseModel
 
-DATA_DIR = pathlib.Path(__file__).parent.parent.parent.parent / "data"
-# TODO Leaving out the wiki for now while we figure out if we are okay sending it to OpenAI.
-DATA_FILES = [DATA_DIR / "handbook-scraped.csv"] + list(
-    (DATA_DIR / "the_turing_way_md").glob("*.md")
-)
+DATA_DIR = (pathlib.Path(__file__).parent.parent.parent.parent / "data").resolve()
+DATA_FILES = list((DATA_DIR / "public").glob("**/*.csv"))
+DATA_FILES += list((DATA_DIR / "public").glob("**/*.md"))
+DATA_FILES += list((DATA_DIR / "public").glob("**/*.txt"))
 
 
 class CustomLLM(LLM):
@@ -63,7 +63,7 @@ class Llama(ResponseModel):
         result += "\n\n".join(texts)
         return result
 
-    def _prep_documents(self):
+    def _prep_documents(self) -> list[Document]:
         # Prep the contextual documents
         documents = []
         for data_file in DATA_FILES:
@@ -89,16 +89,18 @@ class Llama(ResponseModel):
 
     def __init__(
         self,
-        model_name,
-        max_input_size,
-        num_output=512,
-        chunk_size_limit=300,
-        chunk_overlap_ratio=0.1,
+        model_name: str,
+        max_input_size: int,
+        num_output: int = 256,
+        chunk_size_limit: int | None = None,
+        chunk_overlap_ratio: float = 0.1,
     ):
         logging.info("Setting up Huggingface backend.")
         self.max_input_size = max_input_size
         self.model_name = model_name
         self.num_output = num_output
+        if chunk_size_limit is None:
+            chunk_size_limit = math.ceil(max_input_size / 2)
         self.chunk_size_limit = chunk_size_limit
         self.chunk_overlap_ratio = chunk_overlap_ratio
 
@@ -119,6 +121,7 @@ class Llama(ResponseModel):
             llm_predictor=llm_predictor,
             embed_model=embed_model,
             prompt_helper=prompt_helper,
+            chunk_size_limit=chunk_size_limit,
         )
 
         self.index = GPTVectorStoreIndex.from_documents(
@@ -176,11 +179,6 @@ class Llama(ResponseModel):
 
 class LlamaDistilGPT2(Llama):
     def _prep_llm_predictor(self):
-        # Use open-source LLM from transformers
-        # Decide what device to use
-        # accelerator = accelerate.Accelerator()
-        # device = accelerator.device
-
         # Create the model object
         tokenizer = AutoTokenizer.from_pretrained(self.model_name)
         model = AutoModelForCausalLM.from_pretrained(
@@ -191,8 +189,6 @@ class LlamaDistilGPT2(Llama):
             "text-generation",
             model=model,
             tokenizer=tokenizer,
-            # TODO Commenting this in breaks on M1.
-            # device=device,
         )
 
         llm_predictor = LLMPredictor(

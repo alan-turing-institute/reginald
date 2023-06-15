@@ -1,0 +1,56 @@
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Back in April, the Department for Digital, Culture, Media and Sport and the Home Office released the Online Harms White Paper. It outlined wide-ranging proposals for tackling numerous online harms, from selling illegal items to cyberbullying, and from terrorist content to pornography. The broad message of the White Paper is commendable: ‘We cannot allow […] harmful behaviours and content to undermine the significant benefits that the digital revolution can offer […] If we surrender our online spaces to those who spread hate, abuse, fear and vitriolic content, then we will all lose.’ (p.3)
+The government appears to be determined about cleaning up the internet – the only question is whether the proposals in the White Paper are sufficient to realise this ambitious goal. As part of the Consultation process (now closed), The Alan Turing Institute’s public policy programme has released a publicly available response. Here are our five key questions and insights:
+The White Paper advocates creating a new independent regulator. One challenge for creating a new regulator is that online harms are multifaceted and varied, spanning many different domains. We feel a single regulator might struggle to develop enough internal expertise to tackle them all at once and to identify and respond to new risks. There could be communication and coordination problems with too many separate government bodies operating in this space, resulting in a lack of clarity for both citizens and the digital tech platforms. Meanwhile, existing regulators have accumulated much of the expertise that the regulation of online harms will require through their existing dealings with digital platforms. For these reasons, we recommend that a new unit with a specific remit for online harms be established within one of the existing regulators, such as Ofcom or the Information Commissioner’s Office.
+The rationale for the White Paper is to protect individuals from online harm. The question, however, is what constitutes an online harm? The White Paper tackles this difficult question by providing a list of harms (on p. 31), but the authors acknowledge that the list is “neither exhaustive nor fixed.” Greater clarity is needed on what constitutes a harm, how the degree of harm is measured, and which harms come within scope of the new regulatory body. In introducing the list of harms, the White Paper also distinguishes between harms with a clear definition and those with a less clear definition (on p. 31). However, some of the harms which have been described as having a ‘clear definition’ are complex and messy phenomena, such as harassment, hate crime, terrorist content or modern slavery. We would welcome greater clarity on what harms will come within the scope of the new regulatory body as well as a framework for deciding what is recognised as a harm.
+The White Paper highlights the government’s concerns about imposing restrictions on freedom of expression. However, the question of what freedom of expression means when it comes to online spaces is complex. We would welcome a policy roadmap after the White Paper consultation that provides a discussion on how to balance freedom of expression with the need to protect individuals from harm. Striking this balance will be a challenge, and will require a substantive discussion of what values should be incorporated into the regulatory framework for online harms, with potentially contentious decisions needing to be made regarding constraints on online behaviour.
+We welcome the White Paper’s encouragement for greater use of technology, such as artificial intelligence, to moderate content. However, as work in the Turing’s Hate Speech: Measures and Counter-Measures project has found, existing content detection technologies perform suboptimally at accounting for context, evaluating intent and recognising irony, satire and humour. This could have important implications for freedom of expression, and we would welcome further guidance from the government on how users might be able to contest content takedowns.
+One of the biggest benefits in establishing a cross-platform body for online harms is that they can develop a joined-up approach to regulation. We would welcome greater emphasis on how harmful content, and the purveyors of such content, move between platforms. Research suggests that content moves from niche extremist platforms, such as 4chan, to big mainstream platforms, such as Twitter and Facebook. Similarly, when prominent hateful figures are banned from mainstream platforms, they often migrate to niche, less well moderated platforms, and might encourage their supporters to migrate with them. We believe that the government can make best use of its unique position by investing resources to understand the dynamics of online harms and how they span and migrate between platforms and communities.
+Misinformation is increasingly recognised as one of the biggest issues on the internet, and it is recognised in the White Paper as a harm in need of regulation (pp. 22-24). We welcome this recognition, but note that the White Paper also states, “We are clear that the regulator will not be responsible for policing truth and accuracy online.” (p. 36). We are unsure how misinformation will be addressed without the regulatory unit either taking a position on the truth/falsity of content or mandating another body (such as the platforms or a third party) to do so. We would welcome greater clarity on what is ‘in scope’ of the White Paper’s understanding of misinformation, as the range of different types of false or misleading information is considerable, including (1) explicitly false content, (2) misleading interpretations of facts, (3) partial and one-sided analyses and (4) predictions and opinions treated as facts.
+Overall, the Online Harms White Paper marks a bold step forward, both in the UK and internationally, in safely and responsibly regulating the internet. The Alan Turing Institute’s public policy programme response is publicly available. If you have any questions or would like to find out more about our work, email [email protected]. 
+© The Alan Turing Institute
+2023. All rights reserved.
+The Alan Turing Institute, a charity incorporated and registered in England and Wales with company number 09512457 and charity number 1162533 whose registered office is at British Library, 96 Euston Road, London, England, NW1 2DB, United Kingdom.
+For website-related enquiries email
+[email protected]
+
+Explore the Institute
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Legal
+Awards

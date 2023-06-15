@@ -1,0 +1,58 @@
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+The Alan Turing Institute has collaborated with The Centre for Environment, Fisheries and Aquaculture Science (Cefas) to create innovative solutions to global challenges affecting the marine environment.
+The organisations have worked together on two Data Study Groups (DSG) challenges in 2021 and 2022 which used the Turing’s data science expertise to support Cefas’ aim of securing a sustainable future for marine ecosystems.
+The first DSG challenge aimed to develop machine learning methods to automatically classify plankton species (using information on their shape, features and size) using a manually labelled dataset of 40,000 images.
+The software was in use within six months of the DSG, following further development and testing by Plankton Analytics. The open-source software can be adapted to classify images of other marine objects and species, helping to transform the way scientists study the oceans.
+The second DSG challenge aimed to detect and classify Sea Pens. The DSG team developed a prototype machine learning algorithm that Cefas estimates can detect and classify sea pens with up to 95% accuracy compared to manual identification.
+Building on the existing collaborations, researchers from Cefas have visited the Turing’s offices to explore future opportunities to bring data insights to marine research.
+The Environment and Sustainability is a Grand Challenge in The Alan Turing Institute’s recently launched strategy. The challenge aims to address the climate and biodiversity crisis and the need for greater sustainability.
+A recent white paper from the Turing’s AI for Science and Government (ASG) programme found that AI and data science are an underused asset in the fight against climate change. The report highlights previous research in a case study between the Turing and Cefas. More can be found out about this project in The Turing Podcast, Series 3, Episode 4: Turing deployment at sea: identifying plankton in real time.
+The Institute’s Director of Innovation, Simon Reeve, said: “This collaboration is an excellent example of innovative, interdisciplinary research between the Turing and environmental organisations delivering new solutions. Protecting the health of oceans is crucial in the climate emergency. We look forward to working with Cefas in the future to continue to explore and develop innovative solutions in response to this global challenge.”
+Commenting on partnering with the Turing, Cefas CEO, Neil Hornby, said: “Our rivers, seas and the ocean are facing significant global threats. Communities around the world are facing the devastating consequences of climate change, biodiversity loss, energy and food insecurity and pollution. At Cefas, we are committed to developing science solutions that respond to these pressing problems. By working in collaboration, together we can harness the power of data and innovative technology to support UK and International governments to fulfil their commitment to restoring nature.”
+Header image credit: 'Crown copyright'
+© The Alan Turing Institute
+2023. All rights reserved.
+The Alan Turing Institute, a charity incorporated and registered in England and Wales with company number 09512457 and charity number 1162533 whose registered office is at British Library, 96 Euston Road, London, England, NW1 2DB, United Kingdom.
+For website-related enquiries email
+[email protected]
+
+Explore the Institute
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Legal
+Awards
