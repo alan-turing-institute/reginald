@@ -1,0 +1,53 @@
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Anthony (Tony) Cohn is Professor of Automated Reasoning at the University of Leeds and is currently partially seconded to the Alan Turing Institute to work on a project jointly led with  Professors Mike Wooldridge and Nigel Shadbolt which is evaluating Foundation Models, in particular Large Language Models such as (Chat)GPT and Bard.
+He holds BSc and PhD degrees from the University of Essex where he studied under Pat Hayes. He spent 10 years at the University of Warwick before moving to Leeds in 1990 where he founded  a research group working on knowledge representation and reasoning with a particular focus on qualitative spatial/spatio-temporal reasoning, the best known being the well cited region connection calculus (RCC) – the KR-92 paper describing RCC won the 2020 KR Test-of-Time award.  He was awarded the 2021 Herbert A. Simon Prize for Advances in Cognitive Systems for his research on qualitative representation and reasoning about space and time, cognitive vision and robotics, and visually-grounded language processing.
+He is Editor-in-Chief Spatial Cognition and Computation and has been Chairman/President of the UK AI Society SSAISB, the European Association for Artificial Intelligence (EurAI), KR inc, the IJCAI Board of Trustees and was the Editor-in-Chief for Artificial Intelligence 2007-2014 and of the AAAI Press 2004-14. He has been a Director of KR Inc. since 2000.
+He is the recipient of the 2015 IJCAI Donald E Walker Distinguished Service Award which honours senior scientists in AI for contributions and service to the field during their careers, as well as the 2012 AAAI Distinguished Service Award for “extraordinary and sustained service to the artificial intelligence community”. He is a Fellow of the Royal Academy of Engineering, and is also a Fellow of AAAI, AISB, EurAI, AAIA, the BCS, and the IET; he is also a Chartered Engineer.  He was a member of the UK Research Excellence Framework (REF) 2014 Sub Panel 11 (Computer Science and Informatics) of Panel B.
+His early interest in knowledge representation and reasoning methods, in particular on taxonomic knowledge and (qualitative) spatial knowledge remains a continuing focus. He has published extensively on methods for machine learning for activity recognition from video data, using qualitative spatial representations, and on grounding language to vision. He has developed a number of ontology-based and other decision support systems for the built environment. He has worked on aspects of robotics including robotic vision and manipulation in cluttered environments.
+Aside from his work on Foundation Models at Turing, he is also currently collaborating with humanities scholars at Lancaster, Manchester, Bristol and Stanford universities in an ESRC/NSF project investigating the use of qualitative spatial techniques for analysing spatial information in texts. He also works on an OECD project on AI and the future of skills, which is developing a programme to assess the capabilities of AI and robotics, and their impact on education and work. He is also interested in analysing hippocampal single cell recording data, in collaboration with Yuri Dabaghian at the McGovern Medical School in Texas.
+© The Alan Turing Institute
+2023. All rights reserved.
+The Alan Turing Institute, a charity incorporated and registered in England and Wales with company number 09512457 and charity number 1162533 whose registered office is at British Library, 96 Euston Road, London, England, NW1 2DB, United Kingdom.
+For website-related enquiries email
+[email protected]
+
+Explore the Institute
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Legal
+Awards

@@ -1,0 +1,102 @@
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Changing the world for the better with data science and AI.
+The Institute was founded in 2015 with a clear and compelling purpose: ‘To make great leaps in the development and use of data science and artificial intelligence (AI) in order to change the world for the better.’  
+In 2023 that purpose remains unchanged, but we are reassessing our founding assumptions and setting a course for the next five years – our overall ambitions and vision for this future, what we are calling Turing 2.0, and how we will get there – our strategy. 
+Our aim is that ten years from now, the Turing will be internationally recognised as a centre of research and innovation that harnesses the power of data science and artificial intelligence to make a lasting impact on the world's most pressing societal issues.  
+When people think of data science and AI, they will think about the positive difference we have made to the lives of millions of people around the world. 
+Innovate and develop world-class research in data science and AI that encourages next generation theoretical developments and is applied to national and global challenges, supporting the creation of new businesses, services and jobs.
+Contribute to training people across sectors and career stages with the necessary breadth and depth of technical and professional skills in data science and AI to match the UK’s growing industrial and societal needs.
+Provide balance in the public conversation on data science and AI by speaking to its technical, social and ethical dimensions through public engagement and the provision of advice to policymakers, industry and civil society.
+In support of our goals, the following set of principles will guide everything we do as part of Turing 2.0. They will help the Turing fulfil its purpose by driving our culture and delivering on the promise that data science and AI hold for the public good. They apply to how individuals and teams at the Turing work, as well as how the Turing operates as a responsible leader in the overall landscape. 
+Lead responsibly 
+Build confidence, ensure independence 
+Enable impact, at scale 
+Drive interdisciplinarity 
+Move with agility 
+Continually Innovate
+Embed equality, diversity and inclusion 
+Collaborate and convene 
+Learn and help others learn 
+Democratise access 
+Data science and AI technologies will continue to evolve in unpredictable ways, and the speed of these developments will make it increasingly difficult to connect the people, ideas and data required to make progress against important societal issues. 
+The Turing will, therefore, provide an end-to-end, interdisciplinary pathway in data science and AI that enables impact at scale and major progress against societal challenges.  
+ 
+A grand challenge-led approach for Turing’s science and innovation agenda provides the common focus, clear direction and a mandate to prioritise activity, as well as the inspiration and motivation for diverse communities and capabilities to come together in support of these organising principles. In alignment with national priority areas, we have selected the following areas of focus for grand challenges: 
+Data science and AI offer many opportunities to improve people's lives in the ‘digital society’. For example, these technologies might be used to provide more inclusive, fair and robust public services and tackle longstanding problems such as low productivity. Using our unique position and established expertise, we can tap into the enormous potential for data science and AI to drive a new generation of services which are efficient, smart and responsive to both complexity and uncertainty. Similarly, these technologies can help build resilience and tackle long-running policy problems, for example through real-time monitoring of the economy, financial systems, and supply chains.   
+The Turing will draw and expand on its established research and partnerships  in public policy and data-driven economics to drive this work forward. We will focus on developing data science and AI to serve society and to improve measurement of the economy. We will build frameworks to tackle cross-cutting issues of standards, regulation, ethics and policy. We will develop methodologies to understand public attitudes to technology, incorporate that understanding into AI research and innovation, and foster ways of helping the public to understand and navigate this complex landscape.   
+To drive advances in the Grand challenge areas, multi-faceted core capabilities are required to provide the underpinning infrastructure, this will involve: 
+Core capabilities
+Building our foundational capability in data science and AI in support of the above Grand Challenges.
+Core capabilities
+Expanding our work in the development and provision of open-source infrastructure that is accessible to all.
+Core capabilities
+Growing our core research software engineering capability to continue to contribute skills in research software engineering and data science in support of national priorities.
+Core capabilities
+Expanding our capability through Research Application Managers and Community Managers to support translation of our communities’ science and innovation activity.
+To remain a science and AI superpower the UK has to invest in skills and people. The data, data science and AI skills gap is well documented and the Turing alone cannot solve all the problems in the skills pipeline. 
+What we will do is fill some of the gaps, and in keeping with our approach of accelerating the transfer of skills across academia, industry, government and third sector, we will continue to grow our flagship programmes and build new capability where needed. 
+Over the next five years we will extend our existing flagship programmes: Data study groups, Connections, Enrichment, Internships, to work on AI and data science problems identified under our Grand Challenge areas, and covering all career levels.
+We will also launch our newly developed Turing Research Fellowship programme (for postdoctoral-level researchers) and develop an offer for apprenticeships to support entry into the field of data science and AI.  
+We will scale existing initiatives such as our Data science and AI educators programme, which build skills and capacity through our ‘train-the-trainer’ approach for potential instructors and domain experts, our Research software engineering and research data science courses, as well as courses on AI ethics and governance (Turing Commons).  
+We have recently launched an Online learning platform, which includes courses on responsible AI.  
+Our first steps will include working with others in this space (eg, Catapults and Innovate UK, Data Skills Task Force) drawing on work already done, to create business leader personas, including pain points and challenge and support networks, in order to design suitable learning interventions.     
+Public perceptions of data science and AI range from futuristic science-fiction to very real distrust and concern about the fairness and transparency of algorithms being applied in public life.
+
+Addressing concerns around AI requires the development of frameworks, codes of practice, tools, laws and regulations to ensure that ethical principles and public voices are built into every stage of the design, development, and implementation of AI systems.  
+Finally, it is important that the complex data science and AI landscape itself is easier to navigate and understand, both to those working in it and those looking to connect to it.
+The Turing can provide balance, speaking to both the technical, and social and ethical dimensions of these technologies, presenting both the positive opportunities, as well as the risks.
+We want to ensure high quality and reliable information about data science and AI reaches across all parts of society. This will in turn improve AI literacy in support of all our goals.
+The Turing can drive a new generation of governance and regulation for data science and AI that ensures fairness, safety, and the protection of public interests across the digital economy and society. For information visit our AI Standards Hub.
+As the national institute, the Turing is uniquely placed to support with linking up different groups. We will seek to provide a bespoke and appropriate offer to the range of audiences and stakeholders which have a vested interest or are directly impacted by the advancement of this technology.
+In hearing the needs, concerns and expectations of the wider ecosystem, we can reflect this in the research we undertake and the activities that we pursue, including our AIUK conference. 
+The Turing would like to thank the members of the Advisory Groups which were stood up during this strategy development to help shape and direct the future vision and approach of the Institute.
+Prof. Tom Rodden, Chief Scientific Advisor, Department of Digital, Culture, Media and Sports (Chair), Prof. Ulrike Tillmann, Director, Isaac Newton Institute, Prof. Richard Samworth, Director Statistical Laboratory, University of Cambridge, Alex Van Someren, Chief Scientific Advisor, Government Office for Science, Dr Ruth Boumphrey, Chief Executive Officer, Lloyd’s Register Foundation, Dr Danijela Horak, Head of Machine Learning, R&D, BBC
+Prof. Dame Wendy Hall, Regius Professor of Computer Science, University of Southampton (Chair), Frank Kelly, Trustee; Professor of the Mathematics of Systems, University of Cambridge, Iain Styles, Professor of Computational Life Sciences in the School of Computer Science at the University of Birmingham. Chair, Turing Skills Group, Vivienne Blackstone, Senior Manager, Artificial Intelligence and Robotics, EPSRC, Jon Rowe, Programme Director for the Data Science for Science and Humanities programme, Alan Turing Institute, Graham Cormode, Professor of Computer Science, University of Warwick, Darren Seymour-Russell, Growth and Strategy Lead, Responsible AI, Data Science, Associate Director Accenture, Jane Goff, Skills and Training Initiative Lead Defence Science and Technology Laboratory, Kate Hazeldene, Leads delivery of AI widening participation scholarship projects; Course programme manager, Office for Student
+Tabitha Goldstaub MBE, Chair, AI Council (Chair), Dr Kanta Dihal, Lecturer in Science Communication, Imperial College London, Tania Duarte, CEO, We and AI, Stefan Janusz, Head of AI Narratives, Office for AI, Dr Shakir Mohamed, Research Scientist, DeepMind, Kerry Sheehan, Head of Service Development and Innovation, Civil Service, Dr Stephanie Hare, Researcher, broadcaster and author, Amanda White, Director of Communications and Policy, HDRUK, Katie Matthews, Interim Chief Executive, Poet in the City, Cassie Smith, Head of Legal, Trust and Ethics, HDR UK, Jonathan Lenson, CEO, Milltown Partners
+The Turing will remain open to feedback and responses from the community on the approach outlined in the strategy, understanding that our long-term vision must remain adaptive to changes in the wider landscape. At this time any queries should be directed to [email protected].
+© The Alan Turing Institute
+2023. All rights reserved.
+The Alan Turing Institute, a charity incorporated and registered in England and Wales with company number 09512457 and charity number 1162533 whose registered office is at British Library, 96 Euston Road, London, England, NW1 2DB, United Kingdom.
+For website-related enquiries email
+[email protected]
+
+Explore the Institute
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Legal
+Awards

@@ -1,0 +1,76 @@
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+74.6 KB
+During the last decade, the emerging area of network science has witnessed tremendous growth, with virtually thousands of papers written on the topic. Networks arise ubiquitously in physical, financial, biological, engineering, and social sciences, and pose the crucial problem of understanding how the node interactions affect the functionality of the system, and how they can be exploited for forecasting various processes on the network and designing robust systems. The recent astonishing growth of network analysis was also stimulated by the increasing availability of massive data sets that most often can be naturally modelled as graphs, and the demonstrated successes of network-based theories for the analysis of “big data”.
+This workshop will showcase potential applicability of network analysis tools to problems of interest within the realm of finance and economics, discussing topics that include community detection and clustering, temporal multilayer networks, analysis of the interbank market, network models of systemic risk, portfolio construction, analysis of large-scale supply chains, and anomaly detection in transaction networks.
+The workshop will provide an overview of relevant research in the field from a number of academics and industry practitioners.
+This is a technical event, suitable for individuals with a background and interest in network analysis and its applicability to problems arising in finance and economics.
+Full agenda (TBC) will include an overview of relevant research in the field from a number of academics, followed by short talks by industry practitioners.
+Confirmed talk titles and speakers are as follows:
+Fabio Caccioli (University College London)
+Title: Network models of systemic risk
+Marya Bazzi (The Alan Turing Institute & University of Warwick)
+Title: Community structure in temporal multilayer networks, and its application to financial correlation networks
+Paolo Barucca (University College London)
+Title: Dynamic network models in finance:
+Xiaowen Dong (University of Oxford)
+Title: Network-based learning for understanding collective human behaviour
+Ginestra Bianconi (Queen Mary University of London)
+Title: Network theory for finance
+Felix Reed-Tsochas (University of Oxford)
+Title: An ecosystem perspective on financial and industrial networks
+Jeremy Turiel (University College London)
+Title: Sector Neutral Portfolios: Long memory motifs persistence in market structure dynamics
+Andrew Elliott (The Alan Turing Institute)
+Title: Anomaly detection and core-periphery structure in networks
+Peter Mitic (Santander UK)
+Title:  Money Laundering Networks
+Kimmo Soramäki (FNA - Financial Network Analytics)
+Title: Applications of financial networks in finance - and challenges faced
+The Alan Turing Institute
+1st floor of the British Library, 96 Euston Road, London, NW1 2DB
+© The Alan Turing Institute
+2023. All rights reserved.
+The Alan Turing Institute, a charity incorporated and registered in England and Wales with company number 09512457 and charity number 1162533 whose registered office is at British Library, 96 Euston Road, London, England, NW1 2DB, United Kingdom.
+For website-related enquiries email
+[email protected]
+
+Explore the Institute
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Legal
+Awards

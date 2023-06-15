@@ -1,0 +1,57 @@
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Aras Selvi is a PhD candidate at Imperial College London (Department of Analytics and Operations, Business School) as a member of the group “Models and Algorithms for Decision-Making under Uncertainty” supervised by Professor Wolfram Wiesemann. His research interests include robust and distributionally robust optimisation, machine learning, computational privacy, and their intersections. 
+Aras is a member of the Computational Optimisation Group (Department of Computing), Data Science Institute, and Imperial Business Analytics. He serves as a reviewer in leading optimisation and machine learning venues including SIAM Journal on Optimization, Management Science, NeurIPS, and ICML. He is also an academic mentor on the Imperial’s Data Spark programme where his past projects used data analytics to improve operational efficiencies and commercial performance for a global energy company as well as derived analytical tools to prevent global nuclear proliferation for a major policy institute. He supervises student-led projects on deriving analytical tools to facilitate the decision-making (under uncertainty) processes of major global non-profit organisations. He works as a teacher or teaching assistant for graduate-level optimisation and machine learning modules at Imperial College London, London School of Economics, and London Business School.
+Aras holds a BSc degree from Ozyegin University (Turkey) in Industrial Engineering with a minor in Computer Science, and MRes degrees from Tilburg University (the Netherlands) and Imperial College London, both in Operations Research.
+ 
+Aras is interested in developing efficient algorithms to solve hard optimisation problems arising in privacy, machine learning, and business. 
+In his ongoing research projects during his Turing affiliation, he has two main themes.  The first theme is on designing optimal algorithms in differential privacy. He works on research questions including:
+-    There are several parameters of query functions used in differential privacy, including the smooth sensitivity, that are NP-hard to compute in many cases. Can one obtain convex optimisation-based tight approximations for them?
+-    The literature on the design of differentially private machine learning algorithms relies on the post-processing and composition properties. Can one apply optimisation techniques to rely on these properties as little as possible so that we control the total amount of noise used in the whole process? 
+The second theme is on designing distributionally robust machine learning models, especially over Wasserstein balls. In one of his previous works, with his co-authors, he worked on Wasserstein logistic regression with mixed features and showed that although the formulation of this problem amounts to an optimization problem of exponential size, it admits a polynomial-time solution scheme. As there are many machine learning problems whose Wasserstein distributionally robust formulations have stayed intractable so far, Aras is interested in exploiting special structures these problems admit in order to develop efficient solution (or approximation) algorithms.
+ 
+© The Alan Turing Institute
+2023. All rights reserved.
+The Alan Turing Institute, a charity incorporated and registered in England and Wales with company number 09512457 and charity number 1162533 whose registered office is at British Library, 96 Euston Road, London, England, NW1 2DB, United Kingdom.
+For website-related enquiries email
+[email protected]
+
+Explore the Institute
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Legal
+Awards

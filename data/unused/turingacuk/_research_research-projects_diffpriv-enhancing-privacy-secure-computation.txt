@@ -1,0 +1,58 @@
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Usually when personal data is used by a company it is collected in a manner that allows the company to see it, unobscured. By adding noise to the data before the company sees it the amount of information leaked about a person can be provably bounded, however getting good bounds is hard. In this project, alternative security assumptions and cryptography are being used to reduce the information leakage for a given noise level.
+In this project the primary notion of privacy is that of 'differential privacy'. To understand this notion imagine you are a data provider with a choice to tell the truth to a data collector or to fabricate a (presumably more flattering) lie. A mechanism for data collection is said to be differentially private if your choice of whether or not to lie doesn't significantly change the probability of the collector seeing any particular outcome. The collector thus can't infer what the data you as an individual provided.
+Whilst this guarantee intrinsically requires uncertainty to be added, with a sufficient number of providers it is possible to obtain accurate statistics for the population.
+It seems intuitive that if you provide your data anonymously that will be helpful to keeping your data private. Whilst anonymity alone can lead to substantial loss of personal information, it turns out that it can significantly enhance the privacy guarantees provided so long as it is combined with at least a little randomization.
+ 
+This project hopes to produce new algorithms for computing statistics of interest. This project will be a success if the algorithms produced compute useful statistics accurately whilst providing a stronger privacy guarantee and/or requiring substantially less input data than the previous state of the art for that statistic. It will also be strongly preferable that the algorithms are practical enough to be deployable in the real world.
+Such algorithms will allow privacy-preserving practices based on cryptography to be deployed not just for products with millions of users but also for products with thousands of users. Thus they would be a step towards allowing privacy-preserving data collection/release techniques to become a standard in industry.
+ 
+Privacy-preserving efficient data collection could be deployed in an array of different scenarios. Multiple hospitals could run statistical analyses on their combined datasets, without endangering patient privacy. Better guarantees could be provided for the safety of releasing census data.
+The type of application most appropriate to the work of this project is that of a company with an application that they wish to update on the basis of how users interact with it. The ultimate goal of this line of research would be to allow most of these applications to be updated without anyone having their data being thoroughly exposed (i.e. whilst being provided differential privacy).
+ 
+© The Alan Turing Institute
+2023. All rights reserved.
+The Alan Turing Institute, a charity incorporated and registered in England and Wales with company number 09512457 and charity number 1162533 whose registered office is at British Library, 96 Euston Road, London, England, NW1 2DB, United Kingdom.
+For website-related enquiries email
+[email protected]
+
+Explore the Institute
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Legal
+Awards

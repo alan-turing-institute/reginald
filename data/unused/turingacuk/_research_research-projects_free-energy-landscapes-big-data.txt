@@ -1,0 +1,61 @@
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Machine learning is used in a range of data science tasks, but it's necessary to explain the natural geometric structure of landscapes arising in machine learning to derive efficient algorithms.
+Many important challenges in data science can be reduced to the problem of minimising a high dimensional function, typically for the parameters of a neural network. In practice, given the vast numbers of parameters involved (for deep networks this can be millions or more), the available data is often sparse (it may even be smaller than the number of parameters) and a full exploration is never possible.
+Much work is therefore needed to explain the natural geometric structure of landscapes arising in machine learning and to use this knowledge of the landscape to derive efficient algorithms.
+In close analogy to the problems of data science, simulations in chemistry and physics often involve modelling the 'energy landscape' which describes the relative weight of different states, for example describing the configurations of atoms. The complexity and high-dimensionality of the underlying system often make exploration of the most probable states difficult.
+This challenge has given rise to the development of the Monte-Carlo (MC) method, and molecular dynamics (MD). The development of molecular sampling methods has gone hand in hand with the design of algorithms for optimisation, for example the protein folding problem is usually formulated as a global optimisation problem. Optimisation also plays a key role in the refinement of experimental (e.g. spectroscopy) data and the search for structural motifs for new materials.
+Molecular dynamics-like sampling methods can often be adapted to data science, for example helping circumvent problems due to over fitting in parameter inference. Identification of suitable variables becomes the most important task in practice and then problems can be reduced to calculating barriers in a 'free-energy' landscape.
+This project is focusing algorithm development to the task of choosing suitable variables for molecular dynamics-like sampling methods, as this task is critical to the efficiency of these methods.
+In molecular sampling one powerful recent approach to automatic determination of variables has been developed recently based on diffusion maps, an idea that in fact originated in harmonic analysis (and which provides a systematic procedure for manifold learning).
+
+Within the scope of the project a software toolkit called TATi has been developed that allows for analysing the loss manifolds of neural networks in the field of machine learning. TATi stands for Thermodynamic Analytics Toolkit, meaning that sampling methods such as Langevin samplers have been used that are based on concepts of temperature, heat, and energy from statistical physics. The goal is to bring answers to the questions why neural network training works so well. Neural networks operate in very high-dimensional spaces and their cost functions are generally non-convex. Therefore, it is not straight-forward to understand why training does not get stuck in "bad" local minima. Answers to this question have the potential to accelerate training and to allow for more efficient networks.
+MNIST is one of the major prototypical datasets in machine learning. It consists of a dataset of 70,000 grey-scale images of hand-written digits, 28 by 28 pixels in size. The goal is to correctly associate each image with its digit. A very simple neural network, the single-layer perceptron, for this problem already has 7850 degrees of freedom. Large state-of-the-art networks easily have one million degrees of freedom. In order to visualise the loss manifold, the project researchers look at the covariance matrix obtained from sampling the loss manifold. In the figures shown the eigenvectors of the covariance matrix associated with the first and strongest eigenvalue and the 64th smaller eigenvalue have been used. Moreover, the figures depict a typical optimisation trajectory whose end point, the local minimum, is chosen as the origin.
+The visualisation shows a large funnel. If one zooms into the minimum region, depicted by the red square, i.e. move deeper into the funnel from left to right, then it's possible to see that the walls of the funnel are no longer smooth but that they have many tiny bumps, i.e. local minima, especially at its bottom. This corresponds well with theoretical predictions for this type of network. With TATi the project aims to dig a lot deeper, looking at many different loss functions and networks in order to generalise results and make predictions.
+ 
+[email protected]
+© The Alan Turing Institute
+2023. All rights reserved.
+The Alan Turing Institute, a charity incorporated and registered in England and Wales with company number 09512457 and charity number 1162533 whose registered office is at British Library, 96 Euston Road, London, England, NW1 2DB, United Kingdom.
+For website-related enquiries email
+[email protected]
+
+Explore the Institute
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Legal
+Awards

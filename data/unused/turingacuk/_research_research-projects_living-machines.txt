@@ -1,0 +1,80 @@
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+The Alan Turing Institute and the British Library, together with researchers from a range of universities, have been awarded £9.2 million from the UKRI's Strategic Priorities Fund for a major new project. Led by the Arts and Humanities Research Council (AHRC), ‘Living with Machines’ is one of the biggest and most ambitious humanities and science research initiatives ever to launch in the UK.
+The project brings together historians, data scientists, geographers, computational linguists, and curators to devise new methods in data science and artificial intelligence that can be applied to historical resources, producing tools and software to analyse digitised collections at scale.
+Living with Machines has a particular set of research interests: specifically to examine the ways in which technology altered the lives and culture of people in Britain in the long 19th century (c.1780-1918). The project is marshalling a whole range of sources that have already been digitised from maps, census returns, newspapers, books and journals. While our data is historical, the questions are perhaps never more pertinent as AI is changing the way we live in the 21st century. 
+Its ten key aims are to:
+The research methodologies and tools developed as a result of the project are transforming how researchers can access and understand digitised historic collections. We offer not only a host of new software and methods for wrangling this data, but examples of how this changes the history we can tell. Find out more about software and methods.
+Furthermore, we have sought to lower the bar to others trying to do this work in future in our forthcoming book Collaborative Historical Research in the Age of Big Data (Cambridge University Press, November 2022). The book discusses not only how to set up an interdisciplinary collaborative team, but also takes readers through the steps of getting hold of cultural heritage data and the infrastructure required. While it suggests a set of pragmatic strategies that projects can employ it also highlights some key structural issues that can only be addressed by a rethink of national policy and funding priorities in the UK. 
+ 
+Ahnert, Ruth, et al. Collaborative Historical Research in the Age of Big Data. Cambridge University Press, Available Open Access.
+Ardanuy, Mariona Coll, et al. “Resolving Places, Past and Present: Toponym Resolution in Historical British Newspapers Using Multiple Resources.” Proceedings of the 13th Workshop on Geographic Information Retrieval, Association for Computing Machinery, 2019, pp. 1–6.
+Arenas, Diego, et al. Design Choices for Productive, Secure, Data-Intensive Research at Scale in the Cloud. arXiv:1908.08737, arXiv, 15 Sept. 2019.
+Beelen, Kaspar, Jon Lawrence, Daniel C. S. Wilson, and David Beavan. “Bias and Representativeness in Digitized Newspaper Collections: Introducing the Environmental Scan.” Digital Scholarship in the Humanities, July 2022, p. fqac037.
+Beelen, Kaspar, Ruth Ahnert, David Beavan, Mariona Coll Ardanuy, Kasra Hosseini, et al. Contextualizing Victorian Newspapers.
+Beelen, Kaspar, Ruth Ahnert, David Beavan, Mariona Coll Ardanuy, Emma Griffin, et al. Living with Machines: Exploring Bias in the British Newspaper Archive.
+Beelen, Kaspar, Federico Nanni, Mariona Coll Ardanuy, Kasra Hosseini, et al. “When Time Makes Sense: A Historically-Aware Approach to Targeted Sense Disambiguation.” Findings of the Association for Computational Linguistics: ACL-IJCNLP 2021, Association for Computational Linguistics, 2021, pp. 2751–61.
+Boyd Davis, Stephen, et al. “Can I Believe What I See? Data Visualization and Trust in the Humanities.” Interdisciplinary Science Reviews, vol. 46, no. 4, Oct. 2021, pp. 522–46.
+Coll Ardanuy, Mariona, Kasra Hosseini, et al. A Deep Learning Approach to Geographical Candidate Selection through Toponym Matching.
+Coll Ardanuy, Mariona, Federico Nanni, et al. “Living Machines: A Study of Atypical Animacy.” Proceedings of the 28th International Conference on Computational Linguistics, International Committee on Computational Linguistics, 2020, pp. 4534–45.
+Coll Ardanuy, Mariona, Kaspar Beelen, et al. “Station to Station: Linking and Enriching Historical British Railway Data.” Proceedings of the Conference on Computational Humanities Research 2021, Proceedings of the Conference on Computational Humanities Research 2021.
+View all Living with Machines publications
+Publication of the Living with Machines book on data, infrastructure, and collaboration
+We are delighted to share with you Open Access our book ‘Collaborative Historical Research in the Age of Big Data: Lessons from an interdisciplinary project’, published by Cambridge University Press, as part of the series Elements. Co-authored by Ruth Ahnert, Emma Griffin, Mia Ridge, Giorgia Tolfo, and the LWM team, the book addresses the challenges of establishing and managing a truly multidisciplinary digital humanities project in the complex landscape of cultural data in the UK. In contrast to many previous digital humanities projects which have sought to create resources, the project was concerned to work with what was already there, by leveraging more than twenty-years' worth of digitisation projects in order to deepen our understanding of the impact of mechanisation on nineteenth-century Britain. Sharing our experience, we hope to provide tools and methods for future researchers seeking to undertake digital history projects.
+The book launch will take place online on 7th March 2023, 5PM GMT, as part of AI UK Fringe Events. Register here.
+ 
+Living with Machines exhibition 
+The exhibition ‘Living with Machines’, co-curated by the British Library and Leeds City Museum, and inspired by the Living with Machines research project, opened on July 29, 2022 and concluded on January 8, 2023 at Leeds City Museum.
+The Living with Machines exhibition revealed surprising parallels between the Industrial Revolution and today’s world of ‘big tech’, from the origins of football leagues and fast fashion to the 9-to-5 working day. The exhibition reached more than 42,000 visitors in total.
+Find out more about the exhibition and related events
+Email [email protected]
+Visit the Living with Machines website
+Sign up to the Living with Machines newsletter
+Follow @LivingWMachines on Twitter
+The research engineering groups from the Turing and British Library are developing new cutting-edge research methods blending data science and digital humanities, in collaboration with linguists and historians. These range from developing methods to query terabytes of unstructured data, to designing deep learning techniques able to identify individuals and extract their life story from multiple sources of data, spanning decades.
+While underpinning research through infrastructure, the Research Engineering Group is also inspiring new questions to be asked at a hitherto unprecedented scale in the humanities.
+© The Alan Turing Institute
+2023. All rights reserved.
+The Alan Turing Institute, a charity incorporated and registered in England and Wales with company number 09512457 and charity number 1162533 whose registered office is at British Library, 96 Euston Road, London, England, NW1 2DB, United Kingdom.
+For website-related enquiries email
+[email protected]
+
+Explore the Institute
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Legal
+Awards

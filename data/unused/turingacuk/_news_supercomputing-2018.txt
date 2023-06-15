@@ -1,0 +1,60 @@
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+I recently attended this year's Supercomputing conference, together with Tomas Lazauskas.
+The conference itself saw just over 13000 attendees arrive in Dallas, TX, for part academic conference (on all aspects of high-performance computing) and part exhibition, in the huge Kay Bailey Hutchinson convention centre. The exhibits filled most of 500000 sq ft of exhibition hall, showcasing the latest HPC and networking hardware, alongside software providers, academic groups and national labs.
+Aside from keynotes describing impressive US and Chinese systems, now approaching exaflop performance, there were presentations of machines based on a variety of emerging architectures, including some work from Intel related to a collaboration with Turing researchers, Arm-based HPC systems and dedicated hardware for neuromorphic computing.
+There was a strong presence from cloud computing providers, and one session that particularly stood out for me was a panel discussion of on-premises HPC systems vs. the cloud.
+The Turing Institute has a large donation from Microsoft in the form of Azure credits, but also has access to several UK HPC facilities nationally and through our partner universities, and some systems of our own (including one provided by Intel and a Cray Urika system), so this discussion was particularly relevant to us.
+The overall conclusion of the panel seemed to be "use the right tool for the job," but it is worth unpicking exactly what that means.
+Some workloads are hard to move off-premises for security reasons, although there are some potential future technological solutions which could provide additional security models to address this in some cases.
+Local HPC resources are often procured with a particular set of workloads in mind, traditionally dominated by large-scale physics codes, but increasingly being joined by machine learning tasks. High speed, low latency networking is the norm for these facilities, and there is invariably a local team of dedicated HPC administrators, and increasingly RSE teams who can work with users to extract the best performance from their simulation or analysis.
+This isn't quite matched by current cloud offering. Azure batch is probably the closest to HPC practitioners' expectations in this regard. By contrast, cloud providers can offer high availability with no queuing, redundancy and always-current (and perhaps novel) hardware, detached from academic funding cycles, and with unmatched scalability for smaller jobs.
+These smaller jobs are also used to backfill local HPC systems (and can therefore be priced competitively). Some HPC centres now seem to be aiming towards a model based on providing local resources targeted at the specific large-scale jobs for which they are ideally suited, but with a burst capability for offloading jobs to the cloud to match demand, perhaps even transparently through the same user interface.
+New possiblilities and challenges are emerging in this space all the time. After all, cloud computing in the HPC world was relatively unknown as little as five years ago.
+SC18 was a great event, and a fantastic opportunity to keep up to date with the developments in the field. I look forward to attending again in the future, as do colleagues from Turing Research Engineering.
+Thanks to the Data Science at Scale Programme for funding this visit as part of my work on the Optimisation for Network Analysis project.
+© The Alan Turing Institute
+2023. All rights reserved.
+The Alan Turing Institute, a charity incorporated and registered in England and Wales with company number 09512457 and charity number 1162533 whose registered office is at British Library, 96 Euston Road, London, England, NW1 2DB, United Kingdom.
+For website-related enquiries email
+[email protected]
+
+Explore the Institute
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Legal
+Awards

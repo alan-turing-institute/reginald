@@ -1,0 +1,60 @@
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+ChatGPT caused a sensation when it was released last November. The AI-powered chatbot’s realistic, and sometimes surreal, outputs have amazed, delighted, and occasionally appalled users, who have used it to create everything from romantic poems to cake recipes. Analysts have described it as the fastest-growing consumer app ever, with an estimated 100 million unique users in the two months since it launched.
+Created by OpenAI, an American AI research lab, ChatGPT is part of their GPT suite of models able to undertake natural language tasks. OpenAI also provide Codex, which translates natural language to code, and DALL·E 2, which allows users to create new images and art from a text prompt. Many new competitors in the space, such as Google’s Bard based on their large language model (LLM) LaMDA, are also rapidly appearing.
+ChatGPT falls into a category of algorithms known as generative AI - these are defined as algorithms that can create content which resemble creative outputs such as text, images, video, code, and audio. Large language models like ChatGPT are trained on huge datasets of human language taken from the internet. Users can use text prompts to ask the chatbot questions and it then produces content based on what it has learnt from the data.
+Professor Mike Wooldridge, The Alan Turing Institute’s programme director of AI Foundations, says this technology is particularly exciting because “the core abilities of this technology are producing and understanding ordinary, everyday language”. It’s “the kind that people use when they talk to other people. And that's been one of the big targets of AI research ever since the field began”, he added.
+Although AI and algorithms have been influencing our leisure time, dating lives and consumer choices for years, for many people Chat GPT has been the first opportunity they've had to strike up a realistic, in-depth conversation with an AI.
+The release of ChatGPT isn’t the first time that a large language model or generative AI has made headlines over the last year. Google’s LaMDA AI system made the news when one of its engineers claimed it had become sentient, prompting widespread discussion on whether machines could become conscious. Widespread debates are also taking place in the creative industries over AI image generators, such as DALL·E and Stable Diffusion, with ethical questions being raised about the issues of copyright and creativity.
+ChatGPT and other generative AI are increasingly being used in more settings. ChatGPT has already been used to give advice to mental health patients and even to inform a judge’s ruling in a court case . Many experts are pointing to ethical concerns of these technologies. Some are worried that these models are being released before their impacts have been properly considered and before safeguards have been put in place.
+According to Professor Wooldridge, one concern is that the technology “doesn’t have any conception of the truth. It gets things wrong in very plausible ways. It’s easy to believe and easy to be taken in by some answers it offers”. A real risk is this content is then used to spread misinformation.
+Turing Ethics Fellow Dr Mhairi Aitken adds: “It is really important that we increase public awareness of the limitations of ChatGPT and generative AI more broadly. It is important that people understand that these technologies cannot be relied upon to provide factual or objective information.”
+Another worry is that generative AI can produce biased or discriminatory outputs, as the models may be trained on data that has embedded discrimination or limitations. This is then replicated in the content it produces, reinforcing biases. “We need to examine the choices that have been made around which data to include in training datasets and what measures are taken to address bias” says Dr Aitken.
+ “A lot of the media attention has been on uses of ChatGPT, for example how students may use it to cheat in assignments, and that places a lot of emphasis on responsible use of the technology. However, more attention should be paid to how these systems have been developed.”
+Last year, the Turing started its own programme of work in this area. Led by Professor Wooldridge, the programme’s work includes benchmarking the capabilities and limitations of foundation models with the eventual aim of producing guidance on this technology. The Alan Turing Institute is also hosting a one-day symposium to explore these topics further.
+The excitement and hype around technologies such as GPT-3, ChatGPT and Bard is only going to grow over the coming years. These are incredibly powerful and impressive tools, but we need to make sure we keep having conversations about how they developed, how they are used, and where this technology is heading.
+© The Alan Turing Institute
+2023. All rights reserved.
+The Alan Turing Institute, a charity incorporated and registered in England and Wales with company number 09512457 and charity number 1162533 whose registered office is at British Library, 96 Euston Road, London, England, NW1 2DB, United Kingdom.
+For website-related enquiries email
+[email protected]
+
+Explore the Institute
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Legal
+Awards

@@ -1,0 +1,62 @@
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Prediction algorithms are widely used in several domains, including healthcare, yet neither the parameters nor the predictions, have a causal interpretation. A causal interpretation is desirable when using prediction algorithms for decision support to allow for the prediction of the potential outcome of an individual for each intervention under consideration.
+With a rich and growing causal inference literature that focuses on estimating the causal effects of hypothetical interventions, firmly grounded in the potential outcomes framework, there is an opportunity to embrace and integrate these methods to allow a predictive algorithm to become meaningful in a causal sense, and thus allow appropriate use of prediction algorithms to guide decisions. With the anticipated increase of (automated) algorithm-based decisions in coming years, following advances in machine learning and artificial intelligence, there is an urgent need for a greater understanding of how causal reasoning can be integrated in predictive analytics.
+This is part of the Theory and Methods Challenge Fortnights in Data Science and AI.
+There are methodological challenges to overcome to achieve a fundamentally different approach to prediction. Primarily these concern integration of information across different models that achieve different objectives (e.g. a model that estimates a particular causal effect, versus a model optimised for prediction), and synthesis of information from different data sources (e.g. causal effect of treatment estimated in a clinical trial; prediction algorithm estimated in routinely collected data).
+In healthcare and other fields, we are increasingly moving to a proactive rather than reactive approach, which is widely believed to be more efficient and effective. Prediction algorithms are essential tools to underpin this, as they allow resource to be targeted in an evidence-based and effective way, by making use of the increasing volumes of data available to make accurate and precise predictions. However, there is a growing awareness that the information prediction algorithms provide is often insufficient for their intended use. As remarked by Hernán et al. (2018) ‘predictive algorithms inform us that decisions have to be made, but they cannot help us make the decisions’.
+With QRISK, the proposed intervention is unrelated to the prediction algorithm, and the efficacy of the intervention is determined independently of the prediction algorithm. Incorporating principles of causal inference in predictive algorithms will provide direct information on the consequences of the intended interventions, and permit decision makers to answer the question ‘what if I do or do not take a certain action’.
+To map out the research challenges and the proposed program of work required to deliver prediction algorithms enabled with counterfactual prediction for improved algorithm-based decision support.
+Prediction algorithms that can be used more directly for decision support in a range of application areas. In health, it will allow to evaluate ‘what if’ predictions, i.e. predictions of outcomes for patients conditional on a range of possible intervention strategies to allow for better informed decision making. We will also evaluate counterfactual fairness, i.e. how to avoid discrimination in prediction models (and decisions based on them) such as in recidivism prediction. We will also develop methods applicable in public policy, and finance and economics scenarios, i.e. allowing for counterfactual prediction of outcomes of different policies.
+This project will map and clarify the research agenda for theory and methods development in counterfactual prediction. This directly maps to the Turing’s overall aim of building a data and AI enriched world for the benefit of all, since counterfactual prediction has the potential to lead to better information available to decision makers, as well as tackling the issue of counterfactual fairness.
+There are a number of other domains where incorporating causal inference in predictive algorithms will be important, that will be explored in this TMCF.
+Public policy: where AI is used to inform policy making, counterfactual prediction algorithms that allow the implications of ‘what if’ scenarios to be evaluated appropriately are of huge value to policy makers.
+Finance and economics: counterfactual prediction algorithms can be applied at both an individual level (e.g. estimating the probability of an individual defaulting on a loan) up to macro-economic policy scenarios.
+Counterfactual fairness: in a recidivism model, for example, one may make a decision on sentencing based on the risk of re-offending. In this case, it is crucial that discrimination is avoided (e.g. ethnic origin, or a factor related to it, being a predictor). Kusner et al. (2017) have shown the use of a counterfactual model to tackle this problem. More generally, the challenge of linking causal inference with prediction is important across the fields of AI, statistics, machine learning and data science, to ensure that predictions are explainable, transparent, robust, and used in an ethical and fair manner.
+Ultimately we hope this research will make a difference by providing risk prediction tools that do allow for the causal interpretations that users are requesting. We would ultimately economically evaluate the implementation of such tools. Of course, this is a long term plan that will be realised through follow-on work from the fortnight.
+University of Manchester
+© The Alan Turing Institute
+2023. All rights reserved.
+The Alan Turing Institute, a charity incorporated and registered in England and Wales with company number 09512457 and charity number 1162533 whose registered office is at British Library, 96 Euston Road, London, England, NW1 2DB, United Kingdom.
+For website-related enquiries email
+[email protected]
+
+Explore the Institute
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Legal
+Awards

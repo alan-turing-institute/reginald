@@ -1,0 +1,54 @@
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+During the past decade, tools and techniques for social and geographic data have witnessed substantial changes. For this reason, there is a necessity for investigating methodological and computational aspects in this field. The mapping of tools and techniques for social and geographic data brings two main benefits: it provides an overview of this area, and it also allows researchers to identify potential research agendas for the future.
+New sources of data, such as mobile data and social data, allow researchers to model and understand human behaviour in ways that were not possible just a decade ago. For this reason, in the past few years, there has been an explosion in the development of tools and techniques for the analysis of these 'digital traces' that we leave in our online and offline lives. The goal of this project is to provide an up-to-date overview of the technological landscape in this area in order to underpin future research agendas in this field.
+The main purpose of this project is to provide a comprehensive description of the tools and techniques available for the analysis of social and geographic datasets.
+During the past decade, there has been an increasing interest in this area from researchers from a variety of disciplines. Traditionally, data were collected through labour-intensive data gathering exercises (census, longitudinal studies, and so on). Instead, nowadays data are retrieved from social networks (user interactions and interests), mobile phones (location data and activity patterns) or IoT sensors (mobility patterns collected by means of card readers at stations, cameras, etc.).
+The availability of a large amount of data from these new sources of data allow researchers to investigate different phenomena and processes such as sentiment and opinion analysis, mobility patterns, fake news detection, information spreading, and so on.
+The goal of this project is a comprehensive survey that will be of interest for researchers and practitioners in any applied or theoretical area of data science related to the analysis, storage, modelling and visualisation of social and geographic datasets.
+[email protected] 
+© The Alan Turing Institute
+2023. All rights reserved.
+The Alan Turing Institute, a charity incorporated and registered in England and Wales with company number 09512457 and charity number 1162533 whose registered office is at British Library, 96 Euston Road, London, England, NW1 2DB, United Kingdom.
+For website-related enquiries email
+[email protected]
+
+Explore the Institute
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Legal
+Awards
