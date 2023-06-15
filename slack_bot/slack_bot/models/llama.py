@@ -121,6 +121,7 @@ class Llama(ResponseModel):
             llm_predictor=llm_predictor,
             embed_model=embed_model,
             prompt_helper=prompt_helper,
+            chunk_size_limit=chunk_size_limit,
         )
 
         self.index = GPTVectorStoreIndex.from_documents(
