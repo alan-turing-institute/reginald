@@ -1,0 +1,64 @@
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+A crucial limitation in the current generation of autonomous agents is that they are unable to reason about the adequacy of models used to predict the actions of other agents. This inability may cause an agent to use possibly misleading models of other agents (including humans), without ever realising the inadequacy. This project addresses this limitation by developing new algorithms for statistical hypothesis testing of probabilistic agent models. The algorithms will enable autonomous agents to detect model inadequacy, and to take appropriate action (such as revising models or asking for clarification) if the models are found to be inadequate.
+In plain terms, we have one agent which uses models to predict the actions of other agents. Such models can make predictions based on things that happened in the past, such as the pact actions of the modelled agent, and other contextual information.
+The principal idea in this project is to view models of other agents as stochastic (random) processes which are amenable to statistical hypothesis testing, using data collected from the observed interaction history. This allows the agent to reason about the correctness of the model hypothesis by comparing the predicted actions of the model with the actual actions taken by the modelled agent, and analysing action frequencies and causal dependencies.
+The challenge in this approach comes from the fact that the usual statistical hypothesis testing methods rely on assumptions that do not hold in interactive multi-agent settings. For example, other agents may have complex causal structure in their decision making which maps entire interaction histories to actions, and their behaviours may change as a result of what happened in the past.
+There are also important practical aspects, such as how many observations are needed to reliably conduct the hypothesis testing process, and how to automatically optimise the hypothesis testing based on task and environment specifications given to the agent.
+A central goal in artificial intelligence research is the development of autonomous agents which can interact effectively with other agents to accomplish tasks in complex environments. The ability to reason about the unknown behaviours of other agents (that is, how they make decisions) is a key requirement in such agents, and a number of methods have been developed to this end (Albrecht & Stone, 2018).
+However, a crucial limitation in current autonomous agents is that they lack the ability to reason about the adequacy of models used to predict the actions of other agents. Thus, it is possible that an agent may use inadequate and possibly misleading models of other agents, without ever realising it. Such inadequate models will make incorrect predictions, which may cause an agent that uses such models to make bad decisions when interacting with other agents.
+For example, we cannot trust an autonomous vehicle to drive safely if it is unable to realise when its models of other drivers are inadequate, and therefore provide wrong predictions. Safe autonomy in these and other applications necessitates the ability to reason about the adequacy of ones models, such that appropriate action can be taken if the models are deemed inadequate (e.g. trying to improve the models).
+This project will develop the foundations of a new statistical theory and algorithms to enable an autonomous agent to decide whether its models of other agents are inadequate. To achieve this, the algorithms perform automated statistical hypothesis tests based on observations such as the past actions taken by the modelled agents. The result of these tests inform the agent whether or not to trust its models of other agents.
+Some of the technical questions involved in this research include:
+Safety and robustness are crucial aspects for a successful deployment of autonomous systems. In particular, as autonomous systems interact with humans and other actors, they will have to reason about the actions of others by building predictive models of their behaviours.
+Safety in this context means that an autonomous system can realise whether its models are inadequate for the task of predicting the behaviours of others, and thus take appropriate action (such as asking for clarification). This project aims to develop algorithms with enable autonomous systems to carry out such reasoning, thereby increasing the safety of autonomous systems and contributing to their successful deployment.
+To demonstrate the impact potential of this research, the project will explore two novel applications of the developed algorithms:
+An autonomous vehicle (AV) could utilise algorithms such as those developed in this project to decide whether its models of other drivers are adequate. If the AV decides that its models are inadequate in a given situation, it may resort to a conservative driving policy that does not rely on accurate models, thereby enhancing the AV's safety. This application will be explored in close collaboration with UK-based company FiveAI which aims to develop a complete AV system for the UK transportation sector.
+The algorithms developed in this project could form the basis of a novel approach for secure remote authentication and key generation in computer networks. The basic idea is that a client and server machine engage in an interactive authentication process based on which the server has to decide whether the client is who it claims to be based on the client's observed actions, and this decision can be made using the algorithms developed in this project.
+S.V. Albrecht, P. Stone. "Autonomous Agents Modelling Other Agents: A Comprehensive Survey and Open Problems", Artificial Intelligence (AIJ), Vol. 258, pp. 66-95, 2018. arXiv link.
+S.V. Albrecht, S. Ramamoorthy. "Are You Doing What I Think You Are Doing? Criticising Uncertain Agent Models", Proceedings of the 31st Conference on Uncertainty in Artificial Intelligence (UAI), 2015. PDF link.
+© The Alan Turing Institute
+2023. All rights reserved.
+The Alan Turing Institute, a charity incorporated and registered in England and Wales with company number 09512457 and charity number 1162533 whose registered office is at British Library, 96 Euston Road, London, England, NW1 2DB, United Kingdom.
+For website-related enquiries email
+[email protected]
+
+Explore the Institute
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Legal
+Awards

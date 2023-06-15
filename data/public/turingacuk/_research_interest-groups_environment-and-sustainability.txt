@@ -1,0 +1,56 @@
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+The explosion in the availability of large and complex data sets from diverse sources (e.g. environmental monitoring; remote sensing; bio-logging, climate modelling; social media; and contributions from citizen science), together with advances in methodology and computation presents an exceptional opportunity to transform our knowledge of both the effects of environmental change and to develop solutions to environmentally related challenges.
+Unlocking the full power of data will have far reaching impact across a wide spectrum of environmental areas; it will raise the bar in data-driven environment research and provide the information and insight required by sectors strongly impacted by the environment including agri-food, fisheries, water, waste, transport, health, finance and energy. It will enhance our resilience to natural hazards ability through enhanced prediction, forecasting and early warning systems, and the development of next generation, data-led, resilience planning, resilient infrastructure and financial instruments.
+Environmental challenges are inherently global, and the sheer volume of data that need to be incorporated into decision making at this scale means that data science and AI will be crucial in providing the robust, decision-quality information that is required. This is especially true in the case of the Sustainable Development Goals (SDGs) for which quality, accessible, timely and reliable disaggregated data is essential for understanding the scale of the challenges and in measuring progress.
+The global environmental research community has developed a plethora of observational and modelling platforms designed to better understand the evolution of our environment and our role within in. As we further push the boundaries on detailed observations from molecular through to global processes, we gather more evidence deemed important to affect change. However, we have reached a crossroad of exploration that hinges on utilising this information to develop sustainable solutions to key problems, such as pollution and resource management. Likewise, implementing change requires a deep understanding of future impact, unintended consequences, behavioural change and effective policies. Numerical models of environmental systems used to predict and quantify change are traditionally containerised collections of stiff coupled ODEs with restrictions placed around computational complexity. New data driven approaches could exploit the wealth of global observations to build new modelling frameworks that cover local to global scales whilst also exploiting emerging compute hardware.
+In many cases, a mechanistic framework that couples process to environmental impact does not exist. Machine learning representations could offer a potential route to develop robust tools for a range of environmental stake-holders and would allow us to make truly effective use of the rapid increase in the data from a variety of sources including:
+Environmental data science naturally sits at the boundaries of multiple disciplines. It is the aim of this interest group to:
+In the long-term, the Environmental sustainability interest group aims to discuss mechanisms for implementing change through policy and behaviour change. This will require engagement with local, regional and national bodies to understand the key data and technology driven challenges they face to affect change.
+The opportunity to join this group is open to academics across all universities, businesses and public and third sector organisations.
+Click here to join us and request sign-up
+© The Alan Turing Institute
+2023. All rights reserved.
+The Alan Turing Institute, a charity incorporated and registered in England and Wales with company number 09512457 and charity number 1162533 whose registered office is at British Library, 96 Euston Road, London, England, NW1 2DB, United Kingdom.
+For website-related enquiries email
+[email protected]
+
+Explore the Institute
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Legal
+Awards

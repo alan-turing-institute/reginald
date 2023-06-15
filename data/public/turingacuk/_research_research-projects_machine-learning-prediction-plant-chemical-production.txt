@@ -1,0 +1,53 @@
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Plants are really good chemical engineers: about 50% of all drugs in current use are natural products or natural product-inspired. Unfortunately, many of these plant natural products cannot be directly accessed, and most have yet to be discovered. Triterpenes are plant natural products that are synthesized from a single linear substrate through an origami-like process by enzymes known as oxidosqualene cyclases (OSCs). This project investigates the use of machine learning methods for modeling this synthesis process, and predicting different possible products.
+The existing machine learning approaches to modeling chemical reactions are not sufficient for modeling the process by which the linear substrate 2,3-oxidosqualene is synthesized into different triterpene scaffolds. First, most existing models do not adequately take three-dimensional structure into account. Three-dimensional structure information is essential for our purposes, as it is necessary to explicitly model the process by which the substrate is folded into a new conformation. Second, this setting is unusual in that all reactions begin from the same substrate: it is specifically necessary to model which of many possible configurations is produced, conditional on the presence of a particular oxidosqualene cyclase (OSC).
+The first stage of the project will require examining circa 180 triterpene scaffolds which have been identified, with the goal of framing the problem and the data in a manner amenable to building a probabilistic model. A primary challenge will be identifying the granularity at which to model the process, as well as representations used as inputs into a machine learning model. The project hopes to leverage molecular docking software to help inform the model. The work will also investigate the possibilities of directly modelling the conformational intricacies that govern favoured arrow pushes seen in these reaction mechanisms. 
+Triterpenes are plant natural products that are synthesized from a single linear substrate, 2.3-oxidosqualene, through an origami-like process by enzymes known as oxidosqualene cyclases (OSCs).  Over >200 different triterpene scaffolds are known. However, while OSC genes can be readily predicted in plant genomes it is not, for the most part, currently possible to predict the nature of the cyclization products of these enzymes. Successful prediction of OSC products based on sequence will require both a deep understanding of triterpene biosynthesis as well as novel machine learning methodology.
+This project is expected to enable generation of hypotheses about mechanisms of triterpene cyclisation that can subsequently be tested experimentally. It will also pave the way for prediction of the nature of triterpene scaffolds based on OSC sequences.
+Triterpenes have a wealth of applications across the health, agriculture and industrial sectors. The ability to harness the process of triterpene cyclization and to predict the nature of OSC products based on genome sequence will greatly accelerate endeavours to engineer triterpenes for use as drugs and for other applications.
+© The Alan Turing Institute
+2023. All rights reserved.
+The Alan Turing Institute, a charity incorporated and registered in England and Wales with company number 09512457 and charity number 1162533 whose registered office is at British Library, 96 Euston Road, London, England, NW1 2DB, United Kingdom.
+For website-related enquiries email
+[email protected]
+
+Explore the Institute
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Legal
+Awards

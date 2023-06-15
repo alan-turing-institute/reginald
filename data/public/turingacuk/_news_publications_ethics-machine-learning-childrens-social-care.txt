@@ -1,0 +1,53 @@
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Across the press, academia, and the worlds of policy and practice, concerns abound about the possible impacts of the growing use of machine learning (ML) in children's social care (CSC) on individuals, families, and communities. Many express legitimate worries about how the depersonalising and de-socialising effects of trends toward the automation of CSC are harming the care environment and negatively altering the way frontline workers are able to engage with families and children. Others raise concerns about how these data-driven ML systems are merely reinforcing, if not amplifying, historical patterns of systemic bias and discrimination. Others, still, highlight how the mixed results of existing ML innovations are signalling widespread conditions of poor data quality and questionable data collection and recording practices.
+It is against this backdrop that What Works for Children’s Social Care (WWCSC) commissioned The Alan Turing Institute and the Rees Centre, University of Oxford to write this report on the research question “Is it ethical to use machine learning approaches in children’s social care systems and if so, how and under what circumstances?”. The findings we present here take some preliminary steps to providing an answer. We offer a three-tiered framework for thinking about the ethics of ML in CSC, encompassing ethical values, principles, and professional virtues and apply them to the specific circumstances of children's social care in England and technical details of ML.
+This research is informed by a range of methods – a literature review, an integrative examination of existing ethical frameworks in social care and ML, a stakeholder roundtable with 31 participants, and a workshop with 10 family members who have lived experience of children’s social care.
+David Leslie, Lisa Holmes, Christina Hitrova, Ellie Ott (2020, January). Ethics of machine learning in children's social care [Report]. What Works for Children's Social Care.
+733 KB
+1.4 MB
+© The Alan Turing Institute
+2023. All rights reserved.
+The Alan Turing Institute, a charity incorporated and registered in England and Wales with company number 09512457 and charity number 1162533 whose registered office is at British Library, 96 Euston Road, London, England, NW1 2DB, United Kingdom.
+For website-related enquiries email
+[email protected]
+
+Explore the Institute
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Legal
+Awards

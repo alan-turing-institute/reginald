@@ -1,0 +1,55 @@
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Retrofitting new interventions to existing buildings, rather than rebuilding from scratch, can help reduce disruption to local communities and help offset the 'embodied energy’ of a building – i.e. the energy consumed by all of the processes associated with its production. However, such new innovations may not fit current energy audit criteria, requiring changes in behavioural norms and modelling approaches. This project is exploring decision-making processes common in construction and building management, in order to evaluate the potential opportunities for retrofit innovations and solutions in the built environment.
+The UK housing stock is of some of the poorest quality in the whole of Western Europe. This is due to a series of historical and policy reasons, including the aging housing associated with the extensive building programmes of the industrial revolution and post-World War periods, as well as one of Europe’s highest density populations. 
+Poor levels of insulation and air tightness have contributed to soaring domestic energy bills. However, airtight houses suffer a number of issues with air quality unless measures are taken to ventilate the house. Bacteria, mould, VOCs (volatile organic compounds), and humidity can build up to unhealthy levels if internal air is not kept fresh through ventilation. 
+Careful consideration and implementation of decision making and design is necessary in order to manage the multi-factor requirements of the technical, aesthetic, psychological, economic, and societal functions of our buildings and environment. This project will explore the interplay between function using problem structuring methods such as morphological analysis; a schema that explores cross consistency of factors along with likelihood or criteria based preference. 
+A particular issue to be addressed in this research is interrelationships between implementations of specific retrofitting measures and overall building performance. 
+This will be done by:
+This project is part of the Data-centric engineering programme's Grand Challenge of 'Data-driven engineering design under uncertainty'.
+This research will be of potential interest and benefit to the construction industry, registered social landlords, building managers, and homeowners, as well as political decision makers. 
+© The Alan Turing Institute
+2023. All rights reserved.
+The Alan Turing Institute, a charity incorporated and registered in England and Wales with company number 09512457 and charity number 1162533 whose registered office is at British Library, 96 Euston Road, London, England, NW1 2DB, United Kingdom.
+For website-related enquiries email
+[email protected]
+
+Explore the Institute
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Legal
+Awards

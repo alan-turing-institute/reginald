@@ -1,0 +1,70 @@
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+In a high-performance computing (HPC) environment, such as a data centre with hundreds or thousands of interconnected computers, well-designed algorithms and architectures allow huge data analysis tasks to be performed. For example, classifying millions of images of tissue samples to identify whether they contain anomalous features that should be examined by a doctor.
+While these high-performance systems operate well for some computing needs, they often run at less than half their full capacity for many data science and machine learning tasks. Researchers at The Alan Turing Institute have been working in collaboration with Intel to co-design better architectures for their HPC systems. The collaboration has looked at how to improve communication between multiple machines that are sharing the workload of massive analyses, as well as how to rethink the formatting of the data used in HPC, to improve performance on data science and machine learning problems.
+The output of the work is not only helping Intel improve their products and services, but also enabling data scientists to manage and analyse massive datasets with greater efficiency, in a range of machine learning applications.
+The Institute established a relationship with Intel that built on existing links between Turing researchers and the technology giant. Peter Boyle, a Turing Fellow from the University of Edinburgh, explains: “I had been working with Intel on HPC workloads in Edinburgh for a while. The Turing’s engagement helped grow that relationship further, expanding the scope to include a broad spectrum of AI and machine learning workloads. It allowed Intel to place two of their engineers in Edinburgh to help work on these active co-design projects.”
+Katrina Payne, Business Development Manager at the Turing, says, “The organisational relationship between Turing and Intel is about putting a framework in place that facilitates direct, personal working relationships between individuals in each organisation.”
+“Co-design… is mutually beneficial. We get better science and Intel get a better product”
+Peter Boyle, Turing Fellow
+“The co-design process involves identifying the elements of computer architecture that are limiting performance,” Boyle continues, “then trying to ‘change the rules of the game’; seeing whether it makes engineering and economic sense to change the computer architecture. If it does, it’s mutually beneficial – we get better science out of the product and Intel get a better product to sell”
+A key aspect of the work looked at how to make communication between machines in HPC environments more efficient. AI and machine learning problems often involve the use of multi-layered ‘neural networks’, which are trained to learn the mapping between inputs and outputs. Each individual ‘neuron’ or node in the network is given a set of parameters (or weightings) which are iteratively adjusted. These adjustments help to form smart ‘neural pathways’ that optimise the network’s ability to fulfil certain tasks, e.g. accurately translating a sentence from one language to another.
+Despite recent advances in training methods, as well as in hardware and network architectures, training these neural networks with data can take an impractically long time on a single machine. Distributed training across multiple machines allows for significantly more efficient development of neural networks. “If you have a thousand devices training a neural net rather than just one, you can potentially turn a three-year job into a one-day job,” Boyle explains.
+The most common form of distributed training is data parallelism, in which each machine gets a different portion of the input data, but a complete copy of the network, and then each machine’s results are subsequently combined. “Sometimes millions of weights parameterise a neural network, so combining results requires efficient network communication,” Boyle says.
+Boyle and his collaborators at Intel started by taking an existing benchmark algorithm – published by the Chinese technology company Baidu – that aims to reduce the amount of time spent communicating between different cores in a computing network. They applied the algorithm to Intel’s HPC Omni-Path Architecture (OPA) and identified where the code wasn’t running efficiently. “With help from Intel engineers we managed to enable more cores to drive the network at the same time, improving bandwidth and resulting in a 10 times improvement in speed,” says Boyle. The code that this work produced is now shipped as standard in Intel products.
+“As part of our work we considered: suppose we have the freedom to change the hardware to be whatever the heck we wanted,” says Boyle. “This led us to try different floating-point formats.” Floating-point formats are used to represent, with a fixed number of bits (binary digits), numbers of different orders of magnitude, made up of ‘mantissa’ and ‘exponent’ bits. For example, in the number 1.011 x 2101, the mantissa is 011 and the exponent is 101 (the first 1 is ignored as all numbers in standard floating-point format start 1.something, and the 2 shows we’re in base 2, otherwise known as binary).
+In order to ensure accuracy when working with neural networks, a 32-bit format is often used, but Boyle and his colleagues explored whether they could use a 16-bit format instead. Karl Solchenbach, Director of Exascale Labs Europe at Intel, explains: “If you can do the same calculation with the same accuracy with 16 bits rather than the standard 32 bits, that’s great! It saves you half the memory, it makes the calculations much faster, and you can save silicon space in hardware.”
+“[This work] saves you half the memory, makes calculations much faster…and saves silicon space”
+Karl Solchenbach, Director Exascale Labs Europe at Intel
+“We discovered that the standard 16-bit IEEE [Institute of Electrical and Electronics Engineers] floating-point format has a problem in that it only has 5 exponent bits and the range of data that can be represented with this is insufficient for a lot of machine learning problems,” says Boyle. “Using standard software libraries across multiple neural network benchmarks, we varied the number of mantissa and exponent bits to see the effects on performance.” They found that by changing the 16-bit format to 8 exponent bits and 7 mantissa bits, they were able to train neural networks that had previously failed to train with existing formats. A simple seeming solution with significant benefits.
+One of the main takeaways from this work has been seeing the power of co-design and strong working relationships. Boyle says: “The relationship between scientists and engineers, like those at Intel, needs to be evidence-based, bottom-up and well-founded on an individual level.”
+As well as the work described here, Intel has also been working with Turing Fellow Kenneth Heafield at the University of Edinburgh on training neural networks, and developing the related hardware, to be better at translating millions of words of online text.
+“We’ve seen a positive impact on our architecture as a result of our work with the Turing”
+Anil Rao, Vice-President, Data Center Group and General Manager of Data Center Security and System Architecture at Intel
+On the future, Anil Rao, Vice-President, Data Center Group and General Manager of Data Center Security and System Architecture at Intel, says: “We’ve seen a positive impact on our architecture as a result of our work with the Turing and continue to work together to develop other similar successful projects.”
+
+© The Alan Turing Institute
+2023. All rights reserved.
+The Alan Turing Institute, a charity incorporated and registered in England and Wales with company number 09512457 and charity number 1162533 whose registered office is at British Library, 96 Euston Road, London, England, NW1 2DB, United Kingdom.
+For website-related enquiries email
+[email protected]
+
+Explore the Institute
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Legal
+Awards

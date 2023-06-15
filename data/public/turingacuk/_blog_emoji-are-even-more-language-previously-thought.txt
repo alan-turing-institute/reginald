@@ -1,0 +1,58 @@
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+It might come as a surprise but emoji, those increasingly ubiquitous icons representing people, animals, objects and emotions, are the subject of intense academic research. Early research compared emoji to their predecessor, the emoticon, looking at simple statistics such as frequency of usage. Today, researchers are building up a more complete understanding of the role emoji play in human communication, by studying the linguistic properties of emoji in comparison with languages like English. However, research often raises more questions than it answers. 
+For example, we know that some emoji are very strongly considered to have a distinctly positive, neutral or negative meaning, just like words too, but there are some which people cannot agree on. Part of this is due to differences in how different platforms such as Android or iOS display emoji, but there is also evidence that who you are (e.g. your gender and age) has an influence on how you interpret the emoji you see as well as how you use emoji.
+That the same emoji can have a different meaning depending on who writes it and who reads it, as well as the context it is used in, is a core property of human languages all over the world: polysemy. Examples in English are words like bank, which has (at least!) ten different meanings as a noun and eight as a verb. Semantics is the area of linguistics that examines the meaning of words and there are decades of research on semantic change. This looks at how words acquire or lose additional meanings, but also how one meaning can shift entirely, as in the case of cute which today means something like pretty but in the 18th century meant clever.
+One of the difficulties in semantic research is the fact that language has been around a long time but the written record, let alone the digital one, is relatively short and often incomplete. This is where emoji differ - we know exactly when each one was introduced and platforms like Twitter offer academic access to large volumes of people using emoji, making it possible to study an emoji from its birth to the present day. Given that emoji exhibit language-like semantic properties, a natural follow-up is to ask whether emoji also undergo language-like semantic change.
+In a new analysis of 1.7 billion tweets covering 2012 to 2018, researchers from the universities of Edinburgh, Essex, Utrecht, Cambridge, Oxford and The Alan Turing Institute measured semantic change in 348 emoji, using computational techniques, such as word embeddings and semantic similarity metrics, which have only previously been used to study more standard written language.
+The semantics of most emoji (n=247) have changed relatively little over the years. They are used in similar contexts throughout their lifespan so far, a property they share with words - if the semantics of words changed constantly, it would make them poorly suited to communication! For emoji that did change in some way between 2012 and 2018, four characteristic patterns were detected using machine learning methods.
+
+Some well-known changes in emoji meaning were identified in the results. For example, the frog emoji ? underwent a sudden but temporary change in 2014 when it became associated with right-wing memes and Donald Trump, while the skull emoji ? has gradually come to refer to figurative death, usually from embarrassment, as much as it means literal death. Less expected was the maple leaf emoji ? gradually changing to be used with words related to cannabis and autumn, going through seasonal cycles where it means one more than the other.
+While computational methods and machine learning make it easier than ever to explore and understand enormous volumes of data, human expertise is necessary to account for the patterns found in individual emoji. It is hoped that drawing on the knowledge of emoji users all over the world will encourage exploration and discussion of emoji semantics, potentially leading to an understanding of what factors drive semantic change in emoji, which is an on-going avenue of academic research. To aid this, the data is available as an interactive dashboard where anyone can explore how much any emoji's semantics have changed, as well as which words it was most similar to each year and in individual months.
+Full details of the study can be found in the paper, which will be presented at the 4th​ International Workshop on Emoji Understanding and Applications in Social Media, part of the 15th International AAAI Conference on Web and Social Media.
+Cover photo: Kelvin Yan via Unsplash.
+© The Alan Turing Institute
+2023. All rights reserved.
+The Alan Turing Institute, a charity incorporated and registered in England and Wales with company number 09512457 and charity number 1162533 whose registered office is at British Library, 96 Euston Road, London, England, NW1 2DB, United Kingdom.
+For website-related enquiries email
+[email protected]
+
+Explore the Institute
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Legal
+Awards

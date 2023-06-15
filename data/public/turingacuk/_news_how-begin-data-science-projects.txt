@@ -1,0 +1,74 @@
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+I sometimes wonder whether being a professional means knowing what to do when you don't know what to do.
+At one time in my life I was a teaching assistant for undergraduate physics courses. Quite a lot of learning undergraduate physics involves solving undergraduate physics problems and physics problems can be very daunting to undergraduates. You get stuck; you have no idea what to do; it's all very stressful. My advice to my students was this: if you've read the question and you don't know how to proceed, you should draw a diagram.
+Me: What do you think you should do here?
+Student: I don't know. I'm stuck.
+Me: What do I always tell you you should do?  
+Student: Draw a diagram.
+Me: Great! Let's do that, then.
+We had this conversation a lot. I don't know about you, but as a data scientist I frequently don't know what to do and I find that pretty stressful. What should we do when we don't know what to do?
+I'd like to tell you what we do at the start of projects, which is frequently the time when it's not clear what to do.
+At the start of a project, the first thing we do is write a document, called a “Backbrief,” in which we outline:
+We try to write this document in collaboration with whoever it is that wants the results of the project but, in any case, we make sure to share it before starting.
+Now, I'll grant you, this sounds pretty obvious. But then again, so did the advice to my students to draw a diagram (which they all remembered even if they didn't act on it). It turns out that people don't always do the obvious thing and I think that the reason we don't always do the obvious thing is the same reason my students didn't draw a diagram: panic.
+We panic because we think we ought to see immediately how to proceed; we ought to know right away which method to apply. I mean, we're the professionals, right? Look at all those other people, with their deep learning, GPU-accelerated, non-parametric, feature extracting, cognitive architectures: they clearly know what to do. Why can't I see it straight away?
+As the book says, don't panic. The reason you don't know what to do is not that you don't know the right technique, it's simply that the question isn't clear yet. So the first thing you should do is to try to figure out what the question actually is.
+"The reason you don't know what to do is not that you don't know the right technique, it's simply that the question isn't clear yet."
+It turns out that there's a vicious circle here that you need to avoid. The people who have the problem – your clients, if you like – they've been working in this field for years. They know what the problem is. In fact, these days they find it hard to imagine what it’s like not to know the problem. They don't want you to waste time thinking about the nature of their reality; they want you to tell them that your fancy deep learning, GPU accelerated, etc, etc, method is going to solve their problem. So it’s easy to feel a lot of pressure to move quickly, to get back in your own domain of expertise where you are on familiar ground, to not “waste time” simply being taught the basics of the problem domain.
+This is a trap! You absolutely need to spend time on the basics of the domain. (Also, frankly, it’s part of the joy of being a data scientist that we get to mess around in new domains.) Not only will you need to understand it in order to work out the question but there's every chance that your client doesn't really understand it themselves; or at least, not that part of it that resulted in them talking to you.
+We've found writing a backbrief to be an extraordinarily valuable discipline. Let me try to say a bit more about how we approach it and why it’s so useful.
+(Note, of course, that neither the name nor the basic idea is original to us. If you search for the term you'll find a lot of discussion of the idea, in the armed forces for example. It’s not quite the same thing but it is often helpful to give something a name, and this name seems appropriate.)
+First, our understanding of the domain. We try to make this section technical yet informal. Technical, because we want to try to clarify the domain for ourselves, to learn the jargon, and to avoid ambiguity that could lead to confusion later. But informal, precisely because we are not experts in everything and we want to make clear the boundaries of our knowledge. We are not trying to pass an exam; we are trying to get to the bottom of how things work in this game. It should be clear what is true, what is our presumption and what we simply don't understand yet. Indeed, it is perfectly acceptable to present a simplified model.
+Of course, at the beginning, you are likely to understand very little of the problem domain. That's okay! Part of the point of writing the backbrief is to make time for gathering this understanding.
+Second, our understanding of the question. This is perhaps where you can be most valuable as an outsider. The path between the questions of a domain expert and the questions that can directly be addressed by data science is overgrown and winding. Our role is to make this path clear.
+We try to be humble yet opinionated. Humble because getting the question right is hard; but opinionated because in the end you will answer some question so it had better be the question you want.
+"Being explicit about how you will measure success (ideally quantitatively!) is tremendously helpful"
+Two ideas can help. The first is to realise that there may be a difference between a question that we can answer and a question that we want to answer. Sometimes it’s better to have an approximate answer to your real question; sometimes you have to settle for a closely related question. The important thing is to be clear about which it is that you are doing. Second, in order to know that you can answer a question, it is at least necessary that you be able to say how you would evaluate an answer, were you to be given one. Just being explicit about how you will measure success (ideally quantitatively!) is tremendously helpful. Plan to build a system that will automatically quantify the success of any given answer.
+And third, what we propose to do. You don't have to solve the problem straight away! However, it is useful to write down how you think you might solve it: what broad approach you might use, why it’s the right approach, what its limitations are. Our aim is in part to allow our client to “read ahead” and in part to convince ourselves that we have somewhere to start.
+Perhaps the most important effect of having a thing called a backbrief is that it gives us permission to do things we ought to be doing when we don't know what to do. It gives us permission to talk about the basics of the domain and ask for an explanation of all the jargon. It gives us permission to ask fundamental questions, like “how will we know if we have succeeded?”. In other words, it gives us permission to think before we jump in.
+© The Alan Turing Institute
+2023. All rights reserved.
+The Alan Turing Institute, a charity incorporated and registered in England and Wales with company number 09512457 and charity number 1162533 whose registered office is at British Library, 96 Euston Road, London, England, NW1 2DB, United Kingdom.
+For website-related enquiries email
+[email protected]
+
+Explore the Institute
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Legal
+Awards
