@@ -16,6 +16,18 @@ if __name__ == "__main__":
     # Parse command line arguments
     parser = argparse.ArgumentParser()
     parser.add_argument("--model", "-m", help="Select which model to use", default=None)
+    parser.add_argument(
+        "--force-new-index",
+        "-f",
+        help="Recreate the index or not",
+        action=argparse.BooleanOptionalAction,
+        default=False,
+    )
+    parser.add_argument("--data-dir", "-d", help="Location for data", default=True)
+    parser.add_argument(
+        "--which-index", "-w", help="Directory name for the index", default=True
+    )
+
     args = parser.parse_args()
 
     # Initialise logging
@@ -32,6 +44,10 @@ if __name__ == "__main__":
     if not model_name:
         model_name = "hello"
 
+    force_new_index = args.force_new_index
+    data_dir = args.data_dir
+    which_index = args.which_index
+
     # Initialise a new Slack bot with the requested model
     try:
         model = MODELS[model_name.lower()]
@@ -40,7 +56,12 @@ if __name__ == "__main__":
         sys.exit(1)
 
     logging.info(f"Initialising bot with model {model_name}")
-    slack_bot = Bot(model())
+
+    slack_bot = Bot(
+        model(
+            force_new_index=force_new_index, data_dir=data_dir, which_index=which_index
+        )
+    )
 
     # Initialize SocketModeClient with an app-level token + WebClient
     client = SocketModeClient(

@@ -17,6 +17,8 @@ from llama_index import (
     LLMPredictor,
     PromptHelper,
     ServiceContext,
+    StorageContext,
+    load_index_from_storage,
 )
 from llama_index.indices.vector_store.base import GPTVectorStoreIndex
 from transformers import AutoModelForCausalLM, AutoTokenizer, pipeline
@@ -24,12 +26,10 @@ from transformers import AutoModelForCausalLM, AutoTokenizer, pipeline
 # Local imports
 from .base import MessageResponse, ResponseModel
 
-DATA_DIR = pathlib.Path(__file__).parent.parent.parent.parent / "data"
 # TOD Leaving out the wiki for now while we figure out if we are okay sending it to
 # OpenAI.
-DATA_FILES = [DATA_DIR / "handbook-scraped.csv"] + list(
-    (DATA_DIR / "the_turing_way_md").glob("*.md")
-)  #  + [DATA_DIR / "wiki-scraped.csv"]
+
+LLAMA_INDEX_DIR = "llama_index_indices"
 QUANTIZE = False  # Doesn't work on M1
 
 
@@ -67,7 +67,9 @@ class Llama(ResponseModel):
     def _prep_documents(self):
         # Prep the contextual documents
         documents = []
-        for data_file in DATA_FILES:
+        data_files = [self.data_dir / "handbook-scraped.csv"]
+
+        for data_file in data_files:
             if data_file.suffix == ".csv":
                 df = pd.read_csv(data_file)
                 df = df[~df.loc[:, "body"].isna()]
@@ -92,9 +94,12 @@ class Llama(ResponseModel):
         self,
         model_name,
         max_input_size,
+        data_dir,
+        which_index,
         num_output=512,
         chunk_size_limit=300,
         chunk_overlap_ratio=0.1,
+        force_new_index=False,
     ):
         logging.info("Setting up Huggingface backend.")
         self.max_input_size = max_input_size
@@ -102,6 +107,7 @@ class Llama(ResponseModel):
         self.num_output = num_output
         self.chunk_size_limit = chunk_size_limit
         self.chunk_overlap_ratio = chunk_overlap_ratio
+        self.data_dir = pathlib.Path(data_dir)
 
         documents = self._prep_documents()
         llm_predictor = self._prep_llm_predictor()
@@ -122,9 +128,39 @@ class Llama(ResponseModel):
             prompt_helper=prompt_helper,
         )
 
-        self.index = GPTVectorStoreIndex.from_documents(
-            documents, service_context=service_context
-        )
+        logging.info(f"Load index is: {force_new_index}")
+
+        if not force_new_index:
+
+            logging.info("loading the pre-processed index!")
+
+            logging.info("Generating the storage context")
+
+            storage_context = StorageContext.from_defaults(
+                persist_dir=self.data_dir / LLAMA_INDEX_DIR / which_index
+            )
+
+            logging.info("Loading the index")
+
+            self.index = load_index_from_storage(
+                storage_context=storage_context, service_context=service_context
+            )
+
+        else:
+
+            logging.info("Generating the index anew")
+
+            self.index = GPTVectorStoreIndex.from_documents(
+                documents, service_context=service_context
+            )
+
+            logging.info("Saving the index...")
+
+            # Save the service context and persist the index
+            self.index.storage_context.persist(
+                persist_dir=self.data_dir / LLAMA_INDEX_DIR / which_index
+            )
+
         self.query_engine = self.index.as_query_engine()
         logging.info("Done setting up Huggingface backend.")
 
