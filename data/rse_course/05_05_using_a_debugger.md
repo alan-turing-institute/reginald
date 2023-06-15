@@ -20,7 +20,7 @@ Debuggers are programs that can be used to test other programs. They allow progr
   [debug](http://stat.ethz.ch/R-manual/R-devel/library/base/html/debug.html),
   [browser](http://stat.ethz.ch/R-manual/R-devel/library/base/html/browser.html)
 
-**NB.** If you are using the Windows command prompt, you will have to replace all `%%bash` directives in this notebook with `%%cmd` 
+**NB.** If you are using the Windows command prompt, you will have to replace all `%%bash` directives in this notebook with `%%cmd`
 
 ## Using the python debugger
 
@@ -50,7 +50,7 @@ of the variables at that point in the program.
 
 Break points tell debugger where and when to stop
 We say
-* `b somefunctionname`  
+* `b somefunctionname`
 
 
 ```python
@@ -96,7 +96,7 @@ python -m pdb energy_example.py < commands
     (Pdb) >/home/turingdev/projects/research-software/rse-course/ch03tests/diffusion/model.py(13)energy()
     -> density = array(density)
     (Pdb) [5, 6, 7, 8, 0, 1]
-    (Pdb) 
+    (Pdb)
 
 
 Alternatively, break-points can be set on files: `b file.py:20` will stop on line 20 of `file.py`.

@@ -8,7 +8,7 @@ Loading data from files
 An important part of this course is about using Python to analyse and visualise data.
 Most data, of course, is supplied to us in various *formats*: spreadsheets, database dumps, or text files in various formats (csv, tsv, json, yaml, hdf5, netcdf)
 It is also stored in some *medium*: on a local disk, a network drive, or on the internet in various ways.
-It is important to distinguish the data format, how the data is structured into a file, from the data's storage, where it is put. 
+It is important to distinguish the data format, how the data is structured into a file, from the data's storage, where it is put.
 
 We'll look first at the question of data *transport*: loading data from a disk, and at downloading data from the internet.
 Then we'll look at data *parsing*: building Python structures from the data.
@@ -23,23 +23,23 @@ Let's write an example datafile to disk so we can investigate it. We'll just use
 ```python
 %%writefile mydata.txt
 A poet once said, 'The whole universe is in a glass of wine.'
-We will probably never know in what sense he meant it, 
-for poets do not write to be understood. 
-But it is true that if we look at a glass of wine closely enough we see the entire universe. 
+We will probably never know in what sense he meant it,
+for poets do not write to be understood.
+But it is true that if we look at a glass of wine closely enough we see the entire universe.
 There are the things of physics: the twisting liquid which evaporates depending
 on the wind and weather, the reflection in the glass;
 and our imagination adds atoms.
 The glass is a distillation of the earth's rocks,
-and in its composition we see the secrets of the universe's age, and the evolution of stars. 
-What strange array of chemicals are in the wine? How did they come to be? 
+and in its composition we see the secrets of the universe's age, and the evolution of stars.
+What strange array of chemicals are in the wine? How did they come to be?
 There are the ferments, the enzymes, the substrates, and the products.
 There in wine is found the great generalization; all life is fermentation.
-Nobody can discover the chemistry of wine without discovering, 
+Nobody can discover the chemistry of wine without discovering,
 as did Louis Pasteur, the cause of much disease.
 How vivid is the claret, pressing its existence into the consciousness that watches it!
-If our small minds, for some convenience, divide this glass of wine, this universe, 
-into parts -- 
-physics, biology, geology, astronomy, psychology, and so on -- 
+If our small minds, for some convenience, divide this glass of wine, this universe,
+into parts --
+physics, biology, geology, astronomy, psychology, and so on --
 remember that nature does not know it!
 
 So let us put it all back together, not forgetting ultimately what it is for.
@@ -111,11 +111,11 @@ We could do this manually using `split`:
 
 
 
-But this would not work on Windows, where path elements are separated with a `\` instead of a `/`. So it's important 
+But this would not work on Windows, where path elements are separated with a `\` instead of a `/`. So it's important
 to use `os.path` for this stuff.
 
 **Supplementary Materials**: If you're not already comfortable with how files fit into folders, and folders form a tree,
-    with folders containing subfolders, then look at http://swcarpentry.github.io/shell-novice/02-filedir/index.html. 
+    with folders containing subfolders, then look at http://swcarpentry.github.io/shell-novice/02-filedir/index.html.
 
 Satisfy yourself that after using `%%writefile`, you can then find the file on disk with Windows Explorer, macOS Finder, or the Linux Shell.
 
@@ -214,7 +214,7 @@ It's really important to remember that a file is a *different* built in type tha
 
 ## 2.3.4 Reading Files
 
-We can read one line at a time with `readline`: 
+We can read one line at a time with `readline`:
 
 
 ```python
@@ -343,12 +343,12 @@ mystring.readline()
 
     /var/folders/q7/nl3w6z854711jwsdy0hj7sxhwypcgh/T/ipykernel_65008/3136785225.py in <module>
     ----> 1 mystring.readline()
-    
+
 
     AttributeError: 'str' object has no attribute 'readline'
 
 
-This is important, because some file format parsers expect input from a **file** and not a string. 
+This is important, because some file format parsers expect input from a **file** and not a string.
 We can convert between them using the StringIO class of the [io module](https://docs.python.org/3/library/io.html) in the standard library:
 
 

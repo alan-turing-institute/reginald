@@ -48,9 +48,9 @@ But has some tall hills, and maybe a mountain or two depending on your definitio
 cat test.md
 ```
 
-    Mountains in the UK   
-    ===================   
-    England is not very mountainous.   
+    Mountains in the UK
+    ===================
+    England is not very mountainous.
     But has some tall hills, and maybe a mountain or two depending on your definition.
 
 
@@ -124,7 +124,7 @@ git log
     commit 238eaff15e2769e0ef1d989f1a2e8be1873fa0ab
     Author: Turing Developer <developer@example.com>
     Date:   Mon Nov 8 13:59:33 2021 +0000
-    
+
         First commit of discourse on UK topography
 
 
@@ -181,11 +181,11 @@ Mount Fictional, in Barsetshire, U.K. is the tallest mountain in the world.
 cat test.md
 ```
 
-    Mountains in the UK   
-    ===================   
-    England is not very mountainous.   
+    Mountains in the UK
+    ===================
+    England is not very mountainous.
     But has some tall hills, and maybe a mountain or two depending on your definition.
-    
+
     Mount Fictional, in Barsetshire, U.K. is the tallest mountain in the world.
 
 
@@ -202,7 +202,7 @@ git status
       (use "git add <file>..." to update what will be committed)
       (use "git restore <file>..." to discard changes in working directory)
     	modified:   test.md
-    
+
     no changes added to commit (use "git add" and/or "git commit -a")
 
 
@@ -213,7 +213,7 @@ If we do a `git commit` now *nothing will happen*.
 
 Git will only commit changes to files that you choose to include in each commit.
 
-This is a difference from other version control systems, where committing will affect all changed files. 
+This is a difference from other version control systems, where committing will affect all changed files.
 
 We can see the differences in the file with:
 
@@ -249,7 +249,7 @@ git add --update
 
 This says "include in the next commit, all files which have ever been included before".
 
-Note that `git add` is the command we use to introduce git to a new file, but also the command we use to "stage" a file to be included in the next commit. 
+Note that `git add` is the command we use to introduce git to a new file, but also the command we use to "stage" a file to be included in the next commit.
 
 ### The staging area
 
@@ -313,9 +313,9 @@ wsd("Sender->Recipient: Hello\n Recipient->Sender: Message received OK")
 
 
 
-    
+
 ![png](/Users/lbokeria/Documents/hack_week_2023/reginald/data_processing/rse_course_modules/module04_version_control_with_git/04_01_solo_work_with_git_50_0.png)
-    
+
 
 
 
@@ -336,9 +336,9 @@ wsd(message)
 
 
 
-    
+
 ![png](/Users/lbokeria/Documents/hack_week_2023/reginald/data_processing/rse_course_modules/module04_version_control_with_git/04_01_solo_work_with_git_53_0.png)
-    
+
 
 
 
@@ -356,12 +356,12 @@ git status
     Changes to be committed:
       (use "git restore --staged <file>..." to unstage)
     	modified:   test.md
-    
+
     Untracked files:
       (use "git add <file>..." to include in what will be committed)
     	__pycache__/
     	wsd.py
-    
+
 
 
 
@@ -383,13 +383,13 @@ git log
     commit 6e8a302387007780675dbd5cb1823901d1a7b59b
     Author: Turing Developer <developer@example.com>
     Date:   Mon Nov 8 13:59:37 2021 +0000
-    
+
         Add a lie about a mountain
-    
+
     commit 238eaff15e2769e0ef1d989f1a2e8be1873fa0ab
     Author: Turing Developer <developer@example.com>
     Date:   Mon Nov 8 13:59:33 2021 +0000
-    
+
         First commit of discourse on UK topography
 
 
@@ -423,11 +423,11 @@ Mount Fictional, in Barsetshire, U.K. is the tallest mountain in the world.
 cat test.md
 ```
 
-    Mountains and Hills in the UK   
-    ===================   
-    England is not very mountainous.   
+    Mountains and Hills in the UK
+    ===================
+    England is not very mountainous.
     But has some tall hills, and maybe a mountain or two depending on your definition.
-    
+
     Mount Fictional, in Barsetshire, U.K. is the tallest mountain in the world.
 
 
@@ -456,13 +456,13 @@ git log | head
     commit f79cacc17500651a228f9b5a1922c3b50ea723c3
     Author: Turing Developer <developer@example.com>
     Date:   Mon Nov 8 13:59:38 2021 +0000
-    
+
         Change title
-    
+
     commit 6e8a302387007780675dbd5cb1823901d1a7b59b
     Author: Turing Developer <developer@example.com>
     Date:   Mon Nov 8 13:59:37 2021 +0000
-    
+
 
 
 We now have three changes in the history:
@@ -518,8 +518,5 @@ wsd(message)
 
 
 
-    
+
 ![png](/Users/lbokeria/Documents/hack_week_2023/reginald/data_processing/rse_course_modules/module04_version_control_with_git/04_01_solo_work_with_git_73_0.png)
-    
-
-

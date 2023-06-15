@@ -8,7 +8,7 @@ def energy(density, coefficient=1):
       density: array of positive integers
          Number of particles at each position i in the array/geometry
     """
-    from numpy import array, any, sum
+    from numpy import any, array, sum
 
     # Make sure input is an array
     density = array(density)

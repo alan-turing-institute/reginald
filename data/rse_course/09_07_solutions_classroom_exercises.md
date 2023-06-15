@@ -163,9 +163,9 @@ plt.colorbar()
 
 
 
-    
+
 ![png](/Users/lbokeria/Documents/hack_week_2023/reginald/data_processing/rse_course_modules/module09_programming_for_speed/09_07_solutions_classroom_exercises_18_1.png)
-    
+
 
 
 ## Solution Exercise 9e
@@ -253,9 +253,9 @@ plot_time(time_pow_multiply, counts, top=0.0005)
 ```
 
 
-    
+
 ![png](/Users/lbokeria/Documents/hack_week_2023/reginald/data_processing/rse_course_modules/module09_programming_for_speed/09_07_solutions_classroom_exercises_28_0.png)
-    
+
 
 
 
@@ -264,10 +264,10 @@ plot_time(time_pow_expo, counts, top=0.0005)
 ```
 
 
-    
+
 ![png](/Users/lbokeria/Documents/hack_week_2023/reginald/data_processing/rse_course_modules/module09_programming_for_speed/09_07_solutions_classroom_exercises_29_0.png)
-    
 
 
-Conclusion:  
-We can conclude that, while using `*` for exponentiation might be quicker for small exponents, somewhere around $x^{100}$, it becomes much faster to use `**`. 
+
+Conclusion:
+We can conclude that, while using `*` for exponentiation might be quicker for small exponents, somewhere around $x^{100}$, it becomes much faster to use `**`.

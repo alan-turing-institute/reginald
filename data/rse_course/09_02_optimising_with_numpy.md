@@ -2,7 +2,7 @@
 
 *Estimated time for this notebook: 30 minutes*
 
-If we have our values in a numpy `ndarray`, we apply operations to each element in the array in one go, without having to loop over it. 
+If we have our values in a numpy `ndarray`, we apply operations to each element in the array in one go, without having to loop over it.
 
 ## 9.2.1 Operations on arrays
 
@@ -45,7 +45,7 @@ cs.shape
 
 
 
-We now want to compare adding a constant to every element of the array by 
+We now want to compare adding a constant to every element of the array by
 1) using a for loop
 2) using numpy operators.
 
@@ -94,9 +94,9 @@ math.sqrt(cs)
 
     /var/folders/0k/_wrbgjwj005c_8z1vghhd7x40000gr/T/ipykernel_75488/1315727468.py in <module>
           1 import math
-          2 
+          2
     ----> 3 math.sqrt(cs)
-    
+
 
     TypeError: only size-1 arrays can be converted to Python scalars
 
@@ -187,14 +187,14 @@ mandel(cs)
 
     /var/folders/0k/_wrbgjwj005c_8z1vghhd7x40000gr/T/ipykernel_75488/380109421.py in <module>
     ----> 1 mandel(cs)
-    
+
 
     /var/folders/0k/_wrbgjwj005c_8z1vghhd7x40000gr/T/ipykernel_75488/2364160311.py in mandel(constant, max_iterations)
          12     counter = 0
          13     while counter < max_iterations:
     ---> 14         if abs(value) > 2:
          15             break
-         16 
+         16
 
 
     ValueError: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
@@ -202,7 +202,7 @@ mandel(cs)
 
 Looking at the error message, we learn a few things:
 - There's a problem with line 14, where we check if the value of the series has divereged.
-- There's some confusion about the _truth_ value of our array. 
+- There's some confusion about the _truth_ value of our array.
 Our array has more than one element (300 x 300 elements to be precise), and the `if` condition on line 14 returns `True` for some elements and `False` for others. But what does `True` mean for the entire array: Does every element have to be `True` or is it enough if any element is `True`? Since there's no good answer to this, an error is raised.
 
 What if we just apply the Mandelbrot algorithm without checking for divergence until the end:
@@ -239,11 +239,11 @@ result_numpy_explode = mandel_numpy_explode(cs)
 
 We get an `Overflow` warning that we shouldn't ignore. The overflow is caused by some values in the series exploding and running off to $\infty$.
 
-Go to notebook **9.6 Classroom Exercises** and do *Exercise 9c* to fix the overflow issue. 
+Go to notebook **9.6 Classroom Exercises** and do *Exercise 9c* to fix the overflow issue.
 
 ## 9.2.3 Attempt 2: Return iterations
 
-The function `mandel_binary` (see *Exercise 9c*) runs on an array and is faster than our previous implementations. At the moment, it returns a boolean value for each element of the input: `True` if the element is in the Mandelbrot set, `False` otherwise. 
+The function `mandel_binary` (see *Exercise 9c*) runs on an array and is faster than our previous implementations. At the moment, it returns a boolean value for each element of the input: `True` if the element is in the Mandelbrot set, `False` otherwise.
 
 It would be nice if the function returned, as before, the number of iterations that were performed. Let's modify the function to do exactly that:
 
@@ -321,9 +321,9 @@ plt.colorbar()
 
 
 
-    
+
 ![png](/Users/lbokeria/Documents/hack_week_2023/reginald/data_processing/rse_course_modules/module09_programming_for_speed/09_02_optimising_with_numpy_33_1.png)
-    
+
 
 
 Even though we're doing unnecessary calculations (compared to our pure Python implementation), we are much faster.

@@ -22,4 +22,3 @@ The module is structured into two parts:
     -   Privacy and anonymisation
 
 References are given at the end of each subsection.
-

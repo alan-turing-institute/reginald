@@ -7,7 +7,7 @@ Cython can be viewed as an extension of Python where variables and functions are
 Cython code must, unlike Python, be compiled. This happens in the following stages:
 
 * The cython code in `.pyx` file will be translated to a `C` file.
-* The `C` file will be compiled by a C compiler into a shared library, which will be directly loaded into Python. 
+* The `C` file will be compiled by a C compiler into a shared library, which will be directly loaded into Python.
 
 If you're writing `.py` files, you use the `cythonize` command in your terminal.
 In a Jupyter notebook, everything is a lot easier. One needs only to load the Cython extension (`%load_ext Cython`) at the beginning and use `%%cython` cell magic. Cells starting with `%%cython` will be treated as a `.pyx` code and, consequently, compiled.
@@ -86,14 +86,14 @@ mandel_cython()
 %%cython
 
 def mandel_cython(constant, max_iterations=50):
-    """Computes the values of the series for up to a maximum number of iterations. 
-    
-    The function stops when the absolute value of the series surpasses 2 or when it reaches the maximum 
+    """Computes the values of the series for up to a maximum number of iterations.
+
+    The function stops when the absolute value of the series surpasses 2 or when it reaches the maximum
     number of iterations.
-    
+
     Returns the number of iterations.
     """
-    
+
     value = 0
 
     counter = 0
@@ -144,9 +144,9 @@ f.tight_layout()
 
 
 
-    
+
 ![png](/Users/lbokeria/Documents/hack_week_2023/reginald/data_processing/rse_course_modules/module09_programming_for_speed/09_03_optimising_with_cython_15_1.png)
-    
+
 
 
 
@@ -182,14 +182,14 @@ If we pass the `--annotate`/`-a` option to `%%cython` then it will output inform
 %%cython --annotate
 
 def mandel_cython(constant, max_iterations=50):
-    """Computes the values of the series for up to a maximum number of iterations. 
-    
-    The function stops when the absolute value of the series surpasses 2 or when it reaches the maximum 
+    """Computes the values of the series for up to a maximum number of iterations.
+
+    The function stops when the absolute value of the series surpasses 2 or when it reaches the maximum
     number of iterations.
-    
+
     Returns the number of iterations.
     """
-    
+
     value = 0
 
     counter = 0
@@ -744,11 +744,11 @@ static PyObject *__pyx_pf_46_cython_magic_ef6ffd3d158c0ef85d8a6a569a8a1a20_mande
 %%cython
 
 def mandel_cython_var_typed(constant, max_iterations=50):
-    """Computes the values of the series for up to a maximum number of iterations. 
-    
-    The function stops when the absolute value of the series surpasses 2 or when it reaches the maximum 
+    """Computes the values of the series for up to a maximum number of iterations.
+
+    The function stops when the absolute value of the series surpasses 2 or when it reaches the maximum
     number of iterations.
-    
+
     Returns the number of iterations.
     """
     cdef double complex value # typed variable
@@ -787,11 +787,11 @@ assert mandel_cython_var_typed(0.5) == 5
 %%cython
 
 cpdef int mandel_cython_func_typed(double complex constant, int max_iterations=50):
-    """Computes the values of the series for up to a maximum number of iterations. 
-    
-    The function stops when the absolute value of the series surpasses 2 or when it reaches the maximum 
+    """Computes the values of the series for up to a maximum number of iterations.
+
+    The function stops when the absolute value of the series surpasses 2 or when it reaches the maximum
     number of iterations.
-    
+
     Returns the number of iterations.
     """
     cdef double complex value # typed variable
@@ -825,7 +825,7 @@ assert mandel_cython_func_typed(0.5) == 5
 
 ### Cython with numpy ndarray
 
-You can use NumPy from Cython exactly the same as in regular Python, but by doing so you are losing potentially high speedups because Cython has support for fast access to NumPy arrays. 
+You can use NumPy from Cython exactly the same as in regular Python, but by doing so you are losing potentially high speedups because Cython has support for fast access to NumPy arrays.
 
 
 ```python
@@ -840,9 +840,9 @@ cs = np.asarray(cs_listcomp)
 %%cython
 
 import numpy as np
-cimport numpy as np 
+cimport numpy as np
 
-cpdef int mandel_cython_numpy(np.ndarray[double complex, ndim=2] constants, int max_iterations=50): 
+cpdef int mandel_cython_numpy(np.ndarray[double complex, ndim=2] constants, int max_iterations=50):
     cdef np.ndarray[long,ndim=2] diverged_at_count
     cdef np.ndarray[double complex, ndim=2] value
     cdef int counter
@@ -853,7 +853,7 @@ cpdef int mandel_cython_numpy(np.ndarray[double complex, ndim=2] constants, int 
     while counter < max_iterations:
         value = value*value + constants
         diverging = abs(value) > 2
-        
+
         # Any positions which are:
         # - diverging
         # - haven't diverged before
@@ -862,7 +862,7 @@ cpdef int mandel_cython_numpy(np.ndarray[double complex, ndim=2] constants, int 
             diverging,
             diverged_at_count == max_iterations
         )
-        
+
         # Update diverged_at_count for all positions which first diverged at this step
         diverged_at_count[first_diverged_this_time] = counter
         # Reset any divergent values to exactly 2
@@ -889,4 +889,3 @@ mandel_cython_numpy(cs)
 ```
 
     51.3 ms ± 4.96 ms per loop (mean ± std. dev. of 7 runs, 10 loops each)
-
