@@ -29,7 +29,7 @@ But a big part of the point of version control is keeping your work safe, on rem
 Another part is making it easy to share your work with the world.
 In this example, we'll be using the `GitHub` cloud repository to store and publish our work.
 
-If you have not done so already, you should create an account on `GitHub`: go to [https://github.com/](https://github.com/), fill in a username and password, and click on "sign up for free". 
+If you have not done so already, you should create an account on `GitHub`: go to [https://github.com/](https://github.com/), fill in a username and password, and click on "sign up for free".
 
 ## Creating a repository
 
@@ -45,7 +45,7 @@ For this course, you should use public repositories in your personal account for
 
 In the future, you might want to keep your work on GitHub private.
 
-Students can get free private repositories on GitHub, by going to [GitHub Education](https://github.com/edu) and filling in a form (look for the Student Developer Pack). 
+Students can get free private repositories on GitHub, by going to [GitHub Education](https://github.com/edu) and filling in a form (look for the Student Developer Pack).
 
 ## Adding a new remote to your repository
 
@@ -116,9 +116,9 @@ wsd(message)
 
 
 
-    
+
 ![png](/Users/lbokeria/Documents/hack_week_2023/reginald/data_processing/rse_course_modules/module04_version_control_with_git/04_03_publishing_15_0.png)
-    
+
 
 
 
@@ -144,7 +144,7 @@ vim lakeland.md
 Lakeland
 ========
 
-Cumbria has some pretty hills, and lakes too.  
+Cumbria has some pretty hills, and lakes too.
 ```
 
     Writing lakeland.md
@@ -155,10 +155,10 @@ Cumbria has some pretty hills, and lakes too.
 cat lakeland.md
 ```
 
-    Lakeland  
-    ========   
-      
-    Cumbria has some pretty hills, and lakes too.  
+    Lakeland
+    ========
+
+    Cumbria has some pretty hills, and lakes too.
 
 
 ## Git will not by default commit your new file
@@ -171,13 +171,13 @@ git commit -am "Try to add Lakeland" || echo "Commit failed"
 
     On branch main
     Your branch is up to date with 'origin/main'.
-    
+
     Untracked files:
       (use "git add <file>..." to include in what will be committed)
     	__pycache__/
     	lakeland.md
     	wsd.py
-    
+
     nothing added to commit but untracked files present (use "git add" to track)
     Commit failed
 
@@ -252,18 +252,18 @@ git status
 
     On branch main
     Your branch is up to date with 'origin/main'.
-    
+
     Changes not staged for commit:
       (use "git add <file>..." to update what will be committed)
       (use "git restore <file>..." to discard changes in working directory)
     	modified:   lakeland.md
     	modified:   test.md
-    
+
     Untracked files:
       (use "git add <file>..." to include in what will be committed)
     	__pycache__/
     	wsd.py
-    
+
     no changes added to commit (use "git add" and/or "git commit -a")
 
 
@@ -347,8 +347,5 @@ wsd(message)
 
 
 
-    
+
 ![png](/Users/lbokeria/Documents/hack_week_2023/reginald/data_processing/rse_course_modules/module04_version_control_with_git/04_03_publishing_41_0.png)
-    
-
-

@@ -54,7 +54,7 @@ x + 5
 
     <ipython-input-4-9e8324a7b754> in <module>
     ----> 1 x + 5
-    
+
 
     TypeError: can only concatenate list (not "int") to list
 
@@ -120,7 +120,7 @@ for element in my_array:
     print("Hello" * element)
 ```
 
-    
+
     Hello
     HelloHello
     HelloHelloHello
@@ -141,7 +141,7 @@ my_array.append(4)
 
     <ipython-input-10-b12177763178> in <module>
     ----> 1 my_array.append(4)
-    
+
 
     AttributeError: 'numpy.ndarray' object has no attribute 'append'
 
@@ -216,7 +216,7 @@ y = list(range(0, 10, 0.1))
 
     <ipython-input-16-90c31a0aefc9> in <module>
     ----> 1 y = list(range(0, 10, 0.1))
-    
+
 
     TypeError: 'float' object cannot be interpreted as an integer
 
@@ -278,9 +278,9 @@ plt.plot(values, np.sin(values))
 
 
 
-    
+
 ![png](/Users/lbokeria/Documents/hack_week_2023/reginald/data_processing/rse_course_modules/module03_research_data_in_python/03_04_NumPy_37_1.png)
-    
+
 
 
 So we don't have to use awkward list comprehensions when using these.
@@ -301,12 +301,12 @@ np.zeros([3, 4, 2])  # 3 arrays with 4 rows and 2 columns each
             [0., 0.],
             [0., 0.],
             [0., 0.]],
-    
+
            [[0., 0.],
             [0., 0.],
             [0., 0.],
             [0., 0.]],
-    
+
            [[0., 0.],
             [0., 0.],
             [0., 0.],
@@ -345,19 +345,19 @@ y
             [ 4,  5],
             [ 6,  7],
             [ 8,  9]],
-    
+
            [[10, 11],
             [12, 13],
             [14, 15],
             [16, 17],
             [18, 19]],
-    
+
            [[20, 21],
             [22, 23],
             [24, 25],
             [26, 27],
             [28, 29]],
-    
+
            [[30, 31],
             [32, 33],
             [34, 35],
@@ -405,7 +405,7 @@ y[2:, :1, :]  # Last 2 axes, 1st row, all columns
 
 
     array([[[20, 21]],
-    
+
            [[30, 31]]])
 
 
@@ -425,7 +425,7 @@ y.transpose()
             [ 4, 14, 24, 34],
             [ 6, 16, 26, 36],
             [ 8, 18, 28, 38]],
-    
+
            [[ 1, 11, 21, 31],
             [ 3, 13, 23, 33],
             [ 5, 15, 25, 35],
@@ -631,7 +631,7 @@ type(z[0])
 
 
 
-The results are, when you get to know them, fairly obvious string codes for datatypes: 
+The results are, when you get to know them, fairly obvious string codes for datatypes:
     NumPy supports all kinds of datatypes beyond the python basics.
 
 NumPy will convert python type names to dtypes:
@@ -696,5 +696,3 @@ float_array.dtype
 
 
     dtype('float64')
-
-

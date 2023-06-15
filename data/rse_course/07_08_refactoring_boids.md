@@ -11,7 +11,7 @@ Here's the Github link: https://github.com/alan-turing-institute/bad-boids
 Please [fork it](https://docs.github.com/en/get-started/quickstart/fork-a-repo) on GitHub, and clone your fork:
 
 ``` bash
-git clone git@github.com:yourname/bad-boids.git 
+git clone git@github.com:yourname/bad-boids.git
 # OR git clone https://github.com/yourname/bad-boids.git
 ```
 

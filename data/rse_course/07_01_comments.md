@@ -179,7 +179,7 @@ agents[:] = []  # Shredder!
 ## Good commenting: pedagogical comments
 
 
-Code that *is* good style, but you're not familiar with, or 
+Code that *is* good style, but you're not familiar with, or
 that colleagues might not be familiar with
 
 
@@ -188,7 +188,7 @@ that colleagues might not be familiar with
 # See https://wiki.python.org/moin/PythonDecorators
 def double(decorated_function):
     # Here, the result function calls the decorated_function
-    # twice, first on the entry input and then again on the 
+    # twice, first on the entry input and then again on the
     # output of that
     # the decorated function
     def result_function(entry):
@@ -216,10 +216,10 @@ def __init__(self):
 
 ## Are comments always helpful?
 
-Some authors argue that comments can be dangerous, as they can disincentivise 
+Some authors argue that comments can be dangerous, as they can disincentivise
 us from trying harder to use variable names and function names to discribe the code:
 
 > The proper use of comments is to compensate for our failure to express yourself in code. Note that I used the word failure. I meant it. Comments are always failures.
 -- Robert Martin, Clean Code
 
-This is definitely taking things too far, but there's a little grain of truth in it: 
+This is definitely taking things too far, but there's a little grain of truth in it:

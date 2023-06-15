@@ -35,7 +35,7 @@ replacing it with `%20`, so e.g. a request of `http://some example.com/` would n
 
 **Supplementary materials**: The code used to replace each character is the [ASCII](http://www.asciitable.com) code for it.
 
-**Supplementary materials**: The escaping rules are quite subtle. See https://en.wikipedia.org/wiki/Percent-encoding. The standard library provides the [urlencode](https://docs.python.org/3/library/urllib.parse.html#urllib.parse.urlencode) function that can take care of this for you. 
+**Supplementary materials**: The escaping rules are quite subtle. See https://en.wikipedia.org/wiki/Percent-encoding. The standard library provides the [urlencode](https://docs.python.org/3/library/urllib.parse.html#urllib.parse.urlencode) function that can take care of this for you.
 
 ## 2.4.2 Requests
 
@@ -89,9 +89,9 @@ Image(response.content)
 
 
 
-    
+
 ![jpeg](/Users/lbokeria/Documents/hack_week_2023/reginald/data_processing/rse_course_modules/module02_intermediate_python/02_04_getting_data_from_the_internet_23_0.jpg)
-    
+
 
 
 
@@ -180,13 +180,13 @@ But **don't**: what if, for example, one of the records contains a separator ins
 so that, for example,
 
     "Something; something"; something; something
-    
+
 has three fields, the first of which is
 
     Something; something
-    
- The naive code above would give four fields, of which the first is 
- 
+
+ The naive code above would give four fields, of which the first is
+
     "Something
 
 You'll never manage to get all that right; so you'll be better off using a library to do it.

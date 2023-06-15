@@ -53,7 +53,7 @@ You can do quite weird and cool things with comprehensions:
 
 ## 2.0.2 Selection in comprehensions
 
-You can write an `if` statement in comprehensions too: 
+You can write an `if` statement in comprehensions too:
 
 
 ```python
@@ -105,7 +105,7 @@ Does the same as the comprehension above. The comprehension is generally conside
 
 Comprehensions are therefore an example of what we call 'syntactic sugar': they do not increase the capabilities of the language.
 
-Instead, they make it possible to write the same thing in a more readable way. 
+Instead, they make it possible to write the same thing in a more readable way.
 
 Almost everything we learn from now on will be either syntactic sugar or interaction with something other than idealised memory, such as a storage device or the internet. Once you have variables, conditionality, and branching, your language can do anything. (And this can be proved.)
 
@@ -199,8 +199,8 @@ You can automatically build dictionaries, by using a list comprehension syntax, 
 
 ## 2.0.6 List-based thinking
 
-Once you start to get comfortable with comprehensions, you find yourself working with containers, nested groups of lists 
-and dictionaries, as the 'things' in your program, not individual variables. 
+Once you start to get comfortable with comprehensions, you find yourself working with containers, nested groups of lists
+and dictionaries, as the 'things' in your program, not individual variables.
 
 Given a way to analyse some dataset, we'll find ourselves writing stuff like:
 
@@ -283,7 +283,7 @@ list(map(str, range(10)))
 
 
 So I can write:
-    
+
     analysed_data = map(analyse, data)
 
 We'll learn more about `map` and similar functions when we discuss functional programming later in the course.

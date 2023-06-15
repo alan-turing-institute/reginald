@@ -30,4 +30,3 @@ classes.
 
 We'll also think about how to write programs that *generate* the more verbose, repetitive program we could otherwise write.
 We call this **metaprogramming**.
-

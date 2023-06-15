@@ -51,11 +51,11 @@ There are various conventions for how to write docstrings, but the native sphinx
 the built in `help` system.
 
 In writing Greeter, we used the docstring conventions from NumPy.
-So we use the [numpydoc](https://github.com/numpy/numpy/blob/master/doc/HOWTO_DOCUMENT.rst.txt) sphinx extension to 
+So we use the [numpydoc](https://github.com/numpy/numpy/blob/master/doc/HOWTO_DOCUMENT.rst.txt) sphinx extension to
 support these.
 
 ```python
-""" 
+"""
 Generate a greeting string for a person.
 
 Parameters
@@ -233,23 +233,23 @@ sphinx-build docs docs/output
     building [html]: targets for 1 source files that are out of date
     updating environment: 0 added, 1 changed, 0 removed
     reading sources... [100%] index
-    
+
     looking for now-outdated files... none found
     pickling environment... done
     checking consistency... done
     preparing documents... done
     writing output... [100%] index
-    
+
     generating indices... genindex done
     highlighting module code... [100%] greetings.greeter
-    
+
     writing additional pages... search done
     copying static files... done
     copying extra files... done
     dumping search index in English (code: en)... done
     dumping object inventory... done
     build succeeded.
-    
+
     The HTML pages are in docs/output.
 
 

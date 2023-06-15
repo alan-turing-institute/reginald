@@ -438,7 +438,7 @@ identity[0][0]
 
 Another useful type is range, which gives you a sequence of consecutive numbers. In contrast to a list, ranges generate the numbers as you need them, rather than all at once.
 
-If you try to print a range, you'll see something that looks a little strange: 
+If you try to print a range, you'll see something that looks a little strange:
 
 
 ```python
@@ -643,7 +643,7 @@ zero, one, two, three = range(7)
 
     /var/folders/q7/nl3w6z854711jwsdy0hj7sxhwypcgh/T/ipykernel_63975/2891450249.py in <module>
     ----> 1 zero, one, two, three = range(7)
-    
+
 
     ValueError: too many values to unpack (expected 4)
 
@@ -660,7 +660,7 @@ zero, one, two, three = range(2)
 
     /var/folders/q7/nl3w6z854711jwsdy0hj7sxhwypcgh/T/ipykernel_63975/4218591722.py in <module>
     ----> 1 zero, one, two, three = range(2)
-    
+
 
     ValueError: not enough values to unpack (expected 4, got 2)
 
@@ -695,4 +695,3 @@ print("three is", three)
     one is 0
     two is [1, 2, 3, 4, 5, 6, 7, 8]
     three is 9
-

@@ -3,11 +3,11 @@
 *Estimated time for this notebook: 10 minutes*
 
 XML and its relatives (including HTML) are based on the idea of *marking up* content with labels on its purpose:
-    
+
     <name>James</name> is a <job>Programmer</job>
 
 We want to represent the chemical reactions:
-$C_6H_{12}O_6 + 6O_2 \rightarrow 6CO_2 + 6H_2O\\ 
+$C_6H_{12}O_6 + 6O_2 \rightarrow 6CO_2 + 6H_2O\\
 2H_2 + O_2 \rightarrow 2H_2O$
 
 In xml this might look like:
@@ -55,7 +55,7 @@ In xml this might look like:
             </molecule>
         </products>
     </reaction>
-</system>    
+</system>
 ```
 
     Overwriting system.xml
@@ -116,10 +116,10 @@ print(etree.tostring(tree, pretty_print=True, encoding=str))
             </products>
         </reaction>
     </system>
-    
 
 
-We can navigate the tree, with each **element** being an iterable yielding its children: 
+
+We can navigate the tree, with each **element** being an iterable yielding its children:
 
 
 ```python
@@ -185,7 +185,7 @@ Here's an XSLT to transform our reaction system into a LaTeX representation:
 
 <xsl:stylesheet version="2.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
     <xsl:output method="xml" indent="yes" omit-xml-declaration="yes" />
-        
+
     <!-- Decompose reaction into "reactants \rightarrow products" -->
     <xsl:template match="//reaction">
         <xsl:apply-templates select="reactants"/>
@@ -193,7 +193,7 @@ Here's an XSLT to transform our reaction system into a LaTeX representation:
         <xsl:apply-templates select="products"/>
         <xsl:text>\\&#xa;</xsl:text>
     </xsl:template>
-        
+
     <!-- For a molecule anywhere except the first position write " + " and the number of molecules-->
     <xsl:template match="//molecule[position()!=1]">
         <xsl:text> + </xsl:text>
@@ -209,31 +209,31 @@ Here's an XSLT to transform our reaction system into a LaTeX representation:
 
     <!-- If the stoichiometry is one then ignore it -->
     <xsl:template match="@stoichiometry[.='1']"/>
-    
+
     <!-- Otherwise, use the default template for attributes, which is just to copy value -->
-    
+
     <!-- Decompose element into "symbol number" -->
     <xsl:template match="//atom">
         <xsl:value-of select="@symbol"/>
         <xsl:apply-templates select="@number"/>
     </xsl:template>
-        
-    <!-- If the number of elements/molecules is one then ignore it -->        
+
+    <!-- If the number of elements/molecules is one then ignore it -->
     <xsl:template match="@number[.=1]"/>
-    
-    <!-- ... otherwise replace it with "_ value" -->        
+
+    <!-- ... otherwise replace it with "_ value" -->
     <xsl:template match="@number[.!=1][10>.]">
         <xsl:text>_</xsl:text>
         <xsl:value-of select="."/>
     </xsl:template>
-        
-    <!-- If a number is greater than 10 then wrap it in "{}" -->        
+
+    <!-- If a number is greater than 10 then wrap it in "{}" -->
     <xsl:template match="@number[.!=1][.>9]">
         <xsl:text>_{</xsl:text>
         <xsl:value-of select="."/>
-        <xsl:text>}</xsl:text>          
+        <xsl:text>}</xsl:text>
     </xsl:template>
-        
+
     <!-- Do not copy input whitespace to output -->
     <xsl:template match="text()" />
 </xsl:stylesheet>
@@ -256,8 +256,8 @@ print(str(transform(tree)))
 
     C_6H_{12}O_6 + 6O_2 \rightarrow 6CO_2 + 6H_2O\\
     2H_2 + O_2 \rightarrow 2H_2O\\
-    
-    
+
+
 
 
 Which is back to the LaTeX representation of our reactions.
@@ -265,7 +265,7 @@ Which is back to the LaTeX representation of our reactions.
 ## Validating XML : Schema
 
 XML Schema is a way to define how an XML file is allowed to be: which attributes and tags should exist where.
-    
+
 You should always define one of these when using an XML file format.
 
 
@@ -280,7 +280,7 @@ You should always define one of these when using an XML file format.
         <xs:attribute name="number" type="xs:integer"/>
     </xs:complexType>
 </xs:element>
-    
+
 <xs:element name="molecule">
     <xs:complexType>
         <xs:sequence>
@@ -289,7 +289,7 @@ You should always define one of these when using an XML file format.
         <xs:attribute name="stoichiometry" type="xs:integer"/>
     </xs:complexType>
 </xs:element>
-    
+
 <xs:element name="reaction">
     <xs:complexType>
         <xs:sequence>
@@ -318,7 +318,7 @@ You should always define one of these when using an XML file format.
         </xs:sequence>
     </xs:complexType>
 </xs:element>
-    
+
 </xs:schema>
 ```
 

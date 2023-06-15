@@ -38,7 +38,7 @@ def add_to_reaction(a_name, a_reaction):
 
 ```
 reaction = {
-    "reactants": ["H", "H", "O"], 
+    "reactants": ["H", "H", "O"],
     "products": ["H2O"]
 }
 ```
@@ -50,12 +50,12 @@ reaction = {
 
 ```
 reaction2 = {
-    "reactants": 
+    "reactants":
         [
-            "H", 
+            "H",
             "H",
             "O"
-        ], 
+        ],
     "products": [
         "H2O"
     ]
@@ -101,7 +101,7 @@ class ClassName:
         self.instance_variable = variable_name
 ```
 
-However, particular projects may have their own conventions (and you will even find Python standard libraries that don't follow these conventions). 
+However, particular projects may have their own conventions (and you will even find Python standard libraries that don't follow these conventions).
 
 
 ## Newlines
@@ -245,7 +245,7 @@ int(repeat("2", "3", times=3))
 
 
 
-See the [Python documentation](https://docs.python.org/3/library/typing.html) for more details on type annotations and the `typing` library. 
+See the [Python documentation](https://docs.python.org/3/library/typing.html) for more details on type annotations and the `typing` library.
 
 ## Coding Conventions
 
@@ -258,4 +258,3 @@ If your language or project has a standard policy, use that. For example:
 - **R**: [Google's guide for R](https://google.github.io/styleguide/Rguide.xml), [tidyverse style guide](https://style.tidyverse.org/)
 - **C++**: [Google's style guide](https://google.github.io/styleguide/cppguide.html), [Mozilla's](https://developer.mozilla.org/en-US/docs/Mozilla/Developer_guide/Coding_Style)
 - **Julia**: [Official style guide](https://docs.julialang.org/en/v1/manual/style-guide/index.html)
-

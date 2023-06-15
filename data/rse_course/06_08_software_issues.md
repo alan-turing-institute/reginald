@@ -54,7 +54,7 @@ If possible, submit a minimal reproducing code fragment.
 * Whoever the issue is assigned to works next.
 * If an issue needs someone else's work, assign it to them.
 
-## Status 
+## Status
 
 * Submitted
 * Accepted

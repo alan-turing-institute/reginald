@@ -33,7 +33,7 @@ print(six)
     6
 
 
-If we look for a variable that hasn't ever been defined, we get an error. 
+If we look for a variable that hasn't ever been defined, we get an error.
 
 
 ```python
@@ -81,7 +81,7 @@ type(None)
 
 (None is the special python value for a no-value variable.)
 
-*Supplementary Materials*: There's more on variables at http://swcarpentry.github.io/python-novice-inflammation/01-numpy/index.html 
+*Supplementary Materials*: There's more on variables at http://swcarpentry.github.io/python-novice-inflammation/01-numpy/index.html
 
 Anywhere we could put a raw number, we can put a variable label, and that works fine:
 
@@ -123,7 +123,7 @@ print(scary)
     25
 
 
-Note that **the data that was there before has been lost**. 
+Note that **the data that was there before has been lost**.
 
 No labels refer to it any more - so it has been "Garbage Collected"! We might imagine something pulled out of the box, and thrown on the floor, to make way for the next occupant.
 
@@ -210,7 +210,7 @@ Labels are contained in groups called "frames": our frame contains two labels, '
 ## 1.1.3 Objects and types
 
 An object, like `name`, has a type. In the online python tutor example, we see that the objects have type "str".
-`str` means a text object: Programmers call these 'strings'. 
+`str` means a text object: Programmers call these 'strings'.
 
 
 ```python
@@ -391,8 +391,8 @@ print("Didn't get to here")
 
 But in the above, we can see that the error happens on the **third** line of our code cell.
 
-We can also see that the error message: 
-> 'complex' object has no attribute 'wrong' 
+We can also see that the error message:
+> 'complex' object has no attribute 'wrong'
 
 ...tells us something important. Even if we don't understand the rest, this is useful for debugging!
 
@@ -436,7 +436,7 @@ If I now go back to input cell reading `number = number + 1`, and run it again, 
 
 So it's important to remember that if you move your cursor around in the notebook, it doesn't always run top to bottom.
 
-**Supplementary material**: (1) https://jupyter-notebook.readthedocs.io/en/latest/ 
+**Supplementary material**: (1) https://jupyter-notebook.readthedocs.io/en/latest/
 
 ## 1.1.6 Comments
 
@@ -449,4 +449,3 @@ print("This runs")  # print("This doesn't")
 ```
 
     This runs
-

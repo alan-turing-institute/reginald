@@ -293,9 +293,9 @@ df.plot(x=2, y=3)
 
 
 
-    
+
 ![png](/Users/lbokeria/Documents/hack_week_2023/reginald/data_processing/rse_course_modules/module03_research_data_in_python/03_01_fields_and_records_24_1.png)
-    
+
 
 
 The plot command accepted an series of 'X' values and an series of 'Y' values, identified by their column number in this case, as the dataframe does not have (useful) column headers yet.
@@ -305,11 +305,11 @@ The plot command accepted an series of 'X' values and an series of 'Y' values, i
 As it happens, the columns definitions can be found on the source website (http://www.sidc.be/silso/infosnmtot)
 
 > CSV
-> 
+>
 > Filename: SN_m_tot_V2.0.csv
 > Format: Comma Separated values (adapted for import in spreadsheets)
 > The separator is the semicolon ';'.
-> 
+>
 > Contents:
 > - Column 1-2: Gregorian calendar date
 >   - Year
@@ -433,9 +433,9 @@ df_w_names.plot(x="date", y="mean")
 
 
 
-    
+
 ![png](/Users/lbokeria/Documents/hack_week_2023/reginald/data_processing/rse_course_modules/module03_research_data_in_python/03_01_fields_and_records_31_1.png)
-    
+
 
 
 Note: The plot method used for the `DataFrame` is just a wrapper around the `matplotlib` function `plt.plot()`:
@@ -744,7 +744,7 @@ df_twenty_eighteen.head(20)
 
 
 
-Even though we used 
+Even though we used
 ```bash
 df_twenty_eighteen.head(20)
 ```
@@ -938,5 +938,3 @@ df_nineties.tail()
   </tbody>
 </table>
 </div>
-
-

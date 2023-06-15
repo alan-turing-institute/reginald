@@ -97,7 +97,7 @@ You'll need to:
 * Understand how the data is structured into dictionaries and lists
    * Where is the magnitude?
    * Where is the place description or coordinates?
-   
+
 #### Search through the data
 * Program a search through all the quakes to find the biggest quake
 * Find the place of the biggest quake
