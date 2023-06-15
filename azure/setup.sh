@@ -109,7 +109,7 @@ if [ -z "$SLACK_BOT_TOKEN" ]; then
 fi
 AZURE_KEYVAULT_AUTH_VIA_CLI=true pulumi config set --secret SLACK_BOT_TOKEN "$SLACK_BOT_TOKEN"
 
-# The OpenAIAzure and LlamaGPT35TurboAzure models need an Azure backend
+# The ChatCompletionAzure and LlamaGPT35TurboAzure models need an Azure backend
 if [[ $REGINALD_MODEL == *azure* ]]; then
     if [ -z "$OPENAI_AZURE_API_BASE" ]; then
         echo "Please provide a OPENAI_AZURE_API_BASE:"
@@ -123,8 +123,8 @@ if [[ $REGINALD_MODEL == *azure* ]]; then
     AZURE_KEYVAULT_AUTH_VIA_CLI=true pulumi config set --secret OPENAI_AZURE_API_KEY "$OPENAI_AZURE_API_KEY"
 fi
 
-# The OpenAIPersonal and LlamaGPT35TurboPersonal models need an OpenAI key
-if [[ $REGINALD_MODEL == *personal* ]]; then
+# The ChatCompletionOpenAI and LlamaGPT35TurboOpenAI models need an OpenAI key
+if [[ $REGINALD_MODEL == *openai* ]]; then
     if [ -z "$OPENAI_API_KEY" ]; then
         echo "Please provide a OPENAI_API_KEY:"
         read -r OPENAI_API_KEY
