@@ -182,6 +182,18 @@ Explore the Institute
 
 Legal
 Awards""",
+    r"""The Alan Turing Institute
+1st floor of the British Library, 96 Euston Road, London, NW1 2DB
+173.9 KB
+9.4 MB
+15.8 MB""",
+    r"""The Alan Turing Institute
+1st floor of the British Library, 96 Euston Road, London, NW1 2DB
+173.9 KB
+9.4 MB
+15.8 MB""",
+    r"""The Alan Turing Institute
+1st floor of the British Library, 96 Euston Road, London, NW1 2DB""",
 ]
 
 for b in boilerplates:
