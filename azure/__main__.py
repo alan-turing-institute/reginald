@@ -78,7 +78,7 @@ storage_account_keys = storage_account.list_storage_account_keys(
     account_name=storage_account.name,
     resource_group_name=resource_group.name,
 )
-storage_account_key=pulumi.Output.secret(storage_account_keys.keys[0].value)
+storage_account_key = pulumi.Output.secret(storage_account_keys.keys[0].value)
 
 # Define the container group
 container_group = containerinstance.ContainerGroup(
