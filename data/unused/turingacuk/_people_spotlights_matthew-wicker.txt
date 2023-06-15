@@ -1,0 +1,54 @@
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+
+My work focuses on the safety, explainability and fairness of machine learning methods, particularly supervised learning and deep learning. I aim to explore and develop both theoretical techniques and practical tools which offset the negative externalities (or drawbacks) of applying machine learning methods.
+A big one is bias. Say, for instance, you’ve trained a neural network to perform credit risk assessments on people applying for loans. You want to make sure that it doesn’t give different predictions to individuals who differ only in a sensitive attribute – like race, gender, or age – which has nothing to do with their creditworthiness in the first place. The trouble is that even if you don’t train a neural network to consider these sensitive attributes, unfairness can still creep in through correlated features. For example, a person’s postcode can be highly correlated with their race.
+What I aim to do with my research is provide guarantees, in the form of concrete mathematical evidence, that even if you make changes to sensitive attributes or correlated features, it will not lead to a change in prediction. In this way, we can be more certain that a neural network isn’t just accurate, but fair.
+All the techniques I work on are very general purpose, so they could be applied in any context where sensitive information is used or where safety is a primary concern. Ultimately, we want to provide a formal guarantee that minor changes to a neural network’s input won’t have major negative changes to its output. And that could be useful for showing external parties like regulators or users themselves that a neural network has met certain criteria for fairness, safety, or robustness.
+The partnership between the Turing and Accenture has allowed me to combine both theory and practical application, in a way that ultimately makes my work more useful and impactful. While my work at the Turing focuses on developing these theoretical guarantees for neural networks, with Accenture, I get to develop tools for actually applying those theories. It’s been really fruitful to take things that we’ve developed on a theoretical level and look at them from a more practical angle, and get feedback on what needs to be done to translate that theory into a real use case.
+I love live music, so you can often find me at a concert! I also enjoy photography as a hobby. I really like taking Polaroid photos and, lately, I’ve been hunting down old cameras from the 70s and fixing them up.
+© The Alan Turing Institute
+2023. All rights reserved.
+The Alan Turing Institute, a charity incorporated and registered in England and Wales with company number 09512457 and charity number 1162533 whose registered office is at British Library, 96 Euston Road, London, England, NW1 2DB, United Kingdom.
+For website-related enquiries email
+[email protected]
+
+Explore the Institute
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Legal
+Awards

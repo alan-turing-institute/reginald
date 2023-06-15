@@ -1,0 +1,66 @@
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Whilst being mostly studied in the context of diseases, somatic mutations are fundamental to normal physiological function in plants and animals. Investigating the functional relevance of cellular heterogeneity in non-model systems requires adaptation of experimental and computational protocols and development of novel approaches for reusing and integrating existing data, but this is prevented by the current state of metadata annotations and high heterogeneity of public datasets. Our aims are to develop innovative single-cell approaches to address those needs.
+In multicellular organisms, transcriptional, epigenetic and even genetic heterogeneity emerges as a consequence of cell
+division, differentiation and response to environmental stimuli. This cellular heterogeneity is fundamental to organism-level function and phenotype. CELLGEN aims to investigate the functional impact of cellular genomic and transcriptomic heterogeneity in healthy plants and animals
+We aim to:
+WP1 will develop data science approaches to enable and deliver FAIR single-cell data. We will develop novel metadata
+standards, automatically enrich, and annotate metadata, and extend our data brokering solutions to single-cell data. We will develop pipelines for reproducible handling of single-cell data, bias correction, and facilitate data integration.
+WP2 will investigate the diversity and consequence of somatic variation in healthy systems. We will develop long read
+sequencing methods to accurately genotype highly mutable repeats. We will use cell systems to test the impact of
+polyploidization on the genome and repeat stability, and expression regulation. We will apply our developments to in vivo
+highly polyploid plants and mammalian cells, and relate somatic variants to phenotypes in clonal crops.
+WP3 will characterise cellular transcriptomic heterogeneity and its impact on cell and whole-organism response to
+environment. We will apply single-cell multiomics developments in plant and animal to reconstruct single-cell gene and
+transcript regulatory networks to investigate their rewiring during differentiation, and upon environmental variation.
+CELLGEN will deliver novel approaches for cellular functional omics, linking advanced computational and experimental
+analyses with metadata curation and data integration. This will improve our understanding of the regulation of gene
+expression, and provide an understanding of the cellular mechanisms underpinning organismal adaptation to changing
+environments in plants and animals during the healthy lifespan
+This project is led by the Earlham Institute, with collaboration from The Alan Turing Institute, UK Health Security Agency, and the Sainsbury Laboratory at the University of Cambridge - bringing expertise in machine learning approaches, mathematical modelling, and bioinformatics - as well as breeding and technology leaders including WorldFish, PacBio, and Oxford Nanopore Technologies.
+Recent press release from Earlham Institute: https://www.earlham.ac.uk/news/earlham-institute-BBSRC-funding-award-2023
+© The Alan Turing Institute
+2023. All rights reserved.
+The Alan Turing Institute, a charity incorporated and registered in England and Wales with company number 09512457 and charity number 1162533 whose registered office is at British Library, 96 Euston Road, London, England, NW1 2DB, United Kingdom.
+For website-related enquiries email
+[email protected]
+
+Explore the Institute
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Legal
+Awards

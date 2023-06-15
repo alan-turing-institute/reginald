@@ -1,0 +1,55 @@
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Computer vision technology has had a huge impact within many scientific disciplines, however, it can be difficult for researchers unfamiliar with computer vision methods to determine the best algorithm for analysing their data. Scivision is an open-source software tool allowing users to explore a range of computer vision models and datasets hosted in the Scivision catalogue in order to find new ways to apply computer vision in their research. The Scivision community brings together computer vision experts and users to share data and methods, collaborate on new techniques, and discuss advances in computer vision.
+Modern scientific research is inherently interdisciplinary. Scivision embraces this interdisciplinarity by bringing together researchers working across distinct domains of science, all of whom are using computer vision in their research. Rather than duplicating their work in independent silos, the researchers began by identifying common data challenges across projects that apply machine learning to the sciences. The Scivision framework cuts across different projects, agnostic to both the algorithms in use and the intended applications. As an example of how computer vision techniques are transferable across data from different disciplines, consider the case of mapreader for plant phenotyping.
+Scivision aims to be a well-documented and generalisable framework for applying computer vision methods to a diverse range of imagery. The Scivision framework will serve as a bridge between data owners, or domain experts who collect and curate image datasets, and developers by:
+Understanding how the genetics of plants interact with their environment to produce certain characteristics or 'phenotypes' is critical to understand how they might grow under different conditions. In relation to agriculture, extracting accurate data on phenotype may help us to better manage plants to produce higher-yield, more resilient crops, and plan for future food security by predicting how crops may grow under various climate change scenarios.
+State-of-the-art plant phenotyping platforms have recently been established in the UK, such as the National Plant Phenomics Centre that collect high spatiotemporal resolution imagery of plants, as well as data on plant genetics and environmental conditions. However, extracting phenomic data from these images is expensive and time consuming to carry out manually.
+We are working with the National Plant Phenomics Centre (NPPC) to automate extraction of plant phenotype data from various datasets, including time-series images of individual Brassica napus plants. We want to track the change and emergence of different plant structures (such as leaves, flowers, branches and seed pods) over time.
+Through the Scivision framework we were able to load example plant data (at individual and satellite scale) and perform inference with a MapReader model trained on NPPC images of individual Brassica plants.
+MapReader is an end-to-end computer vision (CV) pipeline developed to analyse historical maps as scale, using a patch classification approach to identify landscape features i.e. railways and buildings, and examine change in these classes over time. Through the Scivision framework we were able to use an adapted version of a model trained through the MapReader pipeline to classify various plant structures (i.e. flowers, leaves, seed pods) at patch level, and examined how the abundance and distribution of these different structures change over time as plants grow.
+© The Alan Turing Institute
+2023. All rights reserved.
+The Alan Turing Institute, a charity incorporated and registered in England and Wales with company number 09512457 and charity number 1162533 whose registered office is at British Library, 96 Euston Road, London, England, NW1 2DB, United Kingdom.
+For website-related enquiries email
+[email protected]
+
+Explore the Institute
+Section page
+Conferences, workshops, and other events from around the Turing University Network
+A series of inspiring talks by leading figures in data science and AI
+The Turing works with a range of partners with far-reaching, real-world impact across sectors
+The Institute's podcast for discussions on all things data science, AI and machine learning
+To make great leaps in research, we need to better reflect the diverse nature of the world
+Research projects
+The Turing and its partners have invested more than £26m in digital twin research and innovation
+Publication
+Research spotlight
+Enrichment student Premdeep Gill is studying Antarctic seals and their sea ice habitats through satellite data, to better understand how they are coping with climate change
+Research spotlight
+As co-lead of the Turing’s Women in Data Science and AI project, Research Fellow Erin Young’s vital research maps the gendered career trajectories in data science and AI
+Applications have now closed
+Section page
+Events bringing together some of the country’s top talent from data science, artificial intelligence, and wider fields, to analyse real-world data science challenges
+We work with a wide range of partners to help deliver our mission of changing the world using data science and artificial intelligence
+Sign up to our monthly newsletter, receive our exclusive Turing events guide, get updates from our applied skills programme and keep in touch with new research opportunities
+Find out more about the expert commentary the Turing can provide
+Legal
+Awards
