@@ -60,11 +60,7 @@ class Bot(SocketModeRequestListener):
 
             # Add an emoji and a reply as required
             if model_response:
-                if not self._request_field_exists(req, "channel", event):
-                    return None
                 if model_response.emoji:
-                    if not self._request_field_exists(req, "ts", event):
-                        return None
                     logging.info(f"Applying emoji {model_response.emoji}")
                     client.web_client.reactions_add(
                         name=model_response.emoji,
