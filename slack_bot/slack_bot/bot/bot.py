@@ -1,5 +1,6 @@
 # Standard library imports
 import logging
+from typing import Optional
 
 # Third-party imports
 from slack_sdk.socket_mode import SocketModeClient
@@ -47,10 +48,12 @@ class Bot(SocketModeRequestListener):
 
             # If this is a direct message to REGinald...
             if event_type == "message" and event_subtype is None:
+                self.react(client, event["channel"], event["ts"])
                 model_response = self.model.direct_message(message, user_id)
 
             # If @REGinald is mentioned in a channel
             elif event_type == "app_mention":
+                self.react(client, event["channel"], event["ts"])
                 model_response = self.model.channel_mention(message, user_id)
 
             # Otherwise
@@ -59,19 +62,13 @@ class Bot(SocketModeRequestListener):
                 return None
 
             # Add an emoji and a reply as required
-            if model_response:
-                if model_response.emoji:
-                    logging.info(f"Applying emoji {model_response.emoji}")
-                    client.web_client.reactions_add(
-                        name=model_response.emoji,
-                        channel=event["channel"],
-                        timestamp=event["ts"],
-                    )
-                if model_response.message:
-                    logging.info(f"Posting reply {model_response.message}")
-                    client.web_client.chat_postMessage(
-                        channel=event["channel"], text=model_response.message
-                    )
+            if model_response and model_response.message:
+                logging.info(f"Posting reply {model_response.message}.")
+                client.web_client.chat_postMessage(
+                    channel=event["channel"], text=model_response.message
+                )
+            else:
+                logging.info(f"No reply was generated.")
 
         except KeyError as exc:
             logging.warning(f"Attempted to access key that does not exist.\n{str(exc)}")
@@ -81,3 +78,15 @@ class Bot(SocketModeRequestListener):
                 f"Something went wrong in processing a Slack request.\nPayload: {req.payload}.\n{str(exc)}"
             )
             raise
+
+    def react(self, client: SocketModeClient, channel: str, timestamp: str) -> None:
+        """Emoji react to the input message"""
+        if self.model.emoji:
+            logging.info(f"Reacting with emoji {self.model.emoji}")
+            client.web_client.reactions_add(
+                name=self.model.emoji,
+                channel=channel,
+                timestamp=timestamp,
+            )
+        else:
+            logging.info(f"No emoji defined for this model.")
