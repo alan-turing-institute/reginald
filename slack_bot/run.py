@@ -2,6 +2,7 @@
 import argparse
 import logging
 import os
+import pathlib
 import sys
 import threading
 
@@ -16,6 +17,29 @@ if __name__ == "__main__":
     # Parse command line arguments
     parser = argparse.ArgumentParser()
     parser.add_argument("--model", "-m", help="Select which model to use", default=None)
+    parser.add_argument(
+        "--force-new-index",
+        "-f",
+        help="Recreate the index or not",
+        action=argparse.BooleanOptionalAction,
+        default=False,
+    )
+    parser.add_argument(
+        "--data-dir",
+        "-d",
+        help="Location for data",
+        default=(pathlib.Path(__file__).parent.parent / "data").resolve(),
+    )
+    parser.add_argument(
+        "--which-index",
+        "-w",
+        help="""Specifies the directory name for looking up/writing indices.
+        Currently supports 'all_data' and 'handbook'. If regenerating index, 'all_data'
+        will use all .txt .md. and .csv files in the data directory, 'handbook' will
+        only use 'handbook.csv' file.""",
+        default="all_data",
+    )
+
     args = parser.parse_args()
 
     # Initialise logging
@@ -25,12 +49,34 @@ if __name__ == "__main__":
         level=logging.INFO,
     )
 
-    # Set the model name
+    # Set model name
     model_name = os.environ.get("REGINALD_MODEL")
     if args.model:
         model_name = args.model
     if not model_name:
         model_name = "hello"
+
+    # Set force new index
+    force_new_index = False
+    if os.environ.get("LLAMA_FORCE_NEW_INDEX"):
+        force_new_index = os.environ.get("LLAMA_FORCE_NEW_INDEX").lower() == "true"
+    if args.force_new_index:
+        force_new_index = True
+
+    # Set data directory
+    data_dir = os.environ.get("LLAMA_DATA_DIR")
+    if args.data_dir:
+        data_dir = args.data_dir
+    if not data_dir:
+        data_dir = pathlib.Path(__file__).parent.parent / "data"
+    data_dir = pathlib.Path(data_dir).resolve()
+
+    # Set which index
+    which_index = os.environ.get("LLAMA_WHICH_INDEX")
+    if args.which_index:
+        which_index = args.which_index
+    if not which_index:
+        which_index = "all_data"
 
     # Initialise a new Slack bot with the requested model
     try:
@@ -40,7 +86,14 @@ if __name__ == "__main__":
         sys.exit(1)
 
     logging.info(f"Initialising bot with model {model_name}")
-    slack_bot = Bot(model())
+
+    slack_bot = Bot(
+        model(
+            force_new_index=force_new_index,
+            data_dir=data_dir,
+            which_index=which_index,
+        )
+    )
 
     # Initialize SocketModeClient with an app-level token + WebClient
     client = SocketModeClient(
@@ -51,7 +104,6 @@ if __name__ == "__main__":
     )
 
     # Add a new listener to receive messages from Slack
-    # You can add more listeners like this
     client.socket_mode_request_listeners.append(slack_bot)
     # Establish a WebSocket connection to the Socket Mode servers
     client.connect()

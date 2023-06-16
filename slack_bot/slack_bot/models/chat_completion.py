@@ -1,5 +1,6 @@
 # Standard library imports
 import os
+from typing import Any
 
 # Third-party imports
 import openai
@@ -9,7 +10,7 @@ from .base import MessageResponse, ResponseModel
 
 
 class ChatCompletionAzure(ResponseModel):
-    def __init__(self) -> None:
+    def __init__(self, **kwargs: Any) -> None:
         self.api_base = os.getenv("OPENAI_AZURE_API_BASE")
         self.api_key = os.getenv("OPENAI_AZURE_API_KEY")
         self.api_type = "azure"
@@ -39,7 +40,7 @@ class ChatCompletionAzure(ResponseModel):
             top_p=self.top_p,
         )
         text = response["choices"][0]["text"]
-        return MessageResponse(text, None)
+        return MessageResponse(text, "open_hands")
 
     def channel_mention(self, message: str, user_id: str) -> MessageResponse:
         openai.api_base = self.api_base
@@ -58,11 +59,11 @@ class ChatCompletionAzure(ResponseModel):
             top_p=self.top_p,
         )
         text = response["choices"][0]["text"]
-        return MessageResponse(text, None)
+        return MessageResponse(text, "open_hands")
 
 
 class ChatCompletionOpenAI(ResponseModel):
-    def __init__(self) -> None:
+    def __init__(self, **kwargs) -> None:
         self.api_key = os.getenv("OPENAI_API_KEY")
 
     def direct_message(self, message: str, user_id: str) -> MessageResponse:
@@ -71,7 +72,7 @@ class ChatCompletionOpenAI(ResponseModel):
             model="gpt-3.5-turbo", messages=[{"role": "user", "content": message}]
         )
         text = response["choices"][0]["message"]["content"]
-        return MessageResponse(text, None)
+        return MessageResponse(text, "open_hands")
 
     def channel_mention(self, message: str, user_id: str) -> MessageResponse:
         openai.api_key = self.api_key
@@ -79,4 +80,4 @@ class ChatCompletionOpenAI(ResponseModel):
             model="gpt-3.5-turbo", messages=[{"role": "user", "content": message}]
         )
         text = response["choices"][0]["message"]["content"]
-        return MessageResponse(text, None)
+        return MessageResponse(text, "open_hands")
