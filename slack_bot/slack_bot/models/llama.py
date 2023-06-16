@@ -135,7 +135,7 @@ class Llama(ResponseModel):
         for source_node in response.source_nodes:
             source_text = (
                 source_node.node.extra_info["filename"]
-                + f" (similarity: {source_node.score})"
+                + f" (similarity: {round(source_node.score,3)})"
             )
             texts.append(source_text)
         result = "I read the following documents to compose this answer:\n"
