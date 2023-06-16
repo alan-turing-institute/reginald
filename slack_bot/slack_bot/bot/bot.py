@@ -36,14 +36,14 @@ class Bot(SocketModeRequestListener):
 
             # Ignore changes to messages.
             if event_type == "message" and event_subtype == "message_changed":
-                logging.info(f"Ignoring changes to messages.")
+                logging.info(f"Ignoring a change to a message.")
                 return None
 
             logging.info(f"Received message '{message}' from user '{user_id}'")
 
             # Ignore messages from bots
             if sender_is_bot:
-                logging.info(f"Ignoring messages from bots.")
+                logging.info(f"Ignoring a message that came from a bot.")
                 return None
 
             # If this is a direct message to REGinald...
