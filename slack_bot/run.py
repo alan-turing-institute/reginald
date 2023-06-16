@@ -11,7 +11,7 @@ from slack_sdk.socket_mode import SocketModeClient
 from slack_sdk.web import WebClient
 
 # Local imports
-from .slack_bot import MODELS, Bot
+from slack_bot import MODELS, Bot
 
 if __name__ == "__main__":
     # Parse command line arguments
@@ -57,6 +57,7 @@ if __name__ == "__main__":
         model_name = "hello"
 
     # Set force new index
+    force_new_index = False
     if os.environ.get("LLAMA_FORCE_NEW_INDEX"):
         force_new_index = os.environ.get("LLAMA_FORCE_NEW_INDEX").lower() == "true"
     if args.force_new_index:
