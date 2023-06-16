@@ -9,8 +9,14 @@ import openai
 from .base import MessageResponse, ResponseModel
 
 
-class ChatCompletionAzure(ResponseModel):
-    def __init__(self, **kwargs: Any) -> None:
+class ChatCompletionBase(ResponseModel):
+    def __init__(self, *args, **kwargs) -> None:
+        super().__init__(emoji="books")
+
+
+class ChatCompletionAzure(ChatCompletionBase):
+    def __init__(self, *args: Any, **kwargs: Any) -> None:
+        super().__init__(*args, **kwargs)
         self.api_base = os.getenv("OPENAI_AZURE_API_BASE")
         self.api_key = os.getenv("OPENAI_AZURE_API_KEY")
         self.api_type = "azure"
@@ -39,8 +45,7 @@ class ChatCompletionAzure(ResponseModel):
             temperature=self.temperature,
             top_p=self.top_p,
         )
-        text = response["choices"][0]["text"]
-        return MessageResponse(text, "open_hands")
+        return MessageResponse(response["choices"][0]["text"])
 
     def channel_mention(self, message: str, user_id: str) -> MessageResponse:
         openai.api_base = self.api_base
@@ -58,12 +63,12 @@ class ChatCompletionAzure(ResponseModel):
             temperature=self.temperature,
             top_p=self.top_p,
         )
-        text = response["choices"][0]["text"]
-        return MessageResponse(text, "open_hands")
+        return MessageResponse(response["choices"][0]["text"])
 
 
-class ChatCompletionOpenAI(ResponseModel):
-    def __init__(self, **kwargs) -> None:
+class ChatCompletionOpenAI(ChatCompletionBase):
+    def __init__(self, *args: Any, **kwargs: Any) -> None:
+        super().__init__(*args, **kwargs)
         self.api_key = os.getenv("OPENAI_API_KEY")
 
     def direct_message(self, message: str, user_id: str) -> MessageResponse:
@@ -71,13 +76,11 @@ class ChatCompletionOpenAI(ResponseModel):
         response = openai.ChatCompletion.create(
             model="gpt-3.5-turbo", messages=[{"role": "user", "content": message}]
         )
-        text = response["choices"][0]["message"]["content"]
-        return MessageResponse(text, "open_hands")
+        return MessageResponse(response["choices"][0]["message"]["content"])
 
     def channel_mention(self, message: str, user_id: str) -> MessageResponse:
         openai.api_key = self.api_key
         response = openai.ChatCompletion.create(
             model="gpt-3.5-turbo", messages=[{"role": "user", "content": message}]
         )
-        text = response["choices"][0]["message"]["content"]
-        return MessageResponse(text, "open_hands")
+        return MessageResponse(response["choices"][0]["message"]["content"])

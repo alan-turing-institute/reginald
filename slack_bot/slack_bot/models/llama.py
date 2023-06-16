@@ -60,11 +60,12 @@ class Llama(ResponseModel):
         max_input_size: int,
         data_dir: pathlib.Path,
         which_index: str,
-        num_output: int = 256,
         chunk_size_limit: Optional[int] = None,
         chunk_overlap_ratio: float = 0.1,
         force_new_index: bool = False,
+        num_output: int = 256,
     ) -> None:
+        super().__init__(emoji="llama")
         logging.info("Setting up Huggingface backend.")
         self.max_input_size = max_input_size
         self.model_name = model_name
@@ -214,11 +215,11 @@ class Llama(ResponseModel):
 
     def direct_message(self, message: str, user_id: str) -> MessageResponse:
         backend_response = self._get_response(message, user_id)
-        return MessageResponse(backend_response, "llama")
+        return MessageResponse(backend_response)
 
     def channel_mention(self, message: str, user_id: str) -> MessageResponse:
         backend_response = self._get_response(message, user_id)
-        return MessageResponse(backend_response, "llama")
+        return MessageResponse(backend_response)
 
 
 class LlamaDistilGPT2(Llama):
