@@ -58,10 +58,10 @@ class Llama(ResponseModel):
         self,
         model_name: str,
         max_input_size: int,
-        data_dir: str,
+        data_dir: pathlib.Path,
         which_index: str,
         num_output: int = 256,
-        chunk_size_limit: int | None = None,
+        chunk_size_limit: Optional[int] = None,
         chunk_overlap_ratio: float = 0.1,
         force_new_index: bool = False,
     ) -> None:
@@ -73,10 +73,9 @@ class Llama(ResponseModel):
             chunk_size_limit = math.ceil(max_input_size / 2)
         self.chunk_size_limit = chunk_size_limit
         self.chunk_overlap_ratio = chunk_overlap_ratio
-        self.data_dir = pathlib.Path(data_dir)
+        self.data_dir = data_dir
         self.which_index = which_index
 
-        documents = self._prep_documents()
         llm_predictor = self._prep_llm_predictor()
 
         hfemb = HuggingFaceEmbeddings()
@@ -96,33 +95,28 @@ class Llama(ResponseModel):
             chunk_size_limit=chunk_size_limit,
         )
 
-        if not force_new_index:
-            logging.info("loading the pre-processed index!")
-
-            logging.info("Generating the storage context")
-
-            storage_context = StorageContext.from_defaults(
-                persist_dir=self.data_dir / LLAMA_INDEX_DIR / which_index
-            )
-
-            logging.info("Loading the index")
-
-            self.index = load_index_from_storage(
-                storage_context=storage_context, service_context=service_context
-            )
-
-        else:
-            logging.info("Generating the index anew")
-
+        if force_new_index:
+            logging.info("Generating the index from scratch...")
+            documents = self._prep_documents()
             self.index = GPTVectorStoreIndex.from_documents(
                 documents, service_context=service_context
             )
 
-            logging.info("Saving the index...")
-
             # Save the service context and persist the index
+            logging.info("Saving the index")
             self.index.storage_context.persist(
                 persist_dir=self.data_dir / LLAMA_INDEX_DIR / which_index
+            )
+
+        else:
+            logging.info("Generating the storage context")
+            storage_context = StorageContext.from_defaults(
+                persist_dir=self.data_dir / LLAMA_INDEX_DIR / which_index
+            )
+
+            logging.info("Loading the pre-processed index")
+            self.index = load_index_from_storage(
+                storage_context=storage_context, service_context=service_context
             )
 
         self.query_engine = self.index.as_query_engine()
