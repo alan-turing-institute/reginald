@@ -1,5 +1,6 @@
 # Standard library imports
 import os
+from typing import Any
 
 # Third-party imports
 import openai
@@ -9,7 +10,7 @@ from .base import MessageResponse, ResponseModel
 
 
 class ChatCompletionAzure(ResponseModel):
-    def __init__(self, **kwargs) -> None:
+    def __init__(self, **kwargs: Any) -> None:
         self.api_base = os.getenv("OPENAI_AZURE_API_BASE")
         self.api_key = os.getenv("OPENAI_AZURE_API_KEY")
         self.api_type = "azure"
