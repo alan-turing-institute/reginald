@@ -22,29 +22,33 @@ class Bot(SocketModeRequestListener):
             return None
 
         # Acknowledge the request
+        logging.info(f"Received an events_api request")
         response = SocketModeResponse(envelope_id=req.envelope_id)
         client.send_socket_mode_response(response)
 
         try:
-            # Extract user and message information
+            # Extract event from payload
             event = req.payload["event"]
+            sender_is_bot = "bot_id" in event
+
+            # Ignore messages from bots
+            if sender_is_bot:
+                logging.info(f"Ignoring an event triggered by a bot.")
+                return None
+
+            # Extract user and message information
             message = event["text"]
             user_id = event["user"]
             event_type = event["type"]
             event_subtype = event.get("subtype", None)
-            sender_is_bot = "bot_id" in event
 
             # Ignore changes to messages.
             if event_type == "message" and event_subtype == "message_changed":
                 logging.info(f"Ignoring a change to a message.")
                 return None
 
-            logging.info(f"Received message '{message}' from user '{user_id}'")
-
-            # Ignore messages from bots
-            if sender_is_bot:
-                logging.info(f"Ignoring a message that came from a bot.")
-                return None
+            # Start processing the message
+            logging.info(f"Processing message '{message}' from user '{user_id}'.")
 
             # If this is a direct message to REGinald...
             if event_type == "message" and event_subtype is None:
@@ -58,7 +62,7 @@ class Bot(SocketModeRequestListener):
 
             # Otherwise
             else:
-                logging.info(f"Received unexpected event of type '{event['type']}'")
+                logging.info(f"Received unexpected event of type '{event['type']}'.")
                 return None
 
             # Add an emoji and a reply as required
@@ -82,7 +86,7 @@ class Bot(SocketModeRequestListener):
     def react(self, client: SocketModeClient, channel: str, timestamp: str) -> None:
         """Emoji react to the input message"""
         if self.model.emoji:
-            logging.info(f"Reacting with emoji {self.model.emoji}")
+            logging.info(f"Reacting with emoji {self.model.emoji}.")
             client.web_client.reactions_add(
                 name=self.model.emoji,
                 channel=channel,
