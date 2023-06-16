@@ -143,10 +143,9 @@ class Llama(ResponseModel):
         return result
 
     def _get_response(self, msg_in: str, user_id: str) -> str:
-        msg_out = f"<@{user_id}>, you asked me: {msg_in}\n"
         try:
             query_response = self.query_engine.query(msg_in)
-            # concatenate the response with the reources that it used
+            # concatenate the response with the resources that it used
             response = (
                 query_response.response
                 + "\n\n\n"
@@ -169,8 +168,7 @@ class Llama(ResponseModel):
                 "Was expecting a backend response with a regular expression but couldn't find a match."
             )
             answer = response
-        msg_out += answer
-        return msg_out
+        return answer
 
     def _prep_documents(self) -> List[Document]:
         # Prep the contextual documents

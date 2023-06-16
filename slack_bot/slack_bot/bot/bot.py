@@ -69,7 +69,8 @@ class Bot(SocketModeRequestListener):
             if model_response and model_response.message:
                 logging.info(f"Posting reply {model_response.message}.")
                 client.web_client.chat_postMessage(
-                    channel=event["channel"], text=model_response.message
+                    channel=event["channel"],
+                    text=f"<@{user_id}>, you asked me: '{message}'.\n{model_response.message}",
                 )
             else:
                 logging.info(f"No reply was generated.")
