@@ -1,6 +1,6 @@
 # Standard library imports
 from abc import ABC
-from typing import Optional
+from typing import Any, Optional
 
 
 class MessageResponse:
@@ -10,6 +10,9 @@ class MessageResponse:
 
 
 class ResponseModel(ABC):
+    def __init__(self, *args: Any, **kwargs: Any):
+        pass
+
     def direct_message(self, message: str, user_id: str) -> MessageResponse:
         """When the strategy receives a message it should return a MessageResponse where both are optional"""
         raise NotImplementedError

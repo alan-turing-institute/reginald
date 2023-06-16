@@ -15,13 +15,6 @@ class Bot(SocketModeRequestListener):
     def __init__(self, model: ResponseModel) -> None:
         self.model = model
 
-    @staticmethod
-    def _request_field_exists(req, key, mapping):
-        exists = key in mapping
-        if not exists:
-            logging.warning("Got a request without a '{key}' field: {req.payload}")
-        return exists
-
     def __call__(self, client: SocketModeClient, req: SocketModeRequest) -> None:
         if req.type != "events_api":
             logging.info(f"Received unexpected request of type '{req.type}'")
@@ -33,28 +26,15 @@ class Bot(SocketModeRequestListener):
 
         try:
             # Extract user and message information
-            if not self._request_field_exists(req, "event", req.payload):
-                return None
             event = req.payload["event"]
-            if (
-                event.get("type") == "message"
-                and event.get("subtype") == "message_changed"
-            ):
-                # We are not processing changes to messages.
-                return None
-            if not self._request_field_exists(req, "text", event):
-                return None
             message = event["text"]
-            if not self._request_field_exists(req, "user", event):
-                return None
             user_id = event["user"]
-            if not self._request_field_exists(req, "type", event):
-                return None
             event_type = event["type"]
+            event_subtype = event.get("subtype", None)
             sender_is_bot = "bot_id" in event
 
             # Ignore changes to messages.
-            if event_type == "message" and event.get("subtype") == "message_changed":
+            if event_type == "message" and event_subtype == "message_changed":
                 logging.info(f"Ignoring changes to messages.")
                 return None
 
@@ -66,15 +46,11 @@ class Bot(SocketModeRequestListener):
                 return None
 
             # If this is a direct message to REGinald...
-            if (
-                event_type == "message"
-                and event.get("subtype") is None
-                and not sender_is_bot
-            ):
+            if event_type == "message" and event_subtype is None:
                 model_response = self.model.direct_message(message, user_id)
 
             # If @REGinald is mentioned in a channel
-            elif event_type == "app_mention" and not sender_is_bot:
+            elif event_type == "app_mention":
                 model_response = self.model.channel_mention(message, user_id)
 
             # Otherwise
@@ -84,11 +60,7 @@ class Bot(SocketModeRequestListener):
 
             # Add an emoji and a reply as required
             if model_response:
-                if not self._request_field_exists(req, "channel", event):
-                    return None
                 if model_response.emoji:
-                    if not self._request_field_exists(req, "ts", event):
-                        return None
                     logging.info(f"Applying emoji {model_response.emoji}")
                     client.web_client.reactions_add(
                         name=model_response.emoji,
@@ -100,6 +72,9 @@ class Bot(SocketModeRequestListener):
                     client.web_client.chat_postMessage(
                         channel=event["channel"], text=model_response.message
                     )
+
+        except KeyError as exc:
+            logging.warning(f"Attempted to access key that does not exist.\n{str(exc)}")
 
         except Exception as exc:
             logging.error(
