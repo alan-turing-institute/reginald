@@ -40,7 +40,7 @@ class ChatCompletionAzure(ResponseModel):
             top_p=self.top_p,
         )
         text = response["choices"][0]["text"]
-        return MessageResponse(text, None)
+        return MessageResponse(text, "open_hands")
 
     def channel_mention(self, message: str, user_id: str) -> MessageResponse:
         openai.api_base = self.api_base
@@ -59,7 +59,7 @@ class ChatCompletionAzure(ResponseModel):
             top_p=self.top_p,
         )
         text = response["choices"][0]["text"]
-        return MessageResponse(text, None)
+        return MessageResponse(text, "open_hands")
 
 
 class ChatCompletionOpenAI(ResponseModel):
