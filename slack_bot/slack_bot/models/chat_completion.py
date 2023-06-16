@@ -72,7 +72,7 @@ class ChatCompletionOpenAI(ResponseModel):
             model="gpt-3.5-turbo", messages=[{"role": "user", "content": message}]
         )
         text = response["choices"][0]["message"]["content"]
-        return MessageResponse(text, None)
+        return MessageResponse(text, "open_hands")
 
     def channel_mention(self, message: str, user_id: str) -> MessageResponse:
         openai.api_key = self.api_key
@@ -80,4 +80,4 @@ class ChatCompletionOpenAI(ResponseModel):
             model="gpt-3.5-turbo", messages=[{"role": "user", "content": message}]
         )
         text = response["choices"][0]["message"]["content"]
-        return MessageResponse(text, None)
+        return MessageResponse(text, "open_hands")
