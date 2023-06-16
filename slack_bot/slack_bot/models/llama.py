@@ -204,7 +204,7 @@ class LlamaGPT35TurboOpenAI(Llama):
     def __init__(self, *args, **kwargs):
         self.openai_api_key = os.getenv("OPENAI_API_KEY")
         super().__init__(
-            *args, model_name="gpt-3.5-turbo", max_input_size=4096, **kwargs
+            *args, model_name="gpt-3.5-turbo-16k", max_input_size=16384, **kwargs
         )
 
     def _prep_llm_predictor(self):
@@ -227,7 +227,7 @@ class LlamaGPT35TurboAzure(Llama):
         self.openai_api_version = "2023-03-15-preview"
         self.temperature = 0.7
         super().__init__(
-            *args, model_name="gpt-3.5-turbo", max_input_size=4096, **kwargs
+            *args, model_name="gpt-3.5-turbo-16k", max_input_size=16384, **kwargs
         )
 
     def _prep_llm_predictor(self):
