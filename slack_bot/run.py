@@ -68,7 +68,8 @@ if __name__ == "__main__":
     if args.data_dir:
         data_dir = args.data_dir
     if not data_dir:
-        data_dir = (pathlib.Path(__file__).parent.parent / "data").resolve()
+        data_dir = pathlib.Path(__file__).parent.parent / "data"
+    data_dir = pathlib.Path(data_dir).resolve()
 
     # Set which index
     which_index = os.environ.get("LLAMA_WHICH_INDEX")
