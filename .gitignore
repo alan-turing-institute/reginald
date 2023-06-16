@@ -156,8 +156,9 @@ dmypy.json
 # Cython debug symbols
 cython_debug/
 
+*.swp
+
 # Pulumi
 azure/.secrets
 azure/Pulumi.production.yaml
-
-*.swp
+data/llama_index_indices/all_data/
