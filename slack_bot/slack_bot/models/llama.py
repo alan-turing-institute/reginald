@@ -62,6 +62,7 @@ class Llama(ResponseModel):
         which_index: str,
         num_output: int = 256,
         chunk_size_limit: Optional[int] = None,
+        k: int = 3,
         chunk_overlap_ratio: float = 0.1,
         force_new_index: bool = False,
     ) -> None:
@@ -70,7 +71,7 @@ class Llama(ResponseModel):
         self.model_name = model_name
         self.num_output = num_output
         if chunk_size_limit is None:
-            chunk_size_limit = math.ceil(max_input_size / 2)
+            chunk_size_limit = math.ceil(max_input_size / k)
         self.chunk_size_limit = chunk_size_limit
         self.chunk_overlap_ratio = chunk_overlap_ratio
         self.data_dir = data_dir
@@ -119,7 +120,7 @@ class Llama(ResponseModel):
                 storage_context=storage_context, service_context=service_context
             )
 
-        self.query_engine = self.index.as_query_engine()
+        self.query_engine = self.index.as_query_engine(similarity_top_k=3)
         logging.info("Done setting up Huggingface backend.")
 
         self.error_response_template = (
