@@ -160,7 +160,7 @@ container_group = containerinstance.ContainerGroup(
             ),
             volume_mounts=[
                 containerinstance.VolumeMountArgs(
-                    mount_path="/app/data",
+                    mount_path="/app/data/llama_index_indices",
                     name="llama-data",
                     read_only=True,
                 ),
