@@ -4,7 +4,6 @@ from pulumi_azure_native import containerinstance, network, resources, storage
 # Get some configuration variables
 stack_name = pulumi.get_stack()
 config = pulumi.Config()
-# azurecfg = pulumi.Config("azure-native")
 
 # Create an resource group
 resource_group = resources.ResourceGroup(
@@ -50,28 +49,30 @@ virtual_network = network.VirtualNetwork(
 # Define configuration file shares
 storage_account = storage.StorageAccount(
     "storage_account",
-    access_tier=storage.AccessTier.COOL,
-    account_name=f"sareginald{stack_name}configuration"[:24],  # max 24 characters
-    enable_https_traffic_only=False,
-    encryption=storage.EncryptionArgs(
-        key_source=storage.KeySource.MICROSOFT_STORAGE,
-        services=storage.EncryptionServicesArgs(
-            file=storage.EncryptionServiceArgs(
-                enabled=True, key_type=storage.KeyType.ACCOUNT
-            ),
-        ),
-    ),
-    kind=storage.Kind.FILE_STORAGE,
+    account_name=f"sareginald{stack_name}configuration"[:24],
+    kind=storage.Kind.STORAGE_V2,
     resource_group_name=resource_group.name,
-    sku=storage.SkuArgs(name=storage.SkuName.PREMIUM_ZRS),
+    sku=storage.SkuArgs(name=storage.SkuName.STANDARD_GRS),
 )
 file_share = storage.FileShare(
     "data_file_share",
-    access_tier=storage.ShareAccessTier.PREMIUM,
+    access_tier=storage.ShareAccessTier.TRANSACTION_OPTIMIZED,
     account_name=storage_account.name,
     resource_group_name=resource_group.name,
     share_name="llama-data",
     share_quota=5120,
+)
+storage_account_keys = pulumi.Output.all(
+    storage_account.name, resource_group.name
+).apply(
+    lambda args: storage.list_storage_account_keys(
+        account_name=args[0],
+        resource_group_name=args[1],
+        opts=pulumi.InvokeOptions(parent=storage_account),
+    )
+)
+storage_account_key = storage_account_keys.apply(
+    lambda keys: pulumi.Output.secret(keys.keys[0].value)
 )
 
 # Define the container group
@@ -81,7 +82,7 @@ container_group = containerinstance.ContainerGroup(
     containers=[
         containerinstance.ContainerArgs(
             image="ghcr.io/alan-turing-institute/reginald:main",
-            name="chat-completion-azure",  # maximum of 63 characters
+            name="reginald-handbook",  # maximum of 63 characters
             environment_variables=[
                 containerinstance.EnvironmentVariableArgs(
                     name="OPENAI_AZURE_API_BASE",
@@ -101,11 +102,11 @@ container_group = containerinstance.ContainerGroup(
                 ),
                 containerinstance.EnvironmentVariableArgs(
                     name="SLACK_APP_TOKEN",
-                    secure_value=config.get_secret("SLACK_APP_TOKEN"),
+                    secure_value=config.get_secret("HANDBOOK_SLACK_APP_TOKEN"),
                 ),
                 containerinstance.EnvironmentVariableArgs(
                     name="SLACK_BOT_TOKEN",
-                    secure_value=config.get_secret("SLACK_BOT_TOKEN"),
+                    secure_value=config.get_secret("HANDBOOK_SLACK_BOT_TOKEN"),
                 ),
             ],
             ports=[
@@ -116,15 +117,68 @@ container_group = containerinstance.ContainerGroup(
             ],
             resources=containerinstance.ResourceRequirementsArgs(
                 requests=containerinstance.ResourceRequestsArgs(
-                    cpu=2,
-                    memory_in_gb=8,
+                    cpu=1,
+                    memory_in_gb=4,
                 ),
             ),
+        ),
+        containerinstance.ContainerArgs(
+            image="ghcr.io/alan-turing-institute/reginald:main",
+            name="reginald-llama",  # maximum of 63 characters
+            environment_variables=[
+                containerinstance.EnvironmentVariableArgs(
+                    name="OPENAI_AZURE_API_BASE",
+                    value=config.get_secret("OPENAI_AZURE_API_BASE"),
+                ),
+                containerinstance.EnvironmentVariableArgs(
+                    name="OPENAI_AZURE_API_KEY",
+                    secure_value=config.get_secret("OPENAI_AZURE_API_KEY"),
+                ),
+                containerinstance.EnvironmentVariableArgs(
+                    name="OPENAI_API_KEY",
+                    secure_value=config.get_secret("OPENAI_API_KEY"),
+                ),
+                containerinstance.EnvironmentVariableArgs(
+                    name="REGINALD_MODEL",
+                    value="llama-gpt-3.5-turbo-azure",
+                ),
+                containerinstance.EnvironmentVariableArgs(
+                    name="SLACK_APP_TOKEN",
+                    secure_value=config.get_secret("LLAMA_SLACK_APP_TOKEN"),
+                ),
+                containerinstance.EnvironmentVariableArgs(
+                    name="SLACK_BOT_TOKEN",
+                    secure_value=config.get_secret("LLAMA_SLACK_BOT_TOKEN"),
+                ),
+            ],
+            ports=[],
+            resources=containerinstance.ResourceRequirementsArgs(
+                requests=containerinstance.ResourceRequestsArgs(
+                    cpu=1,
+                    memory_in_gb=4,
+                ),
+            ),
+            volume_mounts=[
+                containerinstance.VolumeMountArgs(
+                    mount_path="/app/data/llama_index_indices",
+                    name="llama-data",
+                    read_only=True,
+                ),
+            ],
         ),
     ],
     os_type=containerinstance.OperatingSystemTypes.LINUX,
     resource_group_name=resource_group.name,
     restart_policy=containerinstance.ContainerGroupRestartPolicy.ALWAYS,
     sku=containerinstance.ContainerGroupSku.STANDARD,
-    volumes=[],
+    volumes=[
+        containerinstance.VolumeArgs(
+            azure_file=containerinstance.AzureFileVolumeArgs(
+                share_name=file_share.name,
+                storage_account_key=storage_account_key,
+                storage_account_name=storage_account.name,
+            ),
+            name="llama-data",
+        ),
+    ],
 )
