@@ -59,7 +59,7 @@ class Llama(ResponseModel):
                 + f" (similarity: {source_node.score})"
             )
             texts.append(source_text)
-        result = "I read the following documents to compose this answer:\n"
+        result = "The 3 most similar doucments I can find are:\n"
         result += "\n\n".join(texts)
         return result
 
@@ -127,7 +127,7 @@ class Llama(ResponseModel):
         self.index = GPTVectorStoreIndex.from_documents(
             documents, service_context=service_context
         )
-        self.query_engine = self.index.as_query_engine()
+        self.query_engine = self.index.as_query_engine(similarity_top_k=3)
         logging.info("Done setting up Huggingface backend.")
 
         self.error_response_template = (
