@@ -214,11 +214,11 @@ class Llama(ResponseModel):
 
     def direct_message(self, message: str, user_id: str) -> MessageResponse:
         backend_response = self._get_response(message, user_id)
-        return MessageResponse(backend_response, None)
+        return MessageResponse(backend_response, "llama")
 
     def channel_mention(self, message: str, user_id: str) -> MessageResponse:
         backend_response = self._get_response(message, user_id)
-        return MessageResponse(backend_response, None)
+        return MessageResponse(backend_response, "llama")
 
 
 class LlamaDistilGPT2(Llama):
