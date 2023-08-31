@@ -21,7 +21,7 @@
 - Continue with chat engine hacking
     - There are several chat engine choices given by llama-index
         - Compare different approaches and figure out what is the most appropriate
-        - Try to figure out when the model is querying and when it is 
+        - Try to figure out when the model is querying and when it is
         - Try to figure out how it makes the decision of whether or not to just have a conversation or not
         - How does this work with small context lengths?
             - How is it remembering/tracking conversation history?
