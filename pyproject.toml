@@ -16,30 +16,31 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.11"
-adapter-transformers = { version="^3.2.1", optional=true }
-datasets = { version="^2.12.0", optional=true }
-einops = { version="^0.6.1", optional=true }
-faiss-cpu = { version="^1.7.4", optional=true }
-gradio = { version="^3.34.0", optional=true }
-langchain = { version="^0.0.216", optional=true }
-llama-index = { version="^0.6.23", optional=true }
-nbconvert = { version="^7.5.0", optional=true }
-openai = { version="^0.27.8", optional=true }
-pandas = { version="^2.0.2", optional=true }
-pulumi = { version="^3.70.0", optional=true }
-pulumi-azure-native = { version="^1.103.0", optional=true }
-sentence-transformers = { version="^2.2.2", optional=true }
-slack-sdk = { version ="^3.21.3", optional=true }
-tokenizers = { version="^0.13.3", optional=true }
+adapter-transformers = "^3.2.1"
+datasets = "^2.12.0"
+einops = "^0.6.1"
+faiss-cpu = "^1.7.4"
+gradio = "^3.34.0"
+langchain = "0.0.276"
+llama-index = "0.8.14"
+nbconvert = "^7.5.0"
+openai = "^0.27.8"
+pandas = "^2.0.2"
+pulumi = "^3.70.0"
+pulumi-azure-native = "^1.103.0"
+sentence-transformers = "^2.2.2"
+slack-sdk = "^3.21.3"
+tokenizers = "^0.13.3"
 torch = [
   { version = "^2.0.1", markers = "sys_platform != 'linux'", source = "PyPI", optional=true },
   { version = "^2.0.1+cpu", markers = "sys_platform == 'linux'", source = "torchcpu", optional=true }
 ]
-transformers = { version="=4.30.2", optional=true }
-ipykernel = { version="^6.23.2", optional=true }
+transformers = "=4.30.2"
+ipykernel = "^6.23.2"
 xformers = { version="^0.0.20", optional=true }
+llama-cpp-python = "0.1.76"
 
-[tool.poetry.dev-dependencies]
+[tool.poetry.group.dev.dependencies]
 black = "^23.3.0"
 isort = "^5.12.0"
 pre-commit = "^3.3.2"
