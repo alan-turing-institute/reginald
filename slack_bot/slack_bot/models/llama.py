@@ -61,6 +61,7 @@ class Llama(ResponseModel):
         data_dir: pathlib.Path,
         which_index: str,
         chunk_size_limit: Optional[int] = None,
+        k: int = 3,
         chunk_overlap_ratio: float = 0.1,
         force_new_index: bool = False,
         num_output: int = 256,
@@ -71,7 +72,7 @@ class Llama(ResponseModel):
         self.model_name = model_name
         self.num_output = num_output
         if chunk_size_limit is None:
-            chunk_size_limit = math.ceil(max_input_size / 2)
+            chunk_size_limit = math.ceil(max_input_size / k)
         self.chunk_size_limit = chunk_size_limit
         self.chunk_overlap_ratio = chunk_overlap_ratio
         self.data_dir = data_dir
@@ -120,7 +121,7 @@ class Llama(ResponseModel):
                 storage_context=storage_context, service_context=service_context
             )
 
-        self.query_engine = self.index.as_query_engine()
+        self.query_engine = self.index.as_query_engine(similarity_top_k=3)
         logging.info("Done setting up Huggingface backend.")
 
         self.error_response_template = (
@@ -246,7 +247,7 @@ class LlamaGPT35TurboOpenAI(Llama):
     def __init__(self, *args: Any, **kwargs: Any) -> None:
         self.openai_api_key = os.getenv("OPENAI_API_KEY")
         super().__init__(
-            *args, model_name="gpt-3.5-turbo", max_input_size=4096, **kwargs
+            *args, model_name="gpt-3.5-turbo-16k", max_input_size=16384, **kwargs
         )
 
     def _prep_llm_predictor(self) -> LLMPredictor:
@@ -268,7 +269,7 @@ class LlamaGPT35TurboAzure(Llama):
         self.openai_api_version = "2023-03-15-preview"
         self.temperature = 0.7
         super().__init__(
-            *args, model_name="gpt-3.5-turbo", max_input_size=4096, **kwargs
+            *args, model_name="gpt-3.5-turbo-16k", max_input_size=16384, **kwargs
         )
 
     def _prep_llm_predictor(self) -> LLMPredictor:
