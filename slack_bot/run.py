@@ -16,11 +16,20 @@ from slack_bot import MODELS, Bot
 if __name__ == "__main__":
     # Parse command line arguments
     parser = argparse.ArgumentParser()
-    parser.add_argument("--model", "-m", help="Select which model to use", default=None)
+    parser.add_argument(
+        "--model", "-m", help="Select which model to use", default=None, choices=MODELS
+    )
+    parser.add_argument(
+        "--hf_model",
+        "-hf",
+        help="""Select which HuggingFace model to use
+        (ignored if not using llama-huggingface model)""",
+        default="distilgpt2",
+    )
     parser.add_argument(
         "--force-new-index",
         "-f",
-        help="Recreate the index or not",
+        help="Recreate the index vector store or not",
         action=argparse.BooleanOptionalAction,
         default=False,
     )
@@ -34,10 +43,12 @@ if __name__ == "__main__":
         "--which-index",
         "-w",
         help="""Specifies the directory name for looking up/writing indices.
-        Currently supports 'all_data' and 'handbook'. If regenerating index, 'all_data'
-        will use all .txt .md. and .csv files in the data directory, 'handbook' will
+        Currently supports 'all_data', 'public' and 'handbook'.
+        If regenerating index, 'all_data' will use all .txt .md. and .csv
+        files in the data directory, 'handbook' will
         only use 'handbook.csv' file.""",
         default="all_data",
+        choices=["all_data", "public", "handbook"],
     )
 
     args = parser.parse_args()
@@ -87,13 +98,21 @@ if __name__ == "__main__":
 
     logging.info(f"Initialising bot with model {model_name}")
 
-    slack_bot = Bot(
-        model(
+    if model_name == "llama-huggingface":
+        response_model = model(
+            model_name=args.hf_model,
             force_new_index=force_new_index,
             data_dir=data_dir,
             which_index=which_index,
         )
-    )
+    else:
+        response_model = model(
+            force_new_index=force_new_index,
+            data_dir=data_dir,
+            which_index=which_index,
+        )
+
+    slack_bot = Bot(response_model)
 
     # Initialize SocketModeClient with an app-level token + WebClient
     client = SocketModeClient(
