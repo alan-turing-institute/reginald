@@ -1,6 +1,5 @@
 from __future__ import annotations
 
-# Standard library imports
 import logging
 import math
 import os
@@ -8,49 +7,24 @@ import pathlib
 import re
 from typing import Any, List, Optional
 
-# Third-party imports
 import pandas as pd
-import transformers
-from langchain.chat_models import AzureChatOpenAI, ChatOpenAI
-from langchain.embeddings.huggingface import HuggingFaceEmbeddings
-from langchain.llms.base import LLM
+from langchain.embeddings import HuggingFaceEmbeddings
 from llama_index import (
     Document,
-    LangchainEmbedding,
-    LLMPredictor,
     PromptHelper,
     ServiceContext,
     StorageContext,
     load_index_from_storage,
 )
-from llama_index.indices.vector_store.base import GPTVectorStoreIndex
+from llama_index.indices.vector_store.base import VectorStoreIndex
+from llama_index.llms import LLM, AzureOpenAI, HuggingFaceLLM, OpenAI
 from llama_index.response.schema import RESPONSE_TYPE
-from transformers import AutoModelForCausalLM, AutoTokenizer, pipeline
 
-# Local imports
 from .base import MessageResponse, ResponseModel
 
 LLAMA_INDEX_DIR = "llama_index_indices"
 PUBLIC_DATA_DIR = "public"
-
-
-class CustomLLM(LLM):
-    model_name: str
-    pipeline: transformers.pipelines.text_generation.TextGenerationPipeline
-
-    @property
-    def _llm_type(self) -> str:
-        return "custom"
-
-    def _call(
-        self, prompt: str, stop: Optional[List[str]] = None
-    ) -> transformers.pipelines.text_generation.TextGenerationPipeline:
-        return self.pipeline(prompt, max_new_tokens=9999)[0]["generated_text"]
-
-    @property
-    def _identifying_params(self) -> dict:
-        """Get the identifying parameters."""
-        return {"model_name": self.model_name}
+INTERNAL_DATA_DIR = "turing_internal"
 
 
 class Llama(ResponseModel):
@@ -60,6 +34,7 @@ class Llama(ResponseModel):
         max_input_size: int,
         data_dir: pathlib.Path,
         which_index: str,
+        context_window: int = 1024,
         chunk_size_limit: Optional[int] = None,
         k: int = 3,
         chunk_overlap_ratio: float = 0.1,
@@ -70,6 +45,7 @@ class Llama(ResponseModel):
         logging.info("Setting up Huggingface backend.")
         self.max_input_size = max_input_size
         self.model_name = model_name
+        self.context_window = context_window
         self.num_output = num_output
         if chunk_size_limit is None:
             chunk_size_limit = math.ceil(max_input_size / k)
@@ -78,11 +54,15 @@ class Llama(ResponseModel):
         self.data_dir = data_dir
         self.which_index = which_index
 
-        llm_predictor = self._prep_llm_predictor()
+        # set up LLM
+        llm = self._prep_llm()
 
-        hfemb = HuggingFaceEmbeddings()
-        embed_model = LangchainEmbedding(hfemb)
+        # initialise embedding model to use to create the index vectors
+        embed_model = HuggingFaceEmbeddings(
+            model_name="sentence-transformers/all-mpnet-base-v2"
+        )
 
+        # construct the prompt helper
         prompt_helper = PromptHelper(
             context_window=self.max_input_size,
             num_output=self.num_output,
@@ -90,8 +70,9 @@ class Llama(ResponseModel):
             chunk_overlap_ratio=self.chunk_overlap_ratio,
         )
 
+        # construct the service context
         service_context = ServiceContext.from_defaults(
-            llm_predictor=llm_predictor,
+            llm=llm,
             embed_model=embed_model,
             prompt_helper=prompt_helper,
             chunk_size_limit=chunk_size_limit,
@@ -100,7 +81,7 @@ class Llama(ResponseModel):
         if force_new_index:
             logging.info("Generating the index from scratch...")
             documents = self._prep_documents()
-            self.index = GPTVectorStoreIndex.from_documents(
+            self.index = VectorStoreIndex.from_documents(
                 documents, service_context=service_context
             )
 
@@ -111,7 +92,7 @@ class Llama(ResponseModel):
             )
 
         else:
-            logging.info("Generating the storage context")
+            logging.info("Loading the storage context")
             storage_context = StorageContext.from_defaults(
                 persist_dir=self.data_dir / LLAMA_INDEX_DIR / which_index
             )
@@ -122,7 +103,7 @@ class Llama(ResponseModel):
             )
 
         self.query_engine = self.index.as_query_engine(similarity_top_k=3)
-        logging.info("Done setting up Huggingface backend.")
+        logging.info("Done setting up Huggingface backend for query engine.")
 
         self.error_response_template = (
             "Oh no! When I tried to get a response to your prompt, "
@@ -136,7 +117,7 @@ class Llama(ResponseModel):
         for source_node in response.source_nodes:
             source_text = (
                 source_node.node.extra_info["filename"]
-                + f" (similarity: {round(source_node.score,3)})"
+                + f" (similarity: {round(source_node.score, 3)})"
             )
             texts.append(source_text)
         result = "I read the following documents to compose this answer:\n"
@@ -180,13 +161,24 @@ class Llama(ResponseModel):
 
             data_files = [self.data_dir / PUBLIC_DATA_DIR / "handbook-scraped.csv"]
 
-        elif self.which_index == "all_data":
-            logging.info("Regenerating index for ALL DATA. Will take a long time...")
-            # TODO Leaving out the Turing internal data for now while we figure out if
-            # we are okay sending it to OpenAI.
+        elif self.which_index == "public":
+            logging.info("Regenerating index for all PUBLIC. Will take a long time...")
+
+            # pull out public data
             data_files = list((self.data_dir / PUBLIC_DATA_DIR).glob("**/*.md"))
             data_files += list((self.data_dir / PUBLIC_DATA_DIR).glob("**/*.csv"))
             data_files += list((self.data_dir / PUBLIC_DATA_DIR).glob("**/*.txt"))
+        elif self.which_index == "all_data":
+            logging.info("Regenerating index for ALL DATA. Will take a long time...")
+
+            # pull out public data
+            data_files = list((self.data_dir / PUBLIC_DATA_DIR).glob("**/*.md"))
+            data_files += list((self.data_dir / PUBLIC_DATA_DIR).glob("**/*.csv"))
+            data_files += list((self.data_dir / PUBLIC_DATA_DIR).glob("**/*.txt"))
+            # include private internal data
+            data_files += list((self.data_dir / INTERNAL_DATA_DIR).glob("**/*.md"))
+            data_files += list((self.data_dir / INTERNAL_DATA_DIR).glob("**/*.csv"))
+            data_files += list((self.data_dir / INTERNAL_DATA_DIR).glob("**/*.txt"))
 
         else:
             logging.info("The data_files directory is unrecognized")
@@ -207,9 +199,9 @@ class Llama(ResponseModel):
                 )
         return documents
 
-    def _prep_llm_predictor(self) -> LLMPredictor:
+    def _prep_llm(self) -> LLM:
         raise NotImplemented(
-            "_prep_llm_predictor needs to be implemented by a subclass of Llama."
+            "_prep_llm needs to be implemented by a subclass of Llama."
         )
 
     def direct_message(self, message: str, user_id: str) -> MessageResponse:
@@ -221,49 +213,44 @@ class Llama(ResponseModel):
         return MessageResponse(backend_response)
 
 
-class LlamaDistilGPT2(Llama):
-    def __init__(self, *args: Any, **kwargs: Any) -> LLMPredictor:
-        super().__init__(*args, model_name="distilgpt2", max_input_size=1024, **kwargs)
-
-    def _prep_llm_predictor(self) -> LLMPredictor:
-        # Create the model object
-        tokenizer = AutoTokenizer.from_pretrained(self.model_name)
-        model = AutoModelForCausalLM.from_pretrained(
-            self.model_name,
-            trust_remote_code=True,
-        )
-        model_pipeline = pipeline(
-            "text-generation",
-            model=model,
-            tokenizer=tokenizer,
+class LlamaHuggingFace(Llama):
+    def __init__(
+        self, model_name: str = "distilgpt2", *args: Any, **kwargs: Any
+    ) -> LLM:
+        super().__init__(
+            *args, model_name=model_name, max_input_size=self.num_output, **kwargs
         )
 
-        return LLMPredictor(
-            llm=CustomLLM(model_name=self.model_name, pipeline=model_pipeline)
+    def _prep_llm(self) -> LLM:
+        return HuggingFaceLLM(
+            context_window=self.context_window,
+            max_new_tokens=self.num_output,
+            tokenizer_name=self.model_name,
+            model_name=self.model_name,
+            device_map="auto",
         )
 
 
 class LlamaGPT35TurboOpenAI(Llama):
     def __init__(self, *args: Any, **kwargs: Any) -> None:
         self.openai_api_key = os.getenv("OPENAI_API_KEY")
+        self.temperature = 0.7
         super().__init__(
             *args, model_name="gpt-3.5-turbo-16k", max_input_size=16384, **kwargs
         )
 
-    def _prep_llm_predictor(self) -> LLMPredictor:
-        return LLMPredictor(
-            llm=ChatOpenAI(
-                max_tokens=self.num_output,
-                model=self.model_name,
-                openai_api_key=self.openai_api_key,
-                temperature=0.7,
-            )
+    def _prep_llm(self) -> LLM:
+        return OpenAI(
+            model=self.model_name,
+            temperature=self.temperature,
+            max_tokens=self.num_output,
+            api_key=self.openai_api_key,
         )
 
 
 class LlamaGPT35TurboAzure(Llama):
     def __init__(self, *args: Any, **kwargs: Any) -> None:
-        self.deployment_name = "reginald-gpt35-turbo"
+        self.deployment_name = "reginald-azure-gpt35-turbo"
         self.openai_api_base = os.getenv("OPENAI_AZURE_API_BASE")
         self.openai_api_key = os.getenv("OPENAI_AZURE_API_KEY")
         self.openai_api_version = "2023-03-15-preview"
@@ -272,16 +259,14 @@ class LlamaGPT35TurboAzure(Llama):
             *args, model_name="gpt-3.5-turbo-16k", max_input_size=16384, **kwargs
         )
 
-    def _prep_llm_predictor(self) -> LLMPredictor:
-        return LLMPredictor(
-            llm=AzureChatOpenAI(
-                deployment_name=self.deployment_name,
-                temperature=self.temperature,
-                model=self.model_name,
-                max_tokens=self.num_output,
-                openai_api_key=self.openai_api_key,
-                openai_api_base=self.openai_api_base,
-                openai_api_version=self.openai_api_version,
-                openai_api_type="azure",
-            )
+    def _prep_llm(self) -> LLM:
+        return AzureOpenAI(
+            model=self.model_name,
+            engine=self.deployment_name,
+            temperature=self.temperature,
+            max_tokens=self.num_output,
+            api_key=self.openai_api_key,
+            api_base=self.openai_api_base,
+            api_type="azure",
+            api_version=self.openai_api_version,
         )
