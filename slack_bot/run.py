@@ -26,7 +26,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "--model_name",
         "-n",
-        type=str | None,
+        type=str,
         help=(
             "Select which LlamaCPP or HuggingFace model to use "
             "(ignored if not using llama-index-llama-cpp or llama-index-hf). "
@@ -59,6 +59,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "--n_gpu_layers",
         "-ngl",
+        type=int,
         help=(
             "Select number of GPU layers for LlamaCPP model "
             "(ignored if not using llama-index-llama-cpp)"
@@ -68,6 +69,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "--device",
         "-dev",
+        type=str,
         help=(
             "Select device for HuggingFace model "
             "(ignored if not using llama-index-hf model)"
@@ -83,12 +85,14 @@ if __name__ == "__main__":
     parser.add_argument(
         "--data-dir",
         "-d",
+        type=pathlib.Path,
         help="Location for data",
         default=(pathlib.Path(__file__).parent.parent / "data").resolve(),
     )
     parser.add_argument(
         "--which-index",
         "-w",
+        type=str,
         help=(
             "Specifies the directory name for looking up/writing indices. "
             "Currently supports 'all_data', 'public' and 'handbook'. "
