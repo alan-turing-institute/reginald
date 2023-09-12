@@ -98,7 +98,7 @@ if __name__ == "__main__":
 
     logging.info(f"Initialising bot with model {model_name}")
 
-    if model_name == "llama-huggingface":
+    if model_name == "llama-index-hf":
         response_model = model(
             model_name=args.hf_model,
             force_new_index=force_new_index,
