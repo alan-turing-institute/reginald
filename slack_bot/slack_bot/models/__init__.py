@@ -10,8 +10,8 @@ MODELS = {
     "chat-completion-openai": ChatCompletionOpenAI,
     "hello": Hello,
     "llama-index-hf": LlamaIndexHF,
-    "llama-index-gpt-3.5-turbo-azure": LlamaIndexGPTAzure,
-    "llama-index-gpt-3.5-turbo-openai": LlamaIndexGPTOpenAI,
+    "llama-index-gpt-azure": LlamaIndexGPTAzure,
+    "llama-index-gpt-openai": LlamaIndexGPTOpenAI,
 }
 
 __all__ = ["MODELS", "ResponseModel"]

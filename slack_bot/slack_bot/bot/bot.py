@@ -1,15 +1,11 @@
-# Standard library imports
 import logging
-from typing import Optional
 
-# Third-party imports
 from slack_sdk.socket_mode import SocketModeClient
 from slack_sdk.socket_mode.listeners import SocketModeRequestListener
 from slack_sdk.socket_mode.request import SocketModeRequest
 from slack_sdk.socket_mode.response import SocketModeResponse
 
-# Local imports
-from slack_bot.models import ResponseModel
+from ..models.base import ResponseModel
 
 
 class Bot(SocketModeRequestListener):
