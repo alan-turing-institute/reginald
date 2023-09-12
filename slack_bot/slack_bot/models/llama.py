@@ -361,7 +361,7 @@ class LlamaIndexGPTOpenAI(LlamaIndex):
         self.openai_api_key = os.getenv("OPENAI_API_KEY")
         self.temperature = 0.7
         super().__init__(
-            *args, model_name="gpt-3.5-turbo-16k", max_input_size=16384, **kwargs
+            *args, model_name="gpt-3.5-turbo", max_input_size=16384, **kwargs
         )
 
     def _prep_llm(self) -> LLM:
@@ -390,7 +390,7 @@ class LlamaIndexGPTAzure(LlamaIndex):
         self.openai_api_version = "2023-03-15-preview"
         self.temperature = 0.7
         super().__init__(
-            *args, model_name="gpt-3.5-turbo-16k", max_input_size=16384, **kwargs
+            *args, model_name="gpt-3.5-turbo", max_input_size=16384, **kwargs
         )
 
     def _prep_llm(self) -> LLM:
