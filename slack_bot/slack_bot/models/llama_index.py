@@ -17,8 +17,9 @@ from llama_index import (
     load_index_from_storage,
 )
 from llama_index.indices.vector_store.base import VectorStoreIndex
-from llama_index.llms import AzureOpenAI, HuggingFaceLLM, OpenAI
+from llama_index.llms import AzureOpenAI, HuggingFaceLLM, LlamaCPP, OpenAI
 from llama_index.llms.base import LLM
+from llama_index.llms.llama_utils import completion_to_prompt, messages_to_prompt
 from llama_index.prompts import PromptTemplate
 from llama_index.response.schema import RESPONSE_TYPE
 
@@ -332,6 +333,59 @@ class LlamaIndex(ResponseModel):
         return MessageResponse(backend_response)
 
 
+class LlamaIndexLlamaCPP(LlamaIndex):
+    def __init__(
+        self,
+        model_name: str,
+        path: bool,
+        n_gpu_layers: int = 0,
+        *args: Any,
+        **kwargs: Any,
+    ) -> None:
+        """
+        `LlamaIndexLlamaCPP` is a subclass of `LlamaIndex` that uses
+        llama-cpp to implement the LLM.
+
+        Parameters
+        ----------
+        model_name : str
+            Either the path to the model or the URL to download the model from
+        path : bool, optional
+            If True, model_name is used as a path to the model file,
+            otherwise it should be the URL to download the model
+        n_gpu_layers : int, optional
+            Number of layers to offload to GPU.
+            If -1, all layers are offloaded, by default 0
+        """
+        super().__init__(*args, model_name=model_name, **kwargs)
+        self.path = path
+        self.n_gpu_layers = n_gpu_layers
+
+    def _prep_llm(self) -> LLM:
+        logging.info(
+            f"Setting up LlamaCPP LLM (model {self.model_name}) on {self.n_gpu_layers} GPU layers"
+        )
+        logging.info(
+            f"LlamaCPP-args: (context_window: {self.max_input_size}, num_output: {self.num_output})"
+        )
+
+        return LlamaCPP(
+            model_url=self.model_name if not self.path else None,
+            model_path=self.model_name if self.path else None,
+            temperature=0.1,
+            max_new_tokens=self.num_output,
+            context_window=self.max_input_size,
+            # kwargs to pass to __call__()
+            generate_kwargs={},
+            # kwargs to pass to __init__()
+            model_kwargs={"n_gpu_layers": self.n_gpu_layers},
+            # transform inputs into Llama2 format
+            messages_to_prompt=messages_to_prompt,
+            completion_to_prompt=completion_to_prompt,
+            verbose=False,
+        )
+
+
 class LlamaIndexHF(LlamaIndex):
     def __init__(
         self,
@@ -365,7 +419,7 @@ class LlamaIndexHF(LlamaIndex):
             max_new_tokens=self.num_output,
             # TODO: allow user to specify the query wrapper prompt for their model
             query_wrapper_prompt=PromptTemplate("<|USER|>{query_str}<|ASSISTANT|>"),
-            generate_kwargs={"temperature": 0.25, "do_sample": False},
+            generate_kwargs={"temperature": 0.1, "do_sample": False},
             tokenizer_name=self.model_name,
             model_name=self.model_name,
             device_map=self.device or "auto",
