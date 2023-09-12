@@ -21,14 +21,14 @@ if __name__ == "__main__":
         "-hf",
         help="""Select which HuggingFace model to use
         (ignored if not using llama-huggingface model)""",
-        default="distilgpt2",
+        default="StabilityAI/stablelm-tuned-alpha-3b",
     )
     parser.add_argument(
         "--max_input_size",
         "-max",
         help="""Select maximum input size for HuggingFace model
         (ignored if not using llama-huggingface model)""",
-        default=512,
+        default=4096,
     )
     parser.add_argument(
         "--device",

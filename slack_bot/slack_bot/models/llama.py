@@ -8,7 +8,6 @@ import re
 from typing import Any, List, Optional
 
 import pandas as pd
-import torch.backends.mps as torch_mps
 from langchain.embeddings import HuggingFaceEmbeddings
 from llama_index import (
     Document,
@@ -20,6 +19,7 @@ from llama_index import (
 from llama_index.indices.vector_store.base import VectorStoreIndex
 from llama_index.llms import AzureOpenAI, HuggingFaceLLM, OpenAI
 from llama_index.llms.base import LLM
+from llama_index.prompts import PromptTemplate
 from llama_index.response.schema import RESPONSE_TYPE
 
 from .base import MessageResponse, ResponseModel
@@ -41,7 +41,7 @@ class LlamaIndex(ResponseModel):
         k: int = 3,
         chunk_overlap_ratio: float = 0.1,
         force_new_index: bool = False,
-        num_output: int = 256,
+        num_output: int = 512,
     ) -> None:
         """
         Base class for models using llama-index.
@@ -73,7 +73,7 @@ class LlamaIndex(ResponseModel):
             Whether or not to recreate the index vector store,
             by default False
         num_output : int, optional
-            Number of outputs for the LLM, by default 256
+            Number of outputs for the LLM, by default 512
         """
         super().__init__(emoji="llama")
         logging.info("Setting up Huggingface backend.")
@@ -334,7 +334,10 @@ class LlamaIndex(ResponseModel):
 
 class LlamaIndexHF(LlamaIndex):
     def __init__(
-        self, model_name: str = "distilgpt2", *args: Any, **kwargs: Any
+        self,
+        model_name: str = "StabilityAI/stablelm-tuned-alpha-3b",
+        *args: Any,
+        **kwargs: Any,
     ) -> None:
         """
         `LlamaIndexHF` is a subclass of `LlamaIndex` that uses HuggingFace's
@@ -343,7 +346,8 @@ class LlamaIndexHF(LlamaIndex):
         Parameters
         ----------
         model_name : str, optional
-            Model name from Huggingface's model hub, by default "distilgpt2".
+            Model name from Huggingface's model hub,
+            by default "StabilityAI/stablelm-tuned-alpha-3b".
         """
         super().__init__(*args, model_name=model_name, **kwargs)
 
@@ -359,6 +363,8 @@ class LlamaIndexHF(LlamaIndex):
         return HuggingFaceLLM(
             context_window=self.max_input_size,
             max_new_tokens=self.num_output,
+            # TODO: allow user to specify the query wrapper prompt for their model
+            query_wrapper_prompt=PromptTemplate("<|USER|>{query_str}<|ASSISTANT|>"),
             generate_kwargs={"temperature": 0.25, "do_sample": False},
             tokenizer_name=self.model_name,
             model_name=self.model_name,
