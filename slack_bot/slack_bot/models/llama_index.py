@@ -357,9 +357,9 @@ class LlamaIndexLlamaCPP(LlamaIndex):
             Number of layers to offload to GPU.
             If -1, all layers are offloaded, by default 0
         """
-        super().__init__(*args, model_name=model_name, **kwargs)
         self.path = path
         self.n_gpu_layers = n_gpu_layers
+        super().__init__(*args, model_name=model_name, **kwargs)
 
     def _prep_llm(self) -> LLM:
         logging.info(
