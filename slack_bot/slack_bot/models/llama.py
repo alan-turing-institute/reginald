@@ -352,6 +352,9 @@ class LlamaIndexHF(LlamaIndex):
         logging.info(
             f"Setting up Huggingface LLM (model {self.model_name}) on device {dev}"
         )
+        logging.info(
+            f"HF-args: (context_window: {self.max_input_size}, num_output: {self.num_output})"
+        )
 
         return HuggingFaceLLM(
             context_window=self.max_input_size,
