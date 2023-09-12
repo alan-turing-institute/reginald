@@ -1,4 +1,3 @@
-# Standard library imports
 import argparse
 import logging
 import os
@@ -6,11 +5,9 @@ import pathlib
 import sys
 import threading
 
-# Third-party imports
 from slack_sdk.socket_mode import SocketModeClient
 from slack_sdk.web import WebClient
 
-# Local imports
 from slack_bot import MODELS, Bot
 
 if __name__ == "__main__":
@@ -25,6 +22,20 @@ if __name__ == "__main__":
         help="""Select which HuggingFace model to use
         (ignored if not using llama-huggingface model)""",
         default="distilgpt2",
+    )
+    parser.add_argument(
+        "--max_input_size",
+        "-max",
+        help="""Select maximum input size for HuggingFace model
+        (ignored if not using llama-huggingface model)""",
+        default=512,
+    )
+    parser.add_argument(
+        "--device",
+        "-dev",
+        help="""Select device for HuggingFace model
+        (ignored if not using llama-huggingface model)""",
+        default="auto",
     )
     parser.add_argument(
         "--force-new-index",
@@ -96,11 +107,13 @@ if __name__ == "__main__":
         logging.error(f"Model {model_name} was not recognised")
         sys.exit(1)
 
-    logging.info(f"Initialising bot with model {model_name}")
+    logging.info(f"Initialising bot with model: {model_name}")
 
     if model_name == "llama-index-hf":
         response_model = model(
             model_name=args.hf_model,
+            max_input_size=args.max_input_size,
+            device=args.device,
             force_new_index=force_new_index,
             data_dir=data_dir,
             which_index=which_index,
@@ -112,7 +125,14 @@ if __name__ == "__main__":
             which_index=which_index,
         )
 
+    logging.info(f"Initalising bot with model: {response_model}")
+
     slack_bot = Bot(response_model)
+
+    logging.info("Connecting to Slack...")
+    if os.environ.get("SLACK_APP_TOKEN") is None:
+        logging.error("SLACK_APP_TOKEN is not set")
+        sys.exit(1)
 
     # Initialize SocketModeClient with an app-level token + WebClient
     client = SocketModeClient(
