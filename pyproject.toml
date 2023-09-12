@@ -42,6 +42,7 @@ ipykernel = "^6.23.2"
 xformers = { version="^0.0.20", optional=true }
 ipywidgets = "^8.1.0"
 gitpython = "^3.1.36"
+accelerate = { version="^0.22.0", optional=true }
 
 [tool.poetry.group.dev.dependencies]
 black = "^23.3.0"
@@ -49,6 +50,9 @@ isort = "^5.12.0"
 pre-commit = "^3.3.2"
 
 [tool.poetry.extras]
+huggingface_llm = [
+    "accelerate"
+]
 azure = [
     "pulumi",
     "pulumi-azure-native"
@@ -61,14 +65,11 @@ bot = [
     "faiss-cpu",
     "gradio",
     "langchain",
-    "llama-index",
     "nbconvert",
     "openai",
     "sentence-transformers",
     "slack-sdk",
-    "tokenizers",
     "torch",
-    "transformers"
 ]
 
 [[tool.poetry.source]]
