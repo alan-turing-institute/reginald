@@ -8,6 +8,7 @@ import re
 from typing import Any, List, Optional
 
 import pandas as pd
+import torch.backends.mps as torch_mps
 from langchain.embeddings import HuggingFaceEmbeddings
 from llama_index import (
     Document,
@@ -17,7 +18,8 @@ from llama_index import (
     load_index_from_storage,
 )
 from llama_index.indices.vector_store.base import VectorStoreIndex
-from llama_index.llms import LLM, AzureOpenAI, HuggingFaceLLM, OpenAI
+from llama_index.llms import AzureOpenAI, HuggingFaceLLM, OpenAI
+from llama_index.llms.base import LLM
 from llama_index.response.schema import RESPONSE_TYPE
 
 from .base import MessageResponse, ResponseModel
@@ -34,7 +36,8 @@ class LlamaIndex(ResponseModel):
         max_input_size: int,
         data_dir: pathlib.Path,
         which_index: str,
-        chunk_size_limit: Optional[int] = None,
+        device: str | None = None,
+        chunk_size: Optional[int] = None,
         k: int = 3,
         chunk_overlap_ratio: float = 0.1,
         force_new_index: bool = False,
@@ -56,7 +59,10 @@ class LlamaIndex(ResponseModel):
         which_index : str
             Which index to construct (if force_new_index is True) or use.
             Options are "handbook", "public", or "all_data".
-        chunk_size_limit : Optional[int], optional
+        device : str, optional
+            Device to use for the LLM, by default None.
+            This is ignored if the LLM is model from OpenAI or Azure.
+        chunk_size : Optional[int], optional
             Maximum size of chunks to use, by default None.
             If None, this is computed as `ceil(max_input_size / k)`.
         k : int, optional
@@ -74,9 +80,10 @@ class LlamaIndex(ResponseModel):
         self.max_input_size = max_input_size
         self.model_name = model_name
         self.num_output = num_output
-        if chunk_size_limit is None:
-            chunk_size_limit = math.ceil(max_input_size / k)
-        self.chunk_size_limit = chunk_size_limit
+        self.device = device
+        if chunk_size is None:
+            chunk_size = math.ceil(max_input_size / k)
+        self.chunk_size = chunk_size
         self.chunk_overlap_ratio = chunk_overlap_ratio
         self.data_dir = data_dir
         self.which_index = which_index
@@ -93,7 +100,7 @@ class LlamaIndex(ResponseModel):
         prompt_helper = PromptHelper(
             context_window=self.max_input_size,
             num_output=self.num_output,
-            chunk_size_limit=self.chunk_size_limit,
+            chunk_size_limit=self.chunk_size,
             chunk_overlap_ratio=self.chunk_overlap_ratio,
         )
 
@@ -102,7 +109,7 @@ class LlamaIndex(ResponseModel):
             llm=llm,
             embed_model=embed_model,
             prompt_helper=prompt_helper,
-            chunk_size_limit=chunk_size_limit,
+            chunk_size=chunk_size,
         )
 
         if force_new_index:
@@ -253,7 +260,9 @@ class LlamaIndex(ResponseModel):
                 df = pd.read_csv(data_file)
                 df = df[~df.loc[:, "body"].isna()]
                 documents += [
-                    Document(row[1]["body"], extra_info={"filename": row[1]["url"]})
+                    Document(
+                        text=row[1]["body"], extra_info={"filename": row[1]["url"]}
+                    )
                     for row in df.iterrows()
                 ]
             elif data_file.suffix in (".md", ".txt"):
@@ -336,17 +345,21 @@ class LlamaIndexHF(LlamaIndex):
         model_name : str, optional
             Model name from Huggingface's model hub, by default "distilgpt2".
         """
-        super().__init__(
-            *args, model_name=model_name, max_input_size=self.num_output, **kwargs
-        )
+        super().__init__(*args, model_name=model_name, **kwargs)
 
     def _prep_llm(self) -> LLM:
+        dev = self.device or "auto"
+        logging.info(
+            f"Setting up Huggingface LLM (model {self.model_name}) on device {dev}"
+        )
+
         return HuggingFaceLLM(
             context_window=self.max_input_size,
             max_new_tokens=self.num_output,
+            generate_kwargs={"temperature": 0.25, "do_sample": False},
             tokenizer_name=self.model_name,
             model_name=self.model_name,
-            device_map="auto",
+            device_map=self.device or "auto",
         )
 
 
@@ -358,10 +371,13 @@ class LlamaIndexGPTOpenAI(LlamaIndex):
 
         Must have `OPENAI_API_KEY` set as an environment variable.
         """
+        if os.getenv("OPENAI_API_KEY") is None:
+            raise ValueError("You must set OPENAI_API_KEY for OpenAI.")
+
         self.openai_api_key = os.getenv("OPENAI_API_KEY")
         self.temperature = 0.7
         super().__init__(
-            *args, model_name="gpt-3.5-turbo", max_input_size=16384, **kwargs
+            *args, model_name="gpt-3.5-turbo", max_input_size=4096, **kwargs
         )
 
     def _prep_llm(self) -> LLM:
@@ -381,16 +397,25 @@ class LlamaIndexGPTAzure(LlamaIndex):
 
         Must have the following environment variables set:
         - `OPENAI_API_BASE`: Azure endpoint which looks
-        like https://YOUR_RESOURCE_NAME.openai.azure.com/
+          like https://YOUR_RESOURCE_NAME.openai.azure.com/
         - `OPENAI_API_KEY`: Azure API key
         """
-        self.deployment_name = "reginald-azure-gpt-turbo"
+        if os.getenv("OPENAI_AZURE_API_BASE") is None:
+            raise ValueError(
+                "You must set OPENAI_AZURE_API_BASE to your Azure endpoint. "
+                "It should look like https://YOUR_RESOURCE_NAME.openai.azure.com/"
+            )
+        if os.getenv("OPENAI_AZURE_API_KEY") is None:
+            raise ValueError("You must set OPENAI_AZURE_API_KEY for Azure OpenAI.")
+
+        # deployment name can be found in the Azure AI Studio portal
+        self.deployment_name = "reginald-gpt35-turbo"
         self.openai_api_base = os.getenv("OPENAI_AZURE_API_BASE")
         self.openai_api_key = os.getenv("OPENAI_AZURE_API_KEY")
         self.openai_api_version = "2023-03-15-preview"
         self.temperature = 0.7
         super().__init__(
-            *args, model_name="gpt-3.5-turbo", max_input_size=16384, **kwargs
+            *args, model_name="gpt-3.5-turbo", max_input_size=4096, **kwargs
         )
 
     def _prep_llm(self) -> LLM:
