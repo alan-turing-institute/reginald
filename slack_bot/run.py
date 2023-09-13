@@ -1,4 +1,3 @@
-# Standard library imports
 import argparse
 import logging
 import os
@@ -6,21 +5,42 @@ import pathlib
 import sys
 import threading
 
-# Third-party imports
 from slack_sdk.socket_mode import SocketModeClient
 from slack_sdk.web import WebClient
 
-# Local imports
 from slack_bot import MODELS, Bot
 
 if __name__ == "__main__":
     # Parse command line arguments
     parser = argparse.ArgumentParser()
-    parser.add_argument("--model", "-m", help="Select which model to use", default=None)
+    parser.add_argument(
+        "--model", "-m", help="Select which model to use", default=None, choices=MODELS
+    )
+    parser.add_argument(
+        "--hf_model",
+        "-hf",
+        help="""Select which HuggingFace model to use
+        (ignored if not using llama-huggingface model)""",
+        default="StabilityAI/stablelm-tuned-alpha-3b",
+    )
+    parser.add_argument(
+        "--max_input_size",
+        "-max",
+        help="""Select maximum input size for HuggingFace model
+        (ignored if not using llama-huggingface model)""",
+        default=4096,
+    )
+    parser.add_argument(
+        "--device",
+        "-dev",
+        help="""Select device for HuggingFace model
+        (ignored if not using llama-huggingface model)""",
+        default="auto",
+    )
     parser.add_argument(
         "--force-new-index",
         "-f",
-        help="Recreate the index or not",
+        help="Recreate the index vector store or not",
         action=argparse.BooleanOptionalAction,
         default=False,
     )
@@ -34,10 +54,12 @@ if __name__ == "__main__":
         "--which-index",
         "-w",
         help="""Specifies the directory name for looking up/writing indices.
-        Currently supports 'all_data' and 'handbook'. If regenerating index, 'all_data'
-        will use all .txt .md. and .csv files in the data directory, 'handbook' will
+        Currently supports 'all_data', 'public' and 'handbook'.
+        If regenerating index, 'all_data' will use all .txt .md. and .csv
+        files in the data directory, 'handbook' will
         only use 'handbook.csv' file.""",
         default="all_data",
+        choices=["all_data", "public", "handbook"],
     )
 
     args = parser.parse_args()
@@ -85,15 +107,32 @@ if __name__ == "__main__":
         logging.error(f"Model {model_name} was not recognised")
         sys.exit(1)
 
-    logging.info(f"Initialising bot with model {model_name}")
+    logging.info(f"Initialising bot with model: {model_name}")
 
-    slack_bot = Bot(
-        model(
+    if model_name == "llama-index-hf":
+        response_model = model(
+            model_name=args.hf_model,
+            max_input_size=args.max_input_size,
+            device=args.device,
             force_new_index=force_new_index,
             data_dir=data_dir,
             which_index=which_index,
         )
-    )
+    else:
+        response_model = model(
+            force_new_index=force_new_index,
+            data_dir=data_dir,
+            which_index=which_index,
+        )
+
+    logging.info(f"Initalising bot with model: {response_model}")
+
+    slack_bot = Bot(response_model)
+
+    logging.info("Connecting to Slack...")
+    if os.environ.get("SLACK_APP_TOKEN") is None:
+        logging.error("SLACK_APP_TOKEN is not set")
+        sys.exit(1)
 
     # Initialize SocketModeClient with an app-level token + WebClient
     client = SocketModeClient(
