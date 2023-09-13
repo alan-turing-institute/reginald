@@ -11,7 +11,7 @@ The Reginald project consists of:
 ├── docker
 │   └── Scripts for building a Docker image
 ├── models
-│   └── REGinald models
+│   └── REGinald models (in notebooks)
 └── slack_bot
     └── Python Slack bot
 ```
