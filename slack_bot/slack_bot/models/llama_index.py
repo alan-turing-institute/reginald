@@ -37,7 +37,6 @@ class LlamaIndex(ResponseModel):
         max_input_size: int,
         data_dir: pathlib.Path,
         which_index: str,
-        device: str | None = None,
         chunk_size: Optional[int] = None,
         k: int = 3,
         chunk_overlap_ratio: float = 0.1,
@@ -60,9 +59,6 @@ class LlamaIndex(ResponseModel):
         which_index : str
             Which index to construct (if force_new_index is True) or use.
             Options are "handbook", "public", or "all_data".
-        device : str, optional
-            Device to use for the LLM, by default None.
-            This is ignored if the LLM is model from OpenAI or Azure.
         chunk_size : Optional[int], optional
             Maximum size of chunks to use, by default None.
             If None, this is computed as `ceil(max_input_size / k)`.
@@ -81,7 +77,6 @@ class LlamaIndex(ResponseModel):
         self.max_input_size = max_input_size
         self.model_name = model_name
         self.num_output = num_output
-        self.device = device
         if chunk_size is None:
             chunk_size = math.ceil(max_input_size / k)
         self.chunk_size = chunk_size
@@ -382,7 +377,7 @@ class LlamaIndexLlamaCPP(LlamaIndex):
             # transform inputs into Llama2 format
             messages_to_prompt=messages_to_prompt,
             completion_to_prompt=completion_to_prompt,
-            verbose=False,
+            verbose=True,
         )
 
 
@@ -390,6 +385,7 @@ class LlamaIndexHF(LlamaIndex):
     def __init__(
         self,
         model_name: str = "StabilityAI/stablelm-tuned-alpha-3b",
+        device: str = "auto",
         *args: Any,
         **kwargs: Any,
     ) -> None:
@@ -402,13 +398,15 @@ class LlamaIndexHF(LlamaIndex):
         model_name : str, optional
             Model name from Huggingface's model hub,
             by default "StabilityAI/stablelm-tuned-alpha-3b".
+        device : str, optional
+            Device map to use for the LLM, by default "auto".
         """
+        self.device = device
         super().__init__(*args, model_name=model_name, **kwargs)
 
     def _prep_llm(self) -> LLM:
-        dev = self.device or "auto"
         logging.info(
-            f"Setting up Huggingface LLM (model {self.model_name}) on device {dev}"
+            f"Setting up Huggingface LLM (model {self.model_name}) on device {self.device}"
         )
         logging.info(
             f"HF-args: (context_window: {self.max_input_size}, num_output: {self.num_output})"
