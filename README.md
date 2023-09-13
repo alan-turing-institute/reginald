@@ -66,9 +66,9 @@ pre-commit install
     source .env
     ```
 
-1. Run the bot:
+1. Run the bot using [`slack_bot/run.py`](https://github.com/alan-turing-institute/reginald/blob/main/slack_bot/run.py). To see CLI arguments:
     ```bash
-    python slack_bot/bot.py
+    python slack_bot/run.py --help
     ```
 
 The bot will now listen for @mentions in the channels it's added to and respond with a simple message.
