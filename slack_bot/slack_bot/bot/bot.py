@@ -1,18 +1,19 @@
+import asyncio
 import logging
 
-from slack_sdk.socket_mode import SocketModeClient
-from slack_sdk.socket_mode.listeners import SocketModeRequestListener
+from slack_sdk.socket_mode.aiohttp import SocketModeClient
+from slack_sdk.socket_mode.async_listeners import AsyncSocketModeRequestListener
 from slack_sdk.socket_mode.request import SocketModeRequest
 from slack_sdk.socket_mode.response import SocketModeResponse
 
 from ..models.base import ResponseModel
 
 
-class Bot(SocketModeRequestListener):
+class Bot(AsyncSocketModeRequestListener):
     def __init__(self, model: ResponseModel) -> None:
         self.model = model
 
-    def __call__(self, client: SocketModeClient, req: SocketModeRequest) -> None:
+    async def __call__(self, client: SocketModeClient, req: SocketModeRequest) -> None:
         if req.type != "events_api":
             logging.info(f"Received unexpected request of type '{req.type}'")
             return None
@@ -20,7 +21,7 @@ class Bot(SocketModeRequestListener):
         # Acknowledge the request
         logging.info(f"Received an events_api request")
         response = SocketModeResponse(envelope_id=req.envelope_id)
-        client.send_socket_mode_response(response)
+        await client.send_socket_mode_response(response)
 
         try:
             # Extract event from payload
@@ -48,12 +49,12 @@ class Bot(SocketModeRequestListener):
 
             # If this is a direct message to REGinald...
             if event_type == "message" and event_subtype is None:
-                self.react(client, event["channel"], event["ts"])
+                await self.react(client, event["channel"], event["ts"])
                 model_response = self.model.direct_message(message, user_id)
 
             # If @REGinald is mentioned in a channel
             elif event_type == "app_mention":
-                self.react(client, event["channel"], event["ts"])
+                await self.react(client, event["channel"], event["ts"])
                 model_response = self.model.channel_mention(message, user_id)
 
             # Otherwise
@@ -61,10 +62,10 @@ class Bot(SocketModeRequestListener):
                 logging.info(f"Received unexpected event of type '{event['type']}'.")
                 return None
 
-            # Add an emoji and a reply as required
+            # Add a reply as required
             if model_response and model_response.message:
                 logging.info(f"Posting reply {model_response.message}.")
-                client.web_client.chat_postMessage(
+                await client.web_client.chat_postMessage(
                     channel=event["channel"],
                     text=f"<@{user_id}>, you asked me: '{message}'.\n{model_response.message}",
                 )
@@ -80,11 +81,13 @@ class Bot(SocketModeRequestListener):
             )
             raise
 
-    def react(self, client: SocketModeClient, channel: str, timestamp: str) -> None:
+    async def react(
+        self, client: SocketModeClient, channel: str, timestamp: str
+    ) -> None:
         """Emoji react to the input message"""
         if self.model.emoji:
             logging.info(f"Reacting with emoji {self.model.emoji}.")
-            client.web_client.reactions_add(
+            await client.web_client.reactions_add(
                 name=self.model.emoji,
                 channel=channel,
                 timestamp=timestamp,
