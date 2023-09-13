@@ -24,7 +24,7 @@ if __name__ == "__main__":
         "--model", "-m", help="Select which model to use", default=None, choices=MODELS
     )
     parser.add_argument(
-        "--model_name",
+        "--model-name",
         "-n",
         type=str,
         help=(
