@@ -1,12 +1,12 @@
 import argparse
+import asyncio
 import logging
 import os
 import pathlib
 import sys
-import threading
 
-from slack_sdk.socket_mode import SocketModeClient
-from slack_sdk.web import WebClient
+from slack_sdk.socket_mode.aiohttp import SocketModeClient
+from slack_sdk.web.async_client import AsyncWebClient
 
 from slack_bot import MODELS, Bot
 
@@ -17,7 +17,7 @@ DEFAULT_LLAMA_CPP_GGUF_MODEL = (
 DEFAULT_HF_MODEL = "StabilityAI/stablelm-tuned-alpha-3b"
 
 
-if __name__ == "__main__":
+async def main():
     # Parse command line arguments
     parser = argparse.ArgumentParser()
     parser.add_argument(
@@ -197,14 +197,18 @@ if __name__ == "__main__":
         # This app-level token will be used only for establishing a connection
         app_token=os.environ.get("SLACK_APP_TOKEN"),
         # You will be using this WebClient for performing Web API calls in listeners
-        web_client=WebClient(token=os.environ.get("SLACK_BOT_TOKEN")),
+        web_client=AsyncWebClient(token=os.environ.get("SLACK_BOT_TOKEN")),
     )
 
     # Add a new listener to receive messages from Slack
     client.socket_mode_request_listeners.append(slack_bot)
     # Establish a WebSocket connection to the Socket Mode servers
-    client.connect()
+    await client.connect()
 
     # Listen for events
     logging.info("Listening for requests...")
-    threading.Event().wait()
+    await asyncio.sleep(float("inf"))
+
+
+if __name__ == "__main__":
+    asyncio.run(main())
