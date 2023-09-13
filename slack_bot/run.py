@@ -47,7 +47,7 @@ if __name__ == "__main__":
         action="store_true",
     )
     parser.add_argument(
-        "--max_input_size",
+        "--max-input-size",
         "-max",
         type=int,
         help=(
@@ -57,7 +57,7 @@ if __name__ == "__main__":
         default=4096,
     )
     parser.add_argument(
-        "--n_gpu_layers",
+        "--n-gpu-layers",
         "-ngl",
         type=int,
         help=(
