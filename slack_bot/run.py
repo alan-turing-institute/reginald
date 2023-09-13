@@ -160,6 +160,7 @@ if __name__ == "__main__":
         model_args = {
             "model_name": args.model_name,
             "path": args.path,
+            "n_gpu_layers": args.n_gpu_layers,
             "max_input_size": args.max_input_size,
         }
     elif model_name == "llama-index-hf":
@@ -168,8 +169,8 @@ if __name__ == "__main__":
 
         model_args = {
             "model_name": args.model_name,
-            "max_input_size": args.max_input_size,
             "device": args.device,
+            "max_input_size": args.max_input_size,
         }
     else:
         model_args = {}
