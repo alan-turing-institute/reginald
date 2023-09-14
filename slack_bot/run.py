@@ -175,12 +175,15 @@ if __name__ == "__main__":
     else:
         model_args = {}
 
-    response_model = model(
-        force_new_index=force_new_index,
-        data_dir=data_dir,
-        which_index=which_index,
-        **model_args,
-    )
+    if model_name == "hello":
+        response_model = model()
+    else:
+        response_model = model(
+            force_new_index=force_new_index,
+            data_dir=data_dir,
+            which_index=which_index,
+            **model_args,
+        )
 
     # Initialise Bot with response model
     logging.info(f"Initalising bot with model: {response_model}")
