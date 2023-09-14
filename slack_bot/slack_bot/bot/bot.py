@@ -25,11 +25,14 @@ class Bot(SocketModeRequestListener):
         try:
             # Extract event from payload
             event = req.payload["event"]
-            sender_is_bot = "bot_id" in event
+            logging.info(str(event.keys()))
 
             # Ignore messages from bots
-            if sender_is_bot:
-                logging.info(f"Ignoring an event triggered by a bot.")
+            if event.get("bot_id") is not None:
+                logging.info("Ignoring an event triggered by a bot.")
+                return None
+            if event.get("hidden") is not None:
+                logging.info("Ignoring hidden message.")
                 return None
 
             # Extract user and message information
@@ -37,11 +40,6 @@ class Bot(SocketModeRequestListener):
             user_id = event["user"]
             event_type = event["type"]
             event_subtype = event.get("subtype", None)
-
-            # Ignore changes to messages.
-            if event_type == "message" and event_subtype == "message_changed":
-                logging.info(f"Ignoring a change to a message.")
-                return None
 
             # Start processing the message
             logging.info(f"Processing message '{message}' from user '{user_id}'.")
