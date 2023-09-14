@@ -10,6 +10,13 @@ from slack_sdk.web import WebClient
 
 from slack_bot import MODELS, Bot
 
+DEFAULT_LLAMA_CPP_GGUF_MODEL = (
+    "https://huggingface.co/TheBloke/Llama-2-13B-chat-GGUF/resolve"
+    "/main/llama-2-13b-chat.Q6_K.gguf"
+)
+DEFAULT_HF_MODEL = "StabilityAI/stablelm-tuned-alpha-3b"
+
+
 if __name__ == "__main__":
     # Parse command line arguments
     parser = argparse.ArgumentParser()
@@ -17,47 +24,82 @@ if __name__ == "__main__":
         "--model", "-m", help="Select which model to use", default=None, choices=MODELS
     )
     parser.add_argument(
-        "--hf_model",
-        "-hf",
-        help="""Select which HuggingFace model to use
-        (ignored if not using llama-huggingface model)""",
-        default="StabilityAI/stablelm-tuned-alpha-3b",
+        "--model-name",
+        "-n",
+        type=str,
+        help=(
+            "Select which LlamaCPP or HuggingFace model to use "
+            "(ignored if not using llama-index-llama-cpp or llama-index-hf). "
+            "Default model for llama-index-llama-cpp is downloaded from "
+            f"{DEFAULT_LLAMA_CPP_GGUF_MODEL}. "
+            "Default model for llama-index-hf is downloaded from "
+            f"{DEFAULT_HF_MODEL}."
+        ),
+        default=None,
     )
     parser.add_argument(
-        "--max_input_size",
+        "--path",
+        "-p",
+        help=(
+            "Whether or not the model_name passed is a path to the model "
+            "(ignored if not using llama-index-llama-cpp)"
+        ),
+        action="store_true",
+    )
+    parser.add_argument(
+        "--max-input-size",
         "-max",
-        help="""Select maximum input size for HuggingFace model
-        (ignored if not using llama-huggingface model)""",
+        type=int,
+        help=(
+            "Select maximum input size for LlamaCPP or HuggingFace model "
+            "(ignored if not using llama-index-llama-cpp or llama-index-hf)"
+        ),
         default=4096,
+    )
+    parser.add_argument(
+        "--n-gpu-layers",
+        "-ngl",
+        type=int,
+        help=(
+            "Select number of GPU layers for LlamaCPP model "
+            "(ignored if not using llama-index-llama-cpp)"
+        ),
+        default=0,
     )
     parser.add_argument(
         "--device",
         "-dev",
-        help="""Select device for HuggingFace model
-        (ignored if not using llama-huggingface model)""",
+        type=str,
+        help=(
+            "Select device for HuggingFace model "
+            "(ignored if not using llama-index-hf model)"
+        ),
         default="auto",
     )
     parser.add_argument(
         "--force-new-index",
         "-f",
         help="Recreate the index vector store or not",
-        action=argparse.BooleanOptionalAction,
-        default=False,
+        action="store_true",
     )
     parser.add_argument(
         "--data-dir",
         "-d",
+        type=pathlib.Path,
         help="Location for data",
         default=(pathlib.Path(__file__).parent.parent / "data").resolve(),
     )
     parser.add_argument(
         "--which-index",
         "-w",
-        help="""Specifies the directory name for looking up/writing indices.
-        Currently supports 'all_data', 'public' and 'handbook'.
-        If regenerating index, 'all_data' will use all .txt .md. and .csv
-        files in the data directory, 'handbook' will
-        only use 'handbook.csv' file.""",
+        type=str,
+        help=(
+            "Specifies the directory name for looking up/writing indices. "
+            "Currently supports 'all_data', 'public' and 'handbook'. "
+            "If regenerating index, 'all_data' will use all .txt .md. and .csv "
+            "files in the data directory, 'handbook' will "
+            "only use 'handbook.csv' file."
+        ),
         default="all_data",
         choices=["all_data", "public", "handbook"],
     )
@@ -107,24 +149,43 @@ if __name__ == "__main__":
         logging.error(f"Model {model_name} was not recognised")
         sys.exit(1)
 
+    # Initialise LLM reponse model
     logging.info(f"Initialising bot with model: {model_name}")
 
-    if model_name == "llama-index-hf":
-        response_model = model(
-            model_name=args.hf_model,
-            max_input_size=args.max_input_size,
-            device=args.device,
-            force_new_index=force_new_index,
-            data_dir=data_dir,
-            which_index=which_index,
-        )
+    # Set up any model args that are required
+    if model_name == "llama-index-llama-cpp":
+        if args.model_name is None:
+            args.model_name = DEFAULT_LLAMA_CPP_GGUF_MODEL
+
+        model_args = {
+            "model_name": args.model_name,
+            "path": args.path,
+            "n_gpu_layers": args.n_gpu_layers,
+            "max_input_size": args.max_input_size,
+        }
+    elif model_name == "llama-index-hf":
+        if args.model_name is None:
+            args.model_name = DEFAULT_HF_MODEL
+
+        model_args = {
+            "model_name": args.model_name,
+            "device": args.device,
+            "max_input_size": args.max_input_size,
+        }
+    else:
+        model_args = {}
+
+    if model_name == "hello":
+        response_model = model()
     else:
         response_model = model(
             force_new_index=force_new_index,
             data_dir=data_dir,
             which_index=which_index,
+            **model_args,
         )
 
+    # Initialise Bot with response model
     logging.info(f"Initalising bot with model: {response_model}")
 
     slack_bot = Bot(response_model)
