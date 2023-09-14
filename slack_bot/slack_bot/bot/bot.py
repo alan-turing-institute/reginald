@@ -25,7 +25,6 @@ class Bot(SocketModeRequestListener):
         try:
             # Extract event from payload
             event = req.payload["event"]
-            logging.info(str(event.keys()))
 
             # Ignore messages from bots
             if event.get("bot_id") is not None:
