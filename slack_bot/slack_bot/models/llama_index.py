@@ -39,7 +39,7 @@ class LlamaIndex(ResponseModel):
         data_dir: pathlib.Path,
         which_index: str,
         chunk_size: Optional[int] = None,
-        mode: Optional[str] = "chat",
+        mode: str = "chat",
         k: int = 3,
         chunk_overlap_ratio: float = 0.1,
         force_new_index: bool = False,
