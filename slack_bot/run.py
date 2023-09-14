@@ -91,7 +91,8 @@ if __name__ == "__main__":
         "--force-new-index",
         "-f",
         help="Recreate the index vector store or not",
-        action="store_true",
+        action=argparse.BooleanOptionalAction,
+        default=False,
     )
     parser.add_argument(
         "--data-dir",
