@@ -17,8 +17,9 @@ from llama_index import (
     load_index_from_storage,
 )
 from llama_index.indices.vector_store.base import VectorStoreIndex
-from llama_index.llms import AzureOpenAI, HuggingFaceLLM, OpenAI
+from llama_index.llms import AzureOpenAI, HuggingFaceLLM, LlamaCPP, OpenAI
 from llama_index.llms.base import LLM
+from llama_index.llms.llama_utils import completion_to_prompt, messages_to_prompt
 from llama_index.prompts import PromptTemplate
 from llama_index.response.schema import RESPONSE_TYPE
 
@@ -36,7 +37,6 @@ class LlamaIndex(ResponseModel):
         max_input_size: int,
         data_dir: pathlib.Path,
         which_index: str,
-        device: str | None = None,
         chunk_size: Optional[int] = None,
         k: int = 3,
         chunk_overlap_ratio: float = 0.1,
@@ -59,9 +59,6 @@ class LlamaIndex(ResponseModel):
         which_index : str
             Which index to construct (if force_new_index is True) or use.
             Options are "handbook", "public", or "all_data".
-        device : str, optional
-            Device to use for the LLM, by default None.
-            This is ignored if the LLM is model from OpenAI or Azure.
         chunk_size : Optional[int], optional
             Maximum size of chunks to use, by default None.
             If None, this is computed as `ceil(max_input_size / k)`.
@@ -80,7 +77,6 @@ class LlamaIndex(ResponseModel):
         self.max_input_size = max_input_size
         self.model_name = model_name
         self.num_output = num_output
-        self.device = device
         if chunk_size is None:
             chunk_size = math.ceil(max_input_size / k)
         self.chunk_size = chunk_size
@@ -332,10 +328,64 @@ class LlamaIndex(ResponseModel):
         return MessageResponse(backend_response)
 
 
+class LlamaIndexLlamaCPP(LlamaIndex):
+    def __init__(
+        self,
+        model_name: str,
+        path: bool,
+        n_gpu_layers: int = 0,
+        *args: Any,
+        **kwargs: Any,
+    ) -> None:
+        """
+        `LlamaIndexLlamaCPP` is a subclass of `LlamaIndex` that uses
+        llama-cpp to implement the LLM.
+
+        Parameters
+        ----------
+        model_name : str
+            Either the path to the model or the URL to download the model from
+        path : bool, optional
+            If True, model_name is used as a path to the model file,
+            otherwise it should be the URL to download the model
+        n_gpu_layers : int, optional
+            Number of layers to offload to GPU.
+            If -1, all layers are offloaded, by default 0
+        """
+        self.path = path
+        self.n_gpu_layers = n_gpu_layers
+        super().__init__(*args, model_name=model_name, **kwargs)
+
+    def _prep_llm(self) -> LLM:
+        logging.info(
+            f"Setting up LlamaCPP LLM (model {self.model_name}) on {self.n_gpu_layers} GPU layers"
+        )
+        logging.info(
+            f"LlamaCPP-args: (context_window: {self.max_input_size}, num_output: {self.num_output})"
+        )
+
+        return LlamaCPP(
+            model_url=self.model_name if not self.path else None,
+            model_path=self.model_name if self.path else None,
+            temperature=0.1,
+            max_new_tokens=self.num_output,
+            context_window=self.max_input_size,
+            # kwargs to pass to __call__()
+            generate_kwargs={},
+            # kwargs to pass to __init__()
+            model_kwargs={"n_gpu_layers": self.n_gpu_layers},
+            # transform inputs into Llama2 format
+            messages_to_prompt=messages_to_prompt,
+            completion_to_prompt=completion_to_prompt,
+            verbose=True,
+        )
+
+
 class LlamaIndexHF(LlamaIndex):
     def __init__(
         self,
         model_name: str = "StabilityAI/stablelm-tuned-alpha-3b",
+        device: str = "auto",
         *args: Any,
         **kwargs: Any,
     ) -> None:
@@ -348,13 +398,15 @@ class LlamaIndexHF(LlamaIndex):
         model_name : str, optional
             Model name from Huggingface's model hub,
             by default "StabilityAI/stablelm-tuned-alpha-3b".
+        device : str, optional
+            Device map to use for the LLM, by default "auto".
         """
+        self.device = device
         super().__init__(*args, model_name=model_name, **kwargs)
 
     def _prep_llm(self) -> LLM:
-        dev = self.device or "auto"
         logging.info(
-            f"Setting up Huggingface LLM (model {self.model_name}) on device {dev}"
+            f"Setting up Huggingface LLM (model {self.model_name}) on device {self.device}"
         )
         logging.info(
             f"HF-args: (context_window: {self.max_input_size}, num_output: {self.num_output})"
@@ -365,7 +417,7 @@ class LlamaIndexHF(LlamaIndex):
             max_new_tokens=self.num_output,
             # TODO: allow user to specify the query wrapper prompt for their model
             query_wrapper_prompt=PromptTemplate("<|USER|>{query_str}<|ASSISTANT|>"),
-            generate_kwargs={"temperature": 0.25, "do_sample": False},
+            generate_kwargs={"temperature": 0.1, "do_sample": False},
             tokenizer_name=self.model_name,
             model_name=self.model_name,
             device_map=self.device or "auto",
