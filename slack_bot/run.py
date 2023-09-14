@@ -98,7 +98,7 @@ if __name__ == "__main__":
         "-d",
         type=pathlib.Path,
         help="Location for data",
-        default=(pathlib.Path(__file__).parent.parent / "data").resolve(),
+        default=None,
     )
     parser.add_argument(
         "--which-index",
@@ -111,7 +111,7 @@ if __name__ == "__main__":
             "files in the data directory, 'handbook' will "
             "only use 'handbook.csv' file."
         ),
-        default="all_data",
+        default=None,
         choices=["all_data", "public", "handbook"],
     )
 
