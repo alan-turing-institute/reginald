@@ -5,6 +5,7 @@ import math
 import os
 import pathlib
 import re
+import sys
 from typing import Any, List, Optional
 
 import pandas as pd
@@ -38,6 +39,7 @@ class LlamaIndex(ResponseModel):
         data_dir: pathlib.Path,
         which_index: str,
         chunk_size: Optional[int] = None,
+        mode: str = "chat",
         k: int = 3,
         chunk_overlap_ratio: float = 0.1,
         force_new_index: bool = False,
@@ -79,6 +81,7 @@ class LlamaIndex(ResponseModel):
         self.num_output = num_output
         if chunk_size is None:
             chunk_size = math.ceil(max_input_size / k)
+        self.mode = mode
         self.chunk_size = chunk_size
         self.chunk_overlap_ratio = chunk_overlap_ratio
         self.data_dir = data_dir
@@ -132,8 +135,17 @@ class LlamaIndex(ResponseModel):
                 storage_context=storage_context, service_context=service_context
             )
 
-        self.query_engine = self.index.as_query_engine(similarity_top_k=k)
-        logging.info("Done setting up Huggingface backend for query engine.")
+        if self.mode == "query":
+            self.query_engine = self.index.as_query_engine(similarity_top_k=k)
+            logging.info("Done setting up Huggingface backend for query engine.")
+        elif self.mode == "chat":
+            self.chat_engine = self.index.as_chat_engine(
+                chat_mode="context", similarity_top_k=k
+            )
+            logging.info("Done setting up Huggingface backend for chat engine.")
+        else:
+            logging.error("Mode must either be 'query' or 'chat'.")
+            sys.exit(1)
 
         self.error_response_template = (
             "Oh no! When I tried to get a response to your prompt, "
@@ -170,7 +182,7 @@ class LlamaIndex(ResponseModel):
 
     def _get_response(self, msg_in: str, user_id: str) -> str:
         """
-        Method to obtain a response from the query engine given
+        Method to obtain a response from the query/chat engine given
         a message and a user id.
 
         Parameters
@@ -186,13 +198,22 @@ class LlamaIndex(ResponseModel):
             String containing the response from the query engine.
         """
         try:
-            query_response = self.query_engine.query(msg_in)
-            # concatenate the response with the resources that it used
-            response = (
-                query_response.response
-                + "\n\n\n"
-                + self._format_sources(query_response)
-            )
+            if self.mode == "query":
+                query_response = self.query_engine.query(msg_in)
+                # concatenate the response with the resources that it used
+                response = (
+                    query_response.response
+                    + "\n\n\n"
+                    + self._format_sources(query_response)
+                )
+            elif self.mode == "chat":
+                chat_response = self.chat_engine.chat(msg_in)
+                # concatenate the response with the resources that it used
+                response = (
+                    chat_response.response
+                    + "\n\n\n"
+                    + self._format_sources(chat_response)
+                )
         except Exception as e:  # ignore: broad-except
             response = self.error_response_template.format(repr(e))
         pattern = (
