@@ -26,11 +26,13 @@ class Bot(AsyncSocketModeRequestListener):
         try:
             # Extract event from payload
             event = req.payload["event"]
-            sender_is_bot = "bot_id" in event
 
             # Ignore messages from bots
-            if sender_is_bot:
-                logging.info(f"Ignoring an event triggered by a bot.")
+            if event.get("bot_id") is not None:
+                logging.info("Ignoring an event triggered by a bot.")
+                return None
+            if event.get("hidden") is not None:
+                logging.info("Ignoring hidden message.")
                 return None
 
             # Extract user and message information
