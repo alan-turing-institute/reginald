@@ -38,6 +38,17 @@ if __name__ == "__main__":
         default=None,
     )
     parser.add_argument(
+        "--mode",
+        type=str,
+        help=(
+            "Select which mode to use "
+            "(ignored if not using llama-index-llama-cpp or llama-index-hf). "
+            "Default is 'chat'."
+        ),
+        default=None,
+        choices=["chat", "query"],
+    )
+    parser.add_argument(
         "--path",
         "-p",
         help=(
@@ -142,6 +153,13 @@ if __name__ == "__main__":
     if not which_index:
         which_index = "all_data"
 
+    # Set mode
+    mode = os.environ.get("LLAMA_MODE")
+    if args.mode:
+        mode = args.mode
+    if not mode:
+        mode = "chat"
+
     # Initialise a new Slack bot with the requested model
     try:
         model = MODELS[model_name.lower()]
@@ -182,6 +200,7 @@ if __name__ == "__main__":
             force_new_index=force_new_index,
             data_dir=data_dir,
             which_index=which_index,
+            mode=mode,
             **model_args,
         )
 
