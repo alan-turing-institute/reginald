@@ -39,7 +39,7 @@ class LlamaIndex(ResponseModel):
         data_dir: pathlib.Path,
         which_index: str,
         chunk_size: Optional[int] = None,
-        mode: str = "chat",
+        mode: Optional[str] = "chat",
         k: int = 3,
         chunk_overlap_ratio: float = 0.1,
         force_new_index: bool = False,
@@ -64,6 +64,9 @@ class LlamaIndex(ResponseModel):
         chunk_size : Optional[int], optional
             Maximum size of chunks to use, by default None.
             If None, this is computed as `ceil(max_input_size / k)`.
+        mode : Optional[str], optional
+            The type of engine to use when interacting with the data, options of "chat" or "query".
+            Default is "chat".
         k : int, optional
             `similarity_top_k` to use in query engine, by default 3
         chunk_overlap_ratio : float, optional
