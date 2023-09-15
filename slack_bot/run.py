@@ -59,7 +59,8 @@ async def main():
             "Whether or not the model_name passed is a path to the model "
             "(ignored if not using llama-index-llama-cpp)"
         ),
-        action="store_true",
+        action=argparse.BooleanOptionalAction,
+        default=None,
     )
     parser.add_argument(
         "--max-input-size",
@@ -95,7 +96,8 @@ async def main():
         "--force-new-index",
         "-f",
         help="Recreate the index vector store or not",
-        action="store_true",
+        action=argparse.BooleanOptionalAction,
+        default=None,
     )
     parser.add_argument(
         "--data-dir",
@@ -116,7 +118,7 @@ async def main():
             "files in the data directory, 'handbook' will "
             "only use 'handbook.csv' file."
         ),
-        default=os.environ.get("LLAMA_WHICH_INDEX") or "all_data",
+        default=os.environ.get("LLAMA_INDEX_WHICH_INDEX") or "all_data",
         choices=["all_data", "public", "handbook"],
     )
 
@@ -137,17 +139,17 @@ async def main():
             os.environ.get("LLAMA_INDEX_FORCE_NEW_INDEX").lower() == "true"
         )
     # if force_new_index is provided via command line, override env var
-    if args.force_new_index:
-        force_new_index = True
+    if args.force_new_index is not None:
+        force_new_index = args.force_new_index
 
     # Set is_path bool (by default, False)
     is_path = False
     # try to obtain is_path from env var
-    if os.environ.get("LLAMA_INDEX_PATH_BOOL"):
-        is_path = os.environ.get("LLAMA_INDEX_PATH_BOOL").lower() == "true"
+    if os.environ.get("LLAMA_INDEX_IS_PATH"):
+        is_path = os.environ.get("LLAMA_INDEX_IS_PATH").lower() == "true"
     # if is_path bool is provided via command line, override env var
-    if args.is_path:
-        is_path = True
+    if args.is_path is not None:
+        is_path = args.is_path
 
     # Initialise a new Slack bot with the requested model
     try:
@@ -160,10 +162,11 @@ async def main():
     logging.info(f"Initialising bot with model: {args.model}")
 
     # Set up any model args that are required
-    if model == "llama-index-llama-cpp":
+    if args.model == "llama-index-llama-cpp":
         # try to obtain model name from env var
         # if model name is provided via command line, override env var
         model_name = args.model_name or os.environ.get("LLAMA_INDEX_MODEL_NAME")
+
         # if no model name is provided by command line or env var,
         # default to DEFAULT_LLAMA_CPP_GGUF_MODEL
         if model_name is None:
@@ -175,17 +178,18 @@ async def main():
             "n_gpu_layers": args.n_gpu_layers,
             "max_input_size": args.max_input_size,
         }
-    elif model == "llama-index-hf":
+    elif args.model == "llama-index-hf":
         # try to obtain model name from env var
         # if model name is provided via command line, override env var
         model_name = args.model_name or os.environ.get("LLAMA_INDEX_MODEL_NAME")
+
         # if no model name is provided by command line or env var,
         # default to DEFAULT_HF_MODEL
         if model_name is None:
             model_name = DEFAULT_HF_MODEL
 
         model_args = {
-            "model_name": args.model_name,
+            "model_name": model_name,
             "device": args.device,
             "max_input_size": args.max_input_size,
         }
