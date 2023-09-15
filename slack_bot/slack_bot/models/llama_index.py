@@ -68,7 +68,7 @@ class LlamaIndex(ResponseModel):
             The type of engine to use when interacting with the data, options of "chat" or "query".
             Default is "chat".
         k : int, optional
-            `similarity_top_k` to use in query engine, by default 3
+            `similarity_top_k` to use in char or query engine, by default 3
         chunk_overlap_ratio : float, optional
             Chunk overlap as a ratio of chunk size, by default 0.1
         force_new_index : bool, optional
@@ -79,6 +79,14 @@ class LlamaIndex(ResponseModel):
         """
         super().__init__(emoji="llama")
         logging.info("Setting up Huggingface backend.")
+        if mode == "chat":
+            logging.info("Setting up chat engine.")
+        elif mode == "query":
+            logging.info("Setting up query engine.")
+        else:
+            logging.error("Mode must either be 'query' or 'chat'.")
+            sys.exit(1)
+
         self.max_input_size = max_input_size
         self.model_name = model_name
         self.num_output = num_output
@@ -138,17 +146,14 @@ class LlamaIndex(ResponseModel):
                 storage_context=storage_context, service_context=service_context
             )
 
-        if self.mode == "query":
-            self.query_engine = self.index.as_query_engine(similarity_top_k=k)
-            logging.info("Done setting up Huggingface backend for query engine.")
-        elif self.mode == "chat":
+        if self.mode == "chat":
             self.chat_engine = self.index.as_chat_engine(
                 chat_mode="context", similarity_top_k=k
             )
             logging.info("Done setting up Huggingface backend for chat engine.")
-        else:
-            logging.error("Mode must either be 'query' or 'chat'.")
-            sys.exit(1)
+        elif self.mode == "query":
+            self.query_engine = self.index.as_query_engine(similarity_top_k=k)
+            logging.info("Done setting up Huggingface backend for query engine.")
 
         self.error_response_template = (
             "Oh no! When I tried to get a response to your prompt, "
