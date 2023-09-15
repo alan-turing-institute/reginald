@@ -12,7 +12,7 @@ from ..models.base import ResponseModel
 class Bot(AsyncSocketModeRequestListener):
     def __init__(self, model: ResponseModel) -> None:
         self.model = model
-        self.queue = asyncio.Queue(maxsize=3)
+        self.queue = asyncio.Queue(maxsize=10)
 
     async def __call__(self, client: SocketModeClient, req: SocketModeRequest) -> None:
         self.queue.put_nowait(self._process_request(client, req))
