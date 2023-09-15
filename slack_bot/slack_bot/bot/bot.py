@@ -12,8 +12,34 @@ from ..models.base import ResponseModel
 class Bot(AsyncSocketModeRequestListener):
     def __init__(self, model: ResponseModel) -> None:
         self.model = model
+        self.queue = asyncio.Queue(maxsize=3)
 
     async def __call__(self, client: SocketModeClient, req: SocketModeRequest) -> None:
+        self.queue.put_nowait(self._process_request(client, req))
+        print(f"There are currently {self.queue.qsize()} items in the queue.")
+
+        # Create three worker tasks to process the queue concurrently.
+        tasks = []
+        for i in range(3):
+            task = asyncio.create_task(self.worker(self.queue))
+            tasks.append(task)
+
+        await self.queue.join()
+
+        for task in tasks:
+            task.cancel()
+
+    @staticmethod
+    async def worker(queue):
+        while True:
+            coro = await queue.get()
+            await coro
+            # Notify the queue that the "work item" has been processed.
+            queue.task_done()
+
+    async def _process_request(
+        self, client: SocketModeClient, req: SocketModeRequest
+    ) -> None:
         if req.type != "events_api":
             logging.info(f"Received unexpected request of type '{req.type}'")
             return None
