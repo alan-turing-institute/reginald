@@ -21,7 +21,11 @@ if __name__ == "__main__":
     # Parse command line arguments
     parser = argparse.ArgumentParser()
     parser.add_argument(
-        "--model", "-m", help="Select which model to use", default=None, choices=MODELS
+        "--model",
+        "-m",
+        help="Select which model to use",
+        default=os.environ.get("REGINALD_MODEL") or "hello",
+        choices=MODELS,
     )
     parser.add_argument(
         "--model-name",
@@ -45,11 +49,11 @@ if __name__ == "__main__":
             "(ignored if not using llama-index-llama-cpp or llama-index-hf). "
             "Default is 'chat'."
         ),
-        default=None,
+        default=os.environ.get("LLAMA_INDEX_MODE") or "chat",
         choices=["chat", "query"],
     )
     parser.add_argument(
-        "--path",
+        "--is-path",
         "-p",
         help=(
             "Whether or not the model_name passed is a path to the model "
@@ -65,7 +69,7 @@ if __name__ == "__main__":
             "Select maximum input size for LlamaCPP or HuggingFace model "
             "(ignored if not using llama-index-llama-cpp or llama-index-hf)"
         ),
-        default=4096,
+        default=os.environ.get("LLAMA_INDEX_MAX_INPUT_SIZE") or 4096,
     )
     parser.add_argument(
         "--n-gpu-layers",
@@ -75,7 +79,7 @@ if __name__ == "__main__":
             "Select number of GPU layers for LlamaCPP model "
             "(ignored if not using llama-index-llama-cpp)"
         ),
-        default=0,
+        default=os.environ.get("LLAMA_INDEX_N_GPU_LAYERS") or 0,
     )
     parser.add_argument(
         "--device",
@@ -85,21 +89,21 @@ if __name__ == "__main__":
             "Select device for HuggingFace model "
             "(ignored if not using llama-index-hf model)"
         ),
-        default="auto",
+        default=os.environ.get("LLAMA_INDEX_DEVICE") or "auto",
     )
     parser.add_argument(
         "--force-new-index",
         "-f",
         help="Recreate the index vector store or not",
-        action=argparse.BooleanOptionalAction,
-        default=False,
+        action="store_true",
     )
     parser.add_argument(
         "--data-dir",
         "-d",
         type=pathlib.Path,
         help="Location for data",
-        default=None,
+        default=os.environ.get("LLAMA_INDEX_DATA_DIR")
+        or (pathlib.Path(__file__).parent.parent / "data").resolve(),
     )
     parser.add_argument(
         "--which-index",
@@ -112,7 +116,7 @@ if __name__ == "__main__":
             "files in the data directory, 'handbook' will "
             "only use 'handbook.csv' file."
         ),
-        default=None,
+        default=os.environ.get("LLAMA_WHICH_INDEX") or "all_data",
         choices=["all_data", "public", "handbook"],
     )
 
@@ -125,66 +129,60 @@ if __name__ == "__main__":
         level=logging.INFO,
     )
 
-    # Set model name
-    model_name = os.environ.get("REGINALD_MODEL")
-    if args.model:
-        model_name = args.model
-    if not model_name:
-        model_name = "hello"
-
-    # Set force new index
+    # Set force new index (by default, don't)
     force_new_index = False
-    if os.environ.get("LLAMA_FORCE_NEW_INDEX"):
-        force_new_index = os.environ.get("LLAMA_FORCE_NEW_INDEX").lower() == "true"
+    # try to obtain force_new_index from env var
+    if os.environ.get("LLAMA_INDEX_FORCE_NEW_INDEX"):
+        force_new_index = (
+            os.environ.get("LLAMA_INDEX_FORCE_NEW_INDEX").lower() == "true"
+        )
+    # if force_new_index is provided via command line, override env var
     if args.force_new_index:
         force_new_index = True
 
-    # Set data directory
-    data_dir = os.environ.get("LLAMA_DATA_DIR")
-    if args.data_dir:
-        data_dir = args.data_dir
-    if not data_dir:
-        data_dir = pathlib.Path(__file__).parent.parent / "data"
-    data_dir = pathlib.Path(data_dir).resolve()
-
-    # Set which index
-    which_index = os.environ.get("LLAMA_WHICH_INDEX")
-    if args.which_index:
-        which_index = args.which_index
-    if not which_index:
-        which_index = "all_data"
-
-    # Set mode
-    mode = os.environ.get("LLAMA_MODE")
-    if args.mode:
-        mode = args.mode
-    if not mode:
-        mode = "chat"
+    # Set is_path bool (by default, False)
+    is_path = False
+    # try to obtain is_path from env var
+    if os.environ.get("LLAMA_INDEX_PATH_BOOL"):
+        is_path = os.environ.get("LLAMA_INDEX_PATH_BOOL").lower() == "true"
+    # if is_path bool is provided via command line, override env var
+    if args.is_path:
+        is_path = True
 
     # Initialise a new Slack bot with the requested model
     try:
-        model = MODELS[model_name.lower()]
+        model = MODELS[args.model.lower()]
     except KeyError:
-        logging.error(f"Model {model_name} was not recognised")
+        logging.error(f"Model {args.model} was not recognised")
         sys.exit(1)
 
     # Initialise LLM reponse model
-    logging.info(f"Initialising bot with model: {model_name}")
+    logging.info(f"Initialising bot with model: {args.model}")
 
     # Set up any model args that are required
-    if model_name == "llama-index-llama-cpp":
-        if args.model_name is None:
-            args.model_name = DEFAULT_LLAMA_CPP_GGUF_MODEL
+    if model == "llama-index-llama-cpp":
+        # try to obtain model name from env var
+        # if model name is provided via command line, override env var
+        model_name = args.model_name or os.environ.get("LLAMA_INDEX_MODEL_NAME")
+        # if no model name is provided by command line or env var,
+        # default to DEFAULT_LLAMA_CPP_GGUF_MODEL
+        if model_name is None:
+            model_name = DEFAULT_LLAMA_CPP_GGUF_MODEL
 
         model_args = {
-            "model_name": args.model_name,
-            "path": args.path,
+            "model_name": model_name,
+            "is_path": is_path,
             "n_gpu_layers": args.n_gpu_layers,
             "max_input_size": args.max_input_size,
         }
-    elif model_name == "llama-index-hf":
-        if args.model_name is None:
-            args.model_name = DEFAULT_HF_MODEL
+    elif model == "llama-index-hf":
+        # try to obtain model name from env var
+        # if model name is provided via command line, override env var
+        model_name = args.model_name or os.environ.get("LLAMA_INDEX_MODEL_NAME")
+        # if no model name is provided by command line or env var,
+        # default to DEFAULT_HF_MODEL
+        if model_name is None:
+            model_name = DEFAULT_HF_MODEL
 
         model_args = {
             "model_name": args.model_name,
@@ -194,14 +192,14 @@ if __name__ == "__main__":
     else:
         model_args = {}
 
-    if model_name == "hello":
+    if model == "hello":
         response_model = model()
     else:
         response_model = model(
             force_new_index=force_new_index,
-            data_dir=data_dir,
-            which_index=which_index,
-            mode=mode,
+            data_dir=args.data_dir,
+            which_index=args.which_index,
+            mode=args.mode,
             **model_args,
         )
 
