@@ -214,12 +214,14 @@ async def main():
         logging.error("SLACK_APP_TOKEN is not set")
         sys.exit(1)
 
-    # Initialize SocketModeClient with an app-level token + WebClient
+    # Initialize SocketModeClient with an app-level token + AsyncWebClient
     client = SocketModeClient(
         # This app-level token will be used only for establishing a connection
         app_token=os.environ.get("SLACK_APP_TOKEN"),
-        # You will be using this WebClient for performing Web API calls in listeners
+        # You will be using this AsyncWebClient for performing Web API calls in listeners
         web_client=AsyncWebClient(token=os.environ.get("SLACK_BOT_TOKEN")),
+        # To ensure connection doesn't go stale - we can adjust as needed.
+        ping_interval=60,
     )
 
     # Add a new listener to receive messages from Slack
