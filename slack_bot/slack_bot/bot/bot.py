@@ -16,7 +16,7 @@ class Bot(AsyncSocketModeRequestListener):
 
     async def __call__(self, client: SocketModeClient, req: SocketModeRequest) -> None:
         self.queue.put_nowait(self._process_request(client, req))
-        print(f"There are currently {self.queue.qsize()} items in the queue.")
+        logging.info(f"There are currently {self.queue.qsize()} items in the queue.")
 
         # Create three worker tasks to process the queue concurrently.
         tasks = []
