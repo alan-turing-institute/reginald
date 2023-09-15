@@ -45,7 +45,7 @@ class Bot(AsyncSocketModeRequestListener):
             return None
 
         # Acknowledge the request
-        logging.info(f"Received an events_api request")
+        logging.info("Received an events_api request")
         response = SocketModeResponse(envelope_id=req.envelope_id)
         await client.send_socket_mode_response(response)
 
@@ -93,7 +93,7 @@ class Bot(AsyncSocketModeRequestListener):
                     text=f"<@{user_id}>, you asked me: '{message}'.\n{model_response.message}",
                 )
             else:
-                logging.info(f"No reply was generated.")
+                logging.info("No reply was generated.")
 
         except KeyError as exc:
             logging.warning(f"Attempted to access key that does not exist.\n{str(exc)}")
@@ -116,4 +116,4 @@ class Bot(AsyncSocketModeRequestListener):
                 timestamp=timestamp,
             )
         else:
-            logging.info(f"No emoji defined for this model.")
+            logging.info("No emoji defined for this model.")
