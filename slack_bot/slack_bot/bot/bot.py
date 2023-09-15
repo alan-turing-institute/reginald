@@ -41,11 +41,6 @@ class Bot(AsyncSocketModeRequestListener):
             event_type = event["type"]
             event_subtype = event.get("subtype", None)
 
-            # Ignore changes to messages.
-            if event_type == "message" and event_subtype == "message_changed":
-                logging.info(f"Ignoring a change to a message.")
-                return None
-
             # Start processing the message
             logging.info(f"Processing message '{message}' from user '{user_id}'.")
 
