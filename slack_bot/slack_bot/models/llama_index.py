@@ -6,9 +6,11 @@ import os
 import pathlib
 import re
 import sys
+from tempfile import TemporaryDirectory
 from typing import Any, List, Optional
 
 import nest_asyncio
+from git import Repo
 from langchain.embeddings import HuggingFaceEmbeddings
 from llama_hub.github_repo import GithubClient, GithubRepositoryReader
 from llama_hub.github_repo_issues import (
@@ -29,6 +31,7 @@ from llama_index.llms import AzureOpenAI, HuggingFaceLLM, LlamaCPP, OpenAI
 from llama_index.llms.base import LLM
 from llama_index.llms.llama_utils import completion_to_prompt, messages_to_prompt
 from llama_index.prompts import PromptTemplate
+from llama_index.readers import SimpleDirectoryReader
 from llama_index.response.schema import RESPONSE_TYPE
 
 nest_asyncio.apply()
@@ -189,7 +192,7 @@ class LlamaIndex(ResponseModel):
         texts = []
         for source_node in response.source_nodes:
             source_text = (
-                source_node.node.extra_info["filename"]
+                source_node.node.extra_info["url"]
                 + f" (similarity: {round(source_node.score, 3)})"
             )
             texts.append(source_text)
@@ -272,7 +275,13 @@ class LlamaIndex(ResponseModel):
             logging.info("Regenerating index only for the handbook")
 
             # load handbook from repo
-            self.load_handbook(documents, gh_token)
+            self._load_handbook(documents, gh_token)
+
+        elif self.which_index == "wikis":
+            logging.info("Regenerating index only for the wikis")
+
+            # load wikis
+            self._load_wikis(documents, gh_token)
 
         elif self.which_index == "public":
             logging.info("Regenerating index for all PUBLIC. Will take a long time...")
@@ -391,6 +400,46 @@ class LlamaIndex(ResponseModel):
         #     verbose=True,
         #     )
         # documents.extend(hut23_collaborators_loader.load_data())
+
+    def _load_wikis(self, documents, gh_token):
+        wiki_urls = [
+            "https://github.com/alan-turing-institute/research-engineering-group.wiki.git",
+            "https://github.com/alan-turing-institute/Hut23.wiki.git",
+        ]
+
+        for url in wiki_urls:
+            temp_dir = TemporaryDirectory()
+            wiki_path = os.path.join(temp_dir.name, url.split("/")[-1])
+
+            _ = Repo.clone_from(url, wiki_path)
+
+            reader = SimpleDirectoryReader(
+                input_dir=wiki_path,
+                required_exts=[".md"],
+                recursive=True,
+                filename_as_id=True,
+            )
+
+            # get base url and file names
+            base_url = url.removesuffix(".wiki.git")
+            fnames = [str(file) for file in reader.input_files]
+
+            # get file urls and create dictionary to map fname to url
+            file_urls = [
+                os.path.join(base_url, "wiki", fname.split("/")[-1].removesuffix(".md"))
+                for fname in fnames
+            ]
+            file_urls_dict = {
+                fname: file_url for fname, file_url in zip(fnames, file_urls)
+            }
+
+            def get_urls(fname):
+                return {"url": file_urls_dict.get(fname)}
+
+            # add `get_urls` function to reader
+            reader.file_metadata = get_urls
+
+            documents.extend(reader.load_data())
 
     def _prep_llm(self) -> LLM:
         """
