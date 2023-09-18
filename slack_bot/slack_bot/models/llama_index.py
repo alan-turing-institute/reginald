@@ -8,8 +8,15 @@ import re
 import sys
 from typing import Any, List, Optional
 
-import pandas as pd
+import nest_asyncio
 from langchain.embeddings import HuggingFaceEmbeddings
+from llama_hub.github_repo import GithubClient, GithubRepositoryReader
+from llama_hub.github_repo_issues import (
+    GitHubIssuesClient,
+    GitHubRepositoryIssuesReader,
+)
+
+# from llama_hub.github_repo_collaborators import GitHubCollaboratorsClient, GitHubRepositoryCollaboratorsReader
 from llama_index import (
     Document,
     PromptHelper,
@@ -23,6 +30,8 @@ from llama_index.llms.base import LLM
 from llama_index.llms.llama_utils import completion_to_prompt, messages_to_prompt
 from llama_index.prompts import PromptTemplate
 from llama_index.response.schema import RESPONSE_TYPE
+
+nest_asyncio.apply()
 
 from .base import MessageResponse, ResponseModel
 
@@ -252,51 +261,133 @@ class LlamaIndex(ResponseModel):
         """
         # Prep the contextual documents
         documents = []
+        gh_token = os.getenv("GITHUB_TOKEN")
+
+        if gh_token is None:
+            raise ValueError(
+                "Please export your github personal access token as 'GITHUB_TOKEN'."
+            )
 
         if self.which_index == "handbook":
             logging.info("Regenerating index only for the handbook")
 
-            data_files = [self.data_dir / PUBLIC_DATA_DIR / "handbook-scraped.csv"]
+            # load handbook from repo
+            self.load_handbook(documents, gh_token)
 
         elif self.which_index == "public":
             logging.info("Regenerating index for all PUBLIC. Will take a long time...")
 
-            # pull out public data
-            data_files = list((self.data_dir / PUBLIC_DATA_DIR).glob("**/*.md"))
-            data_files += list((self.data_dir / PUBLIC_DATA_DIR).glob("**/*.csv"))
-            data_files += list((self.data_dir / PUBLIC_DATA_DIR).glob("**/*.txt"))
+            # load public data from repos
+            self.load_handbook(documents, gh_token)
+            self.load_rse_course(documents, gh_token)
+            self.load_rds_course(documents, gh_token)
+            self.load_turing_way(documents, gh_token)
+
         elif self.which_index == "all_data":
             logging.info("Regenerating index for ALL DATA. Will take a long time...")
 
-            # pull out public data
-            data_files = list((self.data_dir / PUBLIC_DATA_DIR).glob("**/*.md"))
-            data_files += list((self.data_dir / PUBLIC_DATA_DIR).glob("**/*.csv"))
-            data_files += list((self.data_dir / PUBLIC_DATA_DIR).glob("**/*.txt"))
-            # include private internal data
-            data_files += list((self.data_dir / INTERNAL_DATA_DIR).glob("**/*.md"))
-            data_files += list((self.data_dir / INTERNAL_DATA_DIR).glob("**/*.csv"))
-            data_files += list((self.data_dir / INTERNAL_DATA_DIR).glob("**/*.txt"))
+            # load public data from repos
+            self.load_handbook(documents, gh_token)
+            self.load_rse_course(documents, gh_token)
+            self.load_rds_course(documents, gh_token)
+            self.load_turing_way(documents, gh_token)
+
+            # load hut23 data
+            self.load_hut23()
 
         else:
             logging.info("The data_files directory is unrecognized")
 
-        for data_file in data_files:
-            if data_file.suffix == ".csv":
-                df = pd.read_csv(data_file)
-                df = df[~df.loc[:, "body"].isna()]
-                documents += [
-                    Document(
-                        text=row[1]["body"], extra_info={"filename": row[1]["url"]}
-                    )
-                    for row in df.iterrows()
-                ]
-            elif data_file.suffix in (".md", ".txt"):
-                with open(data_file, "r") as f:
-                    content = f.read()
-                documents.append(
-                    Document(content, extra_info={"filename": str(data_file)})
-                )
         return documents
+
+    def load_handbook(self, documents, gh_token):
+        handbook_loader = GithubRepositoryReader(
+            GithubClient(gh_token),
+            owner="alan-turing-institute",
+            repo="REG-handbook",
+            verbose=False,
+            filter_file_extensions=([".md"], GithubRepositoryReader.FilterType.INCLUDE),
+            filter_directories=(["content"], GithubRepositoryReader.FilterType.INCLUDE),
+        )
+        documents.extend(handbook_loader.load_data(branch="main"))
+
+    def load_rse_course(self, documents, gh_token):
+        rse_course_loader = GithubRepositoryReader(
+            GithubClient(gh_token),
+            owner="alan-turing-institute",
+            repo="rse-course",
+            verbose=False,
+            filter_file_extensions=(
+                [".md", ".ipynb"],
+                GithubRepositoryReader.FilterType.INCLUDE,
+            ),
+        )
+        documents.extend(rse_course_loader.load_data(branch="main"))
+
+    def load_rds_course(self, documents, gh_token):
+        rds_course_loader = GithubRepositoryReader(
+            GithubClient(gh_token),
+            owner="alan-turing-institute",
+            repo="rds-course",
+            verbose=False,
+            filter_file_extensions=(
+                [".md", ".ipynb"],
+                GithubRepositoryReader.FilterType.INCLUDE,
+            ),
+        )
+        documents.extend(rds_course_loader.load_data(branch="develop"))
+
+    def load_turing_way(self, documents, gh_token):
+        turing_way_loader = GithubRepositoryReader(
+            GithubClient(gh_token),
+            owner="the-turing-way",
+            repo="the-turing-way",
+            verbose=False,
+            filter_file_extensions=([".md"], GithubRepositoryReader.FilterType.INCLUDE),
+        )
+        documents.extend(turing_way_loader.load_data(branch="main"))
+
+    def load_hut23(self, documents, gh_token):
+        # load repo
+        hut23_repo_loader = GithubRepositoryReader(
+            GithubClient(gh_token),
+            owner="alan-turing-institute",
+            repo="Hut23",
+            verbose=False,
+            filter_file_extensions=(
+                [".md", ".ipynb"],
+                GithubRepositoryReader.FilterType.INCLUDE,
+            ),
+            filter_directories=(
+                [
+                    "JDs",
+                    "development",
+                    "newsletters",
+                    "objectives",
+                    "rfc",
+                ],  # we can adjust these
+                GithubRepositoryReader.FilterType.INCLUDE,
+            ),
+        )
+        documents.extend(hut23_repo_loader.load_data(branch="master"))
+
+        # load_issues
+        hut23_issues_loader = GitHubRepositoryIssuesReader(
+            GitHubIssuesClient(gh_token),
+            owner="alan-turing-institute",
+            repo="Hut23",
+            verbose=True,
+        )
+        documents.extend(hut23_issues_loader.load_data())
+
+        # load collaborators - waiting on PR
+        # hut23_collaborators_loader = GitHubRepositoryCollaboratorsReader(
+        #     GitHubCollaboratorsClient(gh_token),
+        #     owner="alan-turing-institute",
+        #     repo="Hut23",
+        #     verbose=True,
+        #     )
+        # documents.extend(hut23_collaborators_loader.load_data())
 
     def _prep_llm(self) -> LLM:
         """
@@ -312,7 +403,7 @@ class LlamaIndex(ResponseModel):
         NotImplemented
             This must be implemented by a subclass of LlamaIndex.
         """
-        raise NotImplemented(
+        raise NotImplementedError(
             "_prep_llm needs to be implemented by a subclass of LlamaIndex."
         )
 
