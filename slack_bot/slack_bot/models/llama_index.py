@@ -294,7 +294,7 @@ class LlamaIndex(ResponseModel):
                 with open(data_file, "r") as f:
                     content = f.read()
                 documents.append(
-                    Document(content, extra_info={"filename": str(data_file)})
+                    Document(text=content, extra_info={"filename": str(data_file)})
                 )
         return documents
 
