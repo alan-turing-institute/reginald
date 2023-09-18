@@ -68,7 +68,7 @@ class LlamaIndex(ResponseModel):
             The type of engine to use when interacting with the data, options of "chat" or "query".
             Default is "chat".
         k : int, optional
-            `similarity_top_k` to use in query engine, by default 3
+            `similarity_top_k` to use in char or query engine, by default 3
         chunk_overlap_ratio : float, optional
             Chunk overlap as a ratio of chunk size, by default 0.1
         force_new_index : bool, optional
@@ -79,6 +79,14 @@ class LlamaIndex(ResponseModel):
         """
         super().__init__(emoji="llama")
         logging.info("Setting up Huggingface backend.")
+        if mode == "chat":
+            logging.info("Setting up chat engine.")
+        elif mode == "query":
+            logging.info("Setting up query engine.")
+        else:
+            logging.error("Mode must either be 'query' or 'chat'.")
+            sys.exit(1)
+
         self.max_input_size = max_input_size
         self.model_name = model_name
         self.num_output = num_output
@@ -138,17 +146,14 @@ class LlamaIndex(ResponseModel):
                 storage_context=storage_context, service_context=service_context
             )
 
-        if self.mode == "query":
-            self.query_engine = self.index.as_query_engine(similarity_top_k=k)
-            logging.info("Done setting up Huggingface backend for query engine.")
-        elif self.mode == "chat":
+        if self.mode == "chat":
             self.chat_engine = self.index.as_chat_engine(
                 chat_mode="context", similarity_top_k=k
             )
             logging.info("Done setting up Huggingface backend for chat engine.")
-        else:
-            logging.error("Mode must either be 'query' or 'chat'.")
-            sys.exit(1)
+        elif self.mode == "query":
+            self.query_engine = self.index.as_query_engine(similarity_top_k=k)
+            logging.info("Done setting up Huggingface backend for query engine.")
 
         self.error_response_template = (
             "Oh no! When I tried to get a response to your prompt, "
@@ -356,7 +361,7 @@ class LlamaIndexLlamaCPP(LlamaIndex):
     def __init__(
         self,
         model_name: str,
-        path: bool,
+        is_path: bool,
         n_gpu_layers: int = 0,
         *args: Any,
         **kwargs: Any,
@@ -369,14 +374,14 @@ class LlamaIndexLlamaCPP(LlamaIndex):
         ----------
         model_name : str
             Either the path to the model or the URL to download the model from
-        path : bool, optional
+        is_path : bool, optional
             If True, model_name is used as a path to the model file,
             otherwise it should be the URL to download the model
         n_gpu_layers : int, optional
             Number of layers to offload to GPU.
             If -1, all layers are offloaded, by default 0
         """
-        self.path = path
+        self.is_path = is_path
         self.n_gpu_layers = n_gpu_layers
         super().__init__(*args, model_name=model_name, **kwargs)
 
@@ -389,8 +394,8 @@ class LlamaIndexLlamaCPP(LlamaIndex):
         )
 
         return LlamaCPP(
-            model_url=self.model_name if not self.path else None,
-            model_path=self.model_name if self.path else None,
+            model_url=self.model_name if not self.is_path else None,
+            model_path=self.model_name if self.is_path else None,
             temperature=0.1,
             max_new_tokens=self.num_output,
             context_window=self.max_input_size,
