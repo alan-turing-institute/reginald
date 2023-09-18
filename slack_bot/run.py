@@ -119,7 +119,7 @@ async def main():
             "only use 'handbook.csv' file."
         ),
         default=os.environ.get("LLAMA_INDEX_WHICH_INDEX") or "all_data",
-        choices=["all_data", "public", "handbook"],
+        choices=["all_data", "public", "handbook", "wikis"],
     )
 
     args = parser.parse_args()
