@@ -278,29 +278,32 @@ class LlamaIndex(ResponseModel):
             logging.info("Regenerating index for all PUBLIC. Will take a long time...")
 
             # load public data from repos
-            self.load_handbook(documents, gh_token)
-            self.load_rse_course(documents, gh_token)
-            self.load_rds_course(documents, gh_token)
-            self.load_turing_way(documents, gh_token)
+            self._load_handbook(documents, gh_token)
+            self._load_rse_course(documents, gh_token)
+            self._load_rds_course(documents, gh_token)
+            self._load_turing_way(documents, gh_token)
 
         elif self.which_index == "all_data":
             logging.info("Regenerating index for ALL DATA. Will take a long time...")
 
             # load public data from repos
-            self.load_handbook(documents, gh_token)
-            self.load_rse_course(documents, gh_token)
-            self.load_rds_course(documents, gh_token)
-            self.load_turing_way(documents, gh_token)
+            self._load_handbook(documents, gh_token)
+            self._load_rse_course(documents, gh_token)
+            self._load_rds_course(documents, gh_token)
+            self._load_turing_way(documents, gh_token)
 
             # load hut23 data
-            self.load_hut23()
+            self._load_hut23()
+
+            # load wikis
+            self._load_wikis()
 
         else:
             logging.info("The data_files directory is unrecognized")
 
         return documents
 
-    def load_handbook(self, documents, gh_token):
+    def _load_handbook(self, documents, gh_token):
         handbook_loader = GithubRepositoryReader(
             GithubClient(gh_token),
             owner="alan-turing-institute",
@@ -311,7 +314,7 @@ class LlamaIndex(ResponseModel):
         )
         documents.extend(handbook_loader.load_data(branch="main"))
 
-    def load_rse_course(self, documents, gh_token):
+    def _load_rse_course(self, documents, gh_token):
         rse_course_loader = GithubRepositoryReader(
             GithubClient(gh_token),
             owner="alan-turing-institute",
@@ -324,7 +327,7 @@ class LlamaIndex(ResponseModel):
         )
         documents.extend(rse_course_loader.load_data(branch="main"))
 
-    def load_rds_course(self, documents, gh_token):
+    def _load_rds_course(self, documents, gh_token):
         rds_course_loader = GithubRepositoryReader(
             GithubClient(gh_token),
             owner="alan-turing-institute",
@@ -337,7 +340,7 @@ class LlamaIndex(ResponseModel):
         )
         documents.extend(rds_course_loader.load_data(branch="develop"))
 
-    def load_turing_way(self, documents, gh_token):
+    def _load_turing_way(self, documents, gh_token):
         turing_way_loader = GithubRepositoryReader(
             GithubClient(gh_token),
             owner="the-turing-way",
@@ -347,7 +350,7 @@ class LlamaIndex(ResponseModel):
         )
         documents.extend(turing_way_loader.load_data(branch="main"))
 
-    def load_hut23(self, documents, gh_token):
+    def _load_hut23(self, documents, gh_token):
         # load repo
         hut23_repo_loader = GithubRepositoryReader(
             GithubClient(gh_token),
