@@ -10,6 +10,7 @@ from tempfile import TemporaryDirectory
 from typing import Any, List, Optional
 
 import nest_asyncio
+import pandas as pd
 from git import Repo
 from langchain.embeddings import HuggingFaceEmbeddings
 from llama_hub.github_repo import GithubClient, GithubRepositoryReader
