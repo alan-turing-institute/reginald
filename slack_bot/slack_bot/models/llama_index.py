@@ -286,6 +286,9 @@ class LlamaIndex(ResponseModel):
         elif self.which_index == "public":
             logging.info("Regenerating index for all PUBLIC. Will take a long time...")
 
+            # load in scraped turing.ac.uk website
+            self._load_turing_ac_uk(documents)
+
             # load public data from repos
             self._load_handbook(documents, gh_token)
             self._load_rse_course(documents, gh_token)
@@ -294,6 +297,9 @@ class LlamaIndex(ResponseModel):
 
         elif self.which_index == "all_data":
             logging.info("Regenerating index for ALL DATA. Will take a long time...")
+
+            # load in scraped turing.ac.uk website
+            self._load_turing_ac_uk(documents)
 
             # load public data from repos
             self._load_handbook(documents, gh_token)
@@ -312,11 +318,17 @@ class LlamaIndex(ResponseModel):
 
         return documents
 
+    def _load_turing_ac_uk(self, documents):
+        documents.extend("self.data_dir/public/turingacuk-no-boilerplate.csv")
+
     def _load_handbook(self, documents, gh_token):
+        owner = "alan-turing-institute"
+        repo = "REG-handbook"
+
         handbook_loader = GithubRepositoryReader(
             GithubClient(gh_token),
-            owner="alan-turing-institute",
-            repo="REG-handbook",
+            owner=owner,
+            repo=repo,
             verbose=False,
             filter_file_extensions=([".md"], GithubRepositoryReader.FilterType.INCLUDE),
             filter_directories=(["content"], GithubRepositoryReader.FilterType.INCLUDE),
@@ -324,10 +336,13 @@ class LlamaIndex(ResponseModel):
         documents.extend(handbook_loader.load_data(branch="main"))
 
     def _load_rse_course(self, documents, gh_token):
+        owner = "alan-turing-institute"
+        repo = "rse-course"
+
         rse_course_loader = GithubRepositoryReader(
             GithubClient(gh_token),
-            owner="alan-turing-institute",
-            repo="rse-course",
+            owner=owner,
+            repo=repo,
             verbose=False,
             filter_file_extensions=(
                 [".md", ".ipynb"],
@@ -337,10 +352,13 @@ class LlamaIndex(ResponseModel):
         documents.extend(rse_course_loader.load_data(branch="main"))
 
     def _load_rds_course(self, documents, gh_token):
+        owner = "alan-turing-institute"
+        repo = "rds-course"
+
         rds_course_loader = GithubRepositoryReader(
             GithubClient(gh_token),
-            owner="alan-turing-institute",
-            repo="rds-course",
+            owner=owner,
+            repo=repo,
             verbose=False,
             filter_file_extensions=(
                 [".md", ".ipynb"],
@@ -350,21 +368,27 @@ class LlamaIndex(ResponseModel):
         documents.extend(rds_course_loader.load_data(branch="develop"))
 
     def _load_turing_way(self, documents, gh_token):
+        owner = "the-turing-way"
+        repo = "the-turing-way"
+
         turing_way_loader = GithubRepositoryReader(
             GithubClient(gh_token),
-            owner="the-turing-way",
-            repo="the-turing-way",
+            owner=owner,
+            repo=repo,
             verbose=False,
             filter_file_extensions=([".md"], GithubRepositoryReader.FilterType.INCLUDE),
         )
         documents.extend(turing_way_loader.load_data(branch="main"))
 
     def _load_hut23(self, documents, gh_token):
+        owner = "alan-turing-institute"
+        repo = "Hut23"
+
         # load repo
         hut23_repo_loader = GithubRepositoryReader(
             GithubClient(gh_token),
-            owner="alan-turing-institute",
-            repo="Hut23",
+            owner=owner,
+            repo=repo,
             verbose=False,
             filter_file_extensions=(
                 [".md", ".ipynb"],
@@ -386,20 +410,20 @@ class LlamaIndex(ResponseModel):
         # load_issues
         hut23_issues_loader = GitHubRepositoryIssuesReader(
             GitHubIssuesClient(gh_token),
-            owner="alan-turing-institute",
-            repo="Hut23",
+            owner=owner,
+            repo=repo,
             verbose=True,
         )
         documents.extend(hut23_issues_loader.load_data())
 
-        # load collaborators - waiting on PR
-        # hut23_collaborators_loader = GitHubRepositoryCollaboratorsReader(
-        #     GitHubCollaboratorsClient(gh_token),
-        #     owner="alan-turing-institute",
-        #     repo="Hut23",
-        #     verbose=True,
-        #     )
-        # documents.extend(hut23_collaborators_loader.load_data())
+        # load collaborators
+        hut23_collaborators_loader = GitHubRepositoryCollaboratorsReader(
+            GitHubCollaboratorsClient(gh_token),
+            owner=owner,
+            repo=repo,
+            verbose=True,
+        )
+        documents.extend(hut23_collaborators_loader.load_data())
 
     def _load_wikis(self, documents, gh_token):
         wiki_urls = [
