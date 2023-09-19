@@ -381,7 +381,7 @@ class LlamaIndex(ResponseModel):
                 GithubRepositoryReader.FilterType.INCLUDE,
             ),
         )
-        documents.extend(hut23_repo_loader.load_data(branch="master"))
+        documents.extend(hut23_repo_loader.load_data(branch="main"))
 
         # load_issues
         hut23_issues_loader = GitHubRepositoryIssuesReader(
