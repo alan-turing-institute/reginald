@@ -13,12 +13,14 @@ import nest_asyncio
 from git import Repo
 from langchain.embeddings import HuggingFaceEmbeddings
 from llama_hub.github_repo import GithubClient, GithubRepositoryReader
+from llama_hub.github_repo_collaborators import (
+    GitHubCollaboratorsClient,
+    GitHubRepositoryCollaboratorsReader,
+)
 from llama_hub.github_repo_issues import (
     GitHubIssuesClient,
     GitHubRepositoryIssuesReader,
 )
-
-# from llama_hub.github_repo_collaborators import GitHubCollaboratorsClient, GitHubRepositoryCollaboratorsReader
 from llama_index import (
     Document,
     PromptHelper,
