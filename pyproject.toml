@@ -5,6 +5,7 @@ description = "A Slack bot for REG Hack Week 2023"
 authors = ["evelinag <evelina@evelinag.com>",
            "James Robinson <jrobinson@turing.ac.uk>",
            "Ryan Chan <rchan@turing.ac.uk>",
+           "Rosie Wood <rwood@turing.ac.uk>",
            "Markus Hauru <mhauru@turing.ac.uk>",
            "May Yong <myong@turing.ac.uk>",
            "James Bishop <jbishop@turing.ac.uk>",
