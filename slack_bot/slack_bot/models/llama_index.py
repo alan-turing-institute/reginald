@@ -112,6 +112,7 @@ class LlamaIndex(ResponseModel):
         self.chunk_overlap_ratio = chunk_overlap_ratio
         self.data_dir = data_dir
         self.which_index = which_index
+        self.documents = []
 
         # set up LLM
         llm = self._prep_llm()
@@ -139,9 +140,9 @@ class LlamaIndex(ResponseModel):
 
         if force_new_index:
             logging.info("Generating the index from scratch...")
-            documents = self._prep_documents()
+            self._prep_documents()
             self.index = VectorStoreIndex.from_documents(
-                documents, service_context=service_context
+                self.documents, service_context=service_context
             )
 
             # Save the service context and persist the index
@@ -256,17 +257,12 @@ class LlamaIndex(ResponseModel):
             answer = response
         return answer
 
-    def _prep_documents(self) -> List[Document]:
+    def _prep_documents(self):
         """
         Method to prepare the documents for the index vector store.
 
-        Returns
-        -------
-        List[Document]
-            List of `llama_index.Documents` to be used to construct the index vector store.
         """
         # Prep the contextual documents
-        documents = []
         gh_token = os.getenv("GITHUB_TOKEN")
 
         if gh_token is None:
@@ -278,13 +274,13 @@ class LlamaIndex(ResponseModel):
             logging.info("Regenerating index only for the handbook")
 
             # load handbook from repo
-            self._load_handbook(documents, gh_token)
+            self._load_handbook(gh_token)
 
         elif self.which_index == "wikis":
             logging.info("Regenerating index only for the wikis")
 
             # load wikis
-            self._load_wikis(documents, gh_token)
+            self._load_wikis(gh_token)
 
         elif self.which_index == "public":
             logging.info("Regenerating index for all PUBLIC. Will take a long time...")
@@ -293,10 +289,10 @@ class LlamaIndex(ResponseModel):
             self._load_turing_ac_uk(documents)
 
             # load public data from repos
-            self._load_handbook(documents, gh_token)
-            self._load_rse_course(documents, gh_token)
-            self._load_rds_course(documents, gh_token)
-            self._load_turing_way(documents, gh_token)
+            self._load_handbook(gh_token)
+            self._load_rse_course(gh_token)
+            self._load_rds_course(gh_token)
+            self._load_turing_way(gh_token)
 
         elif self.which_index == "all_data":
             logging.info("Regenerating index for ALL DATA. Will take a long time...")
@@ -305,10 +301,10 @@ class LlamaIndex(ResponseModel):
             self._load_turing_ac_uk(documents)
 
             # load public data from repos
-            self._load_handbook(documents, gh_token)
-            self._load_rse_course(documents, gh_token)
-            self._load_rds_course(documents, gh_token)
-            self._load_turing_way(documents, gh_token)
+            self._load_handbook(gh_token)
+            self._load_rse_course(gh_token)
+            self._load_rds_course(gh_token)
+            self._load_turing_way(gh_token)
 
             # load hut23 data
             self._load_hut23(documents, gh_token)
@@ -319,8 +315,6 @@ class LlamaIndex(ResponseModel):
         else:
             logging.info("The data_files directory is unrecognized")
 
-        return documents
-
     def _load_turing_ac_uk(self, documents):
         data_file = f"{self.data_dir}/public/turingacuk-no-boilerplate.csv"
         turing_df = pd.read_csv(data_file)
@@ -330,7 +324,7 @@ class LlamaIndex(ResponseModel):
             for row in turing_df.iterrows()
         ]
 
-    def _load_handbook(self, documents, gh_token):
+    def _load_handbook(self, gh_token):
         owner = "alan-turing-institute"
         repo = "REG-handbook"
 
@@ -342,9 +336,9 @@ class LlamaIndex(ResponseModel):
             filter_file_extensions=([".md"], GithubRepositoryReader.FilterType.INCLUDE),
             filter_directories=(["content"], GithubRepositoryReader.FilterType.INCLUDE),
         )
-        documents.extend(handbook_loader.load_data(branch="main"))
+        self.documents.extend(handbook_loader.load_data(branch="main"))
 
-    def _load_rse_course(self, documents, gh_token):
+    def _load_rse_course(self, gh_token):
         owner = "alan-turing-institute"
         repo = "rse-course"
 
@@ -358,9 +352,9 @@ class LlamaIndex(ResponseModel):
                 GithubRepositoryReader.FilterType.INCLUDE,
             ),
         )
-        documents.extend(rse_course_loader.load_data(branch="main"))
+        self.documents.extend(rse_course_loader.load_data(branch="main"))
 
-    def _load_rds_course(self, documents, gh_token):
+    def _load_rds_course(self, gh_token):
         owner = "alan-turing-institute"
         repo = "rds-course"
 
@@ -374,9 +368,9 @@ class LlamaIndex(ResponseModel):
                 GithubRepositoryReader.FilterType.INCLUDE,
             ),
         )
-        documents.extend(rds_course_loader.load_data(branch="develop"))
+        self.documents.extend(rds_course_loader.load_data(branch="develop"))
 
-    def _load_turing_way(self, documents, gh_token):
+    def _load_turing_way(self, gh_token):
         owner = "the-turing-way"
         repo = "the-turing-way"
 
@@ -387,9 +381,9 @@ class LlamaIndex(ResponseModel):
             verbose=False,
             filter_file_extensions=([".md"], GithubRepositoryReader.FilterType.INCLUDE),
         )
-        documents.extend(turing_way_loader.load_data(branch="main"))
+        self.documents.extend(turing_way_loader.load_data(branch="main"))
 
-    def _load_hut23(self, documents, gh_token):
+    def _load_hut23(self, gh_token):
         owner = "alan-turing-institute"
         repo = "Hut23"
 
@@ -414,7 +408,7 @@ class LlamaIndex(ResponseModel):
                 GithubRepositoryReader.FilterType.INCLUDE,
             ),
         )
-        documents.extend(hut23_repo_loader.load_data(branch="main"))
+        self.documents.extend(hut23_repo_loader.load_data(branch="main"))
 
         # load_issues
         hut23_issues_loader = GitHubRepositoryIssuesReader(
@@ -423,7 +417,7 @@ class LlamaIndex(ResponseModel):
             repo=repo,
             verbose=True,
         )
-        documents.extend(hut23_issues_loader.load_data())
+        self.documents.extend(hut23_issues_loader.load_data())
 
         # load collaborators
         hut23_collaborators_loader = GitHubRepositoryCollaboratorsReader(
@@ -434,7 +428,7 @@ class LlamaIndex(ResponseModel):
         )
         documents.extend(hut23_collaborators_loader.load_data())
 
-    def _load_wikis(self, documents, gh_token):
+    def _load_wikis(self, gh_token):
         wiki_urls = [
             "https://github.com/alan-turing-institute/research-engineering-group.wiki.git",
             "https://github.com/alan-turing-institute/Hut23.wiki.git",
@@ -472,7 +466,7 @@ class LlamaIndex(ResponseModel):
             # add `get_urls` function to reader
             reader.file_metadata = get_urls
 
-            documents.extend(reader.load_data())
+            self.documents.extend(reader.load_data())
 
     def _prep_llm(self) -> LLM:
         """
