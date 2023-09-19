@@ -14,6 +14,7 @@ import pandas as pd
 from git import Repo
 from langchain.embeddings import HuggingFaceEmbeddings
 from llama_hub.github_repo import GithubClient, GithubRepositoryReader
+
 # from llama_hub.github_repo_collaborators import (
 #     GitHubCollaboratorsClient,
 #     GitHubRepositoryCollaboratorsReader,
@@ -286,7 +287,7 @@ class LlamaIndex(ResponseModel):
             logging.info("Regenerating index for all PUBLIC. Will take a long time...")
 
             # load in scraped turing.ac.uk website
-            self._load_turing_ac_uk(documents)
+            self._load_turing_ac_uk()
 
             # load public data from repos
             self._load_handbook(gh_token)
@@ -298,7 +299,7 @@ class LlamaIndex(ResponseModel):
             logging.info("Regenerating index for ALL DATA. Will take a long time...")
 
             # load in scraped turing.ac.uk website
-            self._load_turing_ac_uk(documents)
+            self._load_turing_ac_uk()
 
             # load public data from repos
             self._load_handbook(gh_token)
