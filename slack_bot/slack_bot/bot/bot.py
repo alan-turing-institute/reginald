@@ -46,12 +46,12 @@ class Bot(SocketModeRequestListener):
             # If this is a direct message to REGinald...
             if event_type == "message" and event_subtype is None:
                 self.react(client, event["channel"], event["ts"])
-                model_response = self.model.direct_message(message, user_id)
+                model_response = self.model.respond(message, user_id)
 
             # If @REGinald is mentioned in a channel
             elif event_type == "app_mention":
                 self.react(client, event["channel"], event["ts"])
-                model_response = self.model.channel_mention(message, user_id)
+                model_response = self.model.respond(message, user_id)
 
             # Otherwise
             else:
