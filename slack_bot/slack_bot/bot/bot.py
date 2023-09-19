@@ -24,7 +24,7 @@ class Bot(AsyncSocketModeRequestListener):
             task = asyncio.create_task(self.worker(self.queue))
             tasks.append(task)
 
-        # await self.queue.join()
+        await self.queue.join()
 
         # for task in tasks:
         #     task.cancel()
