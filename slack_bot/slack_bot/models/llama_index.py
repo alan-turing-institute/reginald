@@ -14,10 +14,10 @@ import pandas as pd
 from git import Repo
 from langchain.embeddings import HuggingFaceEmbeddings
 from llama_hub.github_repo import GithubClient, GithubRepositoryReader
-from llama_hub.github_repo_collaborators import (
-    GitHubCollaboratorsClient,
-    GitHubRepositoryCollaboratorsReader,
-)
+# from llama_hub.github_repo_collaborators import (
+#     GitHubCollaboratorsClient,
+#     GitHubRepositoryCollaboratorsReader,
+# )
 from llama_hub.github_repo_issues import (
     GitHubIssuesClient,
     GitHubRepositoryIssuesReader,
@@ -315,11 +315,11 @@ class LlamaIndex(ResponseModel):
         else:
             logging.info("The data_files directory is unrecognized")
 
-    def _load_turing_ac_uk(self, documents):
+    def _load_turing_ac_uk(self):
         data_file = f"{self.data_dir}/public/turingacuk-no-boilerplate.csv"
         turing_df = pd.read_csv(data_file)
         turing_df = turing_df[~turing_df.loc[:, "body"].isna()]
-        documents += [
+        self.documents += [
             Document(text=row[1]["body"], extra_info={"filename": row[1]["url"]})
             for row in turing_df.iterrows()
         ]
@@ -420,13 +420,13 @@ class LlamaIndex(ResponseModel):
         self.documents.extend(hut23_issues_loader.load_data())
 
         # load collaborators
-        hut23_collaborators_loader = GitHubRepositoryCollaboratorsReader(
-            GitHubCollaboratorsClient(gh_token),
-            owner=owner,
-            repo=repo,
-            verbose=True,
-        )
-        documents.extend(hut23_collaborators_loader.load_data())
+        # hut23_collaborators_loader = GitHubRepositoryCollaboratorsReader(
+        #     GitHubCollaboratorsClient(gh_token),
+        #     owner=owner,
+        #     repo=repo,
+        #     verbose=True,
+        # )
+        # self.documents.extend(hut23_collaborators_loader.load_data())
 
     def _load_wikis(self, gh_token):
         wiki_urls = [
