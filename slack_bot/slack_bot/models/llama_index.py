@@ -321,7 +321,13 @@ class LlamaIndex(ResponseModel):
         return documents
 
     def _load_turing_ac_uk(self, documents):
-        documents.extend("self.data_dir/public/turingacuk-no-boilerplate.csv")
+        data_file = f"{self.data_dir}/public/turingacuk-no-boilerplate.csv"
+        turing_df = pd.read_csv(data_file)
+        turing_df = turing_df[~turing_df.loc[:, "body"].isna()]
+        documents += [
+            Document(text=row[1]["body"], extra_info={"filename": row[1]["url"]})
+            for row in turing_df.iterrows()
+        ]
 
     def _load_handbook(self, documents, gh_token):
         owner = "alan-turing-institute"
