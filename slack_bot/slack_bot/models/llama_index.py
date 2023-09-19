@@ -302,10 +302,10 @@ class LlamaIndex(ResponseModel):
             self._load_turing_way(documents, gh_token)
 
             # load hut23 data
-            self._load_hut23()
+            self._load_hut23(documents, gh_token)
 
             # load wikis
-            self._load_wikis()
+            self._load_wikis(documents, gh_token)
 
         else:
             logging.info("The data_files directory is unrecognized")
