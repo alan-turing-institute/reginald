@@ -15,6 +15,8 @@ DEFAULT_LLAMA_CPP_GGUF_MODEL = (
     "/main/llama-2-13b-chat.Q6_K.gguf"
 )
 DEFAULT_HF_MODEL = "StabilityAI/stablelm-tuned-alpha-3b"
+DEFAULT_LLAMA_INDEX_AZURE_DEPLOYMENT = "reginald-gpt35-turbo"
+DEFAULT_CHAT_COMPLETION_AZURE_DEPLOYMENT = "reginald-curie"
 
 
 async def main():
@@ -161,6 +163,12 @@ async def main():
     # Initialise LLM reponse model
     logging.info(f"Initialising bot with model: {args.model}")
 
+    logging.info(
+        f"args.model_name or os.environ.get('LLAMA_INDEX_MODEL_NAME'): {args.model_name or os.environ.get('LLAMA_INDEX_MODEL_NAME')}"
+    )
+    logging.info(
+        f"args.model in ['chat-completion-azure', 'llama-index-gpt-azure']: {args.model in ['chat-completion-azure', 'llama-index-gpt-azure']}"
+    )
     # Set up any model args that are required
     if args.model == "llama-index-llama-cpp":
         # try to obtain model name from env var
@@ -192,6 +200,22 @@ async def main():
             "model_name": model_name,
             "device": args.device,
             "max_input_size": args.max_input_size,
+        }
+    elif args.model in ["chat-completion-azure", "llama-index-gpt-azure"]:
+        # try to obtain model name from env var
+        # if model name is provided via command line, override env var
+        model_name = args.model_name or os.environ.get("LLAMA_INDEX_MODEL_NAME")
+
+        # if no model name is provided by command line or env var,
+        # default to DEFAULT_HF_MODEL
+        if model_name is None:
+            if args.model == "chat-completion-azure":
+                model_name = DEFAULT_CHAT_COMPLETION_AZURE_DEPLOYMENT
+            elif args.model == "llama-index-gpt-azure":
+                model_name = DEFAULT_LLAMA_INDEX_AZURE_DEPLOYMENT
+
+        model_args = {
+            "deployment_name": model_name,
         }
     else:
         model_args = {}

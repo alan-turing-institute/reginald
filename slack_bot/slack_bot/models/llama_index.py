@@ -650,7 +650,9 @@ class LlamaIndexGPTOpenAI(LlamaIndex):
 
 
 class LlamaIndexGPTAzure(LlamaIndex):
-    def __init__(self, *args: Any, **kwargs: Any) -> None:
+    def __init__(
+        self, deployment_name: str = "reginald-gpt35-turbo", *args: Any, **kwargs: Any
+    ) -> None:
         """
         `LlamaIndexGPTAzure` is a subclass of `LlamaIndex` that uses Azure's
         instance of OpenAI's LLMs to implement the LLM.
@@ -669,7 +671,7 @@ class LlamaIndexGPTAzure(LlamaIndex):
             raise ValueError("You must set OPENAI_AZURE_API_KEY for Azure OpenAI.")
 
         # deployment name can be found in the Azure AI Studio portal
-        self.deployment_name = "reginald-gpt35-turbo"
+        self.deployment_name = deployment_name
         self.openai_api_base = os.getenv("OPENAI_AZURE_API_BASE")
         self.openai_api_key = os.getenv("OPENAI_AZURE_API_KEY")
         self.openai_api_version = "2023-03-15-preview"
@@ -679,6 +681,7 @@ class LlamaIndexGPTAzure(LlamaIndex):
         )
 
     def _prep_llm(self) -> LLM:
+        logging.info(f"Setting up AzureOpenAI LLM (model {self.deployment_name})")
         return AzureOpenAI(
             model=self.model_name,
             engine=self.deployment_name,
