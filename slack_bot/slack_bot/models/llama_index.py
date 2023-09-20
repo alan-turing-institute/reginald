@@ -6,10 +6,23 @@ import os
 import pathlib
 import re
 import sys
+from tempfile import TemporaryDirectory
 from typing import Any, List, Optional
 
+import nest_asyncio
 import pandas as pd
+from git import Repo
 from langchain.embeddings import HuggingFaceEmbeddings
+from llama_hub.github_repo import GithubClient, GithubRepositoryReader
+
+# from llama_hub.github_repo_collaborators import (
+#     GitHubCollaboratorsClient,
+#     GitHubRepositoryCollaboratorsReader,
+# )
+from llama_hub.github_repo_issues import (
+    GitHubIssuesClient,
+    GitHubRepositoryIssuesReader,
+)
 from llama_index import (
     Document,
     PromptHelper,
@@ -22,7 +35,10 @@ from llama_index.llms import AzureOpenAI, HuggingFaceLLM, LlamaCPP, OpenAI
 from llama_index.llms.base import LLM
 from llama_index.llms.llama_utils import completion_to_prompt, messages_to_prompt
 from llama_index.prompts import PromptTemplate
+from llama_index.readers import SimpleDirectoryReader
 from llama_index.response.schema import RESPONSE_TYPE
+
+nest_asyncio.apply()
 
 from .base import MessageResponse, ResponseModel
 
@@ -91,12 +107,13 @@ class LlamaIndex(ResponseModel):
         self.model_name = model_name
         self.num_output = num_output
         if chunk_size is None:
-            chunk_size = math.ceil(max_input_size / k)
+            chunk_size = math.ceil(max_input_size / (k + 1))
         self.mode = mode
         self.chunk_size = chunk_size
         self.chunk_overlap_ratio = chunk_overlap_ratio
         self.data_dir = data_dir
         self.which_index = which_index
+        self.documents = []
 
         # set up LLM
         llm = self._prep_llm()
@@ -124,9 +141,9 @@ class LlamaIndex(ResponseModel):
 
         if force_new_index:
             logging.info("Generating the index from scratch...")
-            documents = self._prep_documents()
+            self._prep_documents()
             self.index = VectorStoreIndex.from_documents(
-                documents, service_context=service_context
+                self.documents, service_context=service_context
             )
 
             # Save the service context and persist the index
@@ -146,13 +163,16 @@ class LlamaIndex(ResponseModel):
                 storage_context=storage_context, service_context=service_context
             )
 
+        response_mode = "simple_summarize"
         if self.mode == "chat":
             self.chat_engine = self.index.as_chat_engine(
-                chat_mode="context", similarity_top_k=k
+                chat_mode="context", response_mode=response_mode, similarity_top_k=k
             )
             logging.info("Done setting up Huggingface backend for chat engine.")
         elif self.mode == "query":
-            self.query_engine = self.index.as_query_engine(similarity_top_k=k)
+            self.query_engine = self.index.as_query_engine(
+                response_mode=response_mode, similarity_top_k=k
+            )
             logging.info("Done setting up Huggingface backend for query engine.")
 
         self.error_response_template = (
@@ -179,11 +199,16 @@ class LlamaIndex(ResponseModel):
         """
         texts = []
         for source_node in response.source_nodes:
-            source_text = (
-                source_node.node.extra_info["filename"]
-                + f" (similarity: {round(source_node.score, 3)})"
-            )
+            # obtain the URL for source
+            try:
+                node_url = source_node.node.extra_info["url"]
+            except KeyError:
+                node_url = source_node.node.extra_info["filename"]
+
+            # add its similarity score and append to texts
+            source_text = node_url + f" (similarity: {round(source_node.score, 2)})"
             texts.append(source_text)
+
         result = "I read the following documents to compose this answer:\n"
         result += "\n\n".join(texts)
         return result
@@ -241,62 +266,224 @@ class LlamaIndex(ResponseModel):
             answer = response
         return answer
 
-    def _prep_documents(self) -> List[Document]:
+    def _prep_documents(self):
         """
         Method to prepare the documents for the index vector store.
 
-        Returns
-        -------
-        List[Document]
-            List of `llama_index.Documents` to be used to construct the index vector store.
         """
         # Prep the contextual documents
-        documents = []
+        gh_token = os.getenv("GITHUB_TOKEN")
+
+        if gh_token is None:
+            raise ValueError(
+                "Please export your github personal access token as 'GITHUB_TOKEN'."
+            )
 
         if self.which_index == "handbook":
             logging.info("Regenerating index only for the handbook")
 
-            data_files = [self.data_dir / PUBLIC_DATA_DIR / "handbook-scraped.csv"]
+            # load handbook from repo
+            self._load_handbook(gh_token)
+
+        elif self.which_index == "wikis":
+            logging.info("Regenerating index only for the wikis")
+
+            # load wikis
+            self._load_wikis(gh_token)
 
         elif self.which_index == "public":
             logging.info("Regenerating index for all PUBLIC. Will take a long time...")
 
-            # pull out public data
-            data_files = list((self.data_dir / PUBLIC_DATA_DIR).glob("**/*.md"))
-            data_files += list((self.data_dir / PUBLIC_DATA_DIR).glob("**/*.csv"))
-            data_files += list((self.data_dir / PUBLIC_DATA_DIR).glob("**/*.txt"))
+            # load in scraped turing.ac.uk website
+            self._load_turing_ac_uk()
+
+            # load public data from repos
+            self._load_handbook(gh_token)
+            self._load_rse_course(gh_token)
+            self._load_rds_course(gh_token)
+            self._load_turing_way(gh_token)
+
         elif self.which_index == "all_data":
             logging.info("Regenerating index for ALL DATA. Will take a long time...")
 
-            # pull out public data
-            data_files = list((self.data_dir / PUBLIC_DATA_DIR).glob("**/*.md"))
-            data_files += list((self.data_dir / PUBLIC_DATA_DIR).glob("**/*.csv"))
-            data_files += list((self.data_dir / PUBLIC_DATA_DIR).glob("**/*.txt"))
-            # include private internal data
-            data_files += list((self.data_dir / INTERNAL_DATA_DIR).glob("**/*.md"))
-            data_files += list((self.data_dir / INTERNAL_DATA_DIR).glob("**/*.csv"))
-            data_files += list((self.data_dir / INTERNAL_DATA_DIR).glob("**/*.txt"))
+            # load in scraped turing.ac.uk website
+            self._load_turing_ac_uk()
+
+            # load public data from repos
+            self._load_handbook(gh_token)
+            self._load_rse_course(gh_token)
+            self._load_rds_course(gh_token)
+            self._load_turing_way(gh_token)
+
+            # load hut23 data
+            self._load_hut23(gh_token)
+
+            # load wikis
+            self._load_wikis(gh_token)
 
         else:
             logging.info("The data_files directory is unrecognized")
 
-        for data_file in data_files:
-            if data_file.suffix == ".csv":
-                df = pd.read_csv(data_file)
-                df = df[~df.loc[:, "body"].isna()]
-                documents += [
-                    Document(
-                        text=row[1]["body"], extra_info={"filename": row[1]["url"]}
-                    )
-                    for row in df.iterrows()
-                ]
-            elif data_file.suffix in (".md", ".txt"):
-                with open(data_file, "r") as f:
-                    content = f.read()
-                documents.append(
-                    Document(text=content, extra_info={"filename": str(data_file)})
-                )
-        return documents
+    def _load_turing_ac_uk(self):
+        data_file = f"{self.data_dir}/public/turingacuk-no-boilerplate.csv"
+        turing_df = pd.read_csv(data_file)
+        turing_df = turing_df[~turing_df.loc[:, "body"].isna()]
+        self.documents += [
+            Document(text=row[1]["body"], extra_info={"url": row[1]["url"]})
+            for row in turing_df.iterrows()
+        ]
+
+    def _load_handbook(self, gh_token):
+        owner = "alan-turing-institute"
+        repo = "REG-handbook"
+
+        handbook_loader = GithubRepositoryReader(
+            GithubClient(gh_token),
+            owner=owner,
+            repo=repo,
+            verbose=False,
+            filter_file_extensions=([".md"], GithubRepositoryReader.FilterType.INCLUDE),
+            filter_directories=(["content"], GithubRepositoryReader.FilterType.INCLUDE),
+        )
+        self.documents.extend(handbook_loader.load_data(branch="main"))
+
+    def _load_rse_course(self, gh_token):
+        owner = "alan-turing-institute"
+        repo = "rse-course"
+
+        rse_course_loader = GithubRepositoryReader(
+            GithubClient(gh_token),
+            owner=owner,
+            repo=repo,
+            verbose=False,
+            filter_file_extensions=(
+                [".md", ".ipynb"],
+                GithubRepositoryReader.FilterType.INCLUDE,
+            ),
+        )
+        self.documents.extend(rse_course_loader.load_data(branch="main"))
+
+    def _load_rds_course(self, gh_token):
+        owner = "alan-turing-institute"
+        repo = "rds-course"
+
+        rds_course_loader = GithubRepositoryReader(
+            GithubClient(gh_token),
+            owner=owner,
+            repo=repo,
+            verbose=False,
+            filter_file_extensions=(
+                [".md", ".ipynb"],
+                GithubRepositoryReader.FilterType.INCLUDE,
+            ),
+        )
+        self.documents.extend(rds_course_loader.load_data(branch="develop"))
+
+    def _load_turing_way(self, gh_token):
+        owner = "the-turing-way"
+        repo = "the-turing-way"
+
+        turing_way_loader = GithubRepositoryReader(
+            GithubClient(gh_token),
+            owner=owner,
+            repo=repo,
+            verbose=False,
+            filter_file_extensions=([".md"], GithubRepositoryReader.FilterType.INCLUDE),
+        )
+        self.documents.extend(turing_way_loader.load_data(branch="main"))
+
+    def _load_hut23(self, gh_token):
+        owner = "alan-turing-institute"
+        repo = "Hut23"
+
+        # load repo
+        hut23_repo_loader = GithubRepositoryReader(
+            GithubClient(gh_token),
+            owner=owner,
+            repo=repo,
+            verbose=False,
+            filter_file_extensions=(
+                [".md", ".ipynb"],
+                GithubRepositoryReader.FilterType.INCLUDE,
+            ),
+            filter_directories=(
+                [
+                    "JDs",
+                    "development",
+                    "newsletters",
+                    "objectives",
+                    "rfc",
+                ],  # we can adjust these
+                GithubRepositoryReader.FilterType.INCLUDE,
+            ),
+        )
+        self.documents.extend(hut23_repo_loader.load_data(branch="main"))
+
+        # load_issues
+        hut23_issues_loader = GitHubRepositoryIssuesReader(
+            GitHubIssuesClient(gh_token),
+            owner=owner,
+            repo=repo,
+            verbose=True,
+        )
+
+        issue_docs = hut23_issues_loader.load_data()
+        for doc in issue_docs:
+            stripped_url = doc.metadata["url"].removeprefix(
+                "https://api.github.com/repos/"
+            )
+            url = os.path.join("https://github.com/", stripped_url)
+            doc.metadata["url"] = url
+        self.documents.extend(issue_docs)
+
+        # load collaborators
+        # hut23_collaborators_loader = GitHubRepositoryCollaboratorsReader(
+        #     GitHubCollaboratorsClient(gh_token),
+        #     owner=owner,
+        #     repo=repo,
+        #     verbose=True,
+        # )
+        # self.documents.extend(hut23_collaborators_loader.load_data())
+
+    def _load_wikis(self, gh_token):
+        wiki_urls = [
+            "https://github.com/alan-turing-institute/research-engineering-group.wiki.git",
+            "https://github.com/alan-turing-institute/Hut23.wiki.git",
+        ]
+
+        for url in wiki_urls:
+            temp_dir = TemporaryDirectory()
+            wiki_path = os.path.join(temp_dir.name, url.split("/")[-1])
+
+            _ = Repo.clone_from(url, wiki_path)
+
+            reader = SimpleDirectoryReader(
+                input_dir=wiki_path,
+                required_exts=[".md"],
+                recursive=True,
+                filename_as_id=True,
+            )
+
+            # get base url and file names
+            base_url = url.removesuffix(".wiki.git")
+            fnames = [str(file) for file in reader.input_files]
+
+            # get file urls and create dictionary to map fname to url
+            file_urls = [
+                os.path.join(base_url, "wiki", fname.split("/")[-1].removesuffix(".md"))
+                for fname in fnames
+            ]
+            file_urls_dict = {
+                fname: file_url for fname, file_url in zip(fnames, file_urls)
+            }
+
+            def get_urls(fname):
+                return {"url": file_urls_dict.get(fname)}
+
+            # add `get_urls` function to reader
+            reader.file_metadata = get_urls
+
+            self.documents.extend(reader.load_data())
 
     def _prep_llm(self) -> LLM:
         """
@@ -312,7 +499,7 @@ class LlamaIndex(ResponseModel):
         NotImplemented
             This must be implemented by a subclass of LlamaIndex.
         """
-        raise NotImplemented(
+        raise NotImplementedError(
             "_prep_llm needs to be implemented by a subclass of LlamaIndex."
         )
 
