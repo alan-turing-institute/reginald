@@ -12,37 +12,15 @@ from ..models.base import ResponseModel
 class Bot(AsyncSocketModeRequestListener):
     def __init__(self, model: ResponseModel) -> None:
         self.model = model
-        self.queue = asyncio.Queue(maxsize=10)
+        self.queue = asyncio.Queue(maxsize=12)
+
+        # create task to run worker
+        task = asyncio.create_task(self.worker(self.queue))
 
     async def __call__(self, client: SocketModeClient, req: SocketModeRequest) -> None:
-        self.queue.put_nowait(self._process_request(client, req))
-        logging.info(f"There are currently {self.queue.qsize()} items in the queue.")
-
-        # Create three worker tasks to process the queue concurrently.
-        tasks = []
-        for i in range(3):
-            task = asyncio.create_task(self.worker(self.queue))
-            tasks.append(task)
-
-        # await self.queue.join()
-
-        # for task in tasks:
-        #     task.cancel()
-
-    @staticmethod
-    async def worker(queue):
-        while True:
-            coro = await queue.get()
-            await coro
-            # Notify the queue that the "work item" has been processed.
-            queue.task_done()
-
-    async def _process_request(
-        self, client: SocketModeClient, req: SocketModeRequest
-    ) -> None:
         if req.type != "events_api":
             logging.info(f"Received unexpected request of type '{req.type}'")
-            return None
+            return
 
         # Acknowledge the request
         logging.info("Received an events_api request")
@@ -56,44 +34,23 @@ class Bot(AsyncSocketModeRequestListener):
             # Ignore messages from bots
             if event.get("bot_id") is not None:
                 logging.info("Ignoring an event triggered by a bot.")
-                return None
+                return
             if event.get("hidden") is not None:
                 logging.info("Ignoring hidden message.")
-                return None
+                return
 
-            # Extract user and message information
-            message = event["text"]
-            user_id = event["user"]
-            event_type = event["type"]
-            event_subtype = event.get("subtype", None)
+            # add clock emoji
+            logging.info("Reacting with clock emoji.")
+            await client.web_client.reactions_add(
+                name="clock2",
+                channel=event["channel"],
+                timestamp=event["ts"],
+            )
 
-            # Start processing the message
-            logging.info(f"Processing message '{message}' from user '{user_id}'.")
-
-            # If this is a direct message to REGinald...
-            if event_type == "message" and event_subtype is None:
-                await self.react(client, event["channel"], event["ts"])
-                model_response = self.model.direct_message(message, user_id)
-
-            # If @REGinald is mentioned in a channel
-            elif event_type == "app_mention":
-                await self.react(client, event["channel"], event["ts"])
-                model_response = self.model.channel_mention(message, user_id)
-
-            # Otherwise
-            else:
-                logging.info(f"Received unexpected event of type '{event['type']}'.")
-                return None
-
-            # Add a reply as required
-            if model_response and model_response.message:
-                logging.info(f"Posting reply {model_response.message}.")
-                await client.web_client.chat_postMessage(
-                    channel=event["channel"],
-                    text=f"<@{user_id}>, you asked me: '{message}'.\n{model_response.message}",
-                )
-            else:
-                logging.info("No reply was generated.")
+            self.queue.put_nowait((client, event))
+            logging.info(
+                f"There are currently {self.queue.qsize()} items in the queue."
+            )
 
         except KeyError as exc:
             logging.warning(f"Attempted to access key that does not exist.\n{str(exc)}")
@@ -103,6 +60,62 @@ class Bot(AsyncSocketModeRequestListener):
                 f"Something went wrong in processing a Slack request.\nPayload: {req.payload}.\n{str(exc)}"
             )
             raise
+
+    async def worker(self, queue):
+        while True:
+            (client, event) = await queue.get()
+            await self._process_request(client, event)
+            # Notify the queue that the "work item" has been processed.
+            queue.task_done()
+
+    async def _process_request(
+        self,
+        client: SocketModeClient,
+        event: str,
+    ) -> None:
+        # Extract user and message information
+        message = event["text"]
+        user_id = event["user"]
+        event_type = event["type"]
+        event_subtype = event.get("subtype", None)
+
+        # Start processing the message
+        logging.info(f"Processing message '{message}' from user '{user_id}'.")
+
+        await client.web_client.reactions_remove(
+            name="clock2",
+            channel=event["channel"],
+            timestamp=event["ts"],
+        )
+
+        # If this is a direct message to REGinald...
+        if event_type == "message" and event_subtype is None:
+            await self.react(client, event["channel"], event["ts"])
+            model_response = await asyncio.get_running_loop().run_in_executor(
+                None, self.model.respond, message, user_id
+            )
+
+        # If @REGinald is mentioned in a channel
+        elif event_type == "app_mention":
+            await self.react(client, event["channel"], event["ts"])
+            model_response = await asyncio.get_running_loop().run_in_executor(
+                None, self.model.respond, message, user_id
+            )
+
+        # Otherwise
+        else:
+            logging.info(f"Received unexpected event of type '{event['type']}'.")
+            return
+
+        # Add a reply as required
+        if model_response and model_response.message:
+            logging.info(f"Posting reply {model_response.message}.")
+            await client.web_client.chat_postMessage(
+                channel=event["channel"],
+                text=f"<@{user_id}>, you asked me: '{message}'.\n{model_response.message}",
+            )
+        else:
+            logging.info("No reply was generated.")
 
     async def react(
         self, client: SocketModeClient, channel: str, timestamp: str
