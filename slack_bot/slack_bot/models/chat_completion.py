@@ -1,4 +1,5 @@
 # Standard library imports
+import logging
 import os
 from typing import Any
 
@@ -15,14 +16,17 @@ class ChatCompletionBase(ResponseModel):
 
 
 class ChatCompletionAzure(ChatCompletionBase):
-    def __init__(self, *args: Any, **kwargs: Any) -> None:
+    def __init__(
+        self, deployment_name: str = "reginald-curie", *args: Any, **kwargs: Any
+    ) -> None:
+        logging.info(f"Setting up AzureOpenAI LLM (model {deployment_name})")
         super().__init__(*args, **kwargs)
         self.api_base = os.getenv("OPENAI_AZURE_API_BASE")
         self.api_key = os.getenv("OPENAI_AZURE_API_KEY")
         self.api_type = "azure"
         self.api_version = "2023-03-15-preview"
         self.best_of = 1
-        self.engine = "reginald-curie"
+        self.engine = deployment_name
         self.frequency_penalty = 0
         self.max_tokens = 100
         self.presence_penalty = 0
