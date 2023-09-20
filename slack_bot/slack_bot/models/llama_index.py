@@ -196,11 +196,16 @@ class LlamaIndex(ResponseModel):
         """
         texts = []
         for source_node in response.source_nodes:
-            source_text = (
-                source_node.node.extra_info["url"]
-                + f" (similarity: {round(source_node.score, 3)})"
-            )
+            # obtain the URL for source
+            try:
+                node_url = source_node.node.extra_info["url"]
+            except KeyError:
+                node_url = source_node.node.extra_info["filename"]
+
+            # add its similarity score and append to texts
+            source_text = node_url + f" (similarity: {round(source_node.score, 2)})"
             texts.append(source_text)
+
         result = "I read the following documents to compose this answer:\n"
         result += "\n\n".join(texts)
         return result
@@ -321,7 +326,7 @@ class LlamaIndex(ResponseModel):
         turing_df = pd.read_csv(data_file)
         turing_df = turing_df[~turing_df.loc[:, "body"].isna()]
         self.documents += [
-            Document(text=row[1]["body"], extra_info={"filename": row[1]["url"]})
+            Document(text=row[1]["body"], extra_info={"url": row[1]["url"]})
             for row in turing_df.iterrows()
         ]
 
