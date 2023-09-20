@@ -109,6 +109,7 @@ class LlamaIndex(ResponseModel):
         if chunk_size is None:
             chunk_size = math.ceil(max_input_size / (k + 1))
         self.mode = mode
+        self.k = k
         self.chunk_size = chunk_size
         self.chunk_overlap_ratio = chunk_overlap_ratio
         self.data_dir = data_dir
@@ -165,9 +166,7 @@ class LlamaIndex(ResponseModel):
 
         response_mode = "simple_summarize"
         if self.mode == "chat":
-            self.chat_engine = self.index.as_chat_engine(
-                chat_mode="context", response_mode=response_mode, similarity_top_k=k
-            )
+            self.chat_engine = {}
             logging.info("Done setting up Huggingface backend for chat engine.")
         elif self.mode == "query":
             self.query_engine = self.index.as_query_engine(
@@ -230,25 +229,29 @@ class LlamaIndex(ResponseModel):
         str
             String containing the response from the query engine.
         """
+        response_mode = "simple_summarize"
         try:
-            if self.mode == "query":
-                query_response = self.query_engine.query(msg_in)
-                # concatenate the response with the resources that it used
-                response = (
-                    query_response.response
-                    + "\n\n\n"
-                    + self._format_sources(query_response)
-                )
-            elif self.mode == "chat":
-                chat_response = self.chat_engine.chat(msg_in)
-                # concatenate the response with the resources that it used
-                response = (
-                    chat_response.response
-                    + "\n\n\n"
-                    + self._format_sources(chat_response)
-                )
+            if self.mode == "chat":
+                # create chat engine for user if does not exist
+                if self.chat_engine.get(user_id) is None:
+                    self.chat_engine[user_id] = self.index.as_chat_engine(
+                        chat_mode="context",
+                        response_mode=response_mode,
+                        similarity_top_k=self.k,
+                    )
+
+                # obtain chat engine for particular user
+                chat_engine = self.chat_engine[user_id]
+                response = chat_engine.chat(msg_in)
+            elif self.mode == "query":
+                response = query_engine.query(msg_in)
+
+            # concatenate the response with the resources that it used
+            formatted_response = (
+                response.response + "\n\n\n" + self._format_sources(response)
+            )
         except Exception as e:  # ignore: broad-except
-            response = self.error_response_template.format(repr(e))
+            formatted_response = self.error_response_template.format(repr(e))
         pattern = (
             r"(?s)^Context information is"
             r".*"
@@ -256,14 +259,14 @@ class LlamaIndex(ResponseModel):
             rf"{msg_in}"
             r"\n(.*)"
         )
-        m = re.search(pattern, response)
+        m = re.search(pattern, formatted_response)
         if m:
             answer = m.group(1)
         else:
             logging.warning(
                 "Was expecting a backend response with a regular expression but couldn't find a match."
             )
-            answer = response
+            answer = formatted_response
         return answer
 
     def _prep_documents(self):
@@ -503,29 +506,9 @@ class LlamaIndex(ResponseModel):
             "_prep_llm needs to be implemented by a subclass of LlamaIndex."
         )
 
-    def direct_message(self, message: str, user_id: str) -> MessageResponse:
+    def respond(self, message: str, user_id: str) -> MessageResponse:
         """
-        Method to respond to a direct message in Slack.
-
-        Parameters
-        ----------
-        msg_in : str
-            Message from user
-        user_id : str
-            User ID
-
-        Returns
-        -------
-        MessageResponse
-            Response from the query engine.
-        """
-        backend_response = self._get_response(message, user_id)
-
-        return MessageResponse(backend_response)
-
-    def channel_mention(self, message: str, user_id: str) -> MessageResponse:
-        """
-        Method to respond to a channel mention in Slack.
+        Method to respond to a direct message or channel mention in Slack.
 
         Parameters
         ----------
