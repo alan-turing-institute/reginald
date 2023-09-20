@@ -244,7 +244,7 @@ class LlamaIndex(ResponseModel):
                 chat_engine = self.chat_engine[user_id]
                 response = chat_engine.chat(msg_in)
             elif self.mode == "query":
-                response = query_engine.query(msg_in)
+                response = self.query_engine.query(msg_in)
 
             # concatenate the response with the resources that it used
             formatted_response = (
