@@ -107,7 +107,7 @@ class LlamaIndex(ResponseModel):
         self.model_name = model_name
         self.num_output = num_output
         if chunk_size is None:
-            chunk_size = math.ceil(max_input_size / k)
+            chunk_size = math.ceil(max_input_size / (k + 1))
         self.mode = mode
         self.chunk_size = chunk_size
         self.chunk_overlap_ratio = chunk_overlap_ratio
@@ -163,13 +163,16 @@ class LlamaIndex(ResponseModel):
                 storage_context=storage_context, service_context=service_context
             )
 
+        response_mode = "simple_summarize"
         if self.mode == "chat":
             self.chat_engine = self.index.as_chat_engine(
-                chat_mode="context", similarity_top_k=k
+                chat_mode="context", response_mode=response_mode, similarity_top_k=k
             )
             logging.info("Done setting up Huggingface backend for chat engine.")
         elif self.mode == "query":
-            self.query_engine = self.index.as_query_engine(similarity_top_k=k)
+            self.query_engine = self.index.as_query_engine(
+                response_mode=response_mode, similarity_top_k=k
+            )
             logging.info("Done setting up Huggingface backend for query engine.")
 
         self.error_response_template = (
