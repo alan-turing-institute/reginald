@@ -137,14 +137,14 @@ class Bot(AsyncSocketModeRequestListener):
         if event_type == "message" and event_subtype is None:
             await self.react(client, event["channel"], event["ts"])
             model_response = await asyncio.get_running_loop().run_in_executor(
-                None, self.model.respond, message, user_id
+                None, self.model.direct_message, message, user_id
             )
 
         # If @REGinald is mentioned in a channel
         elif event_type == "app_mention":
             await self.react(client, event["channel"], event["ts"])
             model_response = await asyncio.get_running_loop().run_in_executor(
-                None, self.model.respond, message, user_id
+                None, self.model.channel_mention, message, user_id
             )
 
         # Otherwise
