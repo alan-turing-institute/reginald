@@ -18,48 +18,93 @@ class Bot(AsyncSocketModeRequestListener):
         task = asyncio.create_task(self.worker(self.queue))
 
     async def __call__(self, client: SocketModeClient, req: SocketModeRequest) -> None:
-        if req.type != "events_api":
+        if req.type == "events_api":
+            # Acknowledge the request
+            logging.info("Received an events_api request")
+            response = SocketModeResponse(envelope_id=req.envelope_id)
+            await client.send_socket_mode_response(response)
+
+            try:
+                # Extract event from payload
+                event = req.payload["event"]
+
+                # Ignore messages from bots
+                if event.get("bot_id") is not None:
+                    logging.info("Ignoring an event triggered by a bot.")
+                    return
+                if event.get("hidden") is not None:
+                    logging.info("Ignoring hidden message.")
+                    return
+
+                # add clock emoji
+                logging.info("Reacting with clock emoji.")
+                await client.web_client.reactions_add(
+                    name="clock2",
+                    channel=event["channel"],
+                    timestamp=event["ts"],
+                )
+
+                self.queue.put_nowait((client, event))
+                logging.info(
+                    f"There are currently {self.queue.qsize()} items in the queue."
+                )
+
+            except KeyError as exc:
+                logging.warning(
+                    f"Attempted to access key that does not exist.\n{str(exc)}"
+                )
+
+            except Exception as exc:
+                logging.error(
+                    f"Something went wrong in processing a Slack request.\nPayload: {req.payload}.\n{str(exc)}"
+                )
+                raise
+
+        elif req.type == "slash_commands":
+            # Acknowledge the request
+            logging.info("Received an slash_commands request")
+            response = SocketModeResponse(envelope_id=req.envelope_id)
+            await client.send_socket_mode_response(response)
+
+            try:
+                # Extract command, user, etc from payload
+                command = req.payload["command"]
+                user_id = req.payload["user_id"]
+
+                if command == "/clear_history":
+                    if self.model.mode == "chat":
+                        logging.info(f"Clearing {user_id}'s history")
+                        if self.model.chat_engine.get(user_id) is not None:
+                            self.model.chat_engine[user_id].reset()
+                            message = "All done! Chat history is cleared."
+                            logging.info(f"Done clearing {user_id}'s history")
+                        else:
+                            logging.info(f"{user_id} has no history to be cleared.")
+                            message = "No history to clear"
+                    else:
+                        logging.info("Using query engine, no history to be cleared.")
+                        message = "No history to clear"
+
+                    logging.info("Posting clear_history message.")
+                    await client.web_client.chat_postMessage(
+                        channel=req.payload["channel_id"],
+                        text=message,
+                    )
+
+            except KeyError as exc:
+                logging.warning(
+                    f"Attempted to access key that does not exist.\n{str(exc)}"
+                )
+
+            except Exception as exc:
+                logging.error(
+                    f"Something went wrong in processing a Slack request.\nPayload: {req.payload}.\n{str(exc)}"
+                )
+                raise
+
+        else:
             logging.info(f"Received unexpected request of type '{req.type}'")
             return
-
-        # Acknowledge the request
-        logging.info("Received an events_api request")
-        response = SocketModeResponse(envelope_id=req.envelope_id)
-        await client.send_socket_mode_response(response)
-
-        try:
-            # Extract event from payload
-            event = req.payload["event"]
-
-            # Ignore messages from bots
-            if event.get("bot_id") is not None:
-                logging.info("Ignoring an event triggered by a bot.")
-                return
-            if event.get("hidden") is not None:
-                logging.info("Ignoring hidden message.")
-                return
-
-            # add clock emoji
-            logging.info("Reacting with clock emoji.")
-            await client.web_client.reactions_add(
-                name="clock2",
-                channel=event["channel"],
-                timestamp=event["ts"],
-            )
-
-            self.queue.put_nowait((client, event))
-            logging.info(
-                f"There are currently {self.queue.qsize()} items in the queue."
-            )
-
-        except KeyError as exc:
-            logging.warning(f"Attempted to access key that does not exist.\n{str(exc)}")
-
-        except Exception as exc:
-            logging.error(
-                f"Something went wrong in processing a Slack request.\nPayload: {req.payload}.\n{str(exc)}"
-            )
-            raise
 
     async def worker(self, queue):
         while True:
