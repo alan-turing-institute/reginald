@@ -432,11 +432,8 @@ class LlamaIndex(ResponseModel):
 
         issue_docs = hut23_issues_loader.load_data()
         for doc in issue_docs:
-            stripped_url = doc.metadata["url"].removeprefix(
-                "https://api.github.com/repos/"
-            )
-            url = os.path.join("https://github.com/", stripped_url)
-            doc.metadata["url"] = url
+            doc.metadata["api_url"] = str(doc.metadata["url"])
+            doc.metadata["url"] = doc.metadata["source"]
         self.documents.extend(issue_docs)
 
         # load collaborators
