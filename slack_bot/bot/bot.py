@@ -111,7 +111,7 @@ class Bot(AsyncSocketModeRequestListener):
         elif event_type == "app_mention":
             await self.react(client, event["channel"], event["ts"])
             model_response = requests.get(
-                f"{self.api_url}/direct_message",
+                f"{self.api_url}/channel_mention",
                 json={"message": message, "user_id": user_id},
             )
 
