@@ -531,7 +531,6 @@ class LlamaIndexLlamaCPP(LlamaIndex):
     def __init__(
         self,
         model_name: str,
-        is_path: bool,
         n_gpu_layers: int = 0,
         *args: Any,
         **kwargs: Any,
@@ -544,14 +543,10 @@ class LlamaIndexLlamaCPP(LlamaIndex):
         ----------
         model_name : str
             Either the path to the model or the URL to download the model from
-        is_path : bool, optional
-            If True, model_name is used as a path to the model file,
-            otherwise it should be the URL to download the model
         n_gpu_layers : int, optional
             Number of layers to offload to GPU.
             If -1, all layers are offloaded, by default 0
         """
-        self.is_path = is_path
         self.n_gpu_layers = n_gpu_layers
         super().__init__(*args, model_name=model_name, **kwargs)
 
@@ -564,8 +559,7 @@ class LlamaIndexLlamaCPP(LlamaIndex):
         )
 
         return LlamaCPP(
-            model_url=self.model_name if not self.is_path else None,
-            model_path=self.model_name if self.is_path else None,
+            model_url=self.model_name,
             temperature=0.1,
             max_new_tokens=self.num_output,
             context_window=self.max_input_size,
