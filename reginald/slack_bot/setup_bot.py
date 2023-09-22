@@ -84,7 +84,7 @@ async def main():
     args = parser.parse_args()
 
     # set up slack bot
-    bot = setup_slack_bot(args.emoji)
+    bot = setup_api_slack_bot(args.emoji)
 
     # set up slack client
     client = setup_slack_client(bot)
