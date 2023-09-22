@@ -8,7 +8,7 @@ class Query(BaseModel):
     user_id: str
 
 
-response_model = setup_llm("hello")  # TODO: FIX HERE
+response_model = setup_llm()
 app = FastAPI()
 
 
