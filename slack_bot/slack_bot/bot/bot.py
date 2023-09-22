@@ -71,7 +71,7 @@ class Bot(AsyncSocketModeRequestListener):
                 command = req.payload["command"]
                 user_id = req.payload["user_id"]
 
-                if command == "/clear_history":
+                if command.startswith("/clear_history"):
                     if self.model.mode == "chat":
                         logging.info(f"Clearing {user_id}'s history")
                         if self.model.chat_engine.get(user_id) is not None:
