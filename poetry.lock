@@ -265,7 +265,7 @@ files = [
 name = "anyio"
 version = "3.7.1"
 description = "High level compatibility layer for multiple asynchronous event loop implementations"
-optional = true
+optional = false
 python-versions = ">=3.7"
 files = [
     {file = "anyio-3.7.1-py3-none-any.whl", hash = "sha256:91dee416e570e92c64041bd18b900d1d6fa78dff7048769ce5ac5ddad004fbb5"},
@@ -990,7 +990,7 @@ files = [
 name = "fastapi"
 version = "0.103.1"
 description = "FastAPI framework, high performance, easy to learn, fast to code, ready for production"
-optional = true
+optional = false
 python-versions = ">=3.7"
 files = [
     {file = "fastapi-0.103.1-py3-none-any.whl", hash = "sha256:5e5f17e826dbd9e9b5a5145976c5cd90bcaa61f2bf9a69aca423f2bcebe44d83"},
@@ -4135,7 +4135,7 @@ files = [
 name = "sniffio"
 version = "1.3.0"
 description = "Sniff out which async library your code is running under"
-optional = true
+optional = false
 python-versions = ">=3.7"
 files = [
     {file = "sniffio-1.3.0-py3-none-any.whl", hash = "sha256:eecefdce1e5bbfb7ad2eeaabf7c1eeb404d7757c379bd1f7e5cce9d8bf425384"},
@@ -4254,7 +4254,7 @@ tests = ["cython", "littleutils", "pygments", "pytest", "typeguard"]
 name = "starlette"
 version = "0.27.0"
 description = "The little ASGI library that shines."
-optional = true
+optional = false
 python-versions = ">=3.7"
 files = [
     {file = "starlette-0.27.0-py3-none-any.whl", hash = "sha256:918416370e846586541235ccd38a474c08b80443ed31c578a418e2209b3eef91"},
@@ -5160,10 +5160,11 @@ multidict = ">=4.0"
 
 [extras]
 azure = ["pulumi", "pulumi-azure-native"]
-bot = ["adapter-transformers", "datasets", "einops", "faiss-cpu", "gradio", "langchain", "nbconvert", "openai", "sentence-transformers", "slack-sdk", "torch", "torch"]
+bot = ["adapter-transformers", "datasets", "einops", "faiss-cpu", "gradio", "langchain", "nbconvert", "sentence-transformers", "slack-sdk"]
+bot-chat-completion = ["openai"]
 huggingface-llm = ["accelerate"]
 
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
-content-hash = "58dce518644db19a34fbd583e2d6253405af39cabc8438ff6d0ac69187854cdc"
+content-hash = "7f4f4e8cbf65c41cd0b8a4dfc5f5f25839c883377275a19a85264d3a0865adaf"
