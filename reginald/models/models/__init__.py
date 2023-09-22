@@ -1,7 +1,10 @@
-from .base import ResponseModel
-from .chat_completion import ChatCompletionAzure, ChatCompletionOpenAI
-from .hello import Hello
-from .llama_index import (
+from reginald.models.models.base import ResponseModel
+from reginald.models.models.chat_completion import (
+    ChatCompletionAzure,
+    ChatCompletionOpenAI,
+)
+from reginald.models.models.hello import Hello
+from reginald.models.models.llama_index import (
     LlamaIndexGPTAzure,
     LlamaIndexGPTOpenAI,
     LlamaIndexHF,

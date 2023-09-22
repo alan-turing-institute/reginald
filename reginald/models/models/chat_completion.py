@@ -7,7 +7,7 @@ from typing import Any
 import openai
 
 # Local imports
-from .base import MessageResponse, ResponseModel
+from reginald.models.models.base import MessageResponse, ResponseModel
 
 
 class ChatCompletionBase(ResponseModel):

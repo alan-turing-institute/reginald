@@ -1,4 +1,4 @@
-from .base import MessageResponse, ResponseModel
+from reginald.models.models.base import MessageResponse, ResponseModel
 
 
 class Hello(ResponseModel):
