@@ -11,17 +11,7 @@ from slack_sdk.web.async_client import AsyncWebClient
 API_URL = "http://127.0.0.1:8000"
 
 
-async def main():
-    # Parse command line arguments
-    parser = argparse.ArgumentParser()
-    parser.add_argument(
-        "--emoji",
-        "-e",
-        help="Select the emoji for the model",
-        default=os.environ.get("REGINALD_EMOJI") or "rocket",
-    )
-    args = parser.parse_args()
-
+def setup_slack_bot(emoji: str) -> Bot:
     # Initialise logging
     logging.basicConfig(
         datefmt=r"%Y-%m-%d %H:%M:%S",
@@ -31,15 +21,19 @@ async def main():
 
     # Initialise Bot with response model
     logging.info(f"Initalising bot at {API_URL}")
-    logging.info(f"Initalising bot with {args.emoji} emoji")
+    logging.info(f"Initalising bot with {emoji} emoji")
 
-    slack_bot = Bot(API_URL, args.emoji)
+    slack_bot = Bot(API_URL, emoji)
 
     logging.info("Connecting to Slack...")
     if os.environ.get("SLACK_APP_TOKEN") is None:
         logging.error("SLACK_APP_TOKEN is not set")
         sys.exit(1)
 
+    return slack_bot
+
+
+def setup_slack_client(slack_bot: Bot) -> SocketModeClient:
     # Initialize SocketModeClient with an app-level token + AsyncWebClient
     client = SocketModeClient(
         # This app-level token will be used only for establishing a connection
@@ -52,6 +46,27 @@ async def main():
 
     # Add a new listener to receive messages from Slack
     client.socket_mode_request_listeners.append(slack_bot)
+
+    return client
+
+
+async def main():
+    # Parse command line arguments
+    parser = argparse.ArgumentParser()
+    parser.add_argument(
+        "--emoji",
+        "-e",
+        help="Select the emoji for the model",
+        default=os.environ.get("REGINALD_EMOJI") or "rocket",
+    )
+    args = parser.parse_args()
+
+    # set up slack bot
+    bot = setup_slack_bot(args.emoji)
+
+    # set up slack client
+    client = setup_slack_client(bot)
+
     # Establish a WebSocket connection to the Socket Mode servers
     await client.connect()
 
