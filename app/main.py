@@ -24,6 +24,6 @@ async def direct_message(query: Query):
 
 
 @app.get("/channel_mention")
-async def channel_mention(query: BaseModel):
+async def channel_mention(query: Query):
     response = response_model.channel_mention(query.message, query.user_id)
     return response
