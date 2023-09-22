@@ -1,6 +1,7 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
-from setup_llm import setup_llm
+
+from reginald.models.setup_llm import setup_llm
 
 
 class Query(BaseModel):
