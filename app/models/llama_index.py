@@ -506,9 +506,29 @@ class LlamaIndex(ResponseModel):
             "_prep_llm needs to be implemented by a subclass of LlamaIndex."
         )
 
-    def respond(self, message: str, user_id: str) -> MessageResponse:
+    def direct_message(self, message: str, user_id: str) -> MessageResponse:
         """
-        Method to respond to a direct message or channel mention in Slack.
+        Method to respond to a direct message in Slack.
+
+        Parameters
+        ----------
+        msg_in : str
+            Message from user
+        user_id : str
+            User ID
+
+        Returns
+        -------
+        MessageResponse
+            Response from the query engine.
+        """
+        backend_response = self._get_response(message, user_id)
+
+        return MessageResponse(backend_response)
+
+    def channel_mention(self, message: str, user_id: str) -> MessageResponse:
+        """
+        Method to respond to a channel mention in Slack.
 
         Parameters
         ----------
