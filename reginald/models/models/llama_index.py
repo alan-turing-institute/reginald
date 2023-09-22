@@ -38,9 +38,10 @@ from llama_index.prompts import PromptTemplate
 from llama_index.readers import SimpleDirectoryReader
 from llama_index.response.schema import RESPONSE_TYPE
 
+from reginald.models.models.base import MessageResponse, ResponseModel
+
 nest_asyncio.apply()
 
-from .base import MessageResponse, ResponseModel
 
 LLAMA_INDEX_DIR = "llama_index_indices"
 PUBLIC_DATA_DIR = "public"

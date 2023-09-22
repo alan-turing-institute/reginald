@@ -1,7 +1,7 @@
 import os
 import pathlib
 
-from models import MODELS
+from reginald.models.models import MODELS
 
 DEFAULT_LLAMA_CPP_GGUF_MODEL = (
     "https://huggingface.co/TheBloke/Llama-2-13B-chat-GGUF/resolve"
