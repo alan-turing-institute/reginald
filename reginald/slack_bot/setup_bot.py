@@ -4,9 +4,10 @@ import logging
 import os
 import sys
 
-from bot import Bot
 from slack_sdk.socket_mode.aiohttp import SocketModeClient
 from slack_sdk.web.async_client import AsyncWebClient
+
+from reginald.slack_bot.bot import Bot
 
 API_URL = "http://127.0.0.1:8000"
 
