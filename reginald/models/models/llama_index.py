@@ -55,9 +55,9 @@ class LlamaIndex(ResponseModel):
         max_input_size: int,
         data_dir: pathlib.Path,
         which_index: str,
-        chunk_size: Optional[int] = None,
         mode: str = "chat",
         k: int = 3,
+        chunk_size: Optional[int] = None,
         chunk_overlap_ratio: float = 0.1,
         force_new_index: bool = False,
         num_output: int = 512,
@@ -77,15 +77,15 @@ class LlamaIndex(ResponseModel):
             Path to the data directory.
         which_index : str
             Which index to construct (if force_new_index is True) or use.
-            Options are "handbook", "public", or "all_data".
-        chunk_size : Optional[int], optional
-            Maximum size of chunks to use, by default None.
-            If None, this is computed as `ceil(max_input_size / k)`.
+            Options are "handbook", "wikis",  "public", or "all_data".
         mode : Optional[str], optional
             The type of engine to use when interacting with the data, options of "chat" or "query".
             Default is "chat".
         k : int, optional
             `similarity_top_k` to use in char or query engine, by default 3
+        chunk_size : Optional[int], optional
+            Maximum size of chunks to use, by default None.
+            If None, this is computed as `ceil(max_input_size / k)`.
         chunk_overlap_ratio : float, optional
             Chunk overlap as a ratio of chunk size, by default 0.1
         force_new_index : bool, optional
@@ -148,7 +148,7 @@ class LlamaIndex(ResponseModel):
                 self.documents, service_context=service_context
             )
 
-            # Save the service context and persist the index
+            # save the service context and persist the index
             logging.info("Saving the index")
             self.index.storage_context.persist(
                 persist_dir=self.data_dir / LLAMA_INDEX_DIR / which_index
