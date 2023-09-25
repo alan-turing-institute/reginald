@@ -1,7 +1,5 @@
 import asyncio
 import logging
-import os
-from ast import mod
 
 import requests
 from slack_sdk.socket_mode.aiohttp import SocketModeClient

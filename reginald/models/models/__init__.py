@@ -24,9 +24,12 @@ MODELS = {
 
 DEFAULTS = {
     "chat-completion-azure": "reginald-curie",
+    "chat-completion-openai": None,
+    "hello": None,
     "llama-index-llama-cpp": "https://huggingface.co/TheBloke/Llama-2-13B-chat-GGUF/resolve/main/llama-2-13b-chat.Q6_K.gguf",
     "llama-index-hf": "StabilityAI/stablelm-tuned-alpha-3b",
     "llama-index-gpt-azure": "reginald-gpt35-turbo",
+    "llama-index-gpt-openai": None,
 }
 
 __all__ = ["MODELS", "DEFAULTS"]
