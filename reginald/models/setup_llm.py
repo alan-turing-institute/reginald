@@ -12,6 +12,7 @@ def setup_llm(
     which_index: str | None = None,
     force_new_index: bool | str | None = None,
     max_input_size: int | None = None,
+    is_path: bool | str | None = None,
     n_gpu_layers: int | None = None,
     device: str | None = None,
 ) -> ResponseModel:
@@ -41,14 +42,23 @@ def setup_llm(
         By default None (uses 'all_data')
     force_new_index : bool | str | None, optional
         Whether to recreate the index vector store or not, by default None
-        (uses False)
+        (uses False). If this is a string, it is converted to a boolean
+        using `force_new_index.lower() == "true"`.
     max_input_size : int | None, optional
         Select the maximum input size for the model, by default None
         (uses 4096). Ignored if not using "llama-index-llama-cpp" or
         "llama-index-hf" models
-    n_gpu_layers : int | None, optional
-        Select the number of GPU layers to use, by default None (uses 0).
+    is_path : bool | str | None, optional
+        Whether or not model_name is used as a path to the model file,
+        otherwise it should be the URL to download the model,
+        by default None (uses False). If this is a string, it is
+        converted to a boolean using `is_path.lower() == "true"`.
         Ignored if not using "llama-index-llama-cpp" model
+    n_gpu_layers : int | None, optional
+        Select the number of GPU layers to use. If -1, all layers are
+        offloaded to the GPU. If 0, no layers are offloaded to the GPU,
+        by default None (uses 0). Ignored if not using
+        "llama-index-llama-cpp" model
     device : str | None, optional
         Select which device to use, by default None (uses "auto").
         Ignored if not using "llama-index-llama-cpp" or "llama-index-hf" models
@@ -95,6 +105,12 @@ def setup_llm(
     # default for max_input_size
     if max_input_size is None:
         max_input_size = 4096
+
+    # default for is_path
+    if is_path is None:
+        is_path = False
+    if isinstance(is_path, str):
+        is_path = is_path.lower() == "true"
 
     # default for n_gpu_layers
     if n_gpu_layers is None:
