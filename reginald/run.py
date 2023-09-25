@@ -83,6 +83,16 @@ async def main():
         default=os.environ.get("LLAMA_INDEX_MAX_INPUT_SIZE"),
     )
     parser.add_argument(
+        "--is-path",
+        "-p",
+        help=(
+            "Whether or not the model_name passed is a path to the model "
+            "(ignored if not using llama-index-llama-cpp)"
+        ),
+        action=argparse.BooleanOptionalAction,
+        default=os.environ.get("LLAMA_INDEX_IS_PATH"),
+    )
+    parser.add_argument(
         "--n-gpu-layers",
         "-ngl",
         type=int,
