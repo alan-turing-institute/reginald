@@ -15,6 +15,52 @@ def setup_llm(
     n_gpu_layers: int | None = None,
     device: str | None = None,
 ) -> ResponseModel:
+    """
+    Set up a query or chat engine with an LLM.
+
+    Parameters
+    ----------
+    model : str | None, optional
+        Which type of model to use, by default None (uses "hello" model)
+    model_name : str | None, optional
+        Select which sub-model to use within the model requested.
+        For example, if by model is "llama-index-hf", this specifies
+        the Huggingface model which we would like to use, default None.
+        This is ignored if using 'hello' or OpenAI model types. Otherwise,
+        the defaults are set in `reginald/models/models/__init__.py`
+    mode : str | None, optional
+        Select which mode to use between "chat" and "query",
+        by default None (uses "chat"). This is ignored if not using
+        llama-index
+    data_dir : str | None, optional
+        Location of the data, by default None
+        (uses the data directory in the root of the repo)
+    which_index : str | None, optional
+        Specifies the directory name for looking up/writing indices.
+        Currently supports 'handbook', 'wikis', 'public', or 'all_data'.
+        By default None (uses 'all_data')
+    force_new_index : bool | str | None, optional
+        Whether to recreate the index vector store or not, by default None
+        (uses False)
+    max_input_size : int | None, optional
+        Select the maximum input size for the model, by default None
+        (uses 4096). Ignored if not using "llama-index-llama-cpp" or
+        "llama-index-hf" models
+    n_gpu_layers : int | None, optional
+        Select the number of GPU layers to use, by default None (uses 0).
+        Ignored if not using "llama-index-llama-cpp" model
+    device : str | None, optional
+        Select which device to use, by default None (uses "auto").
+        Ignored if not using "llama-index-llama-cpp" or "llama-index-hf" models
+
+    Returns
+    -------
+    ResponseModel
+        Sets up query or chat engine with an LLM that has
+        methods `direct_message` and `channel_mention`, which takes
+        a message and user_id and returns a `MessageResponse` object
+        with the response message.
+    """
     # default for model
     if model is None:
         model = "hello"
@@ -59,20 +105,19 @@ def setup_llm(
         device = "auto"
 
     # set up response model
-    if model == "hello":
-        model = MODELS[model]
-        response_model = model()
-        return response_model
-
     model = MODELS[model]
-    response_model = model(
-        model_name=model_name,
-        max_input_size=max_input_size,
-        n_gpu_layers=n_gpu_layers,
-        device=device,
-        data_dir=data_dir,
-        which_index=which_index,
-        mode=mode,
-        force_new_index=force_new_index,
-    )
+    if model == "hello":
+        response_model = model()
+    else:
+        response_model = model(
+            model_name=model_name,
+            max_input_size=max_input_size,
+            n_gpu_layers=n_gpu_layers,
+            device=device,
+            data_dir=data_dir,
+            which_index=which_index,
+            mode=mode,
+            force_new_index=force_new_index,
+        )
+
     return response_model
