@@ -76,6 +76,11 @@ bot_chat_completion = [
     "openai",
 ]
 
+[tool.poetry.scripts]
+run_api_bot = "reginald.slack_bot.setup_bot:cli"
+run_api_llm = "reginald.models.app:main"
+run_united = "reginald.run:cli"
+
 [[tool.poetry.source]]
 name = "PyPI"
 priority = "primary"
