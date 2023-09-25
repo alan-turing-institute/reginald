@@ -15,37 +15,20 @@ class Query(BaseModel):
 
 
 def api_setup_llm():
-    kwargs = {}
-
-    # choose model
-    kwargs["model"] = os.environ.get("REGINALD_MODEL") or "hello"
-    kwargs["model"] = kwargs["model"].lower()
-
-    # set up variables
-    kwargs["mode"] = os.environ.get("LLAMA_INDEX_MODE") or "chat"
-    kwargs["max_input_size"] = os.environ.get("LLAMA_INDEX_MAX_INPUT_SIZE") or 4096
-    kwargs["n_gpu_layers"] = os.environ.get("LLAMA_INDEX_N_GPU_LAYERS") or 0
-    kwargs["device"] = os.environ.get("LLAMA_INDEX_DEVICE") or "auto"
-    kwargs["data_dir"] = (
-        pathlib.Path(os.environ.get("LLAMA_INDEX_DATA_DIR")).resolve()
-        or (pathlib.Path(__file__).parent.parent / "data").resolve()
+    # set up response model using environment variables
+    # defaults for variables get set in setup_llm if any of these are None
+    response_model = setup_llm(
+        model=os.environ.get("REGINALD_MODEL"),
+        model_name=os.environ.get("REGINALD_MODEL_NAME"),
+        mode=os.environ.get("LLAMA_INDEX_MODE"),
+        data_dir=os.environ.get("LLAMA_INDEX_DATA_DIR"),
+        which_index=os.environ.get("LLAMA_INDEX_WHICH_INDEX"),
+        force_new_index=os.environ.get("LLAMA_INDEX_FORCE_NEW_INDEX"),
+        max_input_size=os.environ.get("LLAMA_INDEX_MAX_INPUT_SIZE"),
+        n_gpu_layers=os.environ.get("LLAMA_INDEX_N_GPU_LAYERS"),
+        device=os.environ.get("LLAMA_INDEX_DEVICE"),
     )
-    kwargs["which_index"] = os.environ.get("LLAMA_INDEX_WHICH_INDEX") or "all_data"
-    force_new_index = os.environ.get("LLAMA_INDEX_FORCE_NEW_INDEX")
-    kwargs["force_new_index"] = (
-        (force_new_index.lower() == "true") if force_new_index else False
-    )
-    if kwargs["model"] in [
-        "chat-completion-azure",
-        "llama-index-llama-cpp",
-        "llama-index-hf",
-        "llama-index-gpt-azure",
-    ]:
-        kwargs["model_name"] = (
-            os.environ.get("LLAMA_INDEX_MODEL_NAME") or DEFAULTS[kwargs["model"]]
-        )
 
-    response_model = setup_llm(**kwargs)
     return response_model
 
 

@@ -4,7 +4,7 @@ import logging
 import os
 import pathlib
 
-from reginald.models.models import DEFAULTS, MODELS
+from reginald.models.models import MODELS
 from reginald.models.setup_llm import setup_llm
 from reginald.slack_bot.setup_bot import setup_slack_bot, setup_slack_client
 
@@ -20,7 +20,7 @@ async def main():
         "--model",
         "-m",
         help=("Select which type of model to use " "Default is 'hello'.",),
-        default=os.environ.get("REGINALD_MODEL") or "hello",
+        default=os.environ.get("REGINALD_MODEL"),
         choices=MODELS,
     )
     parser.add_argument(
@@ -31,7 +31,7 @@ async def main():
             "Select which model to use "
             "(ignored if using 'hello' or OpenAI model types)."
         ),
-        default=None,
+        default=os.environ.get("REGINALD_MODEL_NAME"),
     )
     parser.add_argument(
         "--mode",
@@ -41,41 +41,8 @@ async def main():
             "(ignored if not using llama-index). "
             "Default is 'chat'."
         ),
-        default=os.environ.get("LLAMA_INDEX_MODE") or "chat",
+        default=os.environ.get("LLAMA_INDEX_MODE"),
         choices=["chat", "query"],
-    )
-    parser.add_argument(
-        "--max-input-size",
-        "-max",
-        type=int,
-        help=(
-            "Select maximum input size for LlamaCPP or HuggingFace model "
-            "(ignored if not using llama-index-llama-cpp or llama-index-hf). "
-            "Default is 4096."
-        ),
-        default=os.environ.get("LLAMA_INDEX_MAX_INPUT_SIZE") or 4096,
-    )
-    parser.add_argument(
-        "--n-gpu-layers",
-        "-ngl",
-        type=int,
-        help=(
-            "Select number of GPU layers for LlamaCPP model "
-            "(ignored if not using llama-index-llama-cpp). "
-            "Default is 0."
-        ),
-        default=os.environ.get("LLAMA_INDEX_N_GPU_LAYERS") or 0,
-    )
-    parser.add_argument(
-        "--device",
-        "-dev",
-        type=str,
-        help=(
-            "Select device for HuggingFace model "
-            "(ignored if not using llama-index-hf model). "
-            "Default is 'auto'."
-        ),
-        default=os.environ.get("LLAMA_INDEX_DEVICE") or "auto",
     )
     parser.add_argument(
         "--data-dir",
@@ -91,22 +58,54 @@ async def main():
         type=str,
         help=(
             "Specifies the directory name for looking up/writing indices. "
-            "Currently supports 'all_data', 'public', 'handbook' and 'wikis'. "
+            "Currently supports 'handbook', 'wikis', 'public', or 'all_data'. "
             "Default is 'all_data'."
         ),
-        default=os.environ.get("LLAMA_INDEX_WHICH_INDEX") or "all_data",
-        choices=["all_data", "public", "handbook", "wikis"],
+        default=os.environ.get("LLAMA_INDEX_WHICH_INDEX"),
+        choices=["handbook", "wikis", "public", "all_data"],
     )
     parser.add_argument(
         "--force-new-index",
         "-f",
         help="Recreate the index vector store or not",
         action=argparse.BooleanOptionalAction,
-        default=(os.environ.get("LLAMA_INDEX_FORCE_NEW_INDEX").lower() == "true")
-        if os.environ.get("LLAMA_INDEX_FORCE_NEW_INDEX")
-        else False,
+        default=os.environ.get("LLAMA_INDEX_FORCE_NEW_INDEX"),
+    )
+    parser.add_argument(
+        "--max-input-size",
+        "-max",
+        type=int,
+        help=(
+            "Select maximum input size for LlamaCPP or HuggingFace model "
+            "(ignored if not using llama-index-llama-cpp or llama-index-hf). "
+            "Default is 4096."
+        ),
+        default=os.environ.get("LLAMA_INDEX_MAX_INPUT_SIZE"),
+    )
+    parser.add_argument(
+        "--n-gpu-layers",
+        "-ngl",
+        type=int,
+        help=(
+            "Select number of GPU layers for LlamaCPP model "
+            "(ignored if not using llama-index-llama-cpp). "
+            "Default is 0."
+        ),
+        default=os.environ.get("LLAMA_INDEX_N_GPU_LAYERS"),
+    )
+    parser.add_argument(
+        "--device",
+        "-dev",
+        type=str,
+        help=(
+            "Select device for HuggingFace model "
+            "(ignored if not using llama-index-hf model). "
+            "Default is 'auto'."
+        ),
+        default=os.environ.get("LLAMA_INDEX_DEVICE"),
     )
 
+    # pass args to setup_llm
     llm_kwargs = vars(parser.parse_args())
 
     # set up response model
@@ -118,10 +117,10 @@ async def main():
     # set up slack client
     client = setup_slack_client(bot)
 
-    # Establish a WebSocket connection to the Socket Mode servers
+    # establish a WebSocket connection to the Socket Mode servers
     await client.connect()
 
-    # Listen for events
+    # listen for events
     logging.info("Listening for requests...")
     await asyncio.sleep(float("inf"))
 
