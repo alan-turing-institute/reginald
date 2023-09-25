@@ -1,11 +1,9 @@
 import os
-import pathlib
 
 import uvicorn
 from fastapi import FastAPI
 from pydantic import BaseModel
 
-from reginald.models.models import DEFAULTS
 from reginald.models.setup_llm import setup_llm
 
 
@@ -25,6 +23,7 @@ def api_setup_llm():
         which_index=os.environ.get("LLAMA_INDEX_WHICH_INDEX"),
         force_new_index=os.environ.get("LLAMA_INDEX_FORCE_NEW_INDEX"),
         max_input_size=os.environ.get("LLAMA_INDEX_MAX_INPUT_SIZE"),
+        is_path=os.environ.get("LLAMA_INDEX_IS_PATH"),
         n_gpu_layers=os.environ.get("LLAMA_INDEX_N_GPU_LAYERS"),
         device=os.environ.get("LLAMA_INDEX_DEVICE"),
     )
@@ -33,7 +32,9 @@ def api_setup_llm():
 
 
 def main():
+    # set up response model using environment variables
     response_model = api_setup_llm()
+    # set up FastAPI
     app = FastAPI()
 
     @app.get("/")
