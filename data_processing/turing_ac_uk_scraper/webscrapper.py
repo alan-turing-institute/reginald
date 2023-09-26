@@ -28,7 +28,6 @@ def check_string(string):
 
 
 def get_page(url, depth=0):
-
     if depth > 5:
         return
 
@@ -71,7 +70,6 @@ def get_page(url, depth=0):
 
 
 if __name__ == "__main__":
-
     # create data directory if it doesn't exist
     os.makedirs("data", exist_ok=True)
 
