@@ -3,7 +3,6 @@ import asyncio
 import logging
 import os
 import sys
-from typing import Union
 
 from slack_sdk.socket_mode.aiohttp import SocketModeClient
 from slack_sdk.web.async_client import AsyncWebClient
@@ -44,7 +43,7 @@ def setup_api_slack_bot(emoji: str) -> ApiBot:
     return slack_bot
 
 
-def setup_slack_client(slack_bot: Union[ApiBot, Bot]) -> SocketModeClient:
+def setup_slack_client(slack_bot: ApiBot | Bot) -> SocketModeClient:
     if os.environ.get("SLACK_APP_TOKEN") is None:
         logging.error("SLACK_APP_TOKEN is not set")
         sys.exit(1)
