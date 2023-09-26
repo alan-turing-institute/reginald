@@ -1,0 +1,55 @@
+# Reginald 22/09/23
+
+## Notes
+- Well done on the demo!
+    - Sounds like it went very well!
+    - Lots of work has gone into this week to get things working and we have made great progress with getting the new updated models running
+- Model updates
+    - We have a VM running the bot with llama-2-70b model (quantised to 4bit) using `all_data` (incorporated Rosie's work on the readers for Hut23 issues, wiki and all public data)
+        - Currently available on Slack as `Reginald (llama-cpp)`
+    - We have an updated bot with Azure OpenAI endpoint using `public` (turing.ac.uk website, RSE course, RDS course, Turing Way, handbook)
+        - Currently available on Slack as `Reginald (llama-index GPT)`
+    - Note that these are not always on: would cost approximately $90 to keep on for a full 24 hours
+- Rosie and Ryan met with James R this week to talk about the pulumi and Azure stuff in the repo
+    - Have a hope that we can split up the slack bot into two separate components
+        - The LLM which can be accessed via an API
+        - The Slack bot itself which can live in a container with very little compute
+    - This would mean that we can change the LLM or VM whenever we want without having to tear down the entire system
+    - Also means we can turn off the VM on a timer so that its only on during working hours to save money
+        - The bot can send an automatic message during those times to say that the LLM is off
+- Rosie and Ryan met with James B and Iain S this week to talk about the queue and async programming
+    - Rosie has made a few changes to make it work a lot better, but some small issues to iron out still
+        - Does the queue refresh if a Slack session ends and restarts?
+    - Now implemented multiple chat instances
+- Rosie has made several contributions to llama-hub (https://github.com/emptycrown/llama-hub/commits?author=rwood-97)
+    - Currently the 13th most number of PRs in the repo!
+    - For urls metadata to be included in repo reader: https://github.com/emptycrown/llama-hub/pull/522
+    - For collaborators: https://github.com/emptycrown/llama-hub/pull/512
+    - For issue labels: https://github.com/emptycrown/llama-hub/pull/502
+    - For removing redundant if/else from imports: https://github.com/emptycrown/llama-hub/commit/2c80cdc1b496901e26ecaa05d69a4d351fd083ac
+- If we're happy with the data readers, we remove data from the repo (will need to keep turing.ac.uk csv)
+    - Is it possible to hide the private data from being visible?
+- Discussion on repository layout
+    - Do some cleaning up this week
+        - Remove some data
+        - Rename models/ to notebooks/
+        - Reorganise repo by introducing src/ directory
+        - Maybe make this into package
+        - Clean up pyproject.toml
+    - Should it be a package?
+        - If so, what would be the parts that are reusable and useful for others?
+        - There are parts which will not run for others, e.g. document builder - they will not have the right GitHub API keys to access them, but there are parts which will be useful, e.g. spinning up a query engine that uses Llama-CPP easily
+        - Do we split up the query/chat engine set up more?
+        - At what point does it become too complicated?
+    - If it is made public, will need better documentation and some tests
+    - How do we make it easy for people to come into the project (other REG people, Turing collaborators)?
+
+## Actions
+- Ryan to write up a guide for getting quantised Llama-2 models running on Azure VMs for Tomas
+- Rosie and Ryan to look into implementing API between VM and bot container
+    - Set timers for VM to wake and sleep
+    - Implement automated Slack response for when VM is off or unavailable
+- Restore slack_bot/run.py
+- Ryan to look removing sensitive data
+- Think about repository layout - should it be in a package?
+- Ryan set up wrap-up meeting on Monday 2nd October
