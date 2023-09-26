@@ -153,6 +153,11 @@ def setup_llm(
     else:
         model = MODELS[model]
         response_model = model(
+            model_name=model_name,
+            max_input_size=max_input_size,
+            is_path=is_path,
+            n_gpu_layers=n_gpu_layers,
+            device=device,
             data_dir=data_dir,
             which_index=which_index,
             force_new_index=force_new_index,
