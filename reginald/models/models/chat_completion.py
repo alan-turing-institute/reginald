@@ -23,7 +23,7 @@ class ChatCompletionAzure(ChatCompletionBase):
         self.api_type = "azure"
         self.api_version = "2023-03-15-preview"
         self.best_of = 1
-        self.engine = model_name
+        self.engine = model_name  # the deployment name
         self.frequency_penalty = 0
         self.max_tokens = 100
         self.presence_penalty = 0

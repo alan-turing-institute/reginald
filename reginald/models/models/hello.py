@@ -1,9 +1,11 @@
+from typing import Any
+
 from reginald.models.models.base import MessageResponse, ResponseModel
 
 
 class Hello(ResponseModel):
-    def __init__(self):
-        super().__init__(emoji="wave")
+    def __init__(self, *args: Any, **kwargs: Any):
+        super().__init__(*args, emoji="wave", **kwargs)
 
     def direct_message(self, message: str, user_id: str) -> MessageResponse:
         return MessageResponse("Let's discuss this in a channel!")
