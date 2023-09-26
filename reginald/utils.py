@@ -13,7 +13,7 @@ class Parser(argparse.ArgumentParser):
         self.add_argument(
             "--model",
             "-m",
-            help=("Select which type of model to use " "Default is 'hello'.",),
+            help=("Select which type of model to use " "Default is 'hello'."),
             default=os.environ.get("REGINALD_MODEL"),
             choices=MODELS,
         )

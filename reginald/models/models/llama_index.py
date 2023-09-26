@@ -7,7 +7,7 @@ import pathlib
 import re
 import sys
 from tempfile import TemporaryDirectory
-from typing import Any, List, Optional
+from typing import Any, Optional
 
 import nest_asyncio
 import pandas as pd
@@ -61,6 +61,8 @@ class LlamaIndex(ResponseModel):
         chunk_overlap_ratio: float = 0.1,
         force_new_index: bool = False,
         num_output: int = 512,
+        *args,
+        **kwargs,
     ) -> None:
         """
         Base class for models using llama-index.
@@ -94,7 +96,7 @@ class LlamaIndex(ResponseModel):
         num_output : int, optional
             Number of outputs for the LLM, by default 512
         """
-        super().__init__(emoji="llama")
+        super().__init__(*args, emoji="llama", **kwargs)
         logging.info("Setting up Huggingface backend.")
         if mode == "chat":
             logging.info("Setting up chat engine.")
@@ -645,8 +647,15 @@ class LlamaIndexHF(LlamaIndex):
 
 
 class LlamaIndexGPTOpenAI(LlamaIndex):
-    def __init__(self, *args: Any, **kwargs: Any) -> None:
+    def __init__(
+        self, model_name: str = "gpt-3.5-turbo", *args: Any, **kwargs: Any
+    ) -> None:
         """
+        Parameters
+        ----------
+        model_name : str, optional
+            The model to use from the OpenAI API, by default "gpt-3.5-turbo"
+
         `LlamaIndexGPTOpenAI` is a subclass of `LlamaIndex` that uses OpenAI's
         API to implement the LLM.
 
@@ -655,11 +664,10 @@ class LlamaIndexGPTOpenAI(LlamaIndex):
         if os.getenv("OPENAI_API_KEY") is None:
             raise ValueError("You must set OPENAI_API_KEY for OpenAI.")
 
+        self.model_name = model_name
         self.openai_api_key = os.getenv("OPENAI_API_KEY")
         self.temperature = 0.7
-        super().__init__(
-            *args, model_name="gpt-3.5-turbo", max_input_size=4096, **kwargs
-        )
+        super().__init__(*args, model_name=self.model_name, **kwargs)
 
     def _prep_llm(self) -> LLM:
         return OpenAI(
@@ -672,9 +680,14 @@ class LlamaIndexGPTOpenAI(LlamaIndex):
 
 class LlamaIndexGPTAzure(LlamaIndex):
     def __init__(
-        self, deployment_name: str = "reginald-gpt35-turbo", *args: Any, **kwargs: Any
+        self, model_name: str = "reginald-gpt35-turbo", *args: Any, **kwargs: Any
     ) -> None:
         """
+        Parameters
+        ----------
+        model_name : str, optional
+            The deployment name of the model, by default "reginald-gpt35-turbo"
+
         `LlamaIndexGPTAzure` is a subclass of `LlamaIndex` that uses Azure's
         instance of OpenAI's LLMs to implement the LLM.
 
@@ -692,14 +705,12 @@ class LlamaIndexGPTAzure(LlamaIndex):
             raise ValueError("You must set OPENAI_AZURE_API_KEY for Azure OpenAI.")
 
         # deployment name can be found in the Azure AI Studio portal
-        self.deployment_name = deployment_name
+        self.deployment_name = model_name
         self.openai_api_base = os.getenv("OPENAI_AZURE_API_BASE")
         self.openai_api_key = os.getenv("OPENAI_AZURE_API_KEY")
         self.openai_api_version = "2023-03-15-preview"
         self.temperature = 0.7
-        super().__init__(
-            *args, model_name="gpt-3.5-turbo", max_input_size=4096, **kwargs
-        )
+        super().__init__(*args, model_name="gpt-3.5-turbo", **kwargs)
 
     def _prep_llm(self) -> LLM:
         logging.info(f"Setting up AzureOpenAI LLM (model {self.deployment_name})")
