@@ -106,6 +106,14 @@ llama_index_notebooks = [
     "torch",
     "httpx"
 ]
+bot_chat_completion = [
+    "openai",
+]
+
+[tool.poetry.scripts]
+reginald_run_api_bot = "reginald.slack_bot.setup_bot:cli"
+reginald_run_api_llm = "reginald.models.app:main"
+reginald_run_united = "reginald.run:cli"
 
 [[tool.poetry.source]]
 name = "PyPI"

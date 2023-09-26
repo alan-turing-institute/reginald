@@ -2,7 +2,6 @@ class MonteCarlo:
     """A simple Monte Carlo implementation"""
 
     def __init__(self, temperature=100, itermax=100):
-
         if temperature == 0:
             raise NotImplementedError("Zero temperature not implemented")
         if temperature < 0e0:
@@ -73,7 +72,6 @@ class MonteCarlo:
         iteration = 0
         current_energy = energy(density)
         while iteration < self.itermax or self.itermax < 0:
-
             new_density = self.change_density(density)
             new_energy = energy(new_density)
 

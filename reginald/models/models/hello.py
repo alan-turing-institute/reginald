@@ -1,16 +1,14 @@
-import time
+from typing import Any
 
-from .base import MessageResponse, ResponseModel
+from reginald.models.models.base import MessageResponse, ResponseModel
 
 
 class Hello(ResponseModel):
-    def __init__(self):
-        super().__init__(emoji="wave")
+    def __init__(self, *args: Any, **kwargs: Any):
+        super().__init__(*args, emoji="wave", **kwargs)
 
     def direct_message(self, message: str, user_id: str) -> MessageResponse:
-        time.sleep(5)
         return MessageResponse("Let's discuss this in a channel!")
 
     def channel_mention(self, message: str, user_id: str) -> MessageResponse:
-        time.sleep(5)
         return MessageResponse(f"Hello <@{user_id}>")
