@@ -118,6 +118,13 @@ async def main():
     # pass args to setup_llm
     llm_kwargs = vars(parser.parse_args())
 
+    # Initialise logging
+    logging.basicConfig(
+        datefmt=r"%Y-%m-%d %H:%M:%S",
+        format="%(asctime)s [%(levelname)8s] %(message)s",
+        level=logging.INFO,
+    )
+
     # set up response model
     response_model = setup_llm(**llm_kwargs)
 

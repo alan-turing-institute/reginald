@@ -13,9 +13,9 @@ from reginald.models.models.base import ResponseModel
 class Bot(AsyncSocketModeRequestListener):
     def __init__(self, model: ResponseModel) -> None:
         self.model = model
-        self.queue = asyncio.Queue(maxsize=12)
 
-        # create task to run worker
+        # set up queue and task to run worker
+        self.queue = asyncio.Queue(maxsize=12)
         _ = asyncio.create_task(self.worker(self.queue))
 
     async def __call__(self, client: SocketModeClient, req: SocketModeRequest) -> None:
@@ -138,14 +138,14 @@ class Bot(AsyncSocketModeRequestListener):
         if event_type == "message" and event_subtype is None:
             await self.react(client, event["channel"], event["ts"])
             model_response = await asyncio.get_running_loop().run_in_executor(
-                None, self.model.respond, message, user_id
+                None, self.model.direct_message, message, user_id
             )
 
         # If @REGinald is mentioned in a channel
         elif event_type == "app_mention":
             await self.react(client, event["channel"], event["ts"])
             model_response = await asyncio.get_running_loop().run_in_executor(
-                None, self.model.respond, message, user_id
+                None, self.model.channel_mention, message, user_id
             )
 
         # Otherwise
@@ -193,6 +193,7 @@ class ApiBot(AsyncSocketModeRequestListener):
         self.emoji = emoji
 
         # set up queue and task
+        self.queue = asyncio.Queue(maxsize=12)
         _ = asyncio.create_task(self.worker(self.queue))
 
     async def __call__(self, client: SocketModeClient, req: SocketModeRequest) -> None:
