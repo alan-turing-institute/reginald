@@ -1,4 +1,6 @@
+import logging
 import pathlib
+import sys
 
 from reginald.models.models import DEFAULTS, MODELS
 from reginald.models.models.base import ResponseModel
@@ -76,7 +78,9 @@ def setup_llm(
         model = "hello"
     model = model.lower()
     if model not in MODELS.keys():
-        raise ValueError(f"Model '{model}' not recognised.")
+        logging.error(f"Model '{model}' not recognised.")
+        sys.exit(1)
+    logging.info(f"Setting up '{model}' model.")
 
     # defaulf for model_name
     if model_name is None:
@@ -120,20 +124,40 @@ def setup_llm(
     if device is None:
         device = "auto"
 
+    # Set up any model args that are required
+    if model == "llama-index-llama-cpp":
+        model_args = {
+            "model_name": model_name,
+            "is_path": is_path,
+            "n_gpu_layers": n_gpu_layers,
+            "max_input_size": max_input_size,
+        }
+    elif model == "llama-index-hf":
+        model_args = {
+            "model_name": model_name,
+            "device": device,
+            "max_input_size": max_input_size,
+        }
+    elif model in ["llama-index-gpt-azure", "chat-completion-azure"]:
+        model_args = {
+            "model_name": model_name,
+        }
+    else:
+        model_args = {}
+
+    logging.info(f"Model args are: {model_args}.")
     # set up response model
-    model = MODELS[model]
     if model == "hello":
+        model = MODELS[model]
         response_model = model()
     else:
+        model = MODELS[model]
         response_model = model(
-            model_name=model_name,
-            max_input_size=max_input_size,
-            n_gpu_layers=n_gpu_layers,
-            device=device,
             data_dir=data_dir,
             which_index=which_index,
-            mode=mode,
             force_new_index=force_new_index,
+            mode=mode,
+            **model_args,
         )
 
     return response_model
