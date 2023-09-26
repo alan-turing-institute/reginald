@@ -38,9 +38,10 @@ from llama_index.prompts import PromptTemplate
 from llama_index.readers import SimpleDirectoryReader
 from llama_index.response.schema import RESPONSE_TYPE
 
+from reginald.models.models.base import MessageResponse, ResponseModel
+
 nest_asyncio.apply()
 
-from .base import MessageResponse, ResponseModel
 
 LLAMA_INDEX_DIR = "llama_index_indices"
 PUBLIC_DATA_DIR = "public"
@@ -54,9 +55,9 @@ class LlamaIndex(ResponseModel):
         max_input_size: int,
         data_dir: pathlib.Path,
         which_index: str,
-        chunk_size: Optional[int] = None,
         mode: str = "chat",
         k: int = 3,
+        chunk_size: Optional[int] = None,
         chunk_overlap_ratio: float = 0.1,
         force_new_index: bool = False,
         num_output: int = 512,
@@ -76,15 +77,15 @@ class LlamaIndex(ResponseModel):
             Path to the data directory.
         which_index : str
             Which index to construct (if force_new_index is True) or use.
-            Options are "handbook", "public", or "all_data".
-        chunk_size : Optional[int], optional
-            Maximum size of chunks to use, by default None.
-            If None, this is computed as `ceil(max_input_size / k)`.
+            Options are "handbook", "wikis",  "public", or "all_data".
         mode : Optional[str], optional
             The type of engine to use when interacting with the data, options of "chat" or "query".
             Default is "chat".
         k : int, optional
             `similarity_top_k` to use in char or query engine, by default 3
+        chunk_size : Optional[int], optional
+            Maximum size of chunks to use, by default None.
+            If None, this is computed as `ceil(max_input_size / k)`.
         chunk_overlap_ratio : float, optional
             Chunk overlap as a ratio of chunk size, by default 0.1
         force_new_index : bool, optional
@@ -147,7 +148,7 @@ class LlamaIndex(ResponseModel):
                 self.documents, service_context=service_context
             )
 
-            # Save the service context and persist the index
+            # save the service context and persist the index
             logging.info("Saving the index")
             self.index.storage_context.persist(
                 persist_dir=self.data_dir / LLAMA_INDEX_DIR / which_index
@@ -551,6 +552,7 @@ class LlamaIndexLlamaCPP(LlamaIndex):
     def __init__(
         self,
         model_name: str,
+        is_path: bool,
         n_gpu_layers: int = 0,
         *args: Any,
         **kwargs: Any,
@@ -563,10 +565,14 @@ class LlamaIndexLlamaCPP(LlamaIndex):
         ----------
         model_name : str
             Either the path to the model or the URL to download the model from
+        is_path : bool, optional
+            If True, model_name is used as a path to the model file,
+            otherwise it should be the URL to download the model
         n_gpu_layers : int, optional
             Number of layers to offload to GPU.
             If -1, all layers are offloaded, by default 0
         """
+        self.is_path = is_path
         self.n_gpu_layers = n_gpu_layers
         super().__init__(*args, model_name=model_name, **kwargs)
 
@@ -579,7 +585,8 @@ class LlamaIndexLlamaCPP(LlamaIndex):
         )
 
         return LlamaCPP(
-            model_url=self.model_name,
+            model_url=self.model_name if not self.is_path else None,
+            model_path=self.model_name if self.is_path else None,
             temperature=0.1,
             max_new_tokens=self.num_output,
             context_window=self.max_input_size,
