@@ -1,3 +1,4 @@
+import logging
 import os
 
 import uvicorn
@@ -32,6 +33,13 @@ def api_setup_llm():
 
 
 def main():
+    # Initialise logging
+    logging.basicConfig(
+        datefmt=r"%Y-%m-%d %H:%M:%S",
+        format="%(asctime)s [%(levelname)8s] %(message)s",
+        level=logging.INFO,
+    )
+
     # set up response model using environment variables
     response_model = api_setup_llm()
     # set up FastAPI
