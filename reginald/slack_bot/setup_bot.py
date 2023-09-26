@@ -16,12 +16,8 @@ API_URL = "http://0.0.0.0:8000"
 
 
 def setup_slack_bot(model: ResponseModel) -> Bot:
-    # Initialise logging
-    logging.basicConfig(
-        datefmt=r"%Y-%m-%d %H:%M:%S",
-        format="%(asctime)s [%(levelname)8s] %(message)s",
-        level=logging.INFO,
-    )
+    # Initialise Bot with response model
+    logging.info(f"Initalising bot with model: {model}")
 
     slack_bot = Bot(model)
 
@@ -34,13 +30,6 @@ def setup_slack_bot(model: ResponseModel) -> Bot:
 
 
 def setup_api_slack_bot(emoji: str) -> ApiBot:
-    # Initialise logging
-    logging.basicConfig(
-        datefmt=r"%Y-%m-%d %H:%M:%S",
-        format="%(asctime)s [%(levelname)8s] %(message)s",
-        level=logging.INFO,
-    )
-
     # Initialise Bot with response model
     logging.info(f"Initalising bot at {API_URL}")
     logging.info(f"Initalising bot with {emoji} emoji")
@@ -56,6 +45,13 @@ def setup_api_slack_bot(emoji: str) -> ApiBot:
 
 
 def setup_slack_client(slack_bot: Union[ApiBot, Bot]) -> SocketModeClient:
+    if os.environ.get("SLACK_APP_TOKEN") is None:
+        logging.error("SLACK_APP_TOKEN is not set")
+        sys.exit(1)
+    if os.environ.get("SLACK_BOT_TOKEN") is None:
+        logging.error("SLACK_BOT_TOKEN is not set")
+        sys.exit(1)
+
     # Initialize SocketModeClient with an app-level token + AsyncWebClient
     client = SocketModeClient(
         # This app-level token will be used only for establishing a connection
@@ -82,6 +78,13 @@ async def main():
         default=os.environ.get("REGINALD_EMOJI") or "rocket",
     )
     args = parser.parse_args()
+
+    # Initialise logging
+    logging.basicConfig(
+        datefmt=r"%Y-%m-%d %H:%M:%S",
+        format="%(asctime)s [%(levelname)8s] %(message)s",
+        level=logging.INFO,
+    )
 
     # set up slack bot
     bot = setup_api_slack_bot(args.emoji)
