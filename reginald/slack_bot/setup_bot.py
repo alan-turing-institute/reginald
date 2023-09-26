@@ -12,7 +12,7 @@ from reginald.models.models.base import ResponseModel
 from reginald.slack_bot.bot import ApiBot, Bot
 
 # mb set this as env variable
-API_URL = "http://127.0.0.1:8000"
+API_URL = "http://0.0.0.0:8000"
 
 
 def setup_slack_bot(model: ResponseModel) -> Bot:
