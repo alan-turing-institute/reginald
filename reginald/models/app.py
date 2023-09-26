@@ -6,6 +6,7 @@ from fastapi import FastAPI
 from pydantic import BaseModel
 
 from reginald.models.setup_llm import setup_llm
+from reginald.utils import Parser
 
 
 class Query(BaseModel):
@@ -13,26 +14,13 @@ class Query(BaseModel):
     user_id: str
 
 
-def api_setup_llm():
-    # set up response model using environment variables
-    # defaults for variables get set in setup_llm if any of these are None
-    response_model = setup_llm(
-        model=os.environ.get("REGINALD_MODEL"),
-        model_name=os.environ.get("REGINALD_MODEL_NAME"),
-        mode=os.environ.get("LLAMA_INDEX_MODE"),
-        data_dir=os.environ.get("LLAMA_INDEX_DATA_DIR"),
-        which_index=os.environ.get("LLAMA_INDEX_WHICH_INDEX"),
-        force_new_index=os.environ.get("LLAMA_INDEX_FORCE_NEW_INDEX"),
-        max_input_size=os.environ.get("LLAMA_INDEX_MAX_INPUT_SIZE"),
-        is_path=os.environ.get("LLAMA_INDEX_IS_PATH"),
-        n_gpu_layers=os.environ.get("LLAMA_INDEX_N_GPU_LAYERS"),
-        device=os.environ.get("LLAMA_INDEX_DEVICE"),
-    )
-
-    return response_model
-
-
 def main():
+    # Parse command line arguments
+    parser = Parser()
+
+    # pass args to setup_llm
+    llm_kwargs = vars(parser.parse_args())
+
     # Initialise logging
     logging.basicConfig(
         datefmt=r"%Y-%m-%d %H:%M:%S",
@@ -40,8 +28,9 @@ def main():
         level=logging.INFO,
     )
 
-    # set up response model using environment variables
-    response_model = api_setup_llm()
+    # set up response model
+    response_model = setup_llm(**llm_kwargs)
+
     # set up FastAPI
     app = FastAPI()
 
