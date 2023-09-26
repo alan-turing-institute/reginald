@@ -1,7 +1,9 @@
-from .base import ResponseModel
-from .chat_completion import ChatCompletionAzure, ChatCompletionOpenAI
-from .hello import Hello
-from .llama_index import (
+from reginald.models.models.chat_completion import (
+    ChatCompletionAzure,
+    ChatCompletionOpenAI,
+)
+from reginald.models.models.hello import Hello
+from reginald.models.models.llama_index import (
     LlamaIndexGPTAzure,
     LlamaIndexGPTOpenAI,
     LlamaIndexHF,
@@ -20,4 +22,14 @@ MODELS = {
     "llama-index-gpt-openai": LlamaIndexGPTOpenAI,
 }
 
-__all__ = ["MODELS", "ResponseModel"]
+DEFAULTS = {
+    "chat-completion-azure": "reginald-curie",
+    "chat-completion-openai": None,
+    "hello": None,
+    "llama-index-llama-cpp": "https://huggingface.co/TheBloke/Llama-2-13B-chat-GGUF/resolve/main/llama-2-13b-chat.Q6_K.gguf",
+    "llama-index-hf": "StabilityAI/stablelm-tuned-alpha-3b",
+    "llama-index-gpt-azure": "reginald-gpt35-turbo",
+    "llama-index-gpt-openai": None,
+}
+
+__all__ = ["MODELS", "DEFAULTS"]
