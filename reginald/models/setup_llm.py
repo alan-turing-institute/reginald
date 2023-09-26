@@ -128,6 +128,7 @@ def setup_llm(
         response_model = model(
             model_name=model_name,
             max_input_size=max_input_size,
+            is_path=is_path,
             n_gpu_layers=n_gpu_layers,
             device=device,
             data_dir=data_dir,
