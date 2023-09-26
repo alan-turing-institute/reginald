@@ -7,7 +7,7 @@ import pathlib
 import re
 import sys
 from tempfile import TemporaryDirectory
-from typing import Any, List, Optional
+from typing import Any, Optional
 
 import nest_asyncio
 import pandas as pd
@@ -38,9 +38,10 @@ from llama_index.prompts import PromptTemplate
 from llama_index.readers import SimpleDirectoryReader
 from llama_index.response.schema import RESPONSE_TYPE
 
+from reginald.models.models.base import MessageResponse, ResponseModel
+
 nest_asyncio.apply()
 
-from .base import MessageResponse, ResponseModel
 
 LLAMA_INDEX_DIR = "llama_index_indices"
 PUBLIC_DATA_DIR = "public"
@@ -54,12 +55,14 @@ class LlamaIndex(ResponseModel):
         max_input_size: int,
         data_dir: pathlib.Path,
         which_index: str,
-        chunk_size: Optional[int] = None,
         mode: str = "chat",
         k: int = 3,
+        chunk_size: Optional[int] = None,
         chunk_overlap_ratio: float = 0.1,
         force_new_index: bool = False,
         num_output: int = 512,
+        *args,
+        **kwargs,
     ) -> None:
         """
         Base class for models using llama-index.
@@ -76,15 +79,15 @@ class LlamaIndex(ResponseModel):
             Path to the data directory.
         which_index : str
             Which index to construct (if force_new_index is True) or use.
-            Options are "handbook", "public", or "all_data".
-        chunk_size : Optional[int], optional
-            Maximum size of chunks to use, by default None.
-            If None, this is computed as `ceil(max_input_size / k)`.
+            Options are "handbook", "wikis",  "public", or "all_data".
         mode : Optional[str], optional
             The type of engine to use when interacting with the data, options of "chat" or "query".
             Default is "chat".
         k : int, optional
             `similarity_top_k` to use in char or query engine, by default 3
+        chunk_size : Optional[int], optional
+            Maximum size of chunks to use, by default None.
+            If None, this is computed as `ceil(max_input_size / k)`.
         chunk_overlap_ratio : float, optional
             Chunk overlap as a ratio of chunk size, by default 0.1
         force_new_index : bool, optional
@@ -93,7 +96,7 @@ class LlamaIndex(ResponseModel):
         num_output : int, optional
             Number of outputs for the LLM, by default 512
         """
-        super().__init__(emoji="llama")
+        super().__init__(*args, emoji="llama", **kwargs)
         logging.info("Setting up Huggingface backend.")
         if mode == "chat":
             logging.info("Setting up chat engine.")
@@ -147,7 +150,7 @@ class LlamaIndex(ResponseModel):
                 self.documents, service_context=service_context
             )
 
-            # Save the service context and persist the index
+            # save the service context and persist the index
             logging.info("Saving the index")
             self.index.storage_context.persist(
                 persist_dir=self.data_dir / LLAMA_INDEX_DIR / which_index
@@ -506,9 +509,29 @@ class LlamaIndex(ResponseModel):
             "_prep_llm needs to be implemented by a subclass of LlamaIndex."
         )
 
-    def respond(self, message: str, user_id: str) -> MessageResponse:
+    def direct_message(self, message: str, user_id: str) -> MessageResponse:
         """
-        Method to respond to a direct message or channel mention in Slack.
+        Method to respond to a direct message in Slack.
+
+        Parameters
+        ----------
+        msg_in : str
+            Message from user
+        user_id : str
+            User ID
+
+        Returns
+        -------
+        MessageResponse
+            Response from the query engine.
+        """
+        backend_response = self._get_response(message, user_id)
+
+        return MessageResponse(backend_response)
+
+    def channel_mention(self, message: str, user_id: str) -> MessageResponse:
+        """
+        Method to respond to a channel mention in Slack.
 
         Parameters
         ----------
@@ -624,8 +647,15 @@ class LlamaIndexHF(LlamaIndex):
 
 
 class LlamaIndexGPTOpenAI(LlamaIndex):
-    def __init__(self, *args: Any, **kwargs: Any) -> None:
+    def __init__(
+        self, model_name: str = "gpt-3.5-turbo", *args: Any, **kwargs: Any
+    ) -> None:
         """
+        Parameters
+        ----------
+        model_name : str, optional
+            The model to use from the OpenAI API, by default "gpt-3.5-turbo"
+
         `LlamaIndexGPTOpenAI` is a subclass of `LlamaIndex` that uses OpenAI's
         API to implement the LLM.
 
@@ -634,11 +664,10 @@ class LlamaIndexGPTOpenAI(LlamaIndex):
         if os.getenv("OPENAI_API_KEY") is None:
             raise ValueError("You must set OPENAI_API_KEY for OpenAI.")
 
+        self.model_name = model_name
         self.openai_api_key = os.getenv("OPENAI_API_KEY")
         self.temperature = 0.7
-        super().__init__(
-            *args, model_name="gpt-3.5-turbo", max_input_size=4096, **kwargs
-        )
+        super().__init__(*args, model_name=self.model_name, **kwargs)
 
     def _prep_llm(self) -> LLM:
         return OpenAI(
@@ -651,9 +680,14 @@ class LlamaIndexGPTOpenAI(LlamaIndex):
 
 class LlamaIndexGPTAzure(LlamaIndex):
     def __init__(
-        self, deployment_name: str = "reginald-gpt35-turbo", *args: Any, **kwargs: Any
+        self, model_name: str = "reginald-gpt35-turbo", *args: Any, **kwargs: Any
     ) -> None:
         """
+        Parameters
+        ----------
+        model_name : str, optional
+            The deployment name of the model, by default "reginald-gpt35-turbo"
+
         `LlamaIndexGPTAzure` is a subclass of `LlamaIndex` that uses Azure's
         instance of OpenAI's LLMs to implement the LLM.
 
@@ -671,14 +705,12 @@ class LlamaIndexGPTAzure(LlamaIndex):
             raise ValueError("You must set OPENAI_AZURE_API_KEY for Azure OpenAI.")
 
         # deployment name can be found in the Azure AI Studio portal
-        self.deployment_name = deployment_name
+        self.deployment_name = model_name
         self.openai_api_base = os.getenv("OPENAI_AZURE_API_BASE")
         self.openai_api_key = os.getenv("OPENAI_AZURE_API_KEY")
         self.openai_api_version = "2023-03-15-preview"
         self.temperature = 0.7
-        super().__init__(
-            *args, model_name="gpt-3.5-turbo", max_input_size=4096, **kwargs
-        )
+        super().__init__(*args, model_name="gpt-3.5-turbo", **kwargs)
 
     def _prep_llm(self) -> LLM:
         logging.info(f"Setting up AzureOpenAI LLM (model {self.deployment_name})")
