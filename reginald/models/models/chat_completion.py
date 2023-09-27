@@ -68,20 +68,23 @@ class ChatCompletionAzure(ChatCompletionBase):
 
 
 class ChatCompletionOpenAI(ChatCompletionBase):
-    def __init__(self, *args: Any, **kwargs: Any) -> None:
+    def __init__(
+        self, model_name: str = "gpt-3.5-turbo", *args: Any, **kwargs: Any
+    ) -> None:
         super().__init__(*args, **kwargs)
+        self.model_name = model_name
         self.api_key = os.getenv("OPENAI_API_KEY")
 
     def direct_message(self, message: str, user_id: str) -> MessageResponse:
         openai.api_key = self.api_key
         response = openai.ChatCompletion.create(
-            model="gpt-3.5-turbo", messages=[{"role": "user", "content": message}]
+            model=self.model_name, messages=[{"role": "user", "content": message}]
         )
         return MessageResponse(response["choices"][0]["message"]["content"])
 
     def channel_mention(self, message: str, user_id: str) -> MessageResponse:
         openai.api_key = self.api_key
         response = openai.ChatCompletion.create(
-            model="gpt-3.5-turbo", messages=[{"role": "user", "content": message}]
+            model=self.model_name, messages=[{"role": "user", "content": message}]
         )
         return MessageResponse(response["choices"][0]["message"]["content"])

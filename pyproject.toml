@@ -2,7 +2,7 @@
 name = "reginald"
 version = "0.1.0"
 description = "A Slack bot for REG Hack Week 2023"
-authors = ["evelinag <evelina@evelinag.com>",
+authors = ["Evelina Gabasova <evelina@evelinag.com>",
            "James Robinson <jrobinson@turing.ac.uk>",
            "Ryan Chan <rchan@turing.ac.uk>",
            "Rosie Wood <rwood@turing.ac.uk>",
@@ -78,9 +78,9 @@ llama_index_notebooks = [
 ]
 
 [tool.poetry.scripts]
+reginald_run = "reginald.run:cli"
 reginald_run_api_bot = "reginald.slack_bot.setup_bot:cli"
 reginald_run_api_llm = "reginald.models.app:main"
-reginald_run_united = "reginald.run:cli"
 
 [[tool.poetry.source]]
 name = "PyPI"
@@ -90,7 +90,6 @@ priority = "primary"
 name = "torchcpu"
 url = "https://download.pytorch.org/whl/cpu/"
 priority = "explicit"
-
 
 [build-system]
 requires = ["poetry-core"]
