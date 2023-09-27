@@ -55,8 +55,8 @@ pre-commit install
 1. To connect to Slack, the bot requires an app token and a bot token. Put these into into a `.env` file:
 
     ```bash
-    echo "export SLACK_BOT_TOKEN='your-bot-user-oauth-access-token'" >> .env
-    echo "export SLACK_APP_TOKEN='your-app-level-token'" >> .env
+    echo "SLACK_BOT_TOKEN='your-bot-user-oauth-access-token'" >> .env
+    echo "SLACK_APP_TOKEN='your-app-level-token'" >> .env
     ```
 
 1. Activate the virtual environment:
@@ -64,20 +64,58 @@ pre-commit install
     poetry shell
     ```
 
-### Running the bot locally
+### Running the Reginald bot locally
 
-1. Set environment variables:
+In order to run the full Reginald app locally (i.e. setting up the full response engine along with the Slack bot), you can follow the steps below:
+
+1. Set environment variables (for more details on environtment variables, see [ENVIRONMENT_VARIABLES.md](the environment variables README)):
     ```bash
     source .env
     ```
 
-1. Run the bot using [`slack_bot/run.py`](https://github.com/alan-turing-institute/reginald/blob/main/slack_bot/run.py). To see CLI arguments:
+1. Run the bot using `reginald_run` - note that this actually runs [`reginald/run.py`](https://github.com/alan-turing-institute/reginald/blob/main/reginald/run.py). To see CLI arguments:
     ```bash
-    python slack_bot/run.py --help
+    reginald_run --help
     ```
 
 The bot will now listen for @mentions in the channels it's added to and respond with a simple message.
 
+### Running the response engine and Slack bot separately
+
+There are some cases where you'd want to run the response engine and Slack bot separately.
+For instance, with the `llama-index-llama-cpp` and `llama-index-hf` models, you are hosting your own LLM which you might want to host on a machine with GPUs.
+The Slack bot can then be run on a separate (more cost-efficient) machine.
+Doing this allows you to change the model or machine running the model without having to change the Slack bot.
+
+To do this, you can follow the steps below:
+
+- On the machine where you want to run the response engine, run the following command:
+    
+    1. Set up environment variables (for more details on environtment variables, see [ENVIRONMENT_VARIABLES.md](the environment variables README)):
+    ```bash
+    source .response_engine_env
+    ```
+
+    1. Set up response engine using `reginald_run_api_llm` - note that this actually runs [`reginald/models/app.py`](https://github.com/alan-turing-institute/reginald/blob/main/reginald/models/app.py). To see CLI arguments:
+    ```bash
+    reginald_run_api_llm --help
+    ```
+    
+- On the machine where you want to run the Slack bot, run the following command:
+    
+    1. Set up environment variables (for more details on environtment variables, see [ENVIRONMENT_VARIABLES.md](the environment variables README)):
+    ```bash
+    source .slack_bot_env
+    ```
+
+    1. Set up Slack bot using `reginald_run_api_bot` - note that this actually runs [`reginald/slack_bot/setup_bot.py`](https://github.com/alan-turing-institute/reginald/blob/main/reginald/slack_bot/setup_bot.py). To see CLI arguments:
+    ```bash
+    reginald_run_api_bot --help
+    ```
+
+### Running the bot in Docker
+
+For full details of Docker setup, see [docker/README.md](the Docker README).
 ### Running the bot in Azure
 
 1. Go to the `azure` directory
