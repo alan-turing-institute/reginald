@@ -49,10 +49,10 @@ class ChatCompletionAzure(ChatCompletionBase):
         return MessageResponse(response["choices"][0]["text"])
 
     def direct_message(self, message: str, user_id: str) -> MessageResponse:
-        return self._respond(message, user_id)
+        return self._respond(message=message, user_id=user_id)
 
     def channel_mention(self, message: str, user_id: str) -> MessageResponse:
-        return self._respond(message, user_id)
+        return self._respond(message=message, user_id=user_id)
 
 
 class ChatCompletionOpenAI(ChatCompletionBase):
@@ -71,7 +71,7 @@ class ChatCompletionOpenAI(ChatCompletionBase):
         return MessageResponse(response["choices"][0]["message"]["content"])
 
     def direct_message(self, message: str, user_id: str) -> MessageResponse:
-        return self._respond(message, user_id)
+        return self._respond(message=message, user_id=user_id)
 
     def channel_mention(self, message: str, user_id: str) -> MessageResponse:
-        return self._respond(message, user_id)
+        return self._respond(message=message, user_id=user_id)
