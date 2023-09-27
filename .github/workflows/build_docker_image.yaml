@@ -36,10 +36,18 @@ jobs:
           images: |
             ghcr.io/${{ github.repository }}
 
-      - name: Build and push Docker images
+      - name: Build and push Docker image for the Reginald app
         uses: docker/build-push-action@v4
         with:
-          file: docker/Dockerfile
+          file: docker/reginald/Dockerfile
+          push: true
+          tags: ${{ steps.meta.outputs.tags }}
+          labels: ${{ steps.meta.outputs.labels }}
+
+      - name: Build and push Docker image for the slack-bot only app
+        uses: docker/build-push-action@v4
+        with:
+          file: docker/slack_bot/Dockerfile
           push: true
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}

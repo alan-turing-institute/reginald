@@ -34,8 +34,8 @@ poetry install --all-extras
 
 If you only want to run a subset of the available packages then use:
 
-- for the Azure configuration `--extra azure`
-- for the Slack bot and models `--extra bot`
+- for the Azure configuration `--extras azure`
+- for the Slack bot and models `--extras bot`
 
 ####  Install the pre-commit hooks
 
