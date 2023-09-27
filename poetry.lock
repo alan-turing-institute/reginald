@@ -4879,7 +4879,7 @@ idna = ">=2.0"
 multidict = ">=4.0"
 
 [extras]
-api-bot = ["fastapi", "pydantic", "uvicorn"]
+api-bot = ["fastapi", "pydantic", "requests", "uvicorn"]
 azure = ["pulumi", "pulumi-azure-native"]
 ft-notebooks = ["datasets", "faiss-cpu", "ipykernel", "transformers"]
 llama-index-notebooks = ["bitsandbytes", "gradio", "httpx", "ipykernel"]
@@ -4887,4 +4887,4 @@ llama-index-notebooks = ["bitsandbytes", "gradio", "httpx", "ipykernel"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
-content-hash = "f6c2db81191fbf8986da633526b7e74785b1a28cf4c11271c0a21a6105d12ebc"
+content-hash = "6ebf724e567969a4f0ba1abd020d3557d99591e9ac3d888037d7404d6ddcd0a6"
