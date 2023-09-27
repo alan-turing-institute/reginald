@@ -45,6 +45,7 @@ torch = [
 ]
 transformers = "^4.33.2"
 uvicorn = { version="^0.23.2", optional=true }
+llama-cpp-python = "^0.2.7"
 
 [tool.poetry.group.dev.dependencies]
 black = "^23.3.0"
