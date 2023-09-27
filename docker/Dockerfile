@@ -6,11 +6,9 @@ WORKDIR /app
 RUN pip3 install --upgrade pip poetry setuptools wheel
 
 # Build Python project
-COPY slack_bot slack_bot
+COPY reginald .
 COPY pyproject.toml .
-COPY poetry.lock .
-RUN poetry install --extras bot
+RUN poetry install --all-extras
 
 # Set entrypoint
-ENTRYPOINT [ "poetry" ]
-CMD ["run", "python", "/app/slack_bot/run.py"]
+CMD ["reginald_run_united -m hello"]
