@@ -542,7 +542,7 @@ class LlamaIndex(ResponseModel):
         MessageResponse
             Response from the query engine.
         """
-        return self._respond(message, user_id)
+        return self._respond(message=message, user_id=user_id)
 
     def channel_mention(self, message: str, user_id: str) -> MessageResponse:
         """
@@ -560,7 +560,7 @@ class LlamaIndex(ResponseModel):
         MessageResponse
             Response from the query engine.
         """
-        return self._respond(message, user_id)
+        return self._respond(message=message, user_id=user_id)
 
 
 class LlamaIndexLlamaCPP(LlamaIndex):
