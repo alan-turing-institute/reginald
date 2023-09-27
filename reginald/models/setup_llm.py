@@ -29,8 +29,8 @@ def setup_llm(
         Select which sub-model to use within the model requested.
         For example, if by model is "llama-index-hf", this specifies
         the Huggingface model which we would like to use, default None.
-        This is ignored if using 'hello' or OpenAI model types. Otherwise,
-        the defaults are set in `reginald/models/models/__init__.py`
+        This is ignored if using 'hello' model.
+        Otherwise, the defaults are set in `reginald/models/models/__init__.py`
     mode : str | None, optional
         Select which mode to use between "chat" and "query",
         by default None (uses "chat"). This is ignored if not using

@@ -22,8 +22,14 @@ class Parser(argparse.ArgumentParser):
             "-n",
             type=str,
             help=(
-                "Select which model to use "
-                "(ignored if using 'hello' or OpenAI model types)."
+                "Select which sub-model to use (within the main model selected)."
+                "For llama-index-llama-cpp and llama-index-hf models, this specifies"
+                "the LLM model (or path to that model) which we would like to use."
+                "For chat-completion-azure and llama-index-gpt-azure, this refers"
+                "to the deployment name on Azure."
+                "For chat-completion-azure and llama-index-gpt-openai, this refers"
+                "to the model name on OpenAI."
+                "(ignored if using 'hello' model types)."
             ),
             default=os.environ.get("REGINALD_MODEL_NAME"),
         )
