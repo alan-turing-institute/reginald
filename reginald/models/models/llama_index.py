@@ -506,9 +506,9 @@ class LlamaIndex(ResponseModel):
             "_prep_llm needs to be implemented by a subclass of LlamaIndex."
         )
 
-    def direct_message(self, message: str, user_id: str) -> MessageResponse:
+    def _respond(self, message: str, user_id: str) -> MessageResponse:
         """
-        Method to respond to a direct message in Slack.
+        Method to respond to a message in Slack.
 
         Parameters
         ----------
@@ -525,6 +525,24 @@ class LlamaIndex(ResponseModel):
         backend_response = self._get_response(message, user_id)
 
         return MessageResponse(backend_response)
+
+    def direct_message(self, message: str, user_id: str) -> MessageResponse:
+        """
+        Method to respond to a direct message in Slack.
+
+        Parameters
+        ----------
+        msg_in : str
+            Message from user
+        user_id : str
+            User ID
+
+        Returns
+        -------
+        MessageResponse
+            Response from the query engine.
+        """
+        return self._respond(message=message, user_id=user_id)
 
     def channel_mention(self, message: str, user_id: str) -> MessageResponse:
         """
@@ -542,9 +560,7 @@ class LlamaIndex(ResponseModel):
         MessageResponse
             Response from the query engine.
         """
-        backend_response = self._get_response(message, user_id)
-
-        return MessageResponse(backend_response)
+        return self._respond(message=message, user_id=user_id)
 
 
 class LlamaIndexLlamaCPP(LlamaIndex):
@@ -648,15 +664,15 @@ class LlamaIndexGPTOpenAI(LlamaIndex):
         self, model_name: str = "gpt-3.5-turbo", *args: Any, **kwargs: Any
     ) -> None:
         """
-        Parameters
-        ----------
-        model_name : str, optional
-            The model to use from the OpenAI API, by default "gpt-3.5-turbo"
-
         `LlamaIndexGPTOpenAI` is a subclass of `LlamaIndex` that uses OpenAI's
         API to implement the LLM.
 
         Must have `OPENAI_API_KEY` set as an environment variable.
+
+        Parameters
+        ----------
+        model_name : str, optional
+            The model to use from the OpenAI API, by default "gpt-3.5-turbo"
         """
         if os.getenv("OPENAI_API_KEY") is None:
             raise ValueError("You must set OPENAI_API_KEY for OpenAI.")
@@ -681,18 +697,18 @@ class LlamaIndexGPTAzure(LlamaIndex):
         self, model_name: str = "reginald-gpt35-turbo", *args: Any, **kwargs: Any
     ) -> None:
         """
-        Parameters
-        ----------
-        model_name : str, optional
-            The deployment name of the model, by default "reginald-gpt35-turbo"
-
-        `LlamaIndexGPTAzure` is a subclass of `LlamaIndex` that uses Azure's
+         `LlamaIndexGPTAzure` is a subclass of `LlamaIndex` that uses Azure's
         instance of OpenAI's LLMs to implement the LLM.
 
         Must have the following environment variables set:
         - `OPENAI_API_BASE`: Azure endpoint which looks
           like https://YOUR_RESOURCE_NAME.openai.azure.com/
         - `OPENAI_API_KEY`: Azure API key
+
+        Parameters
+        ----------
+        model_name : str, optional
+            The deployment name of the model, by default "reginald-gpt35-turbo"
         """
         if os.getenv("OPENAI_AZURE_API_BASE") is None:
             raise ValueError(
