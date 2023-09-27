@@ -90,32 +90,31 @@ Doing this allows you to change the model or machine running the model without h
 To do this, you can follow the steps below:
 
 - On the machine where you want to run the response engine, run the following command:
-    
-    1. Set up environment variables (for more details on environtment variables, see [ENVIRONMENT_VARIABLES.md](the environment variables README)):
+
+    1. Set up environment variables for the response engine (for more details on environtment variables, see [the environment variables README](https://github.com/alan-turing-institute/reginald/blob/main/ENVIRONMENT_VARIABLES.md)):
     ```bash
     source .response_engine_env
     ```
-
-    1. Set up response engine using `reginald_run_api_llm` - note that this actually runs [`reginald/models/app.py`](https://github.com/alan-turing-institute/reginald/blob/main/reginald/models/app.py). To see CLI arguments:
+    2. Set up response engine using `reginald_run_api_llm` - note that this actually runs [`reginald/models/app.py`](https://github.com/alan-turing-institute/reginald/blob/main/reginald/models/app.py). To see CLI arguments:
     ```bash
     reginald_run_api_llm --help
     ```
-    
+
 - On the machine where you want to run the Slack bot, run the following command:
-    
-    1. Set up environment variables (for more details on environtment variables, see [ENVIRONMENT_VARIABLES.md](the environment variables README)):
+
+    1. Set up environment variables for the Slack bot (for more details on environtment variables, see [the environment variables README](https://github.com/alan-turing-institute/reginald/blob/main/ENVIRONMENT_VARIABLES.md)):
     ```bash
     source .slack_bot_env
     ```
-
-    1. Set up Slack bot using `reginald_run_api_bot` - note that this actually runs [`reginald/slack_bot/setup_bot.py`](https://github.com/alan-turing-institute/reginald/blob/main/reginald/slack_bot/setup_bot.py). To see CLI arguments:
+    2. Set up Slack bot using `reginald_run_api_bot` - note that this actually runs [`reginald/slack_bot/setup_bot.py`](https://github.com/alan-turing-institute/reginald/blob/main/reginald/slack_bot/setup_bot.py). To see CLI arguments:
     ```bash
     reginald_run_api_bot --help
     ```
 
 ### Running the bot in Docker
 
-For full details of Docker setup, see [docker/README.md](the Docker README).
+For full details of Docker setup, see [the Docker README](docker/README.md).
+
 ### Running the bot in Azure
 
 1. Go to the `azure` directory
