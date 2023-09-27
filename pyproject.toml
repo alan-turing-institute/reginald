@@ -43,7 +43,7 @@ slack-sdk = "^3.21.3"
 sentence-transformers = "^2.2.2"
 torch = [
   { version = "^2.0.1", markers = "sys_platform != 'linux'", source = "PyPI" },
-  { version = "^2.0.1", markers = "sys_platform == 'linux'", source = "PyPI" }
+  { version = "^2.0.1+cpu", markers = "sys_platform == 'linux'", source = "torchcpu" }
 ]
 transformers = "^4.33.2"
 uvicorn = { version="^0.23.2", optional=true }
