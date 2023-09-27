@@ -5,20 +5,21 @@ The Reginald project consists of:
 ├── azure
 │   └── Setup REGinald infrastructure on Azure
 ├── data
-│   └── Extracts from the REG handbook and wiki
-├── data_processing
-│   └── Scripts for processing data
+│   └── Directory to store llama-index data indexes and other public Turing data
 ├── docker
-│   └── Scripts for building a Docker image
-├── models
-│   └── REGinald models (in notebooks)
-└── slack_bot
-    └── Python Slack bot
+│   └── Scripts for building a Docker images for both Reginald app and Slack-bot only app
+├── notebooks
+│   └── data processing notebooks
+│   └── development notebooks for llama-index REGinald models
+└── reginald
+    └── models: scripts for setting up query and chat engines
+    └── slack_bot: scripts for setting up Slack bot
+    └── scripts for setting up end to end Slack bot with query engine
 ```
 
 ## Slack bot
 
-This is a simple Slack bot written in Python that listens for @mentions in any channel it is in and responds with a simple message and an emoji.
+This is a simple Slack bot written in Python that listens for direct messages and @mentions in any channel it is in and responds with a message and an emoji.
 The bot uses web sockets for communication.
 
 ### Prerequisites
@@ -34,8 +35,12 @@ poetry install --all-extras
 
 If you only want to run a subset of the available packages then use:
 
-- for the Azure configuration `--extras azure`
-- for the Slack bot and models `--extras bot`
+- for the LLM-only and Slack-bot-only setup: `--extras api_bot`
+- for the Azure configuration: `--extras azure`
+- for running notebooks regarding using fine-tuning: `--extras ft_notebooks`
+- for running notebooks regarding using `llama-index`: `--extras llama_index_notebooks`
+
+Without installing extras, you will have the packages required in order to run the full Reginald model on your machine.
 
 ####  Install the pre-commit hooks
 
