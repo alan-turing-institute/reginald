@@ -1,11 +1,11 @@
 To build this Docker image you need to be in the root of the repository.
 
-## United model
+## Reginald model
 
-The following command will build it the image for the full (or "united") model which has the model + slack bot and tag it as `reginald:latest`:
+The following command will build it the image for the (full) Reginald model which has the model + slack bot and tag it as `reginald:latest`:
 
 ```
-docker build . -t reginald:latest -f docker/united/Dockerfile
+docker build . -t reginald:latest -f docker/reginald/Dockerfile
 ```
 
 The following environment variables will be used by this image:
