@@ -667,6 +667,7 @@ class LlamaIndexGPTOpenAI(LlamaIndex):
         super().__init__(*args, model_name=self.model_name, **kwargs)
 
     def _prep_llm(self) -> LLM:
+        logging.info(f"Setting up OpenAI LLM (model {self.model_name})")
         return OpenAI(
             model=self.model_name,
             temperature=self.temperature,

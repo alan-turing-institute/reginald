@@ -29,7 +29,7 @@ DEFAULTS = {
     "llama-index-llama-cpp": "https://huggingface.co/TheBloke/Llama-2-13B-chat-GGUF/resolve/main/llama-2-13b-chat.Q6_K.gguf",
     "llama-index-hf": "StabilityAI/stablelm-tuned-alpha-3b",
     "llama-index-gpt-azure": "reginald-gpt35-turbo",
-    "llama-index-gpt-openai": None,
+    "llama-index-gpt-openai": "gpt-3.5-turbo",
 }
 
 __all__ = ["MODELS", "DEFAULTS"]
