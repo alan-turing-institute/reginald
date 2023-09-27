@@ -10,12 +10,19 @@ class MessageResponse:
 
 class ResponseModel(ABC):
     def __init__(self, emoji: Optional[str], *args: Any, **kwargs: Any):
+        """
+        When the strategy receives a message it should
+        return a MessageResponse where both are optional
+
+        Parameters
+        ----------
+        emoji : Optional[str]
+            Emoji to use for the bot's response
+        """
         self.emoji = emoji
 
     def direct_message(self, message: str, user_id: str) -> MessageResponse:
-        """When the strategy receives a message it should return a MessageResponse where both are optional"""
         raise NotImplementedError
 
     def channel_mention(self, message: str, user_id: str) -> MessageResponse:
-        """When the strategy receives a message it should return a MessageResponse where both are optional"""
         raise NotImplementedError
