@@ -4913,10 +4913,10 @@ multidict = ">=4.0"
 [extras]
 api-bot = ["fastapi", "pydantic", "requests", "uvicorn"]
 azure = ["pulumi", "pulumi-azure-native"]
-ft-notebooks = ["datasets", "faiss-cpu", "ipykernel", "transformers"]
+ft-notebooks = ["datasets", "faiss-cpu", "ipykernel"]
 llama-index-notebooks = ["bitsandbytes", "gradio", "httpx", "ipykernel"]
 
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
-content-hash = "0187c31a92419158a3a702ff91c80f1b0e6537eb5f5cadf57c27cae07c109ccc"
+content-hash = "b29e80bb930c17be7ae90ee408ba81d13de97e15ec63a5c5bdad99fcc6189969"
