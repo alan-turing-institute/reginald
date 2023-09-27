@@ -3,7 +3,7 @@ name: Create and publish a Docker image
 on:
   push:
     branches:
-      - "docker-slack-bot"
+      - "main"
     tags:
       - "*"
 
@@ -36,10 +36,10 @@ jobs:
           images: |
             ghcr.io/${{ github.repository }}
 
-      - name: Build and push Docker image for the full/united app
+      - name: Build and push Docker image for the Reginald app
         uses: docker/build-push-action@v4
         with:
-          file: docker/united/Dockerfile
+          file: docker/reginald/Dockerfile
           push: true
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
