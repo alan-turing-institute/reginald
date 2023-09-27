@@ -1,4 +1,4 @@
-To build this Docker image you need to be in the root of the repository.
+To build this Docker image you need to be in the root of the repository (i.e. the parent directory of this one).
 
 ## Reginald model
 
@@ -8,7 +8,7 @@ The following command will build it the image for the (full) Reginald model whic
 docker build . -t reginald:latest -f docker/reginald/Dockerfile
 ```
 
-The following environment variables will be used by this image:
+The following environment variables can be used by this image:
 
 - `REGINALD_MODEL`: name of model to use
 - `REGINALD_MODEL_NAME`: name of sub-model to use with the one requested if not using `hello` model
@@ -26,7 +26,11 @@ The following environment variables will be used by this image:
 - `SLACK_APP_TOKEN`: app token for Slack
 - `SLACK_BOT_TOKEN`: bot token for Slack
 
-**Note:** If none of these are set, then a `hello` model will be created by default.
+To run you can use the following command (to run the `hello` model):
+
+```
+docker run -e REGINALD_MODEL=hello -e SLACK_APP_TOKEN=<slack-app-token> -e SLACK_BOT_TOKEN=<slack-bot-token> reginald:latest
+```
 
 ## Slack bot only
 
@@ -37,5 +41,34 @@ docker build . -t reginald-slack-bot:latest -f docker/slack_bot/Dockerfile
 ```
 
 The following environment variables will be used by this image:
+
+- `REGINALD_EMOJI`: emoji to use for bot
 - `SLACK_APP_TOKEN`: app token for Slack
 - `SLACK_BOT_TOKEN`: bot token for Slack
+
+To run you can use the following command:
+
+```
+docker run -e REGINALD_EMOJI=wave -e SLACK_APP_TOKEN=<slack-app-token> -e SLACK_BOT_TOKEN=<slack-bot-token> reginald-slack-bot:latest
+```
+
+## Using an environment file
+
+Rather than passing in the environment variables on the command line using the `-e` flag in `docker run`, you can use an environment file:
+
+```
+docker run --env-file .env reginald:latest
+```
+
+where `.env` is a file containing the environment variables, e.g. for running the `llama-index-llama-cpp` model using the `handbook` index:
+
+```
+REGINALD_MODEL=llama-index-llama-cpp
+REGINALD_MODEL_NAME=https://huggingface.co/TheBloke/Llama-2-7B-chat-GGUF/resolve/main/llama-2-7b-chat.Q4_K_M.gguf
+LLAMA_INDEX_MODE=chat
+LLAMA_INDEX_DATA_DIR=data
+LLAMA_INDEX_WHICH_INDEX=handbook
+LLAMA_INDEX_MAX_INPUT_SIZE=2048
+SLACK_APP_TOKEN=<slack-app-token>
+SLACK_BOT_TOKEN=<slack-bot-token>
+```
