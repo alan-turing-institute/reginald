@@ -6,9 +6,11 @@ WORKDIR /app
 RUN pip3 install --upgrade pip poetry setuptools wheel
 
 # Build Python project
-COPY reginald .
+COPY reginald reginald
 COPY pyproject.toml .
+COPY README.md .
 RUN poetry install --all-extras
 
 # Set entrypoint
-CMD ["reginald_run_united"]
+ENTRYPOINT ["poetry"]
+CMD ["run", "python", "reginald_run"]
