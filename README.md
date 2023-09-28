@@ -99,6 +99,8 @@ In order to run the full Reginald app locally (i.e. setting up the full response
     reginald_run --help
     ```
 
+**For examples of running each of our different models, see the [models README](MODELS.md).**
+
 The `reginald_run` CLI takes in several arguments such as:
 - `--model` (`-m`): to select the type of model to use (see the [models README](MODELS.md) for the list of models available)
 - `--model-name` (`-n`): to select the sub-model to use within the model selected
