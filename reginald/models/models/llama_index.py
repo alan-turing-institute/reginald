@@ -619,7 +619,7 @@ class LlamaIndexLlamaCPP(LlamaIndex):
 class LlamaIndexHF(LlamaIndex):
     def __init__(
         self,
-        model_name: str = "StabilityAI/stablelm-tuned-alpha-3b",
+        model_name: str = "microsoft/phi-1_5",
         device: str = "auto",
         *args: Any,
         **kwargs: Any,
@@ -632,7 +632,7 @@ class LlamaIndexHF(LlamaIndex):
         ----------
         model_name : str, optional
             Model name from Huggingface's model hub,
-            by default "StabilityAI/stablelm-tuned-alpha-3b".
+            by default "microsoft/phi-1_5".
         device : str, optional
             Device map to use for the LLM, by default "auto".
         """
