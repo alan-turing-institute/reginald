@@ -24,7 +24,7 @@ The bot uses web sockets for communication.
 How the bot responds to messages is determined by the response engine that is set up - see the [models README](MODELS.md) for more details of the models available.
 The main models we use are:
 -  `llama-index-llama-cpp`: a model which uses the [`llama-index`](https://github.com/jerryjliu/llama_index) library to query a data index and then uses a quantised LLM (implemented using [`llama-python-cpp`](https://github.com/abetlen/llama-cpp-python)) to generate a response
-- `llama-index-hf`: a model which uses the [`llama-index`](https://github.com/jerryjliu/llama_index) library to query a data index and then uses a Huggingface LLM to generate a response
+- `llama-index-hf`: a model which uses the [`llama-index`](https://github.com/jerryjliu/llama_index) library to query a data index and then uses an LLM from [Huggingface](https://huggingface.co/models) to generate a response
 - `llama-index-gpt-azure`: a model which uses the [`llama-index`](https://github.com/jerryjliu/llama_index) library to query a data index and then uses the Azure OpenAI API to query a LLM to generate a response
 
 ### Prerequisites
@@ -100,15 +100,26 @@ In order to run the full Reginald app locally (i.e. setting up the full response
     ```
 
 The `reginald_run` CLI takes in several arguments such as:
-- `--model` (`-m`): to select the type of model to use
+- `--model` (`-m`): to select the type of model to use (see the [models README](MODELS.md) for the list of models available)
 - `--model-name` (`-n`): to select the sub-model to use within the model selected
+    - For `llama-index-llama-cpp` and `llama-index-hf` models, this specifies the LLM model (or path to that model) which we would like to use
+    - For `chat-completion-azure` and `llama-index-gpt-azure`, this refers to the deployment name on Azure
+    - For `chat-completion-openai` and `llama-index-gpt-openai`, this refers to the model/engine name on OpenAI
+
+There are some CLI arguments specific to only the `llama-index` models:
 - `--mode`: to determine whether to use 'query' or 'chat' engine
 - `--data-dir` (`-d`): specify the data directory location
 - `--which-index` (`-w`): specify the directory name for looking up/writing data index (for `llama-index` models)
 - `--force-new-index` (`-f`): whether or not to force create a new data index
+
+There are some CLI arguments specific to only the `llama-index-llama-cpp` and `llama-index-hf` models:
 - `--max-input-size` (`-max`): maxumum input size of LLM
+
+There are some CLI arguments specific to only the `llama-index-llama-cpp` model:
 - `--is-path` (`-p`): whether or not the model-name passed is a path to the model
 - `--n-gpu-layers` (`-ngl`): number of layers to offload to GPU if using `llama-index-llama-cpp` model
+
+There are some CLI arguments specific to only the `llama-index-hf` model:
 - `--device` (`-dev`): device to host Huggingface model if using `llama-index-hf` model
 
 **Note**: specifying CLI arguments will override any environment variables set.
