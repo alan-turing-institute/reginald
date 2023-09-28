@@ -15,7 +15,19 @@ API_URL = "http://0.0.0.0:8000"
 
 
 def setup_slack_bot(model: ResponseModel) -> Bot:
-    # Initialise Bot with response model
+    """
+    Initialise `Bot` with response model.
+
+    Parameters
+    ----------
+    model : ResponseModel
+        Response model to use for the bot
+
+    Returns
+    -------
+    Bot
+        Bot with response model
+    """
     logging.info(f"Initalising bot with model: {model}")
 
     slack_bot = Bot(model)
@@ -29,10 +41,23 @@ def setup_slack_bot(model: ResponseModel) -> Bot:
 
 
 def setup_api_slack_bot(emoji: str) -> ApiBot:
-    # Initialise Bot with response model
+    """
+    Initialise `ApiBot` with response model.
+
+    Parameters
+    ----------
+    emoji : str
+        Emoji to use for the bot for responding to messages
+
+    Returns
+    -------
+    ApiBot
+        Bot which uses an API for responding to messages
+    """
     logging.info(f"Initalising bot at {API_URL}")
     logging.info(f"Initalising bot with {emoji} emoji")
 
+    # set up bot with the API_URL and emoji
     slack_bot = ApiBot(API_URL, emoji)
 
     logging.info("Connecting to Slack...")
@@ -44,6 +69,23 @@ def setup_api_slack_bot(emoji: str) -> ApiBot:
 
 
 def setup_slack_client(slack_bot: ApiBot | Bot) -> SocketModeClient:
+    """
+    Initialise Slack client with bot.
+
+    Parameters
+    ----------
+    slack_bot : ApiBot | Bot
+        Bot to use for responding to messages.
+        This can be either an ApiBot object
+        (a bot which uses an API for responding)
+        or a Bot object (a bot which uses a response
+        model object directly for responding)
+
+    Returns
+    -------
+    SocketModeClient
+        Slack client with bot
+    """
     if os.environ.get("SLACK_APP_TOKEN") is None:
         logging.error("SLACK_APP_TOKEN is not set")
         sys.exit(1)
@@ -51,23 +93,29 @@ def setup_slack_client(slack_bot: ApiBot | Bot) -> SocketModeClient:
         logging.error("SLACK_BOT_TOKEN is not set")
         sys.exit(1)
 
-    # Initialize SocketModeClient with an app-level token + AsyncWebClient
+    # initialize SocketModeClient with an app-level token + AsyncWebClient
     client = SocketModeClient(
-        # This app-level token will be used only for establishing a connection
+        # this app-level token will be used only for establishing a connection
         app_token=os.environ.get("SLACK_APP_TOKEN"),
-        # You will be using this AsyncWebClient for performing Web API calls in listeners
+        # you will be using this AsyncWebClient for performing Web API calls in listeners
         web_client=AsyncWebClient(token=os.environ.get("SLACK_BOT_TOKEN")),
-        # To ensure connection doesn't go stale - we can adjust as needed.
+        # to ensure connection doesn't go stale - we can adjust as needed.
         ping_interval=60,
     )
 
-    # Add a new listener to receive messages from Slack
+    # add a new listener to receive messages from Slack
     client.socket_mode_request_listeners.append(slack_bot)
 
     return client
 
 
 async def main():
+    """
+    Main function to run the Slack bot which sets up the bot
+    (which uses an API for responding to messages) and
+    then establishes a WebSocket connection to the
+    Socket Mode servers and listens for events.
+    """
     # Parse command line arguments
     parser = argparse.ArgumentParser()
     parser.add_argument(
