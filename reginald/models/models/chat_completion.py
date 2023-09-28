@@ -9,6 +9,9 @@ from reginald.models.models.base import MessageResponse, ResponseModel
 
 class ChatCompletionBase(ResponseModel):
     def __init__(self, *args, **kwargs) -> None:
+        """
+        Base class for chat completion models.
+        """
         super().__init__(emoji="books")
 
 
