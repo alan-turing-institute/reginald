@@ -5,6 +5,10 @@ from reginald.models.models.base import MessageResponse, ResponseModel
 
 class Hello(ResponseModel):
     def __init__(self, *args: Any, **kwargs: Any):
+        """
+        Basic response model that has set response to
+        direct messagesa and channel mentions.
+        """
         super().__init__(*args, emoji="wave", **kwargs)
 
     def direct_message(self, message: str, user_id: str) -> MessageResponse:
