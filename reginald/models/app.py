@@ -15,6 +15,14 @@ class Query(BaseModel):
 
 
 def main():
+    """
+    Main function to run the app which sets up the response model
+    and then creates a FastAPI app to serve the model.
+
+    The app listens on port 8000 and has two endpoints:
+    - /direct_message: for obtaining responses from direct messages
+    - /channel_mention: for obtaining responses from channel mentions
+    """
     # Parse command line arguments
     parser = Parser()
 
@@ -34,15 +42,18 @@ def main():
     # set up FastAPI
     app = FastAPI()
 
+    # set up basic root endpoint
     @app.get("/")
     async def root():
-        return "Hello World"
+        return "Hello World!"
 
+    # set up direct_message endpoint
     @app.get("/direct_message")
     async def direct_message(query: Query):
         response = response_model.direct_message(query.message, query.user_id)
         return response
 
+    # set up channel_mention endpoint
     @app.get("/channel_mention")
     async def channel_mention(query: Query):
         response = response_model.channel_mention(query.message, query.user_id)

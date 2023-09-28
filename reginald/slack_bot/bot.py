@@ -12,6 +12,14 @@ from reginald.models.models.base import ResponseModel
 
 class Bot(AsyncSocketModeRequestListener):
     def __init__(self, model: ResponseModel) -> None:
+        """
+        Bot class for responding to Slack messages using a response model.
+
+        Parameters
+        ----------
+        model : ResponseModel
+            Response model to use for the bot
+        """
         self.model = model
 
         # set up queue and task to run worker
@@ -19,6 +27,16 @@ class Bot(AsyncSocketModeRequestListener):
         _ = asyncio.create_task(self.worker(self.queue))
 
     async def __call__(self, client: SocketModeClient, req: SocketModeRequest) -> None:
+        """
+        Callback function for handling Slack requests.
+
+        Parameters
+        ----------
+        client : SocketModeClient
+            Slack client
+        req : SocketModeRequest
+            Slack request
+        """
         if req.type == "events_api":
             # Acknowledge the request
             logging.info("Received an events_api request")
@@ -107,7 +125,15 @@ class Bot(AsyncSocketModeRequestListener):
             logging.info(f"Received unexpected request of type '{req.type}'")
             return
 
-    async def worker(self, queue):
+    async def worker(self, queue: asyncio.Queue) -> None:
+        """
+        Async worker to process Slack requests.
+
+        Parameters
+        ----------
+        queue : asyncio.Queue
+            Queue of Slack requests to process
+        """
         while True:
             (client, event) = await queue.get()
             await self._process_request(client, event)
@@ -119,6 +145,16 @@ class Bot(AsyncSocketModeRequestListener):
         client: SocketModeClient,
         event: str,
     ) -> None:
+        """
+        Method to process a Slack request and respond with a message.
+
+        Parameters
+        ----------
+        client : SocketModeClient
+            Slack client
+        req : SocketModeRequest
+            Slack request
+        """
         # Extract user and message information
         message = event["text"]
         user_id = event["user"]
@@ -166,7 +202,18 @@ class Bot(AsyncSocketModeRequestListener):
     async def react(
         self, client: SocketModeClient, channel: str, timestamp: str
     ) -> None:
-        """Emoji react to the input message"""
+        """
+        Emoji react to the input message.
+
+        Parameters
+        ----------
+        client : SocketModeClient
+            Slack client
+        channel : str
+            Channel ID
+        timestamp : str
+            Timestamp of message
+        """
         if self.model.emoji:
             logging.info(f"Reacting with emoji {self.model.emoji}.")
             await client.web_client.reactions_add(
@@ -180,14 +227,15 @@ class Bot(AsyncSocketModeRequestListener):
 
 class ApiBot(AsyncSocketModeRequestListener):
     def __init__(self, api_url: str, emoji: str) -> None:
-        """TODO: Fill in here
+        """
+        Bot class for responding to Slack messages using an API to a response model.
 
         Parameters
         ----------
         api_url : str
             The api url of the model
         emoji : str
-            The emoji to use when responding to a direct message/channel mention.
+            The emoji to use when responding to a direct message/channel mention
         """
         self.api_url = api_url
         self.emoji = emoji
@@ -197,6 +245,16 @@ class ApiBot(AsyncSocketModeRequestListener):
         _ = asyncio.create_task(self.worker(self.queue))
 
     async def __call__(self, client: SocketModeClient, req: SocketModeRequest) -> None:
+        """
+        Callback function for handling Slack requests.
+
+        Parameters
+        ----------
+        client : SocketModeClient
+            Slack client
+        req : SocketModeRequest
+            Slack request
+        """
         if req.type == "events_api":
             # Acknowledge the request
             logging.info("Received an events_api request")
@@ -285,7 +343,15 @@ class ApiBot(AsyncSocketModeRequestListener):
             logging.info(f"Received unexpected request of type '{req.type}'")
             return
 
-    async def worker(self, queue):
+    async def worker(self, queue: asyncio.Queue) -> None:
+        """
+        Async worker to process Slack requests.
+
+        Parameters
+        ----------
+        queue : asyncio.Queue
+            Queue of Slack requests to process
+        """
         while True:
             (client, event) = await queue.get()
             await self._process_request(client, event)
@@ -297,6 +363,16 @@ class ApiBot(AsyncSocketModeRequestListener):
         client: SocketModeClient,
         event: str,
     ) -> None:
+        """
+        Method to process a Slack request and respond with a message.
+
+        Parameters
+        ----------
+        client : SocketModeClient
+            Slack client
+        req : SocketModeRequest
+            Slack request
+        """
         # Extract user and message information
         message = event["text"]
         user_id = event["user"]
@@ -356,7 +432,18 @@ class ApiBot(AsyncSocketModeRequestListener):
     async def react(
         self, client: SocketModeClient, channel: str, timestamp: str
     ) -> None:
-        """Emoji react to the input message"""
+        """
+        Emoji react to the input message.
+
+        Parameters
+        ----------
+        client : SocketModeClient
+            Slack client
+        channel : str
+            Channel ID
+        timestamp : str
+            Timestamp of message
+        """
         if self.emoji:
             logging.info(f"Reacting with emoji {self.emoji}.")
             await client.web_client.reactions_add(
