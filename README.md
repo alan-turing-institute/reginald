@@ -21,6 +21,11 @@ The Reginald project consists of:
 
 This is a simple Slack bot written in Python that listens for direct messages and @mentions in any channel it is in and responds with a message and an emoji.
 The bot uses web sockets for communication.
+How the bot responds to messages is determined by the response engine that is set up - see the [models README](MODELS.md) for more details of the models available.
+The main models we use are:
+-  `llama-index-llama-cpp`: a model which uses the [`llama-index`](https://github.com/jerryjliu/llama_index) library to query a data index and then uses a quantised LLM (implemented using [`llama-python-cpp`](https://github.com/abetlen/llama-cpp-python)) to generate a response
+- `llama-index-hf`: a model which uses the [`llama-index`](https://github.com/jerryjliu/llama_index) library to query a data index and then uses a Huggingface LLM to generate a response
+- `llama-index-gpt-azure`: a model which uses the [`llama-index`](https://github.com/jerryjliu/llama_index) library to query a data index and then uses the Azure OpenAI API to query a LLM to generate a response
 
 ### Prerequisites
 
@@ -50,6 +55,8 @@ pre-commit install
 
 ### Obtaining Slack tokens
 
+To set up the Slack bot, you must set Slack bot environment variables. To obtain them from Slack, follow the steps below:
+
 1. Set up the bot in Slack: [Socket Mode Client](https://slack.dev/python-slack-sdk/socket-mode/index.html).
 
 1. To connect to Slack, the bot requires an app token and a bot token. Put these into into a `.env` file:
@@ -60,23 +67,64 @@ pre-commit install
     ```
 
 1. Activate the virtual environment:
+
     ```bash
     poetry shell
     ```
+
+### GitHub access tokens
+
+We are currently using [`llama-hub`](https://github.com/emptycrown/llama-hub) GitHub readers for creating our data indexes and pulling from relevant repos for issues and files.
+As a prerequisite, you will need to generate a "classic" personal access token with the `repo` and `read:org` scopes - see [here](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens) for instructions for creating and obtaining your personal access token.
+
+Once, you do this, simply add this to your `.env` file:
+
+```bash
+echo "GITHUB_TOKEN='your-github-personal-access-token'" >> .env
+```
 
 ### Running the Reginald bot locally
 
 In order to run the full Reginald app locally (i.e. setting up the full response engine along with the Slack bot), you can follow the steps below:
 
-1. Set environment variables (for more details on environtment variables, see [ENVIRONMENT_VARIABLES.md](the environment variables README)):
+1. Set environment variables (for more details on environtment variables, see the [environment variables README](ENVIRONMENT_VARIABLES.md)):
+
     ```bash
     source .env
     ```
 
 1. Run the bot using `reginald_run` - note that this actually runs [`reginald/run.py`](https://github.com/alan-turing-institute/reginald/blob/main/reginald/run.py). To see CLI arguments:
+
     ```bash
     reginald_run --help
     ```
+
+The `reginald_run` CLI takes in several arguments such as:
+- `--model` (`-m`): to select the type of model to use
+- `--model-name` (`-n`): to select the sub-model to use within the model selected
+- `--mode`: to determine whether to use 'query' or 'chat' engine
+- `--data-dir` (`-d`): specify the data directory location
+- `--which-index` (`-w`): specify the directory name for looking up/writing data index (for `llama-index` models)
+- `--force-new-index` (`-f`): whether or not to force create a new data index
+- `--max-input-size` (`-max`): maxumum input size of LLM
+- `--is-path` (`-p`): whether or not the model-name passed is a path to the model
+- `--n-gpu-layers` (`-ngl`): number of layers to offload to GPU if using `llama-index-llama-cpp` model
+- `--device` (`-dev`): device to host Huggingface model if using `llama-index-hf` model
+
+**Note**: specifying CLI arguments will override any environment variables set.
+
+For example, to set up a `llama-index-llama-cpp` _chat engine_ model running [Llama-2-7b-Chat](https://huggingface.co/TheBloke/Llama-2-7b-Chat-GGUF) (quantised to 4bit), you can run:
+
+```bash
+reginald_run \
+  --model llama-index-llama-cpp \
+  --model-name https://huggingface.co/TheBloke/Llama-2-7b-Chat-GGUF/resolve/main/llama-2-7b-chat.Q4_K_M.gguf \
+  --mode chat \
+  --data-dir data/ \
+  --which-index handbook \
+  --max-input-size 4096 \
+  --n-gpu-layers 2
+```
 
 The bot will now listen for @mentions in the channels it's added to and respond with a simple message.
 
@@ -91,29 +139,54 @@ To do this, you can follow the steps below:
 
 - On the machine where you want to run the response engine, run the following command:
 
-    1. Set up environment variables for the response engine (for more details on environtment variables, see [the environment variables README](https://github.com/alan-turing-institute/reginald/blob/main/ENVIRONMENT_VARIABLES.md)):
+    1. Set up environment variables for the response engine (for more details on environtment variables, see the [environment variables README](ENVIRONMENT_VARIABLES.md)):
+
     ```bash
     source .response_engine_env
     ```
+
     2. Set up response engine using `reginald_run_api_llm` - note that this actually runs [`reginald/models/app.py`](https://github.com/alan-turing-institute/reginald/blob/main/reginald/models/app.py). To see CLI arguments:
+
     ```bash
     reginald_run_api_llm --help
     ```
 
+    This command uses many of the same CLI arguments as described above. For example to set up a `llama-index-llama-cpp` _chat engine_ model running [Llama-2-7b-Chat](https://huggingface.co/TheBloke/Llama-2-7b-Chat-GGUF) (quantised to 4bit), you can run:
+
+    ```bash
+    reginald_run_api_llm \
+        --model llama-index-llama-cpp \
+        --model-name https://huggingface.co/TheBloke/Llama-2-7b-Chat-GGUF/resolve/main/llama-2-7b-chat.Q4_K_M.gguf \
+        --mode chat \
+        --data-dir data/ \
+        --which-index handbook \
+        --max-input-size 4096 \
+        --n-gpu-layers 2
+    ```
+
 - On the machine where you want to run the Slack bot, run the following command:
 
-    1. Set up environment variables for the Slack bot (for more details on environtment variables, see [the environment variables README](https://github.com/alan-turing-institute/reginald/blob/main/ENVIRONMENT_VARIABLES.md)):
+    1. Set up environment variables for the Slack bot (for more details on environtment variables, see the [environment variables README](ENVIRONMENT_VARIABLES.md)):
+
     ```bash
     source .slack_bot_env
+
     ```
     2. Set up Slack bot using `reginald_run_api_bot` - note that this actually runs [`reginald/slack_bot/setup_bot.py`](https://github.com/alan-turing-institute/reginald/blob/main/reginald/slack_bot/setup_bot.py). To see CLI arguments:
+
     ```bash
     reginald_run_api_bot --help
     ```
 
+    This command takes in an emoji to respond with. For example, to set up a Slack bot that responds with the `:llama:` emoji, you can run:
+
+    ```bash
+    reginald_run_api_bot --emoji llama
+    ```
+
 ### Running the bot in Docker
 
-For full details of Docker setup, see [the Docker README](docker/README.md).
+For full details of Docker setup, see the [Docker README](docker/README.md).
 
 ### Running the bot in Azure
 
