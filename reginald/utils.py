@@ -24,7 +24,7 @@ class Parser(argparse.ArgumentParser):
             help=(
                 "Select which sub-model to use (within the main model selected)."
                 "For llama-index-llama-cpp and llama-index-hf models, this specifies"
-                "the LLM model (or path to that model) which we would like to use."
+                "the LLM (or path to that model) which we would like to use."
                 "For chat-completion-azure and llama-index-gpt-azure, this refers"
                 "to the deployment name on Azure."
                 "For chat-completion-azure and llama-index-gpt-openai, this refers"
