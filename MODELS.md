@@ -92,7 +92,7 @@ reginald_run \
   --device auto
 ```
 
-Note currently the [`microsoft/phi-1_5`](https://huggingface.co/microsoft/phi-1_5) model has a predefined maximum length of 2048 context length. Hence, we must set the `--max-input-size` argument to be less than or equal to 2048 as the default value for this argument is 4096. We also set the `--device` argument to be `auto` so that the model will be run on the GPU if available.
+Note currently the [`microsoft/phi-1_5`](https://huggingface.co/microsoft/phi-1_5) model has a predefined maximum length of 2048 context length. Hence, we must set the `--max-input-size` argument to be less than or equal to 2048 as the default value for this argument is 4096 as we tend to use the `llama-cpp-python` model more. We also set the `--device` argument to be `auto` so that the model will be run on any hardware acceleration if available.
 
 ## `llama-index` models using an API
 
