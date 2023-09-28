@@ -37,7 +37,7 @@ Lastly, to avoid using CLI variables and be able to simply use `reginald_run`, y
 
 - `REGINALD_MODEL`: name of model to use (see the [models README](MODELS.md)) for the list of models available
 - `REGINALD_MODEL_NAME`: name of sub-model to use with the one requested if not using `hello` model.
-    - For `llama-index-llama-cpp` and `llama-index-hf`` models, this specifies the LLM model (or path to that model) which we would like to use
+    - For `llama-index-llama-cpp` and `llama-index-hf` models, this specifies the LLM model (or path to that model) which we would like to use
     - For `chat-completion-azure` and `llama-index-gpt-azure`, this refers to the deployment name on Azure
     - For `chat-completion-openai` and `llama-index-gpt-openai`, this refers to the model/engine name on OpenAI
 - `LLAMA_INDEX_MODE`: mode to use ("query" or "chat") if using `llama-index` model
