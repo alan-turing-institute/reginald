@@ -84,12 +84,15 @@ This model uses an LLM from [Huggingface](https://huggingface.co/models) to gene
 ```bash
 reginald_run \
   --model llama-index-hf \
-  --model-name https://huggingface.co/microsoft/phi-1_5 \
+  --model-name microsoft/phi-1_5 \
   --mode chat \
   --data-dir data/ \
   --which-index handbook \
+  --max-input-size 2048 \
   --device auto
 ```
+
+Note currently the [`microsoft/phi-1_5`](https://huggingface.co/microsoft/phi-1_5) model has a predefined maximum length of 2048 context length. Hence, we must set the `--max-input-size` argument to be less than or equal to 2048 as the default value for this argument is 4096. We also set the `--device` argument to be `auto` so that the model will be run on the GPU if available.
 
 ## `llama-index` models using an API
 
