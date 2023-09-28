@@ -102,7 +102,7 @@ In order to run the full Reginald app locally (i.e. setting up the full response
 The `reginald_run` CLI takes in several arguments such as:
 - `--model` (`-m`): to select the type of model to use (see the [models README](MODELS.md) for the list of models available)
 - `--model-name` (`-n`): to select the sub-model to use within the model selected
-    - For `llama-index-llama-cpp` and `llama-index-hf` models, this specifies the LLM model (or path to that model) which we would like to use
+    - For `llama-index-llama-cpp` and `llama-index-hf` models, this specifies the LLM (or path to that model) which we would like to use
     - For `chat-completion-azure` and `llama-index-gpt-azure`, this refers to the deployment name on Azure
     - For `chat-completion-openai` and `llama-index-gpt-openai`, this refers to the model/engine name on OpenAI
 
