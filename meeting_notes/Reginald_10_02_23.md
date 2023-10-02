@@ -26,7 +26,6 @@
     - Turing slack?
         - Get feedback on team and try get people from REG to help out with specific engineering problems
     - Improve chat history management - can get errors after filling up the context. There is a temprorary fix to clear history using a slack command
-    
     - Evaluation and comparison of models
 
 ## Actions
