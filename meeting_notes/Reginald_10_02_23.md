@@ -33,4 +33,3 @@
 - Ryan wrap up API stuff
 - Get tech talk time in maybe end of November
 - Get monthly date in the calendar for Reginald catch up and 22 days work
-
