@@ -11,6 +11,4 @@ COPY pyproject.toml .
 COPY README.md .
 RUN poetry install --all-extras
 
-# Set entrypoint
-ENTRYPOINT ["poetry"]
-CMD ["run", "python", "reginald_run"]
+CMD ["poetry", "run", "reginald_run"]
