@@ -10,9 +10,6 @@ from slack_sdk.web.async_client import AsyncWebClient
 from reginald.models.models.base import ResponseModel
 from reginald.slack_bot.bot import ApiBot, Bot
 
-# mb set this as env variable
-API_URL = "http://0.0.0.0:8000"
-
 
 def setup_slack_bot(model: ResponseModel) -> Bot:
     """
@@ -30,7 +27,7 @@ def setup_slack_bot(model: ResponseModel) -> Bot:
     """
     logging.info(f"Initalising bot with model: {model}")
 
-    slack_bot = Bot(model)
+    slack_bot = Bot(model=model)
 
     logging.info("Connecting to Slack...")
     if os.environ.get("SLACK_APP_TOKEN") is None:
@@ -40,7 +37,7 @@ def setup_slack_bot(model: ResponseModel) -> Bot:
     return slack_bot
 
 
-def setup_api_slack_bot(emoji: str) -> ApiBot:
+def setup_api_slack_bot(api_url: str, emoji: str) -> ApiBot:
     """
     Initialise `ApiBot` with response model.
 
@@ -54,11 +51,11 @@ def setup_api_slack_bot(emoji: str) -> ApiBot:
     ApiBot
         Bot which uses an API for responding to messages
     """
-    logging.info(f"Initalising bot at {API_URL}")
+    logging.info(f"Initalising bot at {api_url}")
     logging.info(f"Initalising bot with {emoji} emoji")
 
-    # set up bot with the API_URL and emoji
-    slack_bot = ApiBot(API_URL, emoji)
+    # set up bot with the api_url and emoji
+    slack_bot = ApiBot(api_url=api_url, emoji=emoji)
 
     logging.info("Connecting to Slack...")
     if os.environ.get("SLACK_APP_TOKEN") is None:
@@ -119,12 +116,25 @@ async def main():
     # Parse command line arguments
     parser = argparse.ArgumentParser()
     parser.add_argument(
+        "--api-url",
+        "-a",
+        help="Select the API URL for the model",
+        default=os.environ.get("REGINALD_API_URL"),
+    )
+    parser.add_argument(
         "--emoji",
         "-e",
         help="Select the emoji for the model",
         default=os.environ.get("REGINALD_EMOJI") or "rocket",
     )
     args = parser.parse_args()
+    
+    if args.api_url is None:
+        logging.error(
+            "API URL is not set. Please set the REGINALD_API_URL "
+            "environment variable or pass in the --api-url argument"
+        )
+        sys.exit(1)
 
     # Initialise logging
     logging.basicConfig(
@@ -134,10 +144,10 @@ async def main():
     )
 
     # set up slack bot
-    bot = setup_api_slack_bot(args.emoji)
+    bot = setup_api_slack_bot(api_url=args.api_url, emoji=args.emoji)
 
     # set up slack client
-    client = setup_slack_client(bot)
+    client = setup_slack_client(slack_bot=bot)
 
     # Establish a WebSocket connection to the Socket Mode servers
     await client.connect()
