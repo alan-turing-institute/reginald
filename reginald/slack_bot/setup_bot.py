@@ -128,7 +128,7 @@ async def main():
         default=os.environ.get("REGINALD_EMOJI") or "rocket",
     )
     args = parser.parse_args()
-    
+
     if args.api_url is None:
         logging.error(
             "API URL is not set. Please set the REGINALD_API_URL "
