@@ -113,7 +113,7 @@ async def main():
     then establishes a WebSocket connection to the
     Socket Mode servers and listens for events.
     """
-    # Parse command line arguments
+    # parse command line arguments
     parser = argparse.ArgumentParser()
     parser.add_argument(
         "--api-url",
@@ -136,7 +136,7 @@ async def main():
         )
         sys.exit(1)
 
-    # Initialise logging
+    # initialise logging
     logging.basicConfig(
         datefmt=r"%Y-%m-%d %H:%M:%S",
         format="%(asctime)s [%(levelname)8s] %(message)s",
@@ -149,10 +149,10 @@ async def main():
     # set up slack client
     client = setup_slack_client(slack_bot=bot)
 
-    # Establish a WebSocket connection to the Socket Mode servers
+    # establish a WebSocket connection to the Socket Mode servers
     await client.connect()
 
-    # Listen for events
+    # listen for events
     logging.info("Listening for requests...")
     await asyncio.sleep(float("inf"))
 
