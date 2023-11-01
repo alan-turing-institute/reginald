@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - "main"
+      - "pulumi"
     tags:
       - "*"
 
@@ -13,11 +14,20 @@ env:
 
 jobs:
   build-and-push-image:
-    name: Push Docker image to GitHub container repository
+    name: Push Docker images to GitHub container repository
     runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - dockerfile: docker/reginald/Dockerfile
+            image: ghcr.io/${{ github.repository }}_reginald
+          - dockerfile: docker/slack_bot/Dockerfile
+            image: ghcr.io/${{ github.repository }}_slackbot
     permissions:
       packages: write
       contents: read
+
     steps:
       - name: Check out the repo
         uses: actions/checkout@v3
@@ -33,21 +43,12 @@ jobs:
         id: meta
         uses: docker/metadata-action@v4
         with:
-          images: |
-            ghcr.io/${{ github.repository }}
+          images: ${{ matrix.image }}
 
-      - name: Build and push Docker image for the Reginald app
+      - name: Build and push Docker images
         uses: docker/build-push-action@v4
         with:
-          file: docker/reginald/Dockerfile
-          push: true
-          tags: ${{ steps.meta.outputs.tags }}
-          labels: ${{ steps.meta.outputs.labels }}
-
-      - name: Build and push Docker image for the slack-bot only app
-        uses: docker/build-push-action@v4
-        with:
-          file: docker/slack_bot/Dockerfile
+          file: ${{ matrix.dockerfile }}
           push: true
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
