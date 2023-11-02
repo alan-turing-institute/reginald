@@ -3,14 +3,14 @@ The Reginald project consists of:
 
 ```
 ├── azure
-│   └── Setup REGinald infrastructure on Azure
+│   └── scripts to setup Reginald infrastructure on Azure
 ├── data
-│   └── Directory to store llama-index data indexes and other public Turing data
+│   └── directory to store llama-index data indexes and other public Turing data
 ├── docker
-│   └── Scripts for building a Docker images for both Reginald app and Slack-bot only app
+│   └── scripts for building a Docker images for both Reginald app and Slack-bot only app
 ├── notebooks
 │   └── data processing notebooks
-│   └── development notebooks for llama-index REGinald models
+│   └── development notebooks for llama-index Reginald models
 └── reginald
     └── models: scripts for setting up query and chat engines
     └── slack_bot: scripts for setting up Slack bot

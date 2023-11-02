@@ -38,16 +38,16 @@ class Bot(AsyncSocketModeRequestListener):
             Slack request
         """
         if req.type == "events_api":
-            # Acknowledge the request
+            # acknowledge the request
             logging.info("Received an events_api request")
             response = SocketModeResponse(envelope_id=req.envelope_id)
             await client.send_socket_mode_response(response)
 
             try:
-                # Extract event from payload
+                # extract event from payload
                 event = req.payload["event"]
 
-                # Ignore messages from bots
+                # ignore messages from bots
                 if event.get("bot_id") is not None:
                     logging.info("Ignoring an event triggered by a bot.")
                     return
@@ -80,13 +80,13 @@ class Bot(AsyncSocketModeRequestListener):
                 raise
 
         elif req.type == "slash_commands":
-            # Acknowledge the request
+            # acknowledge the request
             logging.info("Received an slash_commands request")
             response = SocketModeResponse(envelope_id=req.envelope_id)
             await client.send_socket_mode_response(response)
 
             try:
-                # Extract command, user, etc from payload
+                # extract command, user, etc from payload
                 command = req.payload["command"]
                 user_id = req.payload["user_id"]
 
@@ -137,7 +137,7 @@ class Bot(AsyncSocketModeRequestListener):
         while True:
             (client, event) = await queue.get()
             await self._process_request(client, event)
-            # Notify the queue that the "work item" has been processed.
+            # notify the queue that the "work item" has been processed.
             queue.task_done()
 
     async def _process_request(
@@ -155,13 +155,13 @@ class Bot(AsyncSocketModeRequestListener):
         req : SocketModeRequest
             Slack request
         """
-        # Extract user and message information
+        # extract user and message information
         message = event["text"]
         user_id = event["user"]
         event_type = event["type"]
         event_subtype = event.get("subtype", None)
 
-        # Start processing the message
+        # start processing the message
         logging.info(f"Processing message '{message}' from user '{user_id}'.")
 
         await client.web_client.reactions_remove(
@@ -170,26 +170,26 @@ class Bot(AsyncSocketModeRequestListener):
             timestamp=event["ts"],
         )
 
-        # If this is a direct message to REGinald...
+        # if this is a direct message to Reginald...
         if event_type == "message" and event_subtype is None:
             await self.react(client, event["channel"], event["ts"])
             model_response = await asyncio.get_running_loop().run_in_executor(
                 None, self.model.direct_message, message, user_id
             )
 
-        # If @REGinald is mentioned in a channel
+        # if @Reginald is mentioned in a channel
         elif event_type == "app_mention":
             await self.react(client, event["channel"], event["ts"])
             model_response = await asyncio.get_running_loop().run_in_executor(
                 None, self.model.channel_mention, message, user_id
             )
 
-        # Otherwise
+        # otherwise
         else:
             logging.info(f"Received unexpected event of type '{event['type']}'.")
             return
 
-        # Add a reply as required
+        # add a reply as required
         if model_response and model_response.message:
             logging.info(f"Posting reply {model_response.message}.")
             await client.web_client.chat_postMessage(
@@ -256,16 +256,16 @@ class ApiBot(AsyncSocketModeRequestListener):
             Slack request
         """
         if req.type == "events_api":
-            # Acknowledge the request
+            # acknowledge the request
             logging.info("Received an events_api request")
             response = SocketModeResponse(envelope_id=req.envelope_id)
             await client.send_socket_mode_response(response)
 
             try:
-                # Extract event from payload
+                # extract event from payload
                 event = req.payload["event"]
 
-                # Ignore messages from bots
+                # ignore messages from bots
                 if event.get("bot_id") is not None:
                     logging.info("Ignoring an event triggered by a bot.")
                     return
@@ -298,13 +298,13 @@ class ApiBot(AsyncSocketModeRequestListener):
                 raise
 
         elif req.type == "slash_commands":
-            # Acknowledge the request
+            # acknowledge the request
             logging.info("Received an slash_commands request")
             response = SocketModeResponse(envelope_id=req.envelope_id)
             await client.send_socket_mode_response(response)
 
             try:
-                # Extract command, user, etc from payload
+                # extract command, user, etc from payload
                 command = req.payload["command"]
                 user_id = req.payload["user_id"]
 
@@ -355,7 +355,7 @@ class ApiBot(AsyncSocketModeRequestListener):
         while True:
             (client, event) = await queue.get()
             await self._process_request(client, event)
-            # Notify the queue that the "work item" has been processed.
+            # notify the queue that the "work item" has been processed.
             queue.task_done()
 
     async def _process_request(
@@ -373,13 +373,13 @@ class ApiBot(AsyncSocketModeRequestListener):
         req : SocketModeRequest
             Slack request
         """
-        # Extract user and message information
+        # extract user and message information
         message = event["text"]
         user_id = event["user"]
         event_type = event["type"]
         event_subtype = event.get("subtype", None)
 
-        # Start processing the message
+        # start processing the message
         logging.info(f"Processing message '{message}' from user '{user_id}'.")
 
         await client.web_client.reactions_remove(
@@ -388,7 +388,7 @@ class ApiBot(AsyncSocketModeRequestListener):
             timestamp=event["ts"],
         )
 
-        # If this is a direct message to REGinald...
+        # if this is a direct message to Reginald...
         if event_type == "message" and event_subtype is None:
             await self.react(client, event["channel"], event["ts"])
             model_response = await asyncio.get_running_loop().run_in_executor(
@@ -399,7 +399,7 @@ class ApiBot(AsyncSocketModeRequestListener):
                 ),
             )
 
-        # If @REGinald is mentioned in a channel
+        # if @Reginald is mentioned in a channel
         elif event_type == "app_mention":
             await self.react(client, event["channel"], event["ts"])
             model_response = await asyncio.get_running_loop().run_in_executor(
@@ -410,7 +410,7 @@ class ApiBot(AsyncSocketModeRequestListener):
                 ),
             )
 
-        # Otherwise
+        # otherwise
         else:
             logging.info(f"Received unexpected event of type '{event['type']}'.")
             return
@@ -419,7 +419,7 @@ class ApiBot(AsyncSocketModeRequestListener):
             raise ValueError("Unable to get response.")
         model_response = model_response.json()
 
-        # Add a reply as required
+        # add a reply as required
         if model_response and model_response["message"]:
             logging.info(f"Posting reply {model_response['message']}.")
             await client.web_client.chat_postMessage(
