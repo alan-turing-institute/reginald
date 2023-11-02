@@ -81,7 +81,7 @@ container_group = containerinstance.ContainerGroup(
     container_group_name=f"aci-reginald-{stack_name}",
     containers=[
         containerinstance.ContainerArgs(
-            image="ghcr.io/alan-turing-institute/reginald_reginald:pulumi",
+            image="ghcr.io/alan-turing-institute/reginald_reginald:main",
             name="reginald-handbook",  # maximum of 63 characters
             environment_variables=[
                 containerinstance.EnvironmentVariableArgs(
@@ -123,7 +123,7 @@ container_group = containerinstance.ContainerGroup(
             ),
         ),
         containerinstance.ContainerArgs(
-            image="ghcr.io/alan-turing-institute/reginald_reginald:pulumi",
+            image="ghcr.io/alan-turing-institute/reginald_reginald:main",
             name="reginald-gpt-azure",  # maximum of 63 characters
             environment_variables=[
                 containerinstance.EnvironmentVariableArgs(
