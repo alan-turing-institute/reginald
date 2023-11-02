@@ -69,6 +69,10 @@ container_group = containerinstance.ContainerGroup(
                     name="SLACK_BOT_TOKEN",
                     secure_value=config.get_secret("LLAMA_CPP_SLACK_BOT_TOKEN"),
                 ),
+                containerinstance.EnvironmentVariableArgs(
+                    name="REGINALD_API_URL",
+                    secure_value=config.get_secret("REGINALD_API_URL"),
+                ),
             ],
             ports=[],
             resources=containerinstance.ResourceRequirementsArgs(
