@@ -159,6 +159,6 @@ cython_debug/
 *.swp
 
 # Pulumi
-azure/.secrets
-azure/Pulumi.production.yaml
+azure/*/.secrets
+azure/*/Pulumi.*.yaml
 data/llama_index_indices/all_data/
