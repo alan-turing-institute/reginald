@@ -54,7 +54,7 @@ container_group = containerinstance.ContainerGroup(
     container_group_name=f"aci-reginald-{stack_name}",
     containers=[
         containerinstance.ContainerArgs(
-            image="ghcr.io/alan-turing-institute/reginald_slackbot:pulumi",
+            image="ghcr.io/alan-turing-institute/reginald_slackbot:main",
             name="reginald-llama-cpp",  # maximum of 63 characters
             environment_variables=[
                 containerinstance.EnvironmentVariableArgs(
