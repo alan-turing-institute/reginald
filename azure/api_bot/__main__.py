@@ -1,4 +1,3 @@
-
 import pulumi
 from pulumi_azure_native import containerinstance, network, resources, storage
 
