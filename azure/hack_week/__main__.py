@@ -81,7 +81,7 @@ container_group = containerinstance.ContainerGroup(
     container_group_name=f"aci-reginald-{stack_name}",
     containers=[
         containerinstance.ContainerArgs(
-            image="ghcr.io/alan-turing-institute/reginald:main",
+            image="ghcr.io/alan-turing-institute/reginald_reginald:main",
             name="reginald-handbook",  # maximum of 63 characters
             environment_variables=[
                 containerinstance.EnvironmentVariableArgs(
@@ -123,8 +123,8 @@ container_group = containerinstance.ContainerGroup(
             ),
         ),
         containerinstance.ContainerArgs(
-            image="ghcr.io/alan-turing-institute/reginald:main",
-            name="reginald-llama",  # maximum of 63 characters
+            image="ghcr.io/alan-turing-institute/reginald_reginald:main",
+            name="reginald-gpt-azure",  # maximum of 63 characters
             environment_variables=[
                 containerinstance.EnvironmentVariableArgs(
                     name="OPENAI_AZURE_API_BASE",
@@ -140,15 +140,15 @@ container_group = containerinstance.ContainerGroup(
                 ),
                 containerinstance.EnvironmentVariableArgs(
                     name="REGINALD_MODEL",
-                    value="llama-gpt-3.5-turbo-azure",
+                    value="llama-index-gpt-azure",
                 ),
                 containerinstance.EnvironmentVariableArgs(
                     name="SLACK_APP_TOKEN",
-                    secure_value=config.get_secret("LLAMA_SLACK_APP_TOKEN"),
+                    secure_value=config.get_secret("GPT_AZURE_SLACK_APP_TOKEN"),
                 ),
                 containerinstance.EnvironmentVariableArgs(
                     name="SLACK_BOT_TOKEN",
-                    secure_value=config.get_secret("LLAMA_SLACK_BOT_TOKEN"),
+                    secure_value=config.get_secret("GPT_AZURE_SLACK_BOT_TOKEN"),
                 ),
             ],
             ports=[],
