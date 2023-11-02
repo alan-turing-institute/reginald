@@ -70,3 +70,10 @@ if [ -e ../.pulumi_env ]; then
 fi
 AZURE_KEYVAULT_AUTH_VIA_CLI=true pulumi config set --secret LLAMA_CPP_SLACK_APP_TOKEN "$LLAMA_CPP_SLACK_APP_TOKEN"
 AZURE_KEYVAULT_AUTH_VIA_CLI=true pulumi config set --secret LLAMA_CPP_SLACK_BOT_TOKEN "$LLAMA_CPP_SLACK_BOT_TOKEN"
+
+# Set API url
+REGINALD_API_URL=""
+if [ -e ../.pulumi_env ]; then
+    REGINALD_API_URL=$(grep "REGINALD_API_URL" ../.pulumi_env | grep -v "^#" | cut -d '"' -f 2)
+fi
+AZURE_KEYVAULT_AUTH_VIA_CLI=true pulumi config set REGINALD_API_URL "$REGINALD_API_URL"
