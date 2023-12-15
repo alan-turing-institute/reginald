@@ -382,50 +382,95 @@ class ApiBot(AsyncSocketModeRequestListener):
         # start processing the message
         logging.info(f"Processing message '{message}' from user '{user_id}'.")
 
+        # remove clock as we're about to process the message
         await client.web_client.reactions_remove(
             name="clock2",
             channel=event["channel"],
             timestamp=event["ts"],
         )
 
-        # if this is a direct message to Reginald...
-        if event_type == "message" and event_subtype is None:
-            await self.react(client, event["channel"], event["ts"])
-            model_response = await asyncio.get_running_loop().run_in_executor(
-                None,
-                lambda: requests.get(
-                    f"{self.api_url}/direct_message",
-                    json={"message": message, "user_id": user_id},
-                ),
+        try:
+            # try to get a response from the model api
+            # if this is a direct message to Reginald...
+            if event_type == "message" and event_subtype is None:
+                await self.react(client, event["channel"], event["ts"])
+                model_response = await asyncio.get_running_loop().run_in_executor(
+                    None,
+                    lambda: requests.get(
+                        f"{self.api_url}/direct_message",
+                        json={"message": message, "user_id": user_id},
+                    ),
+                )
+
+            # if @Reginald is mentioned in a channel
+            elif event_type == "app_mention":
+                await self.react(client, event["channel"], event["ts"])
+                model_response = await asyncio.get_running_loop().run_in_executor(
+                    None,
+                    lambda: requests.get(
+                        f"{self.api_url}/channel_mention",
+                        json={"message": message, "user_id": user_id},
+                    ),
+                )
+
+            # otherwise
+            else:
+                logging.info(f"Received unexpected event of type '{event['type']}'.")
+                return
+
+            if model_response.status_code != 200:
+                raise ValueError("Unable to get response.")
+            model_response = model_response.json()
+        except requests.exceptions.ConnectTimeout:
+            # if the model api times out, return a out of office message
+            logging.info("Model API timed out.")
+            # add a error flag to the response so we send an error message
+            model_response = {
+                "message": "Reginald is out of office",
+                "user_id": user_id,
+                "error": True,
+                "timeout": True,
+            }
+        except Exception as err:
+            logging.error(
+                f"Something went wrong in processing a Slack request.\n{str(err)}"
             )
-
-        # if @Reginald is mentioned in a channel
-        elif event_type == "app_mention":
-            await self.react(client, event["channel"], event["ts"])
-            model_response = await asyncio.get_running_loop().run_in_executor(
-                None,
-                lambda: requests.get(
-                    f"{self.api_url}/channel_mention",
-                    json={"message": message, "user_id": user_id},
-                ),
-            )
-
-        # otherwise
-        else:
-            logging.info(f"Received unexpected event of type '{event['type']}'.")
-            return
-
-        if model_response.status_code != 200:
-            raise ValueError("Unable to get response.")
-        model_response = model_response.json()
+            # add a error flag to the response so we send an error message
+            model_response = {
+                "message": f"while processing your request, something went wrong: {type(err).__name__} - {err}",
+                "user_id": user_id,
+                "error": True,
+                "timeout": False,
+            }
 
         # add a reply as required
         if model_response and model_response["message"]:
             logging.info(f"Posting reply {model_response['message']}.")
-            await client.web_client.chat_postMessage(
-                channel=event["channel"],
-                text=f"<@{user_id}>, you asked me: '{message}'.\n{model_response['message']}",
-            )
+            if model_response.get("error"):
+                if model_response["timeout"]:
+                    # react with a sleeping emoji if timeout
+                    await client.web_client.reactions_add(
+                        name="sleeping",
+                        channel=event["channel"],
+                        timestamp=event["ts"],
+                    )
+                else:
+                    # react with a general error emoji
+                    await client.web_client.reactions_add(
+                        name="x",
+                        channel=event["channel"],
+                        timestamp=event["ts"],
+                    )
+                # if timeout, we send an out of office message
+                await client.web_client.chat_postMessage(
+                    channel=event["channel"],
+                    text=f"<@{user_id}>, {model_response['message']}.",
+                )
+            else:
+                await client.web_client.chat_postMessage(
+                    channel=event["channel"],
+                    text=f"<@{user_id}>, you asked me: '{message}'.\n{model_response['message']}",
+                )
         else:
             logging.info("No reply was generated.")
 
