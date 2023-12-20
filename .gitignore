@@ -160,5 +160,6 @@ cython_debug/
 
 # Pulumi
 azure/*/.secrets
+azure/*.secrets
 azure/*/Pulumi.*.yaml
 data/llama_index_indices/all_data/
