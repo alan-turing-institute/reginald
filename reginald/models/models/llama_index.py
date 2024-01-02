@@ -716,7 +716,7 @@ class LlamaIndexLlamaCPP(LlamaIndex):
         self.n_gpu_layers = n_gpu_layers
         super().__init__(*args, model_name=model_name, **kwargs)
 
-    def _prep_llm(self) -> LLM:
+    def _prep_llm(self) -> LlamaCPP:
         logging.info(
             f"Setting up LlamaCPP LLM (model {self.model_name}) on {self.n_gpu_layers} GPU layers"
         )
@@ -764,7 +764,7 @@ class LlamaIndexHF(LlamaIndex):
         self.device = device
         super().__init__(*args, model_name=model_name, **kwargs)
 
-    def _prep_llm(self) -> LLM:
+    def _prep_llm(self) -> HuggingFaceLLM:
         logging.info(
             f"Setting up Huggingface LLM (model {self.model_name}) on device {self.device}"
         )
@@ -807,7 +807,7 @@ class LlamaIndexGPTOpenAI(LlamaIndex):
         self.temperature = 0.7
         super().__init__(*args, model_name=self.model_name, **kwargs)
 
-    def _prep_llm(self) -> LLM:
+    def _prep_llm(self) -> OpenAI:
         logging.info(f"Setting up OpenAI LLM (model {self.model_name})")
         return OpenAI(
             model=self.model_name,
@@ -847,11 +847,11 @@ class LlamaIndexGPTAzure(LlamaIndex):
         self.deployment_name = model_name
         self.openai_api_base = os.getenv("OPENAI_AZURE_API_BASE")
         self.openai_api_key = os.getenv("OPENAI_AZURE_API_KEY")
-        self.openai_api_version = "2023-03-15-preview"
+        self.openai_api_version = "2023-09-15-preview"
         self.temperature = 0.7
         super().__init__(*args, model_name="gpt-3.5-turbo", **kwargs)
 
-    def _prep_llm(self) -> LLM:
+    def _prep_llm(self) -> AzureOpenAI:
         logging.info(f"Setting up AzureOpenAI LLM (model {self.deployment_name})")
         return AzureOpenAI(
             model=self.model_name,
