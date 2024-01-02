@@ -7,9 +7,26 @@ from reginald.utils import get_env_var
 
 class Parser(argparse.ArgumentParser):
     def __init__(self, create_index_only: bool = False, *args, **kwargs):
+        """
+        Parser for command line arguments for Reginald.
+
+        Note that the default values for the arguments are set to a lambda function
+        to obtain the relevant environment variables (if they exist). They are
+        lambda functions so that the environment variables are only obtained if
+        the argument is actually used.
+
+        See `get_args` for parsing the arguments and obtaining any of the
+        environment variables if using default values.
+
+        Parameters
+        ----------
+        create_index_only : bool, optional
+            Whether or not to only include ones related to data index creation,
+            by default False
+        """
         super().__init__(*args, **kwargs)
         if not create_index_only:
-            # model args
+            # model arguments
             self.add_argument(
                 "--model",
                 "-m",
@@ -84,6 +101,7 @@ class Parser(argparse.ArgumentParser):
                 default=lambda: get_env_var("LLAMA_INDEX_DEVICE"),
             )
 
+        # data index arguments
         self.add_argument(
             "--data-dir",
             "-d",
@@ -161,6 +179,20 @@ class Parser(argparse.ArgumentParser):
 
 
 def get_args(parser: Parser) -> argparse.Namespace:
+    """
+    Helper function to parse command line arguments and obtain any of the
+    environment variables if using default values.
+
+    Parameters
+    ----------
+    parser : Parser
+        Parser for command line arguments for Reginald
+
+    Returns
+    -------
+    argparse.Namespace
+        Namespace of parsed arguments
+    """
     # parse command line arguments
     args = parser.parse_args()
 
