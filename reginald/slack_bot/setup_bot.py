@@ -8,7 +8,9 @@ from slack_sdk.socket_mode.aiohttp import SocketModeClient
 from slack_sdk.web.async_client import AsyncWebClient
 
 from reginald.models.models.base import ResponseModel
+from reginald.parser_utils import get_args
 from reginald.slack_bot.bot import ApiBot, Bot
+from reginald.utils import get_env_var
 
 
 def setup_slack_bot(model: ResponseModel) -> Bot:
@@ -93,9 +95,9 @@ def setup_slack_client(slack_bot: ApiBot | Bot) -> SocketModeClient:
     # initialize SocketModeClient with an app-level token + AsyncWebClient
     client = SocketModeClient(
         # this app-level token will be used only for establishing a connection
-        app_token=os.environ.get("SLACK_APP_TOKEN"),
+        app_token=get_env_var("SLACK_APP_TOKEN"),
         # you will be using this AsyncWebClient for performing Web API calls in listeners
-        web_client=AsyncWebClient(token=os.environ.get("SLACK_BOT_TOKEN")),
+        web_client=AsyncWebClient(token=get_env_var("SLACK_BOT_TOKEN")),
         # to ensure connection doesn't go stale - we can adjust as needed.
         ping_interval=60,
     )
@@ -113,6 +115,13 @@ async def main():
     then establishes a WebSocket connection to the
     Socket Mode servers and listens for events.
     """
+    # initialise logging
+    logging.basicConfig(
+        datefmt=r"%Y-%m-%d %H:%M:%S",
+        format="%(asctime)s [%(levelname)8s] %(message)s",
+        level=logging.INFO,
+    )
+
     # parse command line arguments
     parser = argparse.ArgumentParser()
     parser.add_argument(
@@ -122,7 +131,7 @@ async def main():
             "Select the API URL for the model. If not set, "
             "must be set as the REGINALD_API_URL environment variable"
         ),
-        default=os.environ.get("REGINALD_API_URL"),
+        default=lambda: get_env_var("REGINALD_API_URL"),
     )
     parser.add_argument(
         "--emoji",
@@ -131,9 +140,9 @@ async def main():
             "Select the emoji for the model. By default, looks for the REGINALD_EMOJI "
             "environment variable or uses the rocket emoji"
         ),
-        default=os.environ.get("REGINALD_EMOJI") or "rocket",
+        default=lambda: get_env_var("REGINALD_EMOJI") or "rocket",
     )
-    args = parser.parse_args()
+    args = get_args(parser)
 
     if args.api_url is None:
         logging.error(
@@ -141,13 +150,6 @@ async def main():
             "environment variable or pass in the --api-url argument"
         )
         sys.exit(1)
-
-    # initialise logging
-    logging.basicConfig(
-        datefmt=r"%Y-%m-%d %H:%M:%S",
-        format="%(asctime)s [%(levelname)8s] %(message)s",
-        level=logging.INFO,
-    )
 
     # set up slack bot
     bot = setup_api_slack_bot(api_url=args.api_url, emoji=args.emoji)

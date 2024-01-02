@@ -1,12 +1,11 @@
 import logging
-import os
 
 import uvicorn
 from fastapi import FastAPI
 from pydantic import BaseModel
 
 from reginald.models.setup_llm import setup_llm
-from reginald.utils import Parser
+from reginald.parser_utils import Parser, get_args
 
 
 class Query(BaseModel):
@@ -27,7 +26,7 @@ def main():
     parser = Parser()
 
     # pass args to setup_llm
-    llm_kwargs = vars(parser.parse_args())
+    args = get_args(parser)
 
     # initialise logging
     logging.basicConfig(
@@ -37,7 +36,7 @@ def main():
     )
 
     # set up response model
-    response_model = setup_llm(**llm_kwargs)
+    response_model = setup_llm(**vars(args))
 
     # set up FastAPI
     app = FastAPI()

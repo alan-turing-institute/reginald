@@ -5,6 +5,21 @@ import sys
 from reginald.models.models import DEFAULTS, MODELS
 from reginald.models.models.base import ResponseModel
 
+DEFAULT_ARGS = {
+    "model": "hello",
+    "mode": "chat",
+    "data_dir": pathlib.Path(__file__).parent.parent.parent / "data",
+    "which_index": "all_data",
+    "force_new_index": False,
+    "max_input_size": 4096,
+    "k": 3,
+    "chunk_overlap_ratio": 0.1,
+    "num_output": 512,
+    "is_path": False,
+    "n_gpu_layers": 0,
+    "device": "auto",
+}
+
 
 def setup_llm(
     model: str | None = None,
@@ -14,6 +29,10 @@ def setup_llm(
     which_index: str | None = None,
     force_new_index: bool | str | None = None,
     max_input_size: int | None = None,
+    k: int | None = None,
+    chunk_size: int | None = None,
+    chunk_overlap_ratio: float | None = None,
+    num_output: int | None = None,
     is_path: bool | str | None = None,
     n_gpu_layers: int | None = None,
     device: str | None = None,
@@ -50,6 +69,16 @@ def setup_llm(
         Select the maximum input size for the model, by default None
         (uses 4096). Ignored if not using "llama-index-llama-cpp" or
         "llama-index-hf" models
+    k : int | None, optional
+        `similarity_top_k` to use in chat or query engine,
+        by default None (uses 3)
+    chunk_size : int | None, optional
+        Maximum size of chunks to use, by default None.
+        If None, this is computed as `ceil(max_input_size / k)`.
+    chunk_overlap_ratio : float, optional
+        Chunk overlap as a ratio of chunk size, by default None (uses 0.1)
+    num_output : int | None, optional
+            Number of outputs for the LLM, by default None (uses 512)
     is_path : bool | str | None, optional
         Whether or not model_name is used as a path to the model file,
         otherwise it should be the URL to download the model,
@@ -75,7 +104,7 @@ def setup_llm(
     """
     # default for model
     if model is None:
-        model = "hello"
+        model = DEFAULT_ARGS["model"]
     model = model.lower()
     if model not in MODELS.keys():
         logging.error(f"Model '{model}' not recognised.")
@@ -88,54 +117,70 @@ def setup_llm(
 
     # default for mode
     if mode is None:
-        mode = "chat"
+        mode = DEFAULT_ARGS["mode"]
 
     # default for data_dir
     if data_dir is None:
         # data_dir by default is the data directory in the root of the repo
-        data_dir = pathlib.Path(__file__).parent.parent.parent / "data"
+        data_dir = DEFAULT_ARGS["data_dir"]
     data_dir = pathlib.Path(data_dir).resolve()
 
     # default for which_index
     if which_index is None:
-        which_index = "all_data"
+        which_index = DEFAULT_ARGS["which_index"]
 
     # default for force_new_index
     if force_new_index is None:
-        force_new_index = False
+        force_new_index = DEFAULT_ARGS["force_new_index"]
     if isinstance(force_new_index, str):
         force_new_index = force_new_index.lower() == "true"
 
     # default for max_input_size
     if max_input_size is None:
-        max_input_size = 4096
+        max_input_size = DEFAULT_ARGS["max_input_size"]
+
+    # default for k
+    if k is None:
+        k = DEFAULT_ARGS["k"]
+
+    # default for chunk_overlap_ratio
+    if chunk_overlap_ratio is None:
+        chunk_overlap_ratio = DEFAULT_ARGS["chunk_overlap_ratio"]
+
+    # default for num_output
+    if num_output is None:
+        num_output = DEFAULT_ARGS["num_output"]
 
     # default for is_path
     if is_path is None:
-        is_path = False
+        is_path = DEFAULT_ARGS["is_path"]
     if isinstance(is_path, str):
         is_path = is_path.lower() == "true"
 
     # default for n_gpu_layers
     if n_gpu_layers is None:
-        n_gpu_layers = 0
+        n_gpu_layers = DEFAULT_ARGS["n_gpu_layers"]
 
     # default for device
     if device is None:
-        device = "auto"
+        device = DEFAULT_ARGS["device"]
 
     # set up response model
     model = MODELS[model]
     response_model = model(
         model_name=model_name,
         max_input_size=max_input_size,
+        data_dir=data_dir,
+        which_index=which_index,
+        mode=mode,
+        k=k,
+        chunk_size=chunk_size,
+        chunk_overlap_ratio=chunk_overlap_ratio,
+        num_output=num_output,
+        force_new_index=force_new_index,
         is_path=is_path,
         n_gpu_layers=n_gpu_layers,
         device=device,
-        data_dir=data_dir,
-        which_index=which_index,
-        force_new_index=force_new_index,
-        mode=mode,
     )
 
     return response_model
