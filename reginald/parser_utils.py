@@ -64,7 +64,11 @@ class Parser(argparse.ArgumentParser):
             self.add_argument(
                 "--force-new-index",
                 "-f",
-                help="Recreate the index vector store or not",
+                help=(
+                    "Recreate the index vector store or not "
+                    "(ignored if not using llama-index). "
+                    "Default is False."
+                ),
                 action=argparse.BooleanOptionalAction,
                 default=lambda: get_env_var("LLAMA_INDEX_FORCE_NEW_INDEX"),
             )
@@ -73,7 +77,8 @@ class Parser(argparse.ArgumentParser):
                 "-p",
                 help=(
                     "Whether or not the model_name passed is a path to the model "
-                    "(ignored if not using llama-index-llama-cpp)"
+                    "(ignored if not using llama-index-llama-cpp). "
+                    "Default is False."
                 ),
                 action=argparse.BooleanOptionalAction,
                 default=lambda: get_env_var("LLAMA_INDEX_IS_PATH"),
@@ -106,7 +111,10 @@ class Parser(argparse.ArgumentParser):
             "--data-dir",
             "-d",
             type=pathlib.Path,
-            help="Location for data",
+            help=(
+                "Location for data (ignored if not using llama-index). "
+                "Default is 'data' in the root of the repo."
+            ),
             default=lambda: get_env_var("LLAMA_INDEX_DATA_DIR")
             or (pathlib.Path(__file__).parent.parent / "data").resolve(),
         )
@@ -115,7 +123,8 @@ class Parser(argparse.ArgumentParser):
             "-w",
             type=str,
             help=(
-                "Specifies the directory name for looking up/writing indices. "
+                "Specifies the directory name for looking up/writing indices "
+                "(ignored if not using llama-index). "
                 "Currently supports 'handbook', 'wikis', 'public', or 'all_data'. "
                 "Default is 'all_data'."
             ),
