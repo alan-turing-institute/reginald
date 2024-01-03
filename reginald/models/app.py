@@ -44,8 +44,8 @@ def main():
 
     # set up basic root endpoint
     @app.get("/")
-    async def root():
-        return "Hello World!"
+    async def ping():
+        return "pong"
 
     # set up direct_message endpoint
     @app.get("/direct_message")
