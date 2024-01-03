@@ -127,6 +127,7 @@ async def main():
     parser.add_argument(
         "--api-url",
         "-a",
+        type=str,
         help=(
             "Select the API URL for the model. If not set, "
             "must be set as the REGINALD_API_URL environment variable"
@@ -136,6 +137,7 @@ async def main():
     parser.add_argument(
         "--emoji",
         "-e",
+        type=str,
         help=(
             "Select the emoji for the model. By default, looks for the REGINALD_EMOJI "
             "environment variable or uses the rocket emoji"
