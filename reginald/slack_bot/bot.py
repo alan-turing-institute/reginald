@@ -394,6 +394,8 @@ class ApiBot(AsyncSocketModeRequestListener):
             # if this is a direct message to Reginald...
             if event_type == "message" and event_subtype is None:
                 await self.react(client, event["channel"], event["ts"])
+                # check VM is reachable
+                await self.ping()
                 model_response = await asyncio.get_running_loop().run_in_executor(
                     None,
                     lambda: requests.get(
@@ -405,6 +407,8 @@ class ApiBot(AsyncSocketModeRequestListener):
             # if @Reginald is mentioned in a channel
             elif event_type == "app_mention":
                 await self.react(client, event["channel"], event["ts"])
+                # check VM is reachable
+                await self.ping()
                 model_response = await asyncio.get_running_loop().run_in_executor(
                     None,
                     lambda: requests.get(
@@ -472,6 +476,16 @@ class ApiBot(AsyncSocketModeRequestListener):
                 )
         else:
             logging.info("No reply was generated.")
+
+    async def ping(self):
+        pong = await asyncio.get_running_loop().run_in_executor(
+            None,
+            lambda: requests.get(
+                f"{self.api_url}/",
+                timeout=5,
+            ),
+        )
+        pong.raise_for_status()
 
     async def react(
         self, client: SocketModeClient, channel: str, timestamp: str
