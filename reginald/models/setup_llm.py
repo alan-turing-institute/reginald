@@ -28,13 +28,13 @@ def setup_llm(
     data_dir: str | None = None,
     which_index: str | None = None,
     force_new_index: bool | str | None = None,
-    max_input_size: int | None = None,
-    k: int | None = None,
-    chunk_size: int | None = None,
-    chunk_overlap_ratio: float | None = None,
-    num_output: int | None = None,
+    max_input_size: int | str | None = None,
+    k: int | str | None = None,
+    chunk_size: int | str | None = None,
+    chunk_overlap_ratio: float | str | None = None,
+    num_output: int | str | None = None,
     is_path: bool | str | None = None,
-    n_gpu_layers: int | None = None,
+    n_gpu_layers: int | str | None = None,
     device: str | None = None,
 ) -> ResponseModel:
     """
@@ -65,31 +65,37 @@ def setup_llm(
         Whether to recreate the index vector store or not, by default None
         (uses False). If this is a string, it is converted to a boolean
         using `force_new_index.lower() == "true"`.
-    max_input_size : int | None, optional
+    max_input_size : int | str | None, optional
         Select the maximum input size for the model, by default None
         (uses 4096). Ignored if not using "llama-index-llama-cpp" or
-        "llama-index-hf" models
-    k : int | None, optional
+        "llama-index-hf" models, If this is a string, it is converted
+        to an integer
+    k : int | str | None, optional
         `similarity_top_k` to use in chat or query engine,
-        by default None (uses 3)
-    chunk_size : int | None, optional
+        by default None (uses 3). If this is a string, it is converted
+        to an integer
+    chunk_size : int | str | None, optional
         Maximum size of chunks to use, by default None.
         If None, this is computed as `ceil(max_input_size / k)`.
-    chunk_overlap_ratio : float, optional
-        Chunk overlap as a ratio of chunk size, by default None (uses 0.1)
-    num_output : int | None, optional
-            Number of outputs for the LLM, by default None (uses 512)
+        If this is a string, it is converted to an integer
+    chunk_overlap_ratio : float | str | None, optional
+        Chunk overlap as a ratio of chunk size, by default None (uses 0.1).
+        If this is a string, it is converted to a float
+    num_output : int | str | None, optional
+        Number of outputs for the LLM, by default None (uses 512).
+        If this is a string, it is converted to an integer
     is_path : bool | str | None, optional
         Whether or not model_name is used as a path to the model file,
         otherwise it should be the URL to download the model,
         by default None (uses False). If this is a string, it is
         converted to a boolean using `is_path.lower() == "true"`.
         Ignored if not using "llama-index-llama-cpp" model
-    n_gpu_layers : int | None, optional
+    n_gpu_layers : int | str | None, optional
         Select the number of GPU layers to use. If -1, all layers are
         offloaded to the GPU. If 0, no layers are offloaded to the GPU,
         by default None (uses 0). Ignored if not using
-        "llama-index-llama-cpp" model
+        "llama-index-llama-cpp" model. If this is a string, it is
+        converted to an integer
     device : str | None, optional
         Select which device to use, by default None (uses "auto").
         Ignored if not using "llama-index-llama-cpp" or "llama-index-hf" models
@@ -138,18 +144,31 @@ def setup_llm(
     # default for max_input_size
     if max_input_size is None:
         max_input_size = DEFAULT_ARGS["max_input_size"]
+    if isinstance(max_input_size, str):
+        max_input_size = int(max_input_size)
 
     # default for k
     if k is None:
         k = DEFAULT_ARGS["k"]
+    if isinstance(k, str):
+        k = int(k)
+
+    # convert chunk_size if provided as str
+    # default is computed later using values of max_input_size and k
+    if isinstance(chunk_size, str):
+        chunk_size = int(chunk_size)
 
     # default for chunk_overlap_ratio
     if chunk_overlap_ratio is None:
         chunk_overlap_ratio = DEFAULT_ARGS["chunk_overlap_ratio"]
+    if isinstance(chunk_overlap_ratio, str):
+        chunk_overlap_ratio = float(chunk_overlap_ratio)
 
     # default for num_output
     if num_output is None:
         num_output = DEFAULT_ARGS["num_output"]
+    if isinstance(num_output, str):
+        num_output = int(num_output)
 
     # default for is_path
     if is_path is None:
@@ -160,6 +179,8 @@ def setup_llm(
     # default for n_gpu_layers
     if n_gpu_layers is None:
         n_gpu_layers = DEFAULT_ARGS["n_gpu_layers"]
+    if isinstance(n_gpu_layers, str):
+        n_gpu_layers = int(n_gpu_layers)
 
     # default for device
     if device is None:

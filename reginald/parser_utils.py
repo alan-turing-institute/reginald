@@ -2,6 +2,7 @@ import argparse
 import pathlib
 
 from reginald.models.models import MODELS
+from reginald.models.setup_llm import DEFAULT_ARGS
 from reginald.utils import get_env_var
 
 
@@ -32,7 +33,9 @@ class Parser(argparse.ArgumentParser):
                 "-m",
                 type=str,
                 help=("Select which type of model to use " "Default is 'hello'."),
-                default=lambda: get_env_var("REGINALD_MODEL", secret_value=False),
+                default=lambda: get_env_var(
+                    "REGINALD_MODEL", secret_value=False, default="hello"
+                ),
                 choices=MODELS,
             )
             self.add_argument(
@@ -95,8 +98,8 @@ class Parser(argparse.ArgumentParser):
                     "(ignored if not using llama-index-llama-cpp). "
                     "Default is 0."
                 ),
-                default=lambda: int(
-                    get_env_var("LLAMA_INDEX_N_GPU_LAYERS", secret_value=False)
+                default=lambda: get_env_var(
+                    "LLAMA_INDEX_N_GPU_LAYERS", secret_value=False
                 ),
             )
             self.add_argument(
@@ -145,8 +148,8 @@ class Parser(argparse.ArgumentParser):
                 "(ignored if not using llama-index). "
                 "Default is 4096."
             ),
-            default=lambda: int(
-                get_env_var("LLAMA_INDEX_MAX_INPUT_SIZE", secret_value=False)
+            default=lambda: get_env_var(
+                "LLAMA_INDEX_MAX_INPUT_SIZE", secret_value=False
             ),
         )
         self.add_argument(
@@ -157,7 +160,7 @@ class Parser(argparse.ArgumentParser):
                 "(ignored if not using llama-index). "
                 "Default is 3."
             ),
-            default=lambda: int(get_env_var("LLAMA_INDEX_K", secret_value=False)),
+            default=lambda: get_env_var("LLAMA_INDEX_K", secret_value=False),
         )
         self.add_argument(
             "--chunk-size",
@@ -168,9 +171,7 @@ class Parser(argparse.ArgumentParser):
                 "(ignored if not using llama-index). "
                 "Default is computed by ceil(max_input_size / k)."
             ),
-            default=lambda: int(
-                get_env_var("LLAMA_INDEX_CHUNK_SIZE", secret_value=False)
-            ),
+            default=lambda: get_env_var("LLAMA_INDEX_CHUNK_SIZE", secret_value=False),
         )
         self.add_argument(
             "--chunk-overlap-ratio",
@@ -181,8 +182,8 @@ class Parser(argparse.ArgumentParser):
                 "(ignored if not using llama-index). "
                 "Default is 0.1."
             ),
-            default=lambda: float(
-                get_env_var("LLAMA_INDEX_CHUNK_OVERLAP_RATIO", secret_value=False)
+            default=lambda: get_env_var(
+                "LLAMA_INDEX_CHUNK_OVERLAP_RATIO", secret_value=False
             ),
         )
         self.add_argument(
@@ -194,9 +195,7 @@ class Parser(argparse.ArgumentParser):
                 "(ignored if not using llama-index). "
                 "Default is 512."
             ),
-            default=lambda: int(
-                get_env_var("LLAMA_INDEX_NUM_OUTPUT", secret_value=False)
-            ),
+            default=lambda: get_env_var("LLAMA_INDEX_NUM_OUTPUT", secret_value=False),
         )
 
 
