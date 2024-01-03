@@ -418,8 +418,7 @@ class ApiBot(AsyncSocketModeRequestListener):
                 logging.info(f"Received unexpected event of type '{event['type']}'.")
                 return
 
-            if model_response.status_code != 200:
-                raise ValueError("Unable to get response.")
+            model_response.raise_for_status()
             model_response = model_response.json()
         except requests.exceptions.ConnectTimeout:
             # if the model api times out, return a out of office message
@@ -445,7 +444,7 @@ class ApiBot(AsyncSocketModeRequestListener):
 
         # add a reply as required
         if model_response and model_response["message"]:
-            logging.info(f"Posting reply {model_response['message']}.")
+            logging.info(f"Posting reply: {model_response['message']}.")
             if model_response.get("error"):
                 if model_response["timeout"]:
                     # react with a sleeping emoji if timeout
