@@ -118,13 +118,19 @@ async def main():
     parser.add_argument(
         "--api-url",
         "-a",
-        help="Select the API URL for the model",
+        help=(
+            "Select the API URL for the model. If not set, "
+            "must be set as the REGINALD_API_URL environment variable"
+        ),
         default=os.environ.get("REGINALD_API_URL"),
     )
     parser.add_argument(
         "--emoji",
         "-e",
-        help="Select the emoji for the model",
+        help=(
+            "Select the emoji for the model. By default, looks for the REGINALD_EMOJI "
+            "environment variable or uses the rocket emoji"
+        ),
         default=os.environ.get("REGINALD_EMOJI") or "rocket",
     )
     args = parser.parse_args()
