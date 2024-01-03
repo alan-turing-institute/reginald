@@ -2,7 +2,6 @@ import argparse
 import pathlib
 
 from reginald.models.models import MODELS
-from reginald.models.setup_llm import DEFAULT_ARGS
 from reginald.utils import get_env_var
 
 
@@ -32,10 +31,8 @@ class Parser(argparse.ArgumentParser):
                 "--model",
                 "-m",
                 type=str,
-                help=("Select which type of model to use " "Default is 'hello'."),
-                default=lambda: get_env_var(
-                    "REGINALD_MODEL", secret_value=False, default="hello"
-                ),
+                help=("Select which type of model to use. Default is 'hello'."),
+                default=lambda: get_env_var("REGINALD_MODEL", secret_value=False),
                 choices=MODELS,
             )
             self.add_argument(
