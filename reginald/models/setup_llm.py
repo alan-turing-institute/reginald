@@ -25,7 +25,7 @@ def setup_llm(
     model: str | None = None,
     model_name: str | None = None,
     mode: str | None = None,
-    data_dir: str | None = None,
+    data_dir: pathlib.Path | str | None = None,
     which_index: str | None = None,
     force_new_index: bool | str | None = None,
     max_input_size: int | str | None = None,
@@ -54,9 +54,10 @@ def setup_llm(
         Select which mode to use between "chat" and "query",
         by default None (uses "chat"). This is ignored if not using
         llama-index
-    data_dir : str | None, optional
+    data_dir : pathlib.Path | str | None, optional
         Location of the data, by default None
-        (uses the data directory in the root of the repo)
+        (uses the data directory in the root of the repo).
+        If this is a string, it is converted to a pathlib.Path
     which_index : str | None, optional
         Specifies the directory name for looking up/writing indices.
         Currently supports 'handbook', 'wikis', 'public', or 'all_data'.
