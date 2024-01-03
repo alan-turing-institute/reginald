@@ -36,7 +36,7 @@ class ChatCompletionAzure(ChatCompletionBase):
         """
         logging.info(f"Setting up AzureOpenAI LLM (model {model_name})")
         super().__init__(*args, **kwargs)
-        self.api_base = get_env_var("OPENAI_AZURE_API_BASE")
+        self.api_base = get_env_var("OPENAI_AZURE_API_BASE", secret_value=False)
         self.api_key = get_env_var("OPENAI_AZURE_API_KEY")
         self.api_type = "azure"
         self.api_version = "2023-03-15-preview"

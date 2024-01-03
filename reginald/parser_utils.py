@@ -32,7 +32,7 @@ class Parser(argparse.ArgumentParser):
                 "-m",
                 type=str,
                 help=("Select which type of model to use " "Default is 'hello'."),
-                default=lambda: get_env_var("REGINALD_MODEL"),
+                default=lambda: get_env_var("REGINALD_MODEL", secret_value=False),
                 choices=MODELS,
             )
             self.add_argument(
@@ -49,7 +49,7 @@ class Parser(argparse.ArgumentParser):
                     "to the model name on OpenAI."
                     "(ignored if using 'hello' model types)."
                 ),
-                default=lambda: get_env_var("REGINALD_MODEL_NAME"),
+                default=lambda: get_env_var("REGINALD_MODEL_NAME", secret_value=False),
             )
             self.add_argument(
                 "--mode",
@@ -59,7 +59,7 @@ class Parser(argparse.ArgumentParser):
                     "(ignored if not using llama-index). "
                     "Default is 'chat'."
                 ),
-                default=lambda: get_env_var("LLAMA_INDEX_MODE"),
+                default=lambda: get_env_var("LLAMA_INDEX_MODE", secret_value=False),
                 choices=["chat", "query"],
             )
             self.add_argument(
@@ -71,7 +71,9 @@ class Parser(argparse.ArgumentParser):
                     "Default is False."
                 ),
                 action=argparse.BooleanOptionalAction,
-                default=lambda: get_env_var("LLAMA_INDEX_FORCE_NEW_INDEX"),
+                default=lambda: get_env_var(
+                    "LLAMA_INDEX_FORCE_NEW_INDEX", secret_value=False
+                ),
             )
             self.add_argument(
                 "--is-path",
@@ -82,7 +84,7 @@ class Parser(argparse.ArgumentParser):
                     "Default is False."
                 ),
                 action=argparse.BooleanOptionalAction,
-                default=lambda: get_env_var("LLAMA_INDEX_IS_PATH"),
+                default=lambda: get_env_var("LLAMA_INDEX_IS_PATH", secret_value=False),
             )
             self.add_argument(
                 "--n-gpu-layers",
@@ -93,7 +95,9 @@ class Parser(argparse.ArgumentParser):
                     "(ignored if not using llama-index-llama-cpp). "
                     "Default is 0."
                 ),
-                default=lambda: int(get_env_var("LLAMA_INDEX_N_GPU_LAYERS")),
+                default=lambda: int(
+                    get_env_var("LLAMA_INDEX_N_GPU_LAYERS", secret_value=False)
+                ),
             )
             self.add_argument(
                 "--device",
@@ -104,7 +108,7 @@ class Parser(argparse.ArgumentParser):
                     "(ignored if not using llama-index-hf model). "
                     "Default is 'auto'."
                 ),
-                default=lambda: get_env_var("LLAMA_INDEX_DEVICE"),
+                default=lambda: get_env_var("LLAMA_INDEX_DEVICE", secret_value=False),
             )
 
         # data index arguments
@@ -116,7 +120,7 @@ class Parser(argparse.ArgumentParser):
                 "Location for data (ignored if not using llama-index). "
                 "Default is 'data' in the root of the repo."
             ),
-            default=lambda: get_env_var("LLAMA_INDEX_DATA_DIR")
+            default=lambda: get_env_var("LLAMA_INDEX_DATA_DIR", secret_value=False)
             or (pathlib.Path(__file__).parent.parent / "data").resolve(),
         )
         self.add_argument(
@@ -129,7 +133,7 @@ class Parser(argparse.ArgumentParser):
                 "Currently supports 'handbook', 'wikis', 'public', or 'all_data'. "
                 "Default is 'all_data'."
             ),
-            default=lambda: get_env_var("LLAMA_INDEX_WHICH_INDEX"),
+            default=lambda: get_env_var("LLAMA_INDEX_WHICH_INDEX", secret_value=False),
             choices=["handbook", "wikis", "public", "all_data"],
         )
         self.add_argument(
@@ -141,7 +145,9 @@ class Parser(argparse.ArgumentParser):
                 "(ignored if not using llama-index). "
                 "Default is 4096."
             ),
-            default=lambda: int(get_env_var("LLAMA_INDEX_MAX_INPUT_SIZE")),
+            default=lambda: int(
+                get_env_var("LLAMA_INDEX_MAX_INPUT_SIZE", secret_value=False)
+            ),
         )
         self.add_argument(
             "--k",
@@ -151,7 +157,7 @@ class Parser(argparse.ArgumentParser):
                 "(ignored if not using llama-index). "
                 "Default is 3."
             ),
-            default=lambda: int(get_env_var("LLAMA_INDEX_K")),
+            default=lambda: int(get_env_var("LLAMA_INDEX_K", secret_value=False)),
         )
         self.add_argument(
             "--chunk-size",
@@ -162,7 +168,9 @@ class Parser(argparse.ArgumentParser):
                 "(ignored if not using llama-index). "
                 "Default is computed by ceil(max_input_size / k)."
             ),
-            default=lambda: int(get_env_var("LLAMA_INDEX_CHUNK_SIZE")),
+            default=lambda: int(
+                get_env_var("LLAMA_INDEX_CHUNK_SIZE", secret_value=False)
+            ),
         )
         self.add_argument(
             "--chunk-overlap-ratio",
@@ -173,7 +181,9 @@ class Parser(argparse.ArgumentParser):
                 "(ignored if not using llama-index). "
                 "Default is 0.1."
             ),
-            default=lambda: float(get_env_var("LLAMA_INDEX_CHUNK_OVERLAP_RATIO")),
+            default=lambda: float(
+                get_env_var("LLAMA_INDEX_CHUNK_OVERLAP_RATIO", secret_value=False)
+            ),
         )
         self.add_argument(
             "--num-output",
@@ -184,7 +194,9 @@ class Parser(argparse.ArgumentParser):
                 "(ignored if not using llama-index). "
                 "Default is 512."
             ),
-            default=lambda: int(get_env_var("LLAMA_INDEX_NUM_OUTPUT")),
+            default=lambda: int(
+                get_env_var("LLAMA_INDEX_NUM_OUTPUT", secret_value=False)
+            ),
         )
 
 

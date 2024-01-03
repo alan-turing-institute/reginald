@@ -2,7 +2,7 @@ import logging
 import os
 
 
-def get_env_var(var: str, log: bool = True) -> str | None:
+def get_env_var(var: str, log: bool = True, secret_value: bool = True) -> str | None:
     """
     Get environment variable. Logs provided if log is True.
 
@@ -12,6 +12,10 @@ def get_env_var(var: str, log: bool = True) -> str | None:
         Name of environment variable
     log : bool, optional
         Whether or not to log if reading was successful, by default True
+    secret_value : bool, optional
+        Whether or not the value is a secret, by default True.
+        If True, the value will not be logged.
+        Ignored if log is False.
 
     Returns
     -------
@@ -23,11 +27,14 @@ def get_env_var(var: str, log: bool = True) -> str | None:
     value = os.getenv(var)
 
     if log:
-        if value is None:
+        if value is not None:
+            if secret_value:
+                logging.info(f"Got environment variable '{var}' successfully")
+            else:
+                logging.info(f"Got environment variable '{var}' successfully: {value}")
+        else:
             logging.warn(
                 f"Environment variable '{var}' not found. Can ignore if using default values."
             )
-        else:
-            logging.info(f"Got environment variable '{var}' successfully")
 
     return value

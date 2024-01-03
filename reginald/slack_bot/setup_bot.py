@@ -142,7 +142,7 @@ async def main():
             "Select the emoji for the model. By default, looks for the REGINALD_EMOJI "
             "environment variable or uses the rocket emoji"
         ),
-        default=lambda: get_env_var("REGINALD_EMOJI") or "rocket",
+        default=lambda: get_env_var("REGINALD_EMOJI", secret_value=False) or "rocket",
     )
     args = get_args(parser)
 

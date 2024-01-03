@@ -845,7 +845,7 @@ class LlamaIndexGPTAzure(LlamaIndex):
 
         # deployment name can be found in the Azure AI Studio portal
         self.deployment_name = model_name
-        self.openai_api_base = get_env_var("OPENAI_AZURE_API_BASE")
+        self.openai_api_base = get_env_var("OPENAI_AZURE_API_BASE", secret_value=False)
         self.openai_api_key = get_env_var("OPENAI_AZURE_API_KEY")
         self.openai_api_version = "2023-09-15-preview"
         self.temperature = 0.7
