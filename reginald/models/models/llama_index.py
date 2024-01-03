@@ -1,11 +1,11 @@
 from __future__ import annotations
 
 import logging
-import math
 import os
 import pathlib
 import re
 import sys
+from math import ceil
 from tempfile import TemporaryDirectory
 from typing import Any
 
@@ -47,13 +47,82 @@ nest_asyncio.apply()
 LLAMA_INDEX_DIR = "llama_index_indices"
 
 
+def compute_default_chunk_size(max_input_size: int, k: int) -> int:
+    """
+    Compute the default chunk size to use for the index vector store.
+
+    Parameters
+    ----------
+    max_input_size : int
+        Maximum input size for the LLM.
+    k : int
+        `similarity_top_k` to use in chat or query engine.
+
+    Returns
+    -------
+    int
+        Default chunk size to use for the index vector store.
+    """
+    return ceil(max_input_size / (k + 1))
+
+
 def setup_service_context(
     llm: LLM,
-    max_input_size: int,
-    num_output: int,
-    chunk_size: int,
-    chunk_overlap_ratio: float,
+    max_input_size: int | str,
+    num_output: int | str,
+    chunk_overlap_ratio: float | str,
+    chunk_size: int | str | None = None,
+    k: int | str | None = None,
 ) -> ServiceContext:
+    """
+    Helper function to set up the service context.
+    Can pass in either chunk_size or k.
+    If chunk_size is not provided, it is computed as
+    `ceil(max_input_size / k)`.
+    If chunk_size is provided, k is ignored.
+
+    Parameters
+    ----------
+    llm : LLM
+        LLM to use to create the index vectors.
+    max_input_size : int | str
+        Context window size for the LLM.
+    num_output : int, optional
+        Number of outputs for the LLM.
+    chunk_overlap_ratio : float, optional
+        Chunk overlap as a ratio of chunk size._
+    chunk_size : int | None, optional
+        Maximum size of chunks to use, by default None.
+        If None, this is computed as `ceil(max_input_size / k)`.
+    k : int | str | None, optional
+        `similarity_top_k` to use in chat or query engine,
+        by default None
+
+    Returns
+    -------
+    ServiceContext
+        Service context to use to create the index vectors.
+    """
+    if chunk_size is None and k is None:
+        raise ValueError("Either chunk_size or k must be provided.")
+
+    # convert to int or float if necessary
+    if isinstance(max_input_size, str):
+        max_input_size = int(max_input_size)
+    if isinstance(num_output, str):
+        num_output = int(num_output)
+    if isinstance(chunk_overlap_ratio, str):
+        chunk_overlap_ratio = float(chunk_overlap_ratio)
+    if isinstance(chunk_size, str):
+        chunk_size = int(chunk_size)
+    if isinstance(k, str):
+        k = int(k)
+
+    # if chunk_size is not provided, compute a default value
+    chunk_size = chunk_size or compute_default_chunk_size(
+        max_input_size=max_input_size, k=k
+    )
+
     # initialise embedding model to use to create the index vectors
     embed_model = HuggingFaceEmbeddings(
         model_name="sentence-transformers/all-mpnet-base-v2"
@@ -81,7 +150,7 @@ def setup_service_context(
 class DataIndexCreator:
     def __init__(
         self,
-        data_dir: pathlib.Path,
+        data_dir: pathlib.Path | str,
         which_index: str,
         service_context: ServiceContext,
     ) -> None:
@@ -90,7 +159,7 @@ class DataIndexCreator:
 
         Parameters
         ----------
-        data_dir : pathlib.Path
+        data_dir : pathlib.Path | str
             Path to the data directory.
         which_index : str
             Which index to construct (if force_new_index is True) or use.
@@ -98,7 +167,7 @@ class DataIndexCreator:
         service_context : ServiceContext
             Service context to use to create the index.
         """
-        self.data_dir: pathlib.Path = data_dir
+        self.data_dir: pathlib.Path = pathlib.Path(data_dir)
         self.which_index: str = which_index
         self.service_context: ServiceContext = service_context
         self.documents: list[str] = []
@@ -409,7 +478,7 @@ class LlamaIndex(ResponseModel):
         self,
         model_name: str,
         max_input_size: int,
-        data_dir: pathlib.Path,
+        data_dir: pathlib.Path | str,
         which_index: str,
         mode: str = "chat",
         k: int = 3,
@@ -431,7 +500,7 @@ class LlamaIndex(ResponseModel):
             Model name to specify which LLM to use.
         max_input_size : int
             Context window size for the LLM.
-        data_dir : pathlib.Path
+        data_dir : pathlib.Path | str
             Path to the data directory.
         which_index : str
             Which index to construct (if force_new_index is True) or use.
@@ -465,13 +534,13 @@ class LlamaIndex(ResponseModel):
         self.max_input_size = max_input_size
         self.model_name = model_name
         self.num_output = num_output
-        if chunk_size is None:
-            chunk_size = math.ceil(max_input_size / (k + 1))
         self.mode = mode
         self.k = k
-        self.chunk_size = chunk_size
+        self.chunk_size = chunk_size or compute_default_chunk_size(
+            max_input_size=max_input_size, k=k
+        )
         self.chunk_overlap_ratio = chunk_overlap_ratio
-        self.data_dir = data_dir
+        self.data_dir = pathlib.Path(data_dir)
         self.which_index = which_index
         self.documents = []
 
