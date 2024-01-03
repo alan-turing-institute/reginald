@@ -20,7 +20,7 @@ def get_env_var(var: str, log: bool = True) -> str | None:
     """
     if log:
         logging.info(f"Trying to get environment variable '{var}'")
-    value = os.environ.get(var)
+    value = os.getenv(var)
 
     if log:
         if value is None:
@@ -28,6 +28,6 @@ def get_env_var(var: str, log: bool = True) -> str | None:
                 f"Environment variable '{var}' not found. Can ignore if using default values."
             )
         else:
-            logging.info(f"Got environment variable '{var}': {value}")
+            logging.info(f"Got environment variable '{var}' successfully")
 
     return value

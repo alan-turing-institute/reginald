@@ -803,7 +803,7 @@ class LlamaIndexGPTOpenAI(LlamaIndex):
             raise ValueError("You must set OPENAI_API_KEY for OpenAI.")
 
         self.model_name = model_name
-        self.openai_api_key = os.getenv("OPENAI_API_KEY")
+        self.openai_api_key = get_env_var("OPENAI_API_KEY")
         self.temperature = 0.7
         super().__init__(*args, model_name=self.model_name, **kwargs)
 
@@ -845,8 +845,8 @@ class LlamaIndexGPTAzure(LlamaIndex):
 
         # deployment name can be found in the Azure AI Studio portal
         self.deployment_name = model_name
-        self.openai_api_base = os.getenv("OPENAI_AZURE_API_BASE")
-        self.openai_api_key = os.getenv("OPENAI_AZURE_API_KEY")
+        self.openai_api_base = get_env_var("OPENAI_AZURE_API_BASE")
+        self.openai_api_key = get_env_var("OPENAI_AZURE_API_KEY")
         self.openai_api_version = "2023-09-15-preview"
         self.temperature = 0.7
         super().__init__(*args, model_name="gpt-3.5-turbo", **kwargs)
