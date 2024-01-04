@@ -47,13 +47,43 @@ virtual_network = network.VirtualNetwork(
     virtual_network_peerings=[],
 )
 
+# Define configuration file shares
+storage_account = storage.StorageAccount(
+    "storage_account",
+    account_name=f"sareginald{stack_name}configuration"[:24],
+    kind=storage.Kind.STORAGE_V2,
+    resource_group_name=resource_group.name,
+    sku=storage.SkuArgs(name=storage.SkuName.STANDARD_GRS),
+)
+file_share = storage.FileShare(
+    "data_file_share",
+    access_tier=storage.ShareAccessTier.TRANSACTION_OPTIMIZED,
+    account_name=storage_account.name,
+    resource_group_name=resource_group.name,
+    share_name="llama-data",
+    share_quota=5120,
+)
+storage_account_keys = pulumi.Output.all(
+    storage_account.name, resource_group.name
+).apply(
+    lambda args: storage.list_storage_account_keys(
+        account_name=args[0],
+        resource_group_name=args[1],
+        opts=pulumi.InvokeOptions(parent=storage_account),
+    )
+)
+storage_account_key = storage_account_keys.apply(
+    lambda keys: pulumi.Output.secret(keys.keys[0].value)
+)
+
 # Define the container group
 container_group = containerinstance.ContainerGroup(
     "container_group",
     container_group_name=f"aci-reginald-{stack_name}",
     containers=[
+        # api-bot container
         containerinstance.ContainerArgs(
-            image="ghcr.io/alan-turing-institute/reginald_slackbot:main",
+            image="ghcr.io/alan-turing-institute/reginald_slackbot:pulumi",
             name="reginald-llama-cpp",  # maximum of 63 characters
             environment_variables=[
                 containerinstance.EnvironmentVariableArgs(
@@ -62,11 +92,11 @@ container_group = containerinstance.ContainerGroup(
                 ),
                 containerinstance.EnvironmentVariableArgs(
                     name="SLACK_APP_TOKEN",
-                    secure_value=config.get_secret("LLAMA_CPP_SLACK_APP_TOKEN"),
+                    secure_value=config.get_secret("REGINALD_SLACK_APP_TOKEN"),
                 ),
                 containerinstance.EnvironmentVariableArgs(
                     name="SLACK_BOT_TOKEN",
-                    secure_value=config.get_secret("LLAMA_CPP_SLACK_BOT_TOKEN"),
+                    secure_value=config.get_secret("REGINALD_SLACK_BOT_TOKEN"),
                 ),
                 containerinstance.EnvironmentVariableArgs(
                     name="REGINALD_API_URL",
@@ -81,9 +111,63 @@ container_group = containerinstance.ContainerGroup(
                 ),
             ),
         ),
+        # all_data index creation container
+        containerinstance.ContainerArgs(
+            image="ghcr.io/alan-turing-institute/reginald_create_index:pulumi",
+            name="reginald-create-index",  # maximum of 63 characters
+            environment_variables=[
+                containerinstance.EnvironmentVariableArgs(
+                    name="GITHUB_TOKEN",
+                    secure_value=config.get_secret("GITHUB_TOKEN"),
+                ),
+                containerinstance.EnvironmentVariableArgs(
+                    name="LLAMA_INDEX_WHICH_INDEX",
+                    value="all_data",
+                ),
+                containerinstance.EnvironmentVariableArgs(
+                    name="LLAMA_INDEX_MAX_INPUT_SIZE",
+                    value="4096",
+                ),
+                containerinstance.EnvironmentVariableArgs(
+                    name="LLAMA_INDEX_K",
+                    value="3",
+                ),
+                containerinstance.EnvironmentVariableArgs(
+                    name="LLAMA_INDEX_CHUNK_OVERLAP_RATIO",
+                    value="0.1",
+                ),
+                containerinstance.EnvironmentVariableArgs(
+                    name="LLAMA_INDEX_NUM_OUTPUT",
+                    value="512",
+                ),
+            ],
+            ports=[],
+            resources=containerinstance.ResourceRequirementsArgs(
+                requests=containerinstance.ResourceRequestsArgs(
+                    cpu=4,
+                    memory_in_gb=16,
+                ),
+            ),
+            volume_mounts=[
+                containerinstance.VolumeMountArgs(
+                    mount_path="/app/data",
+                    name="llama-data",
+                ),
+            ],
+        ),
     ],
     os_type=containerinstance.OperatingSystemTypes.LINUX,
     resource_group_name=resource_group.name,
-    restart_policy=containerinstance.ContainerGroupRestartPolicy.ALWAYS,
+    restart_policy=containerinstance.ContainerGroupRestartPolicy.ON_FAILURE,
     sku=containerinstance.ContainerGroupSku.STANDARD,
+    volumes=[
+        containerinstance.VolumeArgs(
+            azure_file=containerinstance.AzureFileVolumeArgs(
+                share_name=file_share.name,
+                storage_account_key=storage_account_key,
+                storage_account_name=storage_account.name,
+            ),
+            name="llama-data",
+        ),
+    ],
 )
