@@ -378,7 +378,9 @@ class DataIndexCreator:
                     "development",
                     "newsletters",
                     "objectives",
+                    "project-appraisal",
                     "rfc",
+                    "team-meetings",
                 ],  # we can adjust these
                 GithubRepositoryReader.FilterType.INCLUDE,
             ),
