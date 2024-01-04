@@ -9,6 +9,6 @@ RUN pip3 install --upgrade pip poetry setuptools wheel
 COPY reginald reginald
 COPY pyproject.toml .
 COPY README.md .
-RUN poetry install --all-extras
+RUN poetry install
 
 CMD ["poetry", "run", "reginald_run"]
