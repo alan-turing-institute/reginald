@@ -875,11 +875,12 @@ class LlamaIndexGPTOpenAI(LlamaIndex):
         model_name : str, optional
             The model to use from the OpenAI API, by default "gpt-3.5-turbo"
         """
-        if os.getenv("OPENAI_API_KEY") is None:
+        openai_api_key = get_env_var("OPENAI_API_KEY")
+        if openai_api_key is None:
             raise ValueError("You must set OPENAI_API_KEY for OpenAI.")
 
         self.model_name = model_name
-        self.openai_api_key = get_env_var("OPENAI_API_KEY")
+        self.openai_api_key = openai_api_key
         self.temperature = 0.7
         super().__init__(*args, model_name=self.model_name, **kwargs)
 
@@ -911,18 +912,21 @@ class LlamaIndexGPTAzure(LlamaIndex):
         model_name : str, optional
             The deployment name of the model, by default "reginald-gpt35-turbo"
         """
-        if os.getenv("OPENAI_AZURE_API_BASE") is None:
+        openai_azure_api_base = get_env_var("OPENAI_AZURE_API_BASE", secret_value=False)
+        if openai_azure_api_base is None:
             raise ValueError(
                 "You must set OPENAI_AZURE_API_BASE to your Azure endpoint. "
                 "It should look like https://YOUR_RESOURCE_NAME.openai.azure.com/"
             )
-        if os.getenv("OPENAI_AZURE_API_KEY") is None:
+
+        openai_azure_api_key = get_env_var("OPENAI_AZURE_API_KEY")
+        if openai_azure_api_key is None:
             raise ValueError("You must set OPENAI_AZURE_API_KEY for Azure OpenAI.")
 
         # deployment name can be found in the Azure AI Studio portal
         self.deployment_name = model_name
-        self.openai_api_base = get_env_var("OPENAI_AZURE_API_BASE", secret_value=False)
-        self.openai_api_key = get_env_var("OPENAI_AZURE_API_KEY")
+        self.openai_api_base = openai_azure_api_base
+        self.openai_api_key = openai_azure_api_key
         self.openai_api_version = "2023-09-15-preview"
         self.temperature = 0.7
         super().__init__(*args, model_name="gpt-3.5-turbo", **kwargs)
