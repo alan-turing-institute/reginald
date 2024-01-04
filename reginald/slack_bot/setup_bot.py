@@ -32,7 +32,7 @@ def setup_slack_bot(model: ResponseModel) -> Bot:
     slack_bot = Bot(model=model)
 
     logging.info("Connecting to Slack...")
-    if get_env_var("SLACK_APP_TOKEN") is None:
+    if get_env_var("SLACK_APP_TOKEN", log=False) is None:
         logging.error("SLACK_APP_TOKEN is not set")
         sys.exit(1)
 
@@ -60,7 +60,7 @@ def setup_api_slack_bot(api_url: str, emoji: str) -> ApiBot:
     slack_bot = ApiBot(api_url=api_url, emoji=emoji)
 
     logging.info("Connecting to Slack...")
-    if get_env_var("SLACK_APP_TOKEN") is None:
+    if get_env_var("SLACK_APP_TOKEN", log=False) is None:
         logging.error("SLACK_APP_TOKEN is not set")
         sys.exit(1)
 
