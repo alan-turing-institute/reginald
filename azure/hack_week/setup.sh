@@ -2,7 +2,7 @@
 
 # Arguments
 SUBSCRIPTION_NAME=${1:-"Reg Hack Week 2023: Reginald"}
-STACK_NAME=${2:-"production"}
+STACK_NAME=${2:-"hackweek"}
 
 # Fixed values
 CONTAINER_NAME="pulumi"
@@ -12,6 +12,8 @@ KEYVAULT_NAME=$(echo "kv-reginald-${STACK_NAME}" | head -c 24)
 LOCATION="uksouth"
 RESOURCE_GROUP_NAME="rg-reginald-${STACK_NAME}-backend"
 STORAGE_ACCOUNT_NAME=$(echo "sareginald${STACK_NAME}backend$(echo "$SUBSCRIPTION_NAME" | md5sum)" | head -c 24)
+RESOURCE_GROUP_DEPLOYMENT_NAME="rg-reginald-${STACK_NAME}-deployment"
+AUTOMATION_ACCOUNT_NAME="aa-reginald-${STACK_NAME}"
 
 # Ensure that the user is logged in
 if ! (az account show > /dev/null); then
@@ -31,6 +33,11 @@ az storage account create --name "$STORAGE_ACCOUNT_NAME" --resource-group "$RESO
 echo "✅ Storage account '$STORAGE_ACCOUNT_NAME'"
 az storage container create --name "$CONTAINER_NAME" --account-name "$STORAGE_ACCOUNT_NAME" --only-show-errors > /dev/null || exit 4
 echo "✅ Storage container '$CONTAINER_NAME'"
+
+# Create automation account
+# Note: add schedule and runbook manually for now
+az automation account create --name "$AUTOMATION_ACCOUNT_NAME" --resource-group "$RESOURCE_GROUP_DEPLOYMENT_NAME" --location "$LOCATION" --only-show-errors > /dev/null || exit 5
+echo "✅ Automation account '$AUTOMATION_ACCOUNT_NAME'"
 
 # Create keyvault and encryption key
 if ! (az keyvault show --name "$KEYVAULT_NAME" --resource-group "$RESOURCE_GROUP_NAME" --only-show-errors > /dev/null 2>&1); then
@@ -76,32 +83,39 @@ AZURE_KEYVAULT_AUTH_VIA_CLI=true pulumi config set azure-native:location "$LOCAT
 echo "✅ Configured azure-native defaults"
 
 # Set app secrets
+echo "Setting app secrets..."
 OPENAI_AZURE_API_BASE=""
 OPENAI_AZURE_API_KEY=""
-OPENAI_API_KEY=""
 HANDBOOK_SLACK_APP_TOKEN=""
 HANDBOOK_SLACK_BOT_TOKEN=""
 GPT_AZURE_SLACK_APP_TOKEN=""
 GPT_AZURE_SLACK_BOT_TOKEN=""
+GITHUB_TOKEN=""
+OPENAI_API_KEY=""
 if [ -e ../.pulumi_env ]; then
     OPENAI_AZURE_API_BASE=$(grep "OPENAI_AZURE_API_BASE" ../.pulumi_env | grep -v "^#" | cut -d '"' -f 2)
     OPENAI_AZURE_API_KEY=$(grep "OPENAI_AZURE_API_KEY" ../.pulumi_env | grep -v "^#" | cut -d '"' -f 2)
-    OPENAI_API_KEY=$(grep "OPENAI_API_KEY" ../.pulumi_env | grep -v "^#" | cut -d '"' -f 2)
     HANDBOOK_SLACK_APP_TOKEN=$(grep "HANDBOOK_SLACK_APP_TOKEN" ../.pulumi_env | grep -v "^#" | cut -d '"' -f 2)
     HANDBOOK_SLACK_BOT_TOKEN=$(grep "HANDBOOK_SLACK_BOT_TOKEN" ../.pulumi_env | grep -v "^#" | cut -d '"' -f 2)
     GPT_AZURE_SLACK_APP_TOKEN=$(grep "GPT_AZURE_SLACK_APP_TOKEN" ../.pulumi_env | grep -v "^#" | cut -d '"' -f 2)
     GPT_AZURE_SLACK_BOT_TOKEN=$(grep "GPT_AZURE_SLACK_BOT_TOKEN" ../.pulumi_env | grep -v "^#" | cut -d '"' -f 2)
+    GITHUB_TOKEN=$(grep "GITHUB_TOKEN" ../.pulumi_env | grep -v "^#" | cut -d '"' -f 2)
+    OPENAI_API_KEY=$(grep "OPENAI_API_KEY" ../.pulumi_env | grep -v "^#" | cut -d '"' -f 2)
 fi
 
 # ChatCompletionAzure (handbook) tokens
 if [ -z "$HANDBOOK_SLACK_APP_TOKEN" ]; then
     echo "Please provide a HANDBOOK_SLACK_APP_TOKEN:"
     read -r HANDBOOK_SLACK_APP_TOKEN
+else
+    echo "✅ HANDBOOK_SLACK_APP_TOKEN environment variable found in .pulumi_env"
 fi
 AZURE_KEYVAULT_AUTH_VIA_CLI=true pulumi config set --secret HANDBOOK_SLACK_APP_TOKEN "$HANDBOOK_SLACK_APP_TOKEN"
 if [ -z "$HANDBOOK_SLACK_BOT_TOKEN" ]; then
     echo "Please provide a HANDBOOK_SLACK_BOT_TOKEN:"
     read -r HANDBOOK_SLACK_BOT_TOKEN
+else
+    echo "✅ HANDBOOK_SLACK_BOT_TOKEN environment variable found in .pulumi_env"
 fi
 AZURE_KEYVAULT_AUTH_VIA_CLI=true pulumi config set --secret HANDBOOK_SLACK_BOT_TOKEN "$HANDBOOK_SLACK_BOT_TOKEN"
 
@@ -109,11 +123,15 @@ AZURE_KEYVAULT_AUTH_VIA_CLI=true pulumi config set --secret HANDBOOK_SLACK_BOT_T
 if [ -z "$GPT_AZURE_SLACK_APP_TOKEN" ]; then
     echo "Please provide a GPT_AZURE_SLACK_APP_TOKEN:"
     read -r GPT_AZURE_SLACK_APP_TOKEN
+else
+    echo "✅ GPT_AZURE_SLACK_APP_TOKEN environment variable found in .pulumi_env"
 fi
 AZURE_KEYVAULT_AUTH_VIA_CLI=true pulumi config set --secret GPT_AZURE_SLACK_APP_TOKEN "$GPT_AZURE_SLACK_APP_TOKEN"
 if [ -z "$GPT_AZURE_SLACK_BOT_TOKEN" ]; then
     echo "Please provide a GPT_AZURE_SLACK_BOT_TOKEN:"
     read -r GPT_AZURE_SLACK_BOT_TOKEN
+else
+    echo "✅ GPT_AZURE_SLACK_BOT_TOKEN environment variable found in .pulumi_env"
 fi
 AZURE_KEYVAULT_AUTH_VIA_CLI=true pulumi config set --secret GPT_AZURE_SLACK_BOT_TOKEN "$GPT_AZURE_SLACK_BOT_TOKEN"
 
@@ -121,18 +139,37 @@ AZURE_KEYVAULT_AUTH_VIA_CLI=true pulumi config set --secret GPT_AZURE_SLACK_BOT_
 if [ -z "$OPENAI_AZURE_API_BASE" ]; then
     echo "Please provide a OPENAI_AZURE_API_BASE:"
     read -r OPENAI_AZURE_API_BASE
+else
+    echo "✅ OPENAI_AZURE_API_BASE environment variable found in .pulumi_env"
 fi
 AZURE_KEYVAULT_AUTH_VIA_CLI=true pulumi config set OPENAI_AZURE_API_BASE "$OPENAI_AZURE_API_BASE"
 if [ -z "$OPENAI_AZURE_API_KEY" ]; then
     echo "Please provide a OPENAI_AZURE_API_KEY:"
     read -r OPENAI_AZURE_API_KEY
+else
+    echo "✅ OPENAI_AZURE_API_KEY environment variable found in .pulumi_env"
 fi
 AZURE_KEYVAULT_AUTH_VIA_CLI=true pulumi config set --secret OPENAI_AZURE_API_KEY "$OPENAI_AZURE_API_KEY"
+
+# GitHub token
+if [ -z "$GITHUB_TOKEN" ]; then
+    echo "Please provide a GITHUB_TOKEN:"
+    read -r GITHUB_TOKEN
+else
+    echo "✅ GITHUB_TOKEN environment variable found in .pulumi_env"
+fi
+AZURE_KEYVAULT_AUTH_VIA_CLI=true pulumi config set --secret GITHUB_TOKEN "$GITHUB_TOKEN"
 
 # The ChatCompletionOpenAI and LlamaIndexGPTOpenAI models need an OpenAI key (not used currently)
 # if [ -z "$OPENAI_API_KEY" ]; then
 #     echo "Please provide a OPENAI_API_KEY:"
 #     read -r OPENAI_API_KEY
+# else
+#     echo "✅ OPENAI_API_KEY environment variable found in .pulumi_env"
 # fi
-# AZURE_KEYVAULT_AUTH_VIA_CLI=true pulumi config set --secret OPENAI_API_KEY "$OPENAI_API_KEY"
+if [ -z "$OPENAI_API_KEY" ]; then
+    echo "❌ OPENAI_API_KEY environment variable not found in .pulumi_env but not required"
+else
+    echo "✅ OPENAI_API_KEY environment variable found in .pulumi_env"
+fi
 AZURE_KEYVAULT_AUTH_VIA_CLI=true pulumi config set --secret OPENAI_API_KEY "$OPENAI_API_KEY"
