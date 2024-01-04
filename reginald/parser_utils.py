@@ -21,7 +21,7 @@ class Parser(argparse.ArgumentParser):
         Parameters
         ----------
         create_index_only : bool, optional
-            Whether or not to only include ones related to data index creation,
+            Whether or not to only include arguments related to data index creation,
             by default False
         """
         super().__init__(*args, **kwargs)
