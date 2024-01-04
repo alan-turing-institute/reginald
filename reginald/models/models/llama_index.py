@@ -569,7 +569,7 @@ class LlamaIndex(ResponseModel):
         else:
             logging.info("Loading the storage context")
             storage_context = StorageContext.from_defaults(
-                persist_dir=self.data_dir / LLAMA_INDEX_DIR / which_index
+                persist_dir=self.data_dir / LLAMA_INDEX_DIR / self.which_index
             )
 
             logging.info("Loading the pre-processed index")

@@ -37,8 +37,6 @@ def get_env_var(
             else:
                 logging.info(f"Got environment variable '{var}' successfully: {value}")
         else:
-            logging.warn(
-                f"Environment variable '{var}' not found. Can ignore if using default values."
-            )
+            logging.warn(f"Environment variable '{var}' not found.")
 
     return value
