@@ -17,35 +17,32 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = ">=3.11,<3.12"
-accelerate = "^0.23.0"
+accelerate = "^0.25.0"
 bitsandbytes = { version="^0.41.1", optional=true }
-datasets = { version="^2.12.0", optional=true }
+datasets = { version="^2.16.1", optional=true }
 faiss-cpu = { version="^1.7.4", optional=true }
 fastapi = { version="^0.103.1", optional=true }
 gitpython = "^3.1.36"
-gradio = { version="^3.34.0", optional=true }
-httpx = { version="^0.25.0", optional=true }
+gradio = { version = "^4.12.0", optional=true }
+httpx = "^0.26.0"
 ipykernel = { version="^6.23.2", optional=true }
 langchain = "^0.0.329"
 llama-cpp-python = "^0.2.11"
-llama-index = "^0.8.57"
+llama-index = "^0.8.62"
 llama-hub = "^0.0.42"
-nbconvert = {version = "^7.8.0", optional = true}
+nbconvert = { version = "^7.8.0", optional = true }
 nest_asyncio = "^1.5.8"
 openai = "^0.27.8"
 pandas = "^2.0.2"
 pulumi = { version="^3.70.0", optional=true }
 pulumi-azure-native = { version="^1.103.0", optional=true }
-pydantic = {version = "^2.4.1", optional=true }
-requests = {version = "^2.31.0", optional=true }
+pydantic = { version = "^2.4.1", optional=true }
+requests = { version = "^2.31.0", optional=true }
 safetensors = "^0.3.3"
 slack-sdk = "^3.21.3"
 sentence-transformers = "^2.2.2"
-torch = [
-  { version = "^2.0.1", markers = "sys_platform != 'linux'", source = "PyPI" },
-  { version = "^2.0.1+cpu", markers = "sys_platform == 'linux'", source = "torchcpu" }
-]
-transformers = "^4.33.2"
+torch = "^2.0.1"
+transformers = "^4.36.2"
 uvicorn = { version="^0.23.2", optional=true }
 
 [tool.poetry.group.dev.dependencies]
@@ -73,23 +70,18 @@ llama_index_notebooks = [
     "bitsandbytes",
     "gradio",
     "ipykernel",
-    "nbconvert",
-    "httpx"
+    "nbconvert"
 ]
 
 [tool.poetry.scripts]
 reginald_run = "reginald.run:cli"
 reginald_run_api_bot = "reginald.slack_bot.setup_bot:cli"
 reginald_run_api_llm = "reginald.models.app:main"
+reginald_create_index = "reginald.models.create_index:main"
 
 [[tool.poetry.source]]
 name = "PyPI"
 priority = "primary"
-
-[[tool.poetry.source]]
-name = "torchcpu"
-url = "https://download.pytorch.org/whl/cpu/"
-priority = "explicit"
 
 [build-system]
 requires = ["poetry-core"]

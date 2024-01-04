@@ -5,6 +5,7 @@ from typing import Any
 import openai
 
 from reginald.models.models.base import MessageResponse, ResponseModel
+from reginald.utils import get_env_var
 
 
 class ChatCompletionBase(ResponseModel):
@@ -35,8 +36,8 @@ class ChatCompletionAzure(ChatCompletionBase):
         """
         logging.info(f"Setting up AzureOpenAI LLM (model {model_name})")
         super().__init__(*args, **kwargs)
-        self.api_base = os.getenv("OPENAI_AZURE_API_BASE")
-        self.api_key = os.getenv("OPENAI_AZURE_API_KEY")
+        self.api_base = get_env_var("OPENAI_AZURE_API_BASE", secret_value=False)
+        self.api_key = get_env_var("OPENAI_AZURE_API_KEY")
         self.api_type = "azure"
         self.api_version = "2023-03-15-preview"
         self.best_of = 1
@@ -133,7 +134,7 @@ class ChatCompletionOpenAI(ChatCompletionBase):
         """
         super().__init__(*args, **kwargs)
         self.model_name = model_name
-        self.api_key = os.getenv("OPENAI_API_KEY")
+        self.api_key = get_env_var("OPENAI_API_KEY")
 
     def _respond(self, message: str, user_id: str) -> MessageResponse:
         """
