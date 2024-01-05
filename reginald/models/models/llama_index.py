@@ -415,6 +415,12 @@ class DataIndexCreator:
         Load in documents from the wikis.
 
         For 'wikis' index and 'all_data' index.
+
+        Parameters
+        ----------
+        gh_token : str
+            Github token to use to access the research-engineering-group
+            and Hut23 repo wikis.
         """
         wiki_urls = [
             f"https://oauth2:{gh_token}@github.com/alan-turing-institute/research-engineering-group.wiki.git",
