@@ -80,10 +80,10 @@ container_group = containerinstance.ContainerGroup(
     "container_group",
     container_group_name=f"aci-reginald-{stack_name}",
     containers=[
-        # Reggie (Handbook) container
+        # Reginald chat completion container
         containerinstance.ContainerArgs(
             image="ghcr.io/alan-turing-institute/reginald_reginald:pulumi",
-            name="reginald-handbook",  # maximum of 63 characters
+            name="reginald-completion",  # maximum of 63 characters
             environment_variables=[
                 containerinstance.EnvironmentVariableArgs(
                     name="REGINALD_MODEL",
@@ -91,7 +91,7 @@ container_group = containerinstance.ContainerGroup(
                 ),
                 containerinstance.EnvironmentVariableArgs(
                     name="REGINALD_MODEL_NAME",
-                    value="reginald-curie",
+                    value="reginald-gpt4",
                 ),
                 containerinstance.EnvironmentVariableArgs(
                     name="OPENAI_AZURE_API_BASE",
@@ -103,11 +103,11 @@ container_group = containerinstance.ContainerGroup(
                 ),
                 containerinstance.EnvironmentVariableArgs(
                     name="SLACK_APP_TOKEN",
-                    secure_value=config.get_secret("HANDBOOK_SLACK_APP_TOKEN"),
+                    secure_value=config.get_secret("COMPLETION_SLACK_APP_TOKEN"),
                 ),
                 containerinstance.EnvironmentVariableArgs(
                     name="SLACK_BOT_TOKEN",
-                    secure_value=config.get_secret("HANDBOOK_SLACK_BOT_TOKEN"),
+                    secure_value=config.get_secret("COMPLETION_SLACK_BOT_TOKEN"),
                 ),
             ],
             ports=[
@@ -229,8 +229,8 @@ container_group = containerinstance.ContainerGroup(
             ports=[],
             resources=containerinstance.ResourceRequirementsArgs(
                 requests=containerinstance.ResourceRequestsArgs(
-                    cpu=4,
-                    memory_in_gb=16,
+                    cpu=2,
+                    memory_in_gb=8,
                 ),
             ),
             volume_mounts=[
@@ -244,6 +244,7 @@ container_group = containerinstance.ContainerGroup(
     os_type=containerinstance.OperatingSystemTypes.LINUX,
     resource_group_name=resource_group.name,
     restart_policy=containerinstance.ContainerGroupRestartPolicy.ON_FAILURE,
+    max_retry_attempts=3,
     sku=containerinstance.ContainerGroupSku.STANDARD,
     volumes=[
         containerinstance.VolumeArgs(
