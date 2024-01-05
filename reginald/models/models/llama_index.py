@@ -417,8 +417,8 @@ class DataIndexCreator:
         For 'wikis' index and 'all_data' index.
         """
         wiki_urls = [
-            "https://github.com/alan-turing-institute/research-engineering-group.wiki.git",
-            "https://github.com/alan-turing-institute/Hut23.wiki.git",
+            f"https://oauth2:{gh_token}@github.com/alan-turing-institute/research-engineering-group.wiki.git",
+            f"https://oauth2:{gh_token}@github.com/alan-turing-institute/Hut23.wiki.git",
         ]
 
         for url in wiki_urls:
