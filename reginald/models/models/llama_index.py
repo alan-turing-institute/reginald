@@ -32,7 +32,7 @@ from llama_index import (
 )
 from llama_index.indices.vector_store.base import VectorStoreIndex
 from llama_index.llms import AzureOpenAI, HuggingFaceLLM, LlamaCPP, OpenAI
-from llama_index.llms.base import LLM
+from llama_index.llms.base import BaseLLM
 from llama_index.llms.llama_utils import completion_to_prompt, messages_to_prompt
 from llama_index.prompts import PromptTemplate
 from llama_index.readers import SimpleDirectoryReader
@@ -67,7 +67,7 @@ def compute_default_chunk_size(max_input_size: int, k: int) -> int:
 
 
 def setup_service_context(
-    llm: LLM,
+    llm: BaseLLM,
     max_input_size: int | str,
     num_output: int | str,
     chunk_overlap_ratio: float | str,
@@ -83,7 +83,7 @@ def setup_service_context(
 
     Parameters
     ----------
-    llm : LLM
+    llm : BaseLLM
         LLM to use to create the index vectors.
     max_input_size : int | str
         Context window size for the LLM.
@@ -689,13 +689,13 @@ class LlamaIndex(ResponseModel):
             answer = formatted_response
         return answer
 
-    def _prep_llm(self) -> LLM:
+    def _prep_llm(self) -> BaseLLM:
         """
         Method to prepare the LLM to be used.
 
         Returns
         -------
-        LLM
+        BaseLLM
             LLM to be used.
 
         Raises
@@ -896,7 +896,7 @@ class LlamaIndexGPTOpenAI(LlamaIndex):
 
 class LlamaIndexGPTAzure(LlamaIndex):
     def __init__(
-        self, model_name: str = "reginald-gpt35-turbo", *args: Any, **kwargs: Any
+        self, model_name: str = "reginald-gpt4", *args: Any, **kwargs: Any
     ) -> None:
         """
          `LlamaIndexGPTAzure` is a subclass of `LlamaIndex` that uses Azure's
@@ -910,7 +910,7 @@ class LlamaIndexGPTAzure(LlamaIndex):
         Parameters
         ----------
         model_name : str, optional
-            The deployment name of the model, by default "reginald-gpt35-turbo"
+            The deployment name of the model, by default "reginald-gpt4"
         """
         openai_azure_api_base = get_env_var("OPENAI_AZURE_API_BASE", secret_value=False)
         if openai_azure_api_base is None:
@@ -929,7 +929,7 @@ class LlamaIndexGPTAzure(LlamaIndex):
         self.openai_api_key = openai_azure_api_key
         self.openai_api_version = "2023-09-15-preview"
         self.temperature = 0.7
-        super().__init__(*args, model_name="gpt-3.5-turbo", **kwargs)
+        super().__init__(*args, model_name="gpt-4", **kwargs)
 
     def _prep_llm(self) -> AzureOpenAI:
         logging.info(f"Setting up AzureOpenAI LLM (model {self.deployment_name})")
@@ -941,5 +941,6 @@ class LlamaIndexGPTAzure(LlamaIndex):
             api_key=self.openai_api_key,
             api_base=self.openai_api_base,
             api_type="azure",
+            azure_endpoint=self.openai_api_base,
             api_version=self.openai_api_version,
         )
