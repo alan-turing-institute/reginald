@@ -125,7 +125,8 @@ def setup_service_context(
 
     # initialise embedding model to use to create the index vectors
     embed_model = HuggingFaceEmbeddings(
-        model_name="sentence-transformers/all-mpnet-base-v2"
+        model_name="sentence-transformers/all-mpnet-base-v2",
+        encode_kwargs={"batch_size": 128},
     )
 
     # construct the prompt helper
