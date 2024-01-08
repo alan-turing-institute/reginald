@@ -86,8 +86,8 @@ echo "✅ Configured azure-native defaults"
 echo "Setting app secrets..."
 OPENAI_AZURE_API_BASE=""
 OPENAI_AZURE_API_KEY=""
-HANDBOOK_SLACK_APP_TOKEN=""
-HANDBOOK_SLACK_BOT_TOKEN=""
+COMPLETION_SLACK_APP_TOKEN=""
+COMPLETION_SLACK_BOT_TOKEN=""
 GPT_AZURE_SLACK_APP_TOKEN=""
 GPT_AZURE_SLACK_BOT_TOKEN=""
 GITHUB_TOKEN=""
@@ -95,29 +95,29 @@ OPENAI_API_KEY=""
 if [ -e ../.pulumi_env ]; then
     OPENAI_AZURE_API_BASE=$(grep "OPENAI_AZURE_API_BASE" ../.pulumi_env | grep -v "^#" | cut -d '"' -f 2)
     OPENAI_AZURE_API_KEY=$(grep "OPENAI_AZURE_API_KEY" ../.pulumi_env | grep -v "^#" | cut -d '"' -f 2)
-    HANDBOOK_SLACK_APP_TOKEN=$(grep "HANDBOOK_SLACK_APP_TOKEN" ../.pulumi_env | grep -v "^#" | cut -d '"' -f 2)
-    HANDBOOK_SLACK_BOT_TOKEN=$(grep "HANDBOOK_SLACK_BOT_TOKEN" ../.pulumi_env | grep -v "^#" | cut -d '"' -f 2)
+    COMPLETION_SLACK_APP_TOKEN=$(grep "COMPLETION_SLACK_APP_TOKEN" ../.pulumi_env | grep -v "^#" | cut -d '"' -f 2)
+    COMPLETION_SLACK_BOT_TOKEN=$(grep "COMPLETION_SLACK_BOT_TOKEN" ../.pulumi_env | grep -v "^#" | cut -d '"' -f 2)
     GPT_AZURE_SLACK_APP_TOKEN=$(grep "GPT_AZURE_SLACK_APP_TOKEN" ../.pulumi_env | grep -v "^#" | cut -d '"' -f 2)
     GPT_AZURE_SLACK_BOT_TOKEN=$(grep "GPT_AZURE_SLACK_BOT_TOKEN" ../.pulumi_env | grep -v "^#" | cut -d '"' -f 2)
     GITHUB_TOKEN=$(grep "GITHUB_TOKEN" ../.pulumi_env | grep -v "^#" | cut -d '"' -f 2)
     OPENAI_API_KEY=$(grep "OPENAI_API_KEY" ../.pulumi_env | grep -v "^#" | cut -d '"' -f 2)
 fi
 
-# ChatCompletionAzure (handbook) tokens
-if [ -z "$HANDBOOK_SLACK_APP_TOKEN" ]; then
-    echo "Please provide a HANDBOOK_SLACK_APP_TOKEN:"
-    read -r HANDBOOK_SLACK_APP_TOKEN
+# ChatCompletionAzure tokens
+if [ -z "$COMPLETION_SLACK_APP_TOKEN" ]; then
+    echo "Please provide a COMPLETION_SLACK_APP_TOKEN:"
+    read -r COMPLETION_SLACK_APP_TOKEN
 else
-    echo "✅ HANDBOOK_SLACK_APP_TOKEN environment variable found in .pulumi_env"
+    echo "✅ COMPLETION_SLACK_APP_TOKEN environment variable found in .pulumi_env"
 fi
-AZURE_KEYVAULT_AUTH_VIA_CLI=true pulumi config set --secret HANDBOOK_SLACK_APP_TOKEN "$HANDBOOK_SLACK_APP_TOKEN"
-if [ -z "$HANDBOOK_SLACK_BOT_TOKEN" ]; then
-    echo "Please provide a HANDBOOK_SLACK_BOT_TOKEN:"
-    read -r HANDBOOK_SLACK_BOT_TOKEN
+AZURE_KEYVAULT_AUTH_VIA_CLI=true pulumi config set --secret COMPLETION_SLACK_APP_TOKEN "$COMPLETION_SLACK_APP_TOKEN"
+if [ -z "$COMPLETION_SLACK_BOT_TOKEN" ]; then
+    echo "Please provide a COMPLETION_SLACK_BOT_TOKEN:"
+    read -r COMPLETION_SLACK_BOT_TOKEN
 else
-    echo "✅ HANDBOOK_SLACK_BOT_TOKEN environment variable found in .pulumi_env"
+    echo "✅ COMPLETION_SLACK_BOT_TOKEN environment variable found in .pulumi_env"
 fi
-AZURE_KEYVAULT_AUTH_VIA_CLI=true pulumi config set --secret HANDBOOK_SLACK_BOT_TOKEN "$HANDBOOK_SLACK_BOT_TOKEN"
+AZURE_KEYVAULT_AUTH_VIA_CLI=true pulumi config set --secret COMPLETION_SLACK_BOT_TOKEN "$COMPLETION_SLACK_BOT_TOKEN"
 
 # LlamaIndexGPTAzure tokens
 if [ -z "$GPT_AZURE_SLACK_APP_TOKEN" ]; then

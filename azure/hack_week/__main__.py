@@ -157,6 +157,10 @@ container_group = containerinstance.ContainerGroup(
                     value="3",
                 ),
                 containerinstance.EnvironmentVariableArgs(
+                    name="LLAMA_INDEX_CHUNK_SIZE",
+                    value="512",
+                ),
+                containerinstance.EnvironmentVariableArgs(
                     name="LLAMA_INDEX_CHUNK_OVERLAP_RATIO",
                     value="0.1",
                 ),
@@ -218,6 +222,10 @@ container_group = containerinstance.ContainerGroup(
                     value="3",
                 ),
                 containerinstance.EnvironmentVariableArgs(
+                    name="LLAMA_INDEX_CHUNK_SIZE",
+                    value="512",
+                ),
+                containerinstance.EnvironmentVariableArgs(
                     name="LLAMA_INDEX_CHUNK_OVERLAP_RATIO",
                     value="0.1",
                 ),
@@ -243,8 +251,7 @@ container_group = containerinstance.ContainerGroup(
     ],
     os_type=containerinstance.OperatingSystemTypes.LINUX,
     resource_group_name=resource_group.name,
-    restart_policy=containerinstance.ContainerGroupRestartPolicy.ON_FAILURE,
-    max_retry_attempts=3,
+    restart_policy=containerinstance.ContainerGroupRestartPolicy.NEVER,
     sku=containerinstance.ContainerGroupSku.STANDARD,
     volumes=[
         containerinstance.VolumeArgs(
