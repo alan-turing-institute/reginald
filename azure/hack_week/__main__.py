@@ -75,10 +75,10 @@ storage_account_key = storage_account_keys.apply(
     lambda keys: pulumi.Output.secret(keys.keys[0].value)
 )
 
-# Define the container group
+# Define the container group for the slack bots
 container_group = containerinstance.ContainerGroup(
-    "container_group",
-    container_group_name=f"aci-reginald-{stack_name}",
+    "container_group-bots",
+    container_group_name=f"aci-reginald-{stack_name}-bots",
     containers=[
         # Reginald chat completion container
         containerinstance.ContainerArgs(
@@ -119,7 +119,7 @@ container_group = containerinstance.ContainerGroup(
             resources=containerinstance.ResourceRequirementsArgs(
                 requests=containerinstance.ResourceRequestsArgs(
                     cpu=1,
-                    memory_in_gb=4,
+                    memory_in_gb=2,
                 ),
             ),
         ),
@@ -134,7 +134,7 @@ container_group = containerinstance.ContainerGroup(
                 ),
                 containerinstance.EnvironmentVariableArgs(
                     name="REGINALD_MODEL_NAME",
-                    value="reginald-gpt35-turbo",
+                    value="reginald-gpt4",
                 ),
                 containerinstance.EnvironmentVariableArgs(
                     name="LLAMA_INDEX_MODE",
@@ -189,7 +189,7 @@ container_group = containerinstance.ContainerGroup(
             resources=containerinstance.ResourceRequirementsArgs(
                 requests=containerinstance.ResourceRequestsArgs(
                     cpu=1,
-                    memory_in_gb=4,
+                    memory_in_gb=12,
                 ),
             ),
             volume_mounts=[
@@ -200,6 +200,28 @@ container_group = containerinstance.ContainerGroup(
                 ),
             ],
         ),
+    ],
+    os_type=containerinstance.OperatingSystemTypes.LINUX,
+    resource_group_name=resource_group.name,
+    restart_policy=containerinstance.ContainerGroupRestartPolicy.ALWAYS,
+    sku=containerinstance.ContainerGroupSku.STANDARD,
+    volumes=[
+        containerinstance.VolumeArgs(
+            azure_file=containerinstance.AzureFileVolumeArgs(
+                share_name=file_share.name,
+                storage_account_key=storage_account_key,
+                storage_account_name=storage_account.name,
+            ),
+            name="llama-data",
+        ),
+    ],
+)
+
+# Define the container group for the data creation
+container_group = containerinstance.ContainerGroup(
+    "container_group-data",
+    container_group_name=f"aci-reginald-{stack_name}-data",
+    containers=[
         # public index creation container
         containerinstance.ContainerArgs(
             image="ghcr.io/alan-turing-institute/reginald_create_index:pulumi",
@@ -237,8 +259,8 @@ container_group = containerinstance.ContainerGroup(
             ports=[],
             resources=containerinstance.ResourceRequirementsArgs(
                 requests=containerinstance.ResourceRequestsArgs(
-                    cpu=2,
-                    memory_in_gb=8,
+                    cpu=4,
+                    memory_in_gb=16,
                 ),
             ),
             volume_mounts=[
