@@ -1,5 +1,11 @@
 import pulumi
-from pulumi_azure_native import containerinstance, network, resources, storage
+from pulumi_azure_native import (
+    automation,
+    containerinstance,
+    network,
+    resources,
+    storage,
+)
 
 # Get some configuration variables
 stack_name = pulumi.get_stack()
@@ -9,6 +15,16 @@ config = pulumi.Config()
 # Create an resource group
 resource_group = resources.ResourceGroup(
     "resource_group", resource_group_name=f"rg-reginald-{stack_name}-deployment"
+)
+
+# Create an automation account
+automation_account = automation.AutomationAccount(
+    "automation_account",
+    automation_account_name=f"aa-reginald-{stack_name}",
+    resource_group_name=resource_group.name,
+    sku=automation.SkuArgs(
+        name="Free",
+    ),
 )
 
 # Create a network security group
@@ -78,8 +94,8 @@ storage_account_key = storage_account_keys.apply(
 
 # Define the container group
 container_group = containerinstance.ContainerGroup(
-    "container_group",
-    container_group_name=f"aci-reginald-{stack_name}",
+    "container_group-bot",
+    container_group_name=f"aci-reginald-{stack_name}-bot",
     containers=[
         # api-bot container
         containerinstance.ContainerArgs(
@@ -111,6 +127,28 @@ container_group = containerinstance.ContainerGroup(
                 ),
             ),
         ),
+    ],
+    os_type=containerinstance.OperatingSystemTypes.LINUX,
+    resource_group_name=resource_group.name,
+    restart_policy=containerinstance.ContainerGroupRestartPolicy.ALWAYS,
+    sku=containerinstance.ContainerGroupSku.STANDARD,
+    volumes=[
+        containerinstance.VolumeArgs(
+            azure_file=containerinstance.AzureFileVolumeArgs(
+                share_name=file_share.name,
+                storage_account_key=storage_account_key,
+                storage_account_name=storage_account.name,
+            ),
+            name="llama-data",
+        ),
+    ],
+)
+
+# Define the container group for the data creation
+container_group = containerinstance.ContainerGroup(
+    "container_group-data",
+    container_group_name=f"aci-reginald-{stack_name}-data",
+    containers=[
         # all_data index creation container
         containerinstance.ContainerArgs(
             image="ghcr.io/alan-turing-institute/reginald_create_index:pulumi",
@@ -131,6 +169,10 @@ container_group = containerinstance.ContainerGroup(
                 containerinstance.EnvironmentVariableArgs(
                     name="LLAMA_INDEX_K",
                     value="3",
+                ),
+                containerinstance.EnvironmentVariableArgs(
+                    name="LLAMA_INDEX_CHUNK_SIZE",
+                    value="512",
                 ),
                 containerinstance.EnvironmentVariableArgs(
                     name="LLAMA_INDEX_CHUNK_OVERLAP_RATIO",
@@ -158,7 +200,7 @@ container_group = containerinstance.ContainerGroup(
     ],
     os_type=containerinstance.OperatingSystemTypes.LINUX,
     resource_group_name=resource_group.name,
-    restart_policy=containerinstance.ContainerGroupRestartPolicy.ON_FAILURE,
+    restart_policy=containerinstance.ContainerGroupRestartPolicy.NEVER,
     sku=containerinstance.ContainerGroupSku.STANDARD,
     volumes=[
         containerinstance.VolumeArgs(
