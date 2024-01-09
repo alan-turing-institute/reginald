@@ -100,7 +100,7 @@ container_group = containerinstance.ContainerGroup(
         # api-bot container
         containerinstance.ContainerArgs(
             image="ghcr.io/alan-turing-institute/reginald_slackbot:pulumi",
-            name="reginald-llama-cpp",  # maximum of 63 characters
+            name="reginald-production",  # maximum of 63 characters
             environment_variables=[
                 containerinstance.EnvironmentVariableArgs(
                     name="REGINALD_MODEL",
