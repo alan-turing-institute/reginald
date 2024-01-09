@@ -12,8 +12,6 @@ KEYVAULT_NAME=$(echo "kv-reginald-${STACK_NAME}" | head -c 24)
 LOCATION="uksouth"
 RESOURCE_GROUP_NAME="rg-reginald-${STACK_NAME}-backend"
 STORAGE_ACCOUNT_NAME=$(echo "sareginald${STACK_NAME}backend$(echo "$SUBSCRIPTION_NAME" | md5sum)" | head -c 24)
-RESOURCE_GROUP_DEPLOYMENT_NAME="rg-reginald-${STACK_NAME}-deployment"
-AUTOMATION_ACCOUNT_NAME="aa-reginald-${STACK_NAME}"
 
 # Ensure that the user is logged in
 if ! (az account show > /dev/null); then
@@ -33,11 +31,6 @@ az storage account create --name "$STORAGE_ACCOUNT_NAME" --resource-group "$RESO
 echo "✅ Storage account '$STORAGE_ACCOUNT_NAME'"
 az storage container create --name "$CONTAINER_NAME" --account-name "$STORAGE_ACCOUNT_NAME" --only-show-errors > /dev/null || exit 4
 echo "✅ Storage container '$CONTAINER_NAME'"
-
-# Create automation account
-# Note: add schedule and runbook manually for now
-az automation account create --name "$AUTOMATION_ACCOUNT_NAME" --resource-group "$RESOURCE_GROUP_DEPLOYMENT_NAME" --location "$LOCATION" --only-show-errors > /dev/null || exit 5
-echo "✅ Automation account '$AUTOMATION_ACCOUNT_NAME'"
 
 # Create keyvault and encryption key
 if ! (az keyvault show --name "$KEYVAULT_NAME" --resource-group "$RESOURCE_GROUP_NAME" --only-show-errors > /dev/null 2>&1); then

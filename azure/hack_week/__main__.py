@@ -1,5 +1,11 @@
 import pulumi
-from pulumi_azure_native import containerinstance, network, resources, storage
+from pulumi_azure_native import (
+    automation,
+    containerinstance,
+    network,
+    resources,
+    storage,
+)
 
 # Get some configuration variables
 stack_name = pulumi.get_stack()
@@ -8,6 +14,16 @@ config = pulumi.Config()
 # Create an resource group
 resource_group = resources.ResourceGroup(
     "resource_group", resource_group_name=f"rg-reginald-{stack_name}-deployment"
+)
+
+# Create an automation account
+automation_account = automation.AutomationAccount(
+    "automation_account",
+    automation_account_name=f"aa-reginald-{stack_name}",
+    resource_group_name=resource_group.name,
+    sku=automation.SkuArgs(
+        name="Free",
+    ),
 )
 
 # Create a network security group
