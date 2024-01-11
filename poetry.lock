@@ -219,7 +219,7 @@ files = [
 name = "arpeggio"
 version = "2.0.2"
 description = "Packrat parser interpreter"
-optional = true
+optional = false
 python-versions = "*"
 files = [
     {file = "Arpeggio-2.0.2-py2.py3-none-any.whl", hash = "sha256:f7c8ae4f4056a89e020c24c7202ac8df3e2bc84e416746f20b0da35bb1de0250"},
@@ -808,7 +808,7 @@ dev = ["PyTest", "PyTest-Cov", "bump2version (<1)", "sphinx (<2)", "tox"]
 name = "dill"
 version = "0.3.7"
 description = "serialize all of Python"
-optional = true
+optional = false
 python-versions = ">=3.7"
 files = [
     {file = "dill-0.3.7-py3-none-any.whl", hash = "sha256:76b122c08ef4ce2eedcd4d1abd8e641114bfc6c2867f49f3c41facf65bf19f5e"},
@@ -1297,7 +1297,7 @@ test = ["objgraph", "psutil"]
 name = "grpcio"
 version = "1.56.2"
 description = "HTTP/2-based RPC framework"
-optional = true
+optional = false
 python-versions = ">=3.7"
 files = [
     {file = "grpcio-1.56.2-cp310-cp310-linux_armv7l.whl", hash = "sha256:bf0b9959e673505ee5869950642428046edb91f99942607c2ecf635f8a4b31c9"},
@@ -2885,7 +2885,7 @@ testing = ["docopt", "pytest (<6.0.0)"]
 name = "parver"
 version = "0.4"
 description = "Parse and manipulate version numbers."
-optional = true
+optional = false
 python-versions = ">=3.7"
 files = [
     {file = "parver-0.4-py3-none-any.whl", hash = "sha256:c66d3347a4858643875ef959d8ba7a269d5964bfb690b0dd998b8f39da930be2"},
@@ -3056,7 +3056,7 @@ wcwidth = "*"
 name = "protobuf"
 version = "4.24.3"
 description = ""
-optional = true
+optional = false
 python-versions = ">=3.7"
 files = [
     {file = "protobuf-4.24.3-cp310-abi3-win32.whl", hash = "sha256:20651f11b6adc70c0f29efbe8f4a94a74caf61b6200472a9aea6e19898f9fcf4"},
@@ -3113,12 +3113,12 @@ files = [
 
 [[package]]
 name = "pulumi"
-version = "3.85.0"
+version = "3.100.0"
 description = "Pulumi's Python SDK"
-optional = true
+optional = false
 python-versions = ">=3.7"
 files = [
-    {file = "pulumi-3.85.0-py3-none-any.whl", hash = "sha256:d78556534cc3c19c43157a6a3798203baabcd790c46f72cc99ecf3c1b5166ffc"},
+    {file = "pulumi-3.100.0-py3-none-any.whl", hash = "sha256:97407d4fea164fa9a61a4a2514ae33ac83884a919fb283b28001d9bfe0df1ef0"},
 ]
 
 [package.dependencies]
@@ -3131,12 +3131,13 @@ six = ">=1.12,<2.0"
 
 [[package]]
 name = "pulumi-azure-native"
-version = "1.104.0"
+version = "2.24.0"
 description = "A native Pulumi package for creating and managing Azure resources."
-optional = true
+optional = false
 python-versions = ">=3.7"
 files = [
-    {file = "pulumi_azure_native-1.104.0.tar.gz", hash = "sha256:52759f143dac241311186357f8c3f224844232dc604b6cbe79fd54df4a2c92bf"},
+    {file = "pulumi_azure_native-2.24.0-py3-none-any.whl", hash = "sha256:e2931a6aaca8a6612369b83a49505b3ba92fa76245fa755c121a759d01082013"},
+    {file = "pulumi_azure_native-2.24.0.tar.gz", hash = "sha256:6f29f1eda16892299501c9cf8609c02bbc9deb4e71f3657915edc59e6670b67d"},
 ]
 
 [package.dependencies]
@@ -4096,7 +4097,7 @@ doc = ["Sphinx", "sphinx-rtd-theme"]
 name = "semver"
 version = "2.13.0"
 description = "Python helper for Semantic Versioning (http://semver.org/)"
-optional = true
+optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
 files = [
     {file = "semver-2.13.0-py2.py3-none-any.whl", hash = "sha256:ced8b23dceb22134307c1b8abfa523da14198793d9787ac838e70e29e77458d4"},
@@ -5367,4 +5368,4 @@ llama-index-notebooks = ["bitsandbytes", "gradio", "ipykernel", "nbconvert"]
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.11,<3.12"
-content-hash = "3692a8babd724392e3c43de6c9b45ed67af8bb4f34f33efefeeedd7fc652d0b9"
+content-hash = "4e384a7a34ab4e3ab84e1787dc9dbb2e142cad8179c968f5512545a2e72eb327"
