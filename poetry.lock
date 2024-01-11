@@ -219,7 +219,7 @@ files = [
 name = "arpeggio"
 version = "2.0.2"
 description = "Packrat parser interpreter"
-optional = false
+optional = true
 python-versions = "*"
 files = [
     {file = "Arpeggio-2.0.2-py2.py3-none-any.whl", hash = "sha256:f7c8ae4f4056a89e020c24c7202ac8df3e2bc84e416746f20b0da35bb1de0250"},
@@ -808,7 +808,7 @@ dev = ["PyTest", "PyTest-Cov", "bump2version (<1)", "sphinx (<2)", "tox"]
 name = "dill"
 version = "0.3.7"
 description = "serialize all of Python"
-optional = false
+optional = true
 python-versions = ">=3.7"
 files = [
     {file = "dill-0.3.7-py3-none-any.whl", hash = "sha256:76b122c08ef4ce2eedcd4d1abd8e641114bfc6c2867f49f3c41facf65bf19f5e"},
@@ -1141,20 +1141,20 @@ smmap = ">=3.0.1,<6"
 
 [[package]]
 name = "gitpython"
-version = "3.1.37"
+version = "3.1.41"
 description = "GitPython is a Python library used to interact with Git repositories"
 optional = false
 python-versions = ">=3.7"
 files = [
-    {file = "GitPython-3.1.37-py3-none-any.whl", hash = "sha256:5f4c4187de49616d710a77e98ddf17b4782060a1788df441846bddefbb89ab33"},
-    {file = "GitPython-3.1.37.tar.gz", hash = "sha256:f9b9ddc0761c125d5780eab2d64be4873fc6817c2899cbcb34b02344bdc7bc54"},
+    {file = "GitPython-3.1.41-py3-none-any.whl", hash = "sha256:c36b6634d069b3f719610175020a9aed919421c87552185b085e04fbbdb10b7c"},
+    {file = "GitPython-3.1.41.tar.gz", hash = "sha256:ed66e624884f76df22c8e16066d567aaa5a37d5b5fa19db2c6df6f7156db9048"},
 ]
 
 [package.dependencies]
 gitdb = ">=4.0.1,<5"
 
 [package.extras]
-test = ["black", "coverage[toml]", "ddt (>=1.1.1,!=1.4.3)", "mypy", "pre-commit", "pytest", "pytest-cov", "pytest-sugar"]
+test = ["black", "coverage[toml]", "ddt (>=1.1.1,!=1.4.3)", "mock", "mypy", "pre-commit", "pytest (>=7.3.1)", "pytest-cov", "pytest-instafail", "pytest-mock", "pytest-sugar", "sumtypes"]
 
 [[package]]
 name = "gradio"
@@ -1297,7 +1297,7 @@ test = ["objgraph", "psutil"]
 name = "grpcio"
 version = "1.56.2"
 description = "HTTP/2-based RPC framework"
-optional = false
+optional = true
 python-versions = ">=3.7"
 files = [
     {file = "grpcio-1.56.2-cp310-cp310-linux_armv7l.whl", hash = "sha256:bf0b9959e673505ee5869950642428046edb91f99942607c2ecf635f8a4b31c9"},
@@ -1977,31 +1977,31 @@ test = ["httpx (>=0.24.1)", "pytest (>=7.4.0)", "scipy (>=1.10)"]
 
 [[package]]
 name = "llama-hub"
-version = "0.0.66"
+version = "0.0.69"
 description = "A library of community-driven data loaders for LLMs. Use with LlamaIndex and/or LangChain. "
 optional = false
 python-versions = ">=3.8.1,<3.12"
 files = [
-    {file = "llama_hub-0.0.66-py3-none-any.whl", hash = "sha256:379091d460745b65653ccff5ff53e8c4a15ef5d44f253287db64f90ff660e6fb"},
-    {file = "llama_hub-0.0.66.tar.gz", hash = "sha256:a2f825a8adb2003b493a1dcc99be9cd2a207d6add9743b5eda7c58f26d6ffbb9"},
+    {file = "llama_hub-0.0.69-py3-none-any.whl", hash = "sha256:a70ea1dbf76fe81deb96e806ce12fc92691a15ee1e7ce1570c141c3575089ba1"},
+    {file = "llama_hub-0.0.69.tar.gz", hash = "sha256:1688576b54ff5479b33ca34b08b30a32df4a1f6209a0592056024027ed38a341"},
 ]
 
 [package.dependencies]
 html2text = "*"
-llama-index = ">=0.9.8"
+llama-index = ">=0.9.29"
 psutil = "*"
 pyaml = ">=23.9.7,<24.0.0"
 retrying = "*"
 
 [[package]]
 name = "llama-index"
-version = "0.9.25.post1"
+version = "0.9.29"
 description = "Interface between LLMs and your data"
 optional = false
 python-versions = ">=3.8.1,<4.0"
 files = [
-    {file = "llama_index-0.9.25.post1-py3-none-any.whl", hash = "sha256:8f79fa5072fbbe0ab61d5983ab51adf92449788a2e68f79bb717576a3706f547"},
-    {file = "llama_index-0.9.25.post1.tar.gz", hash = "sha256:2de8e2055a19f29db33d828196fa3e42b5a5e06a537c27057b78ca034eec1bbc"},
+    {file = "llama_index-0.9.29-py3-none-any.whl", hash = "sha256:4ac6f589a2e8c5049882c185f25e6c57b68cf9d6e46a6f84102705a7dd357dd2"},
+    {file = "llama_index-0.9.29.tar.gz", hash = "sha256:df5af84bf593cdf6a36da403f521bd5582eccbd6ca551da44d2e4e5b2b4f5619"},
 ]
 
 [package.dependencies]
@@ -2012,6 +2012,7 @@ deprecated = ">=1.2.9.3"
 fsspec = ">=2023.5.0"
 httpx = "*"
 nest-asyncio = ">=1.5.8,<2.0.0"
+networkx = ">=3.0"
 nltk = ">=3.8.1,<4.0.0"
 numpy = "*"
 openai = ">=1.1.0"
@@ -2026,8 +2027,8 @@ typing-inspect = ">=0.8.0"
 [package.extras]
 gradientai = ["gradientai (>=1.4.0)"]
 langchain = ["langchain (>=0.0.303)"]
-local-models = ["optimum[onnxruntime] (>=1.13.2,<2.0.0)", "sentencepiece (>=0.1.99,<0.2.0)", "transformers[torch] (>=4.34.0,<5.0.0)"]
-postgres = ["asyncpg (>=0.28.0,<0.29.0)", "pgvector (>=0.1.0,<0.2.0)", "psycopg-binary (>=3.1.12,<4.0.0)"]
+local-models = ["optimum[onnxruntime] (>=1.13.2,<2.0.0)", "sentencepiece (>=0.1.99,<0.2.0)", "transformers[torch] (>=4.33.1,<5.0.0)"]
+postgres = ["asyncpg (>=0.28.0,<0.29.0)", "pgvector (>=0.1.0,<0.2.0)", "psycopg-binary (>=3.1.12,<4.0.0)", "psycopg2 (>=2.9.9,<3.0.0)"]
 query-tools = ["guidance (>=0.0.64,<0.0.65)", "jsonpath-ng (>=1.6.0,<2.0.0)", "lm-format-enforcer (>=0.4.3,<0.5.0)", "rank-bm25 (>=0.2.2,<0.3.0)", "scikit-learn", "spacy (>=3.7.1,<4.0.0)"]
 
 [[package]]
@@ -2885,7 +2886,7 @@ testing = ["docopt", "pytest (<6.0.0)"]
 name = "parver"
 version = "0.4"
 description = "Parse and manipulate version numbers."
-optional = false
+optional = true
 python-versions = ">=3.7"
 files = [
     {file = "parver-0.4-py3-none-any.whl", hash = "sha256:c66d3347a4858643875ef959d8ba7a269d5964bfb690b0dd998b8f39da930be2"},
@@ -3056,7 +3057,7 @@ wcwidth = "*"
 name = "protobuf"
 version = "4.24.3"
 description = ""
-optional = false
+optional = true
 python-versions = ">=3.7"
 files = [
     {file = "protobuf-4.24.3-cp310-abi3-win32.whl", hash = "sha256:20651f11b6adc70c0f29efbe8f4a94a74caf61b6200472a9aea6e19898f9fcf4"},
@@ -3115,7 +3116,7 @@ files = [
 name = "pulumi"
 version = "3.100.0"
 description = "Pulumi's Python SDK"
-optional = false
+optional = true
 python-versions = ">=3.7"
 files = [
     {file = "pulumi-3.100.0-py3-none-any.whl", hash = "sha256:97407d4fea164fa9a61a4a2514ae33ac83884a919fb283b28001d9bfe0df1ef0"},
@@ -3133,7 +3134,7 @@ six = ">=1.12,<2.0"
 name = "pulumi-azure-native"
 version = "2.24.0"
 description = "A native Pulumi package for creating and managing Azure resources."
-optional = false
+optional = true
 python-versions = ">=3.7"
 files = [
     {file = "pulumi_azure_native-2.24.0-py3-none-any.whl", hash = "sha256:e2931a6aaca8a6612369b83a49505b3ba92fa76245fa755c121a759d01082013"},
@@ -4097,7 +4098,7 @@ doc = ["Sphinx", "sphinx-rtd-theme"]
 name = "semver"
 version = "2.13.0"
 description = "Python helper for Semantic Versioning (http://semver.org/)"
-optional = false
+optional = true
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
 files = [
     {file = "semver-2.13.0-py2.py3-none-any.whl", hash = "sha256:ced8b23dceb22134307c1b8abfa523da14198793d9787ac838e70e29e77458d4"},
@@ -5368,4 +5369,4 @@ llama-index-notebooks = ["bitsandbytes", "gradio", "ipykernel", "nbconvert"]
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.11,<3.12"
-content-hash = "4e384a7a34ab4e3ab84e1787dc9dbb2e142cad8179c968f5512545a2e72eb327"
+content-hash = "ff120f8eb56ccb830e279c58fd0a77291d939819db4fd830d7ee81c0bfaa9621"
