@@ -1,4 +1,0 @@
-name: reginald
-runtime:
-  name: python
-description: Slack bot to respond to REG queries
