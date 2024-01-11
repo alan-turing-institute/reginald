@@ -99,7 +99,7 @@ container_group = containerinstance.ContainerGroup(
     containers=[
         # api-bot container
         containerinstance.ContainerArgs(
-            image="ghcr.io/alan-turing-institute/reginald_slackbot:pulumi",
+            image="ghcr.io/alan-turing-institute/reginald_slackbot:main",
             name="reginald-production",  # maximum of 63 characters
             environment_variables=[
                 containerinstance.EnvironmentVariableArgs(
@@ -151,7 +151,7 @@ container_group = containerinstance.ContainerGroup(
     containers=[
         # all_data index creation container
         containerinstance.ContainerArgs(
-            image="ghcr.io/alan-turing-institute/reginald_create_index:pulumi",
+            image="ghcr.io/alan-turing-institute/reginald_create_index:main",
             name="reginald-create-index",  # maximum of 63 characters
             environment_variables=[
                 containerinstance.EnvironmentVariableArgs(

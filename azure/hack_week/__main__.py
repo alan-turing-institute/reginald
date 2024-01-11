@@ -98,7 +98,7 @@ container_group = containerinstance.ContainerGroup(
     containers=[
         # Reginald chat completion container
         containerinstance.ContainerArgs(
-            image="ghcr.io/alan-turing-institute/reginald_reginald:pulumi",
+            image="ghcr.io/alan-turing-institute/reginald_reginald:main",
             name="reginald-completion",  # maximum of 63 characters
             environment_variables=[
                 containerinstance.EnvironmentVariableArgs(
@@ -141,7 +141,7 @@ container_group = containerinstance.ContainerGroup(
         ),
         # Reginald (public) container
         containerinstance.ContainerArgs(
-            image="ghcr.io/alan-turing-institute/reginald_reginald:pulumi",
+            image="ghcr.io/alan-turing-institute/reginald_reginald:main",
             name="reginald-gpt-azure",  # maximum of 63 characters
             environment_variables=[
                 containerinstance.EnvironmentVariableArgs(
@@ -240,7 +240,7 @@ container_group = containerinstance.ContainerGroup(
     containers=[
         # public index creation container
         containerinstance.ContainerArgs(
-            image="ghcr.io/alan-turing-institute/reginald_create_index:pulumi",
+            image="ghcr.io/alan-turing-institute/reginald_create_index:main",
             name="reginald-create-index",  # maximum of 63 characters
             environment_variables=[
                 containerinstance.EnvironmentVariableArgs(
