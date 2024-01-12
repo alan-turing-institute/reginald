@@ -76,47 +76,54 @@ echo "✅ Configured azure-native defaults"
 
 # Set app secrets
 echo "Setting app secrets..."
-REGINALD_SLACK_APP_TOKEN=""
-REGINALD_SLACK_BOT_TOKEN=""
-REGINALD_API_URL=""
-GITHUB_TOKEN=""
-if [ -e ../.pulumi_env ]; then
-    REGINALD_SLACK_APP_TOKEN=$(grep "REGINALD_SLACK_APP_TOKEN" ../.pulumi_env | grep -v "^#" | cut -d '"' -f 2)
-    REGINALD_SLACK_BOT_TOKEN=$(grep "REGINALD_SLACK_BOT_TOKEN" ../.pulumi_env | grep -v "^#" | cut -d '"' -f 2)
-    REGINALD_API_URL=$(grep "REGINALD_API_URL" ../.pulumi_env | grep -v "^#" | cut -d '"' -f 2)
-    GITHUB_TOKEN=$(grep "GITHUB_TOKEN" ../.pulumi_env | grep -v "^#" | cut -d '"' -f 2)
-fi
 
 # Slack tokens
 if [ -z "$REGINALD_SLACK_APP_TOKEN" ]; then
-    echo "Please provide a REGINALD_SLACK_APP_TOKEN:"
-    read -r REGINALD_SLACK_APP_TOKEN
+    if [ -e ../.pulumi_env ]; then
+        REGINALD_SLACK_APP_TOKEN=$(grep "REGINALD_SLACK_APP_TOKEN" ../.pulumi_env | grep -v "^#" | cut -d '"' -f 2)
+    else
+        echo "Please provide a REGINALD_SLACK_APP_TOKEN:"
+        read -r REGINALD_SLACK_APP_TOKEN
+    fi
 else
-    echo "✅ REGINALD_SLACK_APP_TOKEN environment variable found in .pulumi_env"
+    echo "✅ REGINALD_SLACK_APP_TOKEN environment variable found"
 fi
 AZURE_KEYVAULT_AUTH_VIA_CLI=true pulumi config set --secret REGINALD_SLACK_APP_TOKEN "$REGINALD_SLACK_APP_TOKEN"
+
 if [ -z "$REGINALD_SLACK_BOT_TOKEN" ]; then
-    echo "Please provide a REGINALD_SLACK_BOT_TOKEN:"
-    read -r REGINALD_SLACK_BOT_TOKEN
+    if [ -e ../pulumi_env ]; then
+        REGINALD_SLACK_BOT_TOKEN=$(grep "REGINALD_SLACK_BOT_TOKEN" ../.pulumi_env | grep -v "^#" | cut -d '"' -f 2)
+    else
+        echo "Please provide a REGINALD_SLACK_BOT_TOKEN:"
+        read -r REGINALD_SLACK_BOT_TOKEN
+    fi
 else
-    echo "✅ REGINALD_SLACK_BOT_TOKEN environment variable found in .pulumi_env"
+    echo "✅ REGINALD_SLACK_BOT_TOKEN environment variable found"
 fi
 AZURE_KEYVAULT_AUTH_VIA_CLI=true pulumi config set --secret REGINALD_SLACK_BOT_TOKEN "$REGINALD_SLACK_BOT_TOKEN"
 
 # API URL
 if [ -z "$REGINALD_API_URL" ]; then
-    echo "Please provide a REGINALD_API_URL:"
-    read -r REGINALD_API_URL
+    if [ -e ../.pulumi_env ]; then
+        REGINALD_API_URL=$(grep "REGINALD_API_URL" ../.pulumi_env | grep -v "^#" | cut -d '"' -f 2)
+    else
+        echo "Please provide a REGINALD_API_URL:"
+        read -r REGINALD_API_URL
+    fi
 else
-    echo "✅ REGINALD_API_URL environment variable found in .pulumi_env"
+    echo "✅ REGINALD_API_URL environment variable found"
 fi
 AZURE_KEYVAULT_AUTH_VIA_CLI=true pulumi config set --secret REGINALD_API_URL "$REGINALD_API_URL"
 
 # GitHub token
 if [ -z "$GITHUB_TOKEN" ]; then
-    echo "Please provide a GITHUB_TOKEN:"
-    read -r GITHUB_TOKEN
+    if [ -e ../.pulumi_env ]; then
+        GITHUB_TOKEN=$(grep "GITHUB_TOKEN" ../.pulumi_env | grep -v "^#" | cut -d '"' -f 2)
+    else
+        echo "Please provide a GITHUB_TOKEN:"
+        read -r GITHUB_TOKEN
+    fi
 else
-    echo "✅ GITHUB_TOKEN environment variable found in .pulumi_env"
+    echo "✅ GITHUB_TOKEN environment variable found"
 fi
 AZURE_KEYVAULT_AUTH_VIA_CLI=true pulumi config set --secret GITHUB_TOKEN "$GITHUB_TOKEN"

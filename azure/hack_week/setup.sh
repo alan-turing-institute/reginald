@@ -77,79 +77,92 @@ echo "✅ Configured azure-native defaults"
 
 # Set app secrets
 echo "Setting app secrets..."
-OPENAI_AZURE_API_BASE=""
-OPENAI_AZURE_API_KEY=""
-COMPLETION_SLACK_APP_TOKEN=""
-COMPLETION_SLACK_BOT_TOKEN=""
-GPT_AZURE_SLACK_APP_TOKEN=""
-GPT_AZURE_SLACK_BOT_TOKEN=""
-GITHUB_TOKEN=""
-OPENAI_API_KEY=""
-if [ -e ../.pulumi_env ]; then
-    OPENAI_AZURE_API_BASE=$(grep "OPENAI_AZURE_API_BASE" ../.pulumi_env | grep -v "^#" | cut -d '"' -f 2)
-    OPENAI_AZURE_API_KEY=$(grep "OPENAI_AZURE_API_KEY" ../.pulumi_env | grep -v "^#" | cut -d '"' -f 2)
-    COMPLETION_SLACK_APP_TOKEN=$(grep "COMPLETION_SLACK_APP_TOKEN" ../.pulumi_env | grep -v "^#" | cut -d '"' -f 2)
-    COMPLETION_SLACK_BOT_TOKEN=$(grep "COMPLETION_SLACK_BOT_TOKEN" ../.pulumi_env | grep -v "^#" | cut -d '"' -f 2)
-    GPT_AZURE_SLACK_APP_TOKEN=$(grep "GPT_AZURE_SLACK_APP_TOKEN" ../.pulumi_env | grep -v "^#" | cut -d '"' -f 2)
-    GPT_AZURE_SLACK_BOT_TOKEN=$(grep "GPT_AZURE_SLACK_BOT_TOKEN" ../.pulumi_env | grep -v "^#" | cut -d '"' -f 2)
-    GITHUB_TOKEN=$(grep "GITHUB_TOKEN" ../.pulumi_env | grep -v "^#" | cut -d '"' -f 2)
-    OPENAI_API_KEY=$(grep "OPENAI_API_KEY" ../.pulumi_env | grep -v "^#" | cut -d '"' -f 2)
-fi
 
 # ChatCompletionAzure tokens
 if [ -z "$COMPLETION_SLACK_APP_TOKEN" ]; then
-    echo "Please provide a COMPLETION_SLACK_APP_TOKEN:"
-    read -r COMPLETION_SLACK_APP_TOKEN
+    if [ -e ../.pulumi_env ]; then
+        COMPLETION_SLACK_APP_TOKEN=$(grep "COMPLETION_SLACK_APP_TOKEN" ../.pulumi_env | grep -v "^#" | cut -d '"' -f 2)
+    else
+        echo "Please provide a COMPLETION_SLACK_APP_TOKEN:"
+        read -r COMPLETION_SLACK_APP_TOKEN
+    fi
 else
-    echo "✅ COMPLETION_SLACK_APP_TOKEN environment variable found in .pulumi_env"
+    echo "✅ COMPLETION_SLACK_APP_TOKEN environment variable found"
 fi
 AZURE_KEYVAULT_AUTH_VIA_CLI=true pulumi config set --secret COMPLETION_SLACK_APP_TOKEN "$COMPLETION_SLACK_APP_TOKEN"
+
 if [ -z "$COMPLETION_SLACK_BOT_TOKEN" ]; then
-    echo "Please provide a COMPLETION_SLACK_BOT_TOKEN:"
-    read -r COMPLETION_SLACK_BOT_TOKEN
+    if [ -e ../.pulumi_env ]; then
+        COMPLETION_SLACK_BOT_TOKEN=$(grep "COMPLETION_SLACK_BOT_TOKEN" ../.pulumi_env | grep -v "^#" | cut -d '"' -f 2)
+    else
+        echo "Please provide a COMPLETION_SLACK_BOT_TOKEN:"
+        read -r COMPLETION_SLACK_BOT_TOKEN
+    fi
 else
-    echo "✅ COMPLETION_SLACK_BOT_TOKEN environment variable found in .pulumi_env"
+    echo "✅ COMPLETION_SLACK_BOT_TOKEN environment variable found"
 fi
 AZURE_KEYVAULT_AUTH_VIA_CLI=true pulumi config set --secret COMPLETION_SLACK_BOT_TOKEN "$COMPLETION_SLACK_BOT_TOKEN"
 
 # LlamaIndexGPTAzure tokens
 if [ -z "$GPT_AZURE_SLACK_APP_TOKEN" ]; then
-    echo "Please provide a GPT_AZURE_SLACK_APP_TOKEN:"
-    read -r GPT_AZURE_SLACK_APP_TOKEN
+    if [ -e ../.pulumi_env ]; then
+        GPT_AZURE_SLACK_APP_TOKEN=$(grep "GPT_AZURE_SLACK_APP_TOKEN" ../.pulumi_env | grep -v "^#" | cut -d '"' -f 2)
+    else
+        echo "Please provide a GPT_AZURE_SLACK_APP_TOKEN:"
+        read -r GPT_AZURE_SLACK_APP_TOKEN
+    fi
 else
-    echo "✅ GPT_AZURE_SLACK_APP_TOKEN environment variable found in .pulumi_env"
+    echo "✅ GPT_AZURE_SLACK_APP_TOKEN environment variable found"
 fi
 AZURE_KEYVAULT_AUTH_VIA_CLI=true pulumi config set --secret GPT_AZURE_SLACK_APP_TOKEN "$GPT_AZURE_SLACK_APP_TOKEN"
+
 if [ -z "$GPT_AZURE_SLACK_BOT_TOKEN" ]; then
-    echo "Please provide a GPT_AZURE_SLACK_BOT_TOKEN:"
-    read -r GPT_AZURE_SLACK_BOT_TOKEN
+    if [ -e ../.pulumi_env ]; then
+        GPT_AZURE_SLACK_BOT_TOKEN=$(grep "GPT_AZURE_SLACK_BOT_TOKEN" ../.pulumi_env | grep -v "^#" | cut -d '"' -f 2)
+    else
+        echo "Please provide a GPT_AZURE_SLACK_BOT_TOKEN:"
+        read -r GPT_AZURE_SLACK_BOT_TOKEN
+    fi
 else
-    echo "✅ GPT_AZURE_SLACK_BOT_TOKEN environment variable found in .pulumi_env"
+    echo "✅ GPT_AZURE_SLACK_BOT_TOKEN environment variable found"
 fi
 AZURE_KEYVAULT_AUTH_VIA_CLI=true pulumi config set --secret GPT_AZURE_SLACK_BOT_TOKEN "$GPT_AZURE_SLACK_BOT_TOKEN"
 
 # The ChatCompletionAzure and LlamaIndexGPTAzure models need an Azure backend
 if [ -z "$OPENAI_AZURE_API_BASE" ]; then
-    echo "Please provide a OPENAI_AZURE_API_BASE:"
-    read -r OPENAI_AZURE_API_BASE
+    if [ -e ../.pulumi_env ]; then
+        OPENAI_AZURE_API_BASE=$(grep "OPENAI_AZURE_API_BASE" ../.pulumi_env | grep -v "^#" | cut -d '"' -f 2)
+    else
+        echo "Please provide a OPENAI_AZURE_API_BASE:"
+        read -r OPENAI_AZURE_API_BASE
+    fi
 else
-    echo "✅ OPENAI_AZURE_API_BASE environment variable found in .pulumi_env"
+    echo "✅ OPENAI_AZURE_API_BASE environment variable found"
 fi
 AZURE_KEYVAULT_AUTH_VIA_CLI=true pulumi config set OPENAI_AZURE_API_BASE "$OPENAI_AZURE_API_BASE"
+
 if [ -z "$OPENAI_AZURE_API_KEY" ]; then
-    echo "Please provide a OPENAI_AZURE_API_KEY:"
-    read -r OPENAI_AZURE_API_KEY
+    if [ -e ../.pulumi_env ]; then
+        OPENAI_AZURE_API_KEY=$(grep "OPENAI_AZURE_API_KEY" ../.pulumi_env | grep -v "^#" | cut -d '"' -f 2)
+    else
+        echo "Please provide a OPENAI_AZURE_API_KEY:"
+        read -r OPENAI_AZURE_API_KEY
+    fi
 else
-    echo "✅ OPENAI_AZURE_API_KEY environment variable found in .pulumi_env"
+    echo "✅ OPENAI_AZURE_API_KEY environment variable found"
 fi
 AZURE_KEYVAULT_AUTH_VIA_CLI=true pulumi config set --secret OPENAI_AZURE_API_KEY "$OPENAI_AZURE_API_KEY"
 
 # GitHub token
 if [ -z "$GITHUB_TOKEN" ]; then
-    echo "Please provide a GITHUB_TOKEN:"
-    read -r GITHUB_TOKEN
+    if [ -e ../.pulumi_env ]; then
+        GITHUB_TOKEN=$(grep "GITHUB_TOKEN" ../.pulumi_env | grep -v "^#" | cut -d '"' -f 2)
+    else
+        echo "Please provide a GITHUB_TOKEN:"
+        read -r GITHUB_TOKEN
+    fi
 else
-    echo "✅ GITHUB_TOKEN environment variable found in .pulumi_env"
+    echo "✅ GITHUB_TOKEN environment variable found"
 fi
 AZURE_KEYVAULT_AUTH_VIA_CLI=true pulumi config set --secret GITHUB_TOKEN "$GITHUB_TOKEN"
 
@@ -160,9 +173,14 @@ AZURE_KEYVAULT_AUTH_VIA_CLI=true pulumi config set --secret GITHUB_TOKEN "$GITHU
 # else
 #     echo "✅ OPENAI_API_KEY environment variable found in .pulumi_env"
 # fi
+
+if [ -z "$OPENAI_API_KEY" ] && [ -e ../.pulumi_env ]; then
+    OPENAI_API_KEY=$(grep "OPENAI_API_KEY" ../.pulumi_env | grep -v "^#" | cut -d '"' -f 2)
+fi
+
 if [ -z "$OPENAI_API_KEY" ]; then
-    echo "❌ OPENAI_API_KEY environment variable not found in .pulumi_env but not required"
+    echo "❎ OPENAI_API_KEY environment variable not found (but not required)"
 else
-    echo "✅ OPENAI_API_KEY environment variable found in .pulumi_env"
+    echo "✅ OPENAI_API_KEY environment variable found"
 fi
 AZURE_KEYVAULT_AUTH_VIA_CLI=true pulumi config set --secret OPENAI_API_KEY "$OPENAI_API_KEY"
