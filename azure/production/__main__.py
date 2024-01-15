@@ -11,6 +11,7 @@ from pulumi_azure_native import (
 stack_name = pulumi.get_stack()
 config = pulumi.Config()
 
+
 # Create an resource group
 resource_group = resources.ResourceGroup(
     "resource_group", resource_group_name=f"rg-reginald-{stack_name}-deployment"
@@ -91,130 +92,40 @@ storage_account_key = storage_account_keys.apply(
     lambda keys: pulumi.Output.secret(keys.keys[0].value)
 )
 
-# Define the container group for the slack bots
+# Define the container group
 container_group = containerinstance.ContainerGroup(
-    "container_group-bots",
-    container_group_name=f"aci-reginald-{stack_name}-bots",
+    "container_group-bot",
+    container_group_name=f"aci-reginald-{stack_name}-bot",
     containers=[
-        # Reginald chat completion container
+        # api-bot container
         containerinstance.ContainerArgs(
-            image="ghcr.io/alan-turing-institute/reginald_reginald:main",
-            name="reginald-completion",  # maximum of 63 characters
+            image="ghcr.io/alan-turing-institute/reginald_slackbot:main",
+            name="reginald-production",  # maximum of 63 characters
             environment_variables=[
                 containerinstance.EnvironmentVariableArgs(
                     name="REGINALD_MODEL",
-                    value="chat-completion-azure",
-                ),
-                containerinstance.EnvironmentVariableArgs(
-                    name="REGINALD_MODEL_NAME",
-                    value="reginald-gpt4",
-                ),
-                containerinstance.EnvironmentVariableArgs(
-                    name="OPENAI_AZURE_API_BASE",
-                    value=config.get_secret("OPENAI_AZURE_API_BASE"),
-                ),
-                containerinstance.EnvironmentVariableArgs(
-                    name="OPENAI_AZURE_API_KEY",
-                    secure_value=config.get_secret("OPENAI_AZURE_API_KEY"),
+                    value="llama-index-llama-cpp",
                 ),
                 containerinstance.EnvironmentVariableArgs(
                     name="SLACK_APP_TOKEN",
-                    secure_value=config.get_secret("COMPLETION_SLACK_APP_TOKEN"),
+                    secure_value=config.get_secret("REGINALD_SLACK_APP_TOKEN"),
                 ),
                 containerinstance.EnvironmentVariableArgs(
                     name="SLACK_BOT_TOKEN",
-                    secure_value=config.get_secret("COMPLETION_SLACK_BOT_TOKEN"),
-                ),
-            ],
-            ports=[
-                containerinstance.ContainerPortArgs(
-                    port=80,
-                    protocol=containerinstance.ContainerGroupNetworkProtocol.TCP,
-                ),
-            ],
-            resources=containerinstance.ResourceRequirementsArgs(
-                requests=containerinstance.ResourceRequestsArgs(
-                    cpu=1,
-                    memory_in_gb=2,
-                ),
-            ),
-        ),
-        # Reginald (public) container
-        containerinstance.ContainerArgs(
-            image="ghcr.io/alan-turing-institute/reginald_reginald:main",
-            name="reginald-gpt-azure",  # maximum of 63 characters
-            environment_variables=[
-                containerinstance.EnvironmentVariableArgs(
-                    name="REGINALD_MODEL",
-                    value="llama-index-gpt-azure",
+                    secure_value=config.get_secret("REGINALD_SLACK_BOT_TOKEN"),
                 ),
                 containerinstance.EnvironmentVariableArgs(
-                    name="REGINALD_MODEL_NAME",
-                    value="reginald-gpt4",
-                ),
-                containerinstance.EnvironmentVariableArgs(
-                    name="LLAMA_INDEX_MODE",
-                    value="chat",
-                ),
-                containerinstance.EnvironmentVariableArgs(
-                    name="LLAMA_INDEX_FORCE_NEW_INDEX",
-                    value="false",
-                ),
-                containerinstance.EnvironmentVariableArgs(
-                    name="LLAMA_INDEX_WHICH_INDEX",
-                    value="public",
-                ),
-                containerinstance.EnvironmentVariableArgs(
-                    name="LLAMA_INDEX_MAX_INPUT_SIZE",
-                    value="4096",
-                ),
-                containerinstance.EnvironmentVariableArgs(
-                    name="LLAMA_INDEX_K",
-                    value="3",
-                ),
-                containerinstance.EnvironmentVariableArgs(
-                    name="LLAMA_INDEX_CHUNK_SIZE",
-                    value="512",
-                ),
-                containerinstance.EnvironmentVariableArgs(
-                    name="LLAMA_INDEX_CHUNK_OVERLAP_RATIO",
-                    value="0.1",
-                ),
-                containerinstance.EnvironmentVariableArgs(
-                    name="LLAMA_INDEX_NUM_OUTPUT",
-                    value="512",
-                ),
-                containerinstance.EnvironmentVariableArgs(
-                    name="OPENAI_AZURE_API_BASE",
-                    value=config.get_secret("OPENAI_AZURE_API_BASE"),
-                ),
-                containerinstance.EnvironmentVariableArgs(
-                    name="OPENAI_AZURE_API_KEY",
-                    secure_value=config.get_secret("OPENAI_AZURE_API_KEY"),
-                ),
-                containerinstance.EnvironmentVariableArgs(
-                    name="SLACK_APP_TOKEN",
-                    secure_value=config.get_secret("GPT_AZURE_SLACK_APP_TOKEN"),
-                ),
-                containerinstance.EnvironmentVariableArgs(
-                    name="SLACK_BOT_TOKEN",
-                    secure_value=config.get_secret("GPT_AZURE_SLACK_BOT_TOKEN"),
+                    name="REGINALD_API_URL",
+                    secure_value=config.get_secret("REGINALD_API_URL"),
                 ),
             ],
             ports=[],
             resources=containerinstance.ResourceRequirementsArgs(
                 requests=containerinstance.ResourceRequestsArgs(
                     cpu=1,
-                    memory_in_gb=12,
+                    memory_in_gb=4,
                 ),
             ),
-            volume_mounts=[
-                containerinstance.VolumeMountArgs(
-                    mount_path="/app/data",
-                    name="llama-data",
-                    read_only=True,
-                ),
-            ],
         ),
     ],
     os_type=containerinstance.OperatingSystemTypes.LINUX,
@@ -238,7 +149,7 @@ container_group = containerinstance.ContainerGroup(
     "container_group-data",
     container_group_name=f"aci-reginald-{stack_name}-data",
     containers=[
-        # public index creation container
+        # all_data index creation container
         containerinstance.ContainerArgs(
             image="ghcr.io/alan-turing-institute/reginald_create_index:main",
             name="reginald-create-index",  # maximum of 63 characters
@@ -249,7 +160,7 @@ container_group = containerinstance.ContainerGroup(
                 ),
                 containerinstance.EnvironmentVariableArgs(
                     name="LLAMA_INDEX_WHICH_INDEX",
-                    value="public",
+                    value="all_data",
                 ),
                 containerinstance.EnvironmentVariableArgs(
                     name="LLAMA_INDEX_MAX_INPUT_SIZE",
