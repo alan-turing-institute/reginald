@@ -7,7 +7,6 @@ STACK_NAME=${2:-"hackweek"}
 # Fixed values
 CONTAINER_NAME="pulumi"
 ENCRYPTION_KEY_NAME="pulumi-encryption-key"
-ENCRYPTION_KEY_VERSION="6c74c12825c84362af45973e3e8b38ce"
 KEYVAULT_NAME=$(echo "kv-reginald-${STACK_NAME}" | head -c 24)
 LOCATION="uksouth"
 RESOURCE_GROUP_NAME="rg-reginald-${STACK_NAME}-backend"
@@ -37,7 +36,7 @@ if ! (az keyvault show --name "$KEYVAULT_NAME" --resource-group "$RESOURCE_GROUP
     az keyvault create --location "$LOCATION" --name "$KEYVAULT_NAME" --resource-group "$RESOURCE_GROUP_NAME" --only-show-errors > /dev/null || exit 5
 fi
 echo "✅ Keyvault '$KEYVAULT_NAME'"
-if ! (az keyvault key show --name "$ENCRYPTION_KEY_NAME" --vault-name "$KEYVAULT_NAME" --version "$ENCRYPTION_KEY_VERSION" --only-show-errors > /dev/null 2>&1); then
+if ! (az keyvault key show --name "$ENCRYPTION_KEY_NAME" --vault-name "$KEYVAULT_NAME" --only-show-errors > /dev/null 2>&1); then
     az keyvault key create --name "$ENCRYPTION_KEY_NAME" --vault-name "$KEYVAULT_NAME" --only-show-errors > /dev/null || exit 6
 fi
 echo "✅ Encryption key '$ENCRYPTION_KEY_NAME'"
@@ -63,10 +62,10 @@ pulumi login "azblob://$CONTAINER_NAME?storage_account=$STORAGE_ACCOUNT_NAME"
 # Select the correct stack
 if ! (pulumi stack select "$STACK_NAME" > /dev/null); then
     echo "Creating new Pulumi stack..."
-    pulumi stack init "$STACK_NAME" --secrets-provider "azurekeyvault://$KEYVAULT_NAME.vault.azure.net/keys/$ENCRYPTION_KEY_NAME/$ENCRYPTION_KEY_VERSION"
+    pulumi stack init "$STACK_NAME" --secrets-provider "azurekeyvault://$KEYVAULT_NAME.vault.azure.net/keys/$ENCRYPTION_KEY_NAME"
 fi
 echo "✅ Switched to Pulumi stack '$STACK_NAME'"
-AZURE_KEYVAULT_AUTH_VIA_CLI=true pulumi stack change-secrets-provider "azurekeyvault://$KEYVAULT_NAME.vault.azure.net/keys/$ENCRYPTION_KEY_NAME/$ENCRYPTION_KEY_VERSION"
+AZURE_KEYVAULT_AUTH_VIA_CLI=true pulumi stack change-secrets-provider "azurekeyvault://$KEYVAULT_NAME.vault.azure.net/keys/$ENCRYPTION_KEY_NAME"
 echo "✅ Using Azure KeyVault '$KEYVAULT_NAME' for encryption"
 
 # Configure the azure-native plugin
