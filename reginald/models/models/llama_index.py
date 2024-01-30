@@ -347,7 +347,7 @@ class DataIndexCreator:
             repo=repo,
             verbose=False,
             concurrent_requests=1,
-            timeout=180,
+            timeout=60,
             filter_file_extensions=([".md"], GithubRepositoryReader.FilterType.INCLUDE),
         )
         self.documents.extend(turing_way_loader.load_data(branch="main"))
