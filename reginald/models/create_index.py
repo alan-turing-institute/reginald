@@ -2,23 +2,22 @@ import logging
 import pathlib
 from typing import Any
 
-from llama_index.llms import (
+from llama_index.core.base.llms.types import (
     CompletionResponse,
     CompletionResponseGen,
-    CustomLLM,
     LLMMetadata,
 )
-from llama_index.llms.base import llm_completion_callback
-from llama_index.llms.custom import CustomLLM
+from llama_index.core.llms.callbacks import llm_completion_callback
+from llama_index.core.llms.custom import CustomLLM
 
-from reginald.models.models.llama_index import DataIndexCreator, setup_service_context
+from reginald.models.models.llama_index import DataIndexCreator, setup_settings
 from reginald.models.setup_llm import DEFAULT_ARGS
 from reginald.parser_utils import Parser, get_args
 
 
 class DummyLLM(CustomLLM):
     """
-    Dummy LLM for passing into the ServiceContext below to create the index.
+    Dummy LLM for passing into the Settings below to create the index.
     The minimum required attributes are set here, but this LLM is not used anywhere else.
     """
 
@@ -65,8 +64,8 @@ def main():
     args = get_args(parser)
 
     # pass args to create data index
-    logging.info("Setting up service context...")
-    service_context = setup_service_context(
+    logging.info("Setting up settings...")
+    settings = setup_settings(
         llm=DummyLLM(),
         max_input_size=args.max_input_size or DEFAULT_ARGS["max_input_size"],
         num_output=args.num_output or DEFAULT_ARGS["num_output"],
@@ -81,7 +80,7 @@ def main():
     data_creator = DataIndexCreator(
         data_dir=pathlib.Path(args.data_dir or DEFAULT_ARGS["data_dir"]).resolve(),
         which_index=args.which_index or DEFAULT_ARGS["which_index"],
-        service_context=service_context,
+        settings=settings,
     )
     data_creator.create_index()
     data_creator.save_index()

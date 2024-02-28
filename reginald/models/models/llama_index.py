@@ -13,30 +13,29 @@ import nest_asyncio
 import pandas as pd
 from git import Repo
 from langchain.embeddings import HuggingFaceEmbeddings
-from llama_hub.github_repo import GithubClient, GithubRepositoryReader
-
-# from llama_hub.github_repo_collaborators import (
-#     GitHubCollaboratorsClient,
-#     GitHubRepositoryCollaboratorsReader,
-# )
-from llama_hub.github_repo_issues import (
-    GitHubIssuesClient,
-    GitHubRepositoryIssuesReader,
-)
-from llama_index import (
+from llama_index.core import (
     Document,
     PromptHelper,
-    ServiceContext,
+    PromptTemplate,
+    Settings,
+    SimpleDirectoryReader,
     StorageContext,
+    VectorStoreIndex,
     load_index_from_storage,
 )
-from llama_index.indices.vector_store.base import VectorStoreIndex
-from llama_index.llms import AzureOpenAI, HuggingFaceLLM, LlamaCPP, OpenAI
-from llama_index.llms.base import BaseLLM
-from llama_index.llms.llama_utils import completion_to_prompt, messages_to_prompt
-from llama_index.prompts import PromptTemplate
-from llama_index.readers import SimpleDirectoryReader
-from llama_index.response.schema import RESPONSE_TYPE
+from llama_index.core.base.llms.base import BaseLLM
+from llama_index.core.base.response.schema import RESPONSE_TYPE
+from llama_index.legacy.llms.llama_utils import completion_to_prompt, messages_to_prompt
+from llama_index.llms.azure_openai import AzureOpenAI
+from llama_index.llms.huggingface import HuggingFaceLLM
+from llama_index.llms.llama_cpp import LlamaCPP
+from llama_index.llms.openai import OpenAI
+from llama_index.readers.github import (
+    GithubClient,
+    GitHubIssuesClient,
+    GitHubRepositoryIssuesReader,
+    GithubRepositoryReader,
+)
 
 from reginald.models.models.base import MessageResponse, ResponseModel
 from reginald.utils import get_env_var
@@ -66,16 +65,16 @@ def compute_default_chunk_size(max_input_size: int, k: int) -> int:
     return ceil(max_input_size / (k + 1))
 
 
-def setup_service_context(
+def setup_settings(
     llm: BaseLLM,
     max_input_size: int | str,
     num_output: int | str,
     chunk_overlap_ratio: float | str,
     chunk_size: int | str | None = None,
     k: int | str | None = None,
-) -> ServiceContext:
+) -> Settings:
     """
-    Helper function to set up the service context.
+    Helper function to set up the settings.
     Can pass in either chunk_size or k.
     If chunk_size is not provided, it is computed as
     `ceil(max_input_size / k)`.
@@ -100,8 +99,8 @@ def setup_service_context(
 
     Returns
     -------
-    ServiceContext
-        Service context to use to create the index vectors.
+    Settings
+        Settings to use to create the index vectors.
     """
     if chunk_size is None and k is None:
         raise ValueError("Either chunk_size or k must be provided.")
@@ -137,15 +136,12 @@ def setup_service_context(
         chunk_overlap_ratio=chunk_overlap_ratio,
     )
 
-    # construct the service context
-    service_context = ServiceContext.from_defaults(
-        llm=llm,
-        embed_model=embed_model,
-        prompt_helper=prompt_helper,
-        chunk_size=chunk_size,
-    )
-
-    return service_context
+    # construct the settings
+    Settings.llm = llm
+    Settings.embed_model = embed_model
+    Settings.prompt_helper = prompt_helper
+    Settings.chunk_size = chunk_size
+    return Settings
 
 
 class DataIndexCreator:
@@ -153,7 +149,7 @@ class DataIndexCreator:
         self,
         data_dir: pathlib.Path | str,
         which_index: str,
-        service_context: ServiceContext,
+        settings: Settings,
     ) -> None:
         """
         Class for creating the data index.
@@ -165,12 +161,12 @@ class DataIndexCreator:
         which_index : str
             Which index to construct (if force_new_index is True) or use.
             Options are "handbook", "wikis",  "public", or "all_data".
-        service_context : ServiceContext
-            Service context to use to create the index.
+        settings : Settings
+            Settings to use to create the index.
         """
         self.data_dir: pathlib.Path = pathlib.Path(data_dir)
         self.which_index: str = which_index
-        self.service_context: ServiceContext = service_context
+        self.settings: Settings = settings
         self.documents: list[str] = []
         self.index: VectorStoreIndex | None = None
 
@@ -478,7 +474,7 @@ class DataIndexCreator:
         # create index
         logging.info("Creating index...")
         self.index = VectorStoreIndex.from_documents(
-            self.documents, service_context=self.service_context
+            self.documents, settings=self.settings
         )
 
         return self.index
@@ -487,7 +483,7 @@ class DataIndexCreator:
         if directory is None:
             directory = self.data_dir / LLAMA_INDEX_DIR / self.which_index
 
-        # save the service context and persist the index
+        # save the settings and persist the index
         logging.info(f"Saving the index in {directory}...")
         self.index.storage_context.persist(persist_dir=directory)
 
@@ -566,8 +562,8 @@ class LlamaIndex(ResponseModel):
         # set up LLM
         llm = self._prep_llm()
 
-        # set up service context
-        service_context = setup_service_context(
+        # set up settings
+        settings = setup_settings(
             llm=llm,
             max_input_size=self.max_input_size,
             num_output=self.num_output,
@@ -580,7 +576,7 @@ class LlamaIndex(ResponseModel):
             data_creator = DataIndexCreator(
                 which_index=self.which_index,
                 data_dir=self.data_dir,
-                service_context=service_context,
+                settings=settings,
             )
             self.index = data_creator.create_index()
             data_creator.save_index()
@@ -593,7 +589,8 @@ class LlamaIndex(ResponseModel):
 
             logging.info("Loading the pre-processed index")
             self.index = load_index_from_storage(
-                storage_context=storage_context, service_context=service_context
+                storage_context=storage_context,
+                settings=settings,
             )
 
         response_mode = "simple_summarize"
