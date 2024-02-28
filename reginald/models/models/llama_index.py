@@ -13,30 +13,29 @@ import nest_asyncio
 import pandas as pd
 from git import Repo
 from langchain.embeddings import HuggingFaceEmbeddings
-from llama_hub.github_repo import GithubClient, GithubRepositoryReader
-
-# from llama_hub.github_repo_collaborators import (
-#     GitHubCollaboratorsClient,
-#     GitHubRepositoryCollaboratorsReader,
-# )
-from llama_hub.github_repo_issues import (
-    GitHubIssuesClient,
-    GitHubRepositoryIssuesReader,
-)
-from llama_index import (
+from llama_index.core import (
     Document,
     PromptHelper,
+    PromptTemplate,
     ServiceContext,
+    SimpleDirectoryReader,
     StorageContext,
+    VectorStoreIndex,
     load_index_from_storage,
 )
-from llama_index.indices.vector_store.base import VectorStoreIndex
-from llama_index.llms import AzureOpenAI, HuggingFaceLLM, LlamaCPP, OpenAI
-from llama_index.llms.base import BaseLLM
-from llama_index.llms.llama_utils import completion_to_prompt, messages_to_prompt
-from llama_index.prompts import PromptTemplate
-from llama_index.readers import SimpleDirectoryReader
-from llama_index.response.schema import RESPONSE_TYPE
+from llama_index.core.base.llms.base import BaseLLM
+from llama_index.core.base.response.schema import RESPONSE_TYPE
+from llama_index.legacy.llms.llama_utils import completion_to_prompt, messages_to_prompt
+from llama_index.llms.azure_openai import AzureOpenAI
+from llama_index.llms.huggingface import HuggingFaceLLM
+from llama_index.llms.llama_cpp import LlamaCPP
+from llama_index.llms.openai import OpenAI
+from llama_index.readers.github import (
+    GithubClient,
+    GitHubIssuesClient,
+    GitHubRepositoryIssuesReader,
+    GithubRepositoryReader,
+)
 
 from reginald.models.models.base import MessageResponse, ResponseModel
 from reginald.utils import get_env_var

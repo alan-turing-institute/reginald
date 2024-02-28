@@ -2,14 +2,13 @@ import logging
 import pathlib
 from typing import Any
 
-from llama_index.llms import (
+from llama_index.core.base.llms.types import (
     CompletionResponse,
     CompletionResponseGen,
-    CustomLLM,
     LLMMetadata,
 )
-from llama_index.llms.base import llm_completion_callback
-from llama_index.llms.custom import CustomLLM
+from llama_index.core.llms.callbacks import llm_completion_callback
+from llama_index.core.llms.custom import CustomLLM
 
 from reginald.models.models.llama_index import DataIndexCreator, setup_service_context
 from reginald.models.setup_llm import DEFAULT_ARGS
