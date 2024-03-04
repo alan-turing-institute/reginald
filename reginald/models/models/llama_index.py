@@ -262,7 +262,7 @@ class DataIndexCreator:
             verbose=False,
             concurrent_requests=1,
             timeout=60,
-            retries=3,
+            retries=10,
             filter_file_extensions=([".md"], GithubRepositoryReader.FilterType.INCLUDE),
             filter_directories=(["content"], GithubRepositoryReader.FilterType.INCLUDE),
         )
@@ -289,7 +289,7 @@ class DataIndexCreator:
             verbose=False,
             concurrent_requests=1,
             timeout=60,
-            retries=3,
+            retries=10,
             filter_file_extensions=(
                 [".md", ".ipynb"],
                 GithubRepositoryReader.FilterType.INCLUDE,
@@ -318,7 +318,7 @@ class DataIndexCreator:
             verbose=False,
             concurrent_requests=1,
             timeout=60,
-            retries=3,
+            retries=10,
             filter_file_extensions=(
                 [".md", ".ipynb"],
                 GithubRepositoryReader.FilterType.INCLUDE,
@@ -347,7 +347,7 @@ class DataIndexCreator:
             verbose=False,
             concurrent_requests=1,
             timeout=60,
-            retries=3,
+            retries=10,
             filter_file_extensions=([".md"], GithubRepositoryReader.FilterType.INCLUDE),
         )
         self.documents.extend(turing_way_loader.load_data(branch="main"))
@@ -374,7 +374,7 @@ class DataIndexCreator:
             verbose=False,
             concurrent_requests=1,
             timeout=60,
-            retries=3,
+            retries=10,
             filter_file_extensions=(
                 [".md", ".ipynb"],
                 GithubRepositoryReader.FilterType.INCLUDE,
