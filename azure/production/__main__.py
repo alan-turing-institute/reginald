@@ -150,7 +150,7 @@ container_group = containerinstance.ContainerGroup(
                 ),
                 containerinstance.EnvironmentVariableArgs(
                     name="LLAMA_INDEX_WHICH_INDEX",
-                    value="all_data",
+                    value="handbook",
                 ),
                 containerinstance.EnvironmentVariableArgs(
                     name="LLAMA_INDEX_MAX_INPUT_SIZE",
