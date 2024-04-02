@@ -12,7 +12,7 @@ from typing import Any
 import nest_asyncio
 import pandas as pd
 from git import Repo
-from langchain.embeddings import HuggingFaceEmbeddings
+from langchain_community.embeddings import HuggingFaceEmbeddings
 from llama_index.core import (
     Document,
     PromptHelper,
@@ -22,10 +22,11 @@ from llama_index.core import (
     StorageContext,
     VectorStoreIndex,
     load_index_from_storage,
+    set_global_tokenizer,
 )
 from llama_index.core.base.llms.base import BaseLLM
 from llama_index.core.base.response.schema import RESPONSE_TYPE
-from llama_index.legacy.llms.llama_utils import completion_to_prompt, messages_to_prompt
+from llama_index.core.settings import _Settings
 from llama_index.llms.azure_openai import AzureOpenAI
 from llama_index.llms.huggingface import HuggingFaceLLM
 from llama_index.llms.llama_cpp import LlamaCPP
@@ -36,8 +37,10 @@ from llama_index.readers.github import (
     GitHubRepositoryIssuesReader,
     GithubRepositoryReader,
 )
+from transformers import AutoTokenizer
 
 from reginald.models.models.base import MessageResponse, ResponseModel
+from reginald.models.models.llama_utils import completion_to_prompt, messages_to_prompt
 from reginald.utils import get_env_var
 
 nest_asyncio.apply()
@@ -72,7 +75,8 @@ def setup_settings(
     chunk_overlap_ratio: float | str,
     chunk_size: int | str | None = None,
     k: int | str | None = None,
-) -> Settings:
+    tokenizer: callable[str] | None = None,
+) -> _Settings:
     """
     Helper function to set up the settings.
     Can pass in either chunk_size or k.
@@ -96,11 +100,14 @@ def setup_settings(
     k : int | str | None, optional
         `similarity_top_k` to use in chat or query engine,
         by default None
+    tokenizer : callable[str] | None, optional
+        Tokenizer to use. A callable function on a string.
+        Can also be None if using the default set by LlamaIndex.
 
     Returns
     -------
     Settings
-        Settings to use to create the index vectors.
+        _Settings object to use to create the index vectors.
     """
     if chunk_size is None and k is None:
         raise ValueError("Either chunk_size or k must be provided.")
@@ -134,13 +141,21 @@ def setup_settings(
         num_output=num_output,
         chunk_size_limit=chunk_size,
         chunk_overlap_ratio=chunk_overlap_ratio,
+        tokenizer=tokenizer,
     )
 
-    # construct the settings
+    # construct the settings (and logging the settings set)
     Settings.llm = llm
+    logging.info(f"Settings llm: {llm}")
     Settings.embed_model = embed_model
+    logging.info(f"Settings embed_model: {embed_model}")
     Settings.prompt_helper = prompt_helper
+    logging.info(f"Settings prompt_helper: {prompt_helper}")
     Settings.chunk_size = chunk_size
+    logging.info(f"Settings chunk_size: {chunk_size}")
+    Settings.tokenizer = tokenizer
+    logging.info(f"Settings tokenizer: {tokenizer}")
+
     return Settings
 
 
@@ -149,7 +164,7 @@ class DataIndexCreator:
         self,
         data_dir: pathlib.Path | str,
         which_index: str,
-        settings: Settings,
+        settings: _Settings,
     ) -> None:
         """
         Class for creating the data index.
@@ -161,12 +176,12 @@ class DataIndexCreator:
         which_index : str
             Which index to construct (if force_new_index is True) or use.
             Options are "handbook", "wikis",  "public", or "all_data".
-        settings : Settings
-            Settings to use to create the index.
+        settings : _Settings
+            llama_index.core.settings._Settings object to use to create the index.
         """
         self.data_dir: pathlib.Path = pathlib.Path(data_dir)
         self.which_index: str = which_index
-        self.settings: Settings = settings
+        self.settings: _Settings = settings
         self.documents: list[str] = []
         self.index: VectorStoreIndex | None = None
 
@@ -569,6 +584,8 @@ class LlamaIndex(ResponseModel):
             num_output=self.num_output,
             chunk_size=self.chunk_size,
             chunk_overlap_ratio=self.chunk_overlap_ratio,
+            k=self.k,
+            tokenizer=self._prep_tokenizer(),
         )
 
         if force_new_index:
@@ -716,6 +733,24 @@ class LlamaIndex(ResponseModel):
             "_prep_llm needs to be implemented by a subclass of LlamaIndex."
         )
 
+    def _prep_tokenizer(self) -> callable[str] | None:
+        """
+        Method to prepare the Tokenizer to be used.
+
+        Returns
+        -------
+        callable[str] | None
+            Tokenizer to use. A callable function on a string.
+            Can also be None if using the default set by LlamaIndex.
+
+        Raises
+        ------
+        NotImplemented
+        """
+        raise NotImplementedError(
+            "_prep_tokenizer needs to be implemented by a subclass of LlamaIndex."
+        )
+
     def _respond(self, message: str, user_id: str) -> MessageResponse:
         """
         Method to respond to a message in Slack.
@@ -825,11 +860,20 @@ class LlamaIndexLlamaCPP(LlamaIndex):
             verbose=True,
         )
 
+    def _prep_tokenizer(self) -> callable[str]:
+        # NOTE: this should depend on the model used, but hard coding Llama2-7b for now
+        logging.info("Setting up Llama2-7b-chat tokenizer")
+        tokenizer = AutoTokenizer.from_pretrained(
+            "meta-llama/Llama-2-7b-chat-hf"
+        ).encode
+        set_global_tokenizer(tokenizer)
+        return tokenizer
+
 
 class LlamaIndexHF(LlamaIndex):
     def __init__(
         self,
-        model_name: str = "microsoft/phi-1_5",
+        model_name: str = "google/gemma-2b-it",
         device: str = "auto",
         *args: Any,
         **kwargs: Any,
@@ -842,7 +886,7 @@ class LlamaIndexHF(LlamaIndex):
         ----------
         model_name : str, optional
             Model name from Huggingface's model hub,
-            by default "microsoft/phi-1_5".
+            by default "google/gemma-2b-it".
         device : str, optional
             Device map to use for the LLM, by default "auto".
         """
@@ -860,13 +904,17 @@ class LlamaIndexHF(LlamaIndex):
         return HuggingFaceLLM(
             context_window=self.max_input_size,
             max_new_tokens=self.num_output,
-            # TODO: allow user to specify the query wrapper prompt for their model
-            query_wrapper_prompt=PromptTemplate("<|USER|>{query_str}<|ASSISTANT|>"),
             generate_kwargs={"temperature": 0.1, "do_sample": False},
             tokenizer_name=self.model_name,
             model_name=self.model_name,
             device_map=self.device or "auto",
         )
+
+    def _prep_tokenizer(self) -> callable[str]:
+        logging.info(f"Setting up Huggingface tokenizer for model {self.model_name}")
+        tokenizer = AutoTokenizer.from_pretrained(self.model_name).encode
+        set_global_tokenizer(tokenizer)
+        return tokenizer
 
 
 class LlamaIndexGPTOpenAI(LlamaIndex):
@@ -901,6 +949,9 @@ class LlamaIndexGPTOpenAI(LlamaIndex):
             max_tokens=self.num_output,
             api_key=self.openai_api_key,
         )
+
+    def _prep_tokenizer(self) -> None:
+        return None
 
 
 class LlamaIndexGPTAzure(LlamaIndex):
@@ -953,3 +1004,6 @@ class LlamaIndexGPTAzure(LlamaIndex):
             azure_endpoint=self.openai_api_base,
             api_version=self.openai_api_version,
         )
+
+    def _prep_tokenizer(self) -> None:
+        return None
