@@ -951,7 +951,12 @@ class LlamaIndexGPTOpenAI(LlamaIndex):
         )
 
     def _prep_tokenizer(self) -> None:
-        return None
+        import tiktoken
+
+        logging.info(f"Setting up tiktoken tokenizer for model {self.model_name}")
+        tokenizer = tiktoken.encoding_for_model(self.model_name).encode
+        set_global_tokenizer(tokenizer)
+        return tokenizer
 
 
 class LlamaIndexGPTAzure(LlamaIndex):
@@ -1006,4 +1011,9 @@ class LlamaIndexGPTAzure(LlamaIndex):
         )
 
     def _prep_tokenizer(self) -> None:
-        return None
+        import tiktoken
+
+        logging.info(f"Setting up tiktoken tokenizer for model {self.model_name}")
+        tokenizer = tiktoken.encoding_for_model("gpt-4").encode
+        set_global_tokenizer(tokenizer)
+        return tokenizer
