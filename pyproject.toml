@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "reginald"
-version="0.1.0"
+version= " 0.1.0"
 description = "A Slack bot for REG Hack Week 2023"
 authors = ["Evelina Gabasova <evelina@evelinag.com>",
            "James Robinson <jrobinson@turing.ac.uk>",
