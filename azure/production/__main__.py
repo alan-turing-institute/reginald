@@ -132,16 +132,6 @@ container_group = containerinstance.ContainerGroup(
     resource_group_name=resource_group.name,
     restart_policy=containerinstance.ContainerGroupRestartPolicy.ALWAYS,
     sku=containerinstance.ContainerGroupSku.STANDARD,
-    volumes=[
-        containerinstance.VolumeArgs(
-            azure_file=containerinstance.AzureFileVolumeArgs(
-                share_name=file_share.name,
-                storage_account_key=storage_account_key,
-                storage_account_name=storage_account.name,
-            ),
-            name="llama-data",
-        ),
-    ],
 )
 
 # Define the container group for the data creation
