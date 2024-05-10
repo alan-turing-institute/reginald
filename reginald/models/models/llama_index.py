@@ -273,7 +273,7 @@ class DataIndexCreator:
 
         try:
             handbook_loader = GithubRepositoryReader(
-                GithubClient(gh_token),
+                GithubClient(gh_token, fail_on_http_error=False),
                 owner=owner,
                 repo=repo,
                 verbose=False,
@@ -309,7 +309,7 @@ class DataIndexCreator:
 
         try:
             rse_course_loader = GithubRepositoryReader(
-                GithubClient(gh_token),
+                GithubClient(gh_token, fail_on_http_error=False),
                 owner=owner,
                 repo=repo,
                 verbose=False,
@@ -341,7 +341,7 @@ class DataIndexCreator:
 
         try:
             rds_course_loader = GithubRepositoryReader(
-                GithubClient(gh_token),
+                GithubClient(gh_token, fail_on_http_error=False),
                 owner=owner,
                 repo=repo,
                 verbose=False,
@@ -373,7 +373,7 @@ class DataIndexCreator:
 
         try:
             turing_way_loader = GithubRepositoryReader(
-                GithubClient(gh_token),
+                GithubClient(gh_token, fail_on_http_error=False),
                 owner=owner,
                 repo=repo,
                 verbose=False,
@@ -406,7 +406,7 @@ class DataIndexCreator:
         try:
             # load repo
             hut23_repo_loader = GithubRepositoryReader(
-                GithubClient(gh_token),
+                GithubClient(gh_token, fail_on_http_error=False),
                 owner=owner,
                 repo=repo,
                 verbose=False,
