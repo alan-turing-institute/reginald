@@ -271,27 +271,24 @@ class DataIndexCreator:
         owner = "alan-turing-institute"
         repo = "REG-handbook"
 
-        try:
-            handbook_loader = GithubRepositoryReader(
-                GithubClient(gh_token, fail_on_http_error=False),
-                owner=owner,
-                repo=repo,
-                verbose=False,
-                concurrent_requests=1,
-                timeout=60,
-                retries=3,
-                filter_file_extensions=(
-                    [".md"],
-                    GithubRepositoryReader.FilterType.INCLUDE,
-                ),
-                filter_directories=(
-                    ["content"],
-                    GithubRepositoryReader.FilterType.INCLUDE,
-                ),
-            )
-            self.documents.extend(handbook_loader.load_data(branch="main"))
-        except HTTPError as e:
-            logging.error(f"Failed to load REG Handbook: {e}")
+        handbook_loader = GithubRepositoryReader(
+            GithubClient(gh_token, fail_on_http_error=False),
+            owner=owner,
+            repo=repo,
+            verbose=False,
+            concurrent_requests=1,
+            timeout=60,
+            retries=3,
+            filter_file_extensions=(
+                [".md"],
+                GithubRepositoryReader.FilterType.INCLUDE,
+            ),
+            filter_directories=(
+                ["content"],
+                GithubRepositoryReader.FilterType.INCLUDE,
+            ),
+        )
+        self.documents.extend(handbook_loader.load_data(branch="main"))
 
     def _load_rse_course(self, gh_token: str) -> None:
         """
@@ -307,23 +304,20 @@ class DataIndexCreator:
         owner = "alan-turing-institute"
         repo = "rse-course"
 
-        try:
-            rse_course_loader = GithubRepositoryReader(
-                GithubClient(gh_token, fail_on_http_error=False),
-                owner=owner,
-                repo=repo,
-                verbose=False,
-                concurrent_requests=1,
-                timeout=60,
-                retries=3,
-                filter_file_extensions=(
-                    [".md", ".ipynb"],
-                    GithubRepositoryReader.FilterType.INCLUDE,
-                ),
-            )
-            self.documents.extend(rse_course_loader.load_data(branch="main"))
-        except HTTPError as e:
-            logging.error(f"Failed to load RSE course: {e}")
+        rse_course_loader = GithubRepositoryReader(
+            GithubClient(gh_token, fail_on_http_error=False),
+            owner=owner,
+            repo=repo,
+            verbose=False,
+            concurrent_requests=1,
+            timeout=60,
+            retries=3,
+            filter_file_extensions=(
+                [".md", ".ipynb"],
+                GithubRepositoryReader.FilterType.INCLUDE,
+            ),
+        )
+        self.documents.extend(rse_course_loader.load_data(branch="main"))
 
     def _load_rds_course(self, gh_token: str) -> None:
         """
@@ -339,23 +333,20 @@ class DataIndexCreator:
         owner = "alan-turing-institute"
         repo = "rds-course"
 
-        try:
-            rds_course_loader = GithubRepositoryReader(
-                GithubClient(gh_token, fail_on_http_error=False),
-                owner=owner,
-                repo=repo,
-                verbose=False,
-                concurrent_requests=1,
-                timeout=60,
-                retries=3,
-                filter_file_extensions=(
-                    [".md", ".ipynb"],
-                    GithubRepositoryReader.FilterType.INCLUDE,
-                ),
-            )
-            self.documents.extend(rds_course_loader.load_data(branch="develop"))
-        except HTTPError as e:
-            logging.error(f"Failed to load RDS course: {e}")
+        rds_course_loader = GithubRepositoryReader(
+            GithubClient(gh_token, fail_on_http_error=False),
+            owner=owner,
+            repo=repo,
+            verbose=False,
+            concurrent_requests=1,
+            timeout=60,
+            retries=3,
+            filter_file_extensions=(
+                [".md", ".ipynb"],
+                GithubRepositoryReader.FilterType.INCLUDE,
+            ),
+        )
+        self.documents.extend(rds_course_loader.load_data(branch="develop"))
 
     def _load_turing_way(self, gh_token: str) -> None:
         """
@@ -371,23 +362,20 @@ class DataIndexCreator:
         owner = "the-turing-way"
         repo = "the-turing-way"
 
-        try:
-            turing_way_loader = GithubRepositoryReader(
-                GithubClient(gh_token, fail_on_http_error=False),
-                owner=owner,
-                repo=repo,
-                verbose=False,
-                concurrent_requests=1,
-                timeout=60,
-                retries=3,
-                filter_file_extensions=(
-                    [".md"],
-                    GithubRepositoryReader.FilterType.INCLUDE,
-                ),
-            )
-            self.documents.extend(turing_way_loader.load_data(branch="main"))
-        except HTTPError as e:
-            logging.error(f"Failed to load The Turing Way: {e}")
+        turing_way_loader = GithubRepositoryReader(
+            GithubClient(gh_token, fail_on_http_error=False),
+            owner=owner,
+            repo=repo,
+            verbose=False,
+            concurrent_requests=1,
+            timeout=60,
+            retries=3,
+            filter_file_extensions=(
+                [".md"],
+                GithubRepositoryReader.FilterType.INCLUDE,
+            ),
+        )
+        self.documents.extend(turing_way_loader.load_data(branch="main"))
 
     def _load_hut23(self, gh_token: str) -> None:
         """
@@ -403,36 +391,33 @@ class DataIndexCreator:
         owner = "alan-turing-institute"
         repo = "Hut23"
 
-        try:
-            # load repo
-            hut23_repo_loader = GithubRepositoryReader(
-                GithubClient(gh_token, fail_on_http_error=False),
-                owner=owner,
-                repo=repo,
-                verbose=False,
-                concurrent_requests=1,
-                timeout=60,
-                retries=3,
-                filter_file_extensions=(
-                    [".md", ".ipynb"],
-                    GithubRepositoryReader.FilterType.INCLUDE,
-                ),
-                filter_directories=(
-                    [
-                        "JDs",
-                        "development",
-                        "newsletters",
-                        "objectives",
-                        "project-appraisal",
-                        "rfc",
-                        "team-meetings",
-                    ],  # we can adjust these
-                    GithubRepositoryReader.FilterType.INCLUDE,
-                ),
-            )
-            self.documents.extend(hut23_repo_loader.load_data(branch="main"))
-        except HTTPError as e:
-            logging.error(f"Failed to load Hut23 repo: {e}")
+        # load repo
+        hut23_repo_loader = GithubRepositoryReader(
+            GithubClient(gh_token, fail_on_http_error=False),
+            owner=owner,
+            repo=repo,
+            verbose=False,
+            concurrent_requests=1,
+            timeout=60,
+            retries=3,
+            filter_file_extensions=(
+                [".md", ".ipynb"],
+                GithubRepositoryReader.FilterType.INCLUDE,
+            ),
+            filter_directories=(
+                [
+                    "JDs",
+                    "development",
+                    "newsletters",
+                    "objectives",
+                    "project-appraisal",
+                    "rfc",
+                    "team-meetings",
+                ],  # we can adjust these
+                GithubRepositoryReader.FilterType.INCLUDE,
+            ),
+        )
+        self.documents.extend(hut23_repo_loader.load_data(branch="main"))
 
         try:
             # load_issues
