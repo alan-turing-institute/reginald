@@ -12,7 +12,6 @@ from typing import Any
 import nest_asyncio
 import pandas as pd
 from git import Repo
-from langchain_community.embeddings import HuggingFaceEmbeddings
 from llama_index.core import (
     Document,
     PromptHelper,
@@ -27,6 +26,7 @@ from llama_index.core import (
 from llama_index.core.base.llms.base import BaseLLM
 from llama_index.core.base.response.schema import RESPONSE_TYPE
 from llama_index.core.settings import _Settings
+from llama_index.embeddings.huggingface import HuggingFaceEmbedding
 from llama_index.llms.azure_openai import AzureOpenAI
 from llama_index.llms.huggingface import HuggingFaceLLM
 from llama_index.llms.llama_cpp import LlamaCPP
@@ -131,9 +131,9 @@ def setup_settings(
     )
 
     # initialise embedding model to use to create the index vectors
-    embed_model = HuggingFaceEmbeddings(
+    embed_model = HuggingFaceEmbedding(
         model_name="sentence-transformers/all-mpnet-base-v2",
-        encode_kwargs={"batch_size": 128},
+        embed_batch_size=128,
     )
 
     # construct the prompt helper
@@ -150,6 +150,7 @@ def setup_settings(
     logging.info(f"Settings llm: {llm}")
     Settings.embed_model = embed_model
     logging.info(f"Settings embed_model: {embed_model}")
+    logging.info(f"Embedding model initialised on device {embed_model._device}")
     Settings.prompt_helper = prompt_helper
     logging.info(f"Settings prompt_helper: {prompt_helper}")
     Settings.chunk_size = chunk_size
