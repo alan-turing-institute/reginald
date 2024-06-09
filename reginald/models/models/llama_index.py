@@ -12,6 +12,7 @@ from typing import Any
 import nest_asyncio
 import pandas as pd
 from git import Repo
+from httpx import HTTPError
 from llama_index.core import (
     Document,
     PromptHelper,
@@ -273,15 +274,21 @@ class DataIndexCreator:
         repo = "REG-handbook"
 
         handbook_loader = GithubRepositoryReader(
-            GithubClient(gh_token),
+            GithubClient(gh_token, fail_on_http_error=False),
             owner=owner,
             repo=repo,
             verbose=False,
             concurrent_requests=1,
             timeout=60,
             retries=3,
-            filter_file_extensions=([".md"], GithubRepositoryReader.FilterType.INCLUDE),
-            filter_directories=(["content"], GithubRepositoryReader.FilterType.INCLUDE),
+            filter_file_extensions=(
+                [".md"],
+                GithubRepositoryReader.FilterType.INCLUDE,
+            ),
+            filter_directories=(
+                ["content"],
+                GithubRepositoryReader.FilterType.INCLUDE,
+            ),
         )
         self.documents.extend(handbook_loader.load_data(branch="main"))
 
@@ -300,7 +307,7 @@ class DataIndexCreator:
         repo = "rse-course"
 
         rse_course_loader = GithubRepositoryReader(
-            GithubClient(gh_token),
+            GithubClient(gh_token, fail_on_http_error=False),
             owner=owner,
             repo=repo,
             verbose=False,
@@ -329,7 +336,7 @@ class DataIndexCreator:
         repo = "rds-course"
 
         rds_course_loader = GithubRepositoryReader(
-            GithubClient(gh_token),
+            GithubClient(gh_token, fail_on_http_error=False),
             owner=owner,
             repo=repo,
             verbose=False,
@@ -358,14 +365,17 @@ class DataIndexCreator:
         repo = "the-turing-way"
 
         turing_way_loader = GithubRepositoryReader(
-            GithubClient(gh_token),
+            GithubClient(gh_token, fail_on_http_error=False),
             owner=owner,
             repo=repo,
             verbose=False,
             concurrent_requests=1,
             timeout=60,
             retries=3,
-            filter_file_extensions=([".md"], GithubRepositoryReader.FilterType.INCLUDE),
+            filter_file_extensions=(
+                [".md"],
+                GithubRepositoryReader.FilterType.INCLUDE,
+            ),
         )
         self.documents.extend(turing_way_loader.load_data(branch="main"))
 
@@ -385,7 +395,7 @@ class DataIndexCreator:
 
         # load repo
         hut23_repo_loader = GithubRepositoryReader(
-            GithubClient(gh_token),
+            GithubClient(gh_token, fail_on_http_error=False),
             owner=owner,
             repo=repo,
             verbose=False,
@@ -411,19 +421,23 @@ class DataIndexCreator:
         )
         self.documents.extend(hut23_repo_loader.load_data(branch="main"))
 
-        # load_issues
-        hut23_issues_loader = GitHubRepositoryIssuesReader(
-            GitHubIssuesClient(gh_token),
-            owner=owner,
-            repo=repo,
-            verbose=True,
-        )
+        try:
+            # load_issues
+            hut23_issues_loader = GitHubRepositoryIssuesReader(
+                GitHubIssuesClient(gh_token),
+                owner=owner,
+                repo=repo,
+                verbose=True,
+            )
 
-        issue_docs = hut23_issues_loader.load_data()
-        for doc in issue_docs:
-            doc.metadata["api_url"] = str(doc.metadata["url"])
-            doc.metadata["url"] = doc.metadata["source"]
-        self.documents.extend(issue_docs)
+            issue_docs = hut23_issues_loader.load_data()
+            for doc in issue_docs:
+                doc.metadata["api_url"] = str(doc.metadata["url"])
+                doc.metadata["url"] = doc.metadata["source"]
+            self.documents.extend(issue_docs)
+
+        except HTTPError as e:
+            logging.error(f"Failed to load Hut23 issues: {e}")
 
         # load collaborators
         # hut23_collaborators_loader = GitHubRepositoryCollaboratorsReader(
