@@ -13,7 +13,6 @@ import nest_asyncio
 import pandas as pd
 from git import Repo
 from httpx import HTTPError
-from langchain_community.embeddings import HuggingFaceEmbeddings
 from llama_index.core import (
     Document,
     PromptHelper,
@@ -28,9 +27,11 @@ from llama_index.core import (
 from llama_index.core.base.llms.base import BaseLLM
 from llama_index.core.base.response.schema import RESPONSE_TYPE
 from llama_index.core.settings import _Settings
+from llama_index.embeddings.huggingface import HuggingFaceEmbedding
 from llama_index.llms.azure_openai import AzureOpenAI
 from llama_index.llms.huggingface import HuggingFaceLLM
 from llama_index.llms.llama_cpp import LlamaCPP
+from llama_index.llms.ollama import Ollama
 from llama_index.llms.openai import OpenAI
 from llama_index.readers.github import (
     GithubClient,
@@ -131,9 +132,9 @@ def setup_settings(
     )
 
     # initialise embedding model to use to create the index vectors
-    embed_model = HuggingFaceEmbeddings(
+    embed_model = HuggingFaceEmbedding(
         model_name="sentence-transformers/all-mpnet-base-v2",
-        encode_kwargs={"batch_size": 128},
+        embed_batch_size=128,
     )
 
     # construct the prompt helper
@@ -150,6 +151,7 @@ def setup_settings(
     logging.info(f"Settings llm: {llm}")
     Settings.embed_model = embed_model
     logging.info(f"Settings embed_model: {embed_model}")
+    logging.info(f"Embedding model initialised on device {embed_model._device}")
     Settings.prompt_helper = prompt_helper
     logging.info(f"Settings prompt_helper: {prompt_helper}")
     Settings.chunk_size = chunk_size
@@ -825,6 +827,46 @@ class LlamaIndex(ResponseModel):
             Response from the query engine.
         """
         return self._respond(message=message, user_id=user_id)
+
+
+class LlamaIndexOllama(LlamaIndex):
+    def __init__(
+        self,
+        model_name: str,
+        *args: Any,
+        **kwargs: Any,
+    ) -> None:
+        """
+        `LlamaIndexOllama` is a subclass of `LlamaIndex` that uses
+        ollama to run inference on the LLM.
+
+        Parameters
+        ----------
+        model_name : str
+            The Ollama model to use
+        """
+        ollama_api_endpoint = get_env_var("OLLAMA_API_ENDPOINT")
+        if ollama_api_endpoint is None:
+            raise ValueError("You must set OLLAMA_API_ENDPOINT for Ollama.")
+        self.ollama_api_endpoint = ollama_api_endpoint
+        super().__init__(*args, model_name=model_name, **kwargs)
+
+    def _prep_llm(self) -> Ollama:
+        logging.info(f"Setting up Ollama (model {self.model_name})")
+        return Ollama(
+            base_url=self.ollama_api_endpoint,
+            model=self.model_name,
+            request_timeout=60,
+        )
+
+    def _prep_tokenizer(self) -> callable[str]:
+        # NOTE: this should depend on the model used, but hard coding Llama2-7b for now
+        logging.info("Setting up Llama2-7b-chat tokenizer")
+        tokenizer = AutoTokenizer.from_pretrained(
+            "meta-llama/Llama-2-7b-chat-hf"
+        ).encode
+        set_global_tokenizer(tokenizer)
+        return tokenizer
 
 
 class LlamaIndexLlamaCPP(LlamaIndex):
