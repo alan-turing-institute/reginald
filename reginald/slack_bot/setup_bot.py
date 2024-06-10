@@ -13,8 +13,8 @@ from reginald.parser_utils import get_args
 from reginald.slack_bot.bot import ApiBot, Bot
 from reginald.utils import get_env_var
 
-
 EMOJI_DEFAULT: Final[str] = "rocket"
+
 
 def setup_slack_bot(model: ResponseModel) -> Bot:
     """
@@ -148,7 +148,8 @@ async def main():
             "Select the emoji for the model. By default, looks for the REGINALD_EMOJI "
             "environment variable or uses the rocket emoji"
         ),
-        default=lambda: get_env_var("REGINALD_EMOJI", secret_value=False) or EMOJI_DEFAULT,
+        default=lambda: get_env_var("REGINALD_EMOJI", secret_value=False)
+        or EMOJI_DEFAULT,
     )
     args = get_args(parser)
 

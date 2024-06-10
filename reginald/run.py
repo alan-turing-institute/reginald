@@ -1,23 +1,28 @@
 import asyncio
 import logging
 from typing import Final
+
+import uvicorn
+from fastapi import FastAPI
 from slack_sdk.socket_mode.aiohttp import SocketModeClient
 
-from fastapi import FastAPI
-import uvicorn
-
+from reginald.models.app import create_reginald_app
 from reginald.models.setup_llm import setup_llm
-from reginald.models.app import create_reginald_app 
-from reginald.slack_bot.setup_bot import setup_slack_bot, setup_slack_client, EMOJI_DEFAULT, setup_api_slack_bot
+from reginald.slack_bot.setup_bot import (
+    EMOJI_DEFAULT,
+    setup_api_slack_bot,
+    setup_slack_bot,
+    setup_slack_client,
+)
 
-
-LISTENING_MSG: Final[str] = "Listening for requests..." 
+LISTENING_MSG: Final[str] = "Listening for requests..."
 
 logging.basicConfig(
     datefmt=r"%Y-%m-%d %H:%M:%S",
     format="%(asctime)s [%(levelname)8s] %(message)s",
     level=logging.INFO,
 )
+
 
 async def run_bot(api_url: str | None = None, emoji: str = EMOJI_DEFAULT):
 
@@ -35,6 +40,7 @@ async def run_reginald_app(*args) -> None:
     app: FastAPI = create_reginald_app(response_model)
     uvicorn.run(app, host="0.0.0.0", port=8000)
     # return response
+
 
 async def run_full_pipeline(*args):
     # set up response model
@@ -54,9 +60,14 @@ async def connect_client(client: SocketModeClient):
 
 
 def main(
-        run_all: bool = True,
-        only_bot: bool = False,
-        only_reginald: bool = False, api_url: str | None = None, emoji: str = EMOJI_DEFAULT, *args, **kwrags):
+    run_all: bool = True,
+    only_bot: bool = False,
+    only_reginald: bool = False,
+    api_url: str | None = None,
+    emoji: str = EMOJI_DEFAULT,
+    *args,
+    **kwrags
+):
     # initialise logging
     if run_all:
         asyncio.run(run_full_pipeline(*args))
@@ -66,6 +77,7 @@ def main(
         asyncio.run(run_reginald_app(*args))
     else:
         logging.info("No run options selected.")
+
 
 if __name__ == "__main__":
     main()

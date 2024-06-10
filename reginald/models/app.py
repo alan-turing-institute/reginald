@@ -36,6 +36,7 @@ def create_reginald_app(response_model) -> FastAPI:
 
     return app
 
+
 def main():
     """
     Main function to run the app which sets up the response model
