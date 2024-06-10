@@ -52,6 +52,7 @@ llama-index-readers-file = "^0.1.13"
 llama-index-embeddings-langchain = "^0.1.2"
 langchain-community = "^0.0.31"
 tiktoken = "^0.6.0"
+typer = {extras = ["all"], version = "^0.12.3"}
 
 [tool.poetry.group.dev.dependencies]
 black = "^24.3.0"
@@ -86,6 +87,7 @@ reginald_run = "reginald.run:cli"
 reginald_run_api_bot = "reginald.slack_bot.setup_bot:cli"
 reginald_run_api_llm = "reginald.models.app:main"
 reginald_create_index = "reginald.models.create_index:main"
+reginald = "reginald.cli:cli"
 
 [[tool.poetry.source]]
 name = "PyPI"

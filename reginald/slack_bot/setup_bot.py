@@ -3,6 +3,7 @@ import asyncio
 import logging
 import os
 import sys
+from typing import Final
 
 from slack_sdk.socket_mode.aiohttp import SocketModeClient
 from slack_sdk.web.async_client import AsyncWebClient
@@ -12,6 +13,8 @@ from reginald.parser_utils import get_args
 from reginald.slack_bot.bot import ApiBot, Bot
 from reginald.utils import get_env_var
 
+
+EMOJI_DEFAULT: Final[str] = "rocket"
 
 def setup_slack_bot(model: ResponseModel) -> Bot:
     """
@@ -39,7 +42,7 @@ def setup_slack_bot(model: ResponseModel) -> Bot:
     return slack_bot
 
 
-def setup_api_slack_bot(api_url: str, emoji: str) -> ApiBot:
+def setup_api_slack_bot(api_url: str | None, emoji: str) -> ApiBot:
     """
     Initialise `ApiBot` with response model.
 
@@ -145,7 +148,7 @@ async def main():
             "Select the emoji for the model. By default, looks for the REGINALD_EMOJI "
             "environment variable or uses the rocket emoji"
         ),
-        default=lambda: get_env_var("REGINALD_EMOJI", secret_value=False) or "rocket",
+        default=lambda: get_env_var("REGINALD_EMOJI", secret_value=False) or EMOJI_DEFAULT,
     )
     args = get_args(parser)
 
