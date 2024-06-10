@@ -41,16 +41,16 @@ async def run_bot(api_url: str | None, emoji: str):
     await connect_client(client)
 
 
-async def run_reginald_app(*args) -> None:
+async def run_reginald_app(**kwargs) -> None:
     # set up response model
-    response_model = setup_llm(**vars(args))
+    response_model = setup_llm(**kwargs)
     app: FastAPI = create_reginald_app(response_model)
     uvicorn.run(app, host="0.0.0.0", port=8000)
 
 
-async def run_full_pipeline(*args):
+async def run_full_pipeline(**kwargs):
     # set up response model
-    response_model = setup_llm(**vars(args))
+    response_model = setup_llm(**kwargs)
     bot = setup_slack_bot(response_model)
     # set up slack client
     client = setup_slack_client(bot)
@@ -70,11 +70,11 @@ def main(
 ):
     # initialise logging
     if cli == "run_all":
-        asyncio.run(run_full_pipeline(*args))
+        asyncio.run(run_full_pipeline(**kwrags))
     elif cli == "bot":
         asyncio.run(run_bot(api_url=api_url, emoji=emoji))
     elif cli == "app":
-        asyncio.run(run_reginald_app(*args))
+        asyncio.run(run_reginald_app(**kwrags))
     else:
         logging.info("No run options selected.")
 
