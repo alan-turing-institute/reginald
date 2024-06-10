@@ -1,5 +1,6 @@
 import asyncio
 import logging
+import sys
 from typing import Final
 
 import uvicorn
@@ -24,7 +25,13 @@ logging.basicConfig(
 )
 
 
-async def run_bot(api_url: str | None = None, emoji: str = EMOJI_DEFAULT):
+async def run_bot(api_url: str | None, emoji: str):
+    if api_url is None:
+        logging.error(
+            "API URL is not set. Please set the REGINALD_API_URL "
+            "environment variable or pass in the --api-url argument"
+        )
+        sys.exit(1)
 
     # set up slack bot
     bot = setup_api_slack_bot(api_url=api_url, emoji=emoji)
@@ -39,7 +46,6 @@ async def run_reginald_app(*args) -> None:
     response_model = setup_llm(**vars(args))
     app: FastAPI = create_reginald_app(response_model)
     uvicorn.run(app, host="0.0.0.0", port=8000)
-    # return response
 
 
 async def run_full_pipeline(*args):
@@ -60,20 +66,14 @@ async def connect_client(client: SocketModeClient):
 
 
 def main(
-    run_all: bool = True,
-    only_bot: bool = False,
-    only_reginald: bool = False,
-    api_url: str | None = None,
-    emoji: str = EMOJI_DEFAULT,
-    *args,
-    **kwrags
+    cli: str, api_url: str | None = None, emoji: str = EMOJI_DEFAULT, *args, **kwrags
 ):
     # initialise logging
-    if run_all:
+    if cli == "run_all":
         asyncio.run(run_full_pipeline(*args))
-    elif only_bot:
+    elif cli == "bot":
         asyncio.run(run_bot(api_url=api_url, emoji=emoji))
-    elif only_reginald:
+    elif cli == "app":
         asyncio.run(run_reginald_app(*args))
     else:
         logging.info("No run options selected.")
