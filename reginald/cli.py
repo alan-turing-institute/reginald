@@ -41,7 +41,7 @@ def run_all(
     k: Annotated[int, typer.Option(envvar="LLAMA_INDEX_K")] = DEFAULT_ARGS["k"],
     chunk_size: Annotated[
         Optional[int], typer.Option(envvar="LLAMA_INDEX_CHUNK_SIZE")
-    ] = None,
+    ] = DEFAULT_ARGS.get("chunk_size"),
     chunk_overlap_ratio: Annotated[
         float, typer.Option(envvar="LLAMA_INDEX_CHUNK_OVERLAP_RATIO")
     ] = DEFAULT_ARGS["chunk_overlap_ratio"],
@@ -117,7 +117,7 @@ def app(
     k: Annotated[int, typer.Option(envvar="LLAMA_INDEX_K")] = DEFAULT_ARGS["k"],
     chunk_size: Annotated[
         Optional[int], typer.Option(envvar="LLAMA_INDEX_CHUNK_SIZE")
-    ] = None,
+    ] = DEFAULT_ARGS.get("chunk_size"),
     chunk_overlap_ratio: Annotated[
         float, typer.Option(envvar="LLAMA_INDEX_CHUNK_OVERLAP_RATIO")
     ] = DEFAULT_ARGS["chunk_overlap_ratio"],
@@ -150,4 +150,38 @@ def app(
         is_path=is_path,
         n_gpu_layers=n_gpu_layers,
         device=device,
+    )
+
+
+@cli.command()
+def create_index(
+    data_dir: Annotated[
+        str, typer.Option(envvar="LLAMA_INDEX_DATA_DIR")
+    ] = DEFAULT_ARGS["data_dir"],
+    which_index: Annotated[
+        str, typer.Option(envvar="LLAMA_INDEX_WHICH_INDEX")
+    ] = DEFAULT_ARGS["which_index"],
+    max_input_size: Annotated[
+        int, typer.Option(envvar="LLAMA_INDEX_MAX_INPUT_SIZE")
+    ] = DEFAULT_ARGS["max_input_size"],
+    k: Annotated[int, typer.Option(envvar="LLAMA_INDEX_K")] = DEFAULT_ARGS["k"],
+    chunk_size: Annotated[
+        Optional[int], typer.Option(envvar="LLAMA_INDEX_CHUNK_SIZE")
+    ] = DEFAULT_ARGS.get("chunk_size"),
+    chunk_overlap_ratio: Annotated[
+        float, typer.Option(envvar="LLAMA_INDEX_CHUNK_OVERLAP_RATIO")
+    ] = DEFAULT_ARGS["chunk_overlap_ratio"],
+    num_output: Annotated[
+        int, typer.Option(envvar="LLAMA_INDEX_NUM_OUTPUT")
+    ] = DEFAULT_ARGS["num_output"],
+) -> None:
+    main(
+        cli="create_index",
+        data_dir=data_dir,
+        which_index=which_index,
+        max_input_size=max_input_size,
+        k=k,
+        chunk_size=chunk_size,
+        chunk_overlap_ratio=chunk_overlap_ratio,
+        num_output=num_output,
     )

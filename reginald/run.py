@@ -8,6 +8,7 @@ from fastapi import FastAPI
 from slack_sdk.socket_mode.aiohttp import SocketModeClient
 
 from reginald.models.app import create_reginald_app
+from reginald.models.create_index import create_index
 from reginald.models.setup_llm import setup_llm
 from reginald.slack_bot.setup_bot import (
     EMOJI_DEFAULT,
@@ -75,6 +76,8 @@ def main(
         asyncio.run(run_bot(api_url=api_url, emoji=emoji))
     elif cli == "app":
         asyncio.run(run_reginald_app(**kwrags))
+    elif cli == "create_index":
+        create_index(**kwrags)
     else:
         logging.info("No run options selected.")
 

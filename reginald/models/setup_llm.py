@@ -13,6 +13,7 @@ DEFAULT_ARGS = {
     "force_new_index": False,
     "max_input_size": 4096,
     "k": 3,
+    "chunk_size": 512,
     "chunk_overlap_ratio": 0.1,
     "num_output": 512,
     "is_path": False,

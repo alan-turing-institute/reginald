@@ -10,9 +10,12 @@ from llama_index.core.base.llms.types import (
 from llama_index.core.llms.callbacks import llm_completion_callback
 from llama_index.core.llms.custom import CustomLLM
 
-from reginald.models.models.llama_index import DataIndexCreator, setup_settings
+from reginald.models.models.llama_index import (
+    DataIndexCreator,
+    compute_default_chunk_size,
+    setup_settings,
+)
 from reginald.models.setup_llm import DEFAULT_ARGS
-from reginald.parser_utils import Parser, get_args
 
 
 class DummyLLM(CustomLLM):
@@ -46,45 +49,40 @@ class DummyLLM(CustomLLM):
             yield CompletionResponse(text=response, delta=token)
 
 
-def main():
-    """
-    Main function to create the indices for the LlamaIndex models.
-    """
-    # initialise logging
-    logging.basicConfig(
-        datefmt=r"%Y-%m-%d %H:%M:%S",
-        format="%(asctime)s [%(levelname)8s] %(message)s",
-        level=logging.INFO,
+def create_index(
+    data_dir: str,
+    which_index: str,
+    max_input_size: int | None,
+    k: int | None,
+    chunk_size: int | None,
+    chunk_overlap_ratio: float | None,
+    num_output: int | None,
+) -> None:
+    max_input_size = max_input_size or DEFAULT_ARGS["max_input_size"]
+    num_output = num_output or DEFAULT_ARGS["num_output"]
+    chunk_overlap_ratio = chunk_overlap_ratio or DEFAULT_ARGS["chunk_overlap_ratio"]
+    k = k or DEFAULT_ARGS["k"]
+    chunk_size = chunk_size or compute_default_chunk_size(
+        max_input_size=max_input_size, k=k
     )
-
-    # parse command line arguments
-    parser = Parser(create_index_only=True)
-
-    # pass args to setup_llm
-    args = get_args(parser)
 
     # pass args to create data index
     logging.info("Setting up settings...")
     settings = setup_settings(
         llm=DummyLLM(),
-        max_input_size=args.max_input_size or DEFAULT_ARGS["max_input_size"],
-        num_output=args.num_output or DEFAULT_ARGS["num_output"],
-        chunk_overlap_ratio=args.chunk_overlap_ratio
-        or DEFAULT_ARGS["chunk_overlap_ratio"],
-        chunk_size=args.chunk_size,
-        k=args.k or DEFAULT_ARGS["k"],
+        max_input_size=max_input_size,
+        num_output=num_output,
+        chunk_overlap_ratio=chunk_overlap_ratio,
+        chunk_size=chunk_size,
+        k=k,
     )
 
     # set up slack bot
     logging.info("Generating the index from scratch...")
     data_creator = DataIndexCreator(
-        data_dir=pathlib.Path(args.data_dir or DEFAULT_ARGS["data_dir"]).resolve(),
-        which_index=args.which_index or DEFAULT_ARGS["which_index"],
+        data_dir=pathlib.Path(data_dir or DEFAULT_ARGS["data_dir"]).resolve(),
+        which_index=which_index or DEFAULT_ARGS["which_index"],
         settings=settings,
     )
     data_creator.create_index()
     data_creator.save_index()
-
-
-if __name__ == "__main__":
-    main()
