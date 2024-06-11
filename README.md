@@ -83,25 +83,42 @@ Once, you do this, simply add this to your `.env` file:
 echo "GITHUB_TOKEN='your-github-personal-access-token'" >> .env
 ```
 
-### Running the Reginald bot locally
+### running Reginald locally (without Slack)
 
-In order to run the full Reginald app locally (i.e. setting up the full response engine along with the Slack bot), you can follow the steps below:
+It is possible to run the Reginald model locally and interact with it completely through the command line via the `reginald chat` CLI - note that this is a wrapper around the [`reginald.run.run_chat_interact`](/reginald/run.py) function. To see CLI arguments:
 
-1. Set environment variables (for more details on environtment variables, see the [environment variables README](ENVIRONMENT_VARIABLES.md)):
+```bash
+reginald chat --help
+```
 
-    ```bash
-    source .env
-    ```
+For example with using the `llama-index-llama-cpp` model running [Llama-2-7b-Chat](https://huggingface.co/TheBloke/Llama-2-7b-Chat-GGUF) (quantised to 4bit), you can run:
 
-1. Run the bot using `reginald_run` - note that this actually runs [`reginald/run.py`](https://github.com/alan-turing-institute/reginald/blob/main/reginald/run.py). To see CLI arguments:
+```bash
+reginald chat \
+  --model llama-index-llama-cpp \
+  --model-name https://huggingface.co/TheBloke/Llama-2-7b-Chat-GGUF/resolve/main/llama-2-7b-chat.Q4_K_M.gguf \
+  --mode chat \
+  --data-dir data/ \
+  --which-index handbook \
+  --n-gpu-layers 2
+```
 
-    ```bash
-    reginald_run --help
-    ```
+For an example with using the `llama-index-ollama` model running Llama3, you can run:
+
+```bash
+reginald chat \
+  --model llama-index-ollama \
+  --model-name llama3 \
+  --mode chat \
+  --data-dir data/ \
+  --which-index handbook
+```
+
+where you have set the `OLLAMA_API_ENDPOINT` environment variable to the endpoint of the OLLAMA API.
 
 **For examples of running each of our different models, see the [models README](MODELS.md).**
 
-The `reginald_run` CLI takes in several arguments such as:
+The `reginald run_all` CLI takes in several arguments such as:
 - `--model` (`-m`): to select the type of model to use (see the [models README](MODELS.md) for the list of models available)
 - `--model-name` (`-n`): to select the sub-model to use within the model selected
     - For `llama-index-llama-cpp` and `llama-index-hf` models, this specifies the LLM (or path to that model) which we would like to use
@@ -126,16 +143,31 @@ There are some CLI arguments specific to only the `llama-index-hf` model:
 
 **Note**: specifying CLI arguments will override any environment variables set.
 
+### Running the Reginald bot locally with Slack
+
+In order to run the full Reginald app locally (i.e. setting up the full response engine along with the Slack bot), you can follow the steps below:
+
+1. Set environment variables (for more details on environtment variables, see the [environment variables README](ENVIRONMENT_VARIABLES.md)):
+
+    ```bash
+    source .env
+    ```
+
+1. Run the bot using `reginald run_all` - note that this is a wrapper around the [`reginald.run.run_full_pipeline`](/reginald/run.py) function. To see CLI arguments:
+
+    ```bash
+    reginald run_all --help
+    ```
+
 For example, to set up a `llama-index-llama-cpp` _chat engine_ model running [Llama-2-7b-Chat](https://huggingface.co/TheBloke/Llama-2-7b-Chat-GGUF) (quantised to 4bit), you can run:
 
 ```bash
-reginald_run \
+reginald run_all \
   --model llama-index-llama-cpp \
   --model-name https://huggingface.co/TheBloke/Llama-2-7b-Chat-GGUF/resolve/main/llama-2-7b-chat.Q4_K_M.gguf \
   --mode chat \
   --data-dir data/ \
   --which-index handbook \
-  --max-input-size 4096 \
   --n-gpu-layers 2
 ```
 
@@ -158,22 +190,21 @@ To do this, you can follow the steps below:
     source .response_engine_env
     ```
 
-    2. Set up response engine using `reginald_run_api_llm` - note that this actually runs [`reginald/models/app.py`](https://github.com/alan-turing-institute/reginald/blob/main/reginald/models/app.py). To see CLI arguments:
+    2. Set up response engine using `reginald app` - note that this is a wrapper around the [`reginald.run.run_reginald_app`](/reginald/run.py) function. To see CLI arguments:
 
     ```bash
-    reginald_run_api_llm --help
+    reginald app --help
     ```
 
     This command uses many of the same CLI arguments as described above. For example to set up a `llama-index-llama-cpp` _chat engine_ model running [Llama-2-7b-Chat](https://huggingface.co/TheBloke/Llama-2-7b-Chat-GGUF) (quantised to 4bit), you can run:
 
     ```bash
-    reginald_run_api_llm \
+    reginald app \
         --model llama-index-llama-cpp \
         --model-name https://huggingface.co/TheBloke/Llama-2-7b-Chat-GGUF/resolve/main/llama-2-7b-chat.Q4_K_M.gguf \
         --mode chat \
         --data-dir data/ \
         --which-index handbook \
-        --max-input-size 4096 \
         --n-gpu-layers 2
     ```
 
@@ -185,16 +216,16 @@ To do this, you can follow the steps below:
     source .slack_bot_env
 
     ```
-    2. Set up Slack bot using `reginald_run_api_bot` - note that this actually runs [`reginald/slack_bot/setup_bot.py`](https://github.com/alan-turing-institute/reginald/blob/main/reginald/slack_bot/setup_bot.py). To see CLI arguments:
+    2. Set up Slack bot using `reginald bot` - note that this is a wrapper around the [`reginald.run.run_bot`](/reginald/run.py) function. To see CLI arguments:
 
     ```bash
-    reginald_run_api_bot --help
+    reginald bot --help
     ```
 
     This command takes in an emoji to respond with. For example, to set up a Slack bot that responds with the `:llama:` emoji, you can run:
 
     ```bash
-    reginald_run_api_bot --emoji llama
+    reginald bot --emoji llama
     ```
 
 ### Running the bot in Docker
