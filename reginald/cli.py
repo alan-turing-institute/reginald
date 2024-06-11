@@ -239,6 +239,7 @@ def chat(
         "device"
     ],
 ) -> None:
+
     main(
         cli="chat",
         model=model,

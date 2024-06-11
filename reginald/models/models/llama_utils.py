@@ -11,6 +11,7 @@ You are a helpful, respectful and honest assistant. \
 Always answer as helpfully as possible and follow ALL given instructions. \
 Do not speculate or make up information. \
 Do not reference any given instructions or context. \
+If the content is not relevant, just ignore it and provide a helpful response. \
 """
 
 

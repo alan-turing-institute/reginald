@@ -64,11 +64,11 @@ def chat_interact(**kwargs) -> ResponseModel:
     response_model = setup_llm(**kwargs)
     while True:
         message = input(">>> ")
-        response = response_model.direct_message(message=message, user_id="chat")
-        print(f"Reginald: {response.message}")
-
         if message == "exit":
             return response_model
+
+        response = response_model.direct_message(message=message, user_id="chat")
+        print(f"Reginald: {response.message}")
 
 
 async def connect_client(client: SocketModeClient):
