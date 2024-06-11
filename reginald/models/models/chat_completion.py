@@ -1,5 +1,4 @@
 import logging
-import os
 import sys
 from typing import Any
 
@@ -155,6 +154,36 @@ class ChatCompletionAzure(ChatCompletionBase):
         """
         return self._respond(message=message, user_id=user_id)
 
+    def stream_message(self, message: str, user_id: str) -> None:
+        if self.mode == "chat":
+            response = self.client.chat.completions.create(
+                model=self.engine,
+                messages=[{"role": "user", "content": message}],
+                frequency_penalty=self.frequency_penalty,
+                max_tokens=self.max_tokens,
+                presence_penalty=self.presence_penalty,
+                stop=None,
+                temperature=self.temperature,
+                top_p=self.top_p,
+                stream=True,
+            )
+        elif self.mode == "query":
+            response = self.client.completions.create(
+                model=self.engine,
+                frequency_penalty=self.frequency_penalty,
+                max_tokens=self.max_tokens,
+                presence_penalty=self.presence_penalty,
+                prompt=message,
+                stop=None,
+                temperature=self.temperature,
+                top_p=self.top_p,
+                stream=True,
+            )
+
+        print("Reginald: ", end="")
+        for chunk in response:
+            print(chunk.choices[0].delta.content)
+
 
 class ChatCompletionOpenAI(ChatCompletionBase):
     def __init__(
@@ -233,3 +262,13 @@ class ChatCompletionOpenAI(ChatCompletionBase):
             Response from the query engine.
         """
         return self._respond(message=message, user_id=user_id)
+
+    def stream_message(self, message: str, user_id: str) -> None:
+        response = self.client.chat.completions.create(
+            model=self.model_name,
+            messages=[{"role": "user", "content": message}],
+            stream=True,
+        )
+        print("Reginald: ", end="")
+        for chunk in response:
+            print(chunk["choices"][0]["delta"]["content"])

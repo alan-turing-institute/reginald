@@ -34,3 +34,6 @@ class ResponseModel(ABC):
 
     def channel_mention(self, message: str, user_id: str) -> MessageResponse:
         raise NotImplementedError
+
+    def stream_message(self, message: str, user_id: str) -> None:
+        raise NotImplementedError

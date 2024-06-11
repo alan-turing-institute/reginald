@@ -53,7 +53,7 @@ async def run_full_pipeline(**kwargs):
     await connect_client(client)
 
 
-def run_chat_interact(**kwargs) -> ResponseModel:
+def run_chat_interact(streaming: bool = False, **kwargs) -> ResponseModel:
     # set up response model
     response_model = setup_llm(**kwargs)
     while True:
@@ -61,8 +61,12 @@ def run_chat_interact(**kwargs) -> ResponseModel:
         if message == "exit":
             return response_model
 
-        response = response_model.direct_message(message=message, user_id="chat")
-        print(f"\nReginald: {response.message}")
+        if streaming:
+            response = response_model.stream_message(message=message, user_id="chat")
+            print("")
+        else:
+            response = response_model.direct_message(message=message, user_id="chat")
+            print(f"\nReginald: {response.message}")
 
 
 async def connect_client(client: SocketModeClient):
@@ -73,7 +77,13 @@ async def connect_client(client: SocketModeClient):
     await asyncio.sleep(float("inf"))
 
 
-def main(cli: str, api_url: str | None = None, emoji: str = EMOJI_DEFAULT, **kwargs):
+def main(
+    cli: str,
+    api_url: str | None = None,
+    emoji: str = EMOJI_DEFAULT,
+    streaming: bool = False,
+    **kwargs,
+):
     # initialise logging
     if cli == "run_all":
         asyncio.run(run_full_pipeline(**kwargs))
@@ -82,7 +92,7 @@ def main(cli: str, api_url: str | None = None, emoji: str = EMOJI_DEFAULT, **kwa
     elif cli == "app":
         asyncio.run(run_reginald_app(**kwargs))
     elif cli == "chat":
-        run_chat_interact(**kwargs)
+        run_chat_interact(streaming=streaming, **kwargs)
     elif cli == "create_index":
         create_index(**kwargs)
     else:

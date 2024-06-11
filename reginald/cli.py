@@ -25,6 +25,7 @@ HELP_TEXT = {
     "device": "Device to use (ignored if not using llama-index).",
     "api_url": "API URL for the Reginald app.",
     "emoji": "Emoji to use for the bot.",
+    "streaming": "Whether to use streaming for the chat interaction.",
 }
 
 cli = typer.Typer()
@@ -288,6 +289,12 @@ def chat(
         Optional[str],
         typer.Option(envvar="REGINALD_MODEL_NAME", help=HELP_TEXT["model_name"]),
     ] = None,
+    streaming: Annotated[
+        bool,
+        typer.Option(
+            help=HELP_TEXT["streaming"],
+        ),
+    ] = True,
     mode: Annotated[
         str, typer.Option(envvar="LLAMA_INDEX_MODE", help=HELP_TEXT["mode"])
     ] = DEFAULT_ARGS["mode"],
@@ -342,6 +349,7 @@ def chat(
     set_up_logging_config(level=40)
     main(
         cli="chat",
+        streaming=streaming,
         model=model,
         model_name=model_name,
         mode=mode,

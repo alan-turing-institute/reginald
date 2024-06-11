@@ -16,3 +16,8 @@ class Hello(ResponseModel):
 
     def channel_mention(self, message: str, user_id: str) -> MessageResponse:
         return MessageResponse(f"Hello <@{user_id}>")
+
+    def stream_message(self, message: str, user_id: str) -> None:
+        print("\nReginald: ", end="")
+        for token in ["Hello", "!", " How", " are", " you", "?"]:
+            print(token, end="")
