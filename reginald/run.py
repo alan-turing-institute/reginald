@@ -9,6 +9,7 @@ from slack_sdk.socket_mode.aiohttp import SocketModeClient
 
 from reginald.models.app import create_reginald_app
 from reginald.models.create_index import create_index
+from reginald.models.models.base import ResponseModel
 from reginald.models.setup_llm import setup_llm
 from reginald.slack_bot.setup_bot import (
     EMOJI_DEFAULT,
@@ -58,6 +59,18 @@ async def run_full_pipeline(**kwargs):
     await connect_client(client)
 
 
+def chat_interact(**kwargs) -> ResponseModel:
+    # set up response model
+    response_model = setup_llm(**kwargs)
+    while True:
+        message = input(">>> ")
+        response = response_model.direct_message(message=message, user_id="chat")
+        print(f"Reginald: {response.message}")
+
+        if message == "exit":
+            return response_model
+
+
 async def connect_client(client: SocketModeClient):
     await client.connect()
     # listen for events
@@ -66,16 +79,18 @@ async def connect_client(client: SocketModeClient):
     await asyncio.sleep(float("inf"))
 
 
-def main(cli: str, api_url: str | None = None, emoji: str = EMOJI_DEFAULT, **kwrags):
+def main(cli: str, api_url: str | None = None, emoji: str = EMOJI_DEFAULT, **kwargs):
     # initialise logging
     if cli == "run_all":
-        asyncio.run(run_full_pipeline(**kwrags))
+        asyncio.run(run_full_pipeline(**kwargs))
     elif cli == "bot":
         asyncio.run(run_bot(api_url=api_url, emoji=emoji))
     elif cli == "app":
-        asyncio.run(run_reginald_app(**kwrags))
+        asyncio.run(run_reginald_app(**kwargs))
+    elif cli == "chat":
+        chat_interact(**kwargs)
     elif cli == "create_index":
-        create_index(**kwrags)
+        create_index(**kwargs)
     else:
         logging.info("No run options selected.")
 
