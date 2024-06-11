@@ -20,12 +20,6 @@ from reginald.slack_bot.setup_bot import (
 
 LISTENING_MSG: Final[str] = "Listening for requests..."
 
-logging.basicConfig(
-    datefmt=r"%Y-%m-%d %H:%M:%S",
-    format="%(asctime)s [%(levelname)8s] %(message)s",
-    level=logging.INFO,
-)
-
 
 async def run_bot(api_url: str | None, emoji: str):
     if api_url is None:
@@ -59,7 +53,7 @@ async def run_full_pipeline(**kwargs):
     await connect_client(client)
 
 
-def chat_interact(**kwargs) -> ResponseModel:
+def run_chat_interact(**kwargs) -> ResponseModel:
     # set up response model
     response_model = setup_llm(**kwargs)
     while True:
@@ -68,7 +62,7 @@ def chat_interact(**kwargs) -> ResponseModel:
             return response_model
 
         response = response_model.direct_message(message=message, user_id="chat")
-        print(f"Reginald: {response.message}")
+        print(f"\nReginald: {response.message}")
 
 
 async def connect_client(client: SocketModeClient):
@@ -88,7 +82,7 @@ def main(cli: str, api_url: str | None = None, emoji: str = EMOJI_DEFAULT, **kwa
     elif cli == "app":
         asyncio.run(run_reginald_app(**kwargs))
     elif cli == "chat":
-        chat_interact(**kwargs)
+        run_chat_interact(**kwargs)
     elif cli == "create_index":
         create_index(**kwargs)
     else:

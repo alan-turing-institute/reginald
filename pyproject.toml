@@ -89,10 +89,6 @@ llama_index_notebooks = [
 ]
 
 [tool.poetry.scripts]
-reginald_run = "reginald.run:cli"
-reginald_run_api_bot = "reginald.slack_bot.setup_bot:cli"
-reginald_run_api_llm = "reginald.models.app:main"
-reginald_create_index = "reginald.models.create_index:main"
 reginald = "reginald.cli:cli"
 
 [[tool.poetry.source]]
@@ -106,7 +102,7 @@ build-backend = "poetry.core.masonry.api"
 [tool.pytest.ini_options]
 minversion = "6.0"
 testpaths = [
-    "test",
+    "tests",
 ]
 addopts = """
   --cov=estios

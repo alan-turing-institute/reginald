@@ -1,3 +1,4 @@
+import logging
 import pathlib
 from typing import Annotated, Optional
 
@@ -14,6 +15,14 @@ cli = typer.Typer()
 # (only when necessary, i.e. not provided), is it possible to tell the user that an env var is going to be used?
 # TODO: create config class
 # TODO: add help
+
+
+def set_up_logging_config(level: int = 20) -> None:
+    logging.basicConfig(
+        datefmt=r"%Y-%m-%d %H:%M:%S",
+        format="%(asctime)s [%(levelname)8s] %(message)s",
+        level=level,
+    )
 
 
 @cli.command()
@@ -63,6 +72,7 @@ def run_all(
         "device"
     ],
 ) -> None:
+    set_up_logging_config(level=20)
     main(
         cli="run_all",
         model=model,
@@ -89,6 +99,13 @@ def bot(
     ],
     emoji: Annotated[str, typer.Option(envvar="REGINALD_EMOJI")] = EMOJI_DEFAULT,
 ) -> None:
+    """
+    Main function to run the Slack bot which sets up the bot
+    (which uses an API for responding to messages) and
+    then establishes a WebSocket connection to the
+    Socket Mode servers and listens for events.
+    """
+    set_up_logging_config(level=20)
     main(
         cli="bot",
         api_url=api_url,
@@ -139,6 +156,15 @@ def app(
         "device"
     ],
 ) -> None:
+    """
+    Main function to run the app which sets up the response model
+    and then creates a FastAPI app to serve the model.
+
+    The app listens on port 8000 and has two endpoints:
+    - /direct_message: for obtaining responses from direct messages
+    - /channel_mention: for obtaining responses from channel mentions
+    """
+    set_up_logging_config(level=20)
     main(
         cli="app",
         model=model,
@@ -180,6 +206,7 @@ def create_index(
         int, typer.Option(envvar="LLAMA_INDEX_NUM_OUTPUT")
     ] = DEFAULT_ARGS["num_output"],
 ) -> None:
+    set_up_logging_config(level=20)
     main(
         cli="create_index",
         data_dir=data_dir,
@@ -239,7 +266,7 @@ def chat(
         "device"
     ],
 ) -> None:
-
+    set_up_logging_config(level=40)
     main(
         cli="chat",
         model=model,
