@@ -58,7 +58,7 @@ def run_chat_interact(streaming: bool = False, **kwargs) -> ResponseModel:
     response_model = setup_llm(**kwargs)
     while True:
         message = input(">>> ")
-        if message == "exit":
+        if message in ["exit", "exit()", "quit()", "bye Reginald"]:
             return response_model
 
         if streaming:

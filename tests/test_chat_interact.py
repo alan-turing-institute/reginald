@@ -35,3 +35,21 @@ def test_chat_interact_exit():
     with mock.patch.object(builtins, "input", lambda _: "exit"):
         interaction = run_chat_interact(model="hello")
     assert isinstance(interaction, Hello)
+
+
+def test_chat_interact_exit_with_bracket():
+    with mock.patch.object(builtins, "input", lambda _: "exit()"):
+        interaction = run_chat_interact(model="hello")
+    assert isinstance(interaction, Hello)
+
+
+def test_chat_interact_quit_with_bracket():
+    with mock.patch.object(builtins, "input", lambda _: "quit()"):
+        interaction = run_chat_interact(model="hello")
+    assert isinstance(interaction, Hello)
+
+
+def test_chat_interact_bye():
+    with mock.patch.object(builtins, "input", lambda _: "bye Reginald"):
+        interaction = run_chat_interact(model="hello")
+    assert isinstance(interaction, Hello)
