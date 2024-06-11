@@ -9,7 +9,7 @@ DEFAULT_ARGS = {
     "model": "hello",
     "mode": "chat",
     "data_dir": pathlib.Path(__file__).parent.parent.parent / "data",
-    "which_index": "all_data",
+    "which_index": "reg",
     "force_new_index": False,
     "max_input_size": 4096,
     "k": 3,

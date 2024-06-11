@@ -179,7 +179,7 @@ class DataIndexCreator:
             Path to the data directory.
         which_index : str
             Which index to construct (if force_new_index is True) or use.
-            Options are "handbook", "wikis",  "public", or "all_data".
+            Options are "handbook", "wikis",  "public", "reg" or "all_data".
         settings : _Settings
             llama_index.core.settings._Settings object to use to create the index.
         """
@@ -224,6 +224,21 @@ class DataIndexCreator:
             self._load_rse_course(gh_token)
             self._load_rds_course(gh_token)
             self._load_turing_way(gh_token)
+
+        elif self.which_index == "reg":
+            logging.info("Regenerating index for REG. Will take a long time...")
+
+            # load in scraped turing.ac.uk website
+            self._load_turing_ac_uk()
+
+            # load public data from repos
+            self._load_handbook(gh_token)
+
+            # load hut23 data
+            self._load_hut23(gh_token)
+
+            # load wikis
+            self._load_wikis(gh_token)
 
         elif self.which_index == "all_data":
             logging.info("Regenerating index for ALL DATA. Will take a long time...")
@@ -556,7 +571,7 @@ class LlamaIndex(ResponseModel):
             Path to the data directory.
         which_index : str
             Which index to construct (if force_new_index is True) or use.
-            Options are "handbook", "wikis",  "public", or "all_data".
+            Options are "handbook", "wikis",  "public", "reg" or "all_data".
         mode : Optional[str], optional
             The type of engine to use when interacting with the data, options of "chat" or "query".
             Default is "chat".
