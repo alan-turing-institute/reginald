@@ -12,14 +12,19 @@ cli = typer.Typer()
 
 # TODO: before, using get_env_var would print out whenever it's being called and an env var is attempted to be loaded
 # (only when necessary, i.e. not provided), is it possible to tell the user that an env var is going to be used?
-# TODO: argparse allow for choices to be set, how can we do that with typer?
+# TODO: create config class
+# TODO: add help
 
 
 @cli.command()
 def run_all(
-    model: Annotated[str, typer.Option(envvar="REGINALD_MODEL")] = DEFAULT_ARGS[
-        "model"
-    ],
+    model: Annotated[
+        str,
+        typer.Option(
+            envvar="REGINALD_MODEL",
+            help="Select which type of model to use. Default is 'hello'.",
+        ),
+    ] = DEFAULT_ARGS["model"],
     model_name: Annotated[
         Optional[str], typer.Option(envvar="REGINALD_MODEL_NAME")
     ] = None,

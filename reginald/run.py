@@ -66,9 +66,7 @@ async def connect_client(client: SocketModeClient):
     await asyncio.sleep(float("inf"))
 
 
-def main(
-    cli: str, api_url: str | None = None, emoji: str = EMOJI_DEFAULT, *args, **kwrags
-):
+def main(cli: str, api_url: str | None = None, emoji: str = EMOJI_DEFAULT, **kwrags):
     # initialise logging
     if cli == "run_all":
         asyncio.run(run_full_pipeline(**kwrags))
