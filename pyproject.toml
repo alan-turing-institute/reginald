@@ -61,6 +61,9 @@ llama-index-embeddings-huggingface = "^0.2.1"
 black = "^24.3.0"
 isort = "^5.12.0"
 pre-commit = "^3.3.2"
+pytest = "^8.2.2"
+ipython = "^8.25.0"
+pytest-cov = "^5.0.0"
 
 [tool.poetry.extras]
 api_bot = [
@@ -99,3 +102,15 @@ priority = "primary"
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+testpaths = [
+    "test",
+]
+addopts = """
+  --cov=estios
+  --cov-report=term:skip-covered
+  --cov-append
+  --pdbcls=IPython.terminal.debugger:TerminalPdb
+"""
