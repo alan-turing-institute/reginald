@@ -11,6 +11,7 @@ from typing import Any
 
 import nest_asyncio
 import pandas as pd
+import tiktoken
 from git import Repo
 from httpx import HTTPError
 from llama_index.core import (
@@ -860,11 +861,9 @@ class LlamaIndexOllama(LlamaIndex):
         )
 
     def _prep_tokenizer(self) -> callable[str]:
-        # NOTE: this should depend on the model used, but hard coding Llama2-7b for now
-        logging.info("Setting up Llama2-7b-chat tokenizer")
-        tokenizer = AutoTokenizer.from_pretrained(
-            "meta-llama/Llama-2-7b-chat-hf"
-        ).encode
+        # NOTE: this should depend on the model used, but hard coding tiktoken for now
+        logging.info("Setting up tiktoken gpt-4 tokenizer")
+        tokenizer = tiktoken.encoding_for_model("gpt-4").encode
         set_global_tokenizer(tokenizer)
         return tokenizer
 
@@ -915,18 +914,15 @@ class LlamaIndexLlamaCPP(LlamaIndex):
             generate_kwargs={},
             # kwargs to pass to __init__()
             model_kwargs={"n_gpu_layers": self.n_gpu_layers},
-            # transform inputs into Llama2 format
             messages_to_prompt=messages_to_prompt,
             completion_to_prompt=completion_to_prompt,
             verbose=True,
         )
 
     def _prep_tokenizer(self) -> callable[str]:
-        # NOTE: this should depend on the model used, but hard coding Llama2-7b for now
-        logging.info("Setting up Llama2-7b-chat tokenizer")
-        tokenizer = AutoTokenizer.from_pretrained(
-            "meta-llama/Llama-2-7b-chat-hf"
-        ).encode
+        # NOTE: this should depend on the model used, but hard coding tiktoken for now
+        logging.info("Setting up tiktoken gpt-4 tokenizer")
+        tokenizer = tiktoken.encoding_for_model("gpt-4").encode
         set_global_tokenizer(tokenizer)
         return tokenizer
 
