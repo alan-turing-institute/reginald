@@ -42,7 +42,7 @@ Lastly, to avoid using CLI variables and be able to simply use `reginald_run`, y
     - For `chat-completion-openai` and `llama-index-gpt-openai`, this refers to the model/engine name on OpenAI
 - `LLAMA_INDEX_MODE`: mode to use ("query" or "chat") if using `llama-index` model
 - `LLAMA_INDEX_DATA_DIR`: data directory if using `llama-index` model
-- `LLAMA_INDEX_WHICH_INDEX`: index to use ("handbook", "wikis", "public" or "all_data") if using `llama-index` model
+- `LLAMA_INDEX_WHICH_INDEX`: index to use ("handbook", "wikis", "public", "reg" or "all_data") if using `llama-index` model
 - `LLAMA_INDEX_FORCE_NEW_INDEX`: whether to force a new index if using `llama-index` model
 - `LLAMA_INDEX_MAX_INPUT_SIZE`: max input size if using `llama-index-llama-cpp` or `llama-index-hf` model
 - `LLAMA_INDEX_IS_PATH`: whether to treat REGINALD_MODEL_NAME as a path if using `llama-index-llama-cpp` model

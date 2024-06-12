@@ -134,7 +134,7 @@ class Parser(argparse.ArgumentParser):
                 "Default is 'all_data'."
             ),
             default=lambda: get_env_var("LLAMA_INDEX_WHICH_INDEX", secret_value=False),
-            choices=["handbook", "wikis", "public", "all_data"],
+            choices=["handbook", "wikis", "public", "reg", "all_data"],
         )
         self.add_argument(
             "--max-input-size",
