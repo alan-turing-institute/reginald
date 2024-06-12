@@ -2,24 +2,9 @@ import logging
 import pathlib
 import sys
 
-from reginald.models.models import DEFAULTS, MODELS
-from reginald.models.models.base import ResponseModel
-
-DEFAULT_ARGS = {
-    "model": "hello",
-    "mode": "chat",
-    "data_dir": pathlib.Path(__file__).parent.parent.parent / "data",
-    "which_index": "reg",
-    "force_new_index": False,
-    "max_input_size": 4096,
-    "k": 3,
-    "chunk_size": 512,
-    "chunk_overlap_ratio": 0.1,
-    "num_output": 512,
-    "is_path": False,
-    "n_gpu_layers": 0,
-    "device": "auto",
-}
+from reginald.defaults import DEFAULT_ARGS
+from reginald.models import DEFAULTS, ModelMapper
+from reginald.models.base import ResponseModel
 
 
 def setup_llm(
@@ -114,7 +99,7 @@ def setup_llm(
     if model is None:
         model = DEFAULT_ARGS["model"]
     model = model.lower()
-    if model not in MODELS.keys():
+    if model not in ModelMapper.available_models():
         logging.error(f"Model '{model}' not recognised.")
         sys.exit(1)
     logging.info(f"Setting up '{model}' model.")
@@ -189,7 +174,7 @@ def setup_llm(
         device = DEFAULT_ARGS["device"]
 
     # set up response model
-    model = MODELS[model]
+    model = ModelMapper.get_model(model)
     response_model = model(
         model_name=model_name,
         max_input_size=max_input_size,

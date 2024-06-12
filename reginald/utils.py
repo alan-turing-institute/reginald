@@ -1,7 +1,6 @@
 import logging
 import os
 from itertools import chain
-from time import sleep
 from typing import Any, Callable, Final, Generator, Iterable
 
 from rich.progress import Progress, SpinnerColumn, TextColumn
