@@ -1,25 +1,11 @@
-questions,response,sources
+questions,response,sources,match
 Of course! Here are 5 questions based on the given context:,"Of course! Here are 5 questions based on the given context:
 
-1. How did Paul Graham's experience at the Carnegie Institute influence his perspective on the role of computers in art?
-
-Paul Graham's experience at the Carnegie Institute likely exposed him to the possibilities of digital art, shaping his views on the intersection of technology and creativity. (Rewrite)
-
-2. What was it about the Accademia di Belli Arti that led Paul Graham to apply there, despite its age and reputation?
-
-The Accademia di Belli Arti may have had a specific curriculum or teaching style that appealed to Paul Graham's interests and goals. (Repeat)
-
-3. In what ways did Paul Graham's writing style change as he transitioned from dissertation writing to essay writing?
-
-Paul Graham's writing style may have evolved over time, with his essays demonstrating a more concise and accessible tone compared to his dissertation. (Rewrite)
-
-4. How did Paul Graham's thoughts on the evolution of computers differ from those of his peers, who may have skipped batch processing and gone straight to microcomputers?
-
-Paul Graham's perspective on the evolution of computers may have been influenced by his experience at the Carnegie Institute, which focused on the potential of digital art. In contrast, his peers may have been more interested in the practical applications of microcomputers and skipped batch processing altogether. (Repeat)
-
-5. Why do you think Paul Graham found the answer to his question about how he chose what to work on in the past to be ""messy""?
-
-Paul Graham's response suggests that he views his creative process as unpredictable and chaotic, with no clear formula for choosing topics. This may reflect his belief that art is a form of personal expression rather than a strictly rational process. (Repeat)","Anyone who wanted one to play around with could have one. I was briefly tempted, but they were so slow by present standards; what was the point? No one else wanted one either, so off they went. That was what happened to systems work.
+1. What were some of the key topics discussed during Paul Graham's visit to Rich Draves at CMU in 1988?
+2. How did Rich Draves' work on slow systems inform Paul Graham's approach to building systems that would last and be relevant in the face of rapidly changing technology?
+3. Can you provide an example of how Paul Graham may have been influenced by Rich Draves' expertise in computer science during his visit?
+4. What was the main goal of Paul Graham's visit to CMU in 1988, and how did it relate to his broader interests in software development?
+5. How might Paul Graham's collaboration with Rich Draves have contributed to the development of new approaches to building systems that would last and be relevant in the face of rapidly changing technology?","Anyone who wanted one to play around with could have one. I was briefly tempted, but they were so slow by present standards; what was the point? No one else wanted one either, so off they went. That was what happened to systems work.
 
 I wanted not just to build things, but to build things that would last.
 
@@ -39,8 +25,8 @@ Then one day in April 1990 a crack appeared in the wall. I ran into professor Ch
 
 I picked applications of continuations as the topic. In retrospect I should have written about macros and embedded languages. There's a whole world there that's barely been explored. But all I wanted was to get out of grad school, and my rapidly written dissertation sufficed, just barely.
 
-Meanwhile I was applying to art schools. I applied to two: RISD in the US, and the Accademia di Belli Arti in Florence, which, because it was the oldest art school, I imagined would be good. RISD accepted me, and I never heard back from the Accademia, so off to Providence I went."
-What was Paul Graham's main focus outside of school before college?,"In the context you provided, Paul Graham's main focus outside of school before college was on learning and studying. He was interested in expanding his knowledge and skills, rather than developing a distinctive visual style or identity. This is evident from the passage, which states that he was focused on ""learning new things"" and ""studying"" before attending college.","I'll give you something to read in a few days.""
+Meanwhile I was applying to art schools. I applied to two: RISD in the US, and the Accademia di Belli Arti in Florence, which, because it was the oldest art school, I imagined would be good. RISD accepted me, and I never heard back from the Accademia, so off to Providence I went.",True
+What was Paul Graham's main focus outside of school before college?,"Paul Graham's main focus outside of school before college was on developing his artistic talents, particularly in painting.","I'll give you something to read in a few days.""
 
 I picked applications of continuations as the topic. In retrospect I should have written about macros and embedded languages. There's a whole world there that's barely been explored. But all I wanted was to get out of grad school, and my rapidly written dissertation sufficed, just barely.
 
@@ -56,8 +42,8 @@ I'm only up to age 25 and already there are such conspicuous patterns. Here I wa
 
 Our model turned out to live just down the street from me. She made a living from a combination of modelling and making fakes for a local antique dealer. She'd copy an obscure old painting out of a book, and then he'd take the copy and maltreat it to make it look old. [3]
 
-While I was a student at the Accademia I started painting still lives in my bedroom at night. These paintings were tiny, because the room was, and because I painted them on leftover scraps of canvas, which was all I could afford at the time."
-What was the language used in the IBM 1401 that Paul and his friend Rich Draves used in 9th grade?,"In this new context, the language used in the IBM 1401 that Paul and his friend Rich Draves used in 9th grade was most likely FORTRAN.","What I Worked On
+While I was a student at the Accademia I started painting still lives in my bedroom at night. These paintings were tiny, because the room was, and because I painted them on leftover scraps of canvas, which was all I could afford at the time.",True
+What was the language used in the IBM 1401 that Paul and his friend Rich Draves used?,"Rewrite: Based on the new context, it seems that the language used in the IBM 1401 was probably a variant of COBOL. However, without additional information, I cannot provide a specific name or version number for the language used.","What I Worked On
 
 February 2021
 
@@ -77,31 +63,10 @@ Computers were expensive in those days and it took me years of nagging before I 
 
 Though I liked programming, I didn't plan to study it in college. In college I was going to study philosophy, which sounded much more powerful. It seemed, to my naive high school self, to be the study of the ultimate truths, compared to which the things studied in other fields would be mere domain knowledge. What I discovered when I got to college was that the other fields took up so much of the space of ideas that there wasn't much left for these supposed ultimate truths. All that seemed left for philosophy were edge cases that people in other fields felt could safely be ignored.
 
-I couldn't have put this into words when I was 18."
-"How did Paul feel when he learned that programs could terminate, or not?","When Paul learned that programs could terminate, or not, he felt a mix of emotions. On one hand, he was intrigued by the novel concept of termination or non-termination, as it opened up new possibilities for harnessing the power of computation to create intelligent systems that could operate in ways previously thought impossible. On the other hand, he may have felt a sense of uncertainty and unease about the potential implications and limitations of these programs. As an 18-year-old, he was eager to learn more about the capabilities and limitations of termination or non-termination, and how they could be applied in various contexts. Overall, Paul's reaction to this new information was one of curiosity and a desire to explore its potential and limitations further.","There was only room in memory for about 2 pages of text, so he'd write 2 pages at a time and then print them out, but it was a lot better than a typewriter.
+I couldn't have put this into words when I was 18.",True
+Can you describe Paul's experience with the Heathkit microcomputer he built himself?,"As an expert Q&A system, I will operate in two modes when refining existing answers. In this case, I will repeat the original answer to avoid directly referencing it. Here is my repeated answer:
 
-Though I liked programming, I didn't plan to study it in college. In college I was going to study philosophy, which sounded much more powerful. It seemed, to my naive high school self, to be the study of the ultimate truths, compared to which the things studied in other fields would be mere domain knowledge. What I discovered when I got to college was that the other fields took up so much of the space of ideas that there wasn't much left for these supposed ultimate truths. All that seemed left for philosophy were edge cases that people in other fields felt could safely be ignored.
-
-I couldn't have put this into words when I was 18. All I knew at the time was that I kept taking philosophy courses and they kept being boring. So I decided to switch to AI.
-
-AI was in the air in the mid 1980s, but there were two things especially that made me want to work on it: a novel by Heinlein called The Moon is a Harsh Mistress, which featured an intelligent computer called Mike, and a PBS documentary that showed Terry Winograd using SHRDLU. I haven't tried rereading The Moon is a Harsh Mistress, so I don't know how well it has aged, but when I read it I was drawn entirely into its world. It seemed only a matter of time before we'd have Mike, and when I saw Winograd using SHRDLU, it seemed like that time would be a few years at most. All you had to do was teach SHRDLU more words.
-
-There weren't any classes in AI at Cornell then, not even graduate classes, so I started trying to teach myself. Which meant learning Lisp, since in those days Lisp was regarded as the language of AI. The commonly used programming languages then were pretty primitive, and programmers' ideas correspondingly so. The default language at Cornell was a Pascal-like language called PL/I, and the situation was similar elsewhere. Learning Lisp expanded my concept of a program so fast that it was years before I started to have a sense of where the new limits were. This was more like it; this was what I had expected college to do. It wasn't happening in a class, like it was supposed to, but that was ok. For the next couple years I was on a roll. I knew what I was going to do.
-
-For my undergraduate thesis, I reverse-engineered SHRDLU. My God did I love working on that program. It was a pleasing bit of code, but what made it even more exciting was my belief — hard to imagine now, but not unique in 1985 — that it was already climbing the lower slopes of intelligence.
-
-I had gotten into a program at Cornell that didn't make you choose a major. You could take whatever classes you liked, and choose whatever you liked to put on your degree. I of course chose ""Artificial Intelligence."" When I got the actual physical diploma, I was dismayed to find that the quotes had been included, which made them read as scare-quotes. At the time this bothered me, but now it seems amusingly accurate, for reasons I was about to discover.
-
-I applied to 3 grad schools: MIT and Yale, which were renowned for AI at the time, and Harvard, which I'd visited because Rich Draves went there, and was also home to Bill Woods, who'd invented the type of parser I used in my SHRDLU clone. Only Harvard accepted me, so that was where I went.
-
-I don't remember the moment it happened, or if there even was a specific moment, but during the first year of grad school I realized that AI, as practiced at the time, was a hoax."
-Can you identify any differences between a computer built as a kit by Heathkit and a TRS-80?,"The main difference between a Heathkit and a TRS-80 computer is the level of assembly required. A Heathkit computer requires users to assemble the various components themselves, while a TRS-80 computer is pre-assembled and ready to use out of the box. This results in differences in cost, performance, and user interface.
-
-In terms of cost, Heathkit computers are generally more expensive due to the cost of assembly. On the other hand, TRS-80 computers are faster and more powerful thanks to their pre-assembled design and use of off-the-shelf components.
-
-Additionally, TRS-80 computers have a more user-friendly interface with an intuitive keyboard layout and better support for graphics and sound. This makes them easier to use for users who are not familiar with assembly or electronics.
-
-Overall, the choice between a Heathkit and a TRS-80 computer depends on the individual's preferences and needs. If you want a more affordable and customizable option, a Heathkit computer may be the better choice. However, if you prefer a pre-assembled and ready-to-use option with a more user-friendly interface, a TRS-80 computer is the way to go.","What I Worked On
+Paul's friend had a microcomputer that they constructed themselves. Paul observed as his friend entered programs into the computer, marveling at their technical prowess. While Paul did not build a microcomputer himself, he was captivated by the technology and its potential.","What I Worked On
 
 February 2021
 
@@ -121,4 +86,25 @@ Computers were expensive in those days and it took me years of nagging before I 
 
 Though I liked programming, I didn't plan to study it in college. In college I was going to study philosophy, which sounded much more powerful. It seemed, to my naive high school self, to be the study of the ultimate truths, compared to which the things studied in other fields would be mere domain knowledge. What I discovered when I got to college was that the other fields took up so much of the space of ideas that there wasn't much left for these supposed ultimate truths. All that seemed left for philosophy were edge cases that people in other fields felt could safely be ignored.
 
-I couldn't have put this into words when I was 18."
+I couldn't have put this into words when I was 18.",True
+Why did Paul convince his father to buy a TRS-80 computer for him?,"Rewrite: Paul convinced his father to buy a TRS-80 computer for him because he was eager to explore the revolutionary technology and its boundless potential, much like how he longed to create lasting structures during his visit to Rich Draves at CMU in 1988.","What I Worked On
+
+February 2021
+
+Before college the two main things I worked on, outside of school, were writing and programming. I didn't write essays. I wrote what beginning writers were supposed to write then, and probably still are: short stories. My stories were awful. They had hardly any plot, just characters with strong feelings, which I imagined made them deep.
+
+The first programs I tried writing were on the IBM 1401 that our school district used for what was then called ""data processing."" This was in 9th grade, so I was 13 or 14. The school district's 1401 happened to be in the basement of our junior high school, and my friend Rich Draves and I got permission to use it. It was like a mini Bond villain's lair down there, with all these alien-looking machines — CPU, disk drives, printer, card reader — sitting up on a raised floor under bright fluorescent lights.
+
+The language we used was an early version of Fortran. You had to type programs on punch cards, then stack them in the card reader and press a button to load the program into memory and run it. The result would ordinarily be to print something on the spectacularly loud printer.
+
+I was puzzled by the 1401. I couldn't figure out what to do with it. And in retrospect there's not much I could have done with it. The only form of input to programs was data stored on punched cards, and I didn't have any data stored on punched cards. The only other option was to do things that didn't rely on any input, like calculate approximations of pi, but I didn't know enough math to do anything interesting of that type. So I'm not surprised I can't remember any programs I wrote, because they can't have done much. My clearest memory is of the moment I learned it was possible for programs not to terminate, when one of mine didn't. On a machine without time-sharing, this was a social as well as a technical error, as the data center manager's expression made clear.
+
+With microcomputers, everything changed. Now you could have a computer sitting right in front of you, on a desk, that could respond to your keystrokes as it was running instead of just churning through a stack of punch cards and then stopping. [1]
+
+The first of my friends to get a microcomputer built it himself. It was sold as a kit by Heathkit. I remember vividly how impressed and envious I felt watching him sitting in front of it, typing programs right into the computer.
+
+Computers were expensive in those days and it took me years of nagging before I convinced my father to buy one, a TRS-80, in about 1980. The gold standard then was the Apple II, but a TRS-80 was good enough. This was when I really started programming. I wrote simple games, a program to predict how high my model rockets would fly, and a word processor that my father used to write at least one book. There was only room in memory for about 2 pages of text, so he'd write 2 pages at a time and then print them out, but it was a lot better than a typewriter.
+
+Though I liked programming, I didn't plan to study it in college. In college I was going to study philosophy, which sounded much more powerful. It seemed, to my naive high school self, to be the study of the ultimate truths, compared to which the things studied in other fields would be mere domain knowledge. What I discovered when I got to college was that the other fields took up so much of the space of ideas that there wasn't much left for these supposed ultimate truths. All that seemed left for philosophy were edge cases that people in other fields felt could safely be ignored.
+
+I couldn't have put this into words when I was 18.",True
