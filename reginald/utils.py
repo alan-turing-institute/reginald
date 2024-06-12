@@ -9,14 +9,14 @@ from rich.progress import Progress, SpinnerColumn, TextColumn
 REGINAL_PROMPT: Final[str] = "Reginald: "
 
 
-def stream_progress_wrapper(
-    streamer: Generator | list | tuple | Callable | chain,
+def stream_iter_progress_wrapper(
+    streamer: Iterable | Callable | chain,
     task_str: str = REGINAL_PROMPT,
     progress_bar: bool = True,
-    end: str = "\n",
+    end: str = "",
     *args,
     **kwargs,
-) -> chain | Generator | list | tuple | Callable:
+) -> Iterable:
     """Add a progress bar for iteration.
 
     Examples
@@ -26,14 +26,12 @@ def stream_progress_wrapper(
     ...     for nap in range(naps):
     ...         sleep(1)
     ...         yield f'nap: {nap}'
-    >>> tuple(stream_progress_wrapper(streamer=sleeper))
+    >>> tuple(stream_iter_progress_wrapper(streamer=sleeper))
     <BLANKLINE>
-    Reginald:
-    ('nap: 0', 'nap: 1', 'nap: 2')
-    >>> tuple(stream_progress_wrapper(
+    Reginald: ('nap: 0', 'nap: 1', 'nap: 2')
+    >>> tuple(stream_iter_progress_wrapper(
     ...     streamer=sleeper, progress_bar=False))
-    Reginald:
-    ('nap: 0', 'nap: 1', 'nap: 2')
+    Reginald: ('nap: 0', 'nap: 1', 'nap: 2')
     """
     if isinstance(streamer, Callable):
         streamer = streamer(*args, **kwargs)
@@ -51,6 +49,42 @@ def stream_progress_wrapper(
             streamer = chain((first_item,), streamer)
     print(task_str, end=end)
     return streamer
+
+
+def stream_progress_wrapper(
+    streamer: Callable,
+    task_str: str = REGINAL_PROMPT,
+    progress_bar: bool = True,
+    end: str = "\n",
+    *args,
+    **kwargs,
+) -> chain | Generator | list | tuple | Callable:
+    """Add a progress bar for iteration.
+
+    Examples
+    --------
+    >>> from time import sleep
+    >>> def sleeper(seconds: int = 3) -> str:
+    ...     sleep(seconds)
+    ...     return f'{seconds} seconds nap'
+    >>> stream_progress_wrapper(sleeper)
+    <BLANKLINE>
+    Reginald:
+    '3 seconds nap'
+    """
+    if progress_bar:
+        with Progress(
+            TextColumn("{task.description}[progress.description]"),
+            SpinnerColumn(),
+            transient=True,
+        ) as progress:
+            progress.add_task(task_str)
+            results: Any = streamer(*args, **kwargs)
+        print(task_str, end=end)
+        return results
+    else:
+        print(task_str, end=end)
+        return streamer(*args, **kwargs)
 
 
 def get_env_var(
