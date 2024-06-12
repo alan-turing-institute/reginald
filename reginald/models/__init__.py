@@ -48,7 +48,7 @@ class ModelMapper:
                     LlamaIndexGPTAzure,
                 )
 
-                return LlamaIndexGPTOpenAI
+                return LlamaIndexGPTAzure
             case "llama-index-gpt-openai":
                 from reginald.models.llama_index.llama_index_openai import (
                     LlamaIndexGPTOpenAI,
