@@ -11,4 +11,4 @@ COPY pyproject.toml .
 COPY README.md .
 RUN poetry install --extras api_bot
 
-CMD ["poetry", "run", "reginald_run_api_bot"]
+CMD ["poetry", "run", "reginald", "bot"]

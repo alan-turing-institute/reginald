@@ -11,4 +11,4 @@ COPY pyproject.toml .
 COPY README.md .
 RUN poetry install
 
-CMD ["poetry", "run", "reginald_run"]
+CMD ["poetry", "run", "reginald", "run-all"]

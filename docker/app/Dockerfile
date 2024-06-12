@@ -9,6 +9,6 @@ RUN pip3 install --upgrade pip poetry setuptools wheel
 COPY reginald reginald
 COPY pyproject.toml .
 COPY README.md .
-RUN poetry install
+RUN poetry install --extras api_bot
 
-CMD ["poetry", "run", "reginald", "create-index"]
+CMD ["poetry", "run", "reginald", "app"]
