@@ -376,3 +376,31 @@ def chat(
         n_gpu_layers=n_gpu_layers,
         device=device,
     )
+
+
+@cli.command()
+def download(
+    data_dir: Annotated[
+        str, typer.Option(envvar="LLAMA_INDEX_DATA_DIR")
+    ] = DEFAULT_ARGS["data_dir"],
+    which_index: Annotated[
+        str, typer.Option(envvar="LLAMA_INDEX_WHICH_INDEX")
+    ] = DEFAULT_ARGS["which_index"],
+    azure_storage_key: Annotated[
+        Optional[str], typer.Option(envvar="AZURE_STORAGE_KEY")
+    ] = None,
+    connection_str: Annotated[
+        Optional[str], typer.Option(envvar="AZURE_STORAGE_CONNECTION_STR")
+    ] = None,
+) -> None:
+    """
+    Download data from an Azure file share.
+    """
+    set_up_logging_config(level=20)
+    main(
+        cli="download",
+        data_dir=data_dir,
+        which_index=which_index,
+        azure_storage_key=azure_storage_key,
+        connection_str=connection_str,
+    )

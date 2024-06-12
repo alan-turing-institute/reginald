@@ -56,6 +56,7 @@ typer = {extras = ["all"], version = "^0.12.3"}
 langchain-community = "^0.2.4"
 tiktoken = "^0.7.0"
 llama-index-embeddings-huggingface = "^0.2.1"
+azure-storage-file-share = "^12.16.0"
 
 
 [tool.poetry.group.dev.dependencies]

@@ -40,3 +40,19 @@ def get_env_var(
             logging.warn(f"Environment variable '{var}' not found.")
 
     return value
+
+
+def create_folder(folder: str) -> None:
+    """
+    Function to create a folder if it does not already exist.
+
+    Parameters
+    ----------
+    folder : str
+        Name of the folder to be created.
+    """
+    if not os.path.exists(folder):
+        logging.info(f"Creating folder '{folder}'")
+        os.makedirs(folder)
+    else:
+        logging.info(f"Folder '{folder}' already exists")
