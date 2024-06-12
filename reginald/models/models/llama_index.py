@@ -637,11 +637,8 @@ class LlamaIndex(ResponseModel):
 
         else:
             logging.info("Loading the storage context")
-            storage_context = stream_progress_wrapper(
-                streamer=StorageContext.from_defaults(
-                    persist_dir=self.data_dir / LLAMA_INDEX_DIR / self.which_index
-                ),
-                task_str="Loading the storage context...",
+            storage_context = StorageContext.from_defaults(
+                persist_dir=self.data_dir / LLAMA_INDEX_DIR / self.which_index
             )
 
             logging.info("Loading the pre-processed index")
