@@ -6765,4 +6765,4 @@ llama-index-notebooks = ["bitsandbytes", "gradio", "ipykernel", "nbconvert"]
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.11,<3.12"
-content-hash = "74ad10d1b8868799c1e870e671ce71f1c39f562fdfc980563cd254d9a0b86e1d"
+content-hash = "3c2fb819c064f00c71ebc15edaee17905150a91adc0e2b2c2026e406f29a33b6"
