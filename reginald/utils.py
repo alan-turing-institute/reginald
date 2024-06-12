@@ -1,7 +1,8 @@
 import logging
 import os
+from itertools import chain
 from time import sleep
-from typing import Any, Callable, Final, Iterable
+from typing import Any, Callable, Final, Generator, Iterable
 
 from rich.progress import Progress, SpinnerColumn, TextColumn
 
@@ -9,28 +10,30 @@ REGINAL_PROMPT: Final[str] = "Reginald: "
 
 
 def stream_progress_wrapper(
-    streamer: Callable | Iterable,
+    streamer: Generator | list | tuple | Callable | chain,
     task_str: str = REGINAL_PROMPT,
     progress_bar: bool = True,
     end: str = "\n",
     *args,
     **kwargs,
-) -> Any:
+) -> chain | Generator | list | tuple | Callable:
     """Add a progress bar for iteration.
 
     Examples
     --------
     >>> from time import sleep
-    >>> def sleeper() -> str:
-    ...    sleep(1)
-    ...    return 'hi'
-    >>> stream_progress_wrapper(streamer=sleeper)
+    >>> def sleeper(naps: int = 3) -> Generator[str, None, None]:
+    ...     for nap in range(naps):
+    ...         sleep(1)
+    ...         yield f'nap: {nap}'
+    >>> tuple(stream_progress_wrapper(streamer=sleeper))
     <BLANKLINE>
     Reginald:
-    'hi'
-    >>> stream_progress_wrapper(streamer=sleeper, progress_bar=False)
+    ('nap: 0', 'nap: 1', 'nap: 2')
+    >>> tuple(stream_progress_wrapper(
+    ...     streamer=sleeper, progress_bar=False))
     Reginald:
-    'hi'
+    ('nap: 0', 'nap: 1', 'nap: 2')
     """
     if isinstance(streamer, Callable):
         streamer = streamer(*args, **kwargs)
@@ -40,7 +43,12 @@ def stream_progress_wrapper(
             SpinnerColumn(),
             transient=True,
         ) as progress:
+            if isinstance(streamer, list | tuple):
+                streamer = (item for item in streamer)
+            assert isinstance(streamer, Generator)
             progress.add_task(task_str)
+            first_item = next(streamer)
+            streamer = chain((first_item,), streamer)
     print(task_str, end=end)
     return streamer
 
