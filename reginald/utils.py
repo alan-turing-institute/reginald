@@ -1,5 +1,45 @@
 import logging
 import os
+from time import sleep
+from typing import Any, Callable, Final, Iterable
+
+from rich.progress import Progress, SpinnerColumn, TextColumn
+
+REGINAL_PROMPT: Final[str] = "Reginald: "
+
+
+def stream_progress_wrapper(
+    streamer: Callable | Iterable,
+    task_str: str = REGINAL_PROMPT,
+    progress_bar: bool = True,
+    *args,
+    **kwargs,
+) -> Any:
+    """Add a progress bar for iteration.
+
+    Examples
+    --------
+    >>> from time import sleep
+    >>> def sleeper() -> str:
+    ...    sleep(1)
+    ...    return 'hi'
+    >>> stream_progress_wrapper(streamer=sleeper)
+    <BLANKLINE>
+    Reginald: 'hi'
+    >>> stream_progress_wrapper(streamer=sleeper, progress_bar=False)
+    Reginald: 'hi'
+    """
+    if isinstance(streamer, Callable):
+        streamer = streamer(*args, **kwargs)
+    if progress_bar:
+        with Progress(
+            TextColumn("{task.description}[progress.description]"),
+            SpinnerColumn(),
+            transient=True,
+        ) as progress:
+            progress.add_task(task_str)
+    print(task_str, end="")
+    return streamer
 
 
 def get_env_var(

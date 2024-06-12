@@ -44,7 +44,7 @@ from transformers import AutoTokenizer
 
 from reginald.models.models.base import MessageResponse, ResponseModel
 from reginald.models.models.llama_utils import completion_to_prompt, messages_to_prompt
-from reginald.utils import get_env_var
+from reginald.utils import get_env_var, stream_progress_wrapper
 
 nest_asyncio.apply()
 
@@ -862,8 +862,8 @@ class LlamaIndex(ResponseModel):
                 self.query_engine._response_synthesizer._streaming = True
                 response_stream = self.query_engine.query(message)
 
-            print("\nReginald: ", end="")
-            for token in response_stream.response_gen:
+            # print("\nReginald: ", end="")
+            for token in stream_progress_wrapper(response_stream.response_gen):
                 print(token, end="")
 
             formatted_response = "\n\n\n" + self._format_sources(response_stream)
