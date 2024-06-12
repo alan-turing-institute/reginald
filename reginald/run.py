@@ -21,7 +21,7 @@ from reginald.slack_bot.setup_bot import (
 LISTENING_MSG: Final[str] = "Listening for requests..."
 
 
-async def run_bot(api_url: str | None, emoji: str):
+async def run_bot(api_url: str | None, emoji: str) -> None:
     if api_url is None:
         logging.error(
             "API URL is not set. Please set the REGINALD_API_URL "
@@ -44,7 +44,7 @@ async def run_reginald_app(**kwargs) -> None:
     uvicorn.run(app, host="0.0.0.0", port=8000)
 
 
-async def run_full_pipeline(**kwargs):
+async def run_full_pipeline(**kwargs) -> None:
     # set up response model
     response_model = setup_llm(**kwargs)
     bot = setup_slack_bot(response_model)
@@ -56,20 +56,32 @@ async def run_full_pipeline(**kwargs):
 def run_chat_interact(streaming: bool = False, **kwargs) -> ResponseModel:
     # set up response model
     response_model = setup_llm(**kwargs)
+    user_id = "command_line_chat"
+
     while True:
         message = input(">>> ")
         if message in ["exit", "exit()", "quit()", "bye Reginald"]:
             return response_model
+        if message in ["clear_history", "\clear_history"]:
+            if (
+                response_model.mode == "chat"
+                and response_model.chat_engine.get(user_id) is not None
+            ):
+                response_model.chat_engine[user_id].reset()
+                print("\nReginald: History cleared.")
+            else:
+                print("\nReginald: No history to clear.")
+            continue
 
         if streaming:
-            response = response_model.stream_message(message=message, user_id="chat")
+            response = response_model.stream_message(message=message, user_id=user_id)
             print("")
         else:
-            response = response_model.direct_message(message=message, user_id="chat")
+            response = response_model.direct_message(message=message, user_id=user_id)
             print(f"\nReginald: {response.message}")
 
 
-async def connect_client(client: SocketModeClient):
+async def connect_client(client: SocketModeClient) -> None:
     await client.connect()
     # listen for events
     logging.info(LISTENING_MSG)
