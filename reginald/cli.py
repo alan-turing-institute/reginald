@@ -25,6 +25,7 @@ HELP_TEXT = {
     "device": "Device to use (ignored if not using llama-index).",
     "api_url": "API URL for the Reginald app.",
     "emoji": "Emoji to use for the bot.",
+    "streaming": "Whether to use streaming for the chat interaction.",
 }
 
 cli = typer.Typer()
@@ -102,6 +103,11 @@ def run_all(
         str, typer.Option(envvar="LLAMA_INDEX_DEVICE", help=HELP_TEXT["device"])
     ] = DEFAULT_ARGS["device"],
 ) -> None:
+    """
+    Run all the components of the Reginald slack bot.
+    Establishes the connection to the Slack API, sets up the bot,
+    and creates a Reginald model to query from.
+    """
     set_up_logging_config(level=20)
     main(
         cli="run_all",
@@ -135,7 +141,7 @@ def bot(
     ] = EMOJI_DEFAULT,
 ) -> None:
     """
-    Main function to run the Slack bot which sets up the bot
+    Run the Slack bot which sets up the bot
     (which uses an API for responding to messages) and
     then establishes a WebSocket connection to the
     Socket Mode servers and listens for events.
@@ -213,8 +219,8 @@ def app(
     ] = DEFAULT_ARGS["device"],
 ) -> None:
     """
-    Main function to run the app which sets up the response model
-    and then creates a FastAPI app to serve the model.
+    Sets up the response model and then creates a
+    FastAPI app to serve the model.
 
     The app listens on port 8000 and has two endpoints:
     - /direct_message: for obtaining responses from direct messages
@@ -262,6 +268,9 @@ def create_index(
         int, typer.Option(envvar="LLAMA_INDEX_NUM_OUTPUT")
     ] = DEFAULT_ARGS["num_output"],
 ) -> None:
+    """
+    Create an index for the Reginald model.
+    """
     set_up_logging_config(level=20)
     main(
         cli="create_index",
@@ -288,6 +297,12 @@ def chat(
         Optional[str],
         typer.Option(envvar="REGINALD_MODEL_NAME", help=HELP_TEXT["model_name"]),
     ] = None,
+    streaming: Annotated[
+        bool,
+        typer.Option(
+            help=HELP_TEXT["streaming"],
+        ),
+    ] = True,
     mode: Annotated[
         str, typer.Option(envvar="LLAMA_INDEX_MODE", help=HELP_TEXT["mode"])
     ] = DEFAULT_ARGS["mode"],
@@ -339,9 +354,13 @@ def chat(
         str, typer.Option(envvar="LLAMA_INDEX_DEVICE", help=HELP_TEXT["device"])
     ] = DEFAULT_ARGS["device"],
 ) -> None:
+    """
+    Run the chat interaction with the Reginald model.
+    """
     set_up_logging_config(level=40)
     main(
         cli="chat",
+        streaming=streaming,
         model=model,
         model_name=model_name,
         mode=mode,

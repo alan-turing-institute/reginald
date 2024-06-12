@@ -28,9 +28,13 @@ class ResponseModel(ABC):
             Emoji to use for the bot's response
         """
         self.emoji = emoji
+        self.mode = "NA"
 
     def direct_message(self, message: str, user_id: str) -> MessageResponse:
         raise NotImplementedError
 
     def channel_mention(self, message: str, user_id: str) -> MessageResponse:
+        raise NotImplementedError
+
+    def stream_message(self, message: str, user_id: str) -> None:
         raise NotImplementedError

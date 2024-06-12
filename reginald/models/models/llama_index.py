@@ -44,7 +44,11 @@ from transformers import AutoTokenizer
 
 from reginald.models.models.base import MessageResponse, ResponseModel
 from reginald.models.models.llama_utils import completion_to_prompt, messages_to_prompt
-from reginald.utils import get_env_var
+from reginald.utils import (
+    get_env_var,
+    stream_iter_progress_wrapper,
+    stream_progress_wrapper,
+)
 
 nest_asyncio.apply()
 
@@ -632,28 +636,39 @@ class LlamaIndex(ResponseModel):
                 data_dir=self.data_dir,
                 settings=settings,
             )
-            self.index = data_creator.create_index()
-            data_creator.save_index()
+            self.index = stream_progress_wrapper(
+                data_creator.create_index,
+                task_str="Generating the index from scratch...",
+            )
+            stream_progress_wrapper(
+                data_creator.save_index,
+                task_str="Saving the index...",
+            )
 
         else:
             logging.info("Loading the storage context")
-            storage_context = StorageContext.from_defaults(
-                persist_dir=self.data_dir / LLAMA_INDEX_DIR / self.which_index
+            storage_context = stream_progress_wrapper(
+                StorageContext.from_defaults,
+                task_str="Loading the storage context...",
+                persist_dir=self.data_dir / LLAMA_INDEX_DIR / self.which_index,
             )
 
             logging.info("Loading the pre-processed index")
-            self.index = load_index_from_storage(
+            self.index = stream_progress_wrapper(
+                load_index_from_storage,
+                task_str="Loading the pre-processed index...",
                 storage_context=storage_context,
                 settings=settings,
             )
 
-        response_mode = "simple_summarize"
+        self.response_mode = "simple_summarize"
         if self.mode == "chat":
             self.chat_engine = {}
             logging.info("Done setting up Huggingface backend for chat engine.")
         elif self.mode == "query":
             self.query_engine = self.index.as_query_engine(
-                response_mode=response_mode, similarity_top_k=k
+                response_mode=self.response_mode,
+                similarity_top_k=k,
             )
             logging.info("Done setting up Huggingface backend for query engine.")
 
@@ -693,64 +708,8 @@ class LlamaIndex(ResponseModel):
 
         result = "I read the following documents to compose this answer:\n"
         result += "\n\n".join(texts)
+
         return result
-
-    def _get_response(self, msg_in: str, user_id: str) -> str:
-        """
-        Method to obtain a response from the query/chat engine given
-        a message and a user id.
-
-        Parameters
-        ----------
-        msg_in : str
-            Message from user
-        user_id : str
-            User ID
-
-        Returns
-        -------
-        str
-            String containing the response from the query engine.
-        """
-        response_mode = "simple_summarize"
-        try:
-            if self.mode == "chat":
-                # create chat engine for user if does not exist
-                if self.chat_engine.get(user_id) is None:
-                    self.chat_engine[user_id] = self.index.as_chat_engine(
-                        chat_mode="context",
-                        response_mode=response_mode,
-                        similarity_top_k=self.k,
-                    )
-
-                # obtain chat engine for particular user
-                chat_engine = self.chat_engine[user_id]
-                response = chat_engine.chat(msg_in)
-            elif self.mode == "query":
-                response = self.query_engine.query(msg_in)
-
-            # concatenate the response with the resources that it used
-            formatted_response = (
-                response.response + "\n\n\n" + self._format_sources(response)
-            )
-        except Exception as e:  # ignore: broad-except
-            formatted_response = self.error_response_template.format(repr(e))
-        pattern = (
-            r"(?s)^Context information is"
-            r".*"
-            r"Given the context information and not prior knowledge, answer the question: "
-            rf"{msg_in}"
-            r"\n(.*)"
-        )
-        m = re.search(pattern, formatted_response)
-        if m:
-            answer = m.group(1)
-        else:
-            logging.warning(
-                "Was expecting a backend response with a regular expression but couldn't find a match."
-            )
-            answer = formatted_response
-        return answer
 
     def _prep_llm(self) -> BaseLLM:
         """
@@ -788,7 +747,7 @@ class LlamaIndex(ResponseModel):
             "_prep_tokenizer needs to be implemented by a subclass of LlamaIndex."
         )
 
-    def _respond(self, message: str, user_id: str) -> MessageResponse:
+    def _get_response(self, message: str, user_id: str) -> MessageResponse:
         """
         Method to respond to a message in Slack.
 
@@ -804,9 +763,48 @@ class LlamaIndex(ResponseModel):
         MessageResponse
             Response from the query engine.
         """
-        backend_response = self._get_response(message, user_id)
+        try:
+            if self.mode == "chat":
+                # create chat engine for user if does not exist
+                if self.chat_engine.get(user_id) is None:
+                    self.chat_engine[user_id] = self.index.as_chat_engine(
+                        chat_mode="condense_plus_context",
+                        response_mode=self.response_mode,
+                        similarity_top_k=self.k,
+                    )
 
-        return MessageResponse(backend_response)
+                # obtain chat engine for particular user
+                chat_engine = self.chat_engine[user_id]
+                response = chat_engine.chat(message)
+            elif self.mode == "query":
+                self.query_engine._response_synthesizer._streaming = False
+                response = self.query_engine.query(message)
+
+            # concatenate the response with the resources that it used
+            formatted_response = (
+                response.response + "\n\n\n" + self._format_sources(response)
+            )
+        except Exception as e:  # ignore: broad-except
+            formatted_response = self.error_response_template.format(repr(e))
+
+        pattern = (
+            r"(?s)^Context information is"
+            r".*"
+            r"Given the context information and not prior knowledge, answer the question: "
+            rf"{message}"
+            r"\n(.*)"
+        )
+        m = re.search(pattern, formatted_response)
+
+        if m:
+            answer = m.group(1)
+        else:
+            logging.warning(
+                "Was expecting a backend response with a regular expression but couldn't find a match."
+            )
+            answer = formatted_response
+
+        return MessageResponse(answer)
 
     def direct_message(self, message: str, user_id: str) -> MessageResponse:
         """
@@ -824,7 +822,7 @@ class LlamaIndex(ResponseModel):
         MessageResponse
             Response from the query engine.
         """
-        return self._respond(message=message, user_id=user_id)
+        return self._get_response(message=message, user_id=user_id)
 
     def channel_mention(self, message: str, user_id: str) -> MessageResponse:
         """
@@ -842,7 +840,54 @@ class LlamaIndex(ResponseModel):
         MessageResponse
             Response from the query engine.
         """
-        return self._respond(message=message, user_id=user_id)
+        return self._get_response(message=message, user_id=user_id)
+
+    def stream_message(self, message: str, user_id: str) -> None:
+        """
+        Method to respond to a stream message in Slack.
+
+        Parameters
+        ----------
+        msg_in : str
+            Message from user
+        user_id : str
+            User ID
+
+        Returns
+        -------
+        MessageResponse
+            Response from the query engine.
+        """
+        try:
+            if self.mode == "chat":
+                # create chat engine for user if does not exist
+                if self.chat_engine.get(user_id) is None:
+                    self.chat_engine[user_id] = self.index.as_chat_engine(
+                        chat_mode="condense_plus_context",
+                        response_mode=self.response_mode,
+                        similarity_top_k=self.k,
+                        streaming=True,
+                    )
+
+                # obtain chat engine for particular user
+                chat_engine = self.chat_engine[user_id]
+                response_stream = chat_engine.stream_chat(message)
+            elif self.mode == "query":
+                self.query_engine._response_synthesizer._streaming = True
+                response_stream = self.query_engine.query(message)
+
+            for token in stream_iter_progress_wrapper(response_stream.response_gen):
+                print(token, end="", flush=True)
+
+            formatted_response = "\n\n\n" + self._format_sources(response_stream)
+
+            for token in re.split(r"(\s+)", formatted_response):
+                print(token, end="", flush=True)
+        except Exception as e:  # ignore: broad-except
+            for token in re.split(
+                r"(\s+)", self.error_response_template.format(repr(e))
+            ):
+                print(token, end="", flush=True)
 
 
 class LlamaIndexOllama(LlamaIndex):

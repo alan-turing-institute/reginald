@@ -56,6 +56,7 @@ typer = {extras = ["all"], version = "^0.12.3"}
 langchain-community = "^0.2.4"
 tiktoken = "^0.7.0"
 llama-index-embeddings-huggingface = "^0.2.1"
+rich = "^13.7.1"
 
 
 [tool.poetry.group.dev.dependencies]
@@ -105,10 +106,13 @@ build-backend = "poetry.core.masonry.api"
 minversion = "6.0"
 testpaths = [
     "tests",
+    "reginald",
 ]
 addopts = """
-  --cov=estios
+  --cov=reginald
   --cov-report=term:skip-covered
   --cov-append
   --pdbcls=IPython.terminal.debugger:TerminalPdb
+  --doctest-modules
 """
+doctest_optionflags = ["NORMALIZE_WHITESPACE", "ELLIPSIS",]
