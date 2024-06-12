@@ -58,7 +58,7 @@ def stream_progress_wrapper(
     end: str = "\n",
     *args,
     **kwargs,
-) -> chain | Generator | list | tuple | Callable:
+) -> Any:
     """Add a progress bar for iteration.
 
     Examples

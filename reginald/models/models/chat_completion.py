@@ -6,7 +6,7 @@ import openai
 from openai import AzureOpenAI, OpenAI
 
 from reginald.models.models.base import MessageResponse, ResponseModel
-from reginald.utils import get_env_var, stream_progress_wrapper
+from reginald.utils import get_env_var, stream_iter_progress_wrapper
 
 
 class ChatCompletionBase(ResponseModel):
@@ -180,7 +180,7 @@ class ChatCompletionAzure(ChatCompletionBase):
                 stream=True,
             )
 
-        for chunk in stream_progress_wrapper(response):
+        for chunk in stream_iter_progress_wrapper(response):
             print(chunk.choices[0].delta.content, end="", flush=True)
 
 
@@ -269,5 +269,5 @@ class ChatCompletionOpenAI(ChatCompletionBase):
             stream=True,
         )
 
-        for chunk in stream_progress_wrapper(response):
+        for chunk in stream_iter_progress_wrapper(response):
             print(chunk.choices[0].delta.content, end="", flush=True)

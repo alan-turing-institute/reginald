@@ -44,7 +44,11 @@ from transformers import AutoTokenizer
 
 from reginald.models.models.base import MessageResponse, ResponseModel
 from reginald.models.models.llama_utils import completion_to_prompt, messages_to_prompt
-from reginald.utils import get_env_var, stream_progress_wrapper
+from reginald.utils import (
+    get_env_var,
+    stream_iter_progress_wrapper,
+    stream_progress_wrapper,
+)
 
 nest_asyncio.apply()
 
@@ -632,17 +636,27 @@ class LlamaIndex(ResponseModel):
                 data_dir=self.data_dir,
                 settings=settings,
             )
-            self.index = data_creator.create_index()
-            data_creator.save_index()
+            self.index = stream_progress_wrapper(
+                data_creator.create_index,
+                task_str="Generating the index from scratch...",
+            )
+            stream_progress_wrapper(
+                data_creator.save_index,
+                task_str="Saving the index...",
+            )
 
         else:
             logging.info("Loading the storage context")
-            storage_context = StorageContext.from_defaults(
-                persist_dir=self.data_dir / LLAMA_INDEX_DIR / self.which_index
+            storage_context = stream_progress_wrapper(
+                StorageContext.from_defaults,
+                task_str="Loading the storage context...",
+                persist_dir=self.data_dir / LLAMA_INDEX_DIR / self.which_index,
             )
 
             logging.info("Loading the pre-processed index")
-            self.index = load_index_from_storage(
+            self.index = stream_progress_wrapper(
+                load_index_from_storage,
+                task_str="Loading the pre-processed index...",
                 storage_context=storage_context,
                 settings=settings,
             )
@@ -862,7 +876,7 @@ class LlamaIndex(ResponseModel):
                 self.query_engine._response_synthesizer._streaming = True
                 response_stream = self.query_engine.query(message)
 
-            for token in stream_progress_wrapper(response_stream.response_gen):
+            for token in stream_iter_progress_wrapper(response_stream.response_gen):
                 print(token, end="", flush=True)
 
             formatted_response = "\n\n\n" + self._format_sources(response_stream)

@@ -16,9 +16,8 @@ def test_chat_cli():
     result = runner.invoke(cli, ["chat"], input="What's up dock?\nexit\n")
     term_stdout_lines: list[str] = result.stdout.split("\n")
     assert term_stdout_lines[0] == ">>> "
-    assert term_stdout_lines[1] == "Reginald: "
-    assert term_stdout_lines[2] == "Hello! How are you?"
-    assert term_stdout_lines[3] == ">>> "
+    assert term_stdout_lines[1] == "Reginald: Hello! How are you?"
+    assert term_stdout_lines[2] == ">>> "
 
 
 def test_chat_cli_no_stream():
