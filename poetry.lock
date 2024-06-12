@@ -5096,4 +5096,4 @@ azure = ["azure-storage-file-share", "pulumi", "pulumi-azure-native"]
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.11,<3.12"
-content-hash = "6c025f7263718fd83e17df5ff9f4fbacfdef3e41e3338d2567859b58e50d6050"
+content-hash = "4d7330aee8ed44e7b403e2a21fc304c310e2ae5f9fba6a72079257869506a085"

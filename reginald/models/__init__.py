@@ -44,8 +44,8 @@ class ModelMapper:
 
                 return LlamaIndexHF
             case "llama-index-gpt-azure":
-                from reginald.models.llama_index.llama_index_openai import (
-                    LlamaIndexGPTOpenAI,
+                from reginald.models.llama_index.llama_index_azure_openai import (
+                    LlamaIndexGPTAzure,
                 )
 
                 return LlamaIndexGPTOpenAI

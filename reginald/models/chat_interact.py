@@ -25,6 +25,8 @@ def run_chat_interact(streaming: bool = False, **kwargs) -> ResponseModel:
         message = input(">>> ")
         if message in ["exit", "exit()", "quit()", "bye Reginald"]:
             return response_model
+        if message == "":
+            continue
         if message in ["clear_history", "\clear_history"]:
             if (
                 response_model.mode == "chat"
