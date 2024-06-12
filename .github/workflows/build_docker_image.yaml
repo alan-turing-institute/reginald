@@ -20,12 +20,14 @@ jobs:
       fail-fast: false
       matrix:
         include:
-          - dockerfile: docker/reginald/Dockerfile
-            image: ghcr.io/${{ github.repository }}_reginald
+          - dockerfile: docker/run_all/Dockerfile
+            image: ghcr.io/${{ github.repository }}_run_all
           - dockerfile: docker/slack_bot/Dockerfile
             image: ghcr.io/${{ github.repository }}_slackbot
           - dockerfile: docker/create_index/Dockerfile
             image: ghcr.io/${{ github.repository }}_create_index
+          - dockerfile: docker/reginald_app/Dockerfile
+            image: ghcr.io/${{ github.repository }}_app
     permissions:
       packages: write
       contents: read
