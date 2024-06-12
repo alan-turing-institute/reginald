@@ -115,3 +115,4 @@ addopts = """
   --pdbcls=IPython.terminal.debugger:TerminalPdb
   --doctest-modules
 """
+doctest_optionflags = ["NORMALIZE_WHITESPACE", "ELLIPSIS",]
