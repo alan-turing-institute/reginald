@@ -8,6 +8,7 @@ from reginald.models.models.llama_index import (
     LlamaIndexGPTOpenAI,
     LlamaIndexHF,
     LlamaIndexLlamaCPP,
+    LlamaIndexOllama,
 )
 
 # Please ensure that any models needing OPENAI_API_KEY are named *openai*
@@ -16,6 +17,7 @@ MODELS = {
     "chat-completion-azure": ChatCompletionAzure,
     "chat-completion-openai": ChatCompletionOpenAI,
     "hello": Hello,
+    "llama-index-ollama": LlamaIndexOllama,
     "llama-index-llama-cpp": LlamaIndexLlamaCPP,
     "llama-index-hf": LlamaIndexHF,
     "llama-index-gpt-azure": LlamaIndexGPTAzure,
@@ -26,6 +28,7 @@ DEFAULTS = {
     "chat-completion-azure": "reginald-curie",
     "chat-completion-openai": "gpt-3.5-turbo",
     "hello": None,
+    "llama-index-ollama": "llama3",
     "llama-index-llama-cpp": "https://huggingface.co/TheBloke/Llama-2-13B-chat-GGUF/resolve/main/llama-2-13b-chat.Q6_K.gguf",
     "llama-index-hf": "microsoft/phi-1_5",
     "llama-index-gpt-azure": "reginald-gpt35-turbo",
