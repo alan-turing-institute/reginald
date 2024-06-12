@@ -12,6 +12,7 @@ def stream_progress_wrapper(
     streamer: Callable | Iterable,
     task_str: str = REGINAL_PROMPT,
     progress_bar: bool = True,
+    end: str = "\n",
     *args,
     **kwargs,
 ) -> Any:
@@ -25,9 +26,11 @@ def stream_progress_wrapper(
     ...    return 'hi'
     >>> stream_progress_wrapper(streamer=sleeper)
     <BLANKLINE>
-    Reginald: 'hi'
+    Reginald:
+    'hi'
     >>> stream_progress_wrapper(streamer=sleeper, progress_bar=False)
-    Reginald: 'hi'
+    Reginald:
+    'hi'
     """
     if isinstance(streamer, Callable):
         streamer = streamer(*args, **kwargs)
@@ -38,7 +41,7 @@ def stream_progress_wrapper(
             transient=True,
         ) as progress:
             progress.add_task(task_str)
-    print(task_str, end="")
+    print(task_str, end=end)
     return streamer
 
 
