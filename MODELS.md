@@ -32,7 +32,7 @@ When running the Reginald Slack bot, you can specify which data index to use usi
 - `public`: builds an index with the all the public data listed above
 - `all_data`: builds an index with all the data listed above including data from our private repo
 
-Once a data index has been built, it will be saved in the `data` directory specified in the `reginald_run` (or `reginald_run_api_llm`) CLI arguments or the `LLAMA_INDEX_DATA_DIR` environment variable. If you want to force a new index to be built, you can use the `--force-new-index` or `-f` flag, or you can set the `LLAMA_INDEX_FORCE_NEW_INDEX` environment variable to `True`.
+Once a data index has been built, it will be saved in the `data` directory specified in the `reginald run_all` (or `reginald run_all_api_llm`) CLI arguments or the `LLAMA_INDEX_DATA_DIR` environment variable. If you want to force a new index to be built, you can use the `--force-new-index` or `-f` flag, or you can set the `LLAMA_INDEX_FORCE_NEW_INDEX` environment variable to `True`.
 
 There are several options of the LLM to use with the `llama-index` models, some of which we have implemented in this library and which we discuss below.
 
@@ -45,7 +45,7 @@ We have two models which involve hosting the LLM ourselves and using the `llama-
 This model uses the [`llama-cpp-python`](https://github.com/abetlen/llama-cpp-python) library to host a quantised LLM. In our case, we have been using quantised versions of Meta's Llama-2 model uploaded by [TheBloke](https://huggingface.co/TheBloke) on Huggingface's model hub. An example of running this model locally is:
 
 ```bash
-reginald_run \
+reginald run_all \
   --model llama-index-llama-cpp \
   --model-name https://huggingface.co/TheBloke/Llama-2-7b-Chat-GGUF/resolve/main/llama-2-7b-chat.Q4_K_M.gguf \
   --mode chat \
@@ -64,7 +64,7 @@ Running this command requires about 7GB of RAM. We were able to run this on our 
 If you wish to download the quantised model (as a `.gguf` file) and host it yourself, you can do so by passing the file name to the `--model-name` argument and using the `--is-path` flag (alternatively, you can re-run the above but first set the environment variable `LLAMA_INDEX_IS_PATH` to `True`):
 
 ```bash
-reginald_run \
+reginald run_all \
   --model llama-index-llama-cpp \
   --model-name gguf_models/llama-2-7b-chat.Q4_K_M.gguf \
   --is-path \
@@ -82,7 +82,7 @@ given that the `llama-2-7b-chat.Q4_K_M.gguf` file is in a `gguf_models` director
 This model uses an LLM from [Huggingface](https://huggingface.co/models) to generate a response. An example of running this model locally is:
 
 ```bash
-reginald_run \
+reginald run_all \
   --model llama-index-hf \
   --model-name microsoft/phi-1_5 \
   --mode chat \
@@ -107,7 +107,7 @@ To use this model, you must set the following environment variables:
 An example of running this model locally is:
 
 ```bash
-reginald_run \
+reginald run_all \
   --model llama-index-gpt-azure \
   --model-name "reginald-gpt35-turbo" \
   --mode chat \
@@ -124,7 +124,7 @@ To use this model, you must set the `OPENAI_API_KEY` environment variable and se
 An example of running this model locally is:
 
 ```bash
-reginald_run \
+reginald run_all \
   --model llama-index-gpt-openai \
   --model-name "gpt-3.5-turbo" \
   --mode chat \
@@ -145,7 +145,7 @@ To use this model, you must set the following environment variables:
 An example of running this model locally is:
 
 ```bash
-reginald_run \
+reginald run_all \
   --model chat-completion-azure \
   --model-name "reginald-curie"
 ```
@@ -160,7 +160,7 @@ To use this model, you must set the `OPENAI_API_KEY` environment variable and se
 An example of running this model locally is:
 
 ```bash
-reginald_run \
+reginald run_all \
   --model chat-completion-openai \
   --model-name "gpt-3.5-turbo"
 ```
