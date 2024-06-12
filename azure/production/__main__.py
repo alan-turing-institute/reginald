@@ -7,6 +7,8 @@ from pulumi_azure_native import (
     storage,
 )
 
+from reginald.defaults import DEFAULT_ARGS
+
 # Get some configuration variables
 stack_name = pulumi.get_stack()
 config = pulumi.Config()
@@ -103,10 +105,6 @@ container_group = containerinstance.ContainerGroup(
             name="reginald-production",  # maximum of 63 characters
             environment_variables=[
                 containerinstance.EnvironmentVariableArgs(
-                    name="REGINALD_MODEL",
-                    value="llama-index-llama-cpp",
-                ),
-                containerinstance.EnvironmentVariableArgs(
                     name="SLACK_APP_TOKEN",
                     secure_value=config.get_secret("REGINALD_SLACK_APP_TOKEN"),
                 ),
@@ -154,29 +152,77 @@ container_group = containerinstance.ContainerGroup(
                 ),
                 containerinstance.EnvironmentVariableArgs(
                     name="LLAMA_INDEX_MAX_INPUT_SIZE",
-                    value="4096",
+                    value=DEFAULT_ARGS["max_input_size"],
                 ),
                 containerinstance.EnvironmentVariableArgs(
                     name="LLAMA_INDEX_K",
-                    value="3",
+                    value=DEFAULT_ARGS["k"],
                 ),
                 containerinstance.EnvironmentVariableArgs(
                     name="LLAMA_INDEX_CHUNK_SIZE",
-                    value="512",
+                    value=DEFAULT_ARGS["chunk_size"],
                 ),
                 containerinstance.EnvironmentVariableArgs(
                     name="LLAMA_INDEX_CHUNK_OVERLAP_RATIO",
-                    value="0.1",
+                    value=DEFAULT_ARGS["chunk_overlap_ratio"],
                 ),
                 containerinstance.EnvironmentVariableArgs(
                     name="LLAMA_INDEX_NUM_OUTPUT",
-                    value="512",
+                    value=DEFAULT_ARGS["num_output"],
                 ),
             ],
             ports=[],
             resources=containerinstance.ResourceRequirementsArgs(
                 requests=containerinstance.ResourceRequestsArgs(
-                    cpu=4,
+                    cpu=2,
+                    memory_in_gb=16,
+                ),
+            ),
+            volume_mounts=[
+                containerinstance.VolumeMountArgs(
+                    mount_path="/app/data",
+                    name="llama-data",
+                ),
+            ],
+        ),
+        # reg index creation container
+        containerinstance.ContainerArgs(
+            image="ghcr.io/alan-turing-institute/reginald_create_index:main",
+            name="reginald-create-index",  # maximum of 63 characters
+            environment_variables=[
+                containerinstance.EnvironmentVariableArgs(
+                    name="GITHUB_TOKEN",
+                    secure_value=config.get_secret("GITHUB_TOKEN"),
+                ),
+                containerinstance.EnvironmentVariableArgs(
+                    name="LLAMA_INDEX_WHICH_INDEX",
+                    value="reg",
+                ),
+                containerinstance.EnvironmentVariableArgs(
+                    name="LLAMA_INDEX_MAX_INPUT_SIZE",
+                    value=DEFAULT_ARGS["max_input_size"],
+                ),
+                containerinstance.EnvironmentVariableArgs(
+                    name="LLAMA_INDEX_K",
+                    value=DEFAULT_ARGS["k"],
+                ),
+                containerinstance.EnvironmentVariableArgs(
+                    name="LLAMA_INDEX_CHUNK_SIZE",
+                    value=DEFAULT_ARGS["chunk_size"],
+                ),
+                containerinstance.EnvironmentVariableArgs(
+                    name="LLAMA_INDEX_CHUNK_OVERLAP_RATIO",
+                    value=DEFAULT_ARGS["chunk_overlap_ratio"],
+                ),
+                containerinstance.EnvironmentVariableArgs(
+                    name="LLAMA_INDEX_NUM_OUTPUT",
+                    value=DEFAULT_ARGS["num_output"],
+                ),
+            ],
+            ports=[],
+            resources=containerinstance.ResourceRequirementsArgs(
+                requests=containerinstance.ResourceRequestsArgs(
+                    cpu=2,
                     memory_in_gb=16,
                 ),
             ),
