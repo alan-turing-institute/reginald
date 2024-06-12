@@ -22,4 +22,4 @@ class Hello(ResponseModel):
         # print("\nReginald: ", end="")
         token_list: tuple[str, ...] = ("Hello", "!", " How", " are", " you", "?")
         for token in stream_progress_wrapper(token_list):
-            print(token, end="")
+            print(token, end="", flush=True)

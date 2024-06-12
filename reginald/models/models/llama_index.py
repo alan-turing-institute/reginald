@@ -637,8 +637,11 @@ class LlamaIndex(ResponseModel):
 
         else:
             logging.info("Loading the storage context")
-            storage_context = StorageContext.from_defaults(
-                persist_dir=self.data_dir / LLAMA_INDEX_DIR / self.which_index
+            storage_context = stream_progress_wrapper(
+                streamer=StorageContext.from_defaults(
+                    persist_dir=self.data_dir / LLAMA_INDEX_DIR / self.which_index
+                ),
+                task_str="Loading the storage context...",
             )
 
             logging.info("Loading the pre-processed index")
@@ -862,19 +865,18 @@ class LlamaIndex(ResponseModel):
                 self.query_engine._response_synthesizer._streaming = True
                 response_stream = self.query_engine.query(message)
 
-            # print("\nReginald: ", end="")
             for token in stream_progress_wrapper(response_stream.response_gen):
-                print(token, end="")
+                print(token, end="", flush=True)
 
             formatted_response = "\n\n\n" + self._format_sources(response_stream)
 
             for token in re.split(r"(\s+)", formatted_response):
-                print(token, end="")
+                print(token, end="", flush=True)
         except Exception as e:  # ignore: broad-except
             for token in re.split(
                 r"(\s+)", self.error_response_template.format(repr(e))
             ):
-                print(token, end="")
+                print(token, end="", flush=True)
 
 
 class LlamaIndexOllama(LlamaIndex):
