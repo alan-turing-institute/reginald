@@ -51,7 +51,7 @@ llama-index-readers-github = "^0.1.9"
 tiktoken = "^0.7.0"
 typer = "^0.12.3"
 rich = "^13.7.1"
-
+llm = { version="^0.14", optional=true }
 
 [tool.poetry.group.dev.dependencies]
 black = "^24.3.0"
@@ -73,6 +73,9 @@ azure = [
     "pulumi",
     "pulumi-azure-native",
     "azure-storage-file-share",
+]
+llm_plugin = [
+    "llm",
 ]
 
 [tool.poetry.scripts]
