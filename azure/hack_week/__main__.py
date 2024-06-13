@@ -291,7 +291,7 @@ container_group = containerinstance.ContainerGroup(
     ],
     os_type=containerinstance.OperatingSystemTypes.LINUX,
     resource_group_name=resource_group.name,
-    restart_policy=containerinstance.ContainerGroupRestartPolicy.NEVER,
+    restart_policy=containerinstance.ContainerGroupRestartPolicy.ON_FAILURE,
     sku=containerinstance.ContainerGroupSku.STANDARD,
     volumes=[
         containerinstance.VolumeArgs(
