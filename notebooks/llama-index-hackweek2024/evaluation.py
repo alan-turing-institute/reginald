@@ -125,14 +125,11 @@ if __name__ == "__main__":
     print(f"Loaded {len(data)} question-answer sets from the dataset.")
 
     eval_questions = [x["prompt"] for x in data]
-    gpt3_answers = [x["completion"] for x in data]
+    gpt_answers = [x["completion"] for x in data]
 
     response_model = setup_llm(
         model="llama-index-llama-cpp",
-        model_name=os.path.join(
-            project_dir,
-            "notebooks/llama-index-hackweek2024/../../../llama-2-7b-chat.Q4_K_M.gguf",
-        ),
+        model_name=os.path.join(project_dir, "../llama-2-7b-chat.Q4_K_M.gguf"),
         data_dir=os.path.join(project_dir, "data"),
         which_index="handbook",
     )
@@ -145,7 +142,7 @@ if __name__ == "__main__":
     for i in range(len(eval_questions)):
         print(i)
         query = eval_questions[i]
-        reference = gpt3_answers[i]
+        reference = gpt_answers[i]
 
         print("Asking Reginald: ", query)
         reginald_resp = response_model.direct_message(message=query, user_id="")
@@ -154,7 +151,8 @@ if __name__ == "__main__":
         result = evaluator.evaluate(
             query=query,
             response=reginald_resp,
-            contexts=[reference],
+            reference=reference,
+            # contexts=[reference],
         )
 
         outputs.append(result)
@@ -164,7 +162,7 @@ if __name__ == "__main__":
         {
             "query": [x.query for x in outputs],
             "reginald_response": [x.response for x in outputs],
-            "gpt3_response": gpt3_answers,
+            "gpt_response": gpt_answers,
             "correct": [x.passing for x in outputs],
             "reasoning": [x.feedback for x in outputs],
             "score": [x.score for x in outputs],
@@ -173,7 +171,8 @@ if __name__ == "__main__":
 
     # Output results
     output_path = os.path.join(
-        project_dir, "notebooks/llama-index-hackweek2024/data/evaluation_results.csv"
+        project_dir,
+        "notebooks/llama-index-hackweek2024/data/evaluation_results_using_reference.csv",
     )
     output_df.to_csv(output_path, index=False)
 
