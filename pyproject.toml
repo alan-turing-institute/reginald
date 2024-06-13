@@ -85,6 +85,9 @@ reginald = "reginald.cli:cli"
 name = "PyPI"
 priority = "primary"
 
+[tool.poetry.plugins."llm"]
+reginald = "reginald.llm_reginald"
+
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
