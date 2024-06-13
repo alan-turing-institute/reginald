@@ -91,7 +91,7 @@ def setup_settings(
     # initialise embedding model to use to create the index vectors
     embed_model = HuggingFaceEmbedding(
         model_name="sentence-transformers/all-mpnet-base-v2",
-        embed_batch_size=128,
+        embed_batch_size=64,
     )
 
     # construct the prompt helper

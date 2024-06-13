@@ -40,9 +40,7 @@ def main(
     elif cli == "app":
         from reginald.models.app import run_reginald_app
 
-        asyncio.run(
-            run_reginald_app(data_dir=data_dir, which_index=which_index, **kwargs)
-        )
+        run_reginald_app(data_dir=data_dir, which_index=which_index, **kwargs)
     elif cli == "chat":
         import warnings
 
