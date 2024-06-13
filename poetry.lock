@@ -306,6 +306,26 @@ msal = ">=1.24.0"
 msal-extensions = ">=0.3.0"
 
 [[package]]
+name = "azure-storage-file-share"
+version = "12.16.0"
+description = "Microsoft Azure Azure File Share Storage Client Library for Python"
+optional = false
+python-versions = ">=3.8"
+files = [
+    {file = "azure-storage-file-share-12.16.0.tar.gz", hash = "sha256:412fb7e6c3c28f6f722af98195aa59407aaa32323afa13a4a01f62d0b8774eb3"},
+    {file = "azure_storage_file_share-12.16.0-py3-none-any.whl", hash = "sha256:de7bbe7281dafb7b591166ee4bd81887d8553ac5396d80926503a5fa1c08ddf1"},
+]
+
+[package.dependencies]
+azure-core = ">=1.28.0"
+cryptography = ">=2.1.4"
+isodate = ">=0.6.1"
+typing-extensions = ">=4.6.0"
+
+[package.extras]
+aio = ["azure-core[aio] (>=1.28.0)"]
+
+[[package]]
 name = "beautifulsoup4"
 version = "4.12.3"
 description = "Screen-scraping library"
@@ -1264,18 +1284,18 @@ files = [
 
 [[package]]
 name = "filelock"
-version = "3.14.0"
+version = "3.15.1"
 description = "A platform independent file lock."
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "filelock-3.14.0-py3-none-any.whl", hash = "sha256:43339835842f110ca7ae60f1e1c160714c5a6afd15a2873419ab185334975c0f"},
-    {file = "filelock-3.14.0.tar.gz", hash = "sha256:6ea72da3be9b8c82afd3edcf99f2fffbb5076335a5ae4d03248bb5b6c3eae78a"},
+    {file = "filelock-3.15.1-py3-none-any.whl", hash = "sha256:71b3102950e91dfc1bb4209b64be4dc8854f40e5f534428d8684f953ac847fac"},
+    {file = "filelock-3.15.1.tar.gz", hash = "sha256:58a2549afdf9e02e10720eaa4d4470f56386d7a6f72edd7d0596337af8ed7ad8"},
 ]
 
 [package.extras]
 docs = ["furo (>=2023.9.10)", "sphinx (>=7.2.6)", "sphinx-autodoc-typehints (>=1.25.2)"]
-testing = ["covdefaults (>=2.3)", "coverage (>=7.3.2)", "diff-cover (>=8.0.1)", "pytest (>=7.4.3)", "pytest-cov (>=4.1)", "pytest-mock (>=3.12)", "pytest-timeout (>=2.2)"]
+testing = ["covdefaults (>=2.3)", "coverage (>=7.3.2)", "diff-cover (>=8.0.1)", "pytest (>=7.4.3)", "pytest-asyncio (>=0.21)", "pytest-cov (>=4.1)", "pytest-mock (>=3.12)", "pytest-timeout (>=2.2)"]
 typing = ["typing-extensions (>=4.8)"]
 
 [[package]]
@@ -1954,6 +1974,20 @@ parallel = ["ipyparallel"]
 qtconsole = ["qtconsole"]
 test = ["pickleshare", "pytest", "pytest-asyncio (<0.22)", "testpath"]
 test-extra = ["curio", "ipython[test]", "matplotlib (!=3.2.0)", "nbformat", "numpy (>=1.23)", "pandas", "trio"]
+
+[[package]]
+name = "isodate"
+version = "0.6.1"
+description = "An ISO 8601 date/time/duration parser and formatter"
+optional = false
+python-versions = "*"
+files = [
+    {file = "isodate-0.6.1-py2.py3-none-any.whl", hash = "sha256:0751eece944162659049d35f4f549ed815792b38793f07cf73381c1c87cbed96"},
+    {file = "isodate-0.6.1.tar.gz", hash = "sha256:48c5881de7e8b0a0d648cb024c8062dc84e7b840ed81e864c7614fd3c127bde9"},
+]
+
+[package.dependencies]
+six = "*"
 
 [[package]]
 name = "isort"
@@ -3648,13 +3682,13 @@ files = [
 
 [[package]]
 name = "openai"
-version = "1.33.0"
+version = "1.34.0"
 description = "The official Python library for the openai API"
 optional = false
 python-versions = ">=3.7.1"
 files = [
-    {file = "openai-1.33.0-py3-none-any.whl", hash = "sha256:621163b56570897ab8389d187f686a53d4771fd6ce95d481c0a9611fe8bc4229"},
-    {file = "openai-1.33.0.tar.gz", hash = "sha256:1169211a7b326ecbc821cafb427c29bfd0871f9a3e0947dd9e51acb3b0f1df78"},
+    {file = "openai-1.34.0-py3-none-any.whl", hash = "sha256:018623c2f795424044675c6230fa3bfbf98d9e0aab45d8fd116f2efb2cfb6b7e"},
+    {file = "openai-1.34.0.tar.gz", hash = "sha256:95c8e2da4acd6958e626186957d656597613587195abd0fb2527566a93e76770"},
 ]
 
 [package.dependencies]
@@ -4180,12 +4214,12 @@ files = [
 
 [[package]]
 name = "pulumi"
-version = "3.119.0"
+version = "3.120.0"
 description = "Pulumi's Python SDK"
 optional = true
 python-versions = ">=3.8"
 files = [
-    {file = "pulumi-3.119.0-py3-none-any.whl", hash = "sha256:a8c278f58c747846a83b31c38a0a0e0313bf0459c9b2282f98b9f73a2e99e7c7"},
+    {file = "pulumi-3.120.0-py3-none-any.whl", hash = "sha256:786f0bd54c64e15afba92a4a5c22480d2c322315d867c1532525c069a7615b09"},
 ]
 
 [package.dependencies]
@@ -6732,4 +6766,4 @@ llama-index-notebooks = ["bitsandbytes", "gradio", "ipykernel", "nbconvert"]
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.11,<3.12"
-content-hash = "1fc58571fc197416364d44dd56dfbb448bf212fa93668cb8ce1555abec625b16"
+content-hash = "3c2fb819c064f00c71ebc15edaee17905150a91adc0e2b2c2026e406f29a33b6"

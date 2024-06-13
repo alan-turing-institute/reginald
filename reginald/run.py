@@ -1,5 +1,6 @@
 import asyncio
 import logging
+import pathlib
 import sys
 from typing import Final
 
@@ -17,16 +18,14 @@ from reginald.slack_bot.setup_bot import (
     setup_slack_bot,
     setup_slack_client,
 )
+from reginald.utils import create_folder
 
 LISTENING_MSG: Final[str] = "Listening for requests..."
 
 
 async def run_bot(api_url: str | None, emoji: str) -> None:
     if api_url is None:
-        logging.error(
-            "API URL is not set. Please set the REGINALD_API_URL "
-            "environment variable or pass in the --api-url argument"
-        )
+        logging.error("api_url is not set.")
         sys.exit(1)
 
     # set up slack bot
@@ -91,11 +90,73 @@ async def connect_client(client: SocketModeClient) -> None:
     await asyncio.sleep(float("inf"))
 
 
+def download_from_fileshare(
+    data_dir: pathlib.Path | str,
+    which_index: str,
+    azure_storage_key: str | None,
+    connection_str: str | None,
+) -> None:
+    from azure.storage.fileshare import ShareClient
+    from tqdm import tqdm
+
+    if azure_storage_key is None:
+        logging.error("azure_storage_key is not set.")
+        sys.exit(1)
+    if connection_str is None:
+        logging.error("connection_str is not set.")
+        sys.exit(1)
+
+    # set the file share name and directory
+    file_share_name = "llama-data"
+    file_share_directory = f"llama_index_indices/{which_index}"
+
+    # create a ShareClient object
+    share_client = ShareClient.from_connection_string(
+        conn_str=connection_str,
+        share_name=file_share_name,
+        credential=azure_storage_key,
+    )
+
+    # get a reference to the file share directory
+    file_share_directory_client = share_client.get_directory_client(
+        file_share_directory
+    )
+
+    # set the local download directory
+    local_download_directory = (
+        pathlib.Path(data_dir) / "llama_index_indices" / which_index
+    )
+
+    # create folder if does not exist
+    create_folder(local_download_directory)
+
+    # list all the files in the directory
+    files_list = file_share_directory_client.list_directories_and_files()
+
+    # check if the index exists
+    try:
+        files_list = list(files_list)
+    except:
+        logging.error(f"Index {which_index} does not exist in the file share")
+        sys.exit(1)
+
+    # iterate through each file in the list and download it
+    for file in tqdm(files_list):
+        if not file.is_directory:
+            file_client = file_share_directory_client.get_file_client(file.name)
+            download_path = local_download_directory / file.name
+            with open(download_path, "wb") as file_handle:
+                data = file_client.download_file()
+                data.readinto(file_handle)
+
+
 def main(
     cli: str,
     api_url: str | None = None,
     emoji: str = EMOJI_DEFAULT,
     streaming: bool = False,
+    data_dir: str | None = None,
+    which_index: str | None = None,
     **kwargs,
 ):
     # initialise logging
@@ -109,6 +170,8 @@ def main(
         run_chat_interact(streaming=streaming, **kwargs)
     elif cli == "create_index":
         create_index(**kwargs)
+    elif cli == "download":
+        download_from_fileshare(data_dir=data_dir, which_index=which_index, **kwargs)
     else:
         logging.info("No run options selected.")
 
