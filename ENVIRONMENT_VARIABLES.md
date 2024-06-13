@@ -1,9 +1,9 @@
 ## Environment variables for running Reginald
 
-To set up the Reginald app (which consists of _both_ the full response engine along with the Slack bot), you can use the `reginald_run` on the terminal. To see the CLI arguments, you can simply run:
+To set up the Reginald app (which consists of _both_ the full response engine along with the Slack bot), you can use the `reginald run_all` on the terminal. To see the CLI arguments, you can simply run:
 
 ```bash
-reginald_run --help
+reginald run_all --help
 ```
 
 **Note**: specifying CLI arguments will override any environment variables set.
@@ -33,7 +33,7 @@ For creating a data index, you must set the GitHub token environment variable `G
 
 ### Model environment variables
 
-Lastly, to avoid using CLI variables and be able to simply use `reginald_run`, you can also set the following variables too:
+Lastly, to avoid using CLI variables and be able to simply use `reginald run_all`, you can also set the following variables too:
 
 - `REGINALD_MODEL`: name of model to use (see the [models README](MODELS.md)) for the list of models available
 - `REGINALD_MODEL_NAME`: name of sub-model to use with the one requested if not using `hello` model.
@@ -59,24 +59,24 @@ source .env
 
 ## Environment variables for running _only_ the response engine
 
-To set up the Reginald response engine (without the Slack bot), you can use the `reginald_run_engine` on the terminal. To see the CLI arguments, you can simply run:
+To set up the Reginald response engine (without the Slack bot), you can use the `reginald run_all_engine` on the terminal. To see the CLI arguments, you can simply run:
 
 ```bash
-reginald_run_api_llm --help
+reginald run_all_api_llm --help
 ```
 
-The CLI arguments are largely the same as `reginald_run` except that the Slack bot tokens are not required (as they will be used to set up the Slack bot which will call the response engine via an API that is set up using `reginald_run_api_llm`). You can also use the same environment variables as `reginald_run` except for the Slack bot tokens.
+The CLI arguments are largely the same as `reginald run_all` except that the Slack bot tokens are not required (as they will be used to set up the Slack bot which will call the response engine via an API that is set up using `reginald run_all_api_llm`). You can also use the same environment variables as `reginald run_all` except for the Slack bot tokens.
 
-You can still use the same `.env` file that you used for `reginald_run` to set up the environment variables or choose to have a separate `.response_engine_env` file to store the environment variables required for the response engine set up.
+You can still use the same `.env` file that you used for `reginald run_all` to set up the environment variables or choose to have a separate `.response_engine_env` file to store the environment variables required for the response engine set up.
 
 ## Environment variables for running _only_ the Slack-bot
 
-To set up the Reginald Slack bot (without the response engine), you can use the `reginald_run_api_bot` on the terminal. To see the CLI arguments, you can simply run:
+To set up the Reginald Slack bot (without the response engine), you can use the `reginald run_all_api_bot` on the terminal. To see the CLI arguments, you can simply run:
 
 ```bash
-reginald_run_api_bot --help
+reginald run_all_api_bot --help
 ```
 
 This command takes in an emoji to respond with and will set up a Slack bot that responds with the specified emoji (by default, this is the :rocket: emoji if no emoji is specified). You can also set an environment variable for the emoji to respond with using `REGINALD_EMOJI`.
 
-You can use the same `.env` file that you used for `reginald_run` to set up the environment variables or choose to have a separate `.slack_bot_env` file to store the environment variables required for the Slack bot set up. This must include the Slack bot tokens.
+You can use the same `.env` file that you used for `reginald run_all` to set up the environment variables or choose to have a separate `.slack_bot_env` file to store the environment variables required for the Slack bot set up. This must include the Slack bot tokens.

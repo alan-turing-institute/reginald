@@ -1,90 +1,66 @@
 import asyncio
 import logging
-import sys
-from typing import Final
-
-import uvicorn
-from fastapi import FastAPI
-from slack_sdk.socket_mode.aiohttp import SocketModeClient
-
-from reginald.models.app import create_reginald_app
-from reginald.models.create_index import create_index
-from reginald.models.models.base import ResponseModel
-from reginald.models.setup_llm import setup_llm
-from reginald.slack_bot.setup_bot import (
-    EMOJI_DEFAULT,
-    setup_api_slack_bot,
-    setup_slack_bot,
-    setup_slack_client,
-)
-
-LISTENING_MSG: Final[str] = "Listening for requests..."
 
 
-async def run_bot(api_url: str | None, emoji: str):
-    if api_url is None:
-        logging.error(
-            "API URL is not set. Please set the REGINALD_API_URL "
-            "environment variable or pass in the --api-url argument"
-        )
-        sys.exit(1)
-
-    # set up slack bot
-    bot = setup_api_slack_bot(api_url=api_url, emoji=emoji)
-
-    # set up slack client
-    client = setup_slack_client(slack_bot=bot)
-    await connect_client(client)
-
-
-async def run_reginald_app(**kwargs) -> None:
-    # set up response model
-    response_model = setup_llm(**kwargs)
-    app: FastAPI = create_reginald_app(response_model)
-    uvicorn.run(app, host="0.0.0.0", port=8000)
-
-
-async def run_full_pipeline(**kwargs):
-    # set up response model
-    response_model = setup_llm(**kwargs)
-    bot = setup_slack_bot(response_model)
-    # set up slack client
-    client = setup_slack_client(bot)
-    await connect_client(client)
-
-
-def run_chat_interact(**kwargs) -> ResponseModel:
-    # set up response model
-    response_model = setup_llm(**kwargs)
-    while True:
-        message = input(">>> ")
-        if message == "exit":
-            return response_model
-
-        response = response_model.direct_message(message=message, user_id="chat")
-        print(f"\nReginald: {response.message}")
-
-
-async def connect_client(client: SocketModeClient):
-    await client.connect()
-    # listen for events
-    logging.info(LISTENING_MSG)
-    # TODO: Assess whether this is best to use
-    await asyncio.sleep(float("inf"))
-
-
-def main(cli: str, api_url: str | None = None, emoji: str = EMOJI_DEFAULT, **kwargs):
+def main(
+    cli: str,
+    api_url: str | None = None,
+    emoji: str | None = None,
+    streaming: bool = False,
+    data_dir: str | None = None,
+    which_index: str | None = None,
+    slack_app_token: str | None = None,
+    slack_bot_token: str | None = None,
+    **kwargs,
+):
     # initialise logging
     if cli == "run_all":
-        asyncio.run(run_full_pipeline(**kwargs))
+        from reginald.run_full_pipeline import run_full_pipeline
+
+        asyncio.run(
+            run_full_pipeline(
+                data_dir=data_dir,
+                which_index=which_index,
+                slack_app_token=slack_app_token,
+                slack_bot_token=slack_bot_token,
+                **kwargs,
+            )
+        )
     elif cli == "bot":
-        asyncio.run(run_bot(api_url=api_url, emoji=emoji))
+        from reginald.slack_bot.run_bot import run_bot
+
+        asyncio.run(
+            run_bot(
+                slack_app_token=slack_app_token,
+                slack_bot_token=slack_bot_token,
+                api_url=api_url,
+                emoji=emoji,
+            )
+        )
     elif cli == "app":
-        asyncio.run(run_reginald_app(**kwargs))
+        from reginald.models.app import run_reginald_app
+
+        asyncio.run(
+            run_reginald_app(data_dir=data_dir, which_index=which_index, **kwargs)
+        )
     elif cli == "chat":
-        run_chat_interact(**kwargs)
+        import warnings
+
+        warnings.filterwarnings("ignore")
+
+        from reginald.models.chat_interact import run_chat_interact
+
+        run_chat_interact(
+            streaming=streaming, data_dir=data_dir, which_index=which_index, **kwargs
+        )
     elif cli == "create_index":
-        create_index(**kwargs)
+        from reginald.models.create_index import create_index
+
+        create_index(data_dir=data_dir, which_index=which_index, **kwargs)
+    elif cli == "download":
+        from reginald.models.download_from_fileshare import download_from_fileshare
+
+        download_from_fileshare(data_dir=data_dir, which_index=which_index, **kwargs)
     else:
         logging.info("No run options selected.")
 

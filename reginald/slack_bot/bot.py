@@ -7,7 +7,7 @@ from slack_sdk.socket_mode.async_listeners import AsyncSocketModeRequestListener
 from slack_sdk.socket_mode.request import SocketModeRequest
 from slack_sdk.socket_mode.response import SocketModeResponse
 
-from reginald.models.models.base import ResponseModel
+from reginald.models.base import ResponseModel
 
 
 class Bot(AsyncSocketModeRequestListener):

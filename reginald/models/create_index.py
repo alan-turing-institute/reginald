@@ -10,12 +10,12 @@ from llama_index.core.base.llms.types import (
 from llama_index.core.llms.callbacks import llm_completion_callback
 from llama_index.core.llms.custom import CustomLLM
 
-from reginald.models.models.llama_index import (
+from reginald.defaults import DEFAULT_ARGS
+from reginald.models.llama_index.base import (
     DataIndexCreator,
     compute_default_chunk_size,
-    setup_settings,
 )
-from reginald.models.setup_llm import DEFAULT_ARGS
+from reginald.models.llama_index.llama_utils import setup_settings
 
 
 class DummyLLM(CustomLLM):

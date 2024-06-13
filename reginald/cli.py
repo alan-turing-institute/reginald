@@ -4,10 +4,14 @@ from typing import Annotated, Optional
 
 import typer
 
-from reginald.models.setup_llm import DEFAULT_ARGS
-from reginald.run import EMOJI_DEFAULT, main
+from reginald.defaults import DEFAULT_ARGS, EMOJI_DEFAULT
+from reginald.run import main
 
-API_URL_PROPMPT = "No API URL was provided and REGINALD_API_URL not set. Please provide an API URL for the Reginald app"
+PROMPTS = {
+    "api_url": "No API URL was provided and REGINALD_API_URL not set. Please provide an API URL for the Reginald app",
+    "slack_app_token": "No Slack app token was provided and SLACK_APP_TOKEN not set. Please provide a Slack app token for the bot",
+    "slack_bot_token": "No Slack bot token was provided and SLACK_BOT_TOKEN not set. Please provide a Slack bot token for the bot",
+}
 HELP_TEXT = {
     "model": "Select which type of model to use..",
     "model_name": "Select which sub-model to use (within the main model selected).",
@@ -25,9 +29,12 @@ HELP_TEXT = {
     "device": "Device to use (ignored if not using llama-index).",
     "api_url": "API URL for the Reginald app.",
     "emoji": "Emoji to use for the bot.",
+    "streaming": "Whether to use streaming for the chat interaction.",
+    "slack_app_token": "Slack app token for the bot.",
+    "slack_bot_token": "Slack bot token for the bot.",
 }
 
-cli = typer.Typer()
+cli = typer.Typer(context_settings={"help_option_names": ["-h", "--help"]})
 
 
 def set_up_logging_config(level: int = 20) -> None:
@@ -40,6 +47,22 @@ def set_up_logging_config(level: int = 20) -> None:
 
 @cli.command()
 def run_all(
+    slack_app_token: Annotated[
+        str,
+        typer.Option(
+            prompt=PROMPTS["slack_app_token"],
+            envvar="SLACK_APP_TOKEN",
+            help=HELP_TEXT["slack_app_token"],
+        ),
+    ],
+    slack_bot_token: Annotated[
+        str,
+        typer.Option(
+            prompt=PROMPTS["slack_bot_token"],
+            envvar="SLACK_BOT_TOKEN",
+            help=HELP_TEXT["slack_bot_token"],
+        ),
+    ],
     model: Annotated[
         str,
         typer.Option(
@@ -102,9 +125,16 @@ def run_all(
         str, typer.Option(envvar="LLAMA_INDEX_DEVICE", help=HELP_TEXT["device"])
     ] = DEFAULT_ARGS["device"],
 ) -> None:
+    """
+    Run all the components of the Reginald slack bot.
+    Establishes the connection to the Slack API, sets up the bot,
+    and creates a Reginald model to query from.
+    """
     set_up_logging_config(level=20)
     main(
         cli="run_all",
+        slack_app_token=slack_app_token,
+        slack_bot_token=slack_bot_token,
         model=model,
         model_name=model_name,
         mode=mode,
@@ -124,10 +154,28 @@ def run_all(
 
 @cli.command()
 def bot(
+    slack_app_token: Annotated[
+        str,
+        typer.Option(
+            prompt=PROMPTS["slack_app_token"],
+            envvar="SLACK_APP_TOKEN",
+            help=HELP_TEXT["slack_app_token"],
+        ),
+    ],
+    slack_bot_token: Annotated[
+        str,
+        typer.Option(
+            prompt=PROMPTS["slack_bot_token"],
+            envvar="SLACK_BOT_TOKEN",
+            help=HELP_TEXT["slack_bot_token"],
+        ),
+    ],
     api_url: Annotated[
         str,
         typer.Option(
-            prompt=API_URL_PROPMPT, envvar="REGINALD_API_URL", help=HELP_TEXT["api_url"]
+            prompt=PROMPTS["api_url"],
+            envvar="REGINALD_API_URL",
+            help=HELP_TEXT["api_url"],
         ),
     ],
     emoji: Annotated[
@@ -135,7 +183,7 @@ def bot(
     ] = EMOJI_DEFAULT,
 ) -> None:
     """
-    Main function to run the Slack bot which sets up the bot
+    Run the Slack bot which sets up the bot
     (which uses an API for responding to messages) and
     then establishes a WebSocket connection to the
     Socket Mode servers and listens for events.
@@ -143,6 +191,8 @@ def bot(
     set_up_logging_config(level=20)
     main(
         cli="bot",
+        slack_app_token=slack_app_token,
+        slack_bot_token=slack_bot_token,
         api_url=api_url,
         emoji=emoji,
     )
@@ -213,8 +263,8 @@ def app(
     ] = DEFAULT_ARGS["device"],
 ) -> None:
     """
-    Main function to run the app which sets up the response model
-    and then creates a FastAPI app to serve the model.
+    Sets up the response model and then creates a
+    FastAPI app to serve the model.
 
     The app listens on port 8000 and has two endpoints:
     - /direct_message: for obtaining responses from direct messages
@@ -262,6 +312,9 @@ def create_index(
         int, typer.Option(envvar="LLAMA_INDEX_NUM_OUTPUT")
     ] = DEFAULT_ARGS["num_output"],
 ) -> None:
+    """
+    Create an index for the Reginald model.
+    """
     set_up_logging_config(level=20)
     main(
         cli="create_index",
@@ -288,6 +341,12 @@ def chat(
         Optional[str],
         typer.Option(envvar="REGINALD_MODEL_NAME", help=HELP_TEXT["model_name"]),
     ] = None,
+    streaming: Annotated[
+        bool,
+        typer.Option(
+            help=HELP_TEXT["streaming"],
+        ),
+    ] = True,
     mode: Annotated[
         str, typer.Option(envvar="LLAMA_INDEX_MODE", help=HELP_TEXT["mode"])
     ] = DEFAULT_ARGS["mode"],
@@ -339,9 +398,13 @@ def chat(
         str, typer.Option(envvar="LLAMA_INDEX_DEVICE", help=HELP_TEXT["device"])
     ] = DEFAULT_ARGS["device"],
 ) -> None:
+    """
+    Run the chat interaction with the Reginald model.
+    """
     set_up_logging_config(level=40)
     main(
         cli="chat",
+        streaming=streaming,
         model=model,
         model_name=model_name,
         mode=mode,
@@ -356,4 +419,32 @@ def chat(
         is_path=is_path,
         n_gpu_layers=n_gpu_layers,
         device=device,
+    )
+
+
+@cli.command()
+def download(
+    data_dir: Annotated[
+        str, typer.Option(envvar="LLAMA_INDEX_DATA_DIR")
+    ] = DEFAULT_ARGS["data_dir"],
+    which_index: Annotated[
+        str, typer.Option(envvar="LLAMA_INDEX_WHICH_INDEX")
+    ] = DEFAULT_ARGS["which_index"],
+    azure_storage_key: Annotated[
+        Optional[str], typer.Option(envvar="AZURE_STORAGE_KEY")
+    ] = None,
+    connection_str: Annotated[
+        Optional[str], typer.Option(envvar="AZURE_STORAGE_CONNECTION_STR")
+    ] = None,
+) -> None:
+    """
+    Download data from an Azure file share.
+    """
+    set_up_logging_config(level=20)
+    main(
+        cli="download",
+        data_dir=data_dir,
+        which_index=which_index,
+        azure_storage_key=azure_storage_key,
+        connection_str=connection_str,
     )

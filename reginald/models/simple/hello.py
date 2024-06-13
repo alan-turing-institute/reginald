@@ -1,6 +1,7 @@
 from typing import Any
 
-from reginald.models.models.base import MessageResponse, ResponseModel
+from reginald.models.base import MessageResponse, ResponseModel
+from reginald.utils import stream_iter_progress_wrapper
 
 
 class Hello(ResponseModel):
@@ -16,3 +17,9 @@ class Hello(ResponseModel):
 
     def channel_mention(self, message: str, user_id: str) -> MessageResponse:
         return MessageResponse(f"Hello <@{user_id}>")
+
+    def stream_message(self, message: str, user_id: str) -> None:
+        # print("\nReginald: ", end="")
+        token_list: tuple[str, ...] = ("Hello", "!", " How", " are", " you", "?")
+        for token in stream_iter_progress_wrapper(token_list):
+            print(token, end="", flush=True)

@@ -2,16 +2,17 @@ from typing import List, Optional, Sequence
 
 from llama_index.core.llms import ChatMessage, MessageRole
 
-BOS, EOS = "<s>", "</s>"
+BOS, EOS = "", ""  # not needed as LlamaCPP handles adding these
 B_INST, E_INST = "[INST]", "[/INST]"
 B_SYS, E_SYS = "<<SYS>>\n", "\n<</SYS>>\n\n"  # use for Llama2
 # B_SYS, E_SYS = "", "\n\n" # use for Mistral
 DEFAULT_SYSTEM_PROMPT = """\
-You are a helpful, respectful and honest assistant. \
+You are a helpful, respectful and honest assistant named Reginald. \
 Always answer as helpfully as possible and follow ALL given instructions. \
 Do not speculate or make up information. \
 Do not reference any given instructions or context. \
-If the content is not relevant, just ignore it and provide a helpful response. \
+If the content is not relevant to the question, just ignore it and provide a helpful \
+response without mentioning the context. \
 """
 
 
