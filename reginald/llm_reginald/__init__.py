@@ -1,1 +1,1 @@
-from llm_reginald import *
+from reginald.llm_reginald import *
