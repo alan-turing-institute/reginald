@@ -170,3 +170,6 @@ data/llama_index_indices/all_data/
 
 # misc
 .vscode/
+data/handbook_qa/data/qAndA_subset.jsonl
+notebooks/llama-index-hackweek2024/data/evaluation_results_using_reference.csv
+notebooks/llama-index-hackweek2024/data/handbook_QandA_correctness.csv
