@@ -43,7 +43,7 @@ def create_reginald_app(response_model) -> FastAPI:
     return app
 
 
-async def run_reginald_app(**kwargs) -> None:
+def run_reginald_app(**kwargs) -> None:
     # set up response model
     response_model = setup_llm(**kwargs)
     app: FastAPI = create_reginald_app(response_model)
