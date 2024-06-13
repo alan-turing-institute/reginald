@@ -7,6 +7,8 @@ from pulumi_azure_native import (
     storage,
 )
 
+from reginald.defaults import DEFAULT_ARGS
+
 # Get some configuration variables
 stack_name = pulumi.get_stack()
 config = pulumi.Config()
@@ -142,7 +144,7 @@ container_group = containerinstance.ContainerGroup(
         # all_data index creation container
         containerinstance.ContainerArgs(
             image="ghcr.io/alan-turing-institute/reginald_create_index:main",
-            name="reginald-create-index",  # maximum of 63 characters
+            name="reginald-create-index-all-data",  # maximum of 63 characters
             environment_variables=[
                 containerinstance.EnvironmentVariableArgs(
                     name="GITHUB_TOKEN",
@@ -154,30 +156,126 @@ container_group = containerinstance.ContainerGroup(
                 ),
                 containerinstance.EnvironmentVariableArgs(
                     name="LLAMA_INDEX_MAX_INPUT_SIZE",
-                    value="4096",
+                    value=str(DEFAULT_ARGS["max_input_size"]),
                 ),
                 containerinstance.EnvironmentVariableArgs(
                     name="LLAMA_INDEX_K",
-                    value="3",
+                    value=str(DEFAULT_ARGS["k"]),
                 ),
                 containerinstance.EnvironmentVariableArgs(
                     name="LLAMA_INDEX_CHUNK_SIZE",
-                    value="512",
+                    value=str(DEFAULT_ARGS["chunk_size"]),
                 ),
                 containerinstance.EnvironmentVariableArgs(
                     name="LLAMA_INDEX_CHUNK_OVERLAP_RATIO",
-                    value="0.1",
+                    value=str(DEFAULT_ARGS["chunk_overlap_ratio"]),
                 ),
                 containerinstance.EnvironmentVariableArgs(
                     name="LLAMA_INDEX_NUM_OUTPUT",
-                    value="512",
+                    value=str(DEFAULT_ARGS["num_output"]),
                 ),
             ],
             ports=[],
             resources=containerinstance.ResourceRequirementsArgs(
                 requests=containerinstance.ResourceRequestsArgs(
-                    cpu=4,
-                    memory_in_gb=16,
+                    cpu=2,
+                    memory_in_gb=6,
+                ),
+            ),
+            volume_mounts=[
+                containerinstance.VolumeMountArgs(
+                    mount_path="/app/data",
+                    name="llama-data",
+                ),
+            ],
+        ),
+        # reg index creation container
+        containerinstance.ContainerArgs(
+            image="ghcr.io/alan-turing-institute/reginald_create_index:main",
+            name="reginald-create-index-reg",  # maximum of 63 characters
+            environment_variables=[
+                containerinstance.EnvironmentVariableArgs(
+                    name="GITHUB_TOKEN",
+                    secure_value=config.get_secret("GITHUB_TOKEN"),
+                ),
+                containerinstance.EnvironmentVariableArgs(
+                    name="LLAMA_INDEX_WHICH_INDEX",
+                    value="reg",
+                ),
+                containerinstance.EnvironmentVariableArgs(
+                    name="LLAMA_INDEX_MAX_INPUT_SIZE",
+                    value=str(DEFAULT_ARGS["max_input_size"]),
+                ),
+                containerinstance.EnvironmentVariableArgs(
+                    name="LLAMA_INDEX_K",
+                    value=str(DEFAULT_ARGS["k"]),
+                ),
+                containerinstance.EnvironmentVariableArgs(
+                    name="LLAMA_INDEX_CHUNK_SIZE",
+                    value=str(DEFAULT_ARGS["chunk_size"]),
+                ),
+                containerinstance.EnvironmentVariableArgs(
+                    name="LLAMA_INDEX_CHUNK_OVERLAP_RATIO",
+                    value=str(DEFAULT_ARGS["chunk_overlap_ratio"]),
+                ),
+                containerinstance.EnvironmentVariableArgs(
+                    name="LLAMA_INDEX_NUM_OUTPUT",
+                    value=str(DEFAULT_ARGS["num_output"]),
+                ),
+            ],
+            ports=[],
+            resources=containerinstance.ResourceRequirementsArgs(
+                requests=containerinstance.ResourceRequestsArgs(
+                    cpu=1,
+                    memory_in_gb=5,
+                ),
+            ),
+            volume_mounts=[
+                containerinstance.VolumeMountArgs(
+                    mount_path="/app/data",
+                    name="llama-data",
+                ),
+            ],
+        ),
+        # public index creation container
+        containerinstance.ContainerArgs(
+            image="ghcr.io/alan-turing-institute/reginald_create_index:main",
+            name="reginald-create-index-public",  # maximum of 63 characters
+            environment_variables=[
+                containerinstance.EnvironmentVariableArgs(
+                    name="GITHUB_TOKEN",
+                    secure_value=config.get_secret("GITHUB_TOKEN"),
+                ),
+                containerinstance.EnvironmentVariableArgs(
+                    name="LLAMA_INDEX_WHICH_INDEX",
+                    value="public",
+                ),
+                containerinstance.EnvironmentVariableArgs(
+                    name="LLAMA_INDEX_MAX_INPUT_SIZE",
+                    value=str(DEFAULT_ARGS["max_input_size"]),
+                ),
+                containerinstance.EnvironmentVariableArgs(
+                    name="LLAMA_INDEX_K",
+                    value=str(DEFAULT_ARGS["k"]),
+                ),
+                containerinstance.EnvironmentVariableArgs(
+                    name="LLAMA_INDEX_CHUNK_SIZE",
+                    value=str(DEFAULT_ARGS["chunk_size"]),
+                ),
+                containerinstance.EnvironmentVariableArgs(
+                    name="LLAMA_INDEX_CHUNK_OVERLAP_RATIO",
+                    value=str(DEFAULT_ARGS["chunk_overlap_ratio"]),
+                ),
+                containerinstance.EnvironmentVariableArgs(
+                    name="LLAMA_INDEX_NUM_OUTPUT",
+                    value=str(DEFAULT_ARGS["num_output"]),
+                ),
+            ],
+            ports=[],
+            resources=containerinstance.ResourceRequirementsArgs(
+                requests=containerinstance.ResourceRequestsArgs(
+                    cpu=1,
+                    memory_in_gb=5,
                 ),
             ),
             volume_mounts=[
@@ -190,7 +288,7 @@ container_group = containerinstance.ContainerGroup(
     ],
     os_type=containerinstance.OperatingSystemTypes.LINUX,
     resource_group_name=resource_group.name,
-    restart_policy=containerinstance.ContainerGroupRestartPolicy.NEVER,
+    restart_policy=containerinstance.ContainerGroupRestartPolicy.ON_FAILURE,
     sku=containerinstance.ContainerGroupSku.STANDARD,
     volumes=[
         containerinstance.VolumeArgs(

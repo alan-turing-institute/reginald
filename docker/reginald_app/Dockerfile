@@ -19,4 +19,4 @@ COPY reginald reginald
 
 RUN poetry install --extras api_bot --without dev
 
-CMD ["poetry", "run", "reginald", "bot"]
+CMD ["poetry", "run", "reginald", "app"]

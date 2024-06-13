@@ -7,6 +7,8 @@ from pulumi_azure_native import (
     storage,
 )
 
+from reginald.defaults import DEFAULT_ARGS
+
 # Get some configuration variables
 stack_name = pulumi.get_stack()
 config = pulumi.Config()
@@ -98,7 +100,7 @@ container_group = containerinstance.ContainerGroup(
     containers=[
         # Reginald chat completion container
         containerinstance.ContainerArgs(
-            image="ghcr.io/alan-turing-institute/reginald_reginald:main",
+            image="ghcr.io/alan-turing-institute/reginald_run_all:main",
             name="reginald-completion",  # maximum of 63 characters
             environment_variables=[
                 containerinstance.EnvironmentVariableArgs(
@@ -141,7 +143,7 @@ container_group = containerinstance.ContainerGroup(
         ),
         # Reginald (public) container
         containerinstance.ContainerArgs(
-            image="ghcr.io/alan-turing-institute/reginald_reginald:main",
+            image="ghcr.io/alan-turing-institute/reginald_run_all:main",
             name="reginald-gpt-azure",  # maximum of 63 characters
             environment_variables=[
                 containerinstance.EnvironmentVariableArgs(
@@ -166,23 +168,23 @@ container_group = containerinstance.ContainerGroup(
                 ),
                 containerinstance.EnvironmentVariableArgs(
                     name="LLAMA_INDEX_MAX_INPUT_SIZE",
-                    value="4096",
+                    value=str(DEFAULT_ARGS["max_input_size"]),
                 ),
                 containerinstance.EnvironmentVariableArgs(
                     name="LLAMA_INDEX_K",
-                    value="3",
+                    value=str(DEFAULT_ARGS["k"]),
                 ),
                 containerinstance.EnvironmentVariableArgs(
                     name="LLAMA_INDEX_CHUNK_SIZE",
-                    value="512",
+                    value=str(DEFAULT_ARGS["chunk_size"]),
                 ),
                 containerinstance.EnvironmentVariableArgs(
                     name="LLAMA_INDEX_CHUNK_OVERLAP_RATIO",
-                    value="0.1",
+                    value=str(DEFAULT_ARGS["chunk_overlap_ratio"]),
                 ),
                 containerinstance.EnvironmentVariableArgs(
                     name="LLAMA_INDEX_NUM_OUTPUT",
-                    value="512",
+                    value=str(DEFAULT_ARGS["num_output"]),
                 ),
                 containerinstance.EnvironmentVariableArgs(
                     name="OPENAI_AZURE_API_BASE",
@@ -204,8 +206,8 @@ container_group = containerinstance.ContainerGroup(
             ports=[],
             resources=containerinstance.ResourceRequirementsArgs(
                 requests=containerinstance.ResourceRequestsArgs(
-                    cpu=1,
-                    memory_in_gb=12,
+                    cpu=3,
+                    memory_in_gb=14,
                 ),
             ),
             volume_mounts=[
@@ -253,30 +255,30 @@ container_group = containerinstance.ContainerGroup(
                 ),
                 containerinstance.EnvironmentVariableArgs(
                     name="LLAMA_INDEX_MAX_INPUT_SIZE",
-                    value="4096",
+                    value=str(DEFAULT_ARGS["max_input_size"]),
                 ),
                 containerinstance.EnvironmentVariableArgs(
                     name="LLAMA_INDEX_K",
-                    value="3",
+                    value=str(DEFAULT_ARGS["k"]),
                 ),
                 containerinstance.EnvironmentVariableArgs(
                     name="LLAMA_INDEX_CHUNK_SIZE",
-                    value="512",
+                    value=str(DEFAULT_ARGS["chunk_size"]),
                 ),
                 containerinstance.EnvironmentVariableArgs(
                     name="LLAMA_INDEX_CHUNK_OVERLAP_RATIO",
-                    value="0.1",
+                    value=str(DEFAULT_ARGS["chunk_overlap_ratio"]),
                 ),
                 containerinstance.EnvironmentVariableArgs(
                     name="LLAMA_INDEX_NUM_OUTPUT",
-                    value="512",
+                    value=str(DEFAULT_ARGS["num_output"]),
                 ),
             ],
             ports=[],
             resources=containerinstance.ResourceRequirementsArgs(
                 requests=containerinstance.ResourceRequestsArgs(
-                    cpu=4,
-                    memory_in_gb=16,
+                    cpu=1,
+                    memory_in_gb=8,
                 ),
             ),
             volume_mounts=[

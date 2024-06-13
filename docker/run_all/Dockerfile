@@ -17,6 +17,6 @@ RUN poetry install --without dev --no-root  && rm -rf $POETRY_CACHE_DIR
 
 COPY reginald reginald
 
-RUN poetry install --extras api_bot --without dev
+RUN poetry install --without dev
 
-CMD ["poetry", "run", "reginald", "bot"]
+CMD ["poetry", "run", "reginald", "run-all"]

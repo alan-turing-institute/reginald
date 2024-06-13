@@ -1,14 +1,22 @@
-FROM python:3.11.4
+FROM python:3.11.9
 
 WORKDIR /app
 
 # Setup Python prerequisites
-RUN pip3 install --upgrade pip poetry setuptools wheel
+RUN pip3 install --upgrade pip poetry==1.8.3 setuptools wheel
+
+ENV POETRY_NO_INTERACTION=1 \
+    POETRY_VIRTUALENVS_IN_PROJECT=1 \
+    POETRY_VIRTUALENVS_CREATE=1 \
+    POETRY_CACHE_DIR=/tmp/poetry_cache
 
 # Build Python project
-COPY reginald reginald
 COPY pyproject.toml .
-COPY README.md .
-RUN poetry install
+RUN touch README.md
+RUN poetry install --without dev --no-root  && rm -rf $POETRY_CACHE_DIR
 
-CMD ["poetry", "run", "reginald_create_index"]
+COPY reginald reginald
+
+RUN poetry install --without dev
+
+CMD ["poetry", "run", "reginald", "create-index"]

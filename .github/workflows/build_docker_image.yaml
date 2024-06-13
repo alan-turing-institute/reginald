@@ -20,22 +20,24 @@ jobs:
       fail-fast: false
       matrix:
         include:
-          - dockerfile: docker/reginald/Dockerfile
-            image: ghcr.io/${{ github.repository }}_reginald
+          - dockerfile: docker/run_all/Dockerfile
+            image: ghcr.io/${{ github.repository }}_run_all
           - dockerfile: docker/slack_bot/Dockerfile
             image: ghcr.io/${{ github.repository }}_slackbot
           - dockerfile: docker/create_index/Dockerfile
             image: ghcr.io/${{ github.repository }}_create_index
+          - dockerfile: docker/reginald_app/Dockerfile
+            image: ghcr.io/${{ github.repository }}_app
     permissions:
       packages: write
       contents: read
 
     steps:
       - name: Check out the repo
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Log in to the Container registry
-        uses: docker/login-action@v2
+        uses: docker/login-action@v3.2.0
         with:
           registry: ghcr.io
           username: ${{ github.actor }}
@@ -43,12 +45,12 @@ jobs:
 
       - name: Extract metadata (tags, labels) for Docker
         id: meta
-        uses: docker/metadata-action@v4
+        uses: docker/metadata-action@v5.5.0
         with:
           images: ${{ matrix.image }}
 
       - name: Build and push Docker images
-        uses: docker/build-push-action@v4
+        uses: docker/build-push-action@v5.4.0
         with:
           file: ${{ matrix.dockerfile }}
           push: true
