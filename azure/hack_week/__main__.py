@@ -168,23 +168,23 @@ container_group = containerinstance.ContainerGroup(
                 ),
                 containerinstance.EnvironmentVariableArgs(
                     name="LLAMA_INDEX_MAX_INPUT_SIZE",
-                    value=DEFAULT_ARGS["max_input_size"],
+                    value=str(DEFAULT_ARGS["max_input_size"]),
                 ),
                 containerinstance.EnvironmentVariableArgs(
                     name="LLAMA_INDEX_K",
-                    value=DEFAULT_ARGS["k"],
+                    value=str(DEFAULT_ARGS["k"]),
                 ),
                 containerinstance.EnvironmentVariableArgs(
                     name="LLAMA_INDEX_CHUNK_SIZE",
-                    value=DEFAULT_ARGS["chunk_size"],
+                    value=str(DEFAULT_ARGS["chunk_size"]),
                 ),
                 containerinstance.EnvironmentVariableArgs(
                     name="LLAMA_INDEX_CHUNK_OVERLAP_RATIO",
-                    value=DEFAULT_ARGS["chunk_overlap_ratio"],
+                    value=str(DEFAULT_ARGS["chunk_overlap_ratio"]),
                 ),
                 containerinstance.EnvironmentVariableArgs(
                     name="LLAMA_INDEX_NUM_OUTPUT",
-                    value=DEFAULT_ARGS["num_output"],
+                    value=str(DEFAULT_ARGS["num_output"]),
                 ),
                 containerinstance.EnvironmentVariableArgs(
                     name="OPENAI_AZURE_API_BASE",
@@ -206,8 +206,8 @@ container_group = containerinstance.ContainerGroup(
             ports=[],
             resources=containerinstance.ResourceRequirementsArgs(
                 requests=containerinstance.ResourceRequestsArgs(
-                    cpu=1,
-                    memory_in_gb=12,
+                    cpu=3,
+                    memory_in_gb=14,
                 ),
             ),
             volume_mounts=[
@@ -255,30 +255,30 @@ container_group = containerinstance.ContainerGroup(
                 ),
                 containerinstance.EnvironmentVariableArgs(
                     name="LLAMA_INDEX_MAX_INPUT_SIZE",
-                    value=DEFAULT_ARGS["max_input_size"],
+                    value=str(DEFAULT_ARGS["max_input_size"]),
                 ),
                 containerinstance.EnvironmentVariableArgs(
                     name="LLAMA_INDEX_K",
-                    value=DEFAULT_ARGS["k"],
+                    value=str(DEFAULT_ARGS["k"]),
                 ),
                 containerinstance.EnvironmentVariableArgs(
                     name="LLAMA_INDEX_CHUNK_SIZE",
-                    value=DEFAULT_ARGS["chunk_size"],
+                    value=str(DEFAULT_ARGS["chunk_size"]),
                 ),
                 containerinstance.EnvironmentVariableArgs(
                     name="LLAMA_INDEX_CHUNK_OVERLAP_RATIO",
-                    value=DEFAULT_ARGS["chunk_overlap_ratio"],
+                    value=str(DEFAULT_ARGS["chunk_overlap_ratio"]),
                 ),
                 containerinstance.EnvironmentVariableArgs(
                     name="LLAMA_INDEX_NUM_OUTPUT",
-                    value=DEFAULT_ARGS["num_output"],
+                    value=str(DEFAULT_ARGS["num_output"]),
                 ),
             ],
             ports=[],
             resources=containerinstance.ResourceRequirementsArgs(
                 requests=containerinstance.ResourceRequestsArgs(
-                    cpu=4,
-                    memory_in_gb=16,
+                    cpu=1,
+                    memory_in_gb=8,
                 ),
             ),
             volume_mounts=[

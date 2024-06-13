@@ -101,7 +101,7 @@ container_group = containerinstance.ContainerGroup(
     containers=[
         # api-bot container
         containerinstance.ContainerArgs(
-            image="ghcr.io/alan-turing-institute/reginald_slackbot:pulumi-reg-2pt0-update",
+            image="ghcr.io/alan-turing-institute/reginald_slackbot:main",
             name="reginald-production",  # maximum of 63 characters
             environment_variables=[
                 containerinstance.EnvironmentVariableArgs(
@@ -143,7 +143,7 @@ container_group = containerinstance.ContainerGroup(
     containers=[
         # all_data index creation container
         containerinstance.ContainerArgs(
-            image="ghcr.io/alan-turing-institute/reginald_create_index:pulumi-reg-2pt0-update",
+            image="ghcr.io/alan-turing-institute/reginald_create_index:main",
             name="reginald-create-index-all-data",  # maximum of 63 characters
             environment_variables=[
                 containerinstance.EnvironmentVariableArgs(
@@ -179,7 +179,7 @@ container_group = containerinstance.ContainerGroup(
             resources=containerinstance.ResourceRequirementsArgs(
                 requests=containerinstance.ResourceRequestsArgs(
                     cpu=2,
-                    memory_in_gb=8,
+                    memory_in_gb=6,
                 ),
             ),
             volume_mounts=[
@@ -191,7 +191,7 @@ container_group = containerinstance.ContainerGroup(
         ),
         # reg index creation container
         containerinstance.ContainerArgs(
-            image="ghcr.io/alan-turing-institute/reginald_create_index:pulumi-reg-2pt0-update",
+            image="ghcr.io/alan-turing-institute/reginald_create_index:main",
             name="reginald-create-index-reg",  # maximum of 63 characters
             environment_variables=[
                 containerinstance.EnvironmentVariableArgs(
@@ -227,7 +227,7 @@ container_group = containerinstance.ContainerGroup(
             resources=containerinstance.ResourceRequirementsArgs(
                 requests=containerinstance.ResourceRequestsArgs(
                     cpu=1,
-                    memory_in_gb=4,
+                    memory_in_gb=5,
                 ),
             ),
             volume_mounts=[
@@ -239,7 +239,7 @@ container_group = containerinstance.ContainerGroup(
         ),
         # public index creation container
         containerinstance.ContainerArgs(
-            image="ghcr.io/alan-turing-institute/reginald_create_index:pulumi-reg-2pt0-update",
+            image="ghcr.io/alan-turing-institute/reginald_create_index:main",
             name="reginald-create-index-public",  # maximum of 63 characters
             environment_variables=[
                 containerinstance.EnvironmentVariableArgs(
@@ -275,7 +275,7 @@ container_group = containerinstance.ContainerGroup(
             resources=containerinstance.ResourceRequirementsArgs(
                 requests=containerinstance.ResourceRequestsArgs(
                     cpu=1,
-                    memory_in_gb=4,
+                    memory_in_gb=5,
                 ),
             ),
             volume_mounts=[
