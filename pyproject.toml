@@ -86,7 +86,7 @@ name = "PyPI"
 priority = "primary"
 
 [tool.poetry.plugins."llm"]
-reginald = "reginald.llm_reginald"
+reginald = "reginald.llm_reginald.llm_reginald"
 
 [build-system]
 requires = ["poetry-core"]
