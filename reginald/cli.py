@@ -4,10 +4,14 @@ from typing import Annotated, Optional
 
 import typer
 
-from reginald.models.setup_llm import DEFAULT_ARGS
-from reginald.run import EMOJI_DEFAULT, main
+from reginald.defaults import DEFAULT_ARGS, EMOJI_DEFAULT
+from reginald.run import main
 
-API_URL_PROPMPT = "No API URL was provided and REGINALD_API_URL not set. Please provide an API URL for the Reginald app"
+PROMPTS = {
+    "api_url": "No API URL was provided and REGINALD_API_URL not set. Please provide an API URL for the Reginald app",
+    "slack_app_token": "No Slack app token was provided and SLACK_APP_TOKEN not set. Please provide a Slack app token for the bot",
+    "slack_bot_token": "No Slack bot token was provided and SLACK_BOT_TOKEN not set. Please provide a Slack bot token for the bot",
+}
 HELP_TEXT = {
     "model": "Select which type of model to use..",
     "model_name": "Select which sub-model to use (within the main model selected).",
@@ -26,9 +30,11 @@ HELP_TEXT = {
     "api_url": "API URL for the Reginald app.",
     "emoji": "Emoji to use for the bot.",
     "streaming": "Whether to use streaming for the chat interaction.",
+    "slack_app_token": "Slack app token for the bot.",
+    "slack_bot_token": "Slack bot token for the bot.",
 }
 
-cli = typer.Typer()
+cli = typer.Typer(context_settings={"help_option_names": ["-h", "--help"]})
 
 
 def set_up_logging_config(level: int = 20) -> None:
@@ -41,6 +47,22 @@ def set_up_logging_config(level: int = 20) -> None:
 
 @cli.command()
 def run_all(
+    slack_app_token: Annotated[
+        str,
+        typer.Option(
+            prompt=PROMPTS["slack_app_token"],
+            envvar="SLACK_APP_TOKEN",
+            help=HELP_TEXT["slack_app_token"],
+        ),
+    ],
+    slack_bot_token: Annotated[
+        str,
+        typer.Option(
+            prompt=PROMPTS["slack_bot_token"],
+            envvar="SLACK_BOT_TOKEN",
+            help=HELP_TEXT["slack_bot_token"],
+        ),
+    ],
     model: Annotated[
         str,
         typer.Option(
@@ -111,6 +133,8 @@ def run_all(
     set_up_logging_config(level=20)
     main(
         cli="run_all",
+        slack_app_token=slack_app_token,
+        slack_bot_token=slack_bot_token,
         model=model,
         model_name=model_name,
         mode=mode,
@@ -130,10 +154,28 @@ def run_all(
 
 @cli.command()
 def bot(
+    slack_app_token: Annotated[
+        str,
+        typer.Option(
+            prompt=PROMPTS["slack_app_token"],
+            envvar="SLACK_APP_TOKEN",
+            help=HELP_TEXT["slack_app_token"],
+        ),
+    ],
+    slack_bot_token: Annotated[
+        str,
+        typer.Option(
+            prompt=PROMPTS["slack_bot_token"],
+            envvar="SLACK_BOT_TOKEN",
+            help=HELP_TEXT["slack_bot_token"],
+        ),
+    ],
     api_url: Annotated[
         str,
         typer.Option(
-            prompt=API_URL_PROPMPT, envvar="REGINALD_API_URL", help=HELP_TEXT["api_url"]
+            prompt=PROMPTS["api_url"],
+            envvar="REGINALD_API_URL",
+            help=HELP_TEXT["api_url"],
         ),
     ],
     emoji: Annotated[
@@ -149,6 +191,8 @@ def bot(
     set_up_logging_config(level=20)
     main(
         cli="bot",
+        slack_app_token=slack_app_token,
+        slack_bot_token=slack_bot_token,
         api_url=api_url,
         emoji=emoji,
     )

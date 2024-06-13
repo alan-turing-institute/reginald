@@ -1,6 +1,6 @@
 from typing import Any
 
-from reginald.models.models.base import MessageResponse, ResponseModel
+from reginald.models.base import MessageResponse, ResponseModel
 from reginald.utils import stream_iter_progress_wrapper
 
 

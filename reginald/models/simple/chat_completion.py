@@ -5,7 +5,7 @@ from typing import Any
 import openai
 from openai import AzureOpenAI, OpenAI
 
-from reginald.models.models.base import MessageResponse, ResponseModel
+from reginald.models.base import MessageResponse, ResponseModel
 from reginald.utils import get_env_var, stream_iter_progress_wrapper
 
 

@@ -1,5 +1,8 @@
+import uvicorn
 from fastapi import FastAPI
 from pydantic import BaseModel
+
+from reginald.models.setup_llm import setup_llm
 
 
 class Query(BaseModel):
@@ -38,3 +41,10 @@ def create_reginald_app(response_model) -> FastAPI:
         return response
 
     return app
+
+
+def run_reginald_app(**kwargs) -> None:
+    # set up response model
+    response_model = setup_llm(**kwargs)
+    app: FastAPI = create_reginald_app(response_model)
+    uvicorn.run(app, host="0.0.0.0", port=8000)
