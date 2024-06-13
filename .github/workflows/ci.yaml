@@ -1,0 +1,59 @@
+name: Continuous Integration
+
+# Run workflow on pushes to matching branches
+on:
+  push:
+    branches: [main, ci-test-config]
+  pull_request:
+    branches: [main]
+
+concurrency:
+  group: ${{ github.head_ref || github.run_id }}
+  # cancel-in-progress: true
+
+jobs:
+  pre-commit:
+    name: Lint with pre-commit
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v4
+        with:
+          python-version: 3.11
+      - uses: pre-commit/action@v3.0.1
+
+  pytest:
+    strategy:
+      fail-fast: true
+      matrix:
+        # python-version: ["3.11", "3.12"]
+        python-version: ["3.11"]
+        # os: [ubuntu-latest, windows-latest, macos-latest]
+        os: [ubuntu-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Install with all components for testing
+        run: |
+          pip install poetry
+          poetry install --all-extras
+
+      - name: Run pytest
+        run: poetry run pytest
+
+      # - name: Python Coverage Comment
+      #   uses: py-cov-action/python-coverage-comment-action@v3
+      #   with:
+      #     GITHUB_TOKEN: ${{ github.token }}
+      #
+      #
+      # - name: Store Pull Request comment to be posted
+      #   uses: actions/upload-artifact@v4
+      #   if: steps.coverage_comment.outputs.COMMENT_FILE_WRITTEN == 'true'
+      #   with:
+      #     # If you use a different name, update COMMENT_ARTIFACT_NAME accordingly
+      #     name: python-coverage-comment-action
