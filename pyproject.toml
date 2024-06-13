@@ -13,7 +13,9 @@ authors = ["Evelina Gabasova <evelina@evelinag.com>",
            "David Beavan <dbeavan@turing.ac.uk>",
            "Levan Bokeria <lbokeria@turing.ac.uk>",
            "Martin O'Reilly <moreilly@turing.ac.uk>",
-           "Oliver Strickson <ostrickson@turing.ac.uk>"]
+           "Oliver Strickson <ostrickson@turing.ac.uk>",
+           "Katriona Goldmann <kgoldmann@turing.ac.uk>",
+           "Griffith Rees <grees@turing.ac.uk>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
