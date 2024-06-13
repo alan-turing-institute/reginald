@@ -34,7 +34,7 @@ HELP_TEXT = {
     "slack_bot_token": "Slack bot token for the bot.",
 }
 
-cli = typer.Typer()
+cli = typer.Typer(context_settings={"help_option_names": ["-h", "--help"]})
 
 
 def set_up_logging_config(level: int = 20) -> None:
