@@ -1,8 +1,9 @@
 import uuid
+from typing import Optional
+from urllib.parse import urljoin
+
 import httpx
 import llm
-from urllib.parse import urljoin
-from typing import Optional
 from pydantic import Field
 
 
@@ -19,12 +20,11 @@ class Reginald(llm.Model):
         server_url: str = Field(
             default="http://localhost:8000",
             title="Server URL",
-            description="The base URL of the Reginald server"
+            description="The base URL of the Reginald server",
         )
 
         def direct_message_endpoint(self):
             return urljoin(self.server_url, "direct_message")
-
 
     def execute(self, prompt, stream, response, conversation):
 
@@ -37,7 +37,7 @@ class Reginald(llm.Model):
         # continue that conversation.
 
         try:
-            user_id = conversation.responses[0].response_json['user_id']
+            user_id = conversation.responses[0].response_json["user_id"]
         except (TypeError, AttributeError, KeyError, IndexError) as e:
             user_id = str(uuid.uuid4().int)
 
@@ -46,13 +46,15 @@ class Reginald(llm.Model):
                 reginald_reply = client.post(
                     prompt.options.direct_message_endpoint(),
                     json={"message": message, "user_id": user_id},
-                    timeout=None
+                    timeout=None,
                 )
             reginald_reply.raise_for_status()
         except httpx.HTTPError as e:
             # re-raise as an llm.ModelError for llm to report
-            raise llm.ModelError(f"Could not connect to Reginald at {prompt.options.direct_message_endpoint()}.\n\nThe error was:\n    {e}.\n\nIs the model server running?")
+            raise llm.ModelError(
+                f"Could not connect to Reginald at {prompt.options.direct_message_endpoint()}.\n\nThe error was:\n    {e}.\n\nIs the model server running?"
+            )
 
-        yield reginald_reply.json()['message']
+        yield reginald_reply.json()["message"]
 
-        response.response_json = {'user_id': user_id}
+        response.response_json = {"user_id": user_id}
