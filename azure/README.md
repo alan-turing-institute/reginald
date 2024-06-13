@@ -48,6 +48,6 @@ You will need to source this file before deploying in the next step.
 4. Deploy with Pulumi
 
 ```bash
-> source .secrets (if this exists)
-> AZURE_KEYVAULT_AUTH_VIA_CLI=true pulumi up
+source .secrets
+AZURE_KEYVAULT_AUTH_VIA_CLI=true pulumi up
 ```

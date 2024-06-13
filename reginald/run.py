@@ -19,6 +19,8 @@ def main(
 
         asyncio.run(
             run_full_pipeline(
+                data_dir=data_dir,
+                which_index=which_index,
                 slack_app_token=slack_app_token,
                 slack_bot_token=slack_bot_token,
                 **kwargs,
@@ -38,7 +40,9 @@ def main(
     elif cli == "app":
         from reginald.models.app import run_reginald_app
 
-        asyncio.run(run_reginald_app(**kwargs))
+        asyncio.run(
+            run_reginald_app(data_dir=data_dir, which_index=which_index, **kwargs)
+        )
     elif cli == "chat":
         import warnings
 
@@ -46,7 +50,9 @@ def main(
 
         from reginald.models.chat_interact import run_chat_interact
 
-        run_chat_interact(streaming=streaming, **kwargs)
+        run_chat_interact(
+            streaming=streaming, data_dir=data_dir, which_index=which_index, **kwargs
+        )
     elif cli == "create_index":
         from reginald.models.create_index import create_index
 
