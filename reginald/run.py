@@ -11,6 +11,8 @@ def main(
     which_index: str | None = None,
     slack_app_token: str | None = None,
     slack_bot_token: str | None = None,
+    host: str | None = None,
+    port: int | None = None,
     **kwargs,
 ):
     # initialise logging
@@ -40,7 +42,9 @@ def main(
     elif cli == "app":
         from reginald.models.app import run_reginald_app
 
-        run_reginald_app(data_dir=data_dir, which_index=which_index, **kwargs)
+        run_reginald_app(
+            host=host, port=port, data_dir=data_dir, which_index=which_index, **kwargs
+        )
     elif cli == "chat":
         import warnings
 

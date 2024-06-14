@@ -19,4 +19,6 @@ DEFAULT_ARGS = {
     "is_path": False,
     "n_gpu_layers": 0,
     "device": "auto",
+    "host": "0.0.0.0",
+    "port": 8000,
 }

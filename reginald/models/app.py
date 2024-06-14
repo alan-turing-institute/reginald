@@ -2,6 +2,7 @@ import uvicorn
 from fastapi import FastAPI
 from pydantic import BaseModel
 
+from reginald.defaults import DEFAULT_ARGS
 from reginald.models.setup_llm import setup_llm
 
 
@@ -43,8 +44,17 @@ def create_reginald_app(response_model) -> FastAPI:
     return app
 
 
-def run_reginald_app(**kwargs) -> None:
+def run_reginald_app(
+    host: str | None = DEFAULT_ARGS["host"],
+    port: int | None = DEFAULT_ARGS["port"],
+    **kwargs
+) -> None:
+    if host is None:
+        host = DEFAULT_ARGS["host"]
+    if port is None:
+        port = DEFAULT_ARGS["port"]
+
     # set up response model
     response_model = setup_llm(**kwargs)
     app: FastAPI = create_reginald_app(response_model)
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+    uvicorn.run(app, host=host, port=port)

@@ -32,6 +32,8 @@ HELP_TEXT = {
     "streaming": "Whether to use streaming for the chat interaction.",
     "slack_app_token": "Slack app token for the bot.",
     "slack_bot_token": "Slack bot token for the bot.",
+    "host": "Host to listen on.",
+    "port": "Port to listen on.",
 }
 
 cli = typer.Typer(context_settings={"help_option_names": ["-h", "--help"]})
@@ -261,6 +263,12 @@ def app(
     device: Annotated[
         str, typer.Option(envvar="LLAMA_INDEX_DEVICE", help=HELP_TEXT["device"])
     ] = DEFAULT_ARGS["device"],
+    host: Annotated[
+        str, typer.Option(envvar="REGINALD_HOST", help=HELP_TEXT["host"])
+    ] = DEFAULT_ARGS["host"],
+    port: Annotated[
+        int, typer.Option(envvar="REGINALD_PORT", help=HELP_TEXT["port"])
+    ] = DEFAULT_ARGS["port"],
 ) -> None:
     """
     Sets up the response model and then creates a
@@ -273,6 +281,8 @@ def app(
     set_up_logging_config(level=20)
     main(
         cli="app",
+        host=host,
+        port=port,
         model=model,
         model_name=model_name,
         mode=mode,
