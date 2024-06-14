@@ -59,7 +59,7 @@ jobs:
       #     name: python-coverage-comment-action
 
   docs:
-    needs: [linter, pytest]
+    needs: [linter, pre-commit]
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
