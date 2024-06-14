@@ -44,6 +44,7 @@ plugins:
   - search:
       lang: en
   - same-dir
+  # optional
   # - include-markdown
   # - markdown-exec
   - gen-files:
@@ -57,9 +58,9 @@ plugins:
   - mkdocstrings:
       handlers:
         python:
+          paths: [.]
           selection:
             docstring_style: numpy
-          paths: [.]
           options:
             separate_signature: true
             show_signature_annotations: true

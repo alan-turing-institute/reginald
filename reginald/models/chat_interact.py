@@ -4,8 +4,11 @@ from typing import Final
 from reginald.models.base import ResponseModel
 from reginald.models.setup_llm import setup_llm
 
+from ..utils import REGINALD_PROMPT
+
 INPUT_PROMPT: Final[str] = ">>> "
-REGINALD_PROMPT: Final[str] = "Reginald: "
+EXIT_STRS: set[str] = {"exit", "exit()", "quit()", "bye Reginald"}
+CLEAR_HISTORY_STRS: set[str] = {"clear_history", r"\clear_history"}
 
 ART: Final[
     str
@@ -29,7 +32,7 @@ def run_chat_interact(streaming: bool = False, **kwargs) -> ResponseModel:
 
     while True:
         message = input(INPUT_PROMPT)
-        if message in ["exit", "exit()", "quit()", "bye Reginald"]:
+        if message in EXIT_STRS:
             return response_model
         if message == "":
             continue
@@ -39,9 +42,9 @@ def run_chat_interact(streaming: bool = False, **kwargs) -> ResponseModel:
                 and response_model.chat_engine.get(user_id) is not None
             ):
                 response_model.chat_engine[user_id].reset()
-                print("\n{REGINALD_PROMPT}History cleared.")
+                print(f"\n{REGINALD_PROMPT}History cleared.")
             else:
-                print("\n{REGINALD_PROMPT}No history to clear.")
+                print(f"\n{REGINALD_PROMPT}No history to clear.")
             continue
 
         if streaming:

@@ -5,85 +5,7 @@ from typing import Any, Callable, Final, Generator, Iterable
 
 from rich.progress import Progress, SpinnerColumn, TextColumn
 
-REGINAL_PROMPT: Final[str] = "Reginald: "
-
-
-def stream_iter_progress_wrapper(
-    streamer: Iterable | Callable | chain,
-    task_str: str = REGINAL_PROMPT,
-    progress_bar: bool = True,
-    end: str = "",
-    *args,
-    **kwargs,
-) -> Iterable:
-    """Add a progress bar for iteration.
-
-    Examples
-    --------
-    >>> from time import sleep
-    >>> def sleeper(naps: int = 3) -> Generator[str, None, None]:
-    ...     for nap in range(naps):
-    ...         sleep(1)
-    ...         yield f'nap: {nap}'
-    >>> tuple(stream_iter_progress_wrapper(streamer=sleeper))
-    <BLANKLINE>
-    Reginald: ('nap: 0', 'nap: 1', 'nap: 2')
-    >>> tuple(stream_iter_progress_wrapper(
-    ...     streamer=sleeper, progress_bar=False))
-    Reginald: ('nap: 0', 'nap: 1', 'nap: 2')
-    """
-    if isinstance(streamer, Callable):
-        streamer = streamer(*args, **kwargs)
-    if progress_bar:
-        with Progress(
-            TextColumn("{task.description}[progress.description]"),
-            SpinnerColumn(),
-            transient=True,
-        ) as progress:
-            if isinstance(streamer, list | tuple):
-                streamer = (item for item in streamer)
-            assert isinstance(streamer, Generator)
-            progress.add_task(task_str)
-            first_item = next(streamer)
-            streamer = chain((first_item,), streamer)
-    print(task_str, end=end)
-    return streamer
-
-
-def stream_progress_wrapper(
-    streamer: Callable,
-    task_str: str = REGINAL_PROMPT,
-    progress_bar: bool = True,
-    end: str = "\n",
-    *args,
-    **kwargs,
-) -> Any:
-    """Add a progress bar for iteration.
-
-    Examples
-    --------
-    >>> from time import sleep
-    >>> def sleeper(seconds: int = 3) -> str:
-    ...     sleep(seconds)
-    ...     return f'{seconds} seconds nap'
-    >>> stream_progress_wrapper(sleeper)
-    <BLANKLINE>
-    Reginald:
-    '3 seconds nap'
-    """
-    if progress_bar:
-        with Progress(
-            TextColumn("{task.description}[progress.description]"),
-            SpinnerColumn(),
-            transient=True,
-        ) as progress:
-            progress.add_task(task_str)
-            results: Any = streamer(*args, **kwargs)
-        print(task_str, end=end)
-        return results
-    else:
-        print(task_str, end=end)
-        return streamer(*args, **kwargs)
+REGINALD_PROMPT: Final[str] = "Reginald: "
 
 
 def get_env_var(
@@ -140,3 +62,88 @@ def create_folder(folder: str) -> None:
         os.makedirs(folder)
     else:
         logging.info(f"Folder '{folder}' already exists")
+
+
+def stream_progress_wrapper(
+    streamer: Callable,
+    task_str: str = REGINALD_PROMPT,
+    use_spinner: bool = True,
+    end: str = "\n",
+    *args,
+    **kwargs,
+) -> Any:
+    """Add a progress bar for iteration.
+
+    Examples
+    --------
+    >>> from time import sleep
+    >>> def sleeper(seconds: int = 3) -> str:
+    ...     sleep(seconds)
+    ...     return f'{seconds} seconds nap'
+    >>> stream_progress_wrapper(sleeper)
+    <BLANKLINE>
+    Reginald:
+    '3 seconds nap'
+    >>> stream_progress_wrapper(sleeper, use_spinner=False, end='')
+    Reginald: '3 seconds nap'
+    """
+    if use_spinner:
+        with Progress(
+            TextColumn("{task.description}[progress.description]"),
+            SpinnerColumn(),
+            transient=True,
+        ) as progress:
+            progress.add_task(task_str)
+            results: Any = streamer(*args, **kwargs)
+        print(task_str, end=end)
+        return results
+    else:
+        print(task_str, end=end)
+        return streamer(*args, **kwargs)
+
+
+def stream_iter_progress_wrapper(
+    streamer: Iterable | Callable | chain,
+    task_str: str = REGINALD_PROMPT,
+    use_spinner: bool = True,
+    end: str = "",
+    *args,
+    **kwargs,
+) -> Iterable:
+    """Add a progress bar for iteration.
+
+    Parameters
+    ----------
+    streamer
+        Function that
+
+    Examples
+    --------
+    >>> from time import sleep
+    >>> def sleeper(naps: int = 3) -> Generator[str, None, None]:
+    ...     for nap in range(naps):
+    ...         sleep(1)
+    ...         yield f'nap: {nap}'
+    >>> tuple(stream_iter_progress_wrapper(streamer=sleeper))
+    <BLANKLINE>
+    Reginald: ('nap: 0', 'nap: 1', 'nap: 2')
+    >>> tuple(stream_iter_progress_wrapper(
+    ...     streamer=sleeper, use_spinner=False))
+    Reginald: ('nap: 0', 'nap: 1', 'nap: 2')
+    """
+    if isinstance(streamer, Callable):
+        streamer = streamer(*args, **kwargs)
+    if use_spinner:
+        with Progress(
+            TextColumn("{task.description}[progress.description]"),
+            SpinnerColumn(),
+            transient=True,
+        ) as progress:
+            if isinstance(streamer, list | tuple):
+                streamer = (item for item in streamer)
+            assert isinstance(streamer, Generator)
+            progress.add_task(task_str)
+            first_item = next(streamer)
+            streamer = chain((first_item,), streamer)
+    print(task_str, end=end)
+    return streamer
