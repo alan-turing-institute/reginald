@@ -59,9 +59,8 @@ plugins:
       handlers:
         python:
           paths: [.]
-          selection:
-            docstring_style: numpy
           options:
+            docstring_style: numpy
             separate_signature: true
             show_signature_annotations: true
             annotations_path: brief

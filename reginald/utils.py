@@ -74,6 +74,23 @@ def stream_progress_wrapper(
 ) -> Any:
     """Add a progress bar for iteration.
 
+    Parameters
+    ----------
+    streamer
+        Funciton to add the `SpinnerColumn` while running
+    task_str
+        What to print whether `use_spinner` is `True` or not,
+        and if `use_spinner` is `True` is printed prior to
+        the `SpinningColumn`.
+    use_spinner
+        Whether to print the `SpinnerColumn` or not.
+    end
+        What to pass to the `end` parameter of `print` calls.
+    args
+        Any arguments to pass to `streamer`
+    kwargs
+        Any keyward arguments to pass to `streamer`.
+
     Examples
     --------
     >>> from time import sleep
@@ -115,7 +132,21 @@ def stream_iter_progress_wrapper(
     Parameters
     ----------
     streamer
-        Function that
+        `Iterable`, `Callable` or `chain` to add the `SpinnerColumn`
+        while iteraing over. A `Callabe` will be converted to a
+        `Generator`.
+    task_str
+        What to print whether `use_spinner` is `True` or not,
+        and if `use_spinner` is `True` is printed prior to
+        the `SpinningColumn`.
+    use_spinner
+        Whether to print the `SpinnerColumn` or not.
+    end
+        What to pass to the `end` parameter of `print` calls.
+    args
+        Any arguments to pass to `streamer`
+    kwargs
+        Any keyward arguments to pass to `streamer`.
 
     Examples
     --------
