@@ -1,0 +1,4 @@
+name: reginald_hack_week
+runtime:
+  name: python
+description: Slack bot to respond to REG queries. Models developed during REG Hack Week 2023.
