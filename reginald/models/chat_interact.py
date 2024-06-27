@@ -1,9 +1,18 @@
 import readline
+from typing import Final
 
 from reginald.models.base import ResponseModel
 from reginald.models.setup_llm import setup_llm
 
-art = """
+from ..utils import REGINALD_PROMPT
+
+INPUT_PROMPT: Final[str] = ">>> "
+EXIT_STRS: set[str] = {"exit", "exit()", "quit()", "bye Reginald"}
+CLEAR_HISTORY_STRS: set[str] = {"clear_history", r"\clear_history"}
+
+ART: Final[
+    str
+] = r"""
 (`-') (`-')  _          _    <-. (`-')_(`-')  _        _(`-')
 <-.(OO ) ( OO).-/   .->   (_)      \( OO) (OO ).-/   <-. ( (OO ).->
 ,------,(,------.,---(`-'),-(`-',--./ ,--// ,---.  ,--. ) \    .'_
@@ -19,23 +28,23 @@ def run_chat_interact(streaming: bool = False, **kwargs) -> ResponseModel:
     # set up response model
     response_model = setup_llm(**kwargs)
     user_id = "command_line_chat"
-    print(art)
+    print(ART)
 
     while True:
-        message = input(">>> ")
-        if message in ["exit", "exit()", "quit()", "bye Reginald"]:
+        message = input(INPUT_PROMPT)
+        if message in EXIT_STRS:
             return response_model
         if message == "":
             continue
-        if message in ["clear_history", "\clear_history"]:
+        if message in ["clear_history", r"\clear_history"]:
             if (
                 response_model.mode == "chat"
                 and response_model.chat_engine.get(user_id) is not None
             ):
                 response_model.chat_engine[user_id].reset()
-                print("\nReginald: History cleared.")
+                print(f"\n{REGINALD_PROMPT}History cleared.")
             else:
-                print("\nReginald: No history to clear.")
+                print(f"\n{REGINALD_PROMPT}No history to clear.")
             continue
 
         if streaming:
@@ -43,4 +52,4 @@ def run_chat_interact(streaming: bool = False, **kwargs) -> ResponseModel:
             print("")
         else:
             response = response_model.direct_message(message=message, user_id=user_id)
-            print(f"\nReginald: {response.message}")
+            print(f"\n{REGINALD_PROMPT}{response.message}")
